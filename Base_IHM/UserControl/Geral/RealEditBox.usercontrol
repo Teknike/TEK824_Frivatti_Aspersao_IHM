@@ -1,0 +1,56 @@
+<div id="RealEditBox_153" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControl" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-width="100" data-tchmi-height="100">
+
+<div id="ucTextbox1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%f%TcHmi.Functions.Beckhoff.GaugeValueFormatter(%pp%value|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%, %pp%decimal%/pp%)%/f%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-auto-focus-out="true" data-tchmi-width-mode="Value" data-tchmi-height-mode="Value" data-tchmi-text-font-size="%pp%TamanhoFonte%/pp%" data-tchmi-text-horizontal-alignment="%pp%AlinhamentoDoTexto%/pp%" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-background-image-width-unit="px" data-tchmi-background-image-height-unit="px" data-tchmi-text-font-size-unit="px" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-opacity="1" data-tchmi-auto-select-text="false" data-tchmi-word-wrap="false" data-tchmi-multiline="false" data-tchmi-ignore-escape-sequences="false">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "ucTextbox1.onUserInteractionFinished",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var teclado = TcHmi.Symbol.readEx('%pp%teclado%/pp%');\nvar texto = TcHmi.Symbol.readEx('%ctrl%ucTextbox1::Text%/ctrl%');\nvar valor = Number(texto);\nvar naovalido = Number.isNaN(valor);\n\nvar OldValue = TcHmi.Symbol.readEx('%pp%value%/pp%');\nvar Decimal = TcHmi.Symbol.readEx('%pp%decimal%/pp%');\nvar Maximo = TcHmi.Symbol.readEx('%pp%maximum%/pp%');\nvar Minimo = TcHmi.Symbol.readEx('%pp%minimum%/pp%');\n\nif (naovalido === true){\n\talert('Valor informado não é um número');\n\tTcHmi.Symbol.writeEx('%ctrl%ucTextbox1::Text%/ctrl%', OldValue.toFixed(Decimal));\n\tTcHmi.Symbol.writeEx('%pp%value%/pp%', OldValue.toFixed(Decimal));\n} else{\n\tif (valor > Maximo){\n\t\tTcHmi.Symbol.writeEx('%ctrl%ucTextbox1::Text%/ctrl%', OldValue.toFixed(Decimal));\n\t\talert('O valor ' + valor + ' excede o máximo de ' + Maximo);\n\t\tTcHmi.Symbol.writeEx('%pp%value%/pp%', OldValue.toFixed(Decimal));\t\n\t} else if (valor < Minimo){\n\t\tTcHmi.Symbol.writeEx('%ctrl%ucTextbox1::Text%/ctrl%', OldValue.toFixed(Decimal));\n\t\talert('O valor ' + valor + ' está abaixo do mínimo de ' + Minimo);\n\t\tTcHmi.Symbol.writeEx('%pp%value%/pp%', OldValue.toFixed(Decimal));\t\n\t} else {\n\t\tTcHmi.Symbol.writeEx('%ctrl%ucTextbox1::Text%/ctrl%', valor.toFixed(Decimal));\n\t\tTcHmi.Symbol.writeEx('%pp%value%/pp%', valor.toFixed(Decimal));\n\t}\n}\n\n$('#'+teclado).animate({\n\ttop: '-3000px'\n});"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  },
+  {
+    "event": "ucTextbox1.onMouseClick",
+    "actions": [
+      {
+        "objectType": "Comment",
+        "comment": "mostra o teclado"
+      },
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "// referencia a si mesmo\n\ntry{\n\t\n\tvar _id = TcHmi.Symbol.readEx('%pp%identifier%/pp%');\n\tvar NomePai1 = TcHmi.Symbol.readEx('%pp%Parente1%/pp%');\n\tvar NomePai2 = TcHmi.Symbol.readEx('%pp%Parente2%/pp%');\n\tvar Escolhe = TcHmi.Symbol.readEx('%pp%PrimeiroParente%/pp%');\n\tvar TopPai = TcHmi.Symbol.readEx('%pp%PaiTop%/pp%');\n\tvar LeftPai = TcHmi.Symbol.readEx('%pp%PaiLeft%/pp%');\t\t\t\n\tvar _uc = TcHmi.Controls.get(_id);\n\tvar tamTelaX = TcHmi.Symbol.readEx('%pp%tamTelaX%/pp%');\n\tvar tamTelaY = TcHmi.Symbol.readEx('%pp%tamTelaY%/pp%');\n\t\n}catch(e){\n\t\t\n\t\tconsole.log('Erro Na hora de ler as variaveis do RealEdit');\n\t\tconsole.log('Erro :' + e);\n\t\tconsole.log('Identifier :'+_id);\n}\n\t\nvar NomePai;\n\nif (Escolhe){\n\tNomePai = NomePai1;\n}else{\n\tNomePai = NomePai2;\n}\n\nvar _ucParente = TcHmi.Controls.get(NomePai);\n\t\n\n\n// le o tamanho do teclado\n\tvar teclado = TcHmi.Symbol.readEx('%pp%teclado%/pp%');\n\tvar _objTeclado = TcHmi.Controls.get(teclado);\n\t_kb_width = _objTeclado.getWidth();\n\t_kb_height = _objTeclado.getHeight();\n\t\n// coordenadas do User Control\n\nif (TopPai != -1 && LeftPai != -1){ // se tiver posição do pai nao busca pelo identifier\n\t\n\tvar _topPai = TopPai;\n\tvar _leftPai = LeftPai;\n\t//console.log('Deu Bom');\n\t\n}else {\n\t\n\ttry{\n\t\n\t\tvar _topPai = _ucParente.getTop();\n\t\tvar _leftPai = _ucParente.getLeft();\n\t\n\t}catch(e){\n\t\n\t\tconsole.log('Erro :' + e);\n\t\tconsole.log('Parente :'+NomePai);\n\t\tconsole.log('ucParente :'+_ucParente);\n\t\tconsole.log('Identifier :'+_id);\n\t}\n\n}\n\n\n\tvar _top = _uc.getTop() + parseInt( _topPai);\n\tvar _left = _uc.getLeft() + parseInt(_leftPai);\n\tvar _width = _uc.getWidth();\n\tvar _height = _uc.getHeight();\n\t\n\t//console.log(_top);\n\t//console.log(_left);\n\t\n// coordenadas do teclado, medindo 200 x 200\n\tif (_left + _width + _kb_width > tamTelaX){\n\t\tvar __left = _left - _kb_width;\n\t} else {\n\t\tvar __left = _left + _width + 10;\n\t}\n\n\tif (_top + _kb_height > tamTelaY){\n\t\tvar __top = _top + _height - _kb_height;\n\t} else {\n\t\tvar __top = _top;\n\t}\n\n// mostra o teclado na posição\n\t$('#'+teclado).animate({\n\t\tleft: __left + 'px',\n\t\ttop: __top + 'px'\n\t});"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+
+
+</div>
+
+</div>

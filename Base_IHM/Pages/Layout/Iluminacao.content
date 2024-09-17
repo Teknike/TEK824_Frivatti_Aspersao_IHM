@@ -1,0 +1,142 @@
+<div id="Iluminacao" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="1670" data-tchmi-height="1040" data-tchmi-is-enabled="true">
+<div id="UcIluminacao" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="200" data-tchmi-height-unit="px" data-tchmi-left="48" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucIluminacao.usercontrol" data-tchmi-top="120" data-tchmi-top-unit="px" data-tchmi-width="260" data-tchmi-width-unit="px" data-tchmi-nomeuc="UcIluminacao" data-tchmi-index="1" data-tchmi-fonte="15">
+</div>
+<div id="UcIluminacao_1" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="200" data-tchmi-height-unit="px" data-tchmi-left="308" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucIluminacao.usercontrol" data-tchmi-top="120" data-tchmi-top-unit="px" data-tchmi-width="260" data-tchmi-width-unit="px" data-tchmi-nomeuc="UcIluminacao_1" data-tchmi-index="2" data-tchmi-fonte="15">
+</div>
+<div id="UcIluminacao_2" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="200" data-tchmi-height-unit="px" data-tchmi-left="568" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucIluminacao.usercontrol" data-tchmi-top="120" data-tchmi-top-unit="px" data-tchmi-width="260" data-tchmi-width-unit="px" data-tchmi-nomeuc="UcIluminacao_2" data-tchmi-index="3" data-tchmi-fonte="15">
+</div>
+<div id="UcIluminacao_3" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="200" data-tchmi-height-unit="px" data-tchmi-left="828" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucIluminacao.usercontrol" data-tchmi-top="120" data-tchmi-top-unit="px" data-tchmi-width="260" data-tchmi-width-unit="px" data-tchmi-nomeuc="UcIluminacao_3" data-tchmi-index="4" data-tchmi-fonte="15">
+</div>
+<div id="UcIluminacao_4" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="200" data-tchmi-height-unit="px" data-tchmi-left="1088" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucIluminacao.usercontrol" data-tchmi-top="120" data-tchmi-top-unit="px" data-tchmi-width="260" data-tchmi-width-unit="px" data-tchmi-nomeuc="UcIluminacao_4" data-tchmi-index="5" data-tchmi-fonte="15">
+</div>
+<div id="UcIluminacao_5" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="200" data-tchmi-height-unit="px" data-tchmi-left="1348" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucIluminacao.usercontrol" data-tchmi-top="120" data-tchmi-top-unit="px" data-tchmi-width="260" data-tchmi-width-unit="px" data-tchmi-nomeuc="UcIluminacao_5" data-tchmi-index="6" data-tchmi-fonte="15">
+</div>
+<div id="UcIluminacao_6" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="200" data-tchmi-height-unit="px" data-tchmi-left="48" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucIluminacao.usercontrol" data-tchmi-top="353" data-tchmi-top-unit="px" data-tchmi-width="260" data-tchmi-width-unit="px" data-tchmi-nomeuc="UcIluminacao_6" data-tchmi-index="7" data-tchmi-fonte="15">
+</div>
+<div id="UcIluminacao_7" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="200" data-tchmi-height-unit="px" data-tchmi-left="308" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucIluminacao.usercontrol" data-tchmi-top="353" data-tchmi-top-unit="px" data-tchmi-width="260" data-tchmi-width-unit="px" data-tchmi-nomeuc="UcIluminacao_7" data-tchmi-index="8" data-tchmi-fonte="15">
+</div>
+<div id="UcIluminacao_8" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="200" data-tchmi-height-unit="px" data-tchmi-left="568" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucIluminacao.usercontrol" data-tchmi-top="353" data-tchmi-top-unit="px" data-tchmi-width="260" data-tchmi-width-unit="px" data-tchmi-nomeuc="UcIluminacao_8" data-tchmi-index="9" data-tchmi-fonte="15">
+</div>
+<div id="UcIluminacao_9" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="200" data-tchmi-height-unit="px" data-tchmi-left="828" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucIluminacao.usercontrol" data-tchmi-top="353" data-tchmi-top-unit="px" data-tchmi-width="260" data-tchmi-width-unit="px" data-tchmi-nomeuc="UcIluminacao_9" data-tchmi-index="10" data-tchmi-fonte="15">
+</div>
+<div id="UcIluminacao_10" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="200" data-tchmi-height-unit="px" data-tchmi-left="1088" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucIluminacao.usercontrol" data-tchmi-top="353" data-tchmi-top-unit="px" data-tchmi-width="260" data-tchmi-width-unit="px" data-tchmi-nomeuc="UcIluminacao_10" data-tchmi-index="11" data-tchmi-fonte="15">
+</div>
+<div id="UcIluminacao_11" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="200" data-tchmi-height-unit="px" data-tchmi-left="1348" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucIluminacao.usercontrol" data-tchmi-top="353" data-tchmi-top-unit="px" data-tchmi-width="260" data-tchmi-width-unit="px" data-tchmi-nomeuc="UcIluminacao_11" data-tchmi-index="12" data-tchmi-fonte="15">
+</div>
+<div id="UcIluminacao_12" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="200" data-tchmi-height-unit="px" data-tchmi-left="48" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucIluminacao.usercontrol" data-tchmi-top="580" data-tchmi-top-unit="px" data-tchmi-width="260" data-tchmi-width-unit="px" data-tchmi-nomeuc="UcIluminacao_12" data-tchmi-index="13" data-tchmi-fonte="15">
+</div>
+<div id="UcIluminacao_13" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="200" data-tchmi-height-unit="px" data-tchmi-left="308" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucIluminacao.usercontrol" data-tchmi-top="580" data-tchmi-top-unit="px" data-tchmi-width="260" data-tchmi-width-unit="px" data-tchmi-nomeuc="UcIluminacao_13" data-tchmi-index="14" data-tchmi-fonte="15">
+</div>
+<div id="UcIluminacao_14" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="200" data-tchmi-height-unit="px" data-tchmi-left="568" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucIluminacao.usercontrol" data-tchmi-top="580" data-tchmi-top-unit="px" data-tchmi-width="260" data-tchmi-width-unit="px" data-tchmi-nomeuc="UcIluminacao_14" data-tchmi-index="15" data-tchmi-fonte="15">
+</div>
+<div id="UcIluminacao_15" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="200" data-tchmi-height-unit="px" data-tchmi-left="828" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucIluminacao.usercontrol" data-tchmi-top="580" data-tchmi-top-unit="px" data-tchmi-width="260" data-tchmi-width-unit="px" data-tchmi-nomeuc="UcIluminacao_15" data-tchmi-index="16" data-tchmi-fonte="15">
+</div>
+<div id="UcIluminacao_16" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="200" data-tchmi-height-unit="px" data-tchmi-left="1088" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucIluminacao.usercontrol" data-tchmi-top="580" data-tchmi-top-unit="px" data-tchmi-width="260" data-tchmi-width-unit="px" data-tchmi-nomeuc="UcIluminacao_16" data-tchmi-index="17" data-tchmi-fonte="15">
+</div>
+<div id="UcIluminacao_17" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="200" data-tchmi-height-unit="px" data-tchmi-left="1348" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucIluminacao.usercontrol" data-tchmi-top="580" data-tchmi-top-unit="px" data-tchmi-width="260" data-tchmi-width-unit="px" data-tchmi-nomeuc="UcIluminacao_17" data-tchmi-index="18" data-tchmi-fonte="15">
+</div>
+<div id="UcIluminacao_18" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="200" data-tchmi-height-unit="px" data-tchmi-left="48" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucIluminacao.usercontrol" data-tchmi-top="805" data-tchmi-top-unit="px" data-tchmi-width="260" data-tchmi-width-unit="px" data-tchmi-nomeuc="UcIluminacao_18" data-tchmi-index="19" data-tchmi-fonte="15">
+</div>
+<div id="UcIluminacao_19" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="200" data-tchmi-height-unit="px" data-tchmi-left="308" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucIluminacao.usercontrol" data-tchmi-top="805" data-tchmi-top-unit="px" data-tchmi-width="260" data-tchmi-width-unit="px" data-tchmi-nomeuc="UcIluminacao_19" data-tchmi-index="20" data-tchmi-fonte="15">
+</div>
+<div id="UcIluminacao_20" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="200" data-tchmi-height-unit="px" data-tchmi-left="568" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucIluminacao.usercontrol" data-tchmi-top="805" data-tchmi-top-unit="px" data-tchmi-width="260" data-tchmi-width-unit="px" data-tchmi-nomeuc="UcIluminacao_20" data-tchmi-index="21" data-tchmi-fonte="15">
+</div>
+<div id="UcIluminacao_21" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="200" data-tchmi-height-unit="px" data-tchmi-left="828" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucIluminacao.usercontrol" data-tchmi-top="805" data-tchmi-top-unit="px" data-tchmi-width="260" data-tchmi-width-unit="px" data-tchmi-nomeuc="UcIluminacao_21" data-tchmi-index="22" data-tchmi-fonte="15">
+</div>
+<div id="UcIluminacao_22" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="200" data-tchmi-height-unit="px" data-tchmi-left="1088" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucIluminacao.usercontrol" data-tchmi-top="805" data-tchmi-top-unit="px" data-tchmi-width="260" data-tchmi-width-unit="px" data-tchmi-nomeuc="UcIluminacao_22" data-tchmi-index="23" data-tchmi-fonte="15">
+</div>
+<div id="UcIluminacao_23" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="200" data-tchmi-height-unit="px" data-tchmi-left="1348" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucIluminacao.usercontrol" data-tchmi-top="805" data-tchmi-top-unit="px" data-tchmi-width="260" data-tchmi-width-unit="px" data-tchmi-nomeuc="UcIluminacao_23" data-tchmi-index="24" data-tchmi-fonte="15">
+</div>IF NOT GVL_Iluminacao.telerruptor[i].xFeedBackTelerruptor THEN
+				GVL_Iluminacao.telerruptor[i].xLigaTelerruptor := TRUE;
+		END_IF
+<div id="TcHmiButton_75" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="75" data-tchmi-height-unit="px" data-tchmi-left="101" data-tchmi-left-unit="px" data-tchmi-text="Ligar Iluminação" data-tchmi-top="22" data-tchmi-top-unit="px" data-tchmi-width="165" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="20" data-tchmi-state-symbol="%s%PLC1.GVL_Iluminacao.xLigaIluminacao%/s%">
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 10.0,
+  "topRight": 10.0,
+  "bottomLeft": 10.0,
+  "bottomRight": 10.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(78, 90, 108, 1)"
+}
+</script>
+</div>
+<div id="TcHmiButton_76" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="75" data-tchmi-height-unit="px" data-tchmi-left="308" data-tchmi-left-unit="px" data-tchmi-text="Desligar Iluminação" data-tchmi-top="22" data-tchmi-top-unit="px" data-tchmi-width="165" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="20" data-tchmi-state-symbol="%s%PLC1.GVL_Iluminacao.xDesligaIluminacao%/s%">
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 10.0,
+  "topRight": 10.0,
+  "bottomLeft": 10.0,
+  "bottomRight": 10.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(78, 90, 108, 1)"
+}
+</script>
+</div>
+<div id="TcHmiTextblock_495" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="1152" data-tchmi-left-unit="px" data-tchmi-text="Tempo de acionamento do telerruptor(s):" data-tchmi-top="48" data-tchmi-top-unit="px" data-tchmi-width="336" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="20" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+</div>
+<div id="RealEditBox_183" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-altura="30" data-tchmi-decimal="2" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-largura="150" data-tchmi-left="1488" data-tchmi-left-unit="px" data-tchmi-maximum="10" data-tchmi-minimum="0" data-tchmi-paileft="-1" data-tchmi-paitop="-1" data-tchmi-parente1="Desktop" data-tchmi-parente2="Desktop" data-tchmi-tamanhofonte="15" data-tchmi-tamtelax="1920" data-tchmi-tamtelay="1080" data-tchmi-target-user-control="UserControl/Geral/RealEditBox.usercontrol" data-tchmi-top="48" data-tchmi-top-unit="px" data-tchmi-value="%s%PLC1.GVL_Iluminacao.rTempoTelerruptorAcionado%/s%" data-tchmi-width="120" data-tchmi-width-unit="px" data-tchmi-identifier="RealEditBox_183" data-tchmi-teclado="Teclado" data-tchmi-primeiroparente="false">
+</div>
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "operate",
+    "group": "Administracao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Manutencao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Operacao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Visualizacao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Administracao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Manutencao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Operacao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Visualizacao",
+    "permission": "Allow"
+  }
+]
+</script>
+</div>

@@ -1,0 +1,662 @@
+﻿<div id="UcPopupMerge" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControl" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="750" data-tchmi-height="470" data-tchmi-width-unit="px" data-tchmi-height-unit="px" data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-zindex="1">
+<div id="TcHmiRectangle_140" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="8" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-zindex="1">
+
+<script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
+{
+  "color": "rgba(74, 71, 71, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 15.0,
+  "topRight": 15.0,
+  "bottomLeft": 0.0,
+  "bottomRight": 0.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+{
+  "left": "None",
+  "right": "None",
+  "top": "Solid",
+  "bottom": "Solid"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 0,
+  "right": 0,
+  "top": 0,
+  "bottom": 0,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+</div>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+{
+  "left": "Solid",
+  "right": "Solid",
+  "top": "Solid",
+  "bottom": "Solid"
+}
+</script>
+<div id="btFechar_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="8" data-tchmi-height-unit="%" data-tchmi-left-unit="px" data-tchmi-text="X" data-tchmi-top="0.5" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="%" data-tchmi-word-wrap="True" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-text-font-size-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="105" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-text-font-size="20" data-tchmi-background-image-width-unit="px" data-tchmi-background-image-height-unit="px" data-tchmi-is-enabled="true" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-right="1">
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "btFechar_1.onMouseClick",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": false,
+        "sourceLines": [
+          "var desktop = TcHmi.Controls.get('Desktop');",
+          "var index = TcHmi.Symbol.readEx('%pp%stPartida::En::i%/pp%');",
+          "var nome = 'UcPopUpMotores'+ index;",
+          "var objeto = TcHmi.Controls.get(nome);",
+          "",
+          "if (objeto != undefined){",
+          "\tnome = 'UcPopUpMotores'+ index;",
+          "}else{",
+          "\tnome = 'UcPopUpMotores';",
+          "}",
+          "",
+          "",
+          "var objeto1 = document.getElementById(nome);",
+          "var elements = objeto1.getElementsByTagName(\"*\");",
+          "var btn = document.getElementById(nome+'.TcHmiImage_54');",
+          "//Para voltar a opacidade e fechar os interlocks se fechar o PopUp",
+          "if (btn.style.opacity == 1){",
+          "\t",
+          "\tfor (var i=0; i < elements.length; i++) ",
+          "\t{    \t",
+          "\t\telements[i].style.opacity = 1;",
+          "\t}",
+          "\t",
+          "\tbtn.style.opacity = 0.6;",
+          "\t//$(\"#EditInterlocks\").slideUp('slow');",
+          "\t(TcHmi.Controls.get(nome+'.EditInterlocks')).setLeft(800);",
+          "\t(TcHmi.Controls.get(nome+'.EditInterlocks')).setTop(80);",
+          "}",
+          "",
+          "",
+          "if (objeto != undefined){",
+          "\t$('#'+ nome).slideUp('slow');",
+          "\tdesktop.removeChild(objeto);",
+          "\tobjeto.destroy();",
+          "}else{",
+          "\t$('#UcPopUpMotores').slideUp('slow');",
+          "}",
+          "",
+          "$('#CAN').slideDown('slow');"
+        ],
+        "injectContextObject": true,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      },
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "$('#UserControl1_1').slideUp('slow');"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 0.0,
+  "topRight": 15.0,
+  "bottomLeft": 0.0,
+  "bottomRight": 0.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(54, 54, 54, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 0,
+  "right": 0,
+  "top": 0,
+  "bottom": 0,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+{
+  "left": "None",
+  "right": "None",
+  "top": "Solid",
+  "bottom": "Solid"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+</div>
+<div id="TcHmiToggleButton_21" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="25" data-tchmi-left-unit="px" data-tchmi-text="Visibilidade" data-tchmi-top="7" data-tchmi-top-unit="px" data-tchmi-width="80" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-zindex="1003" data-tchmi-state-symbol="%i%xOpacidade%/i%" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiToggleButton_21.onMouseClick",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:framework#/definitions/ToggleState",
+                  "symbolExpression": "%ctrl%TcHmiToggleButton_21::ToggleState%/ctrl%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/ToggleState",
+                  "value": "Active"
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%UcPopupMerge::BackgroundColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": {
+                    "color": "rgba(204, 204, 204, 0.8)"
+                  }
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%UcPopupMerge::BackgroundColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": {
+                    "color": "rgba(204, 204, 204, 0.8)"
+                  }
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(255, 255, 255, 1)"
+}
+</script>
+</div>
+<div id="Esteira_529" data-tchmi-type="TcHmi.Controls.FrameworkEsteira.Esteira" data-tchmi-altura="20" data-tchmi-cima="10" data-tchmi-comissionado="true" data-tchmi-esquerda="15" data-tchmi-fonte="15" data-tchmi-height="130" data-tchmi-height-unit="px" data-tchmi-index="%f%%pp%stMerge2P1::En::stMotorL1::En::i%/pp%%/f%" data-tchmi-largura="10" data-tchmi-left="130" data-tchmi-left-unit="px" data-tchmi-operavel="true" data-tchmi-popup="Popup_Esteira_1" data-tchmi-posicao="SD" data-tchmi-teminversor="false" data-tchmi-tipoesteira="Vertical" data-tchmi-top="299" data-tchmi-top-unit="px" data-tchmi-width="50" data-tchmi-width-unit="px" data-tchmi-zindex="1">
+</div>
+<div id="Esteira_530" data-tchmi-type="TcHmi.Controls.FrameworkEsteira.Esteira" data-tchmi-altura="20" data-tchmi-cima="10" data-tchmi-comissionado="true" data-tchmi-esquerda="15" data-tchmi-fonte="15" data-tchmi-height="130" data-tchmi-height-unit="px" data-tchmi-index="%pp%stMerge2P1::En::stMotorL2::En::i%/pp%" data-tchmi-largura="10" data-tchmi-left="241" data-tchmi-left-unit="px" data-tchmi-operavel="true" data-tchmi-popup="Popup_Esteira_1" data-tchmi-posicao="SD" data-tchmi-teminversor="false" data-tchmi-tipoesteira="Vertical" data-tchmi-top="299" data-tchmi-top-unit="px" data-tchmi-width="50" data-tchmi-width-unit="px" data-tchmi-zindex="1">
+</div>
+<div id="Esteira_531" data-tchmi-type="TcHmi.Controls.FrameworkEsteira.Esteira" data-tchmi-altura="20" data-tchmi-cima="10" data-tchmi-comissionado="true" data-tchmi-esquerda="15" data-tchmi-fonte="15" data-tchmi-height="130" data-tchmi-height-unit="px" data-tchmi-index="%pp%stMerge2P1::En::stMotorMerge::En::i%/pp%" data-tchmi-largura="10" data-tchmi-left="130" data-tchmi-left-unit="px" data-tchmi-operavel="true" data-tchmi-popup="Popup_Esteira_1" data-tchmi-posicao="SD" data-tchmi-teminversor="false" data-tchmi-tipoesteira="Vertical" data-tchmi-top="170" data-tchmi-top-unit="px" data-tchmi-width="161" data-tchmi-width-unit="px" data-tchmi-zindex="1003">
+</div>
+<div id="Sensor_370" data-tchmi-type="TcHmi.Controls.FrameworkSensor.Sensor" data-tchmi-entradasaida="true" data-tchmi-height="43" data-tchmi-height-unit="px" data-tchmi-left="293" data-tchmi-left-unit="px" data-tchmi-operavel="true" data-tchmi-top="299" data-tchmi-top-unit="px" data-tchmi-width="36" data-tchmi-width-unit="px" data-tchmi-stsensor="%pp%stMerge2P1::En::stSensorL2%/pp%" data-tchmi-zindex="1">
+</div>
+<div id="Sensor_371" data-tchmi-type="TcHmi.Controls.FrameworkSensor.Sensor" data-tchmi-entradasaida="true" data-tchmi-height="43" data-tchmi-height-unit="px" data-tchmi-left="92" data-tchmi-left-unit="px" data-tchmi-operavel="true" data-tchmi-top="299" data-tchmi-top-unit="px" data-tchmi-width="36" data-tchmi-width-unit="px" data-tchmi-stsensor="%pp%stMerge2P1::En::stSensorL1%/pp%" data-tchmi-zindex="1">
+</div>
+<div id="Sensor_372" data-tchmi-type="TcHmi.Controls.FrameworkSensor.Sensor" data-tchmi-entradasaida="true" data-tchmi-height="43" data-tchmi-height-unit="px" data-tchmi-left="93" data-tchmi-left-unit="px" data-tchmi-operavel="true" data-tchmi-top="197" data-tchmi-top-unit="px" data-tchmi-width="36" data-tchmi-width-unit="px" data-tchmi-stsensor="%pp%stMerge2P1::En::stSensorCxTrancada%/pp%" data-tchmi-zindex="1">
+</div>
+<div id="TcHmiTextblock_1559" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="429" data-tchmi-left-unit="px" data-tchmi-text="TimeOutL1 : " data-tchmi-top="127" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="20" data-tchmi-zindex="1">
+</div>
+<div id="TcHmiNumericInput_6" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="579" data-tchmi-left-unit="px" data-tchmi-max-value="100" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="127" data-tchmi-top-unit="px" data-tchmi-value="%pp%stMerge2P1::Config::rTimeOutL1|BindingMode=TwoWay%/pp%" data-tchmi-width="70" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="20" data-tchmi-zindex="1">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+</div>
+<div id="TcHmiTextblock_1560" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="429" data-tchmi-left-unit="px" data-tchmi-text="MaxL1 : " data-tchmi-top="153" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="20" data-tchmi-zindex="1">
+</div>
+<div id="TcHmiNumericInput_7" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="579" data-tchmi-left-unit="px" data-tchmi-max-value="100" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="153" data-tchmi-top-unit="px" data-tchmi-value="%pp%stMerge2P1::Config::rMaxL1%/pp%" data-tchmi-width="70" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="20" data-tchmi-zindex="1">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+</div>
+<div id="TcHmiTextblock_1561" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="429" data-tchmi-left-unit="px" data-tchmi-text="TimeOutL2 : " data-tchmi-top="179" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="20" data-tchmi-zindex="1">
+</div>
+<div id="TcHmiNumericInput_8" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="579" data-tchmi-left-unit="px" data-tchmi-max-value="100" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="179" data-tchmi-top-unit="px" data-tchmi-value="%pp%stMerge2P1::Config::rTimeOutL2%/pp%" data-tchmi-width="70" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="20" data-tchmi-zindex="1">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+</div>
+<div id="TcHmiTextblock_1562" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="429" data-tchmi-left-unit="px" data-tchmi-text="MaxL2 : " data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="20" data-tchmi-zindex="1">
+</div>
+<div id="TcHmiNumericInput_23" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="579" data-tchmi-left-unit="px" data-tchmi-max-value="100" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-value="%pp%stMerge2P1::Config::rMaxL2%/pp%" data-tchmi-width="70" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="20" data-tchmi-zindex="1">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+</div>
+<div id="TcHmiTextblock_1563" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="429" data-tchmi-left-unit="px" data-tchmi-text="Limpa linha : " data-tchmi-top="239" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="20" data-tchmi-zindex="1">
+</div>
+<div id="TcHmiNumericInput_24" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="579" data-tchmi-left-unit="px" data-tchmi-max-value="100" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="239" data-tchmi-top-unit="px" data-tchmi-value="%pp%stMerge2P1::Config::rLimpaLinha%/pp%" data-tchmi-width="70" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="20" data-tchmi-zindex="1">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+</div>
+<div id="TcHmiTextblock_1564" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%s%PLC1.MAIN.stMerge2p1::Status::sStatus%/s%" data-tchmi-top="82" data-tchmi-top-unit="px" data-tchmi-width="749" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="25" data-tchmi-zindex="1">
+</div>
+<div id="TcHmiTextblock_1565" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="653" data-tchmi-left-unit="px" data-tchmi-text="%s%PLC1.MAIN.stMerge2p1::Status::sTOutL1%/s%" data-tchmi-top="127" data-tchmi-top-unit="px" data-tchmi-width="96" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="20" data-tchmi-zindex="1">
+</div>
+<div id="TcHmiTextblock_1566" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="653" data-tchmi-left-unit="px" data-tchmi-text="%s%PLC1.MAIN.stMerge2p1::Status::sTMaxL1%/s%" data-tchmi-top="153" data-tchmi-top-unit="px" data-tchmi-width="96" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="20" data-tchmi-zindex="1">
+</div>
+<div id="TcHmiTextblock_1567" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="653" data-tchmi-left-unit="px" data-tchmi-text="%s%PLC1.MAIN.stMerge2p1::Status::sTOutL2%/s%" data-tchmi-top="179" data-tchmi-top-unit="px" data-tchmi-width="96" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="20" data-tchmi-zindex="1">
+</div>
+<div id="TcHmiTextblock_1568" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="653" data-tchmi-left-unit="px" data-tchmi-text="%s%PLC1.MAIN.stMerge2p1::Status::sTMaxL2%/s%" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="96" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="20" data-tchmi-zindex="1">
+</div>
+<div id="TcHmiTextblock_1569" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="653" data-tchmi-left-unit="px" data-tchmi-text="%s%PLC1.MAIN.stMerge2p1::Status::sTLimpaLinha%/s%" data-tchmi-top="239" data-tchmi-top-unit="px" data-tchmi-width="96" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="20" data-tchmi-zindex="1">
+</div>
+<div id="TcHmiTextblock_31" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="429" data-tchmi-left-unit="px" data-tchmi-text="Caixa trancada : " data-tchmi-top="265" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="20" data-tchmi-zindex="1">
+</div>
+<div id="TcHmiNumericInput_25" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="579" data-tchmi-left-unit="px" data-tchmi-max-value="100" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="265" data-tchmi-top-unit="px" data-tchmi-value="%pp%stMerge2P1::Config::rCaixaTrancada%/pp%" data-tchmi-width="70" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="20" data-tchmi-zindex="1">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+</div>
+<div id="TcHmiTextblock_1570" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="653" data-tchmi-left-unit="px" data-tchmi-text="%s%PLC1.MAIN.stMerge2p1::Status::sTCaixaTrancada%/s%" data-tchmi-top="265" data-tchmi-top-unit="px" data-tchmi-width="96" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="20" data-tchmi-zindex="1">
+</div>
+<div id="TcHmiTextblock_43" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="329" data-tchmi-left-unit="px" data-tchmi-text="%s%PLC1.MAIN.stMerge2p1::Status::sCXHL2%/s%" data-tchmi-top="291" data-tchmi-top-unit="px" data-tchmi-width="91" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="20" data-tchmi-zindex="1">
+</div>
+<div id="TcHmiTextblock_44" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="329" data-tchmi-left-unit="px" data-tchmi-text="%s%PLC1.MAIN.stMerge2p1::Status::sTempoEntreCaixasL2%/s%" data-tchmi-top="317" data-tchmi-top-unit="px" data-tchmi-width="91" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="20" data-tchmi-zindex="1">
+</div>
+<div id="TcHmiTextblock_45" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="36" data-tchmi-left-unit="px" data-tchmi-text="%s%PLC1.MAIN.stMerge2p1::Status::sCXHL1%/s%" data-tchmi-top="292" data-tchmi-top-unit="px" data-tchmi-width="83" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="20" data-tchmi-zindex="1">
+</div>
+<div id="TcHmiTextblock_46" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="36" data-tchmi-left-unit="px" data-tchmi-text="%s%PLC1.MAIN.stMerge2p1::Status::sTempoEntreCaixasL1%/s%" data-tchmi-top="314" data-tchmi-top-unit="px" data-tchmi-width="83" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="20" data-tchmi-zindex="1">
+</div>
+<div id="TcHmiTextblock_47" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="36" data-tchmi-left-unit="px" data-tchmi-text="%s%PLC1.MAIN.stMerge2p1::Status::sCXHMerge%/s%" data-tchmi-top="197" data-tchmi-top-unit="px" data-tchmi-width="78" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="20" data-tchmi-zindex="1">
+</div>
+<div id="TcHmiRectangle_141" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="129" data-tchmi-height-unit="px" data-tchmi-left="187" data-tchmi-left-unit="px" data-tchmi-top="46" data-tchmi-top-unit="px" data-tchmi-width="50" data-tchmi-width-unit="px" data-tchmi-zindex="1">
+
+<script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
+{
+  "color": "rgba(117, 116, 116, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
+{
+  "color": "rgba(117, 116, 116, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(117, 116, 116, 1)"
+}
+</script>
+</div>
+<div id="TcHmiLine_68" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLine" data-tchmi-height="129" data-tchmi-height-unit="px" data-tchmi-left="237" data-tchmi-left-unit="px" data-tchmi-top="170" data-tchmi-top-unit="px" data-tchmi-width="54" data-tchmi-width-unit="px" data-tchmi-x2="53" data-tchmi-y2="130" data-tchmi-zindex="1004" data-tchmi-x1="0" data-tchmi-y1="0">
+</div>
+<div id="TcHmiLine_69" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLine" data-tchmi-height="129" data-tchmi-height-unit="px" data-tchmi-left="130" data-tchmi-left-unit="px" data-tchmi-top="170" data-tchmi-top-unit="px" data-tchmi-width="54" data-tchmi-width-unit="px" data-tchmi-x2="1" data-tchmi-y2="130" data-tchmi-zindex="1004" data-tchmi-x1="57" data-tchmi-y1="0">
+</div>
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "UcPopupMerge.onMouseEnter",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "//var index = TcHmi.Symbol.readEx('%pp%stPartida::En::i%/pp%');",
+          "var nome = 'UcPopupMerge';//+ index;",
+          "var objeto = TcHmi.Controls.get(nome);",
+          "",
+          "if (objeto === undefined){",
+          "\tnome = 'UcPopupMerge';",
+          "};",
+          "",
+          "var instancia = TcHmi.Controls.get(nome);",
+          "console.log(instancia);",
+          "var evento;",
+          "",
+          "var leftPop = 0;",
+          "var topPop = 0;",
+          "var leftMouse = 0;",
+          "var topMouse = 0;",
+          "",
+          "var leftDiferenca = 0;",
+          "var topDiferenca = 0;",
+          "",
+          "$(\"#\" + nome).on(\"mousedown\", function (event) {",
+          "    evento = true;",
+          "    ",
+          "    leftPop = instancia.getLeft();",
+          "    topPop = instancia.getTop();",
+          "    leftMouse = event.pageX;",
+          "    topMouse = event.pageY;",
+          "",
+          "    leftDiferenca = leftPop - leftMouse;",
+          "    topDiferenca = topPop - topMouse;",
+          "",
+          "});",
+          "",
+          "",
+          "$(\"#\" + nome).on(\"mouseup\", function (event) {",
+          "    evento = false;",
+          "    leftDiferenca = 0;",
+          "    topDiferenca = 0;",
+          "});",
+          "",
+          "$(\"#Desktop\").on(\"mouseleave\", function (event) {",
+          "    evento = false;",
+          "    leftDiferenca = 0;",
+          "    topDiferenca = 0;",
+          "});",
+          "",
+          "$(\"#Desktop\").on(\"mousemove\", function (event) {",
+          "    if (evento) {",
+          "\t\tinstancia.setTop(event.pageY + topDiferenca);",
+          "        instancia.setLeft(event.pageX + leftDiferenca);",
+          "    }",
+          "});",
+          "",
+          "//-----------------------MOUSE----------------------------------------",
+          "",
+          "//-----------------------TOUCH----------------------------------------",
+          "",
+          "document.addEventListener('touchstart', { passive: false });",
+          "document.addEventListener('touchend', { passive: false });",
+          "document.addEventListener('touchmove', { passive: false });",
+          "",
+          "var evento2;",
+          "",
+          "var leftPop2 = 0;",
+          "var topPop2 = 0;",
+          "var leftTouch = 0;",
+          "var topTouch = 0;",
+          "",
+          "var leftDiferenca2 = 0;",
+          "var topDiferenca2 = 0;",
+          "",
+          "$(\"#\" + nome).on(\"touchstart\", function (event) {",
+          "    evento2 = true;",
+          "    leftPop2 = instancia.getLeft();",
+          "    topPop2 = instancia.getTop();",
+          "    leftTouch = event.originalEvent.touches[0].pageX;",
+          "    topTouch = event.originalEvent.touches[0].pageY;",
+          "",
+          "    leftDiferenca2 = leftPop2 - leftTouch;",
+          "    topDiferenca2 = topPop2 - topTouch;",
+          "});",
+          "",
+          "$(\"#\" + nome).on(\"touchend\", function (event) {",
+          "    evento2 = false;",
+          "    leftDiferenca2 = 0;",
+          "    topDiferenca2 = 0;",
+          "});",
+          "",
+          "$(\"#\" + nome).on(\"touchmove\", function (event) {",
+          "    event.preventDefault();",
+          "    if (evento2) {",
+          "        instancia.setTop(event.originalEvent.touches[0].pageY + topDiferenca2);",
+          "        instancia.setLeft(event.originalEvent.touches[0].pageX + leftDiferenca2);",
+          "    }",
+          "});"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  },
+  {
+    "event": "UcPopupMerge.onTouchStart",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "//var index = TcHmi.Symbol.readEx('%pp%stPartida::En::i%/pp%');",
+          "var nome = 'UcPopupMerge';//+ index;",
+          "var objeto = TcHmi.Controls.get(nome);",
+          "",
+          "if (objeto === undefined){",
+          "\tnome = 'UcPopupMerge';",
+          "};",
+          "",
+          "var instancia = TcHmi.Controls.get(nome);",
+          "",
+          "var evento;",
+          "",
+          "var leftPop = 0;",
+          "var topPop = 0;",
+          "var leftMouse = 0;",
+          "var topMouse = 0;",
+          "",
+          "var leftDiferenca = 0;",
+          "var topDiferenca = 0;",
+          "",
+          "$(\"#\" + nome).on(\"mousedown\", function (event) {",
+          "    evento = true;",
+          "    ",
+          "    leftPop = instancia.getLeft();",
+          "    topPop = instancia.getTop();",
+          "    leftMouse = event.pageX;",
+          "    topMouse = event.pageY;",
+          "",
+          "    leftDiferenca = leftPop - leftMouse;",
+          "    topDiferenca = topPop - topMouse;",
+          "",
+          "});",
+          "",
+          "",
+          "$(\"#\" + nome).on(\"mouseup\", function (event) {",
+          "    evento = false;",
+          "    leftDiferenca = 0;",
+          "    topDiferenca = 0;",
+          "});",
+          "",
+          "$(\"#Desktop\").on(\"mouseleave\", function (event) {",
+          "    evento = false;",
+          "    leftDiferenca = 0;",
+          "    topDiferenca = 0;",
+          "});",
+          "",
+          "$(\"#Desktop\").on(\"mousemove\", function (event) {",
+          "    if (evento) {",
+          "\t\tinstancia.setTop(event.pageY + topDiferenca);",
+          "        instancia.setLeft(event.pageX + leftDiferenca);",
+          "    }",
+          "});",
+          "",
+          "//-----------------------MOUSE----------------------------------------",
+          "",
+          "//-----------------------TOUCH----------------------------------------",
+          "",
+          "document.addEventListener('touchstart', { passive: false });",
+          "document.addEventListener('touchend', { passive: false });",
+          "document.addEventListener('touchmove', { passive: false });",
+          "",
+          "var evento2;",
+          "",
+          "var leftPop2 = 0;",
+          "var topPop2 = 0;",
+          "var leftTouch = 0;",
+          "var topTouch = 0;",
+          "",
+          "var leftDiferenca2 = 0;",
+          "var topDiferenca2 = 0;",
+          "",
+          "$(\"#\" + nome).on(\"touchstart\", function (event) {",
+          "    evento2 = true;",
+          "    leftPop2 = instancia.getLeft();",
+          "    topPop2 = instancia.getTop();",
+          "    leftTouch = event.originalEvent.touches[0].pageX;",
+          "    topTouch = event.originalEvent.touches[0].pageY;",
+          "",
+          "    leftDiferenca2 = leftPop2 - leftTouch;",
+          "    topDiferenca2 = topPop2 - topTouch;",
+          "});",
+          "",
+          "$(\"#\" + nome).on(\"touchend\", function (event) {",
+          "    evento2 = false;",
+          "    leftDiferenca2 = 0;",
+          "    topDiferenca2 = 0;",
+          "});",
+          "",
+          "$(\"#\" + nome).on(\"touchmove\", function (event) {",
+          "    event.preventDefault();",
+          "    if (evento2) {",
+          "        instancia.setTop(event.originalEvent.touches[0].pageY + topDiferenca2);",
+          "        instancia.setLeft(event.originalEvent.touches[0].pageX + leftDiferenca2);",
+          "    }",
+          "});"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(204, 204, 204, 0.8)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 15.0,
+  "topRight": 15.0,
+  "bottomLeft": 15.0,
+  "bottomRight": 15.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+</div>

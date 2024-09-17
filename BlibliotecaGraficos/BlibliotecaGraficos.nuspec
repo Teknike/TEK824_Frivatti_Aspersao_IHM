@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>BlibliotecaGraficos</id>
+    <version>1.0.14</version>
+    <description>Framework para criação de graficos</description>
+    <authors>Tiago Bortolini Cunico</authors>
+    <title>BlibliotecaGraficos</title>
+    <owners>Teknike</owners>
+    <projectUrl>https://github.com/Teknike/Framework_Grafico</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes>Agora no grafico de pizza se tiver uma da estrutura sem dados ele ignora ela e nao mostra nas legendas</releaseNotes>
+    <copyright>Copyright 2023</copyright>
+    <tags>TwinCAT HMI</tags>
+    <license type="expression">MIT</license>
+    <icon>Images/logo.png</icon>
+    <dependencies>
+      <group targetFramework="native1.12-tchmi">
+        <dependency id="Beckhoff.TwinCAT.HMI.Framework" version="12.760.37" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="**\*" target="runtimes\native1.12-tchmi\" exclude=".eslintrc.json;**\*.nuspec;**\*.tpl.json;**\*.hmi*proj;**\~*;**\*.tmp;**\tmp*;**\*.user;**\tsconfig.json;**\*.log;**\*.bak;**\obj\**\*;**\.hmiframework\*;**\.hmiframework\**\*;**\.hmipkgs\**\*;packages.config;packages.xsd;.hmiframework\**\*;.git;.gitignore;.gitattributes" />
+    <file src="images\Logo Folha.gif" target="images\" />
+  </files>
+</package>

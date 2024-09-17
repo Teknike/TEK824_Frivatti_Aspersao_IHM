@@ -1,0 +1,144 @@
+<div id="ucvalvulapropor" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControl" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-left-unit="%" data-tchmi-top-unit="%">
+
+
+<div id="TcHmiImage_75" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-left="-8" data-tchmi-left-unit="%" data-tchmi-top="13" data-tchmi-top-unit="%" data-tchmi-src="Imports/Images/proporcionalbranca.png" data-tchmi-width="98.8" data-tchmi-width-unit="%" data-tchmi-height="87.0" data-tchmi-height-unit="%">
+
+
+</div>
+<div id="TcHmiTextblock_2823826" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-left="49.2" data-tchmi-left-unit="%" data-tchmi-text="%f%TcHmi.Functions.Beckhoff.GaugeValueFormatter(%pp%StValvulaproporcional::rPorcentSaida%/pp%, 1)   +&quot; %&quot;%/f%" data-tchmi-top="22.8" data-tchmi-top-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="14" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-width="50.8" data-tchmi-height="20.8" data-tchmi-text-font-weight="Bold" data-tchmi-text-vertical-alignment="Center">
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(255, 255, 255, 1)"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+</div>
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%pp%StValvulaproporcional::iStsValvula%/pp%",
+    "actions": [
+      {
+        "objectType": "SwitchCase",
+        "active": true,
+        "compare": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/INT",
+          "symbolExpression": "%pp%StValvulaproporcional::iStsValvula%/pp%"
+        },
+        "cases": [
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/INT",
+              "value": 1
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiImage_75::Src%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Path",
+                  "value": "Imports/Images/proporcionalbranca.png"
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/INT",
+              "value": 2
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiImage_75::Src%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Path",
+                  "value": "Imports/Images/proporcionalazul.png"
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.Log",
+        "fnParams": [
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/TcHmi.Functions.Beckhoff.Log.Level",
+            "value": "Error"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%pp%StValvulaproporcional::iStsValvula%/pp%"
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "ucvalvulapropor.onMouseClick",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "// lê o nome da Valvulas",
+          "var IndexValvula = TcHmi.Symbol.readEx('%pp%iIndex%/pp%');",
+          "console.log(IndexValvula);",
+          "//console.log(PopUp);",
+          "  try {",
+          "\t",
+          "\t// faz o binding com a struct do motor\t",
+          "\tvar ItemProperty = 'stValvula';",
+          "\tvar UserControl = TcHmi.Controls.get('UcPopUpValvulaProporcional');",
+          "\tvar Variavel = \"%s%PLC1.\" + \"GVL_Valvulas\" + \".\" + \"ValProp\" + \"[\" + IndexValvula + \"]\" + \"|BindingMode=TwoWay%/s%\";",
+          "\t",
+          "\t",
+          "\t\tTcHmi.Binding.createEx2(Variavel, ItemProperty, UserControl);",
+          "\t\t",
+          "\t\t\t   } catch (error) {",
+          "\t\t\t       alert(\"Erro no binding\");",
+          "\t\t\t       console.log(error.message);",
+          "\t\t\t       console.log(Variavel);",
+          "\t\t\t       console.log(ItemProperty);",
+          "\t\t\t       console.log(UserControl);",
+          "\t\t\t   }",
+          "",
+          "",
+          "UserControl.setTop(50);",
+          "UserControl.setLeft(50);",
+          "$(\"#UcPopUpValvulaProporcional\").slideDown('slow');",
+          ""
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+</div>

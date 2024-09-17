@@ -1,0 +1,39 @@
+{
+  "parameters": [
+    {
+      "name": "data-tchmi-stvirador",
+      "displayName": "stVirador",
+      "visible": true,
+      "type": "tchmi:server#/definitions/PLC1.st_Virador",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "stVirador",
+      "propertySetterName": "setStVirador",
+      "propertyGetterName": "getStVirador",
+      "refTo": ""
+    },
+    {
+      "name": "data-tchmi-stnome",
+      "displayName": "stNome",
+      "visible": true,
+      "type": "tchmi:general#/definitions/String",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "stNome",
+      "propertySetterName": "setStNome",
+      "propertyGetterName": "getStNome",
+      "refTo": ""
+    }
+  ],
+  "virtualRights": [],
+  "$schema": "./../../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.756.1/runtimes/native1.12-tchmi/Schema/UserControlConfig.Schema.json",
+  "description": ""
+}

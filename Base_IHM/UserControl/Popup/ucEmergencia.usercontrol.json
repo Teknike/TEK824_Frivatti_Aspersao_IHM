@@ -1,0 +1,39 @@
+{
+  "parameters": [
+    {
+      "name": "data-tchmi-emergencia",
+      "displayName": "Emergencia",
+      "visible": true,
+      "type": "tchmi:server#/definitions/PLC1.Teknike_Geral.st_Emergencia",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "Emergencia",
+      "propertySetterName": "setEmergencia",
+      "propertyGetterName": "getEmergencia",
+      "refTo": ""
+    },
+    {
+      "name": "data-tchmi-ihora",
+      "displayName": "iHora",
+      "visible": true,
+      "type": "tchmi:general#/definitions/INT",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "iHora",
+      "propertySetterName": "setIHora",
+      "propertyGetterName": "getIHora",
+      "refTo": ""
+    }
+  ],
+  "virtualRights": [],
+  "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.756.1/runtimes/native1.12-tchmi/Schema/UserControlConfig.Schema.json",
+  "description": ""
+}

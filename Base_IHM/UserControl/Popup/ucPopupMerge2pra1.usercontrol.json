@@ -1,0 +1,23 @@
+{
+  "parameters": [
+    {
+      "name": "data-tchmi-stmerge2p1",
+      "displayName": "stMerge2P1",
+      "visible": true,
+      "type": "tchmi:server#/definitions/PLC1.Teknike_Intralogistica.st_Merge2p1",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "stMerge2P1",
+      "propertySetterName": "setStMerge2P1",
+      "propertyGetterName": "getStMerge2P1",
+      "refTo": ""
+    }
+  ],
+  "virtualRights": [],
+  "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.758.8/runtimes/native1.12-tchmi/Schema/UserControlConfig.Schema.json",
+  "description": ""
+}

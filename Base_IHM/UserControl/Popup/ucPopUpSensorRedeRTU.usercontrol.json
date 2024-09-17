@@ -1,0 +1,57 @@
+{
+  "parameters": [
+    {
+      "name": "data-tchmi-stanalogica",
+      "displayName": "stAnalogica",
+      "visible": true,
+      "type": "tchmi:server#/definitions/PLC1.Teknike_Sensores.st_SensorAnalogico",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "stAnalogica",
+      "propertySetterName": "setStAnalogica",
+      "propertyGetterName": "getStAnalogica",
+      "refTo": ""
+    },
+    {
+      "name": "data-tchmi-escolhe",
+      "displayName": "Escolhe",
+      "visible": true,
+      "type": "tchmi:general#/definitions/BOOL",
+      "category": "",
+      "description": "",
+      "defaultValue": false,
+      "defaultValueInternal": false,
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "Escolhe",
+      "propertySetterName": "setEscolhe",
+      "propertyGetterName": "getEscolhe",
+      "refTo": ""
+    },
+    {
+      "name": "data-tchmi-strtu",
+      "displayName": "stRTU",
+      "visible": true,
+      "type": "tchmi:server#/definitions/PLC1.Teknike_Sensores.st_N322_485_Novus",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "stRTU",
+      "propertySetterName": "setStRTU",
+      "propertyGetterName": "getStRTU",
+      "refTo": ""
+    }
+  ],
+  "virtualRights": [],
+  "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.754.4/runtimes/native1.12-tchmi/Schema/UserControlConfig.Schema.json",
+  "description": ""
+}

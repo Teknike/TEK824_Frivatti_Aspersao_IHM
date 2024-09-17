@@ -1,0 +1,23 @@
+{
+  "parameters": [
+    {
+      "name": "data-tchmi-stcsv",
+      "displayName": "stCSV",
+      "visible": true,
+      "type": "tchmi:server#/definitions/PLC1.Teknike_Geral.st_ControleCSV",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "stCSV",
+      "propertySetterName": "setStCSV",
+      "propertyGetterName": "getStCSV",
+      "refTo": ""
+    }
+  ],
+  "virtualRights": [],
+  "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.754.4/runtimes/native1.12-tchmi/Schema/UserControlConfig.Schema.json",
+  "description": ""
+}

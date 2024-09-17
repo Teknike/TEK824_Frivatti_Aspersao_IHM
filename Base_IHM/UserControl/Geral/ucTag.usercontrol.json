@@ -1,0 +1,73 @@
+{
+  "parameters": [
+    {
+      "name": "data-tchmi-texto",
+      "displayName": "Texto",
+      "visible": true,
+      "type": "tchmi:general#/definitions/String",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "Texto",
+      "propertySetterName": "setTexto",
+      "propertyGetterName": "getTexto",
+      "refTo": ""
+    },
+    {
+      "name": "data-tchmi-visivel",
+      "displayName": "Visivel",
+      "visible": true,
+      "type": "tchmi:general#/definitions/BOOL",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "Visivel",
+      "propertySetterName": "setVisivel",
+      "propertyGetterName": "getVisivel",
+      "refTo": ""
+    },
+    {
+      "name": "data-tchmi-textcolor",
+      "displayName": "TextColor",
+      "visible": true,
+      "type": "tchmi:framework#/definitions/Color",
+      "category": "",
+      "description": "",
+      "defaultValue": null,
+      "defaultValueInternal": null,
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "TextColor",
+      "propertySetterName": "setTextColor",
+      "propertyGetterName": "getTextColor",
+      "refTo": ""
+    },
+    {
+      "name": "data-tchmi-fontsize",
+      "displayName": "FontSize",
+      "visible": true,
+      "type": "tchmi:framework#/definitions/MeasurementValue",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "FontSize",
+      "propertySetterName": "setFontSize",
+      "propertyGetterName": "getFontSize",
+      "refTo": ""
+    }
+  ],
+  "virtualRights": [],
+  "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.754.4/runtimes/native1.12-tchmi/Schema/UserControlConfig.Schema.json",
+  "description": ""
+}

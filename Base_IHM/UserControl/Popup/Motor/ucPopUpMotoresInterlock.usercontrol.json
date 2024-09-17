@@ -1,0 +1,41 @@
+{
+  "parameters": [
+    {
+      "name": "data-tchmi-stpartida",
+      "displayName": "stPartida",
+      "allowSymbolExpressionsInObject": false,
+      "visible": true,
+      "type": "tchmi:server#/definitions/PLC1.Teknike_Partidas.st_Partida",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "stPartida",
+      "propertySetterName": "setStPartida",
+      "propertyGetterName": "getStPartida",
+      "refTo": ""
+    },
+    {
+      "name": "data-tchmi-xnomeinterlock",
+      "displayName": "xNomeInterlock",
+      "allowSymbolExpressionsInObject": false,
+      "visible": true,
+      "type": "tchmi:general#/definitions/String",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "xNomeInterlock",
+      "propertySetterName": "setXNomeInterlock",
+      "propertyGetterName": "getXNomeInterlock",
+      "refTo": ""
+    }
+  ],
+  "virtualRights": [],
+  "$schema": "./../../../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.756.1/runtimes/native1.12-tchmi/Schema/UserControlConfig.Schema.json",
+  "description": ""
+}

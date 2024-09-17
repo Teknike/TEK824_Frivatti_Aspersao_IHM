@@ -1,0 +1,41 @@
+{
+  "parameters": [
+    {
+      "name": "data-tchmi-stvalvula",
+      "displayName": "stValvula",
+      "allowSymbolExpressionsInObject": false,
+      "visible": true,
+      "type": "tchmi:server#/definitions/PLC1.Teknike_Geral.st_Valvula",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "stValvula",
+      "propertySetterName": "setStValvula",
+      "propertyGetterName": "getStValvula",
+      "refTo": ""
+    },
+    {
+      "name": "data-tchmi-stcontrolevalvula",
+      "displayName": "stControleValvula",
+      "allowSymbolExpressionsInObject": false,
+      "visible": true,
+      "type": "tchmi:server#/definitions/PLC1.Teknike_Aspersao.st_ControleValvula",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "stControleValvula",
+      "propertySetterName": "setStControleValvula",
+      "propertyGetterName": "getStControleValvula",
+      "refTo": ""
+    }
+  ],
+  "virtualRights": [],
+  "$schema": "./../../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.760.48/runtimes/native1.12-tchmi/Schema/UserControlConfig.Schema.json",
+  "description": ""
+}

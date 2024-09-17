@@ -1,0 +1,698 @@
+<div id="ucPopUpSensorDigital_2" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControl" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="550" data-tchmi-height="260" data-tchmi-width-unit="px" data-tchmi-height-unit="px" data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px">
+
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(204, 204, 204, 0.9411764)"
+}
+</script>
+<div id="btFecharValvula_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="33" data-tchmi-height-unit="px" data-tchmi-left="510" data-tchmi-left-unit="px" data-tchmi-text="X" data-tchmi-top="-1" data-tchmi-top-unit="px" data-tchmi-width="41" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-text-font-size-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="1" data-tchmi-text-font-size="20">
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "btFechar_1.onMouseClick",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "//var UserControl = TcHmi.Controls.get(getId());\n//$('#'+ UserControl).slideUp('slow');\n$('#UcPopUpMotores').slideUp('slow');"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  },
+  {
+    "event": "btFecharValvula_1.onMouseClick",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var desktop = TcHmi.Controls.get('Desktop');\nvar index = TcHmi.Symbol.readEx('%pp%stSensor::en::i%/pp%');\nvar nome = 'UcPopUpSensorDigital'+ index;\nvar objeto = TcHmi.Controls.get(nome);\n\nif (objeto != undefined){\n\t$('#'+ nome).slideUp('slow');\n\tdesktop.removeChild(objeto);\n\tobjeto.destroy();\n}else{\n\t$('#UcPopUpSensorDigital').slideUp('slow');\n}"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+</div>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 10.0,
+  "topRight": 10.0,
+  "bottomLeft": 10.0,
+  "bottomRight": 10.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+<div id="retSinalDoSensor" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="91" data-tchmi-left-unit="px" data-tchmi-top="58" data-tchmi-top-unit="px" data-tchmi-width="35" data-tchmi-width-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px">
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
+  {
+    "event": "%pp%stSensor::en::xSinalSensor%/pp%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "symbolExpression": "%pp%stSensor::en::xSinalSensor%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%retSinalDoSensor::FillColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": {
+                    "color": "rgba(0, 94, 0, 1)"
+                  }
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%retSinalDoSensor::FillColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": null
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]</script>
+</div>
+<div id="retObjPresente" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="424" data-tchmi-left-unit="px" data-tchmi-top="58" data-tchmi-top-unit="px" data-tchmi-width="35" data-tchmi-width-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px">
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
+  {
+    "event": "%pp%stSensor::sa::xObjPresente%/pp%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "symbolExpression": "%pp%stSensor::sa::xObjPresente%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%retObjPresente::FillColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": {
+                    "color": "rgba(0, 94, 0, 1)"
+                  }
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%retObjPresente::FillColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": null
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]</script>
+</div>
+<div id="btNFNA_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="225" data-tchmi-left-unit="px" data-tchmi-text="NA" data-tchmi-top="50" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-state-symbol="%pp%stSensor::config::xNF%/pp%" data-tchmi-text-font-size-unit="px" data-tchmi-text-font-size="18" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
+  {
+    "event": "%pp%stSensor::config::xNF%/pp%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "symbolExpression": "%pp%stSensor::config::xNF%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%btNFNA_1::Text%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "NF"
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%btNFNA_1::Text%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "NA"
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 10.0,
+  "topRight": 10.0,
+  "bottomLeft": 10.0,
+  "bottomRight": 10.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+{
+  "left": "Solid",
+  "right": "Solid",
+  "top": "Solid",
+  "bottom": "Solid"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 2,
+  "right": 2,
+  "top": 2,
+  "bottom": 2,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "operate",
+    "group": "Supervisao",
+    "permission": "Deny"
+  }
+]
+</script>
+</div>
+<div id="TcHmiLine_50" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLine" data-tchmi-height="7" data-tchmi-height-unit="px" data-tchmi-left="126" data-tchmi-left-unit="px" data-tchmi-top="75" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-x1="0" data-tchmi-x2="100" data-tchmi-y1="0" data-tchmi-y2="0" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-x1-unit="px" data-tchmi-y1-unit="px" data-tchmi-x2-unit="px" data-tchmi-y2-unit="px">
+</div>
+<div id="TcHmiLine_23" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLine" data-tchmi-height="7" data-tchmi-height-unit="px" data-tchmi-left="324" data-tchmi-left-unit="px" data-tchmi-top="75" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-x1="0" data-tchmi-x2="100" data-tchmi-y1="0" data-tchmi-y2="0" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-x1-unit="px" data-tchmi-y1-unit="px" data-tchmi-x2-unit="px" data-tchmi-y2-unit="px">
+</div>
+<div id="TcHmiTextblock_2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="66" data-tchmi-left-unit="px" data-tchmi-text="Sinal Sensor" data-tchmi-top="93" data-tchmi-top-unit="px" data-tchmi-width="90" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-text-font-size-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="15">
+</div>
+<div id="TcHmiTextblock_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="392" data-tchmi-left-unit="px" data-tchmi-text="Objeto Presente" data-tchmi-top="93" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-text-font-size-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="15">
+</div>
+<div id="TcHmiTextblock_4" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="341" data-tchmi-left-unit="px" data-tchmi-top="155" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-text-font-size-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="15" data-tchmi-text="%f%&quot;Contagem:  &quot; +  %pp%stSensor::sa::uiContagem%/pp%%/f%">
+</div>
+<div id="brResetContador_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="441" data-tchmi-left-unit="px" data-tchmi-text="Reset Contador" data-tchmi-top="150" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-text-font-size-unit="px" data-tchmi-text-font-size="15" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-state-symbol="%pp%stSensor::en::xResetContagem%/pp%">
+</div>
+<div id="TcHmiTextblock_5" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="45" data-tchmi-height-unit="px" data-tchmi-left="27" data-tchmi-left-unit="px" data-tchmi-text="Tempo de Confirmação ON:" data-tchmi-top="150" data-tchmi-top-unit="px" data-tchmi-width="178" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-text-font-size-unit="px" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="15">
+</div>
+<div id="TcHmiTextblock_6" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="45" data-tchmi-height-unit="px" data-tchmi-left="27" data-tchmi-left-unit="px" data-tchmi-text="Tempo de Confirmação OFF:" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="178" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-text-font-size-unit="px" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="15">
+</div>
+<div id="TcHmiTextbox_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="32" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="550" data-tchmi-width-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-text-font-size-unit="px" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-font-size="25" data-tchmi-text="%pp%stSensor::config::sNome_Funcao%/pp%">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "left": 15,
+  "right": 3,
+  "top": 3,
+  "bottom": 3,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiTextbox_3.onUserInteractionFinished",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "$('#Teclado2').animate({",
+          "\t\tleft:'375px',",
+          "\t\ttop:'-3000px'",
+          "\t});",
+          "\t",
+          "var objeto = TcHmi.Controls.get('Teclado2');",
+          "",
+          "objeto.setTop(-3000);",
+          "objeto.setLeft(375);"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  },
+  {
+    "event": "TcHmiTextbox_3.onMouseClick",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "$('#Teclado2').animate({",
+          "\t\tleft:'375px',",
+          "\t\ttop:'0px'",
+          "\t});",
+          "\t",
+          "var objeto = TcHmi.Controls.get('Teclado2');",
+          "",
+          "objeto.setTop(0);",
+          "objeto.setLeft(375);"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(74, 71, 71, 1)"
+}
+</script>
+</div>
+<div id="btToque3s_26" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="434" data-tchmi-left-unit="px" data-tchmi-text="Salvar Nome" data-tchmi-top="200" data-tchmi-top-unit="px" data-tchmi-width="110" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-text-font-size-unit="px" data-tchmi-text-font-size="15" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="1" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px">
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 10.0,
+  "topRight": 10.0,
+  "bottomLeft": 10.0,
+  "bottomRight": 10.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 1,
+  "right": 1,
+  "top": 1,
+  "bottom": 1,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+{
+  "left": "Solid",
+  "right": "Solid",
+  "top": "Solid",
+  "bottom": "Solid"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
+  {
+    "event": "btToque3s_26.onMouseClick",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%pp%stSensor::config::sNome_Funcao%/pp%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%ctrl%TcHmiTextbox_3::Text%/ctrl%"
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]</script>
+</div>
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "ucPopUpSensorDigital_2.onMouseEnter",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var index = TcHmi.Symbol.readEx('%pp%stSensor::en::i%/pp%');",
+          "var nome = 'UcPopUpSensorDigital'+ index;",
+          "var objeto = TcHmi.Controls.get(nome);",
+          "",
+          "if (objeto === undefined){",
+          "\tnome = 'UcPopUpSensorDigital';",
+          "}",
+          "",
+          "var instancia = TcHmi.Controls.get(nome);",
+          "",
+          "var evento;",
+          "",
+          "var leftPop = 0;",
+          "var topPop = 0;",
+          "var leftMouse = 0;",
+          "var topMouse = 0;",
+          "",
+          "var leftDiferenca = 0;",
+          "var topDiferenca = 0;",
+          "",
+          "$(\"#\" + nome).on(\"mousedown\", function (event) {",
+          "    evento = true;",
+          "    ",
+          "    leftPop = instancia.getLeft();",
+          "    topPop = instancia.getTop();",
+          "    leftMouse = event.pageX;",
+          "    topMouse = event.pageY;",
+          "",
+          "    leftDiferenca = leftPop - leftMouse;",
+          "    topDiferenca = topPop - topMouse;",
+          "",
+          "});",
+          "",
+          "",
+          "$(\"#\" + nome).on(\"mouseup\", function (event) {",
+          "    evento = false;",
+          "    leftDiferenca = 0;",
+          "    topDiferenca = 0;",
+          "});",
+          "",
+          "$(\"#Desktop\").on(\"mouseleave\", function (event) {",
+          "    evento = false;",
+          "    leftDiferenca = 0;",
+          "    topDiferenca = 0;",
+          "});",
+          "",
+          "$(\"#Desktop\").on(\"mousemove\", function (event) {",
+          "    if (evento) {",
+          "\t\tinstancia.setTop(event.pageY + topDiferenca);",
+          "        instancia.setLeft(event.pageX + leftDiferenca);",
+          "    }",
+          "});",
+          "",
+          "//-----------------------MOUSE----------------------------------------",
+          "",
+          "//-----------------------TOUCH----------------------------------------",
+          "",
+          "document.addEventListener('touchstart', { passive: false });",
+          "document.addEventListener('touchend', { passive: false });",
+          "document.addEventListener('touchmove', { passive: false });",
+          "",
+          "var evento2;",
+          "",
+          "var leftPop2 = 0;",
+          "var topPop2 = 0;",
+          "var leftTouch = 0;",
+          "var topTouch = 0;",
+          "",
+          "var leftDiferenca2 = 0;",
+          "var topDiferenca2 = 0;",
+          "",
+          "$(\"#\" + nome).on(\"touchstart\", function (event) {",
+          "    evento2 = true;",
+          "    leftPop2 = instancia.getLeft();",
+          "    topPop2 = instancia.getTop();",
+          "    leftTouch = event.originalEvent.touches[0].pageX;",
+          "    topTouch = event.originalEvent.touches[0].pageY;",
+          "",
+          "    leftDiferenca2 = leftPop2 - leftTouch;",
+          "    topDiferenca2 = topPop2 - topTouch;",
+          "});",
+          "",
+          "$(\"#\" + nome).on(\"touchend\", function (event) {",
+          "    evento2 = false;",
+          "    leftDiferenca2 = 0;",
+          "    topDiferenca2 = 0;",
+          "});",
+          "",
+          "$(\"#\" + nome).on(\"touchmove\", function (event) {",
+          "    event.preventDefault();",
+          "    if (evento2) {",
+          "        instancia.setTop(event.originalEvent.touches[0].pageY + topDiferenca2);",
+          "        instancia.setLeft(event.originalEvent.touches[0].pageX + leftDiferenca2);",
+          "    }",
+          "});",
+          "",
+          "//-----------------------TOUCH----------------------------------------"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  },
+  {
+    "event": "ucPopUpSensorDigital_2.onTouchStart",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var index = TcHmi.Symbol.readEx('%pp%stSensor::en::i%/pp%');",
+          "var nome = 'UcPopUpSensorDigital'+ index;",
+          "var objeto = TcHmi.Controls.get(nome);",
+          "",
+          "if (objeto === undefined){",
+          "\tnome = 'UcPopUpSensorDigital';",
+          "}",
+          "",
+          "var instancia = TcHmi.Controls.get(nome);",
+          "",
+          "var evento;",
+          "",
+          "var leftPop = 0;",
+          "var topPop = 0;",
+          "var leftMouse = 0;",
+          "var topMouse = 0;",
+          "",
+          "var leftDiferenca = 0;",
+          "var topDiferenca = 0;",
+          "",
+          "$(\"#\" + nome).on(\"mousedown\", function (event) {",
+          "    evento = true;",
+          "    ",
+          "    leftPop = instancia.getLeft();",
+          "    topPop = instancia.getTop();",
+          "    leftMouse = event.pageX;",
+          "    topMouse = event.pageY;",
+          "",
+          "    leftDiferenca = leftPop - leftMouse;",
+          "    topDiferenca = topPop - topMouse;",
+          "",
+          "});",
+          "",
+          "",
+          "$(\"#\" + nome).on(\"mouseup\", function (event) {",
+          "    evento = false;",
+          "    leftDiferenca = 0;",
+          "    topDiferenca = 0;",
+          "});",
+          "",
+          "$(\"#Desktop\").on(\"mouseleave\", function (event) {",
+          "    evento = false;",
+          "    leftDiferenca = 0;",
+          "    topDiferenca = 0;",
+          "});",
+          "",
+          "$(\"#Desktop\").on(\"mousemove\", function (event) {",
+          "    if (evento) {",
+          "\t\tinstancia.setTop(event.pageY + topDiferenca);",
+          "        instancia.setLeft(event.pageX + leftDiferenca);",
+          "    }",
+          "});",
+          "",
+          "//-----------------------MOUSE----------------------------------------",
+          "",
+          "//-----------------------TOUCH----------------------------------------",
+          "",
+          "document.addEventListener('touchstart', { passive: false });",
+          "document.addEventListener('touchend', { passive: false });",
+          "document.addEventListener('touchmove', { passive: false });",
+          "",
+          "var evento2;",
+          "",
+          "var leftPop2 = 0;",
+          "var topPop2 = 0;",
+          "var leftTouch = 0;",
+          "var topTouch = 0;",
+          "",
+          "var leftDiferenca2 = 0;",
+          "var topDiferenca2 = 0;",
+          "",
+          "$(\"#\" + nome).on(\"touchstart\", function (event) {",
+          "    evento2 = true;",
+          "    leftPop2 = instancia.getLeft();",
+          "    topPop2 = instancia.getTop();",
+          "    leftTouch = event.originalEvent.touches[0].pageX;",
+          "    topTouch = event.originalEvent.touches[0].pageY;",
+          "",
+          "    leftDiferenca2 = leftPop2 - leftTouch;",
+          "    topDiferenca2 = topPop2 - topTouch;",
+          "});",
+          "",
+          "$(\"#\" + nome).on(\"touchend\", function (event) {",
+          "    evento2 = false;",
+          "    leftDiferenca2 = 0;",
+          "    topDiferenca2 = 0;",
+          "});",
+          "",
+          "$(\"#\" + nome).on(\"touchmove\", function (event) {",
+          "    event.preventDefault();",
+          "    if (evento2) {",
+          "        instancia.setTop(event.originalEvent.touches[0].pageY + topDiferenca2);",
+          "        instancia.setLeft(event.originalEvent.touches[0].pageX + leftDiferenca2);",
+          "    }",
+          "});",
+          "",
+          "//-----------------------TOUCH----------------------------------------"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+<div id="TcHmiNumericInput_163" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="2" data-tchmi-height="45" data-tchmi-height-unit="px" data-tchmi-left="205" data-tchmi-left-unit="px" data-tchmi-max-value="30" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="150" data-tchmi-top-unit="px" data-tchmi-value="%pp%stSensor::config::rTmpOn|BindingMode=TwoWay%/pp%" data-tchmi-width="101" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="25">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+</div>
+<div id="TcHmiNumericInput_164" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="2" data-tchmi-height="45" data-tchmi-height-unit="px" data-tchmi-left="205" data-tchmi-left-unit="px" data-tchmi-max-value="30" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-value="%pp%stSensor::config::rTmpOff|BindingMode=TwoWay%/pp%" data-tchmi-width="101" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="25">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+</div>
+<div id="TcHmiTextblock_2350" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="45" data-tchmi-height-unit="px" data-tchmi-left="309" data-tchmi-left-unit="px" data-tchmi-text="S" data-tchmi-top="150" data-tchmi-top-unit="px" data-tchmi-width="19" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-text-font-size-unit="px" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="20">
+</div>
+<div id="TcHmiTextblock_2351" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="45" data-tchmi-height-unit="px" data-tchmi-left="306" data-tchmi-left-unit="px" data-tchmi-text="S" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="19" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-text-font-size-unit="px" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="20">
+</div>
+</div>

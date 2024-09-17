@@ -1,0 +1,39 @@
+{
+  "parameters": [
+    {
+      "name": "data-tchmi-stdestampadora",
+      "displayName": "stDestampadora",
+      "visible": true,
+      "type": "tchmi:server#/definitions/PLC1.st_Destampadoras",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "stDestampadora",
+      "propertySetterName": "setStDestampadora",
+      "propertyGetterName": "getStDestampadora",
+      "refTo": ""
+    },
+    {
+      "name": "data-tchmi-stnome",
+      "displayName": "stNome",
+      "visible": true,
+      "type": "tchmi:general#/definitions/String",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "stNome",
+      "propertySetterName": "setStNome",
+      "propertyGetterName": "getStNome",
+      "refTo": ""
+    }
+  ],
+  "virtualRights": [],
+  "$schema": "./../../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.756.1/runtimes/native1.12-tchmi/Schema/UserControlConfig.Schema.json",
+  "description": ""
+}

@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# TcXaeShell Solution File, Format Version 11.00
+VisualStudioVersion = 15.0.28307.1300
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FE7A1B72-C5B7-4D7C-BB7D-76384D4DE8E1}") = "Base_IHM", "Base_IHM\Base_IHM.hmiproj", "{1F622D47-16A4-4D6A-B629-68633021574C}"
+EndProject
+Project("{3B740506-4966-4147-AB1F-357FE08946EA}") = "BlibliotecaGraficos", "BlibliotecaGraficos\BlibliotecaGraficos.hmiextproj", "{908B1551-7B3E-40CF-9AD8-7B1A159FCA31}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|TwinCAT HMI = Debug|TwinCAT HMI
+		Debug|TwinCAT RT (x64) = Debug|TwinCAT RT (x64)
+		Release|TwinCAT HMI = Release|TwinCAT HMI
+		Release|TwinCAT RT (x64) = Release|TwinCAT RT (x64)
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F622D47-16A4-4D6A-B629-68633021574C}.Debug|TwinCAT HMI.ActiveCfg = Debug|TwinCAT HMI
+		{1F622D47-16A4-4D6A-B629-68633021574C}.Debug|TwinCAT HMI.Build.0 = Debug|TwinCAT HMI
+		{1F622D47-16A4-4D6A-B629-68633021574C}.Debug|TwinCAT RT (x64).ActiveCfg = Debug|TwinCAT HMI
+		{1F622D47-16A4-4D6A-B629-68633021574C}.Release|TwinCAT HMI.ActiveCfg = Release|TwinCAT HMI
+		{1F622D47-16A4-4D6A-B629-68633021574C}.Release|TwinCAT HMI.Build.0 = Release|TwinCAT HMI
+		{1F622D47-16A4-4D6A-B629-68633021574C}.Release|TwinCAT RT (x64).ActiveCfg = Release|TwinCAT HMI
+		{908B1551-7B3E-40CF-9AD8-7B1A159FCA31}.Debug|TwinCAT HMI.ActiveCfg = Debug|TwinCAT HMI
+		{908B1551-7B3E-40CF-9AD8-7B1A159FCA31}.Debug|TwinCAT HMI.Build.0 = Debug|TwinCAT HMI
+		{908B1551-7B3E-40CF-9AD8-7B1A159FCA31}.Debug|TwinCAT RT (x64).ActiveCfg = Debug|TwinCAT HMI
+		{908B1551-7B3E-40CF-9AD8-7B1A159FCA31}.Release|TwinCAT HMI.ActiveCfg = Release|TwinCAT HMI
+		{908B1551-7B3E-40CF-9AD8-7B1A159FCA31}.Release|TwinCAT HMI.Build.0 = Release|TwinCAT HMI
+		{908B1551-7B3E-40CF-9AD8-7B1A159FCA31}.Release|TwinCAT RT (x64).ActiveCfg = Release|TwinCAT HMI
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F33CFB2A-7596-4B94-97BC-10E9E5C0E654}
+	EndGlobalSection
+EndGlobal

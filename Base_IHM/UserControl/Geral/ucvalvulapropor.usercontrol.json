@@ -1,0 +1,41 @@
+{
+  "parameters": [
+    {
+      "name": "data-tchmi-stvalvulaproporcional",
+      "displayName": "StValvulaproporcional",
+      "allowSymbolExpressionsInObject": false,
+      "visible": true,
+      "type": "tchmi:server#/definitions/PLC1.st_ValvulaProporcional",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "StValvulaproporcional",
+      "propertySetterName": "setStValvulaproporcional",
+      "propertyGetterName": "getStValvulaproporcional",
+      "refTo": ""
+    },
+    {
+      "name": "data-tchmi-iindex",
+      "displayName": "iIndex",
+      "allowSymbolExpressionsInObject": false,
+      "visible": true,
+      "type": "tchmi:general#/definitions/INT",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "iIndex",
+      "propertySetterName": "setIIndex",
+      "propertyGetterName": "getIIndex",
+      "refTo": ""
+    }
+  ],
+  "virtualRights": [],
+  "$schema": "./../../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.760.48/runtimes/native1.12-tchmi/Schema/UserControlConfig.Schema.json",
+  "description": ""
+}

@@ -1,0 +1,23 @@
+{
+  "parameters": [
+    {
+      "name": "data-tchmi-leitor",
+      "displayName": "Leitor",
+      "visible": true,
+      "type": "tchmi:server#/definitions/PLC1.Teknike_Sensores.ST_SR2000",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "Leitor",
+      "propertySetterName": "setLeitor",
+      "propertyGetterName": "getLeitor",
+      "refTo": ""
+    }
+  ],
+  "virtualRights": [],
+  "$schema": "./../Packages/Beckhoff.TwinCAT.HMI.Framework.12.754.4/runtimes/native1.12-tchmi/Schema/UserControlConfig.Schema.json",
+  "description": ""
+}

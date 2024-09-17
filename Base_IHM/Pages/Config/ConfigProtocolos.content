@@ -1,0 +1,2170 @@
+<div id="ListaDeMotores_1" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="1670" data-tchmi-height="1040" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-width-unit="px" data-tchmi-height-unit="px" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-opacity="1" data-tchmi-background-image-width-unit="px" data-tchmi-background-image-height-unit="px" data-tchmi-width-mode="Value" data-tchmi-height-mode="Value" data-tchmi-creator-viewport-height="1080" data-tchmi-is-enabled="true" data-tchmi-creator-viewport-width="1920" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "operate",
+    "group": "Administracao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Manutencao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Operacao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Visualizacao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Administracao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Manutencao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Operacao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Visualizacao",
+    "permission": "Allow"
+  }
+]
+</script>
+<div id="TcHmiCombobox_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCombobox" data-tchmi-auto-focus-out="true" data-tchmi-combobox-text="Select" data-tchmi-height="42" data-tchmi-height-unit="px" data-tchmi-left="18" data-tchmi-left-unit="px" data-tchmi-top="16" data-tchmi-top-unit="px" data-tchmi-width="274" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="25" data-tchmi-drop-down-horizontal-alignment="Center" data-tchmi-drop-down-style="Classic" data-tchmi-max-list-height="300" data-tchmi-drop-down-font-size="20">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+
+<script data-tchmi-target-attribute="data-tchmi-src-data" type="application/json">
+    [
+    {
+    "id": 0.0,
+    "text": "%s%PLC1.GVL_Automatico.sNomeProtocoloIHM[0]%/s%"
+    },
+    {
+    "id": 1.0,
+    "text": "%s%PLC1.GVL_Automatico.sNomeProtocoloIHM[1]%/s%"
+    },
+    {
+    "id": 2.0,
+    "text": "%s%PLC1.GVL_Automatico.sNomeProtocoloIHM[2]%/s%"
+    },
+    {
+    "id": 3.0,
+    "text": "%s%PLC1.GVL_Automatico.sNomeProtocoloIHM[3]%/s%"
+    },
+    {
+    "id": 4.0,
+    "text": "%s%PLC1.GVL_Automatico.sNomeProtocoloIHM[4]%/s%"
+    },
+    {
+    "id": 5.0,
+    "text": "%s%PLC1.GVL_Automatico.sNomeProtocoloIHM[5]%/s%"
+    },
+    {
+    "id": 6.0,
+    "text": "%s%PLC1.GVL_Automatico.sNomeProtocoloIHM[6]%/s%"
+    },
+    {
+    "id": 7.0,
+    "text": "%s%PLC1.GVL_Automatico.sNomeProtocoloIHM[7]%/s%"
+    },
+    {
+    "id": 8.0,
+    "text": "%s%PLC1.GVL_Automatico.sNomeProtocoloIHM[8]%/s%"
+    },
+    {
+    "id": 9.0,
+    "text": "%s%PLC1.GVL_Automatico.sNomeProtocoloIHM[9]%/s%"
+    },
+    {
+    "id": 10.0,
+    "text": "%s%PLC1.GVL_Automatico.sNomeProtocoloIHM[10]%/s%"
+    },
+    {
+    "id": 11.0,
+    "text": "%s%PLC1.GVL_Automatico.sNomeProtocoloIHM[11]%/s%"
+    },
+    {
+    "id": 12.0,
+    "text": "%s%PLC1.GVL_Automatico.sNomeProtocoloIHM[12]%/s%"
+    },
+    {
+    "id": 13.0,
+    "text": "%s%PLC1.GVL_Automatico.sNomeProtocoloIHM[13]%/s%"
+    },
+    {
+    "id": 14.0,
+    "text": "%s%PLC1.GVL_Automatico.sNomeProtocoloIHM[14]%/s%"
+    },
+    {
+    "id": 15.0,
+    "text": "%s%PLC1.GVL_Automatico.sNomeProtocoloIHM[15]%/s%"
+    },
+    {
+    "id": 16.0,
+    "text": "%s%PLC1.GVL_Automatico.sNomeProtocoloIHM[16]%/s%"
+    },
+    {
+    "id": 17.0,
+    "text": "%s%PLC1.GVL_Automatico.sNomeProtocoloIHM[17]%/s%"
+    },
+    {
+    "id": 18.0,
+    "text": "%s%PLC1.GVL_Automatico.sNomeProtocoloIHM[18]%/s%"
+    },
+    {
+    "id": 19.0,
+    "text": "%s%PLC1.GVL_Automatico.sNomeProtocoloIHM[19]%/s%"
+    },
+    {
+    "id": 20.0,
+    "text": "%s%PLC1.GVL_Automatico.sNomeProtocoloIHM[20]%/s%"
+    },
+    {
+    "id": 21.0,
+    "text": "%s%PLC1.GVL_Automatico.sNomeProtocoloIHM[21]%/s%"
+    },
+    {
+    "id": 22.0,
+    "text": "%s%PLC1.GVL_Automatico.sNomeProtocoloIHM[22]%/s%"
+    },
+    {
+    "id": 23.0,
+    "text": "%s%PLC1.GVL_Automatico.sNomeProtocoloIHM[23]%/s%"
+    },
+    {
+    "id": 24.0,
+    "text": "%s%PLC1.GVL_Automatico.sNomeProtocoloIHM[24]%/s%"
+    },
+    {
+    "id": 25.0,
+    "text": "%s%PLC1.GVL_Automatico.sNomeProtocoloIHM[25]%/s%"
+    },
+    {
+    "id": 26.0,
+    "text": "%s%PLC1.GVL_Automatico.sNomeProtocoloIHM[26]%/s%"
+    },
+    {
+    "id": 27.0,
+    "text": "%s%PLC1.GVL_Automatico.sNomeProtocoloIHM[27]%/s%"
+    },
+    {
+    "id": 28.0,
+    "text": "%s%PLC1.GVL_Automatico.sNomeProtocoloIHM[28]%/s%"
+    },
+    {
+    "id": 29.0,
+    "text": "%s%PLC1.GVL_Automatico.sNomeProtocoloIHM[29]%/s%"
+    },
+    {
+    "id": 30.0,
+    "text": "%s%PLC1.GVL_Automatico.sNomeProtocoloIHM[30]%/s%"
+    }
+    ]
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiCombobox_1.onSelectionChanged",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var Index = TcHmi.Symbol.readEx('%ctrl%TcHmiCombobox_1::SelectedId%/ctrl%');",
+          "//console.log(Index);",
+          "",
+          "",
+          "TcHmi.Symbol.readEx2('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ID%/s%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%ctrl%tbProtocolo::Text%/ctrl%','P'+data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "",
+          "TcHmi.Symbol.readEx2('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::Nome%/s%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%ctrl%tbDescricao::Text%/ctrl%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "",
+          "TcHmi.Symbol.readEx2('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::NomeIHM%/s%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%ctrl%tbNomeIHM::Text%/ctrl%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "",
+          "TcHmi.Symbol.readEx2('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::Valvulas%/s%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%ctrl%tbVProtocolo::Text%/ctrl%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "",
+          "",
+          "",
+          "",
+          "\t",
+          "",
+          "",
+          "TcHmi.Symbol.readEx2('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET01TON%/s%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%ctrl%ConfigEtapaProtocolo_1::TON%/ctrl%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "TcHmi.Symbol.readEx2('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET01TOFF%/s%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%ctrl%ConfigEtapaProtocolo_1::TOF%/ctrl%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "TcHmi.Symbol.readEx2('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET01NC%/s%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%ctrl%ConfigEtapaProtocolo_1::CICLO%/ctrl%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "",
+          "TcHmi.Symbol.readEx2('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET02TON%/s%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%ctrl%ConfigEtapaProtocolo_2::TON%/ctrl%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "TcHmi.Symbol.readEx2('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET02TOFF%/s%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%ctrl%ConfigEtapaProtocolo_2::TOF%/ctrl%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "TcHmi.Symbol.readEx2('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET02NC%/s%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%ctrl%ConfigEtapaProtocolo_2::CICLO%/ctrl%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "",
+          "TcHmi.Symbol.readEx2('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET03TON%/s%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%ctrl%ConfigEtapaProtocolo_3::TON%/ctrl%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "TcHmi.Symbol.readEx2('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET03TOFF%/s%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%ctrl%ConfigEtapaProtocolo_3::TOF%/ctrl%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "TcHmi.Symbol.readEx2('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET03NC%/s%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%ctrl%ConfigEtapaProtocolo_3::CICLO%/ctrl%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "",
+          "TcHmi.Symbol.readEx2('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET04TON%/s%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%ctrl%ConfigEtapaProtocolo_4::TON%/ctrl%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "TcHmi.Symbol.readEx2('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET04TOFF%/s%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%ctrl%ConfigEtapaProtocolo_4::TOF%/ctrl%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "TcHmi.Symbol.readEx2('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET04NC%/s%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%ctrl%ConfigEtapaProtocolo_4::CICLO%/ctrl%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "",
+          "TcHmi.Symbol.readEx2('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET05TON%/s%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%ctrl%ConfigEtapaProtocolo_5::TON%/ctrl%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "TcHmi.Symbol.readEx2('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET05TOFF%/s%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%ctrl%ConfigEtapaProtocolo_5::TOF%/ctrl%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "TcHmi.Symbol.readEx2('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET05NC%/s%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%ctrl%ConfigEtapaProtocolo_6::CICLO%/ctrl%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "",
+          "TcHmi.Symbol.readEx2('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET06TON%/s%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%ctrl%ConfigEtapaProtocolo_6::TON%/ctrl%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "TcHmi.Symbol.readEx2('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET06TOFF%/s%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%ctrl%ConfigEtapaProtocolo_6::TOF%/ctrl%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "TcHmi.Symbol.readEx2('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET06NC%/s%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%ctrl%ConfigEtapaProtocolo_6::CICLO%/ctrl%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "",
+          "TcHmi.Symbol.readEx2('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET07TON%/s%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%ctrl%ConfigEtapaProtocolo_7::TON%/ctrl%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "TcHmi.Symbol.readEx2('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET07TOFF%/s%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%ctrl%ConfigEtapaProtocolo_7::TOF%/ctrl%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "TcHmi.Symbol.readEx2('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET07NC%/s%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%ctrl%ConfigEtapaProtocolo_7::CICLO%/ctrl%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "",
+          "TcHmi.Symbol.readEx2('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET08TON%/s%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%ctrl%ConfigEtapaProtocolo_8::TON%/ctrl%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "TcHmi.Symbol.readEx2('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET08TOFF%/s%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%ctrl%ConfigEtapaProtocolo_8::TOF%/ctrl%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "TcHmi.Symbol.readEx2('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET08NC%/s%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%ctrl%ConfigEtapaProtocolo_8::CICLO%/ctrl%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "",
+          "TcHmi.Symbol.readEx2('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET09TON%/s%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%ctrl%ConfigEtapaProtocolo_9::TON%/ctrl%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "TcHmi.Symbol.readEx2('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET09TOFF%/s%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%ctrl%ConfigEtapaProtocolo_9::TOF%/ctrl%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "TcHmi.Symbol.readEx2('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET09NC%/s%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%ctrl%ConfigEtapaProtocolo_9::CICLO%/ctrl%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "",
+          "TcHmi.Symbol.readEx2('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET10TON%/s%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%ctrl%ConfigEtapaProtocolo_10::TON%/ctrl%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "TcHmi.Symbol.readEx2('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET10TOFF%/s%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%ctrl%ConfigEtapaProtocolo_10::TOF%/ctrl%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "TcHmi.Symbol.readEx2('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET10NC%/s%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%ctrl%ConfigEtapaProtocolo_10::CICLO%/ctrl%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="TcHmiContainer_169" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="913" data-tchmi-height-unit="px" data-tchmi-left="18" data-tchmi-left-unit="px" data-tchmi-top="78" data-tchmi-top-unit="px" data-tchmi-width="1630" data-tchmi-width-unit="px">
+
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 1,
+  "right": 1,
+  "top": 1,
+  "bottom": 1,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+{
+  "left": "Solid",
+  "right": "Solid",
+  "top": "Solid",
+  "bottom": "Solid"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 20.0,
+  "topRight": 20.0,
+  "bottomLeft": 20.0,
+  "bottomRight": 20.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+<div id="TcHmiTextblock_2381" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="34" data-tchmi-height-unit="px" data-tchmi-left="18" data-tchmi-left-unit="px" data-tchmi-text="Protocolo:" data-tchmi-top="18" data-tchmi-top-unit="px" data-tchmi-width="107" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="25">
+</div>
+<div id="tbProtocolo" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="34" data-tchmi-height-unit="px" data-tchmi-left="127" data-tchmi-left-unit="px" data-tchmi-text="PX" data-tchmi-top="18" data-tchmi-top-unit="px" data-tchmi-width="37" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="25">
+</div>
+<div id="TcHmiTextblock_2383" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="34" data-tchmi-height-unit="px" data-tchmi-left="206" data-tchmi-left-unit="px" data-tchmi-text="Descrição:" data-tchmi-top="18" data-tchmi-top-unit="px" data-tchmi-width="114" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="25">
+</div>
+<div id="tbDescricao" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="34" data-tchmi-height-unit="px" data-tchmi-left="320" data-tchmi-left-unit="px" data-tchmi-text="Não selecionado" data-tchmi-top="18" data-tchmi-top-unit="px" data-tchmi-width="255" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="23">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+</div>
+<div id="TcHmiContainer_170" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="818" data-tchmi-height-unit="px" data-tchmi-left="11" data-tchmi-left-unit="px" data-tchmi-top="78" data-tchmi-top-unit="px" data-tchmi-width="1170" data-tchmi-width-unit="px">
+
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 1,
+  "right": 1,
+  "top": 1,
+  "bottom": 1,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+{
+  "left": "Solid",
+  "right": "Solid",
+  "top": "Solid",
+  "bottom": "Solid"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 20.0,
+  "topRight": 20.0,
+  "bottomLeft": 20.0,
+  "bottomRight": 20.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+
+
+
+
+
+
+
+
+<div id="ConfigEtapaProtocolo_1" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="387" data-tchmi-height-unit="px" data-tchmi-left="12" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Protocolos/ConfigEtapaProtocolo.usercontrol" data-tchmi-top="13" data-tchmi-top-unit="px" data-tchmi-width="193" data-tchmi-width-unit="px" data-tchmi-etapa="Etapa 1">
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%ctrl%ConfigEtapaProtocolo_1::msTotalizador%/ctrl%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%i%MudouEtapa%/i%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%i%MudouEtapa%/i%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": false
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%i%MudouEtapa%/i%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "operate",
+    "group": "Administracao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "CasaMaquinas",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Graficos",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Manutencao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Operacao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Supervisao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Teknike",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Administracao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "CasaMaquinas",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Graficos",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Manutencao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Operacao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Supervisao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Teknike",
+    "permission": "Allow"
+  }
+]
+</script>
+</div>
+<div id="ConfigEtapaProtocolo_2" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="387" data-tchmi-height-unit="px" data-tchmi-left="247" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Protocolos/ConfigEtapaProtocolo.usercontrol" data-tchmi-top="13" data-tchmi-top-unit="px" data-tchmi-width="193" data-tchmi-width-unit="px" data-tchmi-etapa="Etapa 2" data-tchmi-is-enabled="true">
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%ctrl%ConfigEtapaProtocolo_2::msTotalizador%/ctrl%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%i%MudouEtapa%/i%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%i%MudouEtapa%/i%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": false
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%i%MudouEtapa%/i%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "operate",
+    "group": "Administracao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Graficos",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "CasaMaquinas",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Manutencao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Operacao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Supervisao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Teknike",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Administracao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "CasaMaquinas",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Graficos",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Manutencao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Operacao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Supervisao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Teknike",
+    "permission": "Allow"
+  }
+]
+</script>
+</div>
+<div id="ConfigEtapaProtocolo_3" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="387" data-tchmi-height-unit="px" data-tchmi-left="482" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Protocolos/ConfigEtapaProtocolo.usercontrol" data-tchmi-top="13" data-tchmi-top-unit="px" data-tchmi-width="193" data-tchmi-width-unit="px" data-tchmi-etapa="Etapa 3" data-tchmi-is-enabled="true">
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%ctrl%ConfigEtapaProtocolo_3::msTotalizador%/ctrl%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%i%MudouEtapa%/i%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%i%MudouEtapa%/i%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": false
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%i%MudouEtapa%/i%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "operate",
+    "group": "Administracao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Graficos",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "CasaMaquinas",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Manutencao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Operacao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Supervisao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Teknike",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Administracao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "CasaMaquinas",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Graficos",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Manutencao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Operacao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Supervisao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Teknike",
+    "permission": "Allow"
+  }
+]
+</script>
+</div>
+<div id="ConfigEtapaProtocolo_4" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="387" data-tchmi-height-unit="px" data-tchmi-left="717" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Protocolos/ConfigEtapaProtocolo.usercontrol" data-tchmi-top="13" data-tchmi-top-unit="px" data-tchmi-width="193" data-tchmi-width-unit="px" data-tchmi-etapa="Etapa 4" data-tchmi-is-enabled="true">
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%ctrl%ConfigEtapaProtocolo_4::msTotalizador%/ctrl%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%i%MudouEtapa%/i%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%i%MudouEtapa%/i%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": false
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%i%MudouEtapa%/i%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "operate",
+    "group": "Administracao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Graficos",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "CasaMaquinas",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Manutencao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Operacao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Supervisao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Teknike",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Administracao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "CasaMaquinas",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Graficos",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Manutencao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Operacao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Supervisao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Teknike",
+    "permission": "Allow"
+  }
+]
+</script>
+</div>
+<div id="ConfigEtapaProtocolo_5" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="387" data-tchmi-height-unit="px" data-tchmi-left="954" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Protocolos/ConfigEtapaProtocolo.usercontrol" data-tchmi-top="13" data-tchmi-top-unit="px" data-tchmi-width="193" data-tchmi-width-unit="px" data-tchmi-etapa="Etapa 5" data-tchmi-is-enabled="true">
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%ctrl%ConfigEtapaProtocolo_5::msTotalizador%/ctrl%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%i%MudouEtapa%/i%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%i%MudouEtapa%/i%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": false
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%i%MudouEtapa%/i%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "operate",
+    "group": "Administracao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Graficos",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "CasaMaquinas",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Manutencao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Operacao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Supervisao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Teknike",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Administracao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "CasaMaquinas",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Graficos",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Manutencao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Operacao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Supervisao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Teknike",
+    "permission": "Allow"
+  }
+]
+</script>
+</div>
+<div id="ConfigEtapaProtocolo_6" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="387" data-tchmi-height-unit="px" data-tchmi-left="12" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Protocolos/ConfigEtapaProtocolo.usercontrol" data-tchmi-top="412" data-tchmi-top-unit="px" data-tchmi-width="193" data-tchmi-width-unit="px" data-tchmi-etapa="Etapa 6" data-tchmi-is-enabled="false">
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%ctrl%ConfigEtapaProtocolo_6::msTotalizador%/ctrl%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%i%MudouEtapa%/i%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%i%MudouEtapa%/i%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": false
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%i%MudouEtapa%/i%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="ConfigEtapaProtocolo_7" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="387" data-tchmi-height-unit="px" data-tchmi-left="248" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Protocolos/ConfigEtapaProtocolo.usercontrol" data-tchmi-top="412" data-tchmi-top-unit="px" data-tchmi-width="193" data-tchmi-width-unit="px" data-tchmi-etapa="Etapa 7" data-tchmi-is-enabled="false">
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%ctrl%ConfigEtapaProtocolo_7::msTotalizador%/ctrl%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%i%MudouEtapa%/i%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%i%MudouEtapa%/i%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": false
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%i%MudouEtapa%/i%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="ConfigEtapaProtocolo_8" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="387" data-tchmi-height-unit="px" data-tchmi-left="482" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Protocolos/ConfigEtapaProtocolo.usercontrol" data-tchmi-top="412" data-tchmi-top-unit="px" data-tchmi-width="193" data-tchmi-width-unit="px" data-tchmi-etapa="Etapa 8" data-tchmi-is-enabled="false">
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%ctrl%ConfigEtapaProtocolo_8::msTotalizador%/ctrl%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%i%MudouEtapa%/i%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%i%MudouEtapa%/i%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": false
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%i%MudouEtapa%/i%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="ConfigEtapaProtocolo_9" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="387" data-tchmi-height-unit="px" data-tchmi-left="717" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Protocolos/ConfigEtapaProtocolo.usercontrol" data-tchmi-top="412" data-tchmi-top-unit="px" data-tchmi-width="193" data-tchmi-width-unit="px" data-tchmi-etapa="Etapa 9" data-tchmi-is-enabled="false">
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%ctrl%ConfigEtapaProtocolo_9::msTotalizador%/ctrl%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%i%MudouEtapa%/i%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%i%MudouEtapa%/i%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": false
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%i%MudouEtapa%/i%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="ConfigEtapaProtocolo_10" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="387" data-tchmi-height-unit="px" data-tchmi-left="954" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Protocolos/ConfigEtapaProtocolo.usercontrol" data-tchmi-top="412" data-tchmi-top-unit="px" data-tchmi-width="193" data-tchmi-width-unit="px" data-tchmi-etapa="Etapa 10" data-tchmi-is-enabled="false">
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%ctrl%ConfigEtapaProtocolo_10::msTotalizador%/ctrl%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%i%MudouEtapa%/i%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%i%MudouEtapa%/i%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": false
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%i%MudouEtapa%/i%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+</div>
+<div id="TcHmiContainer_181" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="212" data-tchmi-height-unit="px" data-tchmi-left="1197" data-tchmi-left-unit="px" data-tchmi-top="310" data-tchmi-top-unit="px" data-tchmi-width="392" data-tchmi-width-unit="px">
+
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 1,
+  "right": 1,
+  "top": 1,
+  "bottom": 1,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+{
+  "left": "Solid",
+  "right": "Solid",
+  "top": "Solid",
+  "bottom": "Solid"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 20.0,
+  "topRight": 20.0,
+  "bottomLeft": 20.0,
+  "bottomRight": 20.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+<div id="TcHmiTextblock_2429" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="36" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-text="Totalizador" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="25">
+</div>
+<div id="TcHmiTextblock_2430" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="36" data-tchmi-height-unit="px" data-tchmi-left="86" data-tchmi-left-unit="px" data-tchmi-text="Tempo total" data-tchmi-top="126" data-tchmi-top-unit="px" data-tchmi-width="217" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="25">
+</div>
+<div id="tbTotal" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="36" data-tchmi-height-unit="px" data-tchmi-left="86" data-tchmi-left-unit="px" data-tchmi-text="780 s  11,3 min" data-tchmi-top="162" data-tchmi-top-unit="px" data-tchmi-width="217" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="25">
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%i%MudouEtapa%/i%",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": false,
+        "sourceLines": [
+          "function msToTime(s) {",
+          "",
+          "  // Pad to 2 or 3 digits, default is 2",
+          "  function pad(n, z) {",
+          "    z = z || 2;",
+          "    return ('00' + n).slice(-z);",
+          "  }",
+          "",
+          "  var ms = s % 1000;",
+          "  s = (s - ms) / 1000;",
+          "  var secs = s % 60;",
+          "  s = (s - secs) / 60;",
+          "  var mins = s % 60;",
+          "  var hrs = (s - mins) / 60;",
+          "",
+          "  return pad(hrs) + ':' + pad(mins) + ':' + pad(secs);// + '.' + pad(ms, 3);",
+          "}",
+          "",
+          "",
+          "",
+          "var totP1 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_1::msTotalizador%/ctrl%');",
+          "var totP2 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_2::msTotalizador%/ctrl%');",
+          "var totP3 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_3::msTotalizador%/ctrl%');",
+          "var totP4 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_4::msTotalizador%/ctrl%');",
+          "var totP5 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_5::msTotalizador%/ctrl%');",
+          "var totP6 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_6::msTotalizador%/ctrl%');",
+          "var totP7 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_7::msTotalizador%/ctrl%');",
+          "var totP8 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_8::msTotalizador%/ctrl%');",
+          "var totP9 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_9::msTotalizador%/ctrl%');",
+          "var totP10 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_10::msTotalizador%/ctrl%');",
+          "",
+          "",
+          "var imsTotal = totP1 + totP2 + totP3 + totP4 + totP5 + totP6 + totP7 + totP8 + totP9 + totP10;",
+          "",
+          "",
+          "",
+          "TcHmi.Symbol.writeEx('%ctrl%tbTotal::Text%/ctrl%',msToTime(imsTotal));"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="tbTotalVF" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="36" data-tchmi-height-unit="px" data-tchmi-left="204" data-tchmi-left-unit="px" data-tchmi-text="780 s  11,3 min" data-tchmi-top="79" data-tchmi-top-unit="px" data-tchmi-width="179" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="25">
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%i%MudouEtapa%/i%",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": false,
+        "sourceLines": [
+          "function msToTime(s) {",
+          "",
+          "  // Pad to 2 or 3 digits, default is 2",
+          "  function pad(n, z) {",
+          "    z = z || 2;",
+          "    return ('00' + n).slice(-z);",
+          "  }",
+          "",
+          "  var ms = s % 1000;",
+          "  s = (s - ms) / 1000;",
+          "  var secs = s % 60;",
+          "  s = (s - secs) / 60;",
+          "  var mins = s % 60;",
+          "  var hrs = (s - mins) / 60;",
+          "",
+          "  return pad(hrs) + ':' + pad(mins) + ':' + pad(secs);// + '.' + pad(ms, 3);",
+          "}",
+          "",
+          "",
+          "",
+          "var totP1 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_1::msValvulaFechada%/ctrl%');",
+          "var totP2 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_2::msValvulaFechada%/ctrl%');",
+          "var totP3 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_3::msValvulaFechada%/ctrl%');",
+          "var totP4 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_4::msValvulaFechada%/ctrl%');",
+          "var totP5 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_5::msValvulaFechada%/ctrl%');",
+          "var totP6 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_6::msValvulaFechada%/ctrl%');",
+          "var totP7 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_7::msValvulaFechada%/ctrl%');",
+          "var totP8 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_8::msValvulaFechada%/ctrl%');",
+          "var totP9 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_9::msValvulaFechada%/ctrl%');",
+          "var totP10 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_10::msValvulaFechada%/ctrl%');",
+          "",
+          "",
+          "var imsTotal = totP1 + totP2 + totP3 + totP4 + totP5 + totP6 + totP7 + totP8 + totP9 + totP10;",
+          "",
+          "",
+          "",
+          "TcHmi.Symbol.writeEx('%ctrl%tbTotalVF::Text%/ctrl%',msToTime(imsTotal));"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="TcHmiTextblock_2861" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="36" data-tchmi-height-unit="px" data-tchmi-left="204" data-tchmi-left-unit="px" data-tchmi-text="Valvula fechada" data-tchmi-top="43" data-tchmi-top-unit="px" data-tchmi-width="179" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="25">
+</div>
+<div id="tbTotalVA" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="36" data-tchmi-height-unit="px" data-tchmi-left="11" data-tchmi-left-unit="px" data-tchmi-text="780 s  11,3 min" data-tchmi-top="79" data-tchmi-top-unit="px" data-tchmi-width="181" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="25">
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%i%MudouEtapa%/i%",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "function msToTime(s) {",
+          "",
+          "  // Pad to 2 or 3 digits, default is 2",
+          "  function pad(n, z) {",
+          "    z = z || 2;",
+          "    return ('00' + n).slice(-z);",
+          "  }",
+          "",
+          "  var ms = s % 1000;",
+          "  s = (s - ms) / 1000;",
+          "  var secs = s % 60;",
+          "  s = (s - secs) / 60;",
+          "  var mins = s % 60;",
+          "  var hrs = (s - mins) / 60;",
+          "",
+          "  return pad(hrs) + ':' + pad(mins) + ':' + pad(secs);// + '.' + pad(ms, 3);",
+          "}",
+          "",
+          "",
+          "",
+          "var totP1 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_1::msValvulaAberta%/ctrl%');",
+          "var totP2 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_2::msValvulaAberta%/ctrl%');",
+          "var totP3 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_3::msValvulaAberta%/ctrl%');",
+          "var totP4 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_4::msValvulaAberta%/ctrl%');",
+          "var totP5 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_5::msValvulaAberta%/ctrl%');",
+          "var totP6 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_6::msValvulaAberta%/ctrl%');",
+          "var totP7 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_7::msValvulaAberta%/ctrl%');",
+          "var totP8 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_8::msValvulaAberta%/ctrl%');",
+          "var totP9 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_9::msValvulaAberta%/ctrl%');",
+          "var totP10 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_10::msValvulaAberta%/ctrl%');",
+          "",
+          "",
+          "var imsTotal = totP1 + totP2 + totP3 + totP4 + totP5 + totP6 + totP7 + totP8 + totP9 + totP10;",
+          "",
+          "",
+          "",
+          "TcHmi.Symbol.writeEx('%ctrl%tbTotalVA::Text%/ctrl%',msToTime(imsTotal));",
+          "",
+          "",
+          "",
+          "",
+          " totP1 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_1::msValvulaFechada%/ctrl%');",
+          " totP2 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_2::msValvulaFechada%/ctrl%');",
+          " totP3 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_3::msValvulaFechada%/ctrl%');",
+          " totP4 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_4::msValvulaFechada%/ctrl%');",
+          " totP5 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_5::msValvulaFechada%/ctrl%');",
+          " totP6 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_6::msValvulaFechada%/ctrl%');",
+          " totP7 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_7::msValvulaFechada%/ctrl%');",
+          " totP8 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_8::msValvulaFechada%/ctrl%');",
+          " totP9 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_9::msValvulaFechada%/ctrl%');",
+          " totP10 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_10::msValvulaFechada%/ctrl%');",
+          "",
+          "",
+          " imsTotal = totP1 + totP2 + totP3 + totP4 + totP5 + totP6 + totP7 + totP8 + totP9 + totP10;",
+          "",
+          "",
+          "",
+          "TcHmi.Symbol.writeEx('%ctrl%tbTotalVF::Text%/ctrl%',msToTime(imsTotal));",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          " totP1 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_1::msTotalizador%/ctrl%');",
+          " totP2 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_2::msTotalizador%/ctrl%');",
+          " totP3 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_3::msTotalizador%/ctrl%');",
+          " totP4 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_4::msTotalizador%/ctrl%');",
+          " totP5 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_5::msTotalizador%/ctrl%');",
+          " totP6 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_6::msTotalizador%/ctrl%');",
+          " totP7 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_7::msTotalizador%/ctrl%');",
+          " totP8 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_8::msTotalizador%/ctrl%');",
+          " totP9 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_9::msTotalizador%/ctrl%');",
+          " totP10 = TcHmi.Symbol.readEx('%ctrl%ConfigEtapaProtocolo_10::msTotalizador%/ctrl%');",
+          "",
+          "",
+          " imsTotal = totP1 + totP2 + totP3 + totP4 + totP5 + totP6 + totP7 + totP8 + totP9 + totP10;",
+          "",
+          "",
+          "",
+          "TcHmi.Symbol.writeEx('%ctrl%tbTotal::Text%/ctrl%',msToTime(imsTotal));"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="TcHmiTextblock_2862" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="36" data-tchmi-height-unit="px" data-tchmi-left="11" data-tchmi-left-unit="px" data-tchmi-text="Valvula aberta" data-tchmi-top="43" data-tchmi-top-unit="px" data-tchmi-width="181" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="25">
+</div>
+</div>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(187, 187, 187, 1)"
+}
+</script>
+<div id="TcHmiButton_230" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="65" data-tchmi-height-unit="px" data-tchmi-left="1197" data-tchmi-left-unit="px" data-tchmi-text="Salvar" data-tchmi-top="528" data-tchmi-top-unit="px" data-tchmi-width="392" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="35">
+
+
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiButton_230.onPressed",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var Index = TcHmi.Symbol.readEx('%ctrl%TcHmiCombobox_1::SelectedId%/ctrl%');",
+          "//console.log(Index);",
+          "",
+          "",
+          "",
+          "",
+          "TcHmi.Symbol.readEx2('%ctrl%tbDescricao::Text%/ctrl%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::Nome%/s%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando escrever o protocolo');",
+          "    }                \t",
+          "});",
+          "",
+          "",
+          "TcHmi.Symbol.readEx2('%ctrl%tbNomeIHM::Text%/ctrl%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::NomeIHM%/s%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "",
+          "TcHmi.Symbol.readEx2('%ctrl%tbVProtocolo::Text%/ctrl%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::Valvulas_1%/s%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "",
+          "",
+          "",
+          "",
+          "\t",
+          "",
+          "",
+          "TcHmi.Symbol.readEx2('%ctrl%ConfigEtapaProtocolo_1::TON%/ctrl%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET01TON%/s%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "TcHmi.Symbol.readEx2('%ctrl%ConfigEtapaProtocolo_1::TOF%/ctrl%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET01TOFF%/s%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "TcHmi.Symbol.readEx2('%ctrl%ConfigEtapaProtocolo_1::CICLO%/ctrl%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET01NC%/s%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "",
+          "TcHmi.Symbol.readEx2('%ctrl%ConfigEtapaProtocolo_2::TON%/ctrl%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET02TON%/s%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "TcHmi.Symbol.readEx2('%ctrl%ConfigEtapaProtocolo_2::TOF%/ctrl%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET02TOFF%/s%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "TcHmi.Symbol.readEx2('%ctrl%ConfigEtapaProtocolo_2::CICLO%/ctrl%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET02NC%/s%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "",
+          "TcHmi.Symbol.readEx2('%ctrl%ConfigEtapaProtocolo_3::TON%/ctrl%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET03TON%/s%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "TcHmi.Symbol.readEx2('%ctrl%ConfigEtapaProtocolo_3::TOF%/ctrl%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET03TOFF%/s%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "TcHmi.Symbol.readEx2('%ctrl%ConfigEtapaProtocolo_3::CICLO%/ctrl%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET03NC%/s%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "",
+          "TcHmi.Symbol.readEx2('%ctrl%ConfigEtapaProtocolo_4::TON%/ctrl%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET04TON%/s%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "TcHmi.Symbol.readEx2('%ctrl%ConfigEtapaProtocolo_4::TOF%/ctrl%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET04TOFF%/s%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "TcHmi.Symbol.readEx2('%ctrl%ConfigEtapaProtocolo_4::CICLO%/ctrl%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET04NC%/s%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "",
+          "TcHmi.Symbol.readEx2('%ctrl%ConfigEtapaProtocolo_5::TON%/ctrl%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET05TON%/s%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "TcHmi.Symbol.readEx2('%ctrl%ConfigEtapaProtocolo_5::TOF%/ctrl%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET05TOFF%/s%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "TcHmi.Symbol.readEx2('%ctrl%ConfigEtapaProtocolo_5::CICLO%/ctrl%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET05NC%/s%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "",
+          "TcHmi.Symbol.readEx2('%ctrl%ConfigEtapaProtocolo_6::TON%/ctrl%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET06TON%/s%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "TcHmi.Symbol.readEx2('%ctrl%ConfigEtapaProtocolo_6::TOF%/ctrl%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET06TOFF%/s%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "TcHmi.Symbol.readEx2('%ctrl%ConfigEtapaProtocolo_6::CICLO%/ctrl%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET06NC%/s%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "",
+          "TcHmi.Symbol.readEx2('%ctrl%ConfigEtapaProtocolo_7::TON%/ctrl%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET07TON%/s%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "TcHmi.Symbol.readEx2('%ctrl%ConfigEtapaProtocolo_7::TOF%/ctrl%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET07TOFF%/s%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "TcHmi.Symbol.readEx2('%ctrl%ConfigEtapaProtocolo_7::CICLO%/ctrl%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET07NC%/s%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "",
+          "TcHmi.Symbol.readEx2('%ctrl%ConfigEtapaProtocolo_8::TON%/ctrl%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET08TON%/s%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "TcHmi.Symbol.readEx2('%ctrl%ConfigEtapaProtocolo_8::TOF%/ctrl%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET08TOFF%/s%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "TcHmi.Symbol.readEx2('%ctrl%ConfigEtapaProtocolo_8::CICLO%/ctrl%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET08NC%/s%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "",
+          "TcHmi.Symbol.readEx2('%ctrl%ConfigEtapaProtocolo_9::TON%/ctrl%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET09TON%/s%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "TcHmi.Symbol.readEx2('%ctrl%ConfigEtapaProtocolo_9::TOF%/ctrl%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET09TOFF%/s%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "TcHmi.Symbol.readEx2('%ctrl%ConfigEtapaProtocolo_9::CICLO%/ctrl%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET09NC%/s%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "",
+          "TcHmi.Symbol.readEx2('%ctrl%ConfigEtapaProtocolo_10::TON%/ctrl%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET10TON%/s%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "TcHmi.Symbol.readEx2('%ctrl%ConfigEtapaProtocolo_10::TOF%/ctrl%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET10TOFF%/s%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "TcHmi.Symbol.readEx2('%ctrl%ConfigEtapaProtocolo_10::CICLO%/ctrl%', function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        TcHmi.Symbol.writeEx('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::DB::ET10NC%/s%',data.value);",
+          "    } else {",
+          "        console.log('Deu erro tentando pegar o protocolo');",
+          "    }                \t",
+          "});",
+          "",
+          "",
+          "",
+          "TcHmi.Symbol.writeEx('%s%PLC1.GVL_Automatico.Protocolos['+Index+']::xEditado%/s%','TRUE');"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+</div>
+</div>
+</div>

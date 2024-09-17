@@ -1,0 +1,23 @@
+{
+  "parameters": [
+    {
+      "name": "data-tchmi-grupo",
+      "displayName": "Grupo",
+      "visible": true,
+      "type": "tchmi:server#/definitions/PLC1.Teknike_SQL.st_Grupo",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "Grupo",
+      "propertySetterName": "setGrupo",
+      "propertyGetterName": "getGrupo",
+      "refTo": ""
+    }
+  ],
+  "virtualRights": [],
+  "$schema": "./../../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.758.8/runtimes/native1.12-tchmi/Schema/UserControlConfig.Schema.json",
+  "description": ""
+}

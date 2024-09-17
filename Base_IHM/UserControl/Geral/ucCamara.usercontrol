@@ -1,0 +1,1998 @@
+<div id="camara_23" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControl" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500" data-tchmi-zindex="1" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-background-image-width="0" data-tchmi-background-image-height="0">
+
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 2,
+  "right": 2,
+  "top": 2,
+  "bottom": 2,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+{
+  "left": "Solid",
+  "right": "Solid",
+  "top": "Solid",
+  "bottom": "Solid"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 5.0,
+  "topRight": 5.0,
+  "bottomLeft": 5.0,
+  "bottomRight": 5.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+<div id="TcHmiTextblock_2823679" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="67.7" data-tchmi-height-unit="%" data-tchmi-left="17.1" data-tchmi-left-unit="%" data-tchmi-text="teste" data-tchmi-top="13.8" data-tchmi-top-unit="%" data-tchmi-width="58.7" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-weight="Normal" data-tchmi-height-mode="Value" data-tchmi-ignore-escape-sequences="false" data-tchmi-text-font-size="%pp%iTamanhoTexto%/pp%" data-tchmi-visibility="Collapsed">
+
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(255, 255, 255, 1)"
+}
+</script>
+
+
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+[
+  "TextoVertical"
+]
+</script>
+</div>
+<div id="TcHmiTextblock_2823680" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="12.0" data-tchmi-height-unit="%" data-tchmi-left="-1" data-tchmi-left-unit="px" data-tchmi-top="-1" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="%pp%iTamanhoTexto%/pp%" data-tchmi-zindex="3" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%pp%stCamara::Config::sNome%/pp%">
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(255, 255, 255, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(26, 30, 51, 1)"
+}
+</script>
+</div>
+
+
+<div id="TcHmi_Controls_Beckhoff_TcHmiImage_180" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="12.1" data-tchmi-height-unit="%" data-tchmi-left="1.7" data-tchmi-left-unit="%" data-tchmi-src="Imports/Images/UmidadeBranco.png" data-tchmi-top="44.0" data-tchmi-top-unit="%" data-tchmi-width="22.2" data-tchmi-width-unit="%" data-tchmi-zindex="4">
+</div>
+<div id="TcHmi_Controls_Beckhoff_TcHmiImage_181" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="11.7" data-tchmi-height-unit="%" data-tchmi-left="1.7" data-tchmi-left-unit="%" data-tchmi-src="Imports/Images/TemperaturaBranca.png" data-tchmi-top="24.8" data-tchmi-top-unit="%" data-tchmi-width="22.2" data-tchmi-width-unit="%" data-tchmi-zindex="6" data-tchmi-is-enabled="true">
+</div>
+<div id="TcHmiTextblock_2954" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="12" data-tchmi-height-unit="%" data-tchmi-left="23.8" data-tchmi-left-unit="%" data-tchmi-text="%f%TcHmi.Functions.Beckhoff.GaugeValueFormatter(
+%pp%stCamara::en::rTempCamara%/pp%, 1) +&quot; C°&quot;%/f%" data-tchmi-top="24.6" data-tchmi-top-unit="%" data-tchmi-width="74.5" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="px" data-tchmi-text-font-size="%pp%iTamanhoTexto%/pp%" data-tchmi-zindex="7">
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(202, 202, 202, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 10.0,
+  "topRight": 10.0,
+  "bottomLeft": 10.0,
+  "bottomRight": 10.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+</div>
+<div id="TcHmiTextblock_2955" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="12" data-tchmi-height-unit="%" data-tchmi-left="23.8" data-tchmi-left-unit="%" data-tchmi-text="%f%TcHmi.Functions.Beckhoff.GaugeValueFormatter(
+%pp%stCamara::en::rUmidadeCamara%/pp%, 0) +&quot; %&quot;%/f%" data-tchmi-top="44.1" data-tchmi-top-unit="%" data-tchmi-width="74.5" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="px" data-tchmi-text-font-size="%pp%iTamanhoTexto%/pp%" data-tchmi-zindex="5">
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(202, 202, 202, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 10.0,
+  "topRight": 10.0,
+  "bottomLeft": 10.0,
+  "bottomRight": 10.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+</div>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+<div id="TcHmiContainerConfTU_1" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="78" data-tchmi-height-unit="%" data-tchmi-top="20.9" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-zindex="17" data-tchmi-right="0" data-tchmi-right-unit="%" data-tchmi-visibility="Collapsed">
+<div id="TcHmiNumericInput_193" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="17.8" data-tchmi-height-unit="%" data-tchmi-max-value="100" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="12.3" data-tchmi-top-unit="%" data-tchmi-width="72" data-tchmi-width-unit="%" data-tchmi-value-horizontal-alignment="Center" data-tchmi-zero-padding="0" data-tchmi-value-font-size="%f%%pp%iTamanhoTexto%/pp%-5%/f%" data-tchmi-zindex="9" data-tchmi-value="%pp%stCamara::Config::rMaxTempCamara|BindingMode=TwoWay%/pp%" data-tchmi-right="2" data-tchmi-right-unit="%">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+</div>
+<div id="TcHmiNumericInput_194" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="17.8" data-tchmi-height-unit="%" data-tchmi-max-value="100" data-tchmi-min-value="-40" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="30.2" data-tchmi-top-unit="%" data-tchmi-value="%pp%stCamara::Config::rMinTempCamara|BindingMode=TwoWay%/pp%" data-tchmi-width="72" data-tchmi-width-unit="%" data-tchmi-value-horizontal-alignment="Center" data-tchmi-zero-padding="0" data-tchmi-value-font-size="%f%%pp%iTamanhoTexto%/pp%-5%/f%" data-tchmi-zindex="10" data-tchmi-right="2" data-tchmi-right-unit="%">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+</div>
+<div id="TcHmiNumericInput_195" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="17.8" data-tchmi-height-unit="%" data-tchmi-max-value="100" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="62.9" data-tchmi-top-unit="%" data-tchmi-value="%pp%stCamara::Config::rMaxUmidCamara|BindingMode=TwoWay%/pp%" data-tchmi-width="72" data-tchmi-width-unit="%" data-tchmi-value-horizontal-alignment="Center" data-tchmi-zero-padding="0" data-tchmi-value-font-size="%f%%pp%iTamanhoTexto%/pp%-5%/f%" data-tchmi-zindex="11" data-tchmi-right="2" data-tchmi-right-unit="%">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+</div>
+<div id="TcHmiNumericInput_196" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="17.8" data-tchmi-height-unit="%" data-tchmi-max-value="100" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="80.7" data-tchmi-top-unit="%" data-tchmi-value="%pp%stCamara::Config::rMinUmidCamara|BindingMode=TwoWay%/pp%" data-tchmi-width="72" data-tchmi-width-unit="%" data-tchmi-value-horizontal-alignment="Center" data-tchmi-zero-padding="0" data-tchmi-value-font-size="%f%%pp%iTamanhoTexto%/pp%-5%/f%" data-tchmi-zindex="12" data-tchmi-right-unit="%" data-tchmi-right="2">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+</div>
+<div id="TcHmiTextblock_282302" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="17.8" data-tchmi-height-unit="%" data-tchmi-left="1" data-tchmi-left-unit="%" data-tchmi-text="Min" data-tchmi-top="30.2" data-tchmi-top-unit="%" data-tchmi-width="24.5" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-font-size="%f%%pp%iTamanhoTexto%/pp%-10%/f%" data-tchmi-zindex="0">
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+</div>
+<div id="TcHmiTextblock_282301" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="17.8" data-tchmi-height-unit="%" data-tchmi-left="1" data-tchmi-left-unit="%" data-tchmi-text="Max" data-tchmi-top="12.3" data-tchmi-top-unit="%" data-tchmi-width="24.7" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-font-size="%f%%pp%iTamanhoTexto%/pp%-10%/f%" data-tchmi-zindex="13">
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+</div>
+<div id="TcHmiTextblock_282304" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="17.8" data-tchmi-height-unit="%" data-tchmi-left="1" data-tchmi-left-unit="%" data-tchmi-text="Max" data-tchmi-top="62.9" data-tchmi-top-unit="%" data-tchmi-width="24.6" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-font-size="%f%%pp%iTamanhoTexto%/pp%-10%/f%" data-tchmi-zindex="0">
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+</div>
+<div id="TcHmiTextblock_282303" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="17.8" data-tchmi-height-unit="%" data-tchmi-left="1" data-tchmi-left-unit="%" data-tchmi-text="Min" data-tchmi-top="80.7" data-tchmi-top-unit="%" data-tchmi-width="24.6" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-font-size="%f%%pp%iTamanhoTexto%/pp%-10%/f%" data-tchmi-zindex="14" data-tchmi-text-font-size-unit="px">
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+</div>
+<div id="TcHmiTextblock_2823681" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="10.5" data-tchmi-height-unit="%" data-tchmi-left="-0.2" data-tchmi-left-unit="%" data-tchmi-text="Umidade" data-tchmi-top="50.5" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="%f%%pp%iTamanhoTexto%/pp% - 5%/f%" data-tchmi-zindex="13">
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(255, 255, 255, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(26, 30, 51, 1)"
+}
+</script>
+</div>
+<div id="TcHmiTextblock_2823682" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="10.5" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-text="Temperatura" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="%f%%pp%iTamanhoTexto%/pp% - 5%/f%" data-tchmi-zindex="13">
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(255, 255, 255, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(26, 30, 51, 1)"
+}
+</script>
+</div>
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(202, 202, 202, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 10.0,
+  "topRight": 0.0,
+  "bottomLeft": 10.0,
+  "bottomRight": 10.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+{
+  "left": "Solid",
+  "right": "Solid",
+  "top": "Solid",
+  "bottom": "Solid"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 2,
+  "right": 2,
+  "top": 2,
+  "bottom": 2,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+</div>
+<div id="TcHmiRectangle_5223460" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="88.3" data-tchmi-height-unit="%" data-tchmi-left="-0.5" data-tchmi-left-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-stroke-thickness="2" data-tchmi-zindex="8" data-tchmi-bottom-unit="%" data-tchmi-bottom="-0.1">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%pp%stCamara::Status::iStatus%/pp%",
+    "actions": [
+      {
+        "objectType": "SwitchCase",
+        "active": true,
+        "compare": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/INT",
+          "symbolExpression": "%pp%stCamara::Status::iStatus%/pp%"
+        },
+        "cases": [
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/INT",
+              "value": 1
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": false,
+                "symbolExpression": "%ctrl%TcHmiTextblock_2823679::Text%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "Esperando Aspersão"
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": false,
+                "symbolExpression": "%ctrl%TcHmiTextblock_2823679::TextColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/SolidColor",
+                  "value": {
+                    "color": "rgba(85, 82, 82, 1)"
+                  }
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%camara_23::BackgroundColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": {
+                    "color": "rgba(102, 116, 126, 1)"
+                  }
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/INT",
+              "value": 2
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": false,
+                "symbolExpression": "%ctrl%TcHmiTextblock_2823679::Text%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": " Carregando"
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": false,
+                "symbolExpression": "%ctrl%TcHmiTextblock_2823679::TextColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/SolidColor",
+                  "value": {
+                    "color": "rgba(8, 51, 139, 1)"
+                  }
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%camara_23::BackgroundColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": {
+                    "color": "rgba(231, 228, 28, 1)"
+                  }
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/INT",
+              "value": 3
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": false,
+                "symbolExpression": "%ctrl%TcHmiTextblock_2823679::Text%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "Aspergindo"
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": false,
+                "symbolExpression": "%ctrl%TcHmiTextblock_2823679::TextColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/SolidColor",
+                  "value": {
+                    "color": "rgba(14, 117, 202, 1)"
+                  }
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%camara_23::BackgroundColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": {
+                    "color": "rgba(26, 64, 212, 1)"
+                  }
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/INT",
+              "value": 4
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": false,
+                "symbolExpression": "%ctrl%TcHmiTextblock_2823679::Text%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "Aspersão finalizada"
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": false,
+                "symbolExpression": "%ctrl%TcHmiTextblock_2823679::TextColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/SolidColor",
+                  "value": {
+                    "color": "rgba(57, 214, 74, 1)"
+                  }
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%camara_23::BackgroundColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": {
+                    "color": "rgba(7, 11, 14, 1)"
+                  }
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/INT",
+              "value": 5
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": false,
+                "symbolExpression": "%ctrl%TcHmiTextblock_2823679::Text%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "Pausa"
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": false,
+                "symbolExpression": "%ctrl%TcHmiTextblock_2823679::TextColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/SolidColor",
+                  "value": {
+                    "color": "rgba(204, 222, 16, 1)"
+                  }
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%camara_23::BackgroundColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": {
+                    "color": "rgba(231, 23, 30, 1)"
+                  }
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/INT",
+              "value": 6
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": false,
+                "symbolExpression": "%ctrl%TcHmiTextblock_2823679::Text%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "Falha"
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": false,
+                "symbolExpression": "%ctrl%TcHmiTextblock_2823679::TextColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/SolidColor",
+                  "value": {
+                    "color": "rgba(223, 16, 16, 1)"
+                  }
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%camara_23::BackgroundColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": {
+                    "color": "rgba(237, 163, 19, 1)"
+                  }
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/INT",
+              "value": 7
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%camara_23::BackgroundColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": {
+                    "color": "rgba(127, 17, 225, 1)"
+                  }
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/INT",
+              "value": 8
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%camara_23::BackgroundColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": {
+                    "color": "rgba(23, 138, 32, 1)"
+                  }
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/INT",
+              "value": 9
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%camara_23::BackgroundColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": {
+                    "color": "rgba(13, 134, 246, 1)"
+                  }
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "TcHmiRectangle_5223460.onMouseClick",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "symbolExpression": "%pp%bAbreIHMvalvulaoperação%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": false
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "JavaScript",
+                "active": true,
+                "sourceLines": [
+                  "var indexCamara = TcHmi.Symbol.readEx('%pp%iIndex%/pp%');",
+                  "//console.log(indexCamara);",
+                  "",
+                  "",
+                  "//Separando o index da valvlua ",
+                  "",
+                  "TcHmi.Symbol.readEx2(\"%s%PLC1.GVL_Automatico.stCamaras[\"+indexCamara+\"]::Config::sValvulas%/s%\", function (data) {",
+                  "    if (data.error === TcHmi.Errors.NONE) {",
+                  "       var IndexValvulas = data.value; ",
+                  "        //console.log(IndexValvulas); ",
+                  "        ",
+                  "\t\tvar resultado = IndexValvulas.split(/\\s*,\\s*/);",
+                  "        console.log(resultado);",
+                  "        ",
+                  "        ",
+                  "",
+                  "",
+                  "\t\t\t\t",
+                  "\t\t//Binding da tela das valvulas",
+                  "\t   var ItemProperty = \"stCamara\";",
+                  "\t   var UserControl = TcHmi.Controls.get(\"UcSTCamara_2\");",
+                  "\t   var Variavel = \"%s%PLC1.\" + \"GVL_Automatico\" + \".\" + \"stCamaras\" + \"[\" +indexCamara+ \"]\" + \"|BindingMode=TwoWay%/s%\";",
+                  "\t   ",
+                  "\t   try {",
+                  "\t    \tTcHmi.Binding.createEx2(Variavel, ItemProperty, UserControl);",
+                  "\t    \t",
+                  "",
+                  "\t\t\t",
+                  "\t\t\tswitch(resultado.length) {",
+                  "\t\t\t  case 1:",
+                  "\t\t\t    //Binding da com 1 Valvulas",
+                  "\t\t\t    console.log('1 valuva');",
+                  "\t\t\t\tvar ItemProperty = \"stControleValvula\";",
+                  "\t\t\t    var UserControl = TcHmi.Controls.get(\"UcValvulasVS3\");",
+                  "\t\t\t    var Variavel = \"%s%PLC1.\" + \"GVL_Automatico\" + \".\" + \"stControleValvula\" + \"[\" + resultado[0] + \"]\" + \"|BindingMode=TwoWay%/s%\";",
+                  "\t\t\t   ",
+                  "\t\t\t\t   try {",
+                  "\t\t\t\t    \tTcHmi.Binding.createEx2(Variavel, ItemProperty, UserControl);",
+                  "\t\t\t\t   } catch (error) {",
+                  "\t\t\t\t       alert(\"Erro no binding\");",
+                  "\t\t\t\t       console.log(error.message);",
+                  "\t\t\t\t       console.log(Variavel);",
+                  "\t\t\t\t       console.log(ItemProperty);",
+                  "\t\t\t\t       console.log(UserControl);",
+                  "\t\t\t\t   }",
+                  "\t\t\t    ",
+                  "\t\t\t\tTcHmi.Symbol.writeEx('%ctrl%UcValvulasVS3::Nome%/ctrl%', \"VS\"+resultado[0], function (data){});",
+                  "\t\t\t    TcHmi.Symbol.writeEx('%ctrl%UcValvulasVS3::Visibility%/ctrl%', 'Visible', function (data){});",
+                  "\t\t\t    ",
+                  "\t\t\t    TcHmi.Symbol.writeEx('%ctrl%UcValvulasVS1::Visibility%/ctrl%', 'Collapsed', function (data){});",
+                  "\t\t\t    ",
+                  "\t\t\t    TcHmi.Symbol.writeEx('%ctrl%UcValvulasVS2::Visibility%/ctrl%', 'Collapsed', function (data){});",
+                  "\t\t\t    ",
+                  "\t\t\t    break;",
+                  "\t\t\t    ",
+                  "\t\t\t  case 2:",
+                  "\t\t\t    //Binding da com 2 Valvulas",
+                  "\t\t\t    console.log('2 valuva');",
+                  "\t\t\t\tvar ItemProperty = \"stControleValvula\";",
+                  "\t\t\t    var UserControl = TcHmi.Controls.get(\"UcValvulasVS1\");",
+                  "\t\t\t    var Variavel = \"%s%PLC1.\" + \"GVL_Automatico\" + \".\" + \"stControleValvula\" + \"[\" + resultado[0] + \"]\" + \"|BindingMode=TwoWay%/s%\";",
+                  "\t\t\t   ",
+                  "\t\t\t\t   try {",
+                  "\t\t\t\t    \tTcHmi.Binding.createEx2(Variavel, ItemProperty, UserControl);",
+                  "\t\t\t\t   } catch (error) {",
+                  "\t\t\t\t       alert(\"Erro no binding\");",
+                  "\t\t\t\t       console.log(error.message);",
+                  "\t\t\t\t       console.log(Variavel);",
+                  "\t\t\t\t       console.log(ItemProperty);",
+                  "\t\t\t\t       console.log(UserControl);",
+                  "\t\t\t\t   }",
+                  "\t\t\t    ",
+                  "\t\t\t\tTcHmi.Symbol.writeEx('%ctrl%UcValvulasVS1::Nome%/ctrl%', \"VS\"+resultado[0], function (data){});",
+                  "\t\t\t    TcHmi.Symbol.writeEx('%ctrl%UcValvulasVS1::Visibility%/ctrl%', 'Visible', function (data){});",
+                  "\t\t\t\t",
+                  "\t\t\t    ",
+                  "\t\t\t\t",
+                  "    \t     ",
+                  "\t\t\t\tvar ItemProperty = \"stControleValvula\";",
+                  "\t\t\t    var UserControl = TcHmi.Controls.get(\"UcValvulasVS2\");",
+                  "\t\t\t    var Variavel = \"%s%PLC1.\" + \"GVL_Automatico\" + \".\" + \"stControleValvula\" + \"[\" + resultado[1] + \"]\" + \"|BindingMode=TwoWay%/s%\";",
+                  "\t\t\t\t   try {",
+                  "\t\t\t\t    \tTcHmi.Binding.createEx2(Variavel, ItemProperty, UserControl);",
+                  "\t\t\t\t   } catch (error) {",
+                  "\t\t\t\t       alert(\"Erro no binding\");",
+                  "\t\t\t\t       console.log(error.message);",
+                  "\t\t\t\t       console.log(Variavel);",
+                  "\t\t\t\t       console.log(ItemProperty);",
+                  "\t\t\t\t       console.log(UserControl);",
+                  "\t\t\t\t   }\t",
+                  "\t",
+                  "\t\t\t\tTcHmi.Symbol.writeEx('%ctrl%UcValvulasVS2::Nome%/ctrl%', \"VS\"+resultado[1], function (data){});",
+                  "\t\t\t    TcHmi.Symbol.writeEx('%ctrl%UcValvulasVS2::Visibility%/ctrl%', 'Visible', function (data){});",
+                  "\t\t\t    ",
+                  "\t\t\t    ",
+                  "\t\t\t    TcHmi.Symbol.writeEx('%ctrl%UcValvulasVS3::Visibility%/ctrl%', 'Collapsed', function (data){});",
+                  "\t\t\t    break;",
+                  "\t\t\t    ",
+                  "\t\t\t    ",
+                  "\t\t\t  case 3:",
+                  "\t\t\t    console.log('3 valuva');",
+                  "\t\t\t    //Binding da com 3 Valvulas",
+                  "\t\t\t\tvar ItemProperty = \"stControleValvula\";",
+                  "\t\t\t    var UserControl = TcHmi.Controls.get(\"UcValvulasVS1\");",
+                  "\t\t\t    var Variavel = \"%s%PLC1.\" + \"GVL_Automatico\" + \".\" + \"stControleValvula\" + \"[\" + resultado[0] + \"]\" + \"|BindingMode=TwoWay%/s%\";",
+                  "\t\t\t   ",
+                  "\t\t\t\t   try {",
+                  "\t\t\t\t    \tTcHmi.Binding.createEx2(Variavel, ItemProperty, UserControl);",
+                  "\t\t\t\t   } catch (error) {",
+                  "\t\t\t\t       alert(\"Erro no binding\");",
+                  "\t\t\t\t       console.log(error.message);",
+                  "\t\t\t\t       console.log(Variavel);",
+                  "\t\t\t\t       console.log(ItemProperty);",
+                  "\t\t\t\t       console.log(UserControl);",
+                  "\t\t\t\t   }",
+                  "\t\t\t    ",
+                  "\t\t\t\tTcHmi.Symbol.writeEx('%ctrl%UcValvulasVS1::Nome%/ctrl%', \"VS\"+resultado[0], function (data){});",
+                  "\t\t\t    TcHmi.Symbol.writeEx('%ctrl%UcValvulasVS1::Visibility%/ctrl%', 'Visible', function (data){});",
+                  "\t\t\t\t",
+                  "\t\t\t    ",
+                  "\t\t\t    ",
+                  "\t\t\t\t",
+                  "    \t     ",
+                  "\t\t\t\tvar ItemProperty = \"stControleValvula\";",
+                  "\t\t\t    var UserControl = TcHmi.Controls.get(\"UcValvulasVS3\");",
+                  "\t\t\t    var Variavel = \"%s%PLC1.\" + \"GVL_Automatico\" + \".\" + \"stControleValvula\" + \"[\" + resultado[1] + \"]\" + \"|BindingMode=TwoWay%/s%\";",
+                  "\t\t\t\t   try {",
+                  "\t\t\t\t    \tTcHmi.Binding.createEx2(Variavel, ItemProperty, UserControl);",
+                  "\t\t\t\t   } catch (error) {",
+                  "\t\t\t\t       alert(\"Erro no binding\");",
+                  "\t\t\t\t       console.log(error.message);",
+                  "\t\t\t\t       console.log(Variavel);",
+                  "\t\t\t\t       console.log(ItemProperty);",
+                  "\t\t\t\t       console.log(UserControl);",
+                  "\t\t\t\t   }\t",
+                  "\t",
+                  "\t\t\t\tTcHmi.Symbol.writeEx('%ctrl%UcValvulasVS3::Nome%/ctrl%', \"VS\"+resultado[1], function (data){});",
+                  "\t\t\t    TcHmi.Symbol.writeEx('%ctrl%UcValvulasVS3::Visibility%/ctrl%', 'Visible', function (data){});",
+                  "\t\t\t\t",
+                  "\t\t\t    ",
+                  "\t\t\t    ",
+                  "\t\t\t\t",
+                  "    \t     ",
+                  "\t\t\t\tvar ItemProperty = \"stControleValvula\";",
+                  "\t\t\t    var UserControl = TcHmi.Controls.get(\"UcValvulasVS2\");",
+                  "\t\t\t    var Variavel = \"%s%PLC1.\" + \"GVL_Automatico\" + \".\" + \"stControleValvula\" + \"[\" + resultado[2] + \"]\" + \"|BindingMode=TwoWay%/s%\";",
+                  "\t\t\t\t   try {",
+                  "\t\t\t\t    \tTcHmi.Binding.createEx2(Variavel, ItemProperty, UserControl);",
+                  "\t\t\t\t   } catch (error) {",
+                  "\t\t\t\t       alert(\"Erro no binding\");",
+                  "\t\t\t\t       console.log(error.message);",
+                  "\t\t\t\t       console.log(Variavel);",
+                  "\t\t\t\t       console.log(ItemProperty);",
+                  "\t\t\t\t       console.log(UserControl);",
+                  "\t\t\t\t   }\t",
+                  "\t",
+                  "\t\t\t\tTcHmi.Symbol.writeEx('%ctrl%UcValvulasVS2::Nome%/ctrl%', \"VS\"+resultado[2], function (data){});",
+                  "\t\t\t    TcHmi.Symbol.writeEx('%ctrl%UcValvulasVS2::Visibility%/ctrl%', 'Visible', function (data){});",
+                  "\t\t\t    break;",
+                  "\t\t\t    ",
+                  "\t\t\t  default:",
+                  "\t\t\t    // code block",
+                  "\t\t\t}",
+                  "\t\t\t",
+                  "\t\t    ",
+                  "",
+                  "\t\t    \t",
+                  "\t\t    ",
+                  "",
+                  "\t    \t",
+                  "\t    \t",
+                  "\t    \t",
+                  "\t    \t",
+                  "\t   } catch (error) {",
+                  "\t       alert(\"Erro no binding\");",
+                  "\t       console.log(error.message);",
+                  "\t       console.log(Variavel);",
+                  "\t       console.log(ItemProperty);",
+                  "\t       console.log(UserControl);",
+                  "\t   }",
+                  "\t    ",
+                  "\t\t    ",
+                  "\t\t\t",
+                  "\t\t    ",
+                  "",
+                  "        ",
+                  "    }",
+                  "      else {",
+                  "        console.log(data.error);",
+                  "    }",
+                  "});"
+                ],
+                "injectContextObject": false,
+                "asyncWait": true,
+                "waitMode": "Synchronous"
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%Region_Center::TargetContent%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/ContentPath",
+                  "value": "Pages/Layout/TelaCamara.content"
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "JavaScript",
+                "active": true,
+                "sourceLines": [
+                  "var indexCamara = TcHmi.Symbol.readEx('%pp%iIndex%/pp%');",
+                  "//console.log(indexCamara);",
+                  "",
+                  "",
+                  "//Separando o index da valvlua ",
+                  "",
+                  "TcHmi.Symbol.readEx2(\"%s%PLC1.GVL_Automatico.stCamaras[\"+indexCamara+\"]::Config::sValvulas%/s%\", function (data) {",
+                  "    if (data.error === TcHmi.Errors.NONE) {",
+                  "       var IndexValvulas = data.value; ",
+                  "        //console.log(IndexValvulas); ",
+                  "        ",
+                  "\t\tvar resultado = IndexValvulas.split(/\\s*,\\s*/);",
+                  "        console.log(resultado);",
+                  "        ",
+                  "        ",
+                  "",
+                  "",
+                  "\t\t\t\t",
+                  "\t\t//Binding da tela das valvulas",
+                  "\t   var ItemProperty = \"stCamara\";",
+                  "\t   var UserControl = TcHmi.Controls.get(\"UcCabecalhoCamara\");",
+                  "\t   var Variavel = \"%s%PLC1.\" + \"GVL_Automatico\" + \".\" + \"stCamaras\" + \"[\" +indexCamara+ \"]\" + \"|BindingMode=TwoWay%/s%\";",
+                  "\t   ",
+                  "\t   try {",
+                  "\t    \tTcHmi.Binding.createEx2(Variavel, ItemProperty, UserControl);",
+                  "\t    \t",
+                  "",
+                  "\t\t\t",
+                  "\t\t\tswitch(resultado.length) {",
+                  "\t\t\t  case 1:",
+                  "\t\t\t    //Binding da com 1 Valvulas",
+                  "\t\t\t    console.log('1 valuva');",
+                  "\t\t\t\tvar ItemProperty = \"stControleValvula\";",
+                  "\t\t\t    var UserControl = TcHmi.Controls.get(\"UcValvulasVS03\");",
+                  "\t\t\t    var Variavel = \"%s%PLC1.\" + \"GVL_Automatico\" + \".\" + \"stControleValvula\" + \"[\" + resultado[0] + \"]\" + \"|BindingMode=TwoWay%/s%\";",
+                  "\t\t\t   ",
+                  "\t\t\t\t   try {",
+                  "\t\t\t\t    \tTcHmi.Binding.createEx2(Variavel, ItemProperty, UserControl);",
+                  "\t\t\t\t   } catch (error) {",
+                  "\t\t\t\t       alert(\"Erro no binding\");",
+                  "\t\t\t\t       console.log(error.message);",
+                  "\t\t\t\t       console.log(Variavel);",
+                  "\t\t\t\t       console.log(ItemProperty);",
+                  "\t\t\t\t       console.log(UserControl);",
+                  "\t\t\t\t   }",
+                  "\t\t\t    ",
+                  "\t\t\t\tTcHmi.Symbol.writeEx('%ctrl%UcValvulasVS03::Nome%/ctrl%', \"VS\"+resultado[0], function (data){});",
+                  "\t\t\t    TcHmi.Symbol.writeEx('%ctrl%UcValvulasVS03::Visibility%/ctrl%', 'Visible', function (data){});",
+                  "\t\t\t    ",
+                  "\t\t\t    TcHmi.Symbol.writeEx('%ctrl%UcValvulasVS01::Visibility%/ctrl%', 'Collapsed', function (data){});",
+                  "\t\t\t    ",
+                  "\t\t\t    TcHmi.Symbol.writeEx('%ctrl%UcValvulasVS02::Visibility%/ctrl%', 'Collapsed', function (data){});",
+                  "\t\t\t    ",
+                  "\t\t\t    break;",
+                  "\t\t\t    ",
+                  "\t\t\t  case 2:",
+                  "\t\t\t    //Binding da com 2 Valvulas",
+                  "\t\t\t    console.log('2 valuva');",
+                  "\t\t\t\tvar ItemProperty = \"stControleValvula\";",
+                  "\t\t\t    var UserControl = TcHmi.Controls.get(\"UcValvulasVS01\");",
+                  "\t\t\t    var Variavel = \"%s%PLC1.\" + \"GVL_Automatico\" + \".\" + \"stControleValvula\" + \"[\" + resultado[0] + \"]\" + \"|BindingMode=TwoWay%/s%\";",
+                  "\t\t\t   ",
+                  "\t\t\t\t   try {",
+                  "\t\t\t\t    \tTcHmi.Binding.createEx2(Variavel, ItemProperty, UserControl);",
+                  "\t\t\t\t   } catch (error) {",
+                  "\t\t\t\t       alert(\"Erro no binding\");",
+                  "\t\t\t\t       console.log(error.message);",
+                  "\t\t\t\t       console.log(Variavel);",
+                  "\t\t\t\t       console.log(ItemProperty);",
+                  "\t\t\t\t       console.log(UserControl);",
+                  "\t\t\t\t   }",
+                  "\t\t\t    ",
+                  "\t\t\t\tTcHmi.Symbol.writeEx('%ctrl%UcValvulasVS1::Nome%/ctrl%', \"VS\"+resultado[0], function (data){});",
+                  "\t\t\t    TcHmi.Symbol.writeEx('%ctrl%UcValvulasVS1::Visibility%/ctrl%', 'Visible', function (data){});",
+                  "\t\t\t\t",
+                  "\t\t\t    ",
+                  "\t\t\t\t",
+                  "    \t     ",
+                  "\t\t\t\tvar ItemProperty = \"stControleValvula\";",
+                  "\t\t\t    var UserControl = TcHmi.Controls.get(\"UcValvulasVS02\");",
+                  "\t\t\t    var Variavel = \"%s%PLC1.\" + \"GVL_Automatico\" + \".\" + \"stControleValvula\" + \"[\" + resultado[1] + \"]\" + \"|BindingMode=TwoWay%/s%\";",
+                  "\t\t\t\t   try {",
+                  "\t\t\t\t    \tTcHmi.Binding.createEx2(Variavel, ItemProperty, UserControl);",
+                  "\t\t\t\t   } catch (error) {",
+                  "\t\t\t\t       alert(\"Erro no binding\");",
+                  "\t\t\t\t       console.log(error.message);",
+                  "\t\t\t\t       console.log(Variavel);",
+                  "\t\t\t\t       console.log(ItemProperty);",
+                  "\t\t\t\t       console.log(UserControl);",
+                  "\t\t\t\t   }\t",
+                  "\t",
+                  "\t\t\t\tTcHmi.Symbol.writeEx('%ctrl%UcValvulasVS02::Nome%/ctrl%', \"VS\"+resultado[1], function (data){});",
+                  "\t\t\t    TcHmi.Symbol.writeEx('%ctrl%UcValvulasVS02::Visibility%/ctrl%', 'Visible', function (data){});",
+                  "\t\t\t    ",
+                  "\t\t\t    ",
+                  "\t\t\t    TcHmi.Symbol.writeEx('%ctrl%UcValvulasVS03::Visibility%/ctrl%', 'Collapsed', function (data){});",
+                  "\t\t\t    break;",
+                  "\t\t\t    ",
+                  "\t\t\t    ",
+                  "\t\t\t  case 3:",
+                  "\t\t\t    console.log('3 valuva');",
+                  "\t\t\t    //Binding da com 3 Valvulas",
+                  "\t\t\t\tvar ItemProperty = \"stControleValvula\";",
+                  "\t\t\t    var UserControl = TcHmi.Controls.get(\"UcValvulasVS01\");",
+                  "\t\t\t    var Variavel = \"%s%PLC1.\" + \"GVL_Automatico\" + \".\" + \"stControleValvula\" + \"[\" + resultado[0] + \"]\" + \"|BindingMode=TwoWay%/s%\";",
+                  "\t\t\t   ",
+                  "\t\t\t\t   try {",
+                  "\t\t\t\t    \tTcHmi.Binding.createEx2(Variavel, ItemProperty, UserControl);",
+                  "\t\t\t\t   } catch (error) {",
+                  "\t\t\t\t       alert(\"Erro no binding\");",
+                  "\t\t\t\t       console.log(error.message);",
+                  "\t\t\t\t       console.log(Variavel);",
+                  "\t\t\t\t       console.log(ItemProperty);",
+                  "\t\t\t\t       console.log(UserControl);",
+                  "\t\t\t\t   }",
+                  "\t\t\t    ",
+                  "\t\t\t\tTcHmi.Symbol.writeEx('%ctrl%UcValvulasVS01::Nome%/ctrl%', \"VS\"+resultado[0], function (data){});",
+                  "\t\t\t    TcHmi.Symbol.writeEx('%ctrl%UcValvulasVS01::Visibility%/ctrl%', 'Visible', function (data){});",
+                  "\t\t\t\t",
+                  "\t\t\t    ",
+                  "\t\t\t    ",
+                  "\t\t\t\t",
+                  "    \t     ",
+                  "\t\t\t\tvar ItemProperty = \"stControleValvula\";",
+                  "\t\t\t    var UserControl = TcHmi.Controls.get(\"UcValvulasVS03\");",
+                  "\t\t\t    var Variavel = \"%s%PLC1.\" + \"GVL_Automatico\" + \".\" + \"stControleValvula\" + \"[\" + resultado[1] + \"]\" + \"|BindingMode=TwoWay%/s%\";",
+                  "\t\t\t\t   try {",
+                  "\t\t\t\t    \tTcHmi.Binding.createEx2(Variavel, ItemProperty, UserControl);",
+                  "\t\t\t\t   } catch (error) {",
+                  "\t\t\t\t       alert(\"Erro no binding\");",
+                  "\t\t\t\t       console.log(error.message);",
+                  "\t\t\t\t       console.log(Variavel);",
+                  "\t\t\t\t       console.log(ItemProperty);",
+                  "\t\t\t\t       console.log(UserControl);",
+                  "\t\t\t\t   }\t",
+                  "\t",
+                  "\t\t\t\tTcHmi.Symbol.writeEx('%ctrl%UcValvulasVS03::Nome%/ctrl%', \"VS\"+resultado[1], function (data){});",
+                  "\t\t\t    TcHmi.Symbol.writeEx('%ctrl%UcValvulasVS03::Visibility%/ctrl%', 'Visible', function (data){});",
+                  "\t\t\t\t",
+                  "\t\t\t    ",
+                  "\t\t\t    ",
+                  "\t\t\t\t",
+                  "    \t     ",
+                  "\t\t\t\tvar ItemProperty = \"stControleValvula\";",
+                  "\t\t\t    var UserControl = TcHmi.Controls.get(\"UcValvulasVS02\");",
+                  "\t\t\t    var Variavel = \"%s%PLC1.\" + \"GVL_Automatico\" + \".\" + \"stControleValvula\" + \"[\" + resultado[2] + \"]\" + \"|BindingMode=TwoWay%/s%\";",
+                  "\t\t\t\t   try {",
+                  "\t\t\t\t    \tTcHmi.Binding.createEx2(Variavel, ItemProperty, UserControl);",
+                  "\t\t\t\t   } catch (error) {",
+                  "\t\t\t\t       alert(\"Erro no binding\");",
+                  "\t\t\t\t       console.log(error.message);",
+                  "\t\t\t\t       console.log(Variavel);",
+                  "\t\t\t\t       console.log(ItemProperty);",
+                  "\t\t\t\t       console.log(UserControl);",
+                  "\t\t\t\t   }\t",
+                  "\t",
+                  "\t\t\t\tTcHmi.Symbol.writeEx('%ctrl%UcValvulasVS02::Nome%/ctrl%', \"VS\"+resultado[2], function (data){});",
+                  "\t\t\t    TcHmi.Symbol.writeEx('%ctrl%UcValvulasVS02::Visibility%/ctrl%', 'Visible', function (data){});",
+                  "\t\t\t    break;",
+                  "\t\t\t    ",
+                  "\t\t\t  default:",
+                  "\t\t\t    // code block",
+                  "\t\t\t}",
+                  "\t\t\t",
+                  "\t\t    ",
+                  "",
+                  "\t\t    \t",
+                  "\t\t    ",
+                  "",
+                  "\t    \t",
+                  "\t    \t",
+                  "\t    \t",
+                  "\t    \t",
+                  "\t   } catch (error) {",
+                  "\t       alert(\"Erro no binding\");",
+                  "\t       console.log(error.message);",
+                  "\t       console.log(Variavel);",
+                  "\t       console.log(ItemProperty);",
+                  "\t       console.log(UserControl);",
+                  "\t   }",
+                  "\t    ",
+                  "\t\t    ",
+                  "\t\t\t",
+                  "\t\t    ",
+                  "",
+                  "        ",
+                  "    }",
+                  "      else {",
+                  "        console.log(data.error);",
+                  "    }",
+                  "});"
+                ],
+                "injectContextObject": false,
+                "asyncWait": true,
+                "waitMode": "Synchronous"
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%Region_Center_1::TargetContent%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/ContentPath",
+                  "value": "Pages/IHMCamaras/IHMCamaras_operação.content"
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+
+
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 0)"
+}
+</script>
+</div>
+<div id="TcHmiTextblock_2823683" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="12" data-tchmi-height-unit="%" data-tchmi-left="1.7" data-tchmi-left-unit="%" data-tchmi-top="84.2" data-tchmi-top-unit="%" data-tchmi-width="96.5" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="px" data-tchmi-text-font-size="%pp%iTamanhoTexto%/pp%" data-tchmi-zindex="7" data-tchmi-text="%f%&quot;F- &quot;+%pp%stCamara::sa::sHoraTermina%/pp%%/f%">
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(202, 202, 202, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 10.0,
+  "topRight": 10.0,
+  "bottomLeft": 10.0,
+  "bottomRight": 10.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+</div>
+<div id="TcHmiTextblock_2823684" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="12" data-tchmi-height-unit="%" data-tchmi-left="1.7" data-tchmi-left-unit="%" data-tchmi-top="65.8" data-tchmi-top-unit="%" data-tchmi-width="96.5" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="px" data-tchmi-text-font-size="%pp%iTamanhoTexto%/pp%" data-tchmi-zindex="7" data-tchmi-text="%f%&quot;I- &quot;+%pp%stCamara::sa::sHoraInicio%/pp%%/f%">
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(202, 202, 202, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 10.0,
+  "topRight": 10.0,
+  "bottomLeft": 10.0,
+  "bottomRight": 10.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+</div>
+<div id="TcHmiToggleButton_128" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="9.0" data-tchmi-height-unit="%" data-tchmi-width="35.1" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-font-size="15" data-tchmi-toggle-state="Normal" data-tchmi-zindex="19" data-tchmi-icon="Imports/Images/toolbox_active.svg" data-tchmi-right-unit="%" data-tchmi-right="0.1" data-tchmi-top="12.0" data-tchmi-top-unit="%" data-tchmi-icon-width-unit="%" data-tchmi-icon-height-unit="%" data-tchmi-icon-width="90" data-tchmi-icon-height="90">
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiToggleButton_128.onStatePressed",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": false,
+        "sourceLines": [
+          "$('#TcHmiContainerLegenda').slideUp('slow');"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiContainerConfTU_1::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Visible"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "JavaScript",
+        "active": false,
+        "sourceLines": [
+          "$('#TcHmiContainerConfTU').slideDown('slow');"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  },
+  {
+    "event": "TcHmiToggleButton_128.onStateReleased",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": false,
+        "sourceLines": [
+          "$('#TcHmiContainerConfTU').slideUp('slow');"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiContainerConfTU_1::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Collapsed"
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 10.0,
+  "topRight": 10.0,
+  "bottomLeft": 0.0,
+  "bottomRight": 0.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "operate",
+    "group": "Administracao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "CasaMaquinas",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Graficos",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Manutencao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Operacao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Supervisao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Teknike",
+    "permission": "Allow"
+  }
+]
+</script>
+</div>
+<div id="TcHmiContainerConfTEK" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="78" data-tchmi-height-unit="%" data-tchmi-top="20.9" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-zindex="17" data-tchmi-right="0" data-tchmi-right-unit="%" data-tchmi-visibility="Collapsed" data-tchmi-creator-visibility="Visible">
+<div id="TcHmiTextblock_2823817" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="7.4" data-tchmi-height-unit="%" data-tchmi-left="3.0" data-tchmi-left-unit="%" data-tchmi-text="sinal BT" data-tchmi-top="40.1" data-tchmi-top-unit="%" data-tchmi-width="27.1" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="14" data-tchmi-zindex="0">
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+</div>
+<div id="TcHmiTextblock_2823818" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="9.8" data-tchmi-height-unit="%" data-tchmi-left="67.9" data-tchmi-left-unit="%" data-tchmi-text="A -> M" data-tchmi-top="37.5" data-tchmi-top-unit="%" data-tchmi-width="24.5" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="14" data-tchmi-zindex="13">
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+</div>
+<div id="TcHmiTextblock_2823821" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="10.5" data-tchmi-height-unit="%" data-tchmi-left="-0.2" data-tchmi-left-unit="%" data-tchmi-text="Ventilação" data-tchmi-top="50.5" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="14" data-tchmi-zindex="13">
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(255, 255, 255, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(26, 30, 51, 1)"
+}
+</script>
+</div>
+<div id="TcHmiTextblock_2823822" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="10.5" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-text="Botoeira" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="14" data-tchmi-zindex="13">
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(255, 255, 255, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(26, 30, 51, 1)"
+}
+</script>
+</div>
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(202, 202, 202, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 10.0,
+  "topRight": 0.0,
+  "bottomLeft": 10.0,
+  "bottomRight": 10.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+{
+  "left": "Solid",
+  "right": "Solid",
+  "top": "Solid",
+  "bottom": "Solid"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 2,
+  "right": 2,
+  "top": 2,
+  "bottom": 2,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+<div id="TcHmiToggleSwitch" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleSwitch" data-tchmi-height="32.8" data-tchmi-height-unit="%" data-tchmi-left="65.0" data-tchmi-left-unit="%" data-tchmi-text="M" data-tchmi-top="9.1" data-tchmi-top-unit="%" data-tchmi-width="29.7" data-tchmi-width-unit="%" data-tchmi-state-symbol="%pp%stCamara::en::xLedManual%/pp%">
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "operate",
+    "group": "Administracao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "CasaMaquinas",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Graficos",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Operacao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Supervisao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Teknike",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Manutencao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Manutencao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Teknike",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Supervisao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Operacao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Graficos",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "CasaMaquinas",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Administracao",
+    "permission": "Deny"
+  }
+]
+</script>
+</div>
+<div id="TcHmiButton_264" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="23.3" data-tchmi-height-unit="%" data-tchmi-left="33.6" data-tchmi-left-unit="%" data-tchmi-text="LED" data-tchmi-top="14.2" data-tchmi-top-unit="%" data-tchmi-width="26.8" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-state-symbol="%pp%stCamara::en::xSinalManuLed%/pp%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="75">
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "operate",
+    "group": "Administracao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "CasaMaquinas",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Graficos",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Manutencao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Operacao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Supervisao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Administracao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "CasaMaquinas",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Graficos",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Operacao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Supervisao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Teknike",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Manutencao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Teknike",
+    "permission": "Allow"
+  }
+]
+</script>
+</div>
+<div id="TcHmiEllipse_64" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="20.7" data-tchmi-height-unit="%" data-tchmi-left="1.8" data-tchmi-left-unit="%" data-tchmi-top="14.2" data-tchmi-top-unit="%" data-tchmi-width="27.1" data-tchmi-width-unit="%">
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+        [
+        {
+        "event": "%pp%stCamara::en::xLigaTudoFisico%/pp%",
+        "actions": [
+        {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+        {
+        "if": [
+        {
+        "compare1": {
+        "objectType": "Symbol",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "symbolExpression": "%pp%stCamara::en::xLigaTudoFisico%/pp%"
+        },
+        "compare2": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:general#/definitions/BOOL",
+        "value": true
+        },
+        "compareOperator": "==",
+        "logic": null
+        }
+        ],
+        "then": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiEllipse_64::FillColor%/ctrl%",
+        "value": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:framework#/definitions/Color",
+        "value": {
+        "color": "rgba(16, 112, 7, 1)"
+        }
+        },
+        "asyncWait": true
+        }
+        ]
+        },
+        {
+        "else": [
+        {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiEllipse_64::FillColor%/ctrl%",
+        "value": {
+        "objectType": "StaticValue",
+        "valueType": "tchmi:framework#/definitions/Color",
+        "value": null
+        },
+        "asyncWait": true
+        }
+        ]
+        }
+        ],
+        "asyncWait": true
+        }
+        ]
+        }
+        ]
+    </script>
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "observe",
+    "group": "Teknike",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Supervisao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Operacao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Manutencao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Graficos",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "CasaMaquinas",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Administracao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Administracao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "CasaMaquinas",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Graficos",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Manutencao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Operacao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Supervisao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Teknike",
+    "permission": "Allow"
+  }
+]
+</script>
+
+
+</div>
+<div id="TcHmiButton_265" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="23.3" data-tchmi-height-unit="%" data-tchmi-left="36.0" data-tchmi-left-unit="%" data-tchmi-text="Vent" data-tchmi-top="64.0" data-tchmi-top-unit="%" data-tchmi-width="26.8" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-state-symbol="%pp%stCamara::Config::xSinalManualDesligaEvap[1]%/pp%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="75">
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "operate",
+    "group": "Administracao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "CasaMaquinas",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Graficos",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Manutencao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Operacao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Supervisao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Administracao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "CasaMaquinas",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Graficos",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Operacao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Supervisao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Teknike",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Manutencao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Teknike",
+    "permission": "Allow"
+  }
+]
+</script>
+</div>
+<div id="TcHmiToggleSwitch_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleSwitch" data-tchmi-height="32.8" data-tchmi-height-unit="%" data-tchmi-left="67.4" data-tchmi-left-unit="%" data-tchmi-text="M" data-tchmi-top="58.9" data-tchmi-top-unit="%" data-tchmi-width="29.7" data-tchmi-width-unit="%" data-tchmi-state-symbol="%pp%stCamara::Config::xManualDesligaEvaporador[1]%/pp%">
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "operate",
+    "group": "Administracao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "CasaMaquinas",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Graficos",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Operacao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Supervisao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Teknike",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Manutencao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Manutencao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Teknike",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Supervisao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Operacao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Graficos",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "CasaMaquinas",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Administracao",
+    "permission": "Deny"
+  }
+]
+</script>
+</div>
+<div id="TcHmiTextblock_2823823" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="9.8" data-tchmi-height-unit="%" data-tchmi-left="70.3" data-tchmi-left-unit="%" data-tchmi-text="A -> M" data-tchmi-top="87.3" data-tchmi-top-unit="%" data-tchmi-width="24.5" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="14" data-tchmi-zindex="13">
+M" data-tchmi-top="37.5" data-tchmi-top-unit="%" data-tchmi-width="24.5" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="14" data-tchmi-zindex="13">
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+</div>
+</div>
+<div id="TcHmiToggleButton_136" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="9.0" data-tchmi-height-unit="%" data-tchmi-width="35.1" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-font-size="15" data-tchmi-toggle-state="Normal" data-tchmi-zindex="19" data-tchmi-icon="Imports/Images/toolbox_active.svg" data-tchmi-top="12.0" data-tchmi-top-unit="%" data-tchmi-icon-width-unit="%" data-tchmi-icon-height-unit="%" data-tchmi-icon-width="90" data-tchmi-icon-height="90" data-tchmi-left="0.1" data-tchmi-left-unit="%">
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiToggleButton_136.onStatePressed",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": false,
+        "sourceLines": [
+          "$('#TcHmiContainerLegenda').slideUp('slow');"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiContainerConfTEK::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Visible"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "JavaScript",
+        "active": false,
+        "sourceLines": [
+          "$('#TcHmiContainerConfTU').slideDown('slow');"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  },
+  {
+    "event": "TcHmiToggleButton_136.onStateReleased",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": false,
+        "sourceLines": [
+          "$('#TcHmiContainerConfTU').slideUp('slow');"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiContainerConfTEK::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Collapsed"
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 10.0,
+  "topRight": 10.0,
+  "bottomLeft": 0.0,
+  "bottomRight": 0.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "operate",
+    "group": "Administracao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "CasaMaquinas",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Graficos",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Manutencao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Operacao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Supervisao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Teknike",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Administracao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "CasaMaquinas",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Graficos",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Manutencao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Operacao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Supervisao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Teknike",
+    "permission": "Allow"
+  }
+]
+</script>
+</div>
+</div>

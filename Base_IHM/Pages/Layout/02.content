@@ -1,0 +1,312 @@
+﻿<div id="Content2_1" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="1720" data-tchmi-height="1000" data-tchmi-zindex="1" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+
+<div id="Esteira_431" data-tchmi-type="TcHmi.Controls.FrameworkEsteira.Esteira" data-tchmi-altura="20" data-tchmi-cima="90" data-tchmi-comissionado="true" data-tchmi-esquerda="15" data-tchmi-fonte="30" data-tchmi-height="200" data-tchmi-height-unit="px" data-tchmi-index="43" data-tchmi-largura="10" data-tchmi-left="261" data-tchmi-left-unit="px" data-tchmi-operavel="true" data-tchmi-popup="Popup_Esteira_1" data-tchmi-posicao="SD" data-tchmi-teminversor="false" data-tchmi-tipoesteira="Horizontal" data-tchmi-top="23" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-nome="MIE43" data-tchmi-gvl="GVL_Motores" data-tchmi-struct="stPartida" data-tchmi-vetor="Motor" data-tchmi-mostratexto="false" data-tchmi-abrepopup="false" data-tchmi-temcomissionamento="false" data-tchmi-zindex="41">
+</div>
+<div id="Esteira_441" data-tchmi-type="TcHmi.Controls.FrameworkEsteira.Esteira" data-tchmi-altura="10" data-tchmi-cima="70" data-tchmi-comissionado="true" data-tchmi-fonte="35" data-tchmi-height="97" data-tchmi-height-unit="px" data-tchmi-index="27" data-tchmi-largura="20" data-tchmi-left="994" data-tchmi-left-unit="px" data-tchmi-operavel="true" data-tchmi-popup="Popup_Esteira_1" data-tchmi-posicao="SD" data-tchmi-teminversor="false" data-tchmi-tipoesteira="Curva" data-tchmi-top="91" data-tchmi-top-unit="px" data-tchmi-width="156" data-tchmi-width-unit="px" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-zindex="44" data-tchmi-nome="MIE27" data-tchmi-gvl="GVL_Motores" data-tchmi-struct="stPartida" data-tchmi-vetor="Motor" data-tchmi-esquerda="70" data-tchmi-mostratexto="true">
+<script data-tchmi-target-attribute="data-tchmi-transform" type="application/json">
+[
+  {
+    "transformType": "Rotate",
+    "angle": -180.0,
+    "vector": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 1.0
+    }
+  }
+]
+</script>
+</div>
+<div id="Esteira_449" data-tchmi-type="TcHmi.Controls.FrameworkEsteira.Esteira" data-tchmi-altura="20" data-tchmi-comissionado="true" data-tchmi-esquerda="10" data-tchmi-fonte="30" data-tchmi-height="197" data-tchmi-height-unit="px" data-tchmi-index="26" data-tchmi-largura="10" data-tchmi-left="1071" data-tchmi-left-unit="px" data-tchmi-operavel="true" data-tchmi-popup="Popup_Esteira_1" data-tchmi-posicao="SD" data-tchmi-teminversor="false" data-tchmi-tipoesteira="Vertical" data-tchmi-top="187" data-tchmi-top-unit="px" data-tchmi-width="50" data-tchmi-width-unit="px" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-nome="MIE26" data-tchmi-gvl="GVL_Motores" data-tchmi-struct="stPartida" data-tchmi-vetor="Motor" data-tchmi-mostratexto="false" data-tchmi-abrepopup="false" data-tchmi-temcomissionamento="false" data-tchmi-zindex="45" data-tchmi-cima="115">
+</div>
+<div id="Esteira_450" data-tchmi-type="TcHmi.Controls.FrameworkEsteira.Esteira" data-tchmi-altura="10" data-tchmi-cima="70" data-tchmi-comissionado="true" data-tchmi-fonte="35" data-tchmi-height="151" data-tchmi-height-unit="px" data-tchmi-index="25" data-tchmi-largura="20" data-tchmi-left="1022" data-tchmi-left-unit="px" data-tchmi-operavel="true" data-tchmi-popup="Popup_Esteira_1" data-tchmi-posicao="SD" data-tchmi-teminversor="false" data-tchmi-tipoesteira="Curva" data-tchmi-top="358" data-tchmi-top-unit="px" data-tchmi-width="99" data-tchmi-width-unit="px" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-zindex="44" data-tchmi-nome="MIE25" data-tchmi-gvl="GVL_Motores" data-tchmi-struct="stPartida" data-tchmi-vetor="Motor" data-tchmi-esquerda="70" data-tchmi-mostratexto="true">
+<script data-tchmi-target-attribute="data-tchmi-transform" type="application/json">
+[
+  {
+    "transformType": "Rotate",
+    "angle": -90.0,
+    "vector": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 1.0
+    }
+  }
+]
+</script>
+</div>
+<div id="Esteira_451" data-tchmi-type="TcHmi.Controls.FrameworkEsteira.Esteira" data-tchmi-altura="20" data-tchmi-cima="5" data-tchmi-comissionado="true" data-tchmi-esquerda="25" data-tchmi-fonte="30" data-tchmi-height="49" data-tchmi-height-unit="px" data-tchmi-index="25" data-tchmi-largura="10" data-tchmi-left="897" data-tchmi-left-unit="px" data-tchmi-operavel="true" data-tchmi-popup="Popup_Esteira_1" data-tchmi-posicao="SD" data-tchmi-teminversor="false" data-tchmi-tipoesteira="Horizontal" data-tchmi-top="434" data-tchmi-top-unit="px" data-tchmi-width="128" data-tchmi-width-unit="px" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-nome="MIE25" data-tchmi-gvl="GVL_Motores" data-tchmi-struct="stPartida" data-tchmi-vetor="Motor" data-tchmi-mostratexto="false" data-tchmi-abrepopup="false" data-tchmi-temcomissionamento="false" data-tchmi-zindex="50" data-tchmi-semborda="false">
+</div>
+<div id="Esteira_452" data-tchmi-type="TcHmi.Controls.FrameworkEsteira.Esteira" data-tchmi-altura="20" data-tchmi-cima="5" data-tchmi-comissionado="true" data-tchmi-esquerda="180" data-tchmi-fonte="30" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-index="24" data-tchmi-largura="10" data-tchmi-left="527" data-tchmi-left-unit="px" data-tchmi-operavel="true" data-tchmi-popup="Popup_Esteira_1" data-tchmi-posicao="SD" data-tchmi-teminversor="false" data-tchmi-tipoesteira="Horizontal" data-tchmi-top="434" data-tchmi-top-unit="px" data-tchmi-width="372" data-tchmi-width-unit="px" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-nome="MIE24" data-tchmi-gvl="GVL_Motores" data-tchmi-struct="stPartida" data-tchmi-vetor="Motor" data-tchmi-mostratexto="false" data-tchmi-abrepopup="false" data-tchmi-temcomissionamento="false" data-tchmi-zindex="51">
+</div>
+<div id="Esteira_453" data-tchmi-type="TcHmi.Controls.FrameworkEsteira.Esteira" data-tchmi-altura="20" data-tchmi-cima="5" data-tchmi-comissionado="true" data-tchmi-esquerda="250" data-tchmi-fonte="30" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-index="23" data-tchmi-largura="10" data-tchmi-left="527" data-tchmi-left-unit="px" data-tchmi-operavel="true" data-tchmi-popup="Popup_Esteira_1" data-tchmi-posicao="SD" data-tchmi-teminversor="false" data-tchmi-tipoesteira="Horizontal" data-tchmi-top="484" data-tchmi-top-unit="px" data-tchmi-width="496" data-tchmi-width-unit="px" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-nome="MIE23" data-tchmi-gvl="GVL_Motores" data-tchmi-struct="stPartida" data-tchmi-vetor="Motor" data-tchmi-mostratexto="false" data-tchmi-abrepopup="false" data-tchmi-temcomissionamento="false" data-tchmi-zindex="52">
+</div>
+<div id="Esteira_454" data-tchmi-type="TcHmi.Controls.FrameworkEsteira.Esteira" data-tchmi-altura="20" data-tchmi-cima="5" data-tchmi-comissionado="true" data-tchmi-esquerda="25" data-tchmi-fonte="30" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-index="22" data-tchmi-largura="10" data-tchmi-left="1022" data-tchmi-left-unit="px" data-tchmi-operavel="true" data-tchmi-popup="Popup_Esteira_1" data-tchmi-posicao="SD" data-tchmi-teminversor="false" data-tchmi-tipoesteira="Horizontal" data-tchmi-top="483" data-tchmi-top-unit="px" data-tchmi-width="125" data-tchmi-width-unit="px" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-nome="MIE22" data-tchmi-gvl="GVL_Motores" data-tchmi-struct="stPartida" data-tchmi-vetor="Motor" data-tchmi-mostratexto="false" data-tchmi-abrepopup="false" data-tchmi-temcomissionamento="false" data-tchmi-zindex="41" data-tchmi-semborda="false">
+</div>
+<div id="Esteira_455" data-tchmi-type="TcHmi.Controls.FrameworkEsteira.Esteira" data-tchmi-altura="20" data-tchmi-cima="10" data-tchmi-comissionado="true" data-tchmi-esquerda="15" data-tchmi-fonte="15" data-tchmi-height="101" data-tchmi-height-unit="px" data-tchmi-index="22" data-tchmi-largura="10" data-tchmi-left="1018" data-tchmi-left-unit="px" data-tchmi-operavel="true" data-tchmi-popup="Popup_Esteira_1" data-tchmi-posicao="SD" data-tchmi-teminversor="false" data-tchmi-tipoesteira="Curva 45°" data-tchmi-top="449" data-tchmi-top-unit="px" data-tchmi-width="225" data-tchmi-width-unit="px" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-zindex="0" data-tchmi-gvl="GVL_Motores" data-tchmi-struct="stPartida" data-tchmi-vetor="Motor">
+<script data-tchmi-target-attribute="data-tchmi-transform" type="application/json">
+[
+  {
+    "transformType": "Rotate",
+    "angle": 0.0,
+    "vector": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    }
+  }
+]
+</script>
+</div>
+<div id="Esteira_456" data-tchmi-type="TcHmi.Controls.FrameworkEsteira.Esteira" data-tchmi-altura="20" data-tchmi-cima="5" data-tchmi-comissionado="true" data-tchmi-esquerda="25" data-tchmi-fonte="30" data-tchmi-height="48" data-tchmi-height-unit="px" data-tchmi-index="21" data-tchmi-largura="10" data-tchmi-left="1181" data-tchmi-left-unit="px" data-tchmi-operavel="true" data-tchmi-popup="Popup_Esteira_1" data-tchmi-posicao="SD" data-tchmi-teminversor="false" data-tchmi-tipoesteira="Horizontal" data-tchmi-top="501" data-tchmi-top-unit="px" data-tchmi-width="127" data-tchmi-width-unit="px" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-nome="MIE21" data-tchmi-gvl="GVL_Motores" data-tchmi-struct="stPartida" data-tchmi-vetor="Motor" data-tchmi-mostratexto="false" data-tchmi-abrepopup="false" data-tchmi-temcomissionamento="false" data-tchmi-zindex="53" data-tchmi-semborda="false">
+</div>
+<div id="Esteira_457" data-tchmi-type="TcHmi.Controls.FrameworkEsteira.Esteira" data-tchmi-altura="10" data-tchmi-cima="70" data-tchmi-comissionado="true" data-tchmi-fonte="35" data-tchmi-height="97" data-tchmi-height-unit="px" data-tchmi-index="21" data-tchmi-largura="20" data-tchmi-left="1276" data-tchmi-left-unit="px" data-tchmi-operavel="true" data-tchmi-popup="Popup_Esteira_1" data-tchmi-posicao="SD" data-tchmi-teminversor="false" data-tchmi-tipoesteira="Curva" data-tchmi-top="502" data-tchmi-top-unit="px" data-tchmi-width="156" data-tchmi-width-unit="px" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-zindex="44" data-tchmi-nome="MIE21" data-tchmi-gvl="GVL_Motores" data-tchmi-struct="stPartida" data-tchmi-vetor="Motor" data-tchmi-esquerda="70" data-tchmi-mostratexto="true">
+<script data-tchmi-target-attribute="data-tchmi-transform" type="application/json">
+[
+  {
+    "transformType": "Rotate",
+    "angle": -180.0,
+    "vector": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 1.0
+    }
+  }
+]
+</script>
+</div>
+<div id="Esteira_458" data-tchmi-type="TcHmi.Controls.FrameworkEsteira.Esteira" data-tchmi-altura="20" data-tchmi-comissionado="true" data-tchmi-esquerda="10" data-tchmi-fonte="30" data-tchmi-height="368" data-tchmi-height-unit="px" data-tchmi-index="20" data-tchmi-largura="10" data-tchmi-left="1353" data-tchmi-left-unit="px" data-tchmi-operavel="true" data-tchmi-popup="Popup_Esteira_1" data-tchmi-posicao="SD" data-tchmi-teminversor="false" data-tchmi-tipoesteira="Vertical" data-tchmi-top="597" data-tchmi-top-unit="px" data-tchmi-width="50" data-tchmi-width-unit="px" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-nome="MIE20" data-tchmi-gvl="GVL_Motores" data-tchmi-struct="stPartida" data-tchmi-vetor="Motor" data-tchmi-mostratexto="false" data-tchmi-abrepopup="false" data-tchmi-temcomissionamento="false" data-tchmi-zindex="45" data-tchmi-cima="210">
+</div>
+<div id="Sensor_261" data-tchmi-type="TcHmi.Controls.FrameworkSensor.Sensor" data-tchmi-entradasaida="true" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="674" data-tchmi-left-unit="px" data-tchmi-operavel="true" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="32" data-tchmi-width-unit="px" data-tchmi-zindex="55" data-tchmi-stsensor="%s%PLC1.GVL_Sensores.SenDig[24]%/s%">
+</div>
+<div id="TcHmiTextblock_1390" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="655" data-tchmi-left-unit="px" data-tchmi-text="SOE24" data-tchmi-top="191" data-tchmi-top-unit="px" data-tchmi-width="70" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="25" data-tchmi-zindex="49" data-tchmi-ignore-escape-sequences="false" data-tchmi-text-font-weight="Normal">
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(255, 255, 255, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-transform" type="application/json">
+[
+  {
+    "transformType": "Rotate",
+    "angle": -90.0,
+    "vector": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 1.0
+    }
+  }
+]
+</script>
+</div>
+<div id="Sensor_262" data-tchmi-type="TcHmi.Controls.FrameworkSensor.Sensor" data-tchmi-entradasaida="true" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="755" data-tchmi-left-unit="px" data-tchmi-operavel="true" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="32" data-tchmi-width-unit="px" data-tchmi-zindex="56" data-tchmi-stsensor="%s%PLC1.GVL_Sensores.SenDig[23]%/s%">
+</div>
+<div id="TcHmiTextblock_1391" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="736" data-tchmi-left-unit="px" data-tchmi-text="SOE23" data-tchmi-top="191" data-tchmi-top-unit="px" data-tchmi-width="70" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="25" data-tchmi-zindex="49" data-tchmi-ignore-escape-sequences="false" data-tchmi-text-font-weight="Normal">
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(255, 255, 255, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-transform" type="application/json">
+[
+  {
+    "transformType": "Rotate",
+    "angle": -90.0,
+    "vector": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 1.0
+    }
+  }
+]
+</script>
+</div>
+<div id="Sensor_264" data-tchmi-type="TcHmi.Controls.FrameworkSensor.Sensor" data-tchmi-entradasaida="true" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="385" data-tchmi-left-unit="px" data-tchmi-operavel="true" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="32" data-tchmi-width-unit="px" data-tchmi-zindex="57" data-tchmi-stsensor="%s%PLC1.GVL_Sensores.SenDig[26]%/s%">
+</div>
+<div id="TcHmiTextblock_1393" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="366" data-tchmi-left-unit="px" data-tchmi-text="SRE26" data-tchmi-top="190" data-tchmi-top-unit="px" data-tchmi-width="70" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="25" data-tchmi-zindex="49">
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(255, 255, 255, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-transform" type="application/json">
+[
+  {
+    "transformType": "Rotate",
+    "angle": -90.0,
+    "vector": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 1.0
+    }
+  }
+]
+</script>
+</div>
+<div id="Sensor_265" data-tchmi-type="TcHmi.Controls.FrameworkSensor.Sensor" data-tchmi-entradasaida="true" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="503" data-tchmi-left-unit="px" data-tchmi-operavel="true" data-tchmi-top="142" data-tchmi-top-unit="px" data-tchmi-width="32" data-tchmi-width-unit="px" data-tchmi-zindex="58" data-tchmi-stsensor="%s%PLC1.GVL_Sensores.SenDig[25]%/s%">
+</div>
+<div id="TcHmiTextblock_1394" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="484" data-tchmi-left-unit="px" data-tchmi-text="SOE25" data-tchmi-top="193" data-tchmi-top-unit="px" data-tchmi-width="70" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="25" data-tchmi-zindex="49" data-tchmi-ignore-escape-sequences="false" data-tchmi-text-font-weight="Normal">
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(255, 255, 255, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-transform" type="application/json">
+[
+  {
+    "transformType": "Rotate",
+    "angle": -90.0,
+    "vector": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 1.0
+    }
+  }
+]
+</script>
+</div>
+<div id="EmergenciaCirculo_127" data-tchmi-type="TcHmi.Controls.FrameworkEmergencia.EmergenciaCirculo" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="1276" data-tchmi-left-unit="px" data-tchmi-top="561" data-tchmi-top-unit="px" data-tchmi-width="33" data-tchmi-width-unit="px" data-tchmi-zindex="68" data-tchmi-emergencia="%s%PLC1.GVL_Seguranca.Emergencias[15]::En::xEmergenciaOK%/s%">
+</div>
+<div id="TcHmiTextblock_1409" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="1258" data-tchmi-left-unit="px" data-tchmi-text="BEE15" data-tchmi-top="609" data-tchmi-top-unit="px" data-tchmi-width="70" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="25" data-tchmi-zindex="49" data-tchmi-ignore-escape-sequences="false" data-tchmi-text-font-weight="Normal">
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(255, 255, 255, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-transform" type="application/json">
+[
+  {
+    "transformType": "Rotate",
+    "angle": -90.0,
+    "vector": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 1.0
+    }
+  }
+]
+</script>
+</div>
+<div id="EmergenciaCirculo_128" data-tchmi-type="TcHmi.Controls.FrameworkEmergencia.EmergenciaCirculo" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="1315" data-tchmi-left-unit="px" data-tchmi-top="820" data-tchmi-top-unit="px" data-tchmi-width="33" data-tchmi-width-unit="px" data-tchmi-zindex="67" data-tchmi-emergencia="%s%PLC1.GVL_Seguranca.Emergencias[23]::En::xEmergenciaOK%/s%">
+</div>
+<div id="TcHmiTextblock_1411" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="1248" data-tchmi-left-unit="px" data-tchmi-text="BEE23" data-tchmi-top="818" data-tchmi-top-unit="px" data-tchmi-width="70" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="25" data-tchmi-zindex="49">
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(255, 255, 255, 1)"
+}
+</script>
+</div>
+<div id="EmergenciaCorda_56" data-tchmi-type="TcHmi.Controls.FrameworkEmergencia.EmergenciaCorda" data-tchmi-height="10" data-tchmi-height-unit="px" data-tchmi-left="527" data-tchmi-left-unit="px" data-tchmi-top="551" data-tchmi-top-unit="px" data-tchmi-width="479" data-tchmi-width-unit="px" data-tchmi-zindex="7" data-tchmi-emergencia="%s%PLC1.GVL_Seguranca.Emergencias[27]::En::xEmergenciaOK%/s%">
+</div>
+<div id="EmergenciaCirculo_130" data-tchmi-type="TcHmi.Controls.FrameworkEmergencia.EmergenciaCirculo" data-tchmi-height="44" data-tchmi-height-unit="px" data-tchmi-left="994" data-tchmi-left-unit="px" data-tchmi-top="534" data-tchmi-top-unit="px" data-tchmi-width="39" data-tchmi-width-unit="px" data-tchmi-zindex="7" data-tchmi-emergencia="%s%PLC1.GVL_Seguranca.Emergencias[27]::En::xEmergenciaOK%/s%">
+</div>
+<div id="Legacy_LampControl_122" data-tchmi-type="TcHmi.Controls.Legacy_Lamp.Legacy_LampControl" data-tchmi-height="39" data-tchmi-height-unit="px" data-tchmi-lamp-color="Green" data-tchmi-left="1000" data-tchmi-left-unit="px" data-tchmi-top="571" data-tchmi-top-unit="px" data-tchmi-width="26" data-tchmi-width-unit="px" data-tchmi-value="true" data-tchmi-zindex="7">
+</div>
+<div id="TcHmiTextblock_1415" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="929" data-tchmi-left-unit="px" data-tchmi-text="CSE27" data-tchmi-top="555" data-tchmi-top-unit="px" data-tchmi-width="70" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="25" data-tchmi-zindex="49">
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(255, 255, 255, 1)"
+}
+</script>
+</div>
+<div id="TcHmiTextblock_1416" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="929" data-tchmi-left-unit="px" data-tchmi-text="BCE28" data-tchmi-top="578" data-tchmi-top-unit="px" data-tchmi-width="70" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="25" data-tchmi-zindex="49">
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(255, 255, 255, 1)"
+}
+</script>
+</div>
+<div id="EmergenciaCorda_57" data-tchmi-type="TcHmi.Controls.FrameworkEmergencia.EmergenciaCorda" data-tchmi-height="10" data-tchmi-height-unit="px" data-tchmi-left="527" data-tchmi-left-unit="px" data-tchmi-top="411" data-tchmi-top-unit="px" data-tchmi-width="346" data-tchmi-width-unit="px" data-tchmi-zindex="7" data-tchmi-emergencia="%s%PLC1.GVL_Seguranca.Emergencias[25]::En::xEmergenciaOK%/s%">
+</div>
+<div id="EmergenciaCirculo_131" data-tchmi-type="TcHmi.Controls.FrameworkEmergencia.EmergenciaCirculo" data-tchmi-height="44" data-tchmi-height-unit="px" data-tchmi-left="863" data-tchmi-left-unit="px" data-tchmi-top="394" data-tchmi-top-unit="px" data-tchmi-width="39" data-tchmi-width-unit="px" data-tchmi-zindex="7" data-tchmi-emergencia="%s%PLC1.GVL_Seguranca.Emergencias[25]::En::xEmergenciaOK%/s%">
+</div>
+<div id="Legacy_LampControl_123" data-tchmi-type="TcHmi.Controls.Legacy_Lamp.Legacy_LampControl" data-tchmi-height="39" data-tchmi-height-unit="px" data-tchmi-lamp-color="Green" data-tchmi-left="699" data-tchmi-left-unit="px" data-tchmi-top="377" data-tchmi-top-unit="px" data-tchmi-width="26" data-tchmi-width-unit="px" data-tchmi-value="true" data-tchmi-zindex="7">
+</div>
+<div id="TcHmiTextblock_1417" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="725" data-tchmi-left-unit="px" data-tchmi-text="BCE26" data-tchmi-top="379" data-tchmi-top-unit="px" data-tchmi-width="70" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="25" data-tchmi-zindex="49">
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(255, 255, 255, 1)"
+}
+</script>
+</div>
+<div id="TcHmiTextblock_1418" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="800" data-tchmi-left-unit="px" data-tchmi-text="CSE25" data-tchmi-top="380" data-tchmi-top-unit="px" data-tchmi-width="70" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="25" data-tchmi-zindex="49">
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(255, 255, 255, 1)"
+}
+</script>
+</div>
+<div id="TcHmiTextblock_1431" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="1065" data-tchmi-left-unit="px" data-tchmi-text="MIE27" data-tchmi-top="98" data-tchmi-top-unit="px" data-tchmi-width="70" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="25" data-tchmi-zindex="49">
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(255, 255, 255, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-transform" type="application/json">
+[
+  {
+    "transformType": "Rotate",
+    "angle": 45.0,
+    "vector": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 1.0
+    }
+  }
+]
+</script>
+</div>
+<div id="Esteira_459" data-tchmi-type="TcHmi.Controls.FrameworkEsteira.Esteira" data-tchmi-altura="20" data-tchmi-cima="5" data-tchmi-comissionado="true" data-tchmi-esquerda="25" data-tchmi-fonte="30" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-index="39" data-tchmi-largura="10" data-tchmi-left="360" data-tchmi-left-unit="px" data-tchmi-operavel="true" data-tchmi-popup="Popup_Esteira_1" data-tchmi-posicao="SD" data-tchmi-teminversor="false" data-tchmi-tipoesteira="Horizontal" data-tchmi-top="90" data-tchmi-top-unit="px" data-tchmi-width="125" data-tchmi-width-unit="px" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-nome="MIE39" data-tchmi-gvl="GVL_Motores" data-tchmi-struct="stPartida" data-tchmi-vetor="Motor" data-tchmi-mostratexto="false" data-tchmi-abrepopup="false" data-tchmi-temcomissionamento="false" data-tchmi-zindex="41">
+</div>
+<div id="Esteira_460" data-tchmi-type="TcHmi.Controls.FrameworkEsteira.Esteira" data-tchmi-altura="20" data-tchmi-cima="5" data-tchmi-comissionado="true" data-tchmi-esquerda="25" data-tchmi-fonte="30" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-index="38" data-tchmi-largura="10" data-tchmi-left="484" data-tchmi-left-unit="px" data-tchmi-operavel="true" data-tchmi-popup="Popup_Esteira_1" data-tchmi-posicao="SD" data-tchmi-teminversor="false" data-tchmi-tipoesteira="Horizontal" data-tchmi-top="90" data-tchmi-top-unit="px" data-tchmi-width="125" data-tchmi-width-unit="px" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-nome="MIE38" data-tchmi-gvl="GVL_Motores" data-tchmi-struct="stPartida" data-tchmi-vetor="Motor" data-tchmi-mostratexto="false" data-tchmi-abrepopup="false" data-tchmi-temcomissionamento="false" data-tchmi-zindex="41">
+</div>
+<div id="Esteira_461" data-tchmi-type="TcHmi.Controls.FrameworkEsteira.Esteira" data-tchmi-altura="20" data-tchmi-cima="5" data-tchmi-comissionado="true" data-tchmi-esquerda="55" data-tchmi-fonte="30" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-index="37" data-tchmi-largura="10" data-tchmi-left="607" data-tchmi-left-unit="px" data-tchmi-operavel="true" data-tchmi-popup="Popup_Esteira_1" data-tchmi-posicao="SD" data-tchmi-teminversor="false" data-tchmi-tipoesteira="Horizontal" data-tchmi-top="90" data-tchmi-top-unit="px" data-tchmi-width="175" data-tchmi-width-unit="px" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-nome="MIE37" data-tchmi-gvl="GVL_Motores" data-tchmi-struct="stPartida" data-tchmi-vetor="Motor" data-tchmi-mostratexto="false" data-tchmi-abrepopup="false" data-tchmi-temcomissionamento="false" data-tchmi-zindex="41">
+</div>
+<div id="Esteira_462" data-tchmi-type="TcHmi.Controls.FrameworkEsteira.Esteira" data-tchmi-altura="20" data-tchmi-cima="5" data-tchmi-comissionado="true" data-tchmi-esquerda="30" data-tchmi-fonte="30" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-index="36" data-tchmi-largura="10" data-tchmi-left="780" data-tchmi-left-unit="px" data-tchmi-operavel="true" data-tchmi-popup="Popup_Esteira_1" data-tchmi-posicao="SD" data-tchmi-teminversor="false" data-tchmi-tipoesteira="Horizontal" data-tchmi-top="90" data-tchmi-top-unit="px" data-tchmi-width="125" data-tchmi-width-unit="px" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-nome="MIE36" data-tchmi-gvl="GVL_Motores" data-tchmi-struct="stPartida" data-tchmi-vetor="Motor" data-tchmi-mostratexto="false" data-tchmi-abrepopup="false" data-tchmi-temcomissionamento="false" data-tchmi-zindex="41">
+</div>
+<div id="Sensor_307" data-tchmi-type="TcHmi.Controls.FrameworkSensor.Sensor" data-tchmi-entradasaida="true" data-tchmi-height="33" data-tchmi-height-unit="px" data-tchmi-left="255" data-tchmi-left-unit="px" data-tchmi-operavel="true" data-tchmi-top="225" data-tchmi-top-unit="px" data-tchmi-width="32" data-tchmi-width-unit="px" data-tchmi-zindex="54" data-tchmi-stsensor="%s%PLC1.GVL_Sensores.SenDig[30]%/s%">
+</div>
+<div id="TcHmiTextblock_1515" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="235" data-tchmi-left-unit="px" data-tchmi-text="SRE30" data-tchmi-top="279" data-tchmi-top-unit="px" data-tchmi-width="70" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="25" data-tchmi-zindex="49" data-tchmi-ignore-escape-sequences="false" data-tchmi-text-font-weight="Normal">
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(255, 255, 255, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-transform" type="application/json">
+[
+  {
+    "transformType": "Rotate",
+    "angle": -90.0,
+    "vector": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 1.0
+    }
+  }
+]
+</script>
+</div>
+<div id="Esteira_523" data-tchmi-type="TcHmi.Controls.FrameworkEsteira.Esteira" data-tchmi-altura="20" data-tchmi-cima="5" data-tchmi-comissionado="true" data-tchmi-esquerda="30" data-tchmi-fonte="30" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-index="28" data-tchmi-largura="10" data-tchmi-left="900" data-tchmi-left-unit="px" data-tchmi-operavel="true" data-tchmi-popup="Popup_Esteira_1" data-tchmi-posicao="SD" data-tchmi-teminversor="false" data-tchmi-tipoesteira="Horizontal" data-tchmi-top="90" data-tchmi-top-unit="px" data-tchmi-width="125" data-tchmi-width-unit="px" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-nome="MIE28" data-tchmi-gvl="GVL_Motores" data-tchmi-struct="stPartida" data-tchmi-vetor="Motor" data-tchmi-mostratexto="false" data-tchmi-abrepopup="false" data-tchmi-temcomissionamento="false" data-tchmi-zindex="41">
+</div>
+<div id="Sensor_364" data-tchmi-type="TcHmi.Controls.FrameworkSensor.Sensor" data-tchmi-entradasaida="true" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="1037" data-tchmi-left-unit="px" data-tchmi-operavel="true" data-tchmi-top="290" data-tchmi-top-unit="px" data-tchmi-width="32" data-tchmi-width-unit="px" data-tchmi-zindex="63" data-tchmi-stsensor="%s%PLC1.GVL_Sensores.SenDig[16]%/s%">
+</div>
+<div id="TcHmiTextblock_1549" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="969" data-tchmi-left-unit="px" data-tchmi-text="SOE16" data-tchmi-top="290" data-tchmi-top-unit="px" data-tchmi-width="70" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="25" data-tchmi-zindex="49">
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(255, 255, 255, 1)"
+}
+</script>
+</div>
+<div id="Esteira_598" data-tchmi-type="TcHmi.Controls.FrameworkEsteira.Esteira" data-tchmi-altura="20" data-tchmi-cima="5" data-tchmi-comissionado="true" data-tchmi-esquerda="25" data-tchmi-fonte="30" data-tchmi-height="46" data-tchmi-height-unit="px" data-tchmi-index="25" data-tchmi-largura="10" data-tchmi-left="1018" data-tchmi-left-unit="px" data-tchmi-operavel="true" data-tchmi-popup="Popup_Esteira_1" data-tchmi-posicao="SD" data-tchmi-teminversor="false" data-tchmi-tipoesteira="Horizontal" data-tchmi-top="435" data-tchmi-top-unit="px" data-tchmi-width="19" data-tchmi-width-unit="px" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-nome="MIE25" data-tchmi-gvl="GVL_Motores" data-tchmi-struct="stPartida" data-tchmi-vetor="Motor" data-tchmi-mostratexto="true" data-tchmi-abrepopup="false" data-tchmi-temcomissionamento="false" data-tchmi-zindex="50" data-tchmi-semborda="true">
+</div>
+<div id="Esteira_599" data-tchmi-type="TcHmi.Controls.FrameworkEsteira.Esteira" data-tchmi-altura="20" data-tchmi-cima="5" data-tchmi-comissionado="true" data-tchmi-esquerda="25" data-tchmi-fonte="30" data-tchmi-height="47" data-tchmi-height-unit="px" data-tchmi-index="22" data-tchmi-largura="10" data-tchmi-left="1127" data-tchmi-left-unit="px" data-tchmi-operavel="true" data-tchmi-popup="Popup_Esteira_1" data-tchmi-posicao="SD" data-tchmi-teminversor="false" data-tchmi-tipoesteira="Horizontal" data-tchmi-top="487" data-tchmi-top-unit="px" data-tchmi-width="20" data-tchmi-width-unit="px" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-nome="MIE22" data-tchmi-gvl="GVL_Motores" data-tchmi-struct="stPartida" data-tchmi-vetor="Motor" data-tchmi-mostratexto="true" data-tchmi-abrepopup="false" data-tchmi-temcomissionamento="false" data-tchmi-zindex="41" data-tchmi-semborda="true">
+</div>
+<div id="Esteira_600" data-tchmi-type="TcHmi.Controls.FrameworkEsteira.Esteira" data-tchmi-altura="20" data-tchmi-cima="5" data-tchmi-comissionado="true" data-tchmi-esquerda="25" data-tchmi-fonte="30" data-tchmi-height="46" data-tchmi-height-unit="px" data-tchmi-index="21" data-tchmi-largura="10" data-tchmi-left="1296" data-tchmi-left-unit="px" data-tchmi-operavel="true" data-tchmi-popup="Popup_Esteira_1" data-tchmi-posicao="SD" data-tchmi-teminversor="false" data-tchmi-tipoesteira="Horizontal" data-tchmi-top="502" data-tchmi-top-unit="px" data-tchmi-width="20" data-tchmi-width-unit="px" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-nome="MIE21" data-tchmi-gvl="GVL_Motores" data-tchmi-struct="stPartida" data-tchmi-vetor="Motor" data-tchmi-mostratexto="true" data-tchmi-abrepopup="false" data-tchmi-temcomissionamento="false" data-tchmi-zindex="53" data-tchmi-semborda="true">
+</div>
+</div>

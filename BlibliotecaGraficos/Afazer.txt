@@ -1,0 +1,32 @@
+﻿
+
+
+//- xParar de atualizar para o cara poder mexer no grafico
+
+//- melhorar performaçe da pintura do grafico de pizza, pra ele nao ficar pintando todos cada vez que atualiza
+//	- da pra pegar só quando muda o tamanho do vetor 
+//- se passar uma matriz de st_grafico da pra colocar um cada dataset e plotar tudo no mesmo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

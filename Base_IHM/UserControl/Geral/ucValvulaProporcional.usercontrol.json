@@ -1,0 +1,50 @@
+<div id="ucValvulaProporcional_3" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControl" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500">
+
+<div id="TcHmi_Controls_Beckhoff_TcHmiImage_1723" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-src="Imports/Images/ValvulaDesligadaManual.png" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-left-unit="%" data-tchmi-left="0">
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmi_Controls_Beckhoff_TcHmiImage_1723.onMouseClick",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "// lê o nome da Valvulas",
+          "var IndexValvula = TcHmi.Symbol.readEx('%pp%iIndex%/pp%');",
+          "console.log(IndexValvula);",
+          "//console.log(PopUp);",
+          "  try {",
+          "\t",
+          "\t// faz o binding com a struct do motor\t",
+          "\tvar ItemProperty = 'stValvula';",
+          "\tvar UserControl = TcHmi.Controls.get('UcPopUpValvulaProporcional');",
+          "\tvar Variavel = \"%s%PLC1.\" + \"GVL_Valvulas\" + \".\" + \"ValProp\" + \"[\" + IndexValvula + \"]\" + \"|BindingMode=TwoWay%/s%\";",
+          "\t",
+          "\t",
+          "\t\tTcHmi.Binding.createEx2(Variavel, ItemProperty, UserControl);",
+          "\t\t",
+          "\t\t\t   } catch (error) {",
+          "\t\t\t       alert(\"Erro no binding\");",
+          "\t\t\t       console.log(error.message);",
+          "\t\t\t       console.log(Variavel);",
+          "\t\t\t       console.log(ItemProperty);",
+          "\t\t\t       console.log(UserControl);",
+          "\t\t\t   }",
+          "",
+          "",
+          "UserControl.setTop(0);",
+          "UserControl.setLeft(0);",
+          "$(\"#UcPopUpValvulaProporcional\").slideDown('slow');"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+</div>
+</div>

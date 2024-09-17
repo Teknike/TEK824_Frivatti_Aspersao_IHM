@@ -1,0 +1,88 @@
+﻿<div id="ucKPIMotor" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControl" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="650" data-tchmi-height="350" data-tchmi-width-unit="px" data-tchmi-height-unit="px" data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500">
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%pp%stKPIMotor::KPI%/pp%",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var index = TcHmi.Symbol.readEx('%pp%Index%/pp%');",
+          "",
+          "var ItemProperty = \"fData\";",
+          "var UserControl = TcHmi.Controls.get(\"GraficoKPI\");",
+          "var Variavel = \"%pp%stKPIMotor::KPI[\" + index + \"]::stGraficoIHM|BindingMode=TwoWay%/pp%\";",
+          "",
+          "try{",
+          "\tTcHmi.Binding.createEx2(Variavel, ItemProperty, UserControl);",
+          "}",
+          "catch(e){",
+          "\tconsole.log(e);",
+          "}"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+<div id="RealEditBo_184" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-altura="30" data-tchmi-decimal="0" data-tchmi-height="33" data-tchmi-height-unit="px" data-tchmi-largura="150" data-tchmi-left="123" data-tchmi-left-unit="px" data-tchmi-maximum="23" data-tchmi-minimum="0" data-tchmi-paileft="-1" data-tchmi-paitop="-1" data-tchmi-parente1="UcKPIMotor" data-tchmi-parente2="UcKPIMotor" data-tchmi-tamanhofonte="15" data-tchmi-tamtelax="1920" data-tchmi-tamtelay="1080" data-tchmi-target-user-control="UserControl/Geral/RealEditBox.usercontrol" data-tchmi-top="294" data-tchmi-top-unit="px" data-tchmi-value="%pp%iHora%/pp%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-identifier="RealEditBo_184" data-tchmi-teclado="Teclado" data-tchmi-primeiroparente="true">
+</div>
+<div id="TcHmiButton_84" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="238" data-tchmi-left-unit="px" data-tchmi-text="+" data-tchmi-top="294" data-tchmi-top-unit="px" data-tchmi-width="35" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="25">
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 10.0,
+  "topRight": 10.0,
+  "bottomLeft": 10.0,
+  "bottomRight": 10.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiButton_84.onMouseClick",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var hora = TcHmi.Symbol.readEx('%pp%iHora%/pp%');",
+          "",
+          "hora = hora +1;",
+          "if (hora === 24) hora = 0",
+          "TcHmi.Symbol.writeEx('%pp%iHora%/pp%', hora +1);"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="TcHmiButton_85" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="75" data-tchmi-left-unit="px" data-tchmi-text="-" data-tchmi-top="294" data-tchmi-top-unit="px" data-tchmi-width="35" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="25">
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 10.0,
+  "topRight": 10.0,
+  "bottomLeft": 10.0,
+  "bottomRight": 10.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+</div>
+</div>

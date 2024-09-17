@@ -1,0 +1,23 @@
+{
+  "parameters": [
+    {
+      "name": "data-tchmi-ucpopupmerge3p1",
+      "displayName": "ucPopupMerge3p1",
+      "visible": true,
+      "type": "tchmi:project#/definitions/PLC1.Teknike_Intralogistica.st_Merge3p1",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "ucPopupMerge3p1",
+      "propertySetterName": "setUcPopupMerge3p1",
+      "propertyGetterName": "getUcPopupMerge3p1",
+      "refTo": ""
+    }
+  ],
+  "virtualRights": [],
+  "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.758.8/runtimes/native1.12-tchmi/Schema/UserControlConfig.Schema.json",
+  "description": ""
+}

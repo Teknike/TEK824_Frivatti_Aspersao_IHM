@@ -1,0 +1,52 @@
+<div id="CaixaHR_5" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControl" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="390" data-tchmi-height="135" data-tchmi-width-unit="px" data-tchmi-height-unit="px" data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500" data-tchmi-is-enabled="true">
+
+
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 2,
+  "right": 2,
+  "top": 2,
+  "bottom": 2,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+{
+  "left": "Solid",
+  "right": "Solid",
+  "top": "Solid",
+  "bottom": "Solid"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 10.0,
+  "topRight": 10.0,
+  "bottomLeft": 10.0,
+  "bottomRight": 10.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+<div id="TcHmiTextblock_1623" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="-1" data-tchmi-left-unit="px" data-tchmi-text="Medição Caixa/Hora" data-tchmi-top="1" data-tchmi-top-unit="px" data-tchmi-width="390" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="20">
+</div>
+<div id="TcHmiTextblock_1624" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="4" data-tchmi-left-unit="px" data-tchmi-top="34" data-tchmi-top-unit="px" data-tchmi-width="181" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text="%f%&quot;Ultimo 1 Min: &quot;+TcHmi.Functions.Beckhoff.GaugeValueFormatter(%pp%CaixaHR[0]%/pp%, 2) +&quot; cx/h&quot;%/f%" data-tchmi-text-font-size="15">
+</div>
+<div id="TcHmiTextblock_1625" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="4" data-tchmi-left-unit="px" data-tchmi-top="68" data-tchmi-top-unit="px" data-tchmi-width="181" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text="%f%&quot;Ultimo 10 Min: &quot;+TcHmi.Functions.Beckhoff.GaugeValueFormatter(%pp%CaixaHR[1]%/pp%, 2) +&quot; cx/h&quot;%/f%" data-tchmi-text-font-size="15">
+</div>
+<div id="TcHmiTextblock_1626" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="4" data-tchmi-left-unit="px" data-tchmi-top="102" data-tchmi-top-unit="px" data-tchmi-width="181" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text="%f%&quot;Ultima 1 hrs: &quot;+TcHmi.Functions.Beckhoff.GaugeValueFormatter(%pp%CaixaHR[2]%/pp%, 2) +&quot; cx/h&quot;%/f%" data-tchmi-text-font-size="15">
+</div>
+<div id="TcHmiTextblock_1627" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="192" data-tchmi-left-unit="px" data-tchmi-top="34" data-tchmi-top-unit="px" data-tchmi-width="181" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text="%f%&quot;Ultimas 6 hrs: &quot;+TcHmi.Functions.Beckhoff.GaugeValueFormatter(%pp%CaixaHR[3]%/pp%, 2) +&quot; cx/h&quot;%/f%" data-tchmi-text-font-size="15">
+</div>
+<div id="TcHmiTextblock_1628" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="192" data-tchmi-left-unit="px" data-tchmi-top="68" data-tchmi-top-unit="px" data-tchmi-width="181" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text="%f%&quot;Ultimas 12 hrs: &quot;+TcHmi.Functions.Beckhoff.GaugeValueFormatter(%pp%CaixaHR[4]%/pp%, 2) +&quot; cx/h&quot;%/f%" data-tchmi-text-font-size="15">
+</div>
+<div id="TcHmiTextblock_1629" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="192" data-tchmi-left-unit="px" data-tchmi-top="102" data-tchmi-top-unit="px" data-tchmi-width="181" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text="%f%&quot;Ultimas 24 hrs: &quot;+TcHmi.Functions.Beckhoff.GaugeValueFormatter(%pp%CaixaHR[5]%/pp%, 2) +&quot; cx/h&quot;%/f%" data-tchmi-text-font-size="15">
+</div>
+</div>

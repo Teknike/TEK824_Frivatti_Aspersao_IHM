@@ -1,0 +1,950 @@
+{
+  "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.762.42/runtimes/native1.12-tchmi/Schema/TchmiConfig.Schema.json",
+  "basePath": "./framework",
+  "scaleMode": "ScaleToFill",
+  "startupView": "Desktop.view",
+  "loginPage": "/Pages/Config/LoginPage.html",
+  "tcHmiServer": {
+    "websocketIntervalTime": 500,
+    "websocketTimeout": 20000,
+    "websocketSystemTimeout": 60000,
+    "websocketSubscriptionMode": "Change"
+  },
+  "activeTheme": "Base-Dark",
+  "themes": {
+    "Base-Dark": {
+      "resources": [
+        {
+          "name": "Themes/Base-Dark/Base-DarkStyle.css",
+          "description": "",
+          "type": "Stylesheet"
+        },
+        {
+          "name": "Themes/Base-Dark/Base-Dark.theme",
+          "description": "",
+          "type": "ThemedValues"
+        }
+      ],
+      "replacesThemeForControls": [],
+      "replacesThemeForPackageComponents": []
+    },
+    "Base": {
+      "resources": [
+        {
+          "name": "Themes/Base/Base.theme",
+          "description": "",
+          "type": "ThemedValues"
+        },
+        {
+          "name": "Themes/Base/BaseStyle.css",
+          "description": "",
+          "type": "Stylesheet"
+        }
+      ],
+      "replacesThemeForControls": [],
+      "replacesThemeForPackageComponents": []
+    }
+  },
+  "dependencyFiles": [
+    {
+      "name": "Scripts/HeartBeat.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "Fonts/ComboboxFix.css",
+      "description": "",
+      "type": "Stylesheet"
+    },
+    {
+      "name": "Scripts/ComboboxFix.css",
+      "description": "",
+      "type": "Stylesheet"
+    },
+    {
+      "name": "Scripts/BarraDeRolagem.css",
+      "description": "",
+      "type": "Stylesheet"
+    },
+    {
+      "name": "Scripts/TiraQuadrado.css",
+      "description": "",
+      "type": "Stylesheet"
+    },
+    {
+      "name": "Fonts/Fonts.css",
+      "description": "",
+      "type": "Stylesheet"
+    },
+    {
+      "name": "Scripts/TextoVertical.css",
+      "description": "",
+      "type": "Stylesheet"
+    },
+    {
+      "name": "CodeBehind/ReadUrlParameter.js",
+      "description": "",
+      "type": "JavaScript"
+    }
+  ],
+  "userControls": [
+    {
+      "url": "UserControl/Alarmes/ucAlarmeSensor.usercontrol"
+    },
+    {
+      "url": "UserControl/Alarmes/ucAlarmeSensorValoresFora.usercontrol"
+    },
+    {
+      "url": "UserControl/Comissionamento/ucCaixaDeConfirmacao.usercontrol"
+    },
+    {
+      "url": "UserControl/Comissionamento/ucCamera.usercontrol"
+    },
+    {
+      "url": "UserControl/Comissionamento/ucCheckin.usercontrol"
+    },
+    {
+      "url": "UserControl/Comissionamento/ucComissionado.usercontrol"
+    },
+    {
+      "url": "UserControl/Comissionamento/ucConfirmaRecomicionamento.usercontrol"
+    },
+    {
+      "url": "UserControl/Comissionamento/ucCorrente.usercontrol"
+    },
+    {
+      "url": "UserControl/Comissionamento/ucSentidoDeGiro.usercontrol"
+    },
+    {
+      "url": "UserControl/Comissionamento/ucVelocidade.usercontrol"
+    },
+    {
+      "url": "UserControl/Config/ConfigMaxMinSet.usercontrol"
+    },
+    {
+      "url": "UserControl/Config/ConfigPID.usercontrol"
+    },
+    {
+      "url": "UserControl/Config/PortaDeRede.usercontrol"
+    },
+    {
+      "url": "UserControl/Config/ucCSV.usercontrol"
+    },
+    {
+      "url": "UserControl/Config/ucStatusPID.usercontrol"
+    },
+    {
+      "url": "UserControl/Config/ucTextBoxBloqueio.usercontrol"
+    },
+    {
+      "url": "UserControl/Geral/ucAvisofecha_com_condição - Copy.usercontrol"
+    },
+    {
+      "url": "UserControl/Geral/ucAvisofecha_com_condição.usercontrol"
+    },
+    {
+      "url": "UserControl/Geral/ucCamara.usercontrol"
+    },
+    {
+      "url": "UserControl/Geral/RealEditBox.usercontrol"
+    },
+    {
+      "url": "UserControl/Geral/Troubleshooting/ucFalhaContatoInversor.usercontrol"
+    },
+    {
+      "url": "UserControl/Geral/Troubleshooting/ucFalhaContatora.usercontrol"
+    },
+    {
+      "url": "UserControl/Geral/Troubleshooting/ucFalhaDisjuntor.usercontrol"
+    },
+    {
+      "url": "UserControl/Geral/Troubleshooting/ucFalhaEmergencia.usercontrol"
+    },
+    {
+      "url": "UserControl/Geral/Troubleshooting/ucFalhaInversor.usercontrol"
+    },
+    {
+      "url": "UserControl/Geral/Troubleshooting/ucFalhaInversorOffline.usercontrol"
+    },
+    {
+      "url": "UserControl/Geral/Troubleshooting/ucFalhaSoft.usercontrol"
+    },
+    {
+      "url": "UserControl/Geral/ucBotaoDeParada.usercontrol"
+    },
+    {
+      "url": "UserControl/Geral/ucCilindro.usercontrol"
+    },
+    {
+      "url": "UserControl/Geral/ucCirculo.usercontrol"
+    },
+    {
+      "url": "UserControl/Geral/ucEmergencia.usercontrol"
+    },
+    {
+      "url": "UserControl/Geral/ucEmergenciaTela.usercontrol"
+    },
+    {
+      "url": "UserControl/Geral/ucControleEvaporadores.usercontrol"
+    },
+    {
+      "url": "UserControl/Geral/ucFreio.usercontrol"
+    },
+    {
+      "url": "UserControl/Geral/ucIluminacao.usercontrol"
+    },
+    {
+      "url": "UserControl/Geral/ucKPIMotor.usercontrol"
+    },
+    {
+      "url": "UserControl/Geral/ucNIveltamqueBoia.usercontrol"
+    },
+    {
+      "url": "UserControl/Geral/ucSinalMaquina.usercontrol"
+    },
+    {
+      "url": "UserControl/Geral/UcStatusMotor_Corrente.usercontrol"
+    },
+    {
+      "url": "UserControl/Geral/ucStatusSensor.usercontrol"
+    },
+    {
+      "url": "UserControl/Geral/ucCamaraIHM.usercontrol"
+    },
+    {
+      "url": "UserControl/Geral/ucStatusSensorSemTexto.usercontrol"
+    },
+    {
+      "url": "UserControl/Geral/ucSTCamara.usercontrol"
+    },
+    {
+      "url": "UserControl/Geral/ucTag.usercontrol"
+    },
+    {
+      "url": "UserControl/Geral/ucvalvulapropor.usercontrol"
+    },
+    {
+      "url": "UserControl/Geral/ucValvulas.usercontrol"
+    },
+    {
+      "url": "UserControl/Geral/ucVisibilidadeAreas.usercontrol"
+    },
+    {
+      "url": "UserControl/Geral/ucVisibilidadeTags.usercontrol"
+    },
+    {
+      "url": "UserControl/Geral/ucSeta.usercontrol"
+    },
+    {
+      "url": "UserControl/Geral/ucLegendas.usercontrol"
+    },
+    {
+      "url": "UserControl/Geral/ucStatusAneis.usercontrol"
+    },
+    {
+      "url": "UserControl/Geral/udadosbomba.usercontrol"
+    },
+    {
+      "url": "UserControl/Grupos/ConfigGrupos.usercontrol"
+    },
+    {
+      "url": "UserControl/Grupos/ControleGrupo.usercontrol"
+    },
+    {
+      "url": "UserControl/IHM_Operacao/ucCabecalhoCamara.usercontrol"
+    },
+    {
+      "url": "UserControl/Intralogistica/CaixaHR.usercontrol"
+    },
+    {
+      "url": "UserControl/Intralogistica/StatusUltimoLidoSorter.usercontrol"
+    },
+    {
+      "url": "UserControl/Popup/KPI/KPICaixaTrancada.usercontrol"
+    },
+    {
+      "url": "UserControl/Popup/Motor/ucPopUpMotores.usercontrol"
+    },
+    {
+      "url": "UserControl/Popup/Motor/ucPopUpMotoresConfig.usercontrol"
+    },
+    {
+      "url": "UserControl/Popup/Motor/ucPopUpMotoresEmergencias.usercontrol"
+    },
+    {
+      "url": "UserControl/Popup/Motor/ucPopUpMotoresInterlock.usercontrol"
+    },
+    {
+      "url": "UserControl/Popup/Motor/ucPopUpMotoresKPI.usercontrol"
+    },
+    {
+      "url": "UserControl/Popup/Motor/ucToggleBotão.usercontrol"
+    },
+    {
+      "url": "UserControl/Popup/ucPopUpControleValvula.usercontrol"
+    },
+    {
+      "url": "UserControl/Popup/ucPopUpControleValvula_Operação.usercontrol"
+    },
+    {
+      "url": "UserControl/Popup/ucPopUpSensorDigital.usercontrol"
+    },
+    {
+      "url": "UserControl/Popup/ucPopUpSR2000.usercontrol"
+    },
+    {
+      "url": "UserControl/Popup/ucPopUpSaidaDigital.usercontrol"
+    },
+    {
+      "url": "UserControl/Popup/ucPopUpSensorAnalogico.usercontrol"
+    },
+    {
+      "url": "UserControl/Popup/ucPopUpSensorRedeRTU.usercontrol"
+    },
+    {
+      "url": "UserControl/Popup/ucPopUpValvulaProporcional.usercontrol"
+    },
+    {
+      "url": "UserControl/Popup/ucPopUpValvulas.usercontrol"
+    },
+    {
+      "url": "UserControl/Protocolos/ConfigEtapaProtocolo.usercontrol"
+    },
+    {
+      "url": "UserControl/Valvulas/ucValvulaProporcional.usercontrol"
+    }
+  ],
+  "content": [
+    {
+      "url": "Pages/Config/Alarmes.content",
+      "preload": false,
+      "keepAlive": true,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Config/Arquitetura.content",
+      "preload": false,
+      "keepAlive": true,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Config/Comissionamento.content",
+      "preload": false,
+      "keepAlive": true,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Config/Configurações.content",
+      "preload": false,
+      "keepAlive": true,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Config/Eventos.content",
+      "preload": false,
+      "keepAlive": true,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Config/Informativo.content",
+      "preload": false,
+      "keepAlive": true,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Config/ConfigProtocolos.content",
+      "preload": false,
+      "keepAlive": true,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Config/Listas.content",
+      "preload": false,
+      "keepAlive": true,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Config/ProjetoEletrico.content",
+      "preload": true,
+      "keepAlive": true,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Grupos/GruposConfig.content",
+      "preload": false,
+      "keepAlive": true,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Grupos/GruposGeral.content",
+      "preload": false,
+      "keepAlive": true,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/IHMCamaras/AbreIHM.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/IHMCamaras/InicialIHMCamaras_operação.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/IHMCamaras/IHMCamaras_operação.content",
+      "preload": true,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/IHMCamaras/TelaIHMCamara.content",
+      "preload": true,
+      "keepAlive": true,
+      "loadSync": true,
+      "preloadBindings": true
+    },
+    {
+      "url": "Pages/Layout/Aneis-Tela Geral.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Layout/AnelPressao-Bomba1.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Layout/AnelTrocadorDeCalor.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Layout/Emergência.content",
+      "preload": false,
+      "keepAlive": true,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Layout/Iluminacao.content",
+      "preload": false,
+      "keepAlive": true,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Layout/Inicial.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Layout/SistemadePesagem.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Layout/TelaCamara.content",
+      "preload": true,
+      "keepAlive": true,
+      "loadSync": true,
+      "preloadBindings": true
+    }
+  ],
+  "views": [
+    {
+      "url": "IHMCamara.view",
+      "preload": false,
+      "keepAlive": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Desktop.view",
+      "preload": false,
+      "keepAlive": false,
+      "preloadBindings": false
+    }
+  ],
+  "userFunctions": [],
+  "symbols": {
+    "internal": {
+      "MediaQueryList": {
+        "value": [
+          {
+            "name": "Mobile",
+            "maxWidth": 700,
+            "minWidth": 0,
+            "controlBehaviourList": [
+              {
+                "controlType": "TcHmi.Controls.BaseTemplate.TcHmiNavigation",
+                "controlID": "Navigation_Right",
+                "displayOption": "burger_top"
+              }
+            ]
+          },
+          {
+            "name": "Tablet",
+            "maxWidth": 1500,
+            "minWidth": 700,
+            "controlBehaviourList": [
+              {
+                "controlType": "TcHmi.Controls.BaseTemplate.TcHmiNavigation",
+                "controlID": "Navigation_Right",
+                "displayOption": "icons"
+              }
+            ]
+          },
+          {
+            "name": "Desktop",
+            "maxWidth": 1920,
+            "minWidth": 1500,
+            "controlBehaviourList": [
+              {
+                "controlType": "TcHmi.Controls.BaseTemplate.TcHmiNavigation",
+                "controlID": "Navigation_Right",
+                "displayOption": "full"
+              }
+            ]
+          }
+        ],
+        "type": "tchmi:framework#/definitions/TcHmi.Functions.BaseTemplate.MediaQueryList",
+        "persist": true,
+        "readonly": true
+      },
+      "AffectedControls": {
+        "value": [
+          {
+            "controlID": "Header_Top",
+            "position": "Top",
+            "defaultHeight": "80",
+            "defaultWidth": null,
+            "defaultTop": "0",
+            "defaultBottom": null,
+            "defaultLeft": "0",
+            "defaultRight": "0"
+          },
+          {
+            "controlID": "Navigation_Right",
+            "position": "Right",
+            "defaultHeight": null,
+            "defaultWidth": "320",
+            "defaultTop": "%ctrl%Header_Top::Height%/ctrl%",
+            "defaultBottom": "0",
+            "defaultLeft": null,
+            "defaultRight": "0"
+          },
+          {
+            "controlID": "Region_Center",
+            "position": "Center",
+            "defaultHeight": null,
+            "defaultWidth": null,
+            "defaultTop": "%ctrl%Header_Top::Height%/ctrl%",
+            "defaultBottom": "0",
+            "defaultLeft": "0",
+            "defaultRight": "%ctrl%Navigation_Right::Width%/ctrl%"
+          }
+        ],
+        "type": "tchmi:framework#/definitions/TcHmi.Functions.BaseTemplate.AffectedControlList",
+        "persist": true,
+        "readonly": true
+      },
+      "xHeartBeat": {
+        "value": false,
+        "type": "tchmi:general#/definitions/Boolean",
+        "persist": false,
+        "readonly": false
+      },
+      "xEsconderTagsEsteira": {
+        "value": false,
+        "type": "tchmi:general#/definitions/Boolean",
+        "persist": false,
+        "readonly": false
+      },
+      "xEsconderTagsEmergências": {
+        "value": false,
+        "type": "tchmi:general#/definitions/Boolean",
+        "persist": false,
+        "readonly": false
+      },
+      "xEsconderTagsBotaoParada": {
+        "value": false,
+        "type": "tchmi:general#/definitions/Boolean",
+        "persist": false,
+        "readonly": false
+      },
+      "xEsconderTagsSensores": {
+        "value": false,
+        "type": "tchmi:general#/definitions/Boolean",
+        "persist": false,
+        "readonly": false
+      },
+      "xEsconderTagsValvulas": {
+        "value": false,
+        "type": "tchmi:general#/definitions/Boolean",
+        "persist": false,
+        "readonly": false
+      },
+      "xIndex": {
+        "value": 0,
+        "type": "tchmi:general#/definitions/INT16",
+        "persist": false,
+        "readonly": false
+      },
+      "IndexComissionamento": {
+        "value": 0,
+        "type": "tchmi:general#/definitions/INT16",
+        "persist": false,
+        "readonly": false
+      },
+      "xVaiDiretoProCheckin": {
+        "value": false,
+        "type": "tchmi:general#/definitions/Boolean",
+        "persist": false,
+        "readonly": false
+      },
+      "iMaxVelocidade": {
+        "value": 3600,
+        "type": "tchmi:general#/definitions/INT16",
+        "persist": false,
+        "readonly": false
+      },
+      "iMinVelocidade": {
+        "value": 0,
+        "type": "tchmi:general#/definitions/INT16",
+        "persist": false,
+        "readonly": false
+      },
+      "xBOOL": {
+        "value": false,
+        "type": "tchmi:general#/definitions/Boolean",
+        "persist": false,
+        "readonly": false
+      },
+      "xVisivilidadeSobrepotes": {
+        "value": false,
+        "type": "tchmi:general#/definitions/Boolean",
+        "persist": false,
+        "readonly": false
+      },
+      "iDecimal": {
+        "value": 2,
+        "type": "tchmi:general#/definitions/INT16",
+        "persist": false,
+        "readonly": false
+      },
+      "Sensor1": {
+        "value": {
+          "config": {
+            "xNF": false
+          },
+          "en": {
+            "xResetContagem": false,
+            "xSinalSensor": false
+          },
+          "sa": {
+            "xObjPresente": false
+          }
+        },
+        "type": "tchmi:server#/definitions/PLC1.Teknike_Sensores.st_SensorDigital",
+        "persist": false,
+        "readonly": false
+      },
+      "Sensor2": {
+        "value": {
+          "en": {
+            "xResetContagem": false,
+            "xSinalSensor": true
+          },
+          "sa": {
+            "xObjPresente": false
+          }
+        },
+        "type": "tchmi:server#/definitions/PLC1.Teknike_Sensores.st_SensorDigital",
+        "persist": false,
+        "readonly": false
+      },
+      "Sensor3": {
+        "value": {
+          "config": {
+            "xNF": false
+          },
+          "en": {
+            "xResetContagem": false,
+            "xSinalSensor": true
+          },
+          "sa": {
+            "xObjPresente": true
+          }
+        },
+        "type": "tchmi:server#/definitions/PLC1.Teknike_Sensores.st_SensorDigital",
+        "persist": false,
+        "readonly": false
+      },
+      "Sensor4": {
+        "value": {
+          "config": {
+            "xNF": false
+          },
+          "en": {
+            "xResetContagem": false,
+            "xSinalSensor": false
+          },
+          "sa": {
+            "xObjPresente": true
+          }
+        },
+        "type": "tchmi:server#/definitions/PLC1.Teknike_Sensores.st_SensorDigital",
+        "persist": false,
+        "readonly": false
+      },
+      "Sensor5": {
+        "value": {
+          "config": {
+            "xNF": true
+          },
+          "en": {
+            "xResetContagem": false,
+            "xSinalSensor": false
+          },
+          "sa": {
+            "xObjPresente": true
+          }
+        },
+        "type": "tchmi:server#/definitions/PLC1.Teknike_Sensores.st_SensorDigital",
+        "persist": false,
+        "readonly": false
+      },
+      "Sensor6": {
+        "value": {
+          "config": {
+            "xNF": true
+          },
+          "sa": {
+            "xObjPresente": true
+          }
+        },
+        "type": "tchmi:server#/definitions/PLC1.Teknike_Sensores.st_SensorDigital",
+        "persist": false,
+        "readonly": false
+      },
+      "xOpacidade": {
+        "type": "tchmi:general#/definitions/BOOL",
+        "persist": false,
+        "readonly": false
+      },
+      "iHora": {
+        "type": "tchmi:general#/definitions/INT",
+        "persist": false,
+        "readonly": false
+      },
+      "iDia": {
+        "type": "tchmi:general#/definitions/INT",
+        "persist": false,
+        "readonly": false
+      },
+      "MudouEtapa": {
+        "value": false,
+        "type": "tchmi:general#/definitions/BOOL",
+        "persist": false,
+        "readonly": false
+      }
+    },
+    "themedResources": {}
+  },
+  "trigger": null,
+  "actionTemplates": [
+    {
+      "displayname": "RetornaAOpacidade",
+      "name": "RetornaAOpacidade",
+      "description": "Retorna a opacidade para o estado original",
+      "category": "Action Templates",
+      "actions": [
+        {
+          "objectType": "JavaScript",
+          "active": true,
+          "sourceLines": [
+            "var index = TcHmi.Symbol.readEx('%pp%stPartida::En::i%/pp%');",
+            "var nome = 'UcPopUpMotores'+ index;",
+            "var objeto = TcHmi.Controls.get(nome);",
+            "",
+            "if (objeto != undefined){",
+            "\tnome = 'UcPopUpMotores'+ index;",
+            "}else{",
+            "\tnome = 'UcPopUpMotores';",
+            "}",
+            "",
+            "var objeto1 = document.getElementById(nome);",
+            "var elements = objeto1.getElementsByTagName(\"*\");",
+            "",
+            "for (var i=0; i < elements.length; i++) ",
+            "{    ",
+            "\telements[i].style.opacity = 1;",
+            "}"
+          ],
+          "injectContextObject": false,
+          "asyncWait": true,
+          "waitMode": "Synchronous"
+        }
+      ],
+      "parameters": []
+    }
+  ],
+  "languages": {
+    "de": "Localization/de.localization",
+    "en": "Localization/en.localization",
+    "pt-BR": "Localization/Portugues.localization"
+  },
+  "languageFallback": "pt-BR",
+  "disableLoadingOptimization": false,
+  "creatorSettings": {
+    "viewport": {
+      "defaultWidth": 1920,
+      "defaultHeight": 1080
+    }
+  },
+  "binding": {
+    "symbolError": "Ignore"
+  },
+  "packages": [
+    {
+      "name": "BlibliotecaGraficos",
+      "basePath": "/BlibliotecaGraficos"
+    },
+    {
+      "name": "AsteriscoNegrito",
+      "basePath": "/AsteriscoNegrito"
+    },
+    {
+      "name": "Beckhoff.TwinCAT.HMI.BaseTemplate",
+      "basePath": "/Beckhoff.TwinCAT.HMI.BaseTemplate"
+    },
+    {
+      "name": "Beckhoff.TwinCAT.HMI.Controls",
+      "basePath": "/Beckhoff.TwinCAT.HMI.Controls"
+    },
+    {
+      "name": "Beckhoff.TwinCAT.HMI.EcDiagnosticsControl",
+      "basePath": "/Beckhoff.TwinCAT.HMI.EcDiagnosticsControl"
+    },
+    {
+      "name": "Beckhoff.TwinCAT.HMI.Framework",
+      "basePath": "/framework"
+    },
+    {
+      "name": "Beckhoff.TwinCAT.HMI.Functions",
+      "basePath": "/Beckhoff.TwinCAT.HMI.Functions"
+    },
+    {
+      "name": "Beckhoff.TwinCAT.HMI.PDFViewer",
+      "basePath": "/Beckhoff.TwinCAT.HMI.PDFViewer"
+    },
+    {
+      "name": "Beckhoff.TwinCAT.HMI.ResponsiveNavigation",
+      "basePath": "/Beckhoff.TwinCAT.HMI.ResponsiveNavigation"
+    },
+    {
+      "name": "CameraQrCode",
+      "basePath": "/CameraQrCode"
+    },
+    {
+      "name": "Framework_Troubleshooting",
+      "basePath": "/Framework_Troubleshooting"
+    },
+    {
+      "name": "FrameworkAutocomplete",
+      "basePath": "/FrameworkAutocomplete"
+    },
+    {
+      "name": "FrameworkBotoes",
+      "basePath": "/FrameworkBotoes"
+    },
+    {
+      "name": "FrameworkEmergencia",
+      "basePath": "/FrameworkEmergencia"
+    },
+    {
+      "name": "FrameworkEsteira",
+      "basePath": "/FrameworkEsteira"
+    },
+    {
+      "name": "FrameworkSensor",
+      "basePath": "/FrameworkSensor"
+    },
+    {
+      "name": "FrameworkSensorMaquina",
+      "basePath": "/FrameworkSensorMaquina"
+    },
+    {
+      "name": "FrameworkValvulas",
+      "basePath": "/FrameworkValvulas"
+    },
+    {
+      "name": "Legacy_Lamp",
+      "basePath": "/Legacy_Lamp"
+    },
+    {
+      "name": "Motor",
+      "basePath": "/Motor"
+    }
+  ],
+  "keyboardLayouts": [
+    {
+      "url": "KeyboardLayouts/German - compact.keyboard.json"
+    },
+    {
+      "url": "KeyboardLayouts/Numpad.keyboard.json"
+    },
+    {
+      "url": "KeyboardLayouts/US - compact.keyboard.json"
+    }
+  ],
+  "systemKeyboard": {
+    "providerName": "",
+    "projectKeyboardMapping": {
+      "pt-BR": {
+        "text": "",
+        "decimal": "",
+        "numeric": ""
+      },
+      "en": {
+        "text": "",
+        "decimal": "",
+        "numeric": ""
+      },
+      "de": {
+        "text": "",
+        "decimal": "",
+        "numeric": ""
+      }
+    }
+  },
+  "systemPopups": {
+    "providerName": "Beckhoff.TcHmiPopups"
+  }
+}

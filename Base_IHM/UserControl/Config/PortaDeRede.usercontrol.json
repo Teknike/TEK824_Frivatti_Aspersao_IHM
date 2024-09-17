@@ -1,0 +1,41 @@
+{
+  "parameters": [
+    {
+      "name": "data-tchmi-porta",
+      "displayName": "porta",
+      "visible": true,
+      "type": "tchmi:server#/definitions/PLC1.Teknike_Geral.st_Diag_Ethernet",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "porta",
+      "propertySetterName": "setPorta",
+      "propertyGetterName": "getPorta",
+      "refTo": ""
+    },
+    {
+      "name": "data-tchmi-corporta",
+      "displayName": "CorPorta",
+      "visible": true,
+      "type": "tchmi:framework#/definitions/Color",
+      "category": "",
+      "description": "",
+      "defaultValue": null,
+      "defaultValueInternal": null,
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "CorPorta",
+      "propertySetterName": "setCorPorta",
+      "propertyGetterName": "getCorPorta",
+      "refTo": ""
+    }
+  ],
+  "virtualRights": [],
+  "$schema": "Packages/Beckhoff.TwinCAT.HMI.Framework.12.754.4/runtimes/native1.12-tchmi/Schema/UserControlConfig.Schema.json",
+  "description": ""
+}

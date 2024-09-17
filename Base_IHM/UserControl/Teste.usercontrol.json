@@ -1,0 +1,23 @@
+{
+  "parameters": [
+    {
+      "name": "data-tchmi-partidas",
+      "displayName": "Partidas",
+      "visible": true,
+      "type": "tchmi:server#/definitions/PLC1.ARRAY_0..220_OF-Teknike_Partidas.st_Partida",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "Partidas",
+      "propertySetterName": "setPartidas",
+      "propertyGetterName": "getPartidas",
+      "refTo": ""
+    }
+  ],
+  "virtualRights": [],
+  "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.756.1/runtimes/native1.12-tchmi/Schema/UserControlConfig.Schema.json",
+  "description": ""
+}

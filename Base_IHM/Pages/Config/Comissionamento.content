@@ -1,0 +1,304 @@
+<div id="Comissionamento" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="1670" data-tchmi-height="1040" data-tchmi-width-unit="px" data-tchmi-height-unit="px" data-tchmi-is-enabled="true">
+<div id="UcCamera" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="97.0" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-target-user-control="UserControl/Comissionamento/ucCamera.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "operate",
+    "group": "Teknike",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Teknike",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Operacao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Manutencao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Administracao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Operacao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Manutencao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Administracao",
+    "permission": "Deny"
+  }
+]
+</script>
+
+
+
+
+
+
+
+
+</div>
+<div id="UcCheckin" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="985" data-tchmi-height-unit="px" data-tchmi-left="3000" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Comissionamento/ucCheckin.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="1145" data-tchmi-width-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-nomedopopup="UcCheckin" data-tchmi-nomedastruct="stCheckin" data-tchmi-gvl="GVL_Motores" data-tchmi-vetor="Motor" data-tchmi-opacity="1" data-tchmi-is-enabled="true" data-tchmi-index="%i%xIndex%/i%">
+
+</div>
+<div id="UcSentidoDeGiro" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="750" data-tchmi-height-unit="px" data-tchmi-left="3000" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Comissionamento/ucSentidoDeGiro.usercontrol" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width="700" data-tchmi-width-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-gvl="GVL_Motores" data-tchmi-vetor="Motor" data-tchmi-index="%i%xIndex%/i%">
+</div>
+<div id="UcVelocidade" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="850" data-tchmi-height-unit="px" data-tchmi-left="3000" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Comissionamento/ucVelocidade.usercontrol" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width="600" data-tchmi-width-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-index="%i%xIndex%/i%" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-gvl="GVL_Motores" data-tchmi-vetor="Motor" data-tchmi-vetorcan="Comunicacao_MotoresCAN">
+</div>
+<div id="UcComissionado" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="700" data-tchmi-height-unit="px" data-tchmi-left="3000" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Comissionamento/ucComissionado.usercontrol" data-tchmi-top="150" data-tchmi-top-unit="px" data-tchmi-width="965" data-tchmi-width-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-gvl="GVL_Motores" data-tchmi-vetor="Motor" data-tchmi-index="%i%xIndex%/i%">
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "UcComissionado.onAttached",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblock_571::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Visible"
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "Comissionamento.onAttached",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/Boolean",
+                  "symbolExpression": "%i%xVaiDiretoProCheckin%/i%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/Boolean",
+                  "value": false
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%UcComissionado::Left%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/MeasurementValue",
+                  "value": 3000.0
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%UcSentidoDeGiro::Left%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/MeasurementValue",
+                  "value": 3000.0
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%UcVelocidade::Left%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/MeasurementValue",
+                  "value": 3000.0
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%UcCamera::Left%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/MeasurementValue",
+                  "value": 0.0
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%UcCamera::Left%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/MeasurementValue",
+                  "value": -3000.0
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%UcCheckin::Left%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/MeasurementValue",
+                  "value": 350.0
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%UcCheckin::Top%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/MeasurementValue",
+                  "value": 15.0
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "Comissionamento.onDetached",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var index = TcHmi.Symbol.readEx('%i%xIndex%/i%');",
+          "var GVL =  \"GVL_Motores\";",
+          "var vetor = \"Motor\"",
+          "//var Variavel = \"%s%PLC1.\" + GVL + \".\" + vetor +\"[\" + index + \"]::En::xFazendoComissionamento|BindingMode=TwoWay%/s%\";",
+          "var Variavel = \"%s%PLC1.\" + GVL + \".\" + vetor +\"[\" + index + \"]::En::xFazendoComissionamento%/s%\";",
+          "//%s%PLC1.GVL_Motores.Motor[0..500]::En::xFazendoComissionamento%/s%",
+          "",
+          "TcHmi.Symbol.writeEx(Variavel, 0);",
+          "",
+          "TcHmi.Symbol.writeEx(Variavel, 0, function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        // Handle success... ",
+          "    } else {",
+          "        // Handle error... ",
+          "    }",
+          "});",
+          "",
+          "",
+          "/*TcHmi.Symbol.readEx2(Variavel, function (data) {",
+          "    if (data.error === TcHmi.Errors.NONE) {",
+          "        // Handle result value... ",
+          "        var value = data.value; ",
+          "        console.log(value); ",
+          "    } else {",
+          "        // Handle error... ",
+          "    }",
+          "});*/"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%i%xIndex%/i%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:general#/definitions/INT16",
+          "value": 0
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "operate",
+    "group": "Administracao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Manutencao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Operacao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Visualizacao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "observe",
+    "group": "Administracao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Manutencao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Operacao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Visualizacao",
+    "permission": "Deny"
+  }
+]
+</script>
+<div id="TcHmiTextblock_571" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="43" data-tchmi-height-unit="px" data-tchmi-left="25" data-tchmi-left-unit="px" data-tchmi-text="%f%&quot;Motor:&quot;  + %i%xIndex%/i%%/f%" data-tchmi-top="985" data-tchmi-top-unit="px" data-tchmi-width="170" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="25" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-visibility="Hidden">
+</div>
+</div>

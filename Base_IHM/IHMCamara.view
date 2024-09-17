@@ -1,0 +1,221 @@
+<div id="IHMCamara"
+     data-tchmi-type="TcHmi.Controls.System.TcHmiView"
+     data-tchmi-top="0" data-tchmi-left="0"
+     data-tchmi-width-mode="Content"
+     data-tchmi-min-width="100" data-tchmi-min-width-unit="%"
+     data-tchmi-height-mode="Content"
+     data-tchmi-min-height="100" data-tchmi-min-height-unit="%"
+     data-tchmi-background-image-height="100" data-tchmi-background-image-width="100"
+     data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width-unit="%">
+
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(136, 138, 149, 1)"
+}
+</script>
+<div id="Region_Center_1" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-left="0" data-tchmi-top="90" data-tchmi-scrolling="No" data-tchmi-bottom="0" data-tchmi-right="0" data-tchmi-is-enabled="true" data-tchmi-scale-mode="ScaleToFill" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-target-content="Pages/IHMCamaras/InicialIHMCamaras_operação.content">
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json"></script>
+
+</div>
+<div id="Header_Top_1" data-tchmi-type="TcHmi.Controls.BaseTemplate.TcHmiHeader" data-tchmi-height="90" data-tchmi-left="0" data-tchmi-top="0" data-tchmi-right="0" data-tchmi-expandable="true" data-tchmi-is-enabled="true">
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">[
+"divider",
+"divider-top"
+]
+</script><script data-tchmi-target-attribute="data-tchmi-header-items" type="application/json">
+[
+  {
+    "itemType": "Image",
+    "priority": "2",
+    "itemAlign": "Left",
+    "prefWidth": 280.0,
+    "prefWidthUnit": "px",
+    "prefHeight": 55.0,
+    "prefHeightUnit": "px",
+    "minWidth": 128.0,
+    "minWidthUnit": "px",
+    "classList": [],
+    "accessRights": [],
+    "image": "Images/Diversos/logotipo-teknike.png",
+    "altText": "Beckhoff",
+    "targetRegion": "",
+    "targetContent": "Pages/PaginaInicial.content"
+  },
+  {
+    "itemType": "Text",
+    "priority": "2",
+    "itemAlign": "Left",
+    "prefWidth": 300.0,
+    "prefWidthUnit": "px",
+    "prefHeight": 100.0,
+    "prefHeightUnit": "px",
+    "minWidth": 128.0,
+    "minWidthUnit": "px",
+    "classList": [],
+    "accessRights": [],
+    "text": "Aspersão",
+    "targetContent": "\r\n  \"itemType\": \"Text\",\r\n  \"priority\": \"2\",\r\n  \"itemAlign\": \"Left\",\r\n  \"prefWidth\": 300.0,\r\n  \"prefWidthUnit\": \"px\",\r\n  \"prefHeight\": 100.0,\r\n  \"prefHeightUnit\": \"px\",\r\n  \"minWidth\": 128.0,\r\n  \"minWidthUnit\": \"px\",\r\n  \"classList\": [],\r\n  \"accessRights\": [],\r\n  \"text\": \"Intralogística Sidrolândia\",\r\n  \"targetContent\": \"\"\r\n}"
+  },
+  {
+    "itemType": "AdsState",
+    "priority": "3",
+    "itemAlign": "Right",
+    "prefWidth": 160.0,
+    "prefWidthUnit": "px",
+    "prefHeight": 48.0,
+    "prefHeightUnit": "px",
+    "minWidth": 48.0,
+    "minWidthUnit": "px",
+    "classList": [],
+    "accessRights": [],
+    "adsRuntime": "TcSysService",
+    "iconWidth": 48.0,
+    "iconWidthUnit": "px",
+    "text": "TwinCAT",
+    "textPosition": "Left",
+    "serverInterval": 1000.0,
+    "serverDomain": "ADS",
+    "stateImages": {
+      "Fallback": "Images/TwinCAT/twincat-fallback.svg",
+      "Run": "Images/TwinCAT/twincat-run.svg",
+      "Stop": "Images/TwinCAT/twincat-stop.svg",
+      "Config": "Images/TwinCAT/twincat-config.svg",
+      "Exception": "Images/TwinCAT/twincat-exeption.svg"
+    }
+  },
+  {
+    "itemType": "AdsState",
+    "priority": "3",
+    "itemAlign": "Right",
+    "prefWidth": 160.0,
+    "prefWidthUnit": "px",
+    "prefHeight": 48.0,
+    "prefHeightUnit": "px",
+    "minWidth": 48.0,
+    "minWidthUnit": "px",
+    "classList": [],
+    "accessRights": [],
+    "adsRuntime": "PLC1",
+    "iconWidth": 48.0,
+    "iconWidthUnit": "px",
+    "text": "PLC",
+    "textPosition": "Left",
+    "serverInterval": 1000.0,
+    "serverDomain": "ADS",
+    "stateImages": {
+      "Fallback": "Images/PLC/plc-fallback.svg",
+      "Run": "Images/PLC/plc-run.svg",
+      "Stop": "Images/PLC/plc-stop.svg",
+      "Config": "Images/PLC/plc-config.svg",
+      "Exception": "Images/PLC/plc-exeption.svg"
+    }
+  },
+  {
+    "itemType": "UserManagement",
+    "priority": "2",
+    "itemAlign": "Right",
+    "prefWidth": 288.0,
+    "prefWidthUnit": "px",
+    "prefHeight": 48.0,
+    "prefHeightUnit": "px",
+    "minWidth": 176.0,
+    "minWidthUnit": "px",
+    "classList": [],
+    "accessRights": [
+      {
+        "accessright": "operate",
+        "group": "Operacao",
+        "permission": "Allow"
+      },
+      {
+        "accessright": "operate",
+        "group": "Manutencao",
+        "permission": "Allow"
+      },
+      {
+        "accessright": "observe",
+        "group": "Operacao",
+        "permission": "Allow"
+      },
+      {
+        "accessright": "observe",
+        "group": "Manutencao",
+        "permission": "Allow"
+      },
+      {
+        "accessright": "operate",
+        "group": "Adminsitracao",
+        "permission": "Allow"
+      },
+      {
+        "accessright": "observe",
+        "group": "Adminsitracao",
+        "permission": "Allow"
+      }
+    ],
+    "allowLogout": true,
+    "allowSwitchUser": true
+  },
+  {
+    "itemType": "Time",
+    "priority": "2",
+    "itemAlign": "Right",
+    "prefWidth": 128.0,
+    "prefWidthUnit": "px",
+    "prefHeight": 48.0,
+    "prefHeightUnit": "px",
+    "minWidth": 96.0,
+    "minWidthUnit": "px",
+    "classList": [],
+    "accessRights": [],
+    "timeDisplayLayout": "TimeDateMultiLine"
+  }
+]
+</script>
+
+
+
+
+
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "Header_Top_1.onMouseClick",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var tcHeader = TcHmi.Controls.get(\"Header_Top\");",
+          "",
+          "//console.log(tcHeader.__children);",
+          "",
+          "for (let i = 0; i < tcHeader.__children.length; i++) {",
+          "\tconsole.log(tcHeader.__children[i]);",
+          "\tif(tcHeader.__children[i].__type == \"TcHmi.Controls.Beckhoff.TcHmiStateImage\"){",
+          "\t\tconsole.log(\"Chegou\");",
+          "\t\tconsole.log(tcHeader.__children[i]);",
+          "\t\ttcHeader.__children[i].setFallbackImage(\"Imports/Images/warning_rot_pressed.svg\");",
+          "\t}",
+          "}"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+</div>
+</div>

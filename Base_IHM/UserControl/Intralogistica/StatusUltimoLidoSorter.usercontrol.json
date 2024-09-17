@@ -1,0 +1,23 @@
+{
+  "parameters": [
+    {
+      "name": "data-tchmi-st_ultimoquepassou",
+      "displayName": "ST_UltimoQuePassou",
+      "visible": true,
+      "type": "tchmi:server#/definitions/PLC1.Teknike_Intralogistica.ST_StatusDoUltimoQuePassou",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "ST_UltimoQuePassou",
+      "propertySetterName": "setST_UltimoQuePassou",
+      "propertyGetterName": "getST_UltimoQuePassou",
+      "refTo": ""
+    }
+  ],
+  "virtualRights": [],
+  "$schema": "./../Packages/Beckhoff.TwinCAT.HMI.Framework.12.754.4/runtimes/native1.12-tchmi/Schema/UserControlConfig.Schema.json",
+  "description": ""
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+    "definitions": {
+        "TcHmi.Controls.BlibliotecaGraficos.FrameworkGrafico": {
+            "type": "object",
+            "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+            "frameworkControlType": "FrameworkGrafico",
+            "frameworkControlNamespace": "TcHmi.Controls.BlibliotecaGraficos"
+        },
+        "TcHmi.Controls.BlibliotecaGraficos.VariacoesPaleta": {
+            "$schema": "http://json-schema.org/draft-04/schema",
+            "title": "Variações na paleta de cor",
+            "type": "string",
+            "enum": [ "default", "pastel", "soft", "light", "hard", "pale" ],
+            "default": "default"
+        },
+        "TcHmi.Controls.BlibliotecaGraficos.TiposGraficos": {
+            "$schema": "http://json-schema.org/draft-04/schema",
+            "title": "Tipos disponiveis de grafico",
+            "type": "string",
+            "enum": [ "line", "bar", "scatter", "bubble", "pie", "doughnut", "polarArea" ],
+            "default": "line"
+        },
+        "TcHmi.Controls.BlibliotecaGraficos.TiposEixoX": {
+            "$schema": "http://json-schema.org/draft-04/schema",
+            "title": "Tipos disponiveis de eixo pro grafico",
+            "type": "string",
+            "enum": [ "linear", "time" ],
+            "default": "linear"
+        },
+        "TcHmi.Controls.BlibliotecaGraficos.SchemesPaleta": {
+            "$schema": "http://json-schema.org/draft-04/schema",
+            "title": "Como ele vai gerar as cores",
+            "type": "string",
+            "enum": [ "mono", "contrast", "triade", "tetrade", "analogic" ],
+            "default": "triade"
+        }
+    }
+}

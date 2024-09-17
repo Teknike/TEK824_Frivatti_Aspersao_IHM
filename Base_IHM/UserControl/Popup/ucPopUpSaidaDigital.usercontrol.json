@@ -1,0 +1,23 @@
+{
+  "parameters": [
+    {
+      "name": "data-tchmi-stsensor",
+      "displayName": "stSensor",
+      "visible": true,
+      "type": "tchmi:server#/definitions/PLC1.Teknike_Sensores.st_SensorDigital",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "stSensor",
+      "propertySetterName": "setStSensor",
+      "propertyGetterName": "getStSensor",
+      "refTo": ""
+    }
+  ],
+  "virtualRights": [],
+  "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.754.4/runtimes/native1.12-tchmi/Schema/UserControlConfig.Schema.json",
+  "description": ""
+}

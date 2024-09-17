@@ -1,0 +1,2650 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "UserControl1": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\UserControl1.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/UserControl1"
+    },
+    "Freio": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Freio.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/Freio"
+    },
+    "ucEvaporador": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\ucEvaporador.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/ucEvaporador"
+    },
+    "Porcionadora1": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Porcionadora1.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/Porcionadora1"
+    },
+    "Porcionadora2": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Porcionadora2.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/Porcionadora2"
+    },
+    "ConfigGrupos": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Grupos\\ConfigGrupos.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/ConfigGrupos"
+    },
+    "ControleGrupo": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Grupos\\ControleGrupo.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/ControleGrupo"
+    },
+    "ucPopUpMotores": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Popup\\ucPopUpMotores.usercontrol.json",
+      "id": "tchmi:project#/definitions/ucPopUpMotores",
+      "type": "object"
+    },
+    "UserControl1_0": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Geral\\ucSeta.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/UserControl1_0"
+    },
+    "ucPopupCaixas": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Popup\\ucPopupCaixas.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/ucPopupCaixas"
+    },
+    "PLC1.ARRAY_0..23_OF-Teknike_Partidas.st_KPIPartida": {
+      "items": {
+        "$ref": "tchmi:project#/definitions/PLC1.Teknike_Partidas.st_KPIPartida"
+      },
+      "type": "array",
+      "minItems": 24,
+      "maxItems": 24
+    },
+    "PLC1.ARRAY_0..4_OF-Teknike_Geral.ST_Grafico": {
+      "items": {
+        "$ref": "tchmi:project#/definitions/PLC1.Teknike_Geral.ST_Grafico"
+      },
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5
+    },
+    "PLC1.ARRAY_1..4_1..2_OF-BOOL": {
+      "items": {
+        "type": "array",
+        "items": {
+          "$ref": "tchmi:general#/definitions/BOOL"
+        }
+      },
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "displayAsMatrix": 2,
+      "startOffset": 1
+    },
+    "PLC1.ARRAY_1..4_OF-BOOL": {
+      "items": {
+        "$ref": "tchmi:general#/definitions/BOOL"
+      },
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "startOffset": 1
+    },
+    "PLC1.Tc2_Utilities.T_ULARGE_INTEGER": {
+      "properties": {
+        "dwHighPart": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/DWORD"
+            },
+            {
+              "comment": "Higher double word"
+            }
+          ]
+        },
+        "dwLowPart": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/DWORD"
+            },
+            {
+              "comment": "Lower double word"
+            }
+          ]
+        }
+      },
+      "type": "object"
+    },
+    "PLC1.Tc2_Utilities.TIMESTRUCT": {
+      "properties": {
+        "wDay": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/WORD"
+            },
+            {
+              "comment": "Day of the month: 1..31"
+            }
+          ]
+        },
+        "wDayOfWeek": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/WORD"
+            },
+            {
+              "comment": "Day of the week: 0..6 (Sunday = 0, Monday = 1, .. , Saturday = 6 and so on)"
+            }
+          ]
+        },
+        "wHour": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/WORD"
+            },
+            {
+              "comment": "Hour: 0..23"
+            }
+          ]
+        },
+        "wMilliseconds": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/WORD"
+            },
+            {
+              "comment": "Milliseconds: 0..999"
+            }
+          ]
+        },
+        "wMinute": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/WORD"
+            },
+            {
+              "comment": "Minute: 0..59"
+            }
+          ]
+        },
+        "wMonth": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/WORD"
+            },
+            {
+              "comment": "Month: 1..12 (January = 1, February = 2 and so on)"
+            }
+          ]
+        },
+        "wSecond": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/WORD"
+            },
+            {
+              "comment": "Second: 0..59"
+            }
+          ]
+        },
+        "wYear": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/WORD"
+            },
+            {
+              "comment": "Year: 1970..2106"
+            }
+          ]
+        }
+      },
+      "type": "object"
+    },
+    "PLC1.Teknike_Geral.ST_Grafico": {
+      "properties": {
+        "label": {
+          "allOf": [
+            {
+              "maxLength": 255
+            },
+            {
+              "$ref": "tchmi:general#/definitions/String"
+            }
+          ]
+        },
+        "sCor": {
+          "allOf": [
+            {
+              "maxLength": 255,
+              "comment": "Cor em Hexa"
+            },
+            {
+              "$ref": "tchmi:general#/definitions/String"
+            }
+          ]
+        },
+        "x": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "y": {
+          "$ref": "tchmi:general#/definitions/REAL"
+        }
+      },
+      "type": "object"
+    },
+    "PLC1.Teknike_Intralogistica.st_Merge3p1": {
+      "properties": {
+        "Config": {
+          "$ref": "tchmi:project#/definitions/PLC1.Teknike_Intralogistica.st_Merge3p1_Config"
+        },
+        "En": {
+          "$ref": "tchmi:project#/definitions/PLC1.Teknike_Intralogistica.st_merge3p1_En"
+        },
+        "Sa": {
+          "$ref": "tchmi:project#/definitions/PLC1.Teknike_Intralogistica.st_merge3p1_Sa"
+        },
+        "Status": {
+          "$ref": "tchmi:project#/definitions/PLC1.Teknike_Intralogistica.st_merge3p1_Status"
+        }
+      },
+      "type": "object"
+    },
+    "PLC1.Teknike_Intralogistica.st_Merge3p1_Config": {
+      "properties": {
+        "iMaxL1": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/INT"
+            },
+            {
+              "comment": "contagem maximo atendendo a L1"
+            }
+          ]
+        },
+        "iMaxL2": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/INT"
+            },
+            {
+              "comment": "contagem maximo atendendo a L2"
+            }
+          ]
+        },
+        "iMaxL3": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/INT"
+            },
+            {
+              "comment": "contagem maximo atendendo a L2"
+            }
+          ]
+        },
+        "rCaixaTrancada": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/REAL"
+            },
+            {
+              "comment": "Tempo de caixa trancada"
+            }
+          ]
+        },
+        "rLimpaLinhaL1": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/REAL"
+            },
+            {
+              "comment": "Tempo Limpando a linha entre a troca de linha"
+            }
+          ]
+        },
+        "rLimpaLinhaL2": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/REAL"
+            },
+            {
+              "comment": "Tempo Limpando a linha entre a troca de linha"
+            }
+          ]
+        },
+        "rLimpaLinhaL3": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/REAL"
+            },
+            {
+              "comment": "Tempo Limpando a linha entre a troca de linha"
+            }
+          ]
+        },
+        "rMaxL1": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/REAL"
+            },
+            {
+              "comment": "Tempo maximo atendendo a L1"
+            }
+          ]
+        },
+        "rMaxL2": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/REAL"
+            },
+            {
+              "comment": "Tempo maximo atendendo a L2"
+            }
+          ]
+        },
+        "rMaxL3": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/REAL"
+            },
+            {
+              "comment": "Tempo maximo atendendo a L2"
+            }
+          ]
+        },
+        "rTimeOutL1": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/REAL"
+            },
+            {
+              "comment": "tempo entre cada caixa na L1 sem trocar para L2"
+            }
+          ]
+        },
+        "rTimeOutL2": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/REAL"
+            },
+            {
+              "comment": "tempo entre cada caixa na L2 sem trocar para L3"
+            }
+          ]
+        },
+        "rTimeOutL3": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/REAL"
+            },
+            {
+              "comment": "tempo entre cada caixa na L3 sem trocar para L1"
+            }
+          ]
+        },
+        "xMaxEmNCaixa": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "se marcado em vez de dar o temp max em tempo ele conta"
+            }
+          ]
+        },
+        "xSaidaNoCanto": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "Quando a saida for no canto os tempo de limpa linha é diferente"
+            }
+          ]
+        }
+      },
+      "type": "object"
+    },
+    "PLC1.Teknike_Intralogistica.st_merge3p1_En": {
+      "properties": {
+        "stMotorL1": {
+          "$ref": "tchmi:project#/definitions/PLC1.Teknike_Partidas.st_Partida"
+        },
+        "stMotorL2": {
+          "$ref": "tchmi:project#/definitions/PLC1.Teknike_Partidas.st_Partida"
+        },
+        "stMotorL3": {
+          "$ref": "tchmi:project#/definitions/PLC1.Teknike_Partidas.st_Partida"
+        },
+        "stMotorMerge": {
+          "$ref": "tchmi:project#/definitions/PLC1.Teknike_Partidas.st_Partida"
+        },
+        "stSensorCxTrancada": {
+          "$ref": "tchmi:project#/definitions/PLC1.Teknike_Sensores.st_SensorDigital"
+        },
+        "stSensorL1": {
+          "$ref": "tchmi:project#/definitions/PLC1.Teknike_Sensores.st_SensorDigital"
+        },
+        "stSensorL2": {
+          "$ref": "tchmi:project#/definitions/PLC1.Teknike_Sensores.st_SensorDigital"
+        },
+        "stSensorL3": {
+          "$ref": "tchmi:project#/definitions/PLC1.Teknike_Sensores.st_SensorDigital"
+        }
+      },
+      "type": "object"
+    },
+    "PLC1.Teknike_Intralogistica.st_merge3p1_Sa": {
+      "properties": {
+        "xInterlockL1": {
+          "$ref": "tchmi:general#/definitions/BOOL"
+        },
+        "xInterlockL2": {
+          "$ref": "tchmi:general#/definitions/BOOL"
+        },
+        "xInterlockL3": {
+          "$ref": "tchmi:general#/definitions/BOOL"
+        },
+        "xInterlockMerge": {
+          "$ref": "tchmi:general#/definitions/BOOL"
+        }
+      },
+      "type": "object"
+    },
+    "PLC1.Teknike_Intralogistica.st_merge3p1_Status": {
+      "properties": {
+        "sCXHL1": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "sCXHL2": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "sCXHL3": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "sCXHMerge": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "sStatus": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/STRING%2880%29"
+            },
+            {
+              "comment": "Status atual"
+            }
+          ]
+        },
+        "sTCaixaTrancada": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "sTLimpaLinha": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "sTMaxL1": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "sTMaxL2": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "sTMaxL3": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "sTOutL1": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "sTOutL2": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "sTOutL3": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "sTempoEntreCaixasL1": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "sTempoEntreCaixasL2": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "sTempoEntreCaixasL3": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        }
+      },
+      "type": "object"
+    },
+    "PLC1.Teknike_Partidas.ST_ConfigInversor": {
+      "properties": {
+        "ACC": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/REAL"
+            },
+            {
+              "comment": "Rampa de aceleração"
+            }
+          ]
+        },
+        "BFR": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/REAL"
+            },
+            {
+              "comment": "frequencia da rede"
+            }
+          ]
+        },
+        "DEC": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/REAL"
+            },
+            {
+              "comment": "Rampa de desaceleração"
+            }
+          ]
+        },
+        "HSP": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/REAL"
+            },
+            {
+              "comment": "velocidade maxima"
+            }
+          ]
+        },
+        "ITH": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/REAL"
+            },
+            {
+              "comment": "Corrente termica"
+            }
+          ]
+        },
+        "LSP": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/REAL"
+            },
+            {
+              "comment": "velocidade minima"
+            }
+          ]
+        },
+        "NCR": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/REAL"
+            },
+            {
+              "comment": "Corrente do motor"
+            }
+          ]
+        },
+        "NPR": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/REAL"
+            },
+            {
+              "comment": "Potencia do motor"
+            }
+          ]
+        },
+        "NSP": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/REAL"
+            },
+            {
+              "comment": "RPM do motor"
+            }
+          ]
+        },
+        "TFR": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/REAL"
+            },
+            {
+              "comment": "Frequencia maxima do inversor"
+            }
+          ]
+        },
+        "UNS": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/REAL"
+            },
+            {
+              "comment": "tensao da rede"
+            }
+          ]
+        }
+      },
+      "type": "object"
+    },
+    "PLC1.Teknike_Partidas.ST_ConfigMotorDB": {
+      "properties": {
+        "Emerg1": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "Emerg2": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "Emerg3": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "Emerg4": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "Funcao": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "IT1A": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "IT1B": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "IT2A": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "IT2B": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "IT3A": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "IT3B": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "IT4A": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "IT4B": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "InvIT1A": {
+          "$ref": "tchmi:general#/definitions/INT"
+        },
+        "InvIT1B": {
+          "$ref": "tchmi:general#/definitions/INT"
+        },
+        "InvIT2A": {
+          "$ref": "tchmi:general#/definitions/INT"
+        },
+        "InvIT2B": {
+          "$ref": "tchmi:general#/definitions/INT"
+        },
+        "InvIT3A": {
+          "$ref": "tchmi:general#/definitions/INT"
+        },
+        "InvIT3B": {
+          "$ref": "tchmi:general#/definitions/INT"
+        },
+        "InvIT4A": {
+          "$ref": "tchmi:general#/definitions/INT"
+        },
+        "InvIT4B": {
+          "$ref": "tchmi:general#/definitions/INT"
+        },
+        "Motor": {
+          "$ref": "tchmi:general#/definitions/LINT"
+        },
+        "OPIT1": {
+          "$ref": "tchmi:general#/definitions/INT"
+        },
+        "OPIT2": {
+          "$ref": "tchmi:general#/definitions/INT"
+        },
+        "OPIT3": {
+          "$ref": "tchmi:general#/definitions/INT"
+        },
+        "OPIT4": {
+          "$ref": "tchmi:general#/definitions/INT"
+        },
+        "Tag": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "Timestamp": {
+          "$ref": "tchmi:general#/definitions/DATE_AND_TIME"
+        }
+      },
+      "type": "object"
+    },
+    "PLC1.Teknike_Partidas.st_ConfigPartida": {
+      "properties": {
+        "inversor": {
+          "$ref": "tchmi:project#/definitions/PLC1.Teknike_Partidas.ST_ConfigInversor"
+        },
+        "rCorrente_Comissionada": {
+          "$ref": "tchmi:general#/definitions/REAL"
+        },
+        "rPorcentagemHigienizacao": {
+          "$ref": "tchmi:general#/definitions/REAL"
+        },
+        "rSetPoinAuto": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/REAL"
+            },
+            {
+              "comment": "velocidadde que sera mandada para o bloco de comunicação"
+            }
+          ]
+        },
+        "rSetPoinAuto2": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/REAL"
+            },
+            {
+              "comment": "velocidadde que sera mandada para o bloco de comunicação"
+            }
+          ]
+        },
+        "rSetPoinManu": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/REAL"
+            },
+            {
+              "comment": "velocidadde que sera mandada para o bloco de comunicação"
+            }
+          ]
+        },
+        "rTempoDeRampaSoft": {
+          "$ref": "tchmi:general#/definitions/REAL"
+        },
+        "rTempoFeedBackContator": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/REAL"
+            },
+            {
+              "comment": "Tempo entre acionar a Saída e receber o FeedBack da Contatora"
+            }
+          ]
+        },
+        "rTempoProxMotor": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/REAL"
+            },
+            {
+              "comment": "Prox motor"
+            }
+          ]
+        },
+        "rTempoTrocaSentidoDeMarcha": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/REAL"
+            },
+            {
+              "comment": "esse tempo é pra evitar destruir a parte mecanica com a troca de sentido"
+            }
+          ]
+        },
+        "rVeloEmMetroPMin_Conversao": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/REAL"
+            },
+            {
+              "comment": "valor em m/Min em 1000 RPM"
+            }
+          ]
+        },
+        "rVeloEmPorcentagem_VeloMax": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/REAL"
+            },
+            {
+              "comment": "velo que representa 100%"
+            }
+          ]
+        },
+        "sNome_Funcao": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/STRING%2880%29"
+            },
+            {
+              "comment": "nome do motor e função para IHM"
+            }
+          ]
+        },
+        "xByPassContator": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "Sinal de by pass do contato da contatora"
+            }
+          ]
+        },
+        "xByPassDisjuntor": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "Sinal de by pass do contato do disjuntor"
+            }
+          ]
+        },
+        "xBypassContatoSoft": {
+          "$ref": "tchmi:general#/definitions/BOOL"
+        },
+        "xBypassFreio": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "bypass para o freio da partida"
+            }
+          ]
+        },
+        "xBypassRede": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "para caso tenha problema na rede ele poder operar sem ela"
+            }
+          ]
+        },
+        "xComissionado_Corrente": {
+          "$ref": "tchmi:general#/definitions/BOOL"
+        },
+        "xComissionado_Sentido": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "Comissionamento"
+            }
+          ]
+        },
+        "xComissionado_Velo": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "Conversao de velo em automatico"
+            }
+          ]
+        },
+        "xHabilitaHigienizacao": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "Se tiver em true quando tiver xLigaHigienizacao ele vai ligar a esteira em rPorcentagemHigienizacao% da velo"
+            }
+          ]
+        },
+        "xInverteSentido": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "bit pra inverrter o sentido do inversor"
+            }
+          ]
+        },
+        "xTemContatoInversorOK": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "esse cara é para o contado do inversor, o bypass dele é no da rede tb"
+            }
+          ]
+        },
+        "xTemFreio": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "variavel que diz que tem freio"
+            }
+          ]
+        },
+        "xTemReversao": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "Tempo para reversao sem tirar o comando de marcha"
+            }
+          ]
+        },
+        "xTemSoft": {
+          "$ref": "tchmi:general#/definitions/BOOL"
+        },
+        "xTudoComissionado": {
+          "$ref": "tchmi:general#/definitions/BOOL"
+        },
+        "xVeloEmMetroPMin": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "usa a conversao para calcular a velocidade usada"
+            }
+          ]
+        },
+        "xVeloEmPorcentagem": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "usa o valor de 0-100% para controle da velo"
+            }
+          ]
+        }
+      },
+      "type": "object"
+    },
+    "PLC1.Teknike_Partidas.st_EntradaPartida": {
+      "properties": {
+        "i": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/INT"
+            },
+            {
+              "comment": "index atual para a IHM"
+            }
+          ]
+        },
+        "iNumeroDeReset": {
+          "$ref": "tchmi:general#/definitions/INT"
+        },
+        "iSenhaAtual": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/INT"
+            },
+            {
+              "comment": "Senha que aparece no HMI"
+            }
+          ]
+        },
+        "iSenhaBloqueio": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/INT"
+            },
+            {
+              "comment": "Senha de bloqueio"
+            }
+          ]
+        },
+        "sInterLock_1": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/STRING%2880%29"
+            },
+            {
+              "comment": "porque o bloqueio 1"
+            }
+          ]
+        },
+        "sInterLock_2": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/STRING%2880%29"
+            },
+            {
+              "comment": "porque o bloqueio 1"
+            }
+          ]
+        },
+        "sInterLock_3": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/STRING%2880%29"
+            },
+            {
+              "comment": "porque o bloqueio 1"
+            }
+          ]
+        },
+        "sInterLock_4": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/STRING%2880%29"
+            },
+            {
+              "comment": "porque o bloqueio 1"
+            }
+          ]
+        },
+        "stHoraAgora": {
+          "allOf": [
+            {
+              "$ref": "tchmi:project#/definitions/PLC1.Tc2_Utilities.TIMESTRUCT"
+            },
+            {
+              "comment": "struct de hora para o horimetro"
+            }
+          ]
+        },
+        "xAutomaticoManual": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "se automatico = true se manual = false"
+            }
+          ]
+        },
+        "xBloqueado": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "Sinal de Bloqueio"
+            }
+          ]
+        },
+        "xContatoFalhaSoft": {
+          "$ref": "tchmi:general#/definitions/BOOL"
+        },
+        "xContatoInversorOK": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "Contato se o inversor esta OK"
+            }
+          ]
+        },
+        "xContatoRodandoSoft": {
+          "$ref": "tchmi:general#/definitions/BOOL"
+        },
+        "xContatorLigado": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "Status da contatora ou do drive de que o motor partiu"
+            }
+          ]
+        },
+        "xDisjuntorOK": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "Status do disjuntor motor"
+            }
+          ]
+        },
+        "xEmergenciaOK": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "Sinal de Emergência"
+            }
+          ]
+        },
+        "xFalhaInversor": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "se o inversor tiver qualquer outra falha que nao seja perda de conexao"
+            }
+          ]
+        },
+        "xFazendoComissionamento": {
+          "$ref": "tchmi:general#/definitions/BOOL"
+        },
+        "xFreioOK": {
+          "$ref": "tchmi:general#/definitions/BOOL"
+        },
+        "xInterLock_1": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "sinal para bloquear a partida"
+            }
+          ]
+        },
+        "xInterLock_2": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "sinal para bloquear a partida"
+            }
+          ]
+        },
+        "xInterLock_3": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "sinal para bloquear a partida"
+            }
+          ]
+        },
+        "xInterLock_4": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "sinal para bloquear a partida"
+            }
+          ]
+        },
+        "xInversorOnline": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "se etiver online"
+            }
+          ]
+        },
+        "xLigaAuto": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "liga inversor em automatico"
+            }
+          ]
+        },
+        "xLigaHigienizacao": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "Quando acionado ele liga o motor em 10% da velo automatico"
+            }
+          ]
+        },
+        "xLigaManu": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "liga inversor em manual"
+            }
+          ]
+        },
+        "xLigaManu3S": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "Liga por 3 segundos em manual(Para comissionamento)"
+            }
+          ]
+        },
+        "xReset": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "Sinal para resetar as falhas"
+            }
+          ]
+        },
+        "xResetRegistros": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "Sinal apra resetar os contadores e registradores"
+            }
+          ]
+        },
+        "xResetaNumeroDeReset": {
+          "$ref": "tchmi:general#/definitions/BOOL"
+        },
+        "xReversoAuto": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "habilita reverso em automatico"
+            }
+          ]
+        },
+        "xReversoManu": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "liga inversor em manual"
+            }
+          ]
+        },
+        "xSoftOnline": {
+          "$ref": "tchmi:general#/definitions/BOOL"
+        },
+        "xTemInversor": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "define se o bloco considera ou nao uma conexao"
+            }
+          ]
+        },
+        "xUsaVeloAuto2": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "Usa a segunda velo em automatico"
+            }
+          ]
+        }
+      },
+      "type": "object"
+    },
+    "PLC1.Teknike_Partidas.st_KPIPartida": {
+      "properties": {
+        "rPorcDesligado": {
+          "$ref": "tchmi:general#/definitions/REAL"
+        },
+        "rPorcEmergencia": {
+          "$ref": "tchmi:general#/definitions/REAL"
+        },
+        "rPorcFalha": {
+          "$ref": "tchmi:general#/definitions/REAL"
+        },
+        "rPorcInterlock": {
+          "$ref": "tchmi:general#/definitions/REAL"
+        },
+        "rPorcLigado": {
+          "$ref": "tchmi:general#/definitions/REAL"
+        },
+        "stGraficoIHM": {
+          "$ref": "tchmi:project#/definitions/PLC1.ARRAY_0..4_OF-Teknike_Geral.ST_Grafico"
+        },
+        "tDesligado": {
+          "$ref": "tchmi:general#/definitions/TIME"
+        },
+        "tEmergencia": {
+          "$ref": "tchmi:general#/definitions/TIME"
+        },
+        "tFalha": {
+          "$ref": "tchmi:general#/definitions/TIME"
+        },
+        "tInterlock": {
+          "$ref": "tchmi:general#/definitions/TIME"
+        },
+        "tLigado": {
+          "$ref": "tchmi:general#/definitions/TIME"
+        }
+      },
+      "type": "object"
+    },
+    "PLC1.Teknike_Partidas.st_LeiturasInversorIHM": {
+      "properties": {
+        "sCorrente": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "sStatusConexao": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "sTemperaturaInver": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "sTemperaturaMotor": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "sTorque": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "sUltimoErro": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "sVelocidadeHz": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "sVelocidadeRPM": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "sVoltagemEntrada": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "xStatusEmergencias": {
+          "$ref": "tchmi:project#/definitions/PLC1.ARRAY_1..4_OF-BOOL"
+        },
+        "xStatusInterlocks": {
+          "$ref": "tchmi:project#/definitions/PLC1.ARRAY_1..4_1..2_OF-BOOL"
+        }
+      },
+      "type": "object"
+    },
+    "PLC1.Teknike_Partidas.st_Partida": {
+      "properties": {
+        "BancoDeDados": {
+          "$ref": "tchmi:project#/definitions/PLC1.Teknike_Partidas.ST_ConfigMotorDB"
+        },
+        "Config": {
+          "$ref": "tchmi:project#/definitions/PLC1.Teknike_Partidas.st_ConfigPartida"
+        },
+        "En": {
+          "$ref": "tchmi:project#/definitions/PLC1.Teknike_Partidas.st_EntradaPartida"
+        },
+        "KPI": {
+          "$ref": "tchmi:project#/definitions/PLC1.ARRAY_0..23_OF-Teknike_Partidas.st_KPIPartida"
+        },
+        "LeiturasInversorIHM": {
+          "$ref": "tchmi:project#/definitions/PLC1.Teknike_Partidas.st_LeiturasInversorIHM"
+        },
+        "Sa": {
+          "$ref": "tchmi:project#/definitions/PLC1.Teknike_Partidas.st_SaidaPartida"
+        }
+      },
+      "type": "object"
+    },
+    "PLC1.Teknike_Partidas.st_SaidaPartida": {
+      "properties": {
+        "iDisjDesarm": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/INT"
+            },
+            {
+              "comment": "Contagem do numero de desarmes do disjuntor"
+            }
+          ]
+        },
+        "iFalhaPartida": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/INT"
+            },
+            {
+              "comment": "Contagem do numero de falhas na partida do bloco"
+            }
+          ]
+        },
+        "iPartidas": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/INT"
+            },
+            {
+              "comment": "Contagem do numero de partidas com sucesso do bloco"
+            }
+          ]
+        },
+        "iStsMotor": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/INT"
+            },
+            {
+              "comment": "olhas no action ststus para entender"
+            }
+          ]
+        },
+        "iVelocidade": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/INT"
+            },
+            {
+              "comment": "velocidade para bloco de comunicação"
+            }
+          ]
+        },
+        "rCorrente": {
+          "$ref": "tchmi:general#/definitions/REAL"
+        },
+        "rTemperaturaInver": {
+          "$ref": "tchmi:general#/definitions/REAL"
+        },
+        "rTemperaturaMotor": {
+          "$ref": "tchmi:general#/definitions/REAL"
+        },
+        "rTorque": {
+          "$ref": "tchmi:general#/definitions/REAL"
+        },
+        "rVeloComissionada": {
+          "$ref": "tchmi:general#/definitions/REAL"
+        },
+        "rVelocidadeHz": {
+          "$ref": "tchmi:general#/definitions/REAL"
+        },
+        "rVelocidadeRPM": {
+          "$ref": "tchmi:general#/definitions/REAL"
+        },
+        "rVoltagemEntrada": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/REAL"
+            },
+            {
+              "comment": "dados vindo do inversor, coloquei aqui para facilitar a visualização"
+            }
+          ]
+        },
+        "sHorimetro": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "sStatusConexao": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "sUltimoErro": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "tHorimetro": {
+          "$ref": "tchmi:general#/definitions/TIME"
+        },
+        "xCmdFwd": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "Liga Motor pra frente"
+            }
+          ]
+        },
+        "xCmdRev": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "Liga Motor pra Tras"
+            }
+          ]
+        },
+        "xFalha": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "Partida em falha"
+            }
+          ]
+        },
+        "xFalhaContatora": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "Sinal de falha da contatora para a IHM"
+            }
+          ]
+        },
+        "xLigado": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "sinal que o motor ta ligado, apesar de ele ter parado para fazer a reversao ou pelos interlocks"
+            }
+          ]
+        },
+        "xNaoLigaProxMotor": {
+          "$ref": "tchmi:general#/definitions/BOOL"
+        },
+        "xParadoPorInterlock": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "se ele parar por algum interlock ele mostra aqui"
+            }
+          ]
+        },
+        "xResetParaInversor": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "sinal para o drive dar reset"
+            }
+          ]
+        },
+        "xTrocandoSentido": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            {
+              "comment": "quando ta trocando o sentido do motor ele deixa esse em true"
+            }
+          ]
+        }
+      },
+      "type": "object"
+    },
+    "PLC1.Teknike_Sensores.Config_ST_SensorDigital": {
+      "properties": {
+        "rTmpOff": {
+          "$ref": "tchmi:general#/definitions/REAL"
+        },
+        "rTmpOn": {
+          "$ref": "tchmi:general#/definitions/REAL"
+        },
+        "sNome_Funcao": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "xNF": {
+          "$ref": "tchmi:general#/definitions/BOOL"
+        }
+      },
+      "type": "object"
+    },
+    "PLC1.Teknike_Sensores.en_ST_SensorDigital": {
+      "properties": {
+        "i": {
+          "allOf": [
+            {
+              "$ref": "tchmi:general#/definitions/INT"
+            },
+            {
+              "comment": "Index para a IHM"
+            }
+          ]
+        },
+        "xResetContagem": {
+          "$ref": "tchmi:general#/definitions/BOOL"
+        },
+        "xSinalSensor": {
+          "$ref": "tchmi:general#/definitions/BOOL"
+        }
+      },
+      "type": "object"
+    },
+    "PLC1.Teknike_Sensores.ENUM_StatusSensor": {
+      "allOf": [
+        {
+          "enum": [
+            "0",
+            "1",
+            "2",
+            "3"
+          ],
+          "options": [
+            {
+              "value": 0,
+              "label": "OBJETO_AUSENTE"
+            },
+            {
+              "value": 1,
+              "label": "DETECTANDO_OBJETO"
+            },
+            {
+              "value": 2,
+              "label": "OBJETO_PRESENTE"
+            },
+            {
+              "value": 3,
+              "label": "DETECTANDO_AUSENCIA"
+            }
+          ]
+        },
+        {
+          "$ref": "tchmi:general#/definitions/INT16"
+        }
+      ]
+    },
+    "PLC1.Teknike_Sensores.sa_ST_SensorDigital": {
+      "properties": {
+        "eStatus": {
+          "$ref": "tchmi:project#/definitions/PLC1.Teknike_Sensores.ENUM_StatusSensor"
+        },
+        "uiContagem": {
+          "$ref": "tchmi:general#/definitions/UINT"
+        },
+        "xObjPresente": {
+          "$ref": "tchmi:general#/definitions/BOOL"
+        }
+      },
+      "type": "object"
+    },
+    "PLC1.Teknike_Sensores.st_LeConfigSensorNoBanco": {
+      "properties": {
+        "Funcao": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "Sensor": {
+          "$ref": "tchmi:project#/definitions/PLC1.Tc2_Utilities.T_ULARGE_INTEGER"
+        },
+        "Tag": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "Timestamp": {
+          "$ref": "tchmi:general#/definitions/DATE_AND_TIME"
+        }
+      },
+      "type": "object"
+    },
+    "PLC1.Teknike_Sensores.st_SensorDigital": {
+      "properties": {
+        "Banco": {
+          "$ref": "tchmi:project#/definitions/PLC1.Teknike_Sensores.st_LeConfigSensorNoBanco"
+        },
+        "config": {
+          "$ref": "tchmi:project#/definitions/PLC1.Teknike_Sensores.Config_ST_SensorDigital"
+        },
+        "en": {
+          "$ref": "tchmi:project#/definitions/PLC1.Teknike_Sensores.en_ST_SensorDigital"
+        },
+        "sa": {
+          "$ref": "tchmi:project#/definitions/PLC1.Teknike_Sensores.sa_ST_SensorDigital"
+        }
+      },
+      "type": "object"
+    },
+    "PLC1.ARRAY_0..128_OF-BYTE": {
+      "items": {
+        "$ref": "tchmi:general#/definitions/BYTE"
+      },
+      "type": "array",
+      "minItems": 129,
+      "maxItems": 129
+    },
+    "PLC1.ARRAY_0..63_OF-BYTE": {
+      "items": {
+        "$ref": "tchmi:general#/definitions/BYTE"
+      },
+      "type": "array",
+      "minItems": 64,
+      "maxItems": 64
+    },
+    "PLC1.Teknike_Sensores.ST_SR2000": {
+      "properties": {
+        "Config": {
+          "$ref": "tchmi:project#/definitions/PLC1.Teknike_Sensores.ST_SR2000_Config"
+        },
+        "En": {
+          "$ref": "tchmi:project#/definitions/PLC1.Teknike_Sensores.ST_SR2000_Entradas_Bloco"
+        },
+        "En_D": {
+          "allOf": [
+            {
+              "$ref": "tchmi:project#/definitions/PLC1.Teknike_Sensores.ST_SR2000_Entradas_Dispositivo"
+            },
+            {
+              "TcAddressType": "Input"
+            }
+          ]
+        },
+        "Sa": {
+          "$ref": "tchmi:project#/definitions/PLC1.Teknike_Sensores.ST_SR2000_Saidas_Bloco"
+        },
+        "Sa_D": {
+          "allOf": [
+            {
+              "$ref": "tchmi:project#/definitions/PLC1.Teknike_Sensores.ST_SR2000_Saidas_Dispositivo"
+            },
+            {
+              "TcAddressType": "Output"
+            }
+          ]
+        }
+      },
+      "type": "object"
+    },
+    "PLC1.Teknike_Sensores.ST_SR2000_Config": {
+      "properties": {
+        "iIgnoraInicio": {
+          "$ref": "tchmi:general#/definitions/INT"
+        },
+        "iQuantosCharLe": {
+          "$ref": "tchmi:general#/definitions/INT"
+        }
+      },
+      "type": "object"
+    },
+    "PLC1.Teknike_Sensores.ST_SR2000_Entradas_Bloco": {
+      "properties": {
+        "sNome_Funcao": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "xBtTriggerManual": {
+          "$ref": "tchmi:general#/definitions/BOOL"
+        },
+        "xHabilitaAutoTrigger": {
+          "$ref": "tchmi:general#/definitions/BOOL"
+        },
+        "xLiga": {
+          "$ref": "tchmi:general#/definitions/BOOL"
+        },
+        "xReset": {
+          "$ref": "tchmi:general#/definitions/BOOL"
+        },
+        "xSinalTrigAutomatico": {
+          "$ref": "tchmi:general#/definitions/BOOL"
+        },
+        "xTrigManualCiclico": {
+          "$ref": "tchmi:general#/definitions/BOOL"
+        }
+      },
+      "type": "object"
+    },
+    "PLC1.Teknike_Sensores.ST_SR2000_Entradas_Dispositivo": {
+      "properties": {
+        "EXTRequestResultCode": {
+          "$ref": "tchmi:general#/definitions/UINT"
+        },
+        "State": {
+          "$ref": "tchmi:general#/definitions/UINT"
+        },
+        "arResultData": {
+          "$ref": "tchmi:project#/definitions/PLC1.ARRAY_0..128_OF-BYTE"
+        },
+        "uiAIM_DPMGrade": {
+          "$ref": "tchmi:general#/definitions/UINT"
+        },
+        "uiBloadResultCode": {
+          "$ref": "tchmi:general#/definitions/UINT"
+        },
+        "uiGeneralErrorCode": {
+          "$ref": "tchmi:general#/definitions/UINT"
+        },
+        "uiISO_IEC15415Grade": {
+          "$ref": "tchmi:general#/definitions/UINT"
+        },
+        "uiISO_IEC15416Grade": {
+          "$ref": "tchmi:general#/definitions/UINT"
+        },
+        "uiMasterTriggerCount": {
+          "$ref": "tchmi:general#/definitions/UINT"
+        },
+        "uiMatchingLevel": {
+          "$ref": "tchmi:general#/definitions/UINT"
+        },
+        "uiPresetResultCode": {
+          "$ref": "tchmi:general#/definitions/UINT"
+        },
+        "uiReadDataSize": {
+          "$ref": "tchmi:general#/definitions/UINT"
+        },
+        "uiReadResultCode": {
+          "$ref": "tchmi:general#/definitions/UINT"
+        },
+        "uiRegisterPresetDataResultCode": {
+          "$ref": "tchmi:general#/definitions/UINT"
+        },
+        "uiResultDataReadyCount": {
+          "$ref": "tchmi:general#/definitions/UINT"
+        },
+        "uiResultDataUpdateCount": {
+          "$ref": "tchmi:general#/definitions/UINT"
+        },
+        "uiSlaveID": {
+          "$ref": "tchmi:general#/definitions/UINT"
+        },
+        "uiTuneResultCode": {
+          "$ref": "tchmi:general#/definitions/UINT"
+        },
+        "xAIM_DPMUnstable": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "xBloadComplete": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "xBloadFailure": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "xBufferOverflowError": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "xBusy": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "xEXTRequestComplete": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "xEXTRequestFailure": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "xErrBusy": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "xError": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "xGeneralError": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "xIN1Status": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "xIN2Status": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "xISO_IEC15415Unstable": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "xISO_IEC15416Unstable": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "xLockBusy": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "xMatchingLevelUnstable": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "xModeBusy": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "xOUT1Status": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "xOUT2Status": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "xOUT3Status": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "xPresetComplete": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "xPresetFailure": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "xREADY": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "xReadComplete": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "xReadingFailure": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "xRegisterPresetDataComplete": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "xRegisterPresetDataFailure": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "xResultDataAvailable": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "xResultDataStrobe": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "xSAE_AS9132Unstable": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "xTriggerBusy": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "xTuneComplete": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "xTuneFailure": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "xUnstable": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        }
+      },
+      "type": "object"
+    },
+    "PLC1.Teknike_Sensores.ST_SR2000_Saidas_Bloco": {
+      "properties": {
+        "AcertoPorcentagem": {
+          "$ref": "tchmi:general#/definitions/REAL"
+        },
+        "NotaAimDPM": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "NotaIsoIEC15415": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "NotaIsoIEC15416": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "ReadRequest": {
+          "$ref": "tchmi:general#/definitions/BOOL"
+        },
+        "matchPorcentagem": {
+          "$ref": "tchmi:general#/definitions/INT"
+        },
+        "sCodigo": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "sCodigoBruto": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "sMediaTempoTotalDeLeitura": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "sTempoTotalDeLeitura": {
+          "$ref": "tchmi:general#/definitions/STRING%2880%29"
+        },
+        "uiFalhasTotais": {
+          "$ref": "tchmi:general#/definitions/UINT"
+        },
+        "uiSucessoTotais": {
+          "$ref": "tchmi:general#/definitions/UINT"
+        },
+        "uiTrigsTotais": {
+          "$ref": "tchmi:general#/definitions/UINT"
+        },
+        "xFalhaLeitura": {
+          "$ref": "tchmi:general#/definitions/BOOL"
+        },
+        "xFalhaRede": {
+          "$ref": "tchmi:general#/definitions/BOOL"
+        },
+        "xLeitorEmFalha": {
+          "$ref": "tchmi:general#/definitions/BOOL"
+        },
+        "xLeitorPronto": {
+          "$ref": "tchmi:general#/definitions/BOOL"
+        },
+        "xNovoResultado": {
+          "$ref": "tchmi:general#/definitions/BOOL"
+        },
+        "xNovosDados": {
+          "$ref": "tchmi:general#/definitions/BOOL"
+        },
+        "xSinalDeLiga": {
+          "$ref": "tchmi:general#/definitions/BOOL"
+        }
+      },
+      "type": "object"
+    },
+    "PLC1.Teknike_Sensores.ST_SR2000_Saidas_Dispositivo": {
+      "properties": {
+        "BankNumber": {
+          "$ref": "tchmi:general#/definitions/UINT"
+        },
+        "BloadCompleteClear": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "BloadRequest": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "EXTRequestCompleteClear": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "ErrorClear": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "PresetCompleteClear": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "PresetRequest": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "ReadCompleteClear": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "ReadRequest": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "RegisterPresetDataCompleteClear": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "RegisterPresetDataRequest": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "ResultDataLatch": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "TuneCompleteClear": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "TuneRequest": {
+          "$ref": "tchmi:general#/definitions/BIT"
+        },
+        "UserData": {
+          "$ref": "tchmi:project#/definitions/PLC1.ARRAY_0..63_OF-BYTE"
+        },
+        "UserDataSize": {
+          "$ref": "tchmi:general#/definitions/UINT"
+        },
+        "ctrl": {
+          "$ref": "tchmi:general#/definitions/UINT"
+        }
+      },
+      "type": "object"
+    },
+    "ucPopUpSR2000": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Popup\\ucPopUpSR2000.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/ucPopUpSR2000"
+    },
+    "UserControl2": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "Pages\\Layout\\UserControl2.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/UserControl2"
+    },
+    "ucEmergenciaTela": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Geral\\ucEmergenciaTela.usercontrol.json",
+      "id": "tchmi:project#/definitions/ucEmergenciaTela",
+      "type": "object"
+    },
+    "ucEvaporadores": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Geral\\ucEvaporadores.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/ucEvaporadores"
+    },
+    "ucEvaporadoresSalaCortes": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Geral\\ucEvaporadoresSalaCortes.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/ucEvaporadoresSalaCortes"
+    },
+    "ucEvaporadoresSassami": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Geral\\ucEvaporadoresSassami.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/ucEvaporadoresSassami"
+    },
+    "ucVelocidade": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Comissionamento\\ucVelocidade.usercontrol.json",
+      "id": "tchmi:project#/definitions/ucVelocidade",
+      "type": "object"
+    },
+    "ucSentidoDeGiro": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Comissionamento\\ucSentidoDeGiro.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/ucSentidoDeGiro"
+    },
+    "ucCorrente": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Comissionamento\\ucCorrente.usercontrol.json",
+      "id": "tchmi:project#/definitions/ucCorrente",
+      "type": "object"
+    },
+    "ucConfirmaRecomicionamento": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Comissionamento\\ucConfirmaRecomicionamento.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/ucConfirmaRecomicionamento"
+    },
+    "ucComissionado": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Comissionamento\\ucComissionado.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/ucComissionado"
+    },
+    "ucCheckin": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Comissionamento\\ucCheckin.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/ucCheckin"
+    },
+    "ucCamera": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Comissionamento\\ucCamera.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/ucCamera"
+    },
+    "ucCaixaDeConfirmacao": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Comissionamento\\ucCaixaDeConfirmacao.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/ucCaixaDeConfirmacao"
+    },
+    "UserControl2_0": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Popup\\UserControl2.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/UserControl2_0"
+    },
+    "UserControl2_1": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Popup\\UserControl2.usercontrol.json",
+      "id": "tchmi:project#/definitions/UserControl2_1",
+      "type": "object"
+    },
+    "UserControl2_2": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Popup\\UserControl2.usercontrol.json",
+      "id": "tchmi:project#/definitions/UserControl2_2",
+      "type": "object"
+    },
+    "ucPopUpMotores_0": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Popup\\Motor\\ucPopUpMotores.usercontrol.json",
+      "id": "tchmi:project#/definitions/ucPopUpMotores_0",
+      "type": "object"
+    },
+    "ucPopUpMotores_1": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Popup\\Motor\\ucPopUpMotores.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/ucPopUpMotores_1"
+    },
+    "ucPopUpMotores_2": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Popup\\Motor\\ucPopUpMotores.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/ucPopUpMotores_2"
+    },
+    "ucPopUpMotoresKPI": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Popup\\Motor\\ucPopUpMotoresKPI.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/ucPopUpMotoresKPI"
+    },
+    "ucPopUpMotoresInterlock": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Popup\\Motor\\ucPopUpMotoresInterlock.usercontrol.json",
+      "id": "tchmi:project#/definitions/ucPopUpMotoresInterlock",
+      "type": "object"
+    },
+    "ucPopupMotoresEmergencias": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Popup\\Motor\\ucPopupMotoresEmergencias.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/ucPopupMotoresEmergencias"
+    },
+    "ucPopupMotoresConfig": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Popup\\Motor\\ucPopupMotoresConfig.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/ucPopupMotoresConfig"
+    },
+    "ucPopUpMotores_3": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Popup\\Motor\\ucPopUpMotores.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/ucPopUpMotores_3"
+    },
+    "ucPopUpMotores_4": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Popup\\Motor\\ucPopUpMotores.usercontrol.json",
+      "id": "tchmi:project#/definitions/ucPopUpMotores_4",
+      "type": "object"
+    },
+    "ucPopUpMotores_5": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Popup\\Motor\\ucPopUpMotores.usercontrol.json",
+      "id": "tchmi:project#/definitions/ucPopUpMotores_5",
+      "type": "object"
+    },
+    "ucPopUpMotores_6": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Popup\\Motor\\ucPopUpMotores.usercontrol.json",
+      "id": "tchmi:project#/definitions/ucPopUpMotores_6",
+      "type": "object"
+    },
+    "ucEvaporadoresPLT": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Geral\\ucEvaporadoresPLT.usercontrol.json",
+      "id": "tchmi:project#/definitions/ucEvaporadoresPLT",
+      "type": "object"
+    },
+    "ucControleEvaporadores": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Geral\\ucControleEvaporadores.usercontrol.json",
+      "id": "tchmi:project#/definitions/ucControleEvaporadores",
+      "type": "object"
+    },
+    "ucPopUpMotores_7": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Popup\\Motor\\ucPopUpMotores.usercontrol.json",
+      "id": "tchmi:project#/definitions/ucPopUpMotores_7",
+      "type": "object"
+    },
+    "ucPopUpMotores_8": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Popup\\Motor\\ucPopUpMotores.usercontrol.json",
+      "id": "tchmi:project#/definitions/ucPopUpMotores_8",
+      "type": "object"
+    },
+    "ucPopUpMotores_9": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Popup\\Motor\\ucPopUpMotores.usercontrol.json",
+      "id": "tchmi:project#/definitions/ucPopUpMotores_9",
+      "type": "object"
+    },
+    "ucPopUpMotores_10": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Popup\\Motor\\ucPopUpMotores.usercontrol.json",
+      "id": "tchmi:project#/definitions/ucPopUpMotores_10",
+      "type": "object"
+    },
+    "ucPopUpMotores_11": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Popup\\Motor\\ucPopUpMotores.usercontrol.json",
+      "id": "tchmi:project#/definitions/ucPopUpMotores_11",
+      "type": "object"
+    },
+    "ucPopUpSensorDigital": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Popup\\ucPopUpSensorDigital.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/ucPopUpSensorDigital"
+    },
+    "KPICaixaTrancada": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Popup\\KPI\\KPICaixaTrancada.usercontrol.json",
+      "id": "tchmi:project#/definitions/KPICaixaTrancada",
+      "type": "object"
+    },
+    "ucAlarmeSensorValoresFora": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Alarmes\\ucAlarmeSensorValoresFora.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/ucAlarmeSensorValoresFora"
+    },
+    "ucAlarmeSensor": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Alarmes\\ucAlarmeSensor.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/ucAlarmeSensor"
+    },
+    "ConfigEtapaProtocolo": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Protocolos\\ConfigEtapaProtocolo.usercontrol.json",
+      "id": "tchmi:project#/definitions/ConfigEtapaProtocolo",
+      "type": "object"
+    },
+    "UserControl1_1": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "Pages\\Layout\\UserControl1.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/UserControl1_1"
+    },
+    "UserControl1_2": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "Pages\\Layout\\UserControl1.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/UserControl1_2"
+    },
+    "ConfigPID": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Config\\ConfigPID.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/ConfigPID"
+    },
+    "ConfigMaxMinSet": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Config\\ConfigMaxMinSet.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/ConfigMaxMinSet"
+    },
+    "ucCamara": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Geral\\ucCamara.usercontrol.json",
+      "id": "tchmi:project#/definitions/ucCamara",
+      "type": "object"
+    },
+    "UserControl1_3": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Geral\\ucLegendas.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/UserControl1_3"
+    },
+    "UserControl1_4": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Geral\\ucStatusAneis.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/UserControl1_4"
+    },
+    "ucStatusAneis": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Geral\\ucStatusAneis.usercontrol.json",
+      "id": "tchmi:project#/definitions/ucStatusAneis",
+      "type": "object"
+    },
+    "ucPopUpValvulas": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Popup\\ucPopUpValvulas.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/ucPopUpValvulas"
+    },
+    "ucValvulaProporcional": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Valvulas\\ucValvulaProporcional.usercontrol.json",
+      "id": "tchmi:project#/definitions/ucValvulaProporcional",
+      "type": "object"
+    },
+    "ucPopUpControleValvula": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Geral\\ucPopUpControleValvula.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/ucPopUpControleValvula"
+    },
+    "ucValvulas": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Geral\\ucValvulas.usercontrol.json",
+      "id": "tchmi:project#/definitions/ucValvulas",
+      "type": "object"
+    },
+    "ucPopUpControleValvula_0": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Popup\\ucPopUpControleValvula.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/ucPopUpControleValvula_0"
+    },
+    "ucSTCamara": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Geral\\ucSTCamara.usercontrol.json",
+      "id": "tchmi:project#/definitions/ucSTCamara",
+      "type": "object"
+    },
+    "ucPopUpControleValvula_1": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Popup\\ucPopUpControleValvula.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/ucPopUpControleValvula_1"
+    },
+    "ucPopUpControleValvula_2": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Popup\\ucPopUpControleValvula.usercontrol.json",
+      "id": "tchmi:project#/definitions/ucPopUpControleValvula_2",
+      "type": "object"
+    },
+    "ucStatusSensor": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Geral\\ucStatusSensor.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/ucStatusSensor"
+    },
+    "ucSTCamara_-_Copy": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Geral\\ucCamaraIHM.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/ucSTCamara_-_Copy"
+    },
+    "ucvalvulapropor": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Geral\\ucvalvulapropor.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/ucvalvulapropor"
+    },
+    "ucPopUpValvulaProporcional": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Popup\\ucPopUpValvulaProporcional.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/ucPopUpValvulaProporcional"
+    },
+    "ucStatusSensorSemTexto": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Geral\\ucStatusSensorSemTexto.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/ucStatusSensorSemTexto"
+    },
+    "UcStatusMotor_Corrente": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Popup\\Motor\\UcStatusMotor_Corrente.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/UcStatusMotor_Corrente"
+    },
+    "UcStatusMotor_Corrente_0": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Geral\\UcStatusMotor_Corrente.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/UcStatusMotor_Corrente_0"
+    },
+    "ucToggleBotão": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Popup\\Motor\\ucToggleBotão.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/ucToggleBotão"
+    },
+    "ucStatusPID": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Config\\ucStatusPID.usercontrol.json",
+      "id": "tchmi:project#/definitions/ucStatusPID",
+      "type": "object"
+    },
+    "udadosbomba": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Geral\\udadosbomba.usercontrol.json",
+      "id": "tchmi:project#/definitions/udadosbomba",
+      "type": "object"
+    },
+    "ucNIveltamqueBoia": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Geral\\ucNIveltamqueBoia.usercontrol.json",
+      "id": "tchmi:project#/definitions/ucNIveltamqueBoia",
+      "type": "object"
+    },
+    "ucAvisofecha_com_condição": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Geral\\ucAvisofecha_com_condição.usercontrol.json",
+      "id": "tchmi:project#/definitions/ucAvisofecha_com_condição",
+      "type": "object"
+    },
+    "ucAvisofecha_com_condição_-_Copy": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Geral\\ucAvisofecha_com_condição - Copy.usercontrol.json",
+      "id": "tchmi:project#/definitions/ucAvisofecha_com_condição_-_Copy",
+      "type": "object"
+    },
+    "ucCabecalhoCamara": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\IHM_Operacao\\ucCabecalhoCamara.usercontrol.json",
+      "id": "tchmi:project#/definitions/ucCabecalhoCamara",
+      "type": "object"
+    }
+  }
+}

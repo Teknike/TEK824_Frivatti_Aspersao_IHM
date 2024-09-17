@@ -1,0 +1,71 @@
+{
+  "parameters": [
+    {
+      "name": "data-tchmi-fonte",
+      "displayName": "Fonte",
+      "visible": true,
+      "type": "tchmi:general#/definitions/INT",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "Fonte",
+      "propertySetterName": "setFonte",
+      "propertyGetterName": "getFonte",
+      "refTo": ""
+    },
+    {
+      "name": "data-tchmi-sttelerruptor",
+      "displayName": "stTelerruptor",
+      "visible": true,
+      "type": "tchmi:server#/definitions/PLC1.Teknike_Geral.stTelerruptor",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "stTelerruptor",
+      "propertySetterName": "setStTelerruptor",
+      "propertyGetterName": "getStTelerruptor",
+      "refTo": ""
+    },
+    {
+      "name": "data-tchmi-index",
+      "displayName": "Index",
+      "visible": true,
+      "type": "tchmi:general#/definitions/INT",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "Index",
+      "propertySetterName": "setIndex",
+      "propertyGetterName": "getIndex",
+      "refTo": ""
+    },
+    {
+      "name": "data-tchmi-nomeuc",
+      "displayName": "NomeUC",
+      "visible": true,
+      "type": "tchmi:general#/definitions/String",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "NomeUC",
+      "propertySetterName": "setNomeUC",
+      "propertyGetterName": "getNomeUC",
+      "refTo": ""
+    }
+  ],
+  "virtualRights": [],
+  "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.754.4/runtimes/native1.12-tchmi/Schema/UserControlConfig.Schema.json",
+  "description": ""
+}

@@ -1,0 +1,2313 @@
+<div id="ucCheckin_3" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControl" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="1130" data-tchmi-height="993" data-tchmi-width-unit="px" data-tchmi-height-unit="px" data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-zindex="2" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px">
+
+
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 0,
+  "right": 0,
+  "top": 0,
+  "bottom": 0,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 0.0,
+  "topRight": 0.0,
+  "bottomLeft": 0.0,
+  "bottomRight": 0.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "ucCheckin_3.onAttached",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "// lê o nome do Motor",
+          "var GVL =  TcHmi.Symbol.readEx('%pp%GVL%/pp%');",
+          "var vetor = TcHmi.Symbol.readEx('%pp%Vetor%/pp%');",
+          "var index = TcHmi.Symbol.readEx('%pp%Index%/pp%');",
+          "",
+          "",
+          "// faz o binding com a struct do motor\t",
+          "var ItemProperty = \"stCheckin\";",
+          "var UserControl = TcHmi.Controls.get(\"UcCheckin\");",
+          "var Variavel = \"%s%PLC1.\" + GVL + \".\" + vetor +\"[\" + index + \"]\" + \"|BindingMode=TwoWay%/s%\";",
+          "",
+          "try{",
+          "\tTcHmi.Binding.createEx2(Variavel, ItemProperty, UserControl);",
+          "}",
+          "catch{",
+          "\tconsole.log(\"Erro no binding\");",
+          "}"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  },
+  {
+    "event": "%i%xIndex%/i%",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "// lê o nome do Motor",
+          "var GVL =  TcHmi.Symbol.readEx('%pp%GVL%/pp%');",
+          "var vetor = TcHmi.Symbol.readEx('%pp%Vetor%/pp%');",
+          "var index = TcHmi.Symbol.readEx('%pp%Index%/pp%');",
+          "",
+          "",
+          "// faz o binding com a struct do motor\t",
+          "var ItemProperty = \"stCheckin\";",
+          "var UserControl = TcHmi.Controls.get(\"UcCheckin\");",
+          "var Variavel = \"%s%PLC1.\" + GVL + \".\" + vetor +\"[\" + index + \"]\" + \"|BindingMode=TwoWay%/s%\";",
+          "",
+          "try{",
+          "\tTcHmi.Binding.createEx2(Variavel, ItemProperty, UserControl);",
+          "}",
+          "catch{",
+          "\tconsole.log(\"Erro no binding\");",
+          "}"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiTextblock_26" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="60" data-tchmi-height-unit="px" data-tchmi-left="1" data-tchmi-left-unit="px" data-tchmi-text="CheckIn para Comissionamento" data-tchmi-top="-79" data-tchmi-top-unit="px" data-tchmi-width="700" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-opacity="1" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-text-font-size-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="45" data-tchmi-zindex="1">
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiContainer_7" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="926" data-tchmi-height-unit="px" data-tchmi-left="14" data-tchmi-left-unit="px" data-tchmi-top="25" data-tchmi-top-unit="px" data-tchmi-width="1116" data-tchmi-width-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-is-enabled="true" data-tchmi-zindex="1">
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 3,
+  "right": 3,
+  "top": 3,
+  "bottom": 3,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+{
+  "left": "Solid",
+  "right": "Solid",
+  "top": "Solid",
+  "bottom": "Solid"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 15.0,
+  "topRight": 15.0,
+  "bottomLeft": 15.0,
+  "bottomRight": 15.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiEllipse_12" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="80" data-tchmi-height-unit="px" data-tchmi-left="61" data-tchmi-left-unit="px" data-tchmi-top="165" data-tchmi-top-unit="px" data-tchmi-width="80" data-tchmi-width-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-stroke-thickness-unit="px" data-tchmi-zindex="13" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px">
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%i%xHeartBeat%/i%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "symbolExpression": "%pp%stCheckin::Config::xTemDisjuntor%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "Condition",
+                "active": true,
+                "parts": [
+                  {
+                    "if": [
+                      {
+                        "compare1": {
+                          "objectType": "Symbol",
+                          "valueType": "tchmi:general#/definitions/BOOL",
+                          "symbolExpression": "%pp%stCheckin::En::xDisjuntorOK%/pp%"
+                        },
+                        "compare2": {
+                          "objectType": "StaticValue",
+                          "valueType": "tchmi:general#/definitions/BOOL",
+                          "value": true
+                        },
+                        "compareOperator": "==",
+                        "logic": null
+                      },
+                      {
+                        "compare1": {
+                          "objectType": "Symbol",
+                          "valueType": "tchmi:general#/definitions/BOOL",
+                          "symbolExpression": "%pp%stCheckin::Config::xByPassDisjuntor%/pp%"
+                        },
+                        "compare2": {
+                          "objectType": "StaticValue",
+                          "valueType": "tchmi:general#/definitions/BOOL",
+                          "value": true
+                        },
+                        "compareOperator": "==",
+                        "logic": "OR"
+                      }
+                    ],
+                    "then": [
+                      {
+                        "objectType": "WriteToSymbol",
+                        "active": true,
+                        "symbolExpression": "%ctrl%TcHmiEllipse_12::FillColor%/ctrl%",
+                        "value": {
+                          "objectType": "StaticValue",
+                          "valueType": "tchmi:framework#/definitions/Color",
+                          "value": {
+                            "color": "rgba(0, 255, 0, 1)"
+                          }
+                        },
+                        "asyncWait": true
+                      }
+                    ]
+                  },
+                  {
+                    "else": [
+                      {
+                        "objectType": "WriteToSymbol",
+                        "active": true,
+                        "symbolExpression": "%ctrl%TcHmiEllipse_12::FillColor%/ctrl%",
+                        "value": {
+                          "objectType": "StaticValue",
+                          "valueType": "tchmi:framework#/definitions/Color",
+                          "value": {
+                            "color": "rgba(255, 0, 0, 1)"
+                          }
+                        },
+                        "asyncWait": true
+                      }
+                    ]
+                  }
+                ],
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiEllipse_12::FillColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": {
+                    "color": "rgba(0, 255, 0, 1)"
+                  }
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiTextblock_20" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="151" data-tchmi-left-unit="px" data-tchmi-text="Disjuntor armado" data-tchmi-top="165" data-tchmi-top-unit="px" data-tchmi-width="350" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-text-font-size-unit="px" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="35" data-tchmi-zindex="4" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-is-enabled="true">
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiEllipse_13" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="80" data-tchmi-height-unit="px" data-tchmi-left="61" data-tchmi-left-unit="px" data-tchmi-top="325" data-tchmi-top-unit="px" data-tchmi-width="80" data-tchmi-width-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-stroke-thickness-unit="px" data-tchmi-zindex="11" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px">
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%i%xHeartBeat%/i%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "symbolExpression": "%pp%stCheckin::Config::xTemContatora%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "Condition",
+                "active": true,
+                "parts": [
+                  {
+                    "if": [
+                      {
+                        "compare1": {
+                          "objectType": "Symbol",
+                          "valueType": "tchmi:general#/definitions/BOOL",
+                          "symbolExpression": "%pp%stCheckin::En::xContatorLigado%/pp%"
+                        },
+                        "compare2": {
+                          "objectType": "StaticValue",
+                          "valueType": "tchmi:general#/definitions/BOOL",
+                          "value": true
+                        },
+                        "compareOperator": "==",
+                        "logic": null
+                      },
+                      {
+                        "compare1": {
+                          "objectType": "Symbol",
+                          "valueType": "tchmi:general#/definitions/BOOL",
+                          "symbolExpression": "%pp%stCheckin::Config::xByPassContator%/pp%"
+                        },
+                        "compare2": {
+                          "objectType": "StaticValue",
+                          "valueType": "tchmi:general#/definitions/BOOL",
+                          "value": true
+                        },
+                        "compareOperator": "==",
+                        "logic": "OR"
+                      }
+                    ],
+                    "then": [
+                      {
+                        "objectType": "WriteToSymbol",
+                        "active": true,
+                        "symbolExpression": "%ctrl%TcHmiEllipse_13::FillColor%/ctrl%",
+                        "value": {
+                          "objectType": "StaticValue",
+                          "valueType": "tchmi:framework#/definitions/Color",
+                          "value": {
+                            "color": "rgba(0, 255, 0, 1)"
+                          }
+                        },
+                        "asyncWait": true
+                      }
+                    ]
+                  },
+                  {
+                    "else": [
+                      {
+                        "objectType": "WriteToSymbol",
+                        "active": true,
+                        "symbolExpression": "%ctrl%TcHmiEllipse_13::FillColor%/ctrl%",
+                        "value": {
+                          "objectType": "StaticValue",
+                          "valueType": "tchmi:framework#/definitions/Color",
+                          "value": {
+                            "color": "rgba(255, 0, 0, 1)"
+                          }
+                        },
+                        "asyncWait": true
+                      }
+                    ]
+                  }
+                ],
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiEllipse_13::FillColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": {
+                    "color": "rgba(0, 255, 0, 1)"
+                  }
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiTextblock_21" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="151" data-tchmi-left-unit="px" data-tchmi-text="Contatora acionada" data-tchmi-top="325" data-tchmi-top-unit="px" data-tchmi-width="350" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-text-font-size-unit="px" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="35" data-tchmi-zindex="4" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px">
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiEllipse_14" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="80" data-tchmi-height-unit="px" data-tchmi-left="597" data-tchmi-left-unit="px" data-tchmi-top="7" data-tchmi-top-unit="px" data-tchmi-width="80" data-tchmi-width-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-zindex="11" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px">
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%pp%stCheckin::En::xEmergenciaOK%/pp%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "symbolExpression": "%pp%stCheckin::En::xEmergenciaOK%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": false
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiEllipse_14::FillColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": {
+                    "color": "rgba(255, 0, 0, 1)"
+                  }
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiEllipse_14::FillColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": {
+                    "color": "rgba(0, 255, 0, 1)"
+                  }
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiTextblock_22" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="687" data-tchmi-left-unit="px" data-tchmi-text="Emergência Ok" data-tchmi-top="25" data-tchmi-top-unit="px" data-tchmi-width="350" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-text-font-size-unit="px" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="35" data-tchmi-zindex="4" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px">
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiEllipse_15" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="80" data-tchmi-height-unit="px" data-tchmi-left="61" data-tchmi-left-unit="px" data-tchmi-top="485" data-tchmi-top-unit="px" data-tchmi-width="80" data-tchmi-width-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-zindex="11" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px">
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%i%xHeartBeat%/i%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "symbolExpression": "%pp%stCheckin::En::xTemInversor%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "Condition",
+                "active": true,
+                "parts": [
+                  {
+                    "if": [
+                      {
+                        "compare1": {
+                          "objectType": "FunctionExpression",
+                          "functionExpression": "%pp%stCheckin::Config::xBypassRede%/pp%"
+                        },
+                        "compare2": {
+                          "objectType": "StaticValue",
+                          "valueType": "tchmi:general#/definitions/BOOL",
+                          "value": true
+                        },
+                        "compareOperator": "==",
+                        "logic": null
+                      },
+                      {
+                        "compare1": {
+                          "objectType": "Symbol",
+                          "valueType": "tchmi:general#/definitions/BOOL",
+                          "symbolExpression": "%pp%stCheckin::En::xFalhaInversor%/pp%"
+                        },
+                        "compare2": {
+                          "objectType": "StaticValue",
+                          "valueType": "tchmi:general#/definitions/BOOL",
+                          "value": false
+                        },
+                        "compareOperator": "==",
+                        "logic": "OR"
+                      }
+                    ],
+                    "then": [
+                      {
+                        "objectType": "WriteToSymbol",
+                        "active": true,
+                        "symbolExpression": "%ctrl%TcHmiEllipse_15::FillColor%/ctrl%",
+                        "value": {
+                          "objectType": "StaticValue",
+                          "valueType": "tchmi:framework#/definitions/Color",
+                          "value": {
+                            "color": "rgba(0, 255, 0, 1)"
+                          }
+                        },
+                        "asyncWait": true
+                      }
+                    ]
+                  },
+                  {
+                    "else": [
+                      {
+                        "objectType": "WriteToSymbol",
+                        "active": true,
+                        "symbolExpression": "%ctrl%TcHmiEllipse_15::FillColor%/ctrl%",
+                        "value": {
+                          "objectType": "StaticValue",
+                          "valueType": "tchmi:framework#/definitions/Color",
+                          "value": {
+                            "color": "rgba(255, 0, 0, 1)"
+                          }
+                        },
+                        "asyncWait": true
+                      }
+                    ]
+                  }
+                ],
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiEllipse_15::FillColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": {
+                    "color": "rgba(0, 255, 0, 1)"
+                  }
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiEllipse_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="80" data-tchmi-height-unit="px" data-tchmi-left="61" data-tchmi-left-unit="px" data-tchmi-top="639" data-tchmi-top-unit="px" data-tchmi-width="80" data-tchmi-width-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-zindex="11" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px">
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%i%xHeartBeat%/i%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "symbolExpression": "%pp%stCheckin::En::xTemInversor%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "Condition",
+                "active": true,
+                "parts": [
+                  {
+                    "if": [
+                      {
+                        "compare1": {
+                          "objectType": "Symbol",
+                          "valueType": "tchmi:general#/definitions/BOOL",
+                          "symbolExpression": "%pp%stCheckin::En::xInversorOnline%/pp%"
+                        },
+                        "compare2": {
+                          "objectType": "StaticValue",
+                          "valueType": "tchmi:general#/definitions/BOOL",
+                          "value": true
+                        },
+                        "compareOperator": "==",
+                        "logic": null
+                      },
+                      {
+                        "compare1": {
+                          "objectType": "Symbol",
+                          "valueType": "tchmi:general#/definitions/BOOL",
+                          "symbolExpression": "%pp%stCheckin::Config::xBypassRede%/pp%"
+                        },
+                        "compare2": {
+                          "objectType": "StaticValue",
+                          "valueType": "tchmi:general#/definitions/BOOL",
+                          "value": true
+                        },
+                        "compareOperator": "==",
+                        "logic": "OR"
+                      }
+                    ],
+                    "then": [
+                      {
+                        "objectType": "WriteToSymbol",
+                        "active": true,
+                        "symbolExpression": "%ctrl%TcHmiEllipse_16::FillColor%/ctrl%",
+                        "value": {
+                          "objectType": "StaticValue",
+                          "valueType": "tchmi:framework#/definitions/Color",
+                          "value": {
+                            "color": "rgba(0, 255, 0, 1)"
+                          }
+                        },
+                        "asyncWait": true
+                      }
+                    ]
+                  },
+                  {
+                    "else": [
+                      {
+                        "objectType": "WriteToSymbol",
+                        "active": true,
+                        "symbolExpression": "%ctrl%TcHmiEllipse_16::FillColor%/ctrl%",
+                        "value": {
+                          "objectType": "StaticValue",
+                          "valueType": "tchmi:framework#/definitions/Color",
+                          "value": {
+                            "color": "rgba(255, 0, 0, 1)"
+                          }
+                        },
+                        "asyncWait": true
+                      }
+                    ]
+                  }
+                ],
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiEllipse_16::FillColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": {
+                    "color": "rgba(0, 255, 0, 1)"
+                  }
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiTextblock_23" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="151" data-tchmi-left-unit="px" data-tchmi-text="Falha no Inversor" data-tchmi-top="485" data-tchmi-top-unit="px" data-tchmi-width="350" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-text-font-size-unit="px" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="35" data-tchmi-zindex="4" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px">
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiTextblock_311" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="151" data-tchmi-left-unit="px" data-tchmi-text="Inversor Online" data-tchmi-top="663" data-tchmi-top-unit="px" data-tchmi-width="350" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-text-font-size-unit="px" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="35" data-tchmi-zindex="4" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px">
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiEllipse_17" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="320" data-tchmi-left-unit="px" data-tchmi-top="789" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-zindex="11" data-tchmi-stroke-thickness-unit="px" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px">
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%i%xHeartBeat%/i%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "symbolExpression": "%pp%stCheckin::Sa::xFalha%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": false
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "Condition",
+                "active": true,
+                "parts": [
+                  {
+                    "if": [
+                      {
+                        "compare1": {
+                          "objectType": "Symbol",
+                          "valueType": "tchmi:general#/definitions/BOOL",
+                          "symbolExpression": "%pp%stCheckin::En::xEmergenciaOK%/pp%"
+                        },
+                        "compare2": {
+                          "objectType": "StaticValue",
+                          "valueType": "tchmi:general#/definitions/BOOL",
+                          "value": true
+                        },
+                        "compareOperator": "==",
+                        "logic": null
+                      }
+                    ],
+                    "then": [
+                      {
+                        "objectType": "Condition",
+                        "active": true,
+                        "parts": [
+                          {
+                            "if": [
+                              {
+                                "compare1": {
+                                  "objectType": "Symbol",
+                                  "valueType": "tchmi:general#/definitions/BOOL",
+                                  "symbolExpression": "%pp%stCheckin::En::xDisjuntorOK%/pp%"
+                                },
+                                "compare2": {
+                                  "objectType": "StaticValue",
+                                  "valueType": "tchmi:general#/definitions/BOOL",
+                                  "value": true
+                                },
+                                "compareOperator": "==",
+                                "logic": null
+                              },
+                              {
+                                "compare1": {
+                                  "objectType": "Symbol",
+                                  "valueType": "tchmi:general#/definitions/BOOL",
+                                  "symbolExpression": "%pp%stCheckin::Config::xByPassDisjuntor%/pp%"
+                                },
+                                "compare2": {
+                                  "objectType": "StaticValue",
+                                  "valueType": "tchmi:general#/definitions/BOOL",
+                                  "value": true
+                                },
+                                "compareOperator": "==",
+                                "logic": "OR"
+                              },
+                              {
+                                "compare1": {
+                                  "objectType": "Symbol",
+                                  "valueType": "tchmi:general#/definitions/BOOL",
+                                  "symbolExpression": "%pp%stCheckin::Config::xTemDisjuntor%/pp%"
+                                },
+                                "compare2": {
+                                  "objectType": "StaticValue",
+                                  "valueType": "tchmi:general#/definitions/BOOL",
+                                  "value": false
+                                },
+                                "compareOperator": "==",
+                                "logic": "OR"
+                              }
+                            ],
+                            "then": [
+                              {
+                                "objectType": "Condition",
+                                "active": true,
+                                "parts": [
+                                  {
+                                    "if": [
+                                      {
+                                        "compare1": {
+                                          "objectType": "Symbol",
+                                          "valueType": "tchmi:general#/definitions/BOOL",
+                                          "symbolExpression": "%pp%stCheckin::En::xContatorLigado%/pp%"
+                                        },
+                                        "compare2": {
+                                          "objectType": "StaticValue",
+                                          "valueType": "tchmi:general#/definitions/BOOL",
+                                          "value": true
+                                        },
+                                        "compareOperator": "==",
+                                        "logic": null
+                                      },
+                                      {
+                                        "compare1": {
+                                          "objectType": "Symbol",
+                                          "valueType": "tchmi:general#/definitions/BOOL",
+                                          "symbolExpression": "%pp%stCheckin::Config::xByPassContator%/pp%"
+                                        },
+                                        "compare2": {
+                                          "objectType": "StaticValue",
+                                          "valueType": "tchmi:general#/definitions/BOOL",
+                                          "value": true
+                                        },
+                                        "compareOperator": "==",
+                                        "logic": "OR"
+                                      },
+                                      {
+                                        "compare1": {
+                                          "objectType": "Symbol",
+                                          "valueType": "tchmi:general#/definitions/BOOL",
+                                          "symbolExpression": "%pp%stCheckin::Config::xTemContatora%/pp%"
+                                        },
+                                        "compare2": {
+                                          "objectType": "StaticValue",
+                                          "valueType": "tchmi:general#/definitions/BOOL",
+                                          "value": false
+                                        },
+                                        "compareOperator": "==",
+                                        "logic": "OR"
+                                      }
+                                    ],
+                                    "then": [
+                                      {
+                                        "objectType": "Condition",
+                                        "active": true,
+                                        "parts": [
+                                          {
+                                            "if": [
+                                              {
+                                                "compare1": {
+                                                  "objectType": "Symbol",
+                                                  "valueType": "tchmi:general#/definitions/BOOL",
+                                                  "symbolExpression": "%pp%stCheckin::Config::xTemFreio%/pp%"
+                                                },
+                                                "compare2": {
+                                                  "objectType": "StaticValue",
+                                                  "valueType": "tchmi:general#/definitions/BOOL",
+                                                  "value": false
+                                                },
+                                                "compareOperator": "==",
+                                                "logic": null
+                                              },
+                                              {
+                                                "compare1": {
+                                                  "objectType": "Symbol",
+                                                  "valueType": "tchmi:general#/definitions/BOOL",
+                                                  "symbolExpression": "%pp%stCheckin::En::xFreioOK%/pp%"
+                                                },
+                                                "compare2": {
+                                                  "objectType": "StaticValue",
+                                                  "valueType": "tchmi:general#/definitions/BOOL",
+                                                  "value": true
+                                                },
+                                                "compareOperator": "==",
+                                                "logic": "OR"
+                                              },
+                                              {
+                                                "compare1": {
+                                                  "objectType": "Symbol",
+                                                  "valueType": "tchmi:general#/definitions/BOOL",
+                                                  "symbolExpression": "%pp%stCheckin::Config::xBypassFreio%/pp%"
+                                                },
+                                                "compare2": {
+                                                  "objectType": "StaticValue",
+                                                  "valueType": "tchmi:general#/definitions/BOOL",
+                                                  "value": true
+                                                },
+                                                "compareOperator": "==",
+                                                "logic": "OR"
+                                              }
+                                            ],
+                                            "then": [
+                                              {
+                                                "objectType": "Condition",
+                                                "active": true,
+                                                "parts": [
+                                                  {
+                                                    "if": [
+                                                      {
+                                                        "compare1": {
+                                                          "objectType": "Symbol",
+                                                          "valueType": "tchmi:general#/definitions/BOOL",
+                                                          "symbolExpression": "%pp%stCheckin::Config::xTemSoft%/pp%"
+                                                        },
+                                                        "compare2": {
+                                                          "objectType": "StaticValue",
+                                                          "valueType": "tchmi:general#/definitions/BOOL",
+                                                          "value": false
+                                                        },
+                                                        "compareOperator": "==",
+                                                        "logic": null
+                                                      },
+                                                      {
+                                                        "compare1": {
+                                                          "objectType": "Symbol",
+                                                          "valueType": "tchmi:general#/definitions/BOOL",
+                                                          "symbolExpression": "%pp%stCheckin::En::xSoftOnline%/pp%"
+                                                        },
+                                                        "compare2": {
+                                                          "objectType": "StaticValue",
+                                                          "valueType": "tchmi:general#/definitions/BOOL",
+                                                          "value": true
+                                                        },
+                                                        "compareOperator": "==",
+                                                        "logic": "OR"
+                                                      },
+                                                      {
+                                                        "compare1": {
+                                                          "objectType": "Symbol",
+                                                          "valueType": "tchmi:general#/definitions/BOOL",
+                                                          "symbolExpression": "%pp%stCheckin::Config::xBypassContatoSoft%/pp%"
+                                                        },
+                                                        "compare2": {
+                                                          "objectType": "StaticValue",
+                                                          "valueType": "tchmi:general#/definitions/BOOL",
+                                                          "value": true
+                                                        },
+                                                        "compareOperator": "==",
+                                                        "logic": "OR"
+                                                      }
+                                                    ],
+                                                    "then": [
+                                                      {
+                                                        "objectType": "Condition",
+                                                        "active": true,
+                                                        "parts": [
+                                                          {
+                                                            "if": [
+                                                              {
+                                                                "compare1": {
+                                                                  "objectType": "Symbol",
+                                                                  "valueType": "tchmi:general#/definitions/BOOL",
+                                                                  "symbolExpression": "%pp%stCheckin::En::xTemInversor%/pp%"
+                                                                },
+                                                                "compare2": {
+                                                                  "objectType": "StaticValue",
+                                                                  "valueType": "tchmi:general#/definitions/BOOL",
+                                                                  "value": false
+                                                                },
+                                                                "compareOperator": "==",
+                                                                "logic": null
+                                                              },
+                                                              {
+                                                                "compare1": {
+                                                                  "objectType": "Symbol",
+                                                                  "valueType": "tchmi:general#/definitions/BOOL",
+                                                                  "symbolExpression": "%pp%stCheckin::En::xInversorOnline%/pp%"
+                                                                },
+                                                                "compare2": {
+                                                                  "objectType": "StaticValue",
+                                                                  "valueType": "tchmi:general#/definitions/BOOL",
+                                                                  "value": true
+                                                                },
+                                                                "compareOperator": "==",
+                                                                "logic": "OR"
+                                                              },
+                                                              {
+                                                                "compare1": {
+                                                                  "objectType": "Symbol",
+                                                                  "valueType": "tchmi:general#/definitions/BOOL",
+                                                                  "symbolExpression": "%pp%stCheckin::Config::xBypassRede%/pp%"
+                                                                },
+                                                                "compare2": {
+                                                                  "objectType": "StaticValue",
+                                                                  "valueType": "tchmi:general#/definitions/BOOL",
+                                                                  "value": true
+                                                                },
+                                                                "compareOperator": "==",
+                                                                "logic": "OR"
+                                                              }
+                                                            ],
+                                                            "then": [
+                                                              {
+                                                                "objectType": "Condition",
+                                                                "active": true,
+                                                                "parts": [
+                                                                  {
+                                                                    "if": [
+                                                                      {
+                                                                        "compare1": {
+                                                                          "objectType": "Symbol",
+                                                                          "valueType": "tchmi:general#/definitions/String",
+                                                                          "symbolExpression": "%pp%stCheckin::En::xFalhaInversor%/pp%"
+                                                                        },
+                                                                        "compare2": {
+                                                                          "objectType": "StaticValue",
+                                                                          "valueType": "tchmi:general#/definitions/BOOL",
+                                                                          "value": false
+                                                                        },
+                                                                        "compareOperator": "==",
+                                                                        "logic": null
+                                                                      }
+                                                                    ],
+                                                                    "then": [
+                                                                      {
+                                                                        "objectType": "WriteToSymbol",
+                                                                        "active": true,
+                                                                        "symbolExpression": "%ctrl%TcHmiEllipse_17::FillColor%/ctrl%",
+                                                                        "value": {
+                                                                          "objectType": "StaticValue",
+                                                                          "valueType": "tchmi:framework#/definitions/Color",
+                                                                          "value": {
+                                                                            "color": "rgba(0, 255, 0, 1)"
+                                                                          }
+                                                                        },
+                                                                        "asyncWait": true
+                                                                      }
+                                                                    ]
+                                                                  },
+                                                                  {
+                                                                    "else": [
+                                                                      {
+                                                                        "objectType": "WriteToSymbol",
+                                                                        "active": true,
+                                                                        "symbolExpression": "%ctrl%TcHmiEllipse_17::FillColor%/ctrl%",
+                                                                        "value": {
+                                                                          "objectType": "StaticValue",
+                                                                          "valueType": "tchmi:framework#/definitions/Color",
+                                                                          "value": {
+                                                                            "color": "rgba(255, 0, 0, 1)"
+                                                                          }
+                                                                        },
+                                                                        "asyncWait": true
+                                                                      }
+                                                                    ]
+                                                                  }
+                                                                ],
+                                                                "asyncWait": true
+                                                              }
+                                                            ]
+                                                          },
+                                                          {
+                                                            "else": [
+                                                              {
+                                                                "objectType": "WriteToSymbol",
+                                                                "active": true,
+                                                                "symbolExpression": "%ctrl%TcHmiEllipse_17::FillColor%/ctrl%",
+                                                                "value": {
+                                                                  "objectType": "StaticValue",
+                                                                  "valueType": "tchmi:framework#/definitions/Color",
+                                                                  "value": {
+                                                                    "color": "rgba(255, 0, 0, 1)"
+                                                                  }
+                                                                },
+                                                                "asyncWait": true
+                                                              }
+                                                            ]
+                                                          }
+                                                        ],
+                                                        "asyncWait": true
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "else": [
+                                                      {
+                                                        "objectType": "WriteToSymbol",
+                                                        "active": true,
+                                                        "symbolExpression": "%ctrl%TcHmiEllipse_17::FillColor%/ctrl%",
+                                                        "value": {
+                                                          "objectType": "StaticValue",
+                                                          "valueType": "tchmi:framework#/definitions/Color",
+                                                          "value": {
+                                                            "color": "rgba(255, 0, 0, 1)"
+                                                          }
+                                                        },
+                                                        "asyncWait": true
+                                                      }
+                                                    ]
+                                                  }
+                                                ],
+                                                "asyncWait": true
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "else": [
+                                              {
+                                                "objectType": "WriteToSymbol",
+                                                "active": true,
+                                                "symbolExpression": "%ctrl%TcHmiEllipse_17::FillColor%/ctrl%",
+                                                "value": {
+                                                  "objectType": "StaticValue",
+                                                  "valueType": "tchmi:framework#/definitions/Color",
+                                                  "value": {
+                                                    "color": "rgba(255, 0, 0, 1)"
+                                                  }
+                                                },
+                                                "asyncWait": true
+                                              }
+                                            ]
+                                          }
+                                        ],
+                                        "asyncWait": true
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "else": [
+                                      {
+                                        "objectType": "WriteToSymbol",
+                                        "active": true,
+                                        "symbolExpression": "%ctrl%TcHmiEllipse_17::FillColor%/ctrl%",
+                                        "value": {
+                                          "objectType": "StaticValue",
+                                          "valueType": "tchmi:framework#/definitions/Color",
+                                          "value": {
+                                            "color": "rgba(255, 0, 0, 1)"
+                                          }
+                                        },
+                                        "asyncWait": true
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "asyncWait": true
+                              }
+                            ]
+                          },
+                          {
+                            "else": [
+                              {
+                                "objectType": "WriteToSymbol",
+                                "active": true,
+                                "symbolExpression": "%ctrl%TcHmiEllipse_17::FillColor%/ctrl%",
+                                "value": {
+                                  "objectType": "StaticValue",
+                                  "valueType": "tchmi:framework#/definitions/Color",
+                                  "value": {
+                                    "color": "rgba(255, 0, 0, 1)"
+                                  }
+                                },
+                                "asyncWait": true
+                              }
+                            ]
+                          }
+                        ],
+                        "asyncWait": true
+                      }
+                    ]
+                  },
+                  {
+                    "else": [
+                      {
+                        "objectType": "WriteToSymbol",
+                        "active": true,
+                        "symbolExpression": "%ctrl%TcHmiEllipse_17::FillColor%/ctrl%",
+                        "value": {
+                          "objectType": "StaticValue",
+                          "valueType": "tchmi:framework#/definitions/Color",
+                          "value": {
+                            "color": "rgba(255, 0, 0, 1)"
+                          }
+                        },
+                        "asyncWait": true
+                      }
+                    ]
+                  }
+                ],
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiEllipse_17::FillColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": {
+                    "color": "rgba(255, 0, 0, 1)"
+                  }
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiTextblock_25" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="90" data-tchmi-height-unit="px" data-tchmi-left="430" data-tchmi-left-unit="px" data-tchmi-text="Motor Pronto para Comissionar" data-tchmi-top="793" data-tchmi-top-unit="px" data-tchmi-width="298" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-text-font-size-unit="px" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="35" data-tchmi-zindex="4" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-is-enabled="true">
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiLine_21" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLine" data-tchmi-height="665" data-tchmi-height-unit="px" data-tchmi-left="100" data-tchmi-left-unit="px" data-tchmi-top="85" data-tchmi-top-unit="px" data-tchmi-width="5" data-tchmi-width-unit="px" data-tchmi-x2="0" data-tchmi-y2="665" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-x1-unit="px" data-tchmi-y1-unit="px" data-tchmi-x2-unit="px" data-tchmi-y2-unit="px" data-tchmi-y1="0" data-tchmi-scale-mode="None" data-tchmi-stroke-thickness-unit="px" data-tchmi-stroke-thickness="2" data-tchmi-zindex="1" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-is-enabled="true">
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiImage_2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="49" data-tchmi-height-unit="px" data-tchmi-left="1017" data-tchmi-left-unit="px" data-tchmi-top="848" data-tchmi-top-unit="px" data-tchmi-width="83" data-tchmi-width-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-src="Images/Comisionamento/Seta.png" data-tchmi-zindex="16" data-tchmi-opacity="1" data-tchmi-is-enabled="true">
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%i%xHeartBeat%/i%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "symbolExpression": "%pp%stCheckin::Sa::xFalha%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": false
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "Condition",
+                "active": true,
+                "parts": [
+                  {
+                    "if": [
+                      {
+                        "compare1": {
+                          "objectType": "Symbol",
+                          "valueType": "tchmi:general#/definitions/BOOL",
+                          "symbolExpression": "%pp%stCheckin::En::xEmergenciaOK%/pp%"
+                        },
+                        "compare2": {
+                          "objectType": "StaticValue",
+                          "valueType": "tchmi:general#/definitions/BOOL",
+                          "value": true
+                        },
+                        "compareOperator": "==",
+                        "logic": null
+                      }
+                    ],
+                    "then": [
+                      {
+                        "objectType": "Condition",
+                        "active": true,
+                        "parts": [
+                          {
+                            "if": [
+                              {
+                                "compare1": {
+                                  "objectType": "Symbol",
+                                  "valueType": "tchmi:general#/definitions/BOOL",
+                                  "symbolExpression": "%pp%stCheckin::En::xDisjuntorOK%/pp%"
+                                },
+                                "compare2": {
+                                  "objectType": "StaticValue",
+                                  "valueType": "tchmi:general#/definitions/BOOL",
+                                  "value": true
+                                },
+                                "compareOperator": "==",
+                                "logic": null
+                              },
+                              {
+                                "compare1": {
+                                  "objectType": "Symbol",
+                                  "valueType": "tchmi:general#/definitions/BOOL",
+                                  "symbolExpression": "%pp%stCheckin::Config::xTemDisjuntor%/pp%"
+                                },
+                                "compare2": {
+                                  "objectType": "StaticValue",
+                                  "valueType": "tchmi:general#/definitions/BOOL",
+                                  "value": false
+                                },
+                                "compareOperator": "==",
+                                "logic": "OR"
+                              },
+                              {
+                                "compare1": {
+                                  "objectType": "Symbol",
+                                  "valueType": "tchmi:general#/definitions/BOOL",
+                                  "symbolExpression": "%pp%stCheckin::Config::xByPassDisjuntor%/pp%"
+                                },
+                                "compare2": {
+                                  "objectType": "StaticValue",
+                                  "valueType": "tchmi:general#/definitions/BOOL",
+                                  "value": true
+                                },
+                                "compareOperator": "==",
+                                "logic": "OR"
+                              }
+                            ],
+                            "then": [
+                              {
+                                "objectType": "Condition",
+                                "active": true,
+                                "parts": [
+                                  {
+                                    "if": [
+                                      {
+                                        "compare1": {
+                                          "objectType": "Symbol",
+                                          "valueType": "tchmi:general#/definitions/BOOL",
+                                          "symbolExpression": "%pp%stCheckin::En::xContatorLigado%/pp%"
+                                        },
+                                        "compare2": {
+                                          "objectType": "StaticValue",
+                                          "valueType": "tchmi:general#/definitions/BOOL",
+                                          "value": true
+                                        },
+                                        "compareOperator": "==",
+                                        "logic": null
+                                      },
+                                      {
+                                        "compare1": {
+                                          "objectType": "Symbol",
+                                          "valueType": "tchmi:general#/definitions/BOOL",
+                                          "symbolExpression": "%pp%stCheckin::Config::xByPassContator%/pp%"
+                                        },
+                                        "compare2": {
+                                          "objectType": "StaticValue",
+                                          "valueType": "tchmi:general#/definitions/BOOL",
+                                          "value": true
+                                        },
+                                        "compareOperator": "==",
+                                        "logic": "OR"
+                                      },
+                                      {
+                                        "compare1": {
+                                          "objectType": "Symbol",
+                                          "valueType": "tchmi:general#/definitions/BOOL",
+                                          "symbolExpression": "%pp%stCheckin::Config::xTemContatora%/pp%"
+                                        },
+                                        "compare2": {
+                                          "objectType": "StaticValue",
+                                          "valueType": "tchmi:general#/definitions/BOOL",
+                                          "value": false
+                                        },
+                                        "compareOperator": "==",
+                                        "logic": "OR"
+                                      }
+                                    ],
+                                    "then": [
+                                      {
+                                        "objectType": "Condition",
+                                        "active": true,
+                                        "parts": [
+                                          {
+                                            "if": [
+                                              {
+                                                "compare1": {
+                                                  "objectType": "Symbol",
+                                                  "valueType": "tchmi:general#/definitions/BOOL",
+                                                  "symbolExpression": "%pp%stCheckin::Config::xTemFreio%/pp%"
+                                                },
+                                                "compare2": {
+                                                  "objectType": "StaticValue",
+                                                  "valueType": "tchmi:general#/definitions/BOOL",
+                                                  "value": false
+                                                },
+                                                "compareOperator": "==",
+                                                "logic": null
+                                              },
+                                              {
+                                                "compare1": {
+                                                  "objectType": "Symbol",
+                                                  "valueType": "tchmi:general#/definitions/BOOL",
+                                                  "symbolExpression": "%pp%stCheckin::En::xFreioOK%/pp%"
+                                                },
+                                                "compare2": {
+                                                  "objectType": "StaticValue",
+                                                  "valueType": "tchmi:general#/definitions/BOOL",
+                                                  "value": true
+                                                },
+                                                "compareOperator": "==",
+                                                "logic": "OR"
+                                              },
+                                              {
+                                                "compare1": {
+                                                  "objectType": "Symbol",
+                                                  "valueType": "tchmi:general#/definitions/BOOL",
+                                                  "symbolExpression": "%pp%stCheckin::Config::xBypassFreio%/pp%"
+                                                },
+                                                "compare2": {
+                                                  "objectType": "StaticValue",
+                                                  "valueType": "tchmi:general#/definitions/BOOL",
+                                                  "value": true
+                                                },
+                                                "compareOperator": "==",
+                                                "logic": "OR"
+                                              }
+                                            ],
+                                            "then": [
+                                              {
+                                                "objectType": "Condition",
+                                                "active": true,
+                                                "parts": [
+                                                  {
+                                                    "if": [
+                                                      {
+                                                        "compare1": {
+                                                          "objectType": "Symbol",
+                                                          "valueType": "tchmi:general#/definitions/BOOL",
+                                                          "symbolExpression": "%pp%stCheckin::Config::xTemSoft%/pp%"
+                                                        },
+                                                        "compare2": {
+                                                          "objectType": "StaticValue",
+                                                          "valueType": "tchmi:general#/definitions/BOOL",
+                                                          "value": false
+                                                        },
+                                                        "compareOperator": "==",
+                                                        "logic": null
+                                                      },
+                                                      {
+                                                        "compare1": {
+                                                          "objectType": "Symbol",
+                                                          "valueType": "tchmi:general#/definitions/BOOL",
+                                                          "symbolExpression": "%pp%stCheckin::En::xSoftOnline%/pp%"
+                                                        },
+                                                        "compare2": {
+                                                          "objectType": "StaticValue",
+                                                          "valueType": "tchmi:general#/definitions/BOOL",
+                                                          "value": true
+                                                        },
+                                                        "compareOperator": "==",
+                                                        "logic": "OR"
+                                                      },
+                                                      {
+                                                        "compare1": {
+                                                          "objectType": "Symbol",
+                                                          "valueType": "tchmi:general#/definitions/BOOL",
+                                                          "symbolExpression": "%pp%stCheckin::Config::xBypassContatoSoft%/pp%"
+                                                        },
+                                                        "compare2": {
+                                                          "objectType": "StaticValue",
+                                                          "valueType": "tchmi:general#/definitions/BOOL",
+                                                          "value": true
+                                                        },
+                                                        "compareOperator": "==",
+                                                        "logic": "OR"
+                                                      }
+                                                    ],
+                                                    "then": [
+                                                      {
+                                                        "objectType": "Condition",
+                                                        "active": true,
+                                                        "parts": [
+                                                          {
+                                                            "if": [
+                                                              {
+                                                                "compare1": {
+                                                                  "objectType": "Symbol",
+                                                                  "valueType": "tchmi:general#/definitions/BOOL",
+                                                                  "symbolExpression": "%pp%stCheckin::En::xTemInversor%/pp%"
+                                                                },
+                                                                "compare2": {
+                                                                  "objectType": "StaticValue",
+                                                                  "valueType": "tchmi:general#/definitions/BOOL",
+                                                                  "value": true
+                                                                },
+                                                                "compareOperator": "==",
+                                                                "logic": null
+                                                              },
+                                                              {
+                                                                "compare1": {
+                                                                  "objectType": "Symbol",
+                                                                  "valueType": "tchmi:general#/definitions/String",
+                                                                  "symbolExpression": "%pp%stCheckin::Config::xBypassRede%/pp%"
+                                                                },
+                                                                "compare2": {
+                                                                  "objectType": "StaticValue",
+                                                                  "valueType": "tchmi:general#/definitions/BOOL",
+                                                                  "value": false
+                                                                },
+                                                                "compareOperator": "==",
+                                                                "logic": "OR"
+                                                              },
+                                                              {
+                                                                "compare1": {
+                                                                  "objectType": "Symbol",
+                                                                  "valueType": "tchmi:general#/definitions/BOOL",
+                                                                  "symbolExpression": "%pp%stCheckin::En::xInversorOnline%/pp%"
+                                                                },
+                                                                "compare2": {
+                                                                  "objectType": "StaticValue",
+                                                                  "valueType": "tchmi:general#/definitions/BOOL",
+                                                                  "value": true
+                                                                },
+                                                                "compareOperator": "==",
+                                                                "logic": "OR"
+                                                              }
+                                                            ],
+                                                            "then": [
+                                                              {
+                                                                "objectType": "Condition",
+                                                                "active": true,
+                                                                "parts": [
+                                                                  {
+                                                                    "if": [
+                                                                      {
+                                                                        "compare1": {
+                                                                          "objectType": "Symbol",
+                                                                          "valueType": "tchmi:general#/definitions/BOOL",
+                                                                          "symbolExpression": "%pp%stCheckin::En::xFalhaInversor%/pp%"
+                                                                        },
+                                                                        "compare2": {
+                                                                          "objectType": "StaticValue",
+                                                                          "valueType": "tchmi:general#/definitions/BOOL",
+                                                                          "value": false
+                                                                        },
+                                                                        "compareOperator": "==",
+                                                                        "logic": null
+                                                                      },
+                                                                      {
+                                                                        "compare1": {
+                                                                          "objectType": "FunctionExpression",
+                                                                          "functionExpression": "%pp%stCheckin::Config::xBypassRede%/pp%"
+                                                                        },
+                                                                        "compare2": {
+                                                                          "objectType": "StaticValue",
+                                                                          "valueType": "tchmi:general#/definitions/BOOL",
+                                                                          "value": true
+                                                                        },
+                                                                        "compareOperator": "==",
+                                                                        "logic": "OR"
+                                                                      }
+                                                                    ],
+                                                                    "then": [
+                                                                      {
+                                                                        "objectType": "WriteToSymbol",
+                                                                        "active": true,
+                                                                        "symbolExpression": "%ctrl%TcHmiImage_2::IsEnabled%/ctrl%",
+                                                                        "value": {
+                                                                          "objectType": "StaticValue",
+                                                                          "valueType": "tchmi:general#/definitions/Boolean",
+                                                                          "value": true
+                                                                        },
+                                                                        "asyncWait": true
+                                                                      }
+                                                                    ]
+                                                                  },
+                                                                  {
+                                                                    "else": [
+                                                                      {
+                                                                        "objectType": "WriteToSymbol",
+                                                                        "active": true,
+                                                                        "symbolExpression": "%ctrl%TcHmiImage_2::IsEnabled%/ctrl%",
+                                                                        "value": {
+                                                                          "objectType": "StaticValue",
+                                                                          "valueType": "tchmi:general#/definitions/Boolean",
+                                                                          "value": false
+                                                                        },
+                                                                        "asyncWait": true
+                                                                      }
+                                                                    ]
+                                                                  }
+                                                                ],
+                                                                "asyncWait": true
+                                                              }
+                                                            ]
+                                                          },
+                                                          {
+                                                            "else": [
+                                                              {
+                                                                "objectType": "WriteToSymbol",
+                                                                "active": true,
+                                                                "symbolExpression": "%ctrl%TcHmiImage_2::IsEnabled%/ctrl%",
+                                                                "value": {
+                                                                  "objectType": "StaticValue",
+                                                                  "valueType": "tchmi:general#/definitions/Boolean",
+                                                                  "value": false
+                                                                },
+                                                                "asyncWait": true
+                                                              }
+                                                            ]
+                                                          }
+                                                        ],
+                                                        "asyncWait": true
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "else": [
+                                                      {
+                                                        "objectType": "WriteToSymbol",
+                                                        "active": true,
+                                                        "symbolExpression": "%ctrl%TcHmiImage_2::IsEnabled%/ctrl%",
+                                                        "value": {
+                                                          "objectType": "StaticValue",
+                                                          "valueType": "tchmi:general#/definitions/Boolean",
+                                                          "value": false
+                                                        },
+                                                        "asyncWait": true
+                                                      }
+                                                    ]
+                                                  }
+                                                ],
+                                                "asyncWait": true
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "else": [
+                                              {
+                                                "objectType": "WriteToSymbol",
+                                                "active": true,
+                                                "symbolExpression": "%ctrl%TcHmiImage_2::IsEnabled%/ctrl%",
+                                                "value": {
+                                                  "objectType": "StaticValue",
+                                                  "valueType": "tchmi:general#/definitions/Boolean",
+                                                  "value": false
+                                                },
+                                                "asyncWait": true
+                                              }
+                                            ]
+                                          }
+                                        ],
+                                        "asyncWait": true
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "else": [
+                                      {
+                                        "objectType": "WriteToSymbol",
+                                        "active": true,
+                                        "symbolExpression": "%ctrl%TcHmiImage_2::IsEnabled%/ctrl%",
+                                        "value": {
+                                          "objectType": "StaticValue",
+                                          "valueType": "tchmi:general#/definitions/Boolean",
+                                          "value": false
+                                        },
+                                        "asyncWait": true
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "asyncWait": true
+                              }
+                            ]
+                          },
+                          {
+                            "else": [
+                              {
+                                "objectType": "WriteToSymbol",
+                                "active": true,
+                                "symbolExpression": "%ctrl%TcHmiImage_2::IsEnabled%/ctrl%",
+                                "value": {
+                                  "objectType": "StaticValue",
+                                  "valueType": "tchmi:general#/definitions/Boolean",
+                                  "value": false
+                                },
+                                "asyncWait": true
+                              }
+                            ]
+                          }
+                        ],
+                        "asyncWait": true
+                      }
+                    ]
+                  },
+                  {
+                    "else": [
+                      {
+                        "objectType": "WriteToSymbol",
+                        "active": true,
+                        "symbolExpression": "%ctrl%TcHmiImage_2::IsEnabled%/ctrl%",
+                        "value": {
+                          "objectType": "StaticValue",
+                          "valueType": "tchmi:general#/definitions/Boolean",
+                          "value": false
+                        },
+                        "asyncWait": true
+                      }
+                    ]
+                  }
+                ],
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiImage_2::IsEnabled%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/Boolean",
+                  "value": false
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "TcHmiImage_2.onMouseClick",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "$('#UcCheckin').animate({",
+          "\t left\t: \"-2000px\",",
+          "},{",
+          "  duration: 1000,",
+          "  //iterations: Infinity",
+          "});",
+          "",
+          "$('#UcSentidoDeGiro').animate({",
+          "\t left\t: \"450px\",",
+          "\t top\t: \"10px\"",
+          "},{",
+          "  duration: 1000,",
+          "  //iterations: Infinity",
+          "});"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblock_571::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Visible"
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiImage_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="49" data-tchmi-height-unit="px" data-tchmi-left="920" data-tchmi-left-unit="px" data-tchmi-top="847" data-tchmi-top-unit="px" data-tchmi-width="83" data-tchmi-width-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-src="Images/Comisionamento/Seta.png" data-tchmi-zindex="2" data-tchmi-is-enabled="true">
+<script data-tchmi-target-attribute="data-tchmi-transform" type="application/json">
+[
+  {
+    "transformType": "Rotate",
+    "angle": 180.0,
+    "angleUnit": "deg"
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiImage_3.onMouseClick",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "$('#UcCheckin').animate({",
+          "\t left\t: \"3000px\",",
+          "\t top\t: \"5px\"",
+          "},{",
+          "  duration: 1000,",
+          "  //iterations: Infinity",
+          "});",
+          "",
+          "$('#UcCamera').animate({",
+          "\t left\t: \"0px\",",
+          "\t top\t: \"0px\",",
+          "},{",
+          "  duration: 1000,",
+          "  //iterations: Infinity",
+          "});"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblock_571::Left%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/MeasurementValue",
+          "value": 1800.0
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiCheckbox_5" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCheckbox" data-tchmi-height="42" data-tchmi-height-unit="px" data-tchmi-left="151" data-tchmi-left-unit="px" data-tchmi-text="ByPass" data-tchmi-top="214" data-tchmi-top-unit="px" data-tchmi-width="160" data-tchmi-width-unit="px" data-tchmi-text-font-size-unit="px" data-tchmi-text-font-size="35" data-tchmi-state-symbol="%pp%stCheckin::Config::xByPassDisjuntor|BindingMode=TwoWay%/pp%" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="1">
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiCheckbox_6" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCheckbox" data-tchmi-height="42" data-tchmi-height-unit="px" data-tchmi-left="151" data-tchmi-left-unit="px" data-tchmi-text="ByPass" data-tchmi-top="533" data-tchmi-top-unit="px" data-tchmi-width="160" data-tchmi-width-unit="px" data-tchmi-text-font-size-unit="px" data-tchmi-text-font-size="35" data-tchmi-state-symbol="%pp%stCheckin::Config::xBypassRede|BindingMode=TwoWay%/pp%" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-opacity="1" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="1">
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiEllipse_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="80" data-tchmi-height-unit="px" data-tchmi-left="60" data-tchmi-left-unit="px" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width="80" data-tchmi-width-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-stroke-thickness-unit="px" data-tchmi-zindex="12" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-is-enabled="true">
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
+  {
+    "event": "%i%xHeartBeat%/i%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "symbolExpression": "%pp%stCheckin::Sa::xFalha%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiEllipse_18::FillColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": {
+                    "color": "rgba(255, 0, 0, 1)"
+                  }
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiEllipse_18::FillColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": {
+                    "color": "rgba(0, 255, 0, 1)"
+                  }
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]</script>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiTextblock_312" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="150" data-tchmi-left-unit="px" data-tchmi-text="Falha Geral" data-tchmi-top="25" data-tchmi-top-unit="px" data-tchmi-width="350" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-text-font-size-unit="px" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="35" data-tchmi-zindex="4" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px">
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiEllipse_33" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="80" data-tchmi-height-unit="px" data-tchmi-left="597" data-tchmi-left-unit="px" data-tchmi-top="325" data-tchmi-top-unit="px" data-tchmi-width="80" data-tchmi-width-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-stroke-thickness-unit="px" data-tchmi-zindex="11" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px">
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%i%xHeartBeat%/i%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "symbolExpression": "%pp%stCheckin::Config::xTemContatoInversorOK%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "Condition",
+                "active": true,
+                "parts": [
+                  {
+                    "if": [
+                      {
+                        "compare1": {
+                          "objectType": "Symbol",
+                          "valueType": "tchmi:general#/definitions/BOOL",
+                          "symbolExpression": "%pp%stCheckin::En::xContatoInversorOK%/pp%"
+                        },
+                        "compare2": {
+                          "objectType": "StaticValue",
+                          "valueType": "tchmi:general#/definitions/BOOL",
+                          "value": true
+                        },
+                        "compareOperator": "==",
+                        "logic": null
+                      },
+                      {
+                        "compare1": {
+                          "objectType": "Symbol",
+                          "valueType": "tchmi:general#/definitions/BOOL",
+                          "symbolExpression": "%pp%stCheckin::Config::xBypassContatoInversorOK%/pp%"
+                        },
+                        "compare2": {
+                          "objectType": "StaticValue",
+                          "valueType": "tchmi:general#/definitions/BOOL",
+                          "value": true
+                        },
+                        "compareOperator": "==",
+                        "logic": "OR"
+                      }
+                    ],
+                    "then": [
+                      {
+                        "objectType": "WriteToSymbol",
+                        "active": true,
+                        "symbolExpression": "%ctrl%TcHmiEllipse_33::FillColor%/ctrl%",
+                        "value": {
+                          "objectType": "StaticValue",
+                          "valueType": "tchmi:framework#/definitions/Color",
+                          "value": {
+                            "color": "rgba(0, 255, 0, 1)"
+                          }
+                        },
+                        "asyncWait": true
+                      }
+                    ]
+                  },
+                  {
+                    "else": [
+                      {
+                        "objectType": "WriteToSymbol",
+                        "active": true,
+                        "symbolExpression": "%ctrl%TcHmiEllipse_33::FillColor%/ctrl%",
+                        "value": {
+                          "objectType": "StaticValue",
+                          "valueType": "tchmi:framework#/definitions/Color",
+                          "value": {
+                            "color": "rgba(255, 0, 0, 1)"
+                          }
+                        },
+                        "asyncWait": true
+                      }
+                    ]
+                  }
+                ],
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiEllipse_33::FillColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": {
+                    "color": "rgba(0, 255, 0, 1)"
+                  }
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiTextblock_1019" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="687" data-tchmi-left-unit="px" data-tchmi-text="Contato do Inversor Ok" data-tchmi-top="325" data-tchmi-top-unit="px" data-tchmi-width="375" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-text-font-size-unit="px" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="35" data-tchmi-zindex="4" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px">
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiEllipse_35" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="80" data-tchmi-height-unit="px" data-tchmi-left="597" data-tchmi-left-unit="px" data-tchmi-top="485" data-tchmi-top-unit="px" data-tchmi-width="80" data-tchmi-width-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-zindex="11" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px">
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%i%xHeartBeat%/i%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "symbolExpression": "%pp%stCheckin::Config::xTemSoft%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "Condition",
+                "active": true,
+                "parts": [
+                  {
+                    "if": [
+                      {
+                        "compare1": {
+                          "objectType": "Symbol",
+                          "valueType": "tchmi:general#/definitions/BOOL",
+                          "symbolExpression": "%pp%stCheckin::En::xContatoRodandoSoft%/pp%"
+                        },
+                        "compare2": {
+                          "objectType": "StaticValue",
+                          "valueType": "tchmi:general#/definitions/BOOL",
+                          "value": true
+                        },
+                        "compareOperator": "==",
+                        "logic": null
+                      },
+                      {
+                        "compare1": {
+                          "objectType": "Symbol",
+                          "valueType": "tchmi:general#/definitions/BOOL",
+                          "symbolExpression": "%pp%stCheckin::Config::xBypassContatoSoft%/pp%"
+                        },
+                        "compare2": {
+                          "objectType": "StaticValue",
+                          "valueType": "tchmi:general#/definitions/BOOL",
+                          "value": true
+                        },
+                        "compareOperator": "==",
+                        "logic": "OR"
+                      }
+                    ],
+                    "then": [
+                      {
+                        "objectType": "WriteToSymbol",
+                        "active": true,
+                        "symbolExpression": "%ctrl%TcHmiEllipse_35::FillColor%/ctrl%",
+                        "value": {
+                          "objectType": "StaticValue",
+                          "valueType": "tchmi:framework#/definitions/Color",
+                          "value": {
+                            "color": "rgba(0, 255, 0, 1)"
+                          }
+                        },
+                        "asyncWait": true
+                      }
+                    ]
+                  },
+                  {
+                    "else": [
+                      {
+                        "objectType": "WriteToSymbol",
+                        "active": true,
+                        "symbolExpression": "%ctrl%TcHmiEllipse_35::FillColor%/ctrl%",
+                        "value": {
+                          "objectType": "StaticValue",
+                          "valueType": "tchmi:framework#/definitions/Color",
+                          "value": {
+                            "color": "rgba(255, 0, 0, 1)"
+                          }
+                        },
+                        "asyncWait": true
+                      }
+                    ]
+                  }
+                ],
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiEllipse_35::FillColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": {
+                    "color": "rgba(0, 255, 0, 1)"
+                  }
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiTextblock_1021" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="687" data-tchmi-left-unit="px" data-tchmi-text="Soft Ok" data-tchmi-top="485" data-tchmi-top-unit="px" data-tchmi-width="350" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-text-font-size-unit="px" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="35" data-tchmi-zindex="4" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px">
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiLine_99" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLine" data-tchmi-height="665" data-tchmi-height-unit="px" data-tchmi-left="636" data-tchmi-left-unit="px" data-tchmi-top="85" data-tchmi-top-unit="px" data-tchmi-width="5" data-tchmi-width-unit="px" data-tchmi-x2="0" data-tchmi-y2="665" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-x1-unit="px" data-tchmi-y1-unit="px" data-tchmi-x2-unit="px" data-tchmi-y2-unit="px" data-tchmi-y1="0" data-tchmi-scale-mode="None" data-tchmi-stroke-thickness-unit="px" data-tchmi-stroke-thickness="2" data-tchmi-zindex="1" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-is-enabled="true">
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiEllipse_37" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="80" data-tchmi-height-unit="px" data-tchmi-left="596" data-tchmi-left-unit="px" data-tchmi-top="165" data-tchmi-top-unit="px" data-tchmi-width="80" data-tchmi-width-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-stroke-thickness-unit="px" data-tchmi-zindex="12" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-is-enabled="true">
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%i%xHeartBeat%/i%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "symbolExpression": "%pp%stCheckin::Config::xTemFreio%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "Condition",
+                "active": true,
+                "parts": [
+                  {
+                    "if": [
+                      {
+                        "compare1": {
+                          "objectType": "Symbol",
+                          "valueType": "tchmi:general#/definitions/BOOL",
+                          "symbolExpression": "%pp%stCheckin::En::xFreioOK%/pp%"
+                        },
+                        "compare2": {
+                          "objectType": "StaticValue",
+                          "valueType": "tchmi:general#/definitions/BOOL",
+                          "value": true
+                        },
+                        "compareOperator": "==",
+                        "logic": null
+                      },
+                      {
+                        "compare1": {
+                          "objectType": "Symbol",
+                          "valueType": "tchmi:general#/definitions/BOOL",
+                          "symbolExpression": "%pp%stCheckin::Config::xBypassFreio%/pp%"
+                        },
+                        "compare2": {
+                          "objectType": "StaticValue",
+                          "valueType": "tchmi:general#/definitions/BOOL",
+                          "value": true
+                        },
+                        "compareOperator": "==",
+                        "logic": "OR"
+                      }
+                    ],
+                    "then": [
+                      {
+                        "objectType": "WriteToSymbol",
+                        "active": true,
+                        "symbolExpression": "%ctrl%TcHmiEllipse_37::FillColor%/ctrl%",
+                        "value": {
+                          "objectType": "StaticValue",
+                          "valueType": "tchmi:framework#/definitions/Color",
+                          "value": {
+                            "color": "rgba(0, 255, 18, 1)"
+                          }
+                        },
+                        "asyncWait": true
+                      }
+                    ]
+                  },
+                  {
+                    "else": [
+                      {
+                        "objectType": "WriteToSymbol",
+                        "active": true,
+                        "symbolExpression": "%ctrl%TcHmiEllipse_37::FillColor%/ctrl%",
+                        "value": {
+                          "objectType": "StaticValue",
+                          "valueType": "tchmi:framework#/definitions/Color",
+                          "value": {
+                            "color": "rgba(255, 0, 0, 1)"
+                          }
+                        },
+                        "asyncWait": true
+                      }
+                    ]
+                  }
+                ],
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiEllipse_37::FillColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": {
+                    "color": "rgba(0, 255, 18, 1)"
+                  }
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiTextblock_1023" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="687" data-tchmi-left-unit="px" data-tchmi-text="Freio Ok" data-tchmi-top="165" data-tchmi-top-unit="px" data-tchmi-width="350" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-text-font-size-unit="px" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="35" data-tchmi-zindex="4" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px">
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiLine_74" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLine" data-tchmi-height="5" data-tchmi-height-unit="px" data-tchmi-left="99" data-tchmi-left-unit="px" data-tchmi-top="750" data-tchmi-top-unit="px" data-tchmi-width="542" data-tchmi-width-unit="px" data-tchmi-x2="537" data-tchmi-y2="0" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-x1-unit="px" data-tchmi-y1-unit="px" data-tchmi-x2-unit="px" data-tchmi-y2-unit="px" data-tchmi-y1="0" data-tchmi-scale-mode="None" data-tchmi-stroke-thickness-unit="px" data-tchmi-stroke-thickness="2" data-tchmi-zindex="1" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-is-enabled="true">
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiLine_75" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLine" data-tchmi-height="53" data-tchmi-height-unit="px" data-tchmi-left="372" data-tchmi-left-unit="px" data-tchmi-top="750" data-tchmi-top-unit="px" data-tchmi-width="5" data-tchmi-width-unit="px" data-tchmi-x2="0" data-tchmi-y2="48" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-x1-unit="px" data-tchmi-y1-unit="px" data-tchmi-x2-unit="px" data-tchmi-y2-unit="px" data-tchmi-y1="0" data-tchmi-scale-mode="None" data-tchmi-stroke-thickness-unit="px" data-tchmi-stroke-thickness="2" data-tchmi-zindex="1" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-is-enabled="true">
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiCheckbox_34" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCheckbox" data-tchmi-height="42" data-tchmi-height-unit="px" data-tchmi-left="687" data-tchmi-left-unit="px" data-tchmi-text="ByPass" data-tchmi-top="214" data-tchmi-top-unit="px" data-tchmi-width="160" data-tchmi-width-unit="px" data-tchmi-text-font-size-unit="px" data-tchmi-text-font-size="35" data-tchmi-state-symbol="%pp%stCheckin::Config::xBypassFreio%/pp%" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="1">
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiCheckbox_36" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCheckbox" data-tchmi-height="42" data-tchmi-height-unit="px" data-tchmi-left="687" data-tchmi-left-unit="px" data-tchmi-text="ByPass" data-tchmi-top="373" data-tchmi-top-unit="px" data-tchmi-width="160" data-tchmi-width-unit="px" data-tchmi-text-font-size-unit="px" data-tchmi-text-font-size="35" data-tchmi-state-symbol="%pp%stCheckin::Config::xBypassContatoInversorOK%/pp%" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="1">
+</div>
+<div id="TcHmiCheckbox_37" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCheckbox" data-tchmi-height="42" data-tchmi-height-unit="px" data-tchmi-left="150" data-tchmi-left-unit="px" data-tchmi-text="ByPass" data-tchmi-top="373" data-tchmi-top-unit="px" data-tchmi-width="160" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%stCheckin::Config::xByPassContator%/pp%" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="35" data-tchmi-zindex="1">
+</div>
+<div id="TcHmiCheckbox_38" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCheckbox" data-tchmi-height="42" data-tchmi-height-unit="px" data-tchmi-left="686" data-tchmi-left-unit="px" data-tchmi-text="ByPass" data-tchmi-top="533" data-tchmi-top-unit="px" data-tchmi-width="160" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%stCheckin::Config::xBypassContatoSoft%/pp%" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="35" data-tchmi-zindex="1">
+</div>
+</div>
+</div>

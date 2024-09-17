@@ -1,0 +1,6 @@
+Operação = auto login
+Manutenção = manut3
+Administração = ADM
+Teknike = tke1
+Supervisor = Super1
+CasaMaquinas = frio

@@ -1,0 +1,23 @@
+{
+  "parameters": [
+    {
+      "name": "data-tchmi-stemergencia",
+      "displayName": "stEmergencia",
+      "visible": true,
+      "type": "tchmi:server#/definitions/PLC1.Teknike_Geral.st_Emergencia",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "stEmergencia",
+      "propertySetterName": "setStEmergencia",
+      "propertyGetterName": "getStEmergencia",
+      "refTo": ""
+    }
+  ],
+  "virtualRights": [],
+  "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.754.4/runtimes/native1.12-tchmi/Schema/UserControlConfig.Schema.json",
+  "description": ""
+}

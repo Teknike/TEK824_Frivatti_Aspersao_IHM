@@ -1,0 +1,294 @@
+<div id="ConfigEtapaProtocolo" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControl" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="193" data-tchmi-height="393" data-tchmi-width-unit="px" data-tchmi-height-unit="px" data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500">
+
+<div id="TcHmiContainer_182" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="387" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="193" data-tchmi-width-unit="px" data-tchmi-zindex="0">
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 1,
+  "right": 1,
+  "top": 1,
+  "bottom": 1,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+{
+  "left": "Solid",
+  "right": "Solid",
+  "top": "Solid",
+  "bottom": "Solid"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 20.0,
+  "topRight": 20.0,
+  "bottomLeft": 20.0,
+  "bottomRight": 20.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+<div id="TcHmiTextblock_2434" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="36" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%pp%Etapa%/pp%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="30" data-tchmi-text-font-weight="Auto" data-tchmi-text-font-style="Auto">
+
+
+
+
+</div>
+<div id="TcHmiTextblock_2435" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="37" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="Valvula aberta(s):" data-tchmi-top="36" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="25" data-tchmi-zindex="1">
+</div>
+<div id="tbONs" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="36" data-tchmi-height-unit="px" data-tchmi-left="29" data-tchmi-left-unit="px" data-tchmi-max-value="99999999" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="73" data-tchmi-top-unit="px" data-tchmi-value="%pp%TON|BindingMode=TwoWay%/pp%" data-tchmi-width="134" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="25" data-tchmi-zindex="1">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(76, 76, 76, 1)"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "tbONs.onValueChanged",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var duration = TcHmi.Symbol.readEx('%ctrl%tbONs::Value%/ctrl%');",
+          "//console.log(Index);",
+          "",
+          "const hrs = ~~(duration / 3600);",
+          "const mins = ~~((duration % 3600) / 60);",
+          "const secs = ~~duration % 60;",
+          "",
+          "// Output like \"1:01\" or \"4:03:59\" or \"123:03:59\"",
+          "let ret = \"\";",
+          "",
+          "if (hrs > 0) {",
+          "ret += \"\" + hrs + \":\" + (mins < 10 ? \"0\" : \"\");",
+          "}",
+          "",
+          "ret += \"\" + mins + \":\" + (secs < 10 ? \"0\" : \"\");",
+          "ret += \"\" + secs;",
+          "",
+          "TcHmi.Symbol.writeEx('%ctrl%tbMin::Text%/ctrl%',ret);"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      },
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "function msToTime(s) {",
+          "",
+          "  // Pad to 2 or 3 digits, default is 2",
+          "  function pad(n, z) {",
+          "    z = z || 2;",
+          "    return ('00' + n).slice(-z);",
+          "  }",
+          "",
+          "  var ms = s % 1000;",
+          "  s = (s - ms) / 1000;",
+          "  var secs = s % 60;",
+          "  s = (s - secs) / 60;",
+          "  var mins = s % 60;",
+          "  var hrs = (s - mins) / 60;",
+          "",
+          "  return pad(hrs) + ':' + pad(mins) + ':' + pad(secs);// + '.' + pad(ms, 3);",
+          "}",
+          "",
+          "var tON = TcHmi.Symbol.readEx('%ctrl%tbONs::Value%/ctrl%');",
+          "var tOFF = TcHmi.Symbol.readEx('%ctrl%tbOFF::Value%/ctrl%');",
+          "var iCiclos = TcHmi.Symbol.readEx('%ctrl%tbCiclos::Value%/ctrl%');",
+          "",
+          "",
+          "var imsTotal = (tON * 1000 + tOFF * 60 * 1000) * iCiclos;",
+          "",
+          "",
+          "TcHmi.Symbol.writeEx('%pp%msValvulaAberta%/pp%',(tON * 1000 * iCiclos));",
+          "TcHmi.Symbol.writeEx('%pp%msValvulaFechada%/pp%',(tOFF * 60 * 1000 * iCiclos));",
+          "TcHmi.Symbol.writeEx('%ctrl%tbTotalizador::Text%/ctrl%',msToTime(imsTotal));",
+          "TcHmi.Symbol.writeEx('%pp%msTotalizador%/pp%',(imsTotal));"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="tbOFF" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="36" data-tchmi-height-unit="px" data-tchmi-left="29" data-tchmi-left-unit="px" data-tchmi-max-value="999999999" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="188" data-tchmi-top-unit="px" data-tchmi-value="%pp%TOF|BindingMode=TwoWay%/pp%" data-tchmi-width="134" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="25" data-tchmi-zindex="1">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(76, 76, 76, 1)"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "tbOFF.onValueChanged",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "function msToTime(s) {",
+          "",
+          "  // Pad to 2 or 3 digits, default is 2",
+          "  function pad(n, z) {",
+          "    z = z || 2;",
+          "    return ('00' + n).slice(-z);",
+          "  }",
+          "",
+          "  var ms = s % 1000;",
+          "  s = (s - ms) / 1000;",
+          "  var secs = s % 60;",
+          "  s = (s - secs) / 60;",
+          "  var mins = s % 60;",
+          "  var hrs = (s - mins) / 60;",
+          "",
+          "  return pad(hrs) + ':' + pad(mins) + ':' + pad(secs);// + '.' + pad(ms, 3);",
+          "}",
+          "",
+          "var tON = TcHmi.Symbol.readEx('%ctrl%tbONs::Value%/ctrl%');",
+          "var tOFF = TcHmi.Symbol.readEx('%ctrl%tbOFF::Value%/ctrl%');",
+          "var iCiclos = TcHmi.Symbol.readEx('%ctrl%tbCiclos::Value%/ctrl%');",
+          "",
+          "",
+          "var imsTotal = (tON * 1000 + tOFF * 60 * 1000) * iCiclos;",
+          "",
+          "",
+          "TcHmi.Symbol.writeEx('%pp%msValvulaAberta%/pp%',(tON * 1000 * iCiclos));",
+          "TcHmi.Symbol.writeEx('%pp%msValvulaFechada%/pp%',(tOFF * 60 * 1000 * iCiclos));",
+          "TcHmi.Symbol.writeEx('%ctrl%tbTotalizador::Text%/ctrl%',msToTime(imsTotal));",
+          "TcHmi.Symbol.writeEx('%pp%msTotalizador%/pp%',(imsTotal));"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="TcHmiTextblock_2436" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="36" data-tchmi-height-unit="px" data-tchmi-left="-1" data-tchmi-left-unit="px" data-tchmi-text="Valvula fechada (m):" data-tchmi-top="152" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="23" data-tchmi-zindex="1">
+</div>
+<div id="TcHmiTextblock_2437" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="36" data-tchmi-height-unit="px" data-tchmi-left="-1" data-tchmi-left-unit="px" data-tchmi-text="Ciclos:" data-tchmi-top="231" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="25" data-tchmi-zindex="1">
+</div>
+<div id="tbCiclos" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="36" data-tchmi-height-unit="px" data-tchmi-left="28" data-tchmi-left-unit="px" data-tchmi-max-value="999999999" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="267" data-tchmi-top-unit="px" data-tchmi-value="%pp%CICLO|BindingMode=TwoWay%/pp%" data-tchmi-width="136" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="25" data-tchmi-zindex="1">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(76, 76, 76, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "tbCiclos.onValueChanged",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "function msToTime(s) {",
+          "",
+          "  // Pad to 2 or 3 digits, default is 2",
+          "  function pad(n, z) {",
+          "    z = z || 2;",
+          "    return ('00' + n).slice(-z);",
+          "  }",
+          "",
+          "  var ms = s % 1000;",
+          "  s = (s - ms) / 1000;",
+          "  var secs = s % 60;",
+          "  s = (s - secs) / 60;",
+          "  var mins = s % 60;",
+          "  var hrs = (s - mins) / 60;",
+          "",
+          "  return pad(hrs) + ':' + pad(mins) + ':' + pad(secs);// + '.' + pad(ms, 3);",
+          "}",
+          "",
+          "var tON = TcHmi.Symbol.readEx('%ctrl%tbONs::Value%/ctrl%');",
+          "var tOFF = TcHmi.Symbol.readEx('%ctrl%tbOFF::Value%/ctrl%');",
+          "var iCiclos = TcHmi.Symbol.readEx('%ctrl%tbCiclos::Value%/ctrl%');",
+          "",
+          "",
+          "var imsTotal = (tON * 1000 + tOFF * 60 * 1000) * iCiclos;",
+          "",
+          "",
+          "TcHmi.Symbol.writeEx('%pp%msValvulaAberta%/pp%',(tON * 1000 * iCiclos));",
+          "TcHmi.Symbol.writeEx('%pp%msValvulaFechada%/pp%',(tOFF * 60 * 1000 * iCiclos));",
+          "TcHmi.Symbol.writeEx('%ctrl%tbTotalizador::Text%/ctrl%',msToTime(imsTotal));",
+          "TcHmi.Symbol.writeEx('%pp%msTotalizador%/pp%',(imsTotal));"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="tbMin" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="29" data-tchmi-left-unit="px" data-tchmi-text="x,x min" data-tchmi-top="109" data-tchmi-top-unit="px" data-tchmi-width="134" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="25" data-tchmi-zindex="1">
+</div>
+
+
+<div id="tbTotaliza" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="-1" data-tchmi-left-unit="px" data-tchmi-text="Totalizador" data-tchmi-top="310" data-tchmi-top-unit="px" data-tchmi-width="193" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="25" data-tchmi-zindex="1">
+</div>
+<div id="tbTotalizador" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="-1" data-tchmi-left-unit="px" data-tchmi-text="x,x hrs,min,s" data-tchmi-top="345" data-tchmi-top-unit="px" data-tchmi-width="193" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="25" data-tchmi-zindex="1">
+</div>
+</div>
+</div>

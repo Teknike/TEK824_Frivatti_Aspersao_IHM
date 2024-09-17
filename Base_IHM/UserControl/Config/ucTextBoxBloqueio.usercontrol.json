@@ -1,0 +1,71 @@
+{
+  "parameters": [
+    {
+      "name": "data-tchmi-senhabloqueio",
+      "displayName": "SenhaBloqueio",
+      "visible": true,
+      "type": "tchmi:general#/definitions/INT",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "SenhaBloqueio",
+      "propertySetterName": "setSenhaBloqueio",
+      "propertyGetterName": "getSenhaBloqueio",
+      "refTo": ""
+    },
+    {
+      "name": "data-tchmi-senhaatual",
+      "displayName": "SenhaAtual",
+      "visible": true,
+      "type": "tchmi:general#/definitions/INT",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "SenhaAtual",
+      "propertySetterName": "setSenhaAtual",
+      "propertyGetterName": "getSenhaAtual",
+      "refTo": ""
+    },
+    {
+      "name": "data-tchmi-libera",
+      "displayName": "Libera",
+      "visible": true,
+      "type": "tchmi:general#/definitions/BOOL",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "Libera",
+      "propertySetterName": "setLibera",
+      "propertyGetterName": "getLibera",
+      "refTo": ""
+    },
+    {
+      "name": "data-tchmi-fonte",
+      "displayName": "Fonte",
+      "visible": true,
+      "type": "tchmi:general#/definitions/String",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "Fonte",
+      "propertySetterName": "setFonte",
+      "propertyGetterName": "getFonte",
+      "refTo": ""
+    }
+  ],
+  "virtualRights": [],
+  "$schema": "../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.752.0/runtimes/native1.12-tchmi/Schema/UserControlConfig.Schema.json",
+  "description": ""
+}

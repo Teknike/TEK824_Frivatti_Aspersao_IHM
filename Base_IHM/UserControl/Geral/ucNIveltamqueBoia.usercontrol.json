@@ -1,0 +1,58 @@
+{
+  "parameters": [
+    {
+      "name": "data-tchmi-ifonte",
+      "displayName": "iFonte",
+      "allowSymbolExpressionsInObject": false,
+      "visible": true,
+      "type": "tchmi:general#/definitions/INT",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "iFonte",
+      "propertySetterName": "setIFonte",
+      "propertyGetterName": "getIFonte",
+      "refTo": ""
+    },
+    {
+      "name": "data-tchmi-sniveltamque",
+      "displayName": "sNivelTamque",
+      "allowSymbolExpressionsInObject": false,
+      "visible": true,
+      "type": "tchmi:general#/definitions/String",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "sNivelTamque",
+      "propertySetterName": "setSNivelTamque",
+      "propertyGetterName": "getSNivelTamque",
+      "refTo": ""
+    },
+    {
+      "name": "data-tchmi-stvariavelsensor",
+      "displayName": "stVariavelSensor",
+      "allowSymbolExpressionsInObject": false,
+      "visible": true,
+      "type": "tchmi:project#/definitions/PLC1.Teknike_Sensores.en_ST_SensorDigital",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "stVariavelSensor",
+      "propertySetterName": "setStVariavelSensor",
+      "propertyGetterName": "getStVariavelSensor",
+      "refTo": ""
+    }
+  ],
+  "virtualRights": [],
+  "$schema": "./../../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.760.48/runtimes/native1.12-tchmi/Schema/UserControlConfig.Schema.json",
+  "description": ""
+}

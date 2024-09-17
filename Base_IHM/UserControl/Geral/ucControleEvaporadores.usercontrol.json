@@ -1,0 +1,59 @@
+{
+  "parameters": [
+    {
+      "name": "data-tchmi-stevaporador",
+      "displayName": "stEvaporador",
+      "allowSymbolExpressionsInObject": false,
+      "visible": true,
+      "type": "tchmi:server#/definitions/PLC1.st_Evaporador",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "stEvaporador",
+      "propertySetterName": "setStEvaporador",
+      "propertyGetterName": "getStEvaporador",
+      "refTo": ""
+    },
+    {
+      "name": "data-tchmi-stnome",
+      "displayName": "stNome",
+      "allowSymbolExpressionsInObject": false,
+      "visible": true,
+      "type": "tchmi:general#/definitions/String",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "stNome",
+      "propertySetterName": "setStNome",
+      "propertyGetterName": "getStNome",
+      "refTo": ""
+    },
+    {
+      "name": "data-tchmi-textodegelo",
+      "displayName": "Textodegelo",
+      "allowSymbolExpressionsInObject": false,
+      "visible": true,
+      "type": "tchmi:general#/definitions/String",
+      "category": "",
+      "description": "",
+      "defaultValue": "Tempo Secagem",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "Textodegelo",
+      "propertySetterName": "setTextodegelo",
+      "propertyGetterName": "getTextodegelo",
+      "refTo": ""
+    }
+  ],
+  "virtualRights": [],
+  "$schema": "./../../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.756.1/runtimes/native1.12-tchmi/Schema/UserControlConfig.Schema.json",
+  "description": ""
+}

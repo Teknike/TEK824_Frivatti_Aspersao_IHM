@@ -1,0 +1,1208 @@
+<div id="ucFalhaInversor" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControl" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="400" data-tchmi-height="250" data-tchmi-width-unit="px" data-tchmi-height-unit="px" data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500" data-tchmi-opacity="1" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(112, 117, 134, 1)"
+}
+</script>
+<div id="Primeiro_15" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="240" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="px" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width="390" data-tchmi-width-unit="px" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+<div id="TcHmiTextblock_1170" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="27" data-tchmi-height-unit="px" data-tchmi-left="9" data-tchmi-left-unit="px" data-tchmi-text="INVERSOR EM FALHA!" data-tchmi-top="17" data-tchmi-top-unit="px" data-tchmi-width="344" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-text-font-size="20">
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(255, 0, 0, 1)"
+}
+</script>
+</div>
+<div id="TcHmiButton_203" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="308" data-tchmi-left-unit="px" data-tchmi-text="Próximo" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="75" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width="80" data-tchmi-background-image-height="80" data-tchmi-zindex="3" data-tchmi-text-font-size="20">
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiButton_203.onMouseClick",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var primeiroNome = \"UcFalhaInversor_\";",
+          "var segundoNome = TcHmi.Symbol.readEx('%pp%sNomeDoPai%/pp%');",
+          "",
+          "var nome = primeiroNome + segundoNome;",
+          "",
+          "",
+          "var object1 = document.getElementById(nome+\".Primeiro_15\");",
+          "",
+          "object1.animate({",
+          "\t left\t: \"-430px\",",
+          "\t top\t: \"5px\"",
+          "},{",
+          "  duration: 500,",
+          "  //iterations: Infinity",
+          "}).onfinish = function(e){",
+          "",
+          "\tvar element = TcHmi.Controls.get(nome+\".Primeiro_15\");",
+          "   \telement.setTop(5);",
+          "   \telement.setLeft(-430);",
+          "};",
+          "",
+          "",
+          "",
+          "",
+          "var object2 = document.getElementById(nome+\".Segundo_15\");",
+          "",
+          "object2.animate({",
+          "\t left\t: \"5px\",",
+          "\t top\t: \"5px\"",
+          "},{",
+          "  duration: 500,",
+          "  //iterations: Infinity",
+          "}).onfinish = function(e){",
+          "",
+          "\tvar element = TcHmi.Controls.get(nome+\".Segundo_15\");",
+          "   \telement.setTop(5);",
+          "   \telement.setLeft(5);",
+          "};"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 20.0,
+  "topRight": 20.0,
+  "bottomLeft": 20.0,
+  "bottomRight": 20.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+</div>
+<div id="TcHmiTextblock_1171" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="59" data-tchmi-height-unit="px" data-tchmi-left="9" data-tchmi-left-unit="px" data-tchmi-text="Esse sinal é lido via rede e indica que o inversor apresentou alguma falha." data-tchmi-top="52" data-tchmi-top-unit="px" data-tchmi-width="344" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="20" data-tchmi-text-horizontal-alignment="Center">
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+</div>
+<div id="TcHmi_Controls_Beckhoff_TcHmiImage_78" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="39" data-tchmi-height-unit="px" data-tchmi-left="89" data-tchmi-left-unit="px" data-tchmi-src="Images/Troubleshooting/InversorFalha/InversorEmFalha.PNG" data-tchmi-top="130" data-tchmi-top-unit="px" data-tchmi-width="192" data-tchmi-width-unit="px">
+</div>
+</div>
+
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 1,
+  "right": 1,
+  "top": 1,
+  "bottom": 1,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+{
+  "left": "Solid",
+  "right": "Solid",
+  "top": "Solid",
+  "bottom": "Solid"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 10.0,
+  "topRight": 10.0,
+  "bottomLeft": 10.0,
+  "bottomRight": 10.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="Terceiro_15" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="240" data-tchmi-height-unit="px" data-tchmi-left="430" data-tchmi-left-unit="px" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width="390" data-tchmi-width-unit="px" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiButton_204" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="308" data-tchmi-left-unit="px" data-tchmi-text="Próximo" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="75" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width="80" data-tchmi-background-image-height="80" data-tchmi-zindex="3" data-tchmi-text-font-size="20">
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiButton_204.onMouseClick",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var primeiroNome = \"UcFalhaInversor_\";",
+          "var segundoNome = TcHmi.Symbol.readEx('%pp%sNomeDoPai%/pp%');",
+          "",
+          "var nome = primeiroNome + segundoNome;",
+          "",
+          "",
+          "var object1 = document.getElementById(nome+\".Terceiro_15\");",
+          "",
+          "object1.animate({",
+          "\t left\t: \"-430px\",",
+          "\t top\t: \"5px\"",
+          "},{",
+          "  duration: 500,",
+          "  //iterations: Infinity",
+          "}).onfinish = function(e){",
+          "",
+          "\tvar element = TcHmi.Controls.get(nome+\".Terceiro_15\");",
+          "   \telement.setTop(5);",
+          "   \telement.setLeft(-430);",
+          "};",
+          "",
+          "",
+          "",
+          "",
+          "var object2 = document.getElementById(nome+\".Quarto_15\");",
+          "",
+          "object2.animate({",
+          "\t left\t: \"5px\",",
+          "\t top\t: \"5px\"",
+          "},{",
+          "  duration: 500,",
+          "  //iterations: Infinity",
+          "}).onfinish = function(e){",
+          "",
+          "\tvar element = TcHmi.Controls.get(nome+\".Quarto_15\");",
+          "   \telement.setTop(5);",
+          "   \telement.setLeft(5);",
+          "};"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 20.0,
+  "topRight": 20.0,
+  "bottomLeft": 20.0,
+  "bottomRight": 20.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiButton_205" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="7" data-tchmi-left-unit="px" data-tchmi-text="Voltar" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="75" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width="80" data-tchmi-background-image-height="80" data-tchmi-zindex="3" data-tchmi-text-font-size="20">
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiButton_205.onMouseClick",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var primeiroNome = \"UcFalhaInversor_\";",
+          "var segundoNome = TcHmi.Symbol.readEx('%pp%sNomeDoPai%/pp%');",
+          "",
+          "var nome = primeiroNome + segundoNome;",
+          "",
+          "",
+          "var object1 = document.getElementById(nome+\".Terceiro_15\");",
+          "",
+          "object1.animate({",
+          "\t left\t: \"430px\",",
+          "\t top\t: \"5px\"",
+          "},{",
+          "  duration: 500,",
+          "  //iterations: Infinity",
+          "}).onfinish = function(e){",
+          "",
+          "\tvar element = TcHmi.Controls.get(nome+\".Terceiro_15\");",
+          "   \telement.setTop(5);",
+          "   \telement.setLeft(430);",
+          "};",
+          "",
+          "",
+          "",
+          "",
+          "var object2 = document.getElementById(nome+\".Segundo_15\");",
+          "",
+          "object2.animate({",
+          "\t left\t: \"5px\",",
+          "\t top\t: \"5px\"",
+          "},{",
+          "  duration: 500,",
+          "  //iterations: Infinity",
+          "}).onfinish = function(e){",
+          "",
+          "\tvar element = TcHmi.Controls.get(nome+\".Segundo_15\");",
+          "   \telement.setTop(5);",
+          "   \telement.setLeft(5);",
+          "};"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 20.0,
+  "topRight": 20.0,
+  "bottomLeft": 20.0,
+  "bottomRight": 20.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+</div>
+<div id="TcHmiTextblock_1172" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="106" data-tchmi-height-unit="px" data-tchmi-left="15" data-tchmi-left-unit="px" data-tchmi-text="Algumas possíveis Falhas:\n	-[ocn] Sobre-Corrente\n	-[orP] Perda de fase\n	-[ol] SobreCarga\n	-[GFF] Fuga a terra" data-tchmi-top="88" data-tchmi-top-unit="px" data-tchmi-width="361" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="15">
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 1,
+  "right": 1,
+  "top": 1,
+  "bottom": 1,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+{
+  "left": "Solid",
+  "right": "Solid",
+  "top": "Solid",
+  "bottom": "Solid"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "left": 5,
+  "right": 5,
+  "top": 0,
+  "bottom": 0,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+</div>
+<div id="TcHmi_Controls_Beckhoff_TcHmiImage_79" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="33" data-tchmi-height-unit="px" data-tchmi-left="15" data-tchmi-left-unit="px" data-tchmi-src="Images/Troubleshooting/InversorFalha/StatusConexao.PNG" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width="182" data-tchmi-width-unit="px">
+</div>
+<div id="TcHmi_Controls_Beckhoff_TcHmiImage_80" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="32" data-tchmi-height-unit="px" data-tchmi-left="15" data-tchmi-left-unit="px" data-tchmi-src="Images/Troubleshooting/InversorFalha/UltimoErro.PNG" data-tchmi-top="47" data-tchmi-top-unit="px" data-tchmi-width="328" data-tchmi-width-unit="px">
+</div>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="Quarto_15" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="240" data-tchmi-height-unit="px" data-tchmi-left="430" data-tchmi-left-unit="px" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width="390" data-tchmi-width-unit="px" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiButton_206" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="308" data-tchmi-left-unit="px" data-tchmi-text="Próximo" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="75" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width="80" data-tchmi-background-image-height="80" data-tchmi-zindex="3" data-tchmi-text-font-size="20">
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiButton_206.onMouseClick",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var primeiroNome = \"UcFalhaInversor_\";",
+          "var segundoNome = TcHmi.Symbol.readEx('%pp%sNomeDoPai%/pp%');",
+          "",
+          "var nome = primeiroNome + segundoNome;",
+          "",
+          "",
+          "var object1 = document.getElementById(nome+\".Quarto_15\");",
+          "",
+          "object1.animate({",
+          "\t left\t: \"-430px\",",
+          "\t top\t: \"5px\"",
+          "},{",
+          "  duration: 500,",
+          "  //iterations: Infinity",
+          "}).onfinish = function(e){",
+          "",
+          "\tvar element = TcHmi.Controls.get(nome+\".Quarto_15\");",
+          "   \telement.setTop(5);",
+          "   \telement.setLeft(-430);",
+          "};",
+          "",
+          "",
+          "",
+          "",
+          "var object2 = document.getElementById(nome+\".Quinto_15\");",
+          "",
+          "object2.animate({",
+          "\t left\t: \"5px\",",
+          "\t top\t: \"5px\"",
+          "},{",
+          "  duration: 500,",
+          "  //iterations: Infinity",
+          "}).onfinish = function(e){",
+          "",
+          "\tvar element = TcHmi.Controls.get(nome+\".Quinto_15\");",
+          "   \telement.setTop(5);",
+          "   \telement.setLeft(5);",
+          "};"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 20.0,
+  "topRight": 20.0,
+  "bottomLeft": 20.0,
+  "bottomRight": 20.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiButton_207" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="7" data-tchmi-left-unit="px" data-tchmi-text="Voltar" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="75" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width="80" data-tchmi-background-image-height="80" data-tchmi-zindex="3" data-tchmi-text-font-size="20">
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiButton_207.onMouseClick",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var primeiroNome = \"UcFalhaInversor_\";",
+          "var segundoNome = TcHmi.Symbol.readEx('%pp%sNomeDoPai%/pp%');",
+          "",
+          "var nome = primeiroNome + segundoNome;",
+          "",
+          "",
+          "var object1 = document.getElementById(nome+\".Quarto_15\");",
+          "",
+          "object1.animate({",
+          "\t left\t: \"430px\",",
+          "\t top\t: \"6px\"",
+          "},{",
+          "  duration: 500,",
+          "  //iterations: Infinity",
+          "}).onfinish = function(e){",
+          "",
+          "\tvar element = TcHmi.Controls.get(nome+\".Quarto_15\");",
+          "   \telement.setTop(5);",
+          "   \telement.setLeft(430);",
+          "};",
+          "",
+          "",
+          "",
+          "",
+          "var object2 = document.getElementById(nome+\".Terceiro_15\");",
+          "",
+          "object2.animate({",
+          "\t left\t: \"5px\",",
+          "\t top\t: \"5px\"",
+          "},{",
+          "  duration: 500,",
+          "  //iterations: Infinity",
+          "}).onfinish = function(e){",
+          "",
+          "\tvar element = TcHmi.Controls.get(nome+\".Terceiro_15\");",
+          "   \telement.setTop(5);",
+          "   \telement.setLeft(5);",
+          "};"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 20.0,
+  "topRight": 20.0,
+  "bottomLeft": 20.0,
+  "bottomRight": 20.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+</div>
+<div id="TcHmiTextblock_1175" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="116" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="353" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="20" data-tchmi-text="Segundo Passo:\n\nApós corrigir a fonte de falha, é necessário enviar um comando de reset para o inversor.">
+</div>
+<div id="TcHmi_Controls_Beckhoff_TcHmiImage_81" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="67" data-tchmi-height-unit="px" data-tchmi-left="131" data-tchmi-left-unit="px" data-tchmi-src="Images/Troubleshooting/InversorFalha/Reset.PNG" data-tchmi-top="116" data-tchmi-top-unit="px" data-tchmi-width="118" data-tchmi-width-unit="px">
+</div>
+<div id="TcHmi_Controls_Beckhoff_TcHmiImage_82" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="67" data-tchmi-height-unit="px" data-tchmi-left="215" data-tchmi-left-unit="px" data-tchmi-src="Images/Troubleshooting/InversorFalha/Mouseclick.png" data-tchmi-top="148" data-tchmi-top-unit="px" data-tchmi-width="50" data-tchmi-width-unit="px">
+</div>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="Segundo_15" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="240" data-tchmi-height-unit="px" data-tchmi-left="430" data-tchmi-left-unit="px" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width="390" data-tchmi-width-unit="px" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiButton_208" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="308" data-tchmi-left-unit="px" data-tchmi-text="Próximo" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="75" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width="80" data-tchmi-background-image-height="80" data-tchmi-zindex="3" data-tchmi-text-font-size="20">
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiButton_208.onMouseClick",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var primeiroNome = \"UcFalhaInversor_\";",
+          "var segundoNome = TcHmi.Symbol.readEx('%pp%sNomeDoPai%/pp%');",
+          "",
+          "var nome = primeiroNome + segundoNome;",
+          "",
+          "",
+          "var object1 = document.getElementById(nome+\".Segundo_15\");",
+          "",
+          "object1.animate({",
+          "\t left\t: \"-430px\",",
+          "\t top\t: \"5px\"",
+          "},{",
+          "  duration: 500,",
+          "  //iterations: Infinity",
+          "}).onfinish = function(e){",
+          "",
+          "\tvar element = TcHmi.Controls.get(nome+\".Segundo_15\");",
+          "   \telement.setTop(5);",
+          "   \telement.setLeft(-430);",
+          "};",
+          "",
+          "",
+          "",
+          "",
+          "var object2 = document.getElementById(nome+\".Terceiro_15\");",
+          "",
+          "object2.animate({",
+          "\t left\t: \"5px\",",
+          "\t top\t: \"5px\"",
+          "},{",
+          "  duration: 500,",
+          "  //iterations: Infinity",
+          "}).onfinish = function(e){",
+          "",
+          "\tvar element = TcHmi.Controls.get(nome+\".Terceiro_15\");",
+          "   \telement.setTop(5);",
+          "   \telement.setLeft(5);",
+          "};"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 20.0,
+  "topRight": 20.0,
+  "bottomLeft": 20.0,
+  "bottomRight": 20.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiButton_209" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="7" data-tchmi-left-unit="px" data-tchmi-text="Voltar" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="75" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width="80" data-tchmi-background-image-height="80" data-tchmi-zindex="3" data-tchmi-text-font-size="20">
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiButton_209.onMouseClick",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var primeiroNome = \"UcFalhaInversor_\";",
+          "var segundoNome = TcHmi.Symbol.readEx('%pp%sNomeDoPai%/pp%');",
+          "",
+          "var nome = primeiroNome + segundoNome;",
+          "",
+          "",
+          "var object1 = document.getElementById(nome+\".Segundo_15\");",
+          "",
+          "object1.animate({",
+          "\t left\t: \"430px\",",
+          "\t top\t: \"6px\"",
+          "},{",
+          "  duration: 500,",
+          "  //iterations: Infinity",
+          "}).onfinish = function(e){",
+          "",
+          "\tvar element = TcHmi.Controls.get(nome+\".Segundo_15\");",
+          "   \telement.setTop(5);",
+          "   \telement.setLeft(430);",
+          "};",
+          "",
+          "",
+          "",
+          "",
+          "var object2 = document.getElementById(nome+\".Primeiro_15\");",
+          "",
+          "object2.animate({",
+          "\t left\t: \"5px\",",
+          "\t top\t: \"5px\"",
+          "},{",
+          "  duration: 500,",
+          "  //iterations: Infinity",
+          "}).onfinish = function(e){",
+          "",
+          "\tvar element = TcHmi.Controls.get(nome+\".Primeiro_15\");",
+          "   \telement.setTop(5);",
+          "   \telement.setLeft(5);",
+          "};"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 20.0,
+  "topRight": 20.0,
+  "bottomLeft": 20.0,
+  "bottomRight": 20.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+</div>
+<div id="TcHmiTextblock_1177" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="126" data-tchmi-height-unit="px" data-tchmi-left="-0" data-tchmi-left-unit="px" data-tchmi-text="Verificar no &quot;Status de Conexão&quot; o estado da partida e no &quot;Último Erro&quot;, a falha que apresenta no inversor. É possível encontrar a falha no manual do inversor. \nEm relação a falhas de comunicação, verificar info relativo a falha &quot;Inversor Offline&quot;." data-tchmi-top="43" data-tchmi-top-unit="px" data-tchmi-width="390" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="18" data-tchmi-text-horizontal-alignment="Center">
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+</div>
+<div id="TcHmiTextblock_1178" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="32" data-tchmi-height-unit="px" data-tchmi-left="-0" data-tchmi-left-unit="px" data-tchmi-text="Primeiro Passo:" data-tchmi-top="11" data-tchmi-top-unit="px" data-tchmi-width="388" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="18" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+</div>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="Quinto_15" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="240" data-tchmi-height-unit="px" data-tchmi-left="430" data-tchmi-left-unit="px" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width="390" data-tchmi-width-unit="px" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiButton_210" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="308" data-tchmi-left-unit="px" data-tchmi-text="Próximo" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="75" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width="80" data-tchmi-background-image-height="80" data-tchmi-zindex="3" data-tchmi-text-font-size="20">
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiButton_210.onMouseClick",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var primeiroNome = \"UcFalhaInversor_\";",
+          "var segundoNome = TcHmi.Symbol.readEx('%pp%sNomeDoPai%/pp%');",
+          "",
+          "var nome = primeiroNome + segundoNome;",
+          "",
+          "",
+          "var object1 = document.getElementById(nome+\".Quinto_15\");",
+          "",
+          "object1.animate({",
+          "\t left\t: \"-430px\",",
+          "\t top\t: \"5px\"",
+          "},{",
+          "  duration: 500,",
+          "  //iterations: Infinity",
+          "}).onfinish = function(e){",
+          "",
+          "\tvar element = TcHmi.Controls.get(nome+\".Quinto_15\");",
+          "   \telement.setTop(5);",
+          "   \telement.setLeft(-430);",
+          "};",
+          "",
+          "",
+          "",
+          "",
+          "var object2 = document.getElementById(nome+\".Oitavo_15\");",
+          "",
+          "object2.animate({",
+          "\t left\t: \"5px\",",
+          "\t top\t: \"5px\"",
+          "},{",
+          "  duration: 500,",
+          "  //iterations: Infinity",
+          "}).onfinish = function(e){",
+          "",
+          "\tvar element = TcHmi.Controls.get(nome+\".Oitavo_15\");",
+          "   \telement.setTop(5);",
+          "   \telement.setLeft(5);",
+          "};"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 20.0,
+  "topRight": 20.0,
+  "bottomLeft": 20.0,
+  "bottomRight": 20.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiButton_211" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="7" data-tchmi-left-unit="px" data-tchmi-text="Voltar" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="75" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width="80" data-tchmi-background-image-height="80" data-tchmi-zindex="3" data-tchmi-text-font-size="20">
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiButton_211.onMouseClick",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var primeiroNome = \"UcFalhaInversor_\";",
+          "var segundoNome = TcHmi.Symbol.readEx('%pp%sNomeDoPai%/pp%');",
+          "",
+          "var nome = primeiroNome + segundoNome;",
+          "",
+          "",
+          "var object1 = document.getElementById(nome+\".Quinto_15\");",
+          "",
+          "object1.animate({",
+          "\t left\t: \"430px\",",
+          "\t top\t: \"6px\"",
+          "},{",
+          "  duration: 500,",
+          "  //iterations: Infinity",
+          "}).onfinish = function(e){",
+          "",
+          "\tvar element = TcHmi.Controls.get(nome+\".Quinto_15\");",
+          "   \telement.setTop(5);",
+          "   \telement.setLeft(430);",
+          "};",
+          "",
+          "",
+          "",
+          "",
+          "var object2 = document.getElementById(nome+\".Quarto_15\");",
+          "",
+          "object2.animate({",
+          "\t left\t: \"5px\",",
+          "\t top\t: \"5px\"",
+          "},{",
+          "  duration: 500,",
+          "  //iterations: Infinity",
+          "}).onfinish = function(e){",
+          "",
+          "\tvar element = TcHmi.Controls.get(nome+\".Quarto_15\");",
+          "   \telement.setTop(5);",
+          "   \telement.setLeft(5);",
+          "};"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 20.0,
+  "topRight": 20.0,
+  "bottomLeft": 20.0,
+  "bottomRight": 20.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiTextblock_1179" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="106" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="No caso do inversor não estar apresentando falhas, mas a mensagem de falha persistir, ativar o ByPassRede com a senha da manutenção e contatar o suporte." data-tchmi-top="35" data-tchmi-top-unit="px" data-tchmi-width="390" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-text-font-size="20" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+</div>
+<div id="TcHmi_Controls_Beckhoff_TcHmiImage_83" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="60" data-tchmi-height-unit="px" data-tchmi-left="110" data-tchmi-left-unit="px" data-tchmi-src="Images/Troubleshooting/InversorOffline/ByPassRede.PNG" data-tchmi-top="150" data-tchmi-top-unit="px" data-tchmi-width="161" data-tchmi-width-unit="px">
+</div>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="Sexto_15" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="240" data-tchmi-height-unit="px" data-tchmi-left="430" data-tchmi-left-unit="px" data-tchmi-top="1400" data-tchmi-top-unit="px" data-tchmi-width="390" data-tchmi-width-unit="px" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="FechaX_6" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-text="X" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="30" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width="80" data-tchmi-background-image-height="80" data-tchmi-zindex="5" data-tchmi-text-font-size="20" data-tchmi-right="10">
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiButton_136.onMouseClick",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var primeiroNome = \"UcFalhaEmergencia_\";",
+          "var segundoNome = TcHmi.Symbol.readEx('%pp%sNomeDoPai%/pp%');",
+          "",
+          "var nome = primeiroNome + segundoNome;",
+          "",
+          "",
+          "var object1 = document.getElementById(nome+\".Segundo_10\");"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  },
+  {
+    "event": "FechaX_6.onMouseClick",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var primeiroNome = \"UcFalhaInversor_\";",
+          "var segundoNome = TcHmi.Symbol.readEx('%pp%sNomeDoPai%/pp%');",
+          "",
+          "var nome = primeiroNome + segundoNome;",
+          "",
+          "$('#'+nome).slideUp('slow');",
+          "",
+          "// Destroi se estava instanciado",
+          "var object = TcHmi.Controls.get(nome);",
+          "var father_object = TcHmi.Controls.get(segundoNome);",
+          "",
+          "if(object !== undefined)",
+          "{",
+          "\tfather_object.removeChild(object);",
+          "\tobject.destroy();\t",
+          "}"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 20.0,
+  "topRight": 20.0,
+  "bottomLeft": 20.0,
+  "bottomRight": 20.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="Setimo_15" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="240" data-tchmi-height-unit="px" data-tchmi-left="430" data-tchmi-left-unit="px" data-tchmi-top="1690" data-tchmi-top-unit="px" data-tchmi-width="390" data-tchmi-width-unit="px" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="Oitavo_15" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="240" data-tchmi-height-unit="px" data-tchmi-left="430" data-tchmi-left-unit="px" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width="390" data-tchmi-width-unit="px" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiButton_216" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="7" data-tchmi-left-unit="px" data-tchmi-text="Voltar" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="75" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width="80" data-tchmi-background-image-height="80" data-tchmi-zindex="3" data-tchmi-text-font-size="20">
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiButton_216.onMouseClick",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var primeiroNome = \"UcFalhaInversor_\";",
+          "var segundoNome = TcHmi.Symbol.readEx('%pp%sNomeDoPai%/pp%');",
+          "",
+          "var nome = primeiroNome + segundoNome;",
+          "",
+          "",
+          "var object1 = document.getElementById(nome+\".Oitavo_15\");",
+          "",
+          "object1.animate({",
+          "\t left\t: \"430px\",",
+          "\t top\t: \"6px\"",
+          "},{",
+          "  duration: 500,",
+          "  //iterations: Infinity",
+          "}).onfinish = function(e){",
+          "",
+          "\tvar element = TcHmi.Controls.get(nome+\".Oitavo_15\");",
+          "   \telement.setTop(5);",
+          "   \telement.setLeft(430);",
+          "};",
+          "",
+          "",
+          "",
+          "",
+          "var object2 = document.getElementById(nome+\".Quinto_15\");",
+          "",
+          "object2.animate({",
+          "\t left\t: \"5px\",",
+          "\t top\t: \"5px\"",
+          "},{",
+          "  duration: 500,",
+          "  //iterations: Infinity",
+          "}).onfinish = function(e){",
+          "",
+          "\tvar element = TcHmi.Controls.get(nome+\".Quinto_15\");",
+          "   \telement.setTop(5);",
+          "   \telement.setLeft(5);",
+          "};"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 20.0,
+  "topRight": 20.0,
+  "bottomLeft": 20.0,
+  "bottomRight": 20.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiButton_217" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="308" data-tchmi-left-unit="px" data-tchmi-text="Finalizar" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="75" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width="80" data-tchmi-background-image-height="80" data-tchmi-zindex="3" data-tchmi-text-font-size="20">
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiButton_217.onMouseClick",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var primeiroNome = \"UcFalhaInversor_\";",
+          "var segundoNome = TcHmi.Symbol.readEx('%pp%sNomeDoPai%/pp%');",
+          "",
+          "var nome = primeiroNome + segundoNome;",
+          "",
+          "$('#'+nome).slideUp('slow');",
+          "",
+          "// Destroi se estava instanciado",
+          "var object = TcHmi.Controls.get(nome);",
+          "var father_object = TcHmi.Controls.get(segundoNome);",
+          "",
+          "if(object !== undefined)",
+          "{",
+          "\tfather_object.removeChild(object);",
+          "\tobject.destroy();\t",
+          "}"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 20.0,
+  "topRight": 20.0,
+  "bottomLeft": 20.0,
+  "bottomRight": 20.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiTextblock_1185" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="59" data-tchmi-height-unit="px" data-tchmi-left="18" data-tchmi-left-unit="px" data-tchmi-text="Está tendo dificuldades? Entre em contato com o Suporte Teknike." data-tchmi-top="45" data-tchmi-top-unit="px" data-tchmi-width="343" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="20" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 0,
+  "right": 0,
+  "top": 0,
+  "bottom": 0,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+
+
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(255, 255, 255, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "left": 5,
+  "right": 5,
+  "top": 0,
+  "bottom": 0,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmi_Controls_Beckhoff_TcHmiImage_77" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="80" data-tchmi-height-unit="px" data-tchmi-left="145" data-tchmi-left-unit="px" data-tchmi-src="Images/Diversos/LogoTeknike.png" data-tchmi-top="121" data-tchmi-top-unit="px" data-tchmi-width="80" data-tchmi-width-unit="px">
+</div>
+</div>
+</div>

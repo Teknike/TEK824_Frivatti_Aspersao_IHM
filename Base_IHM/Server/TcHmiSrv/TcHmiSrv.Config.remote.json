@@ -1,0 +1,13 @@
+{
+    "CERTIFICATEEXPIRATION": "P14000D",
+    "REQUIREAUTH": 2,
+    "VIRTUALDIRECTORIES": {
+        "/": "www",
+        "/BlibliotecaGraficos": "..\\..\\BlibliotecaGraficos",
+        "/FrameworkAutocomplete": "..\\..\\Packages\\FrameworkAutocomplete.1.0.7\\runtimes\\native1.12-tchmi",
+        "/FrameworkBotoes": "..\\..\\Packages\\FrameworkBotoes.1.0.4\\runtimes\\native1.12-tchmi",
+        "/FrameworkEsteira": "..\\..\\Packages\\FrameworkEsteira.1.1.0\\runtimes\\native1.12-tchmi",
+        "/FrameworkSensorMaquina": "..\\..\\Packages\\FrameworkSensorMaquina.1.2.2\\runtimes\\native1.12-tchmi",
+        "/SensorBrasilia": "..\\..\\Packages\\SensorBrasilia.1.0.4\\runtimes\\native1.12-tchmi"
+    }
+}

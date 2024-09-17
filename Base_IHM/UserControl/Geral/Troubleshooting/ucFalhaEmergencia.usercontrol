@@ -1,0 +1,1462 @@
+<div id="ucFalhaEmergencia" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControl" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="400" data-tchmi-height="250" data-tchmi-width-unit="px" data-tchmi-height-unit="px" data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500" data-tchmi-opacity="1" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(112, 117, 134, 1)"
+}
+</script>
+<div id="Primeiro_10" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="240" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="px" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width="390" data-tchmi-width-unit="px" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+<div id="TcHmiTextblock_1098" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="27" data-tchmi-height-unit="px" data-tchmi-left="9" data-tchmi-left-unit="px" data-tchmi-text="EMERGÊNCIA ATUADA!" data-tchmi-top="17" data-tchmi-top-unit="px" data-tchmi-width="344" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-text-font-size="20">
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(255, 0, 0, 1)"
+}
+</script>
+</div>
+<div id="TcHmiButton_125" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="308" data-tchmi-left-unit="px" data-tchmi-text="Próximo" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="75" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width="80" data-tchmi-background-image-height="80" data-tchmi-zindex="3" data-tchmi-text-font-size="20">
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiButton_125.onMouseClick",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var primeiroNome = \"UcFalhaEmergencia_\";",
+          "var segundoNome = TcHmi.Symbol.readEx('%pp%sNomeDoPai%/pp%');",
+          "",
+          "var nome = primeiroNome + segundoNome;",
+          "",
+          "",
+          "var object1 = document.getElementById(nome+\".Primeiro_10\");",
+          "",
+          "object1.animate({",
+          "\t left\t: \"-430px\",",
+          "\t top\t: \"5px\"",
+          "},{",
+          "  duration: 500,",
+          "  //iterations: Infinity",
+          "}).onfinish = function(e){",
+          "",
+          "\tvar element = TcHmi.Controls.get(nome+\".Primeiro_10\");",
+          "   \telement.setTop(5);",
+          "   \telement.setLeft(-430);",
+          "};",
+          "",
+          "",
+          "",
+          "",
+          "var object2 = document.getElementById(nome+\".Segundo_10\");",
+          "",
+          "object2.animate({",
+          "\t left\t: \"5px\",",
+          "\t top\t: \"5px\"",
+          "},{",
+          "  duration: 500,",
+          "  //iterations: Infinity",
+          "}).onfinish = function(e){",
+          "",
+          "\tvar element = TcHmi.Controls.get(nome+\".Segundo_10\");",
+          "   \telement.setTop(5);",
+          "   \telement.setLeft(5);",
+          "};"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 20.0,
+  "topRight": 20.0,
+  "bottomLeft": 20.0,
+  "bottomRight": 20.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+</div>
+<div id="TcHmi_Controls_Beckhoff_TcHmiImage" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="80" data-tchmi-left-unit="px" data-tchmi-src="Images/Troubleshooting/Emergencia/Emergencia.PNG" data-tchmi-top="126" data-tchmi-top-unit="px" data-tchmi-width="222" data-tchmi-width-unit="px" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+</div>
+<div id="TcHmiTextblock_1104" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="62" data-tchmi-height-unit="px" data-tchmi-left="9" data-tchmi-left-unit="px" data-tchmi-text="A descrição do alerta informa a TAG relativa a emergência que está atuada." data-tchmi-top="52" data-tchmi-top-unit="px" data-tchmi-width="344" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="20" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+</div>
+</div>
+
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 1,
+  "right": 1,
+  "top": 1,
+  "bottom": 1,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+{
+  "left": "Solid",
+  "right": "Solid",
+  "top": "Solid",
+  "bottom": "Solid"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 10.0,
+  "topRight": 10.0,
+  "bottomLeft": 10.0,
+  "bottomRight": 10.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="Segundo_10" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="240" data-tchmi-height-unit="px" data-tchmi-left="414" data-tchmi-left-unit="px" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width="390" data-tchmi-width-unit="px" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiButton_126" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="308" data-tchmi-left-unit="px" data-tchmi-text="Próximo" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="75" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width="80" data-tchmi-background-image-height="80" data-tchmi-zindex="3" data-tchmi-text-font-size="20">
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiButton_126.onMouseClick",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var primeiroNome = \"UcFalhaEmergencia_\";",
+          "var segundoNome = TcHmi.Symbol.readEx('%pp%sNomeDoPai%/pp%');",
+          "",
+          "var nome = primeiroNome + segundoNome;",
+          "",
+          "",
+          "var object1 = document.getElementById(nome+\".Segundo_10\");",
+          "",
+          "object1.animate({",
+          "\t left\t: \"-430px\",",
+          "\t top\t: \"5px\"",
+          "},{",
+          "  duration: 500,",
+          "  //iterations: Infinity",
+          "}).onfinish = function(e){",
+          "",
+          "\tvar element = TcHmi.Controls.get(nome+\".Segundo_10\");",
+          "   \telement.setTop(5);",
+          "   \telement.setLeft(-430);",
+          "};",
+          "",
+          "",
+          "",
+          "",
+          "var object2 = document.getElementById(nome+\".Terceiro_10\");",
+          "",
+          "object2.animate({",
+          "\t left\t: \"5px\",",
+          "\t top\t: \"5px\"",
+          "},{",
+          "  duration: 500,",
+          "  //iterations: Infinity",
+          "}).onfinish = function(e){",
+          "",
+          "\tvar element = TcHmi.Controls.get(nome+\".Terceiro_10\");",
+          "   \telement.setTop(5);",
+          "   \telement.setLeft(5);",
+          "};"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 20.0,
+  "topRight": 20.0,
+  "bottomLeft": 20.0,
+  "bottomRight": 20.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiButton_127" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="7" data-tchmi-left-unit="px" data-tchmi-text="Voltar" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="75" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width="80" data-tchmi-background-image-height="80" data-tchmi-zindex="3" data-tchmi-text-font-size="20">
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiButton_127.onMouseClick",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var primeiroNome = \"UcFalhaEmergencia_\";",
+          "var segundoNome = TcHmi.Symbol.readEx('%pp%sNomeDoPai%/pp%');",
+          "",
+          "var nome = primeiroNome + segundoNome;",
+          "",
+          "",
+          "var object1 = document.getElementById(nome+\".Segundo_10\");",
+          "",
+          "object1.animate({",
+          "\t left\t: \"430px\",",
+          "\t top\t: \"5px\"",
+          "},{",
+          "  duration: 500,",
+          "  //iterations: Infinity",
+          "}).onfinish = function(e){",
+          "",
+          "\tvar element = TcHmi.Controls.get(nome+\".Segundo_10\");",
+          "   \telement.setTop(5);",
+          "   \telement.setLeft(430);",
+          "};",
+          "",
+          "",
+          "",
+          "",
+          "var object2 = document.getElementById(nome+\".Primeiro_10\");",
+          "",
+          "object2.animate({",
+          "\t left\t: \"5px\",",
+          "\t top\t: \"5px\"",
+          "},{",
+          "  duration: 500,",
+          "  //iterations: Infinity",
+          "}).onfinish = function(e){",
+          "",
+          "\tvar element = TcHmi.Controls.get(nome+\".Primeiro_10\");",
+          "   \telement.setTop(5);",
+          "   \telement.setLeft(5);",
+          "};"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 20.0,
+  "topRight": 20.0,
+  "bottomLeft": 20.0,
+  "bottomRight": 20.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+</div>
+<div id="TcHmiTextblock_1105" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="104" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="Primeiro Passo: Verificar qual emergência desabilita a partida e quais estão OK." data-tchmi-top="18" data-tchmi-top-unit="px" data-tchmi-width="302" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="20">
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 1,
+  "right": 1,
+  "top": 1,
+  "bottom": 1,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+{
+  "left": "Solid",
+  "right": "Solid",
+  "top": "Solid",
+  "bottom": "Solid"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "left": 5,
+  "right": 5,
+  "top": 0,
+  "bottom": 0,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+</div>
+<div id="TcHmi_Controls_Beckhoff_TcHmiImage_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="114" data-tchmi-height-unit="px" data-tchmi-left="150" data-tchmi-left-unit="px" data-tchmi-src="Images/Troubleshooting/Emergencia/EscolheEmergencia.png" data-tchmi-top="85" data-tchmi-top-unit="px" data-tchmi-width="224" data-tchmi-width-unit="px" data-tchmi-zindex="6" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+</div>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="Terceiro_10" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="240" data-tchmi-height-unit="px" data-tchmi-left="413" data-tchmi-left-unit="px" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width="390" data-tchmi-width-unit="px" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiButton_128" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="308" data-tchmi-left-unit="px" data-tchmi-text="Próximo" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="75" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width="80" data-tchmi-background-image-height="80" data-tchmi-zindex="3" data-tchmi-text-font-size="20">
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiButton_128.onMouseClick",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var primeiroNome = \"UcFalhaEmergencia_\";",
+          "var segundoNome = TcHmi.Symbol.readEx('%pp%sNomeDoPai%/pp%');",
+          "",
+          "var nome = primeiroNome + segundoNome;",
+          "",
+          "",
+          "var object1 = document.getElementById(nome+\".Terceiro_10\");",
+          "",
+          "object1.animate({",
+          "\t left\t: \"-430px\",",
+          "\t top\t: \"5px\"",
+          "},{",
+          "  duration: 500,",
+          "  //iterations: Infinity",
+          "}).onfinish = function(e){",
+          "",
+          "\tvar element = TcHmi.Controls.get(nome+\".Terceiro_10\");",
+          "   \telement.setTop(5);",
+          "   \telement.setLeft(-430);",
+          "};",
+          "",
+          "",
+          "",
+          "",
+          "var object2 = document.getElementById(nome+\".Quarto_10\");",
+          "",
+          "object2.animate({",
+          "\t left\t: \"5px\",",
+          "\t top\t: \"5px\"",
+          "},{",
+          "  duration: 500,",
+          "  //iterations: Infinity",
+          "}).onfinish = function(e){",
+          "",
+          "\tvar element = TcHmi.Controls.get(nome+\".Quarto_10\");",
+          "   \telement.setTop(5);",
+          "   \telement.setLeft(5);",
+          "};"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 20.0,
+  "topRight": 20.0,
+  "bottomLeft": 20.0,
+  "bottomRight": 20.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiButton_129" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="7" data-tchmi-left-unit="px" data-tchmi-text="Voltar" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="75" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width="80" data-tchmi-background-image-height="80" data-tchmi-zindex="3" data-tchmi-text-font-size="20">
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiButton_129.onMouseClick",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var primeiroNome = \"UcFalhaEmergencia_\";",
+          "var segundoNome = TcHmi.Symbol.readEx('%pp%sNomeDoPai%/pp%');",
+          "",
+          "var nome = primeiroNome + segundoNome;",
+          "",
+          "",
+          "var object1 = document.getElementById(nome+\".Terceiro_10\");",
+          "",
+          "object1.animate({",
+          "\t left\t: \"430px\",",
+          "\t top\t: \"6px\"",
+          "},{",
+          "  duration: 500,",
+          "  //iterations: Infinity",
+          "}).onfinish = function(e){",
+          "",
+          "\tvar element = TcHmi.Controls.get(nome+\".Terceiro_10\");",
+          "   \telement.setTop(5);",
+          "   \telement.setLeft(430);",
+          "};",
+          "",
+          "",
+          "",
+          "",
+          "var object2 = document.getElementById(nome+\".Segundo_10\");",
+          "",
+          "object2.animate({",
+          "\t left\t: \"5px\",",
+          "\t top\t: \"5px\"",
+          "},{",
+          "  duration: 500,",
+          "  //iterations: Infinity",
+          "}).onfinish = function(e){",
+          "",
+          "\tvar element = TcHmi.Controls.get(nome+\".Segundo_10\");",
+          "   \telement.setTop(5);",
+          "   \telement.setLeft(5);",
+          "};"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 20.0,
+  "topRight": 20.0,
+  "bottomLeft": 20.0,
+  "bottomRight": 20.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiTextblock_1108" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="104" data-tchmi-height-unit="px" data-tchmi-left="6" data-tchmi-left-unit="px" data-tchmi-text="Segundo Passo: \nApós identificar a TAG da emergência, verificar se a mesma não está pressionada. Pressionar o reset." data-tchmi-top="15" data-tchmi-top-unit="px" data-tchmi-width="376" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="20" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 0,
+  "right": 0,
+  "top": 0,
+  "bottom": 0,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+
+
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "left": 5,
+  "right": 5,
+  "top": 0,
+  "bottom": 0,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+</div>
+<div id="TcHmi_Controls_Beckhoff_TcHmiImage_5" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="80" data-tchmi-height-unit="px" data-tchmi-left="258" data-tchmi-left-unit="px" data-tchmi-src="Images/Troubleshooting/Emergencia/EmergenciaBotao.png" data-tchmi-top="106" data-tchmi-top-unit="px" data-tchmi-width="80" data-tchmi-width-unit="px">
+</div>
+<div id="TcHmi_Controls_Beckhoff_TcHmiImage_6" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="59" data-tchmi-height-unit="px" data-tchmi-left="82" data-tchmi-left-unit="px" data-tchmi-src="Images/Troubleshooting/Emergencia/ApertandoReset.png" data-tchmi-top="116" data-tchmi-top-unit="px" data-tchmi-width="101" data-tchmi-width-unit="px">
+</div>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="Quarto_10" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="240" data-tchmi-height-unit="px" data-tchmi-left="416" data-tchmi-left-unit="px" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width="390" data-tchmi-width-unit="px" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiButton_130" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="308" data-tchmi-left-unit="px" data-tchmi-text="Próximo" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="75" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width="80" data-tchmi-background-image-height="80" data-tchmi-zindex="3" data-tchmi-text-font-size="20">
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiButton_130.onMouseClick",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var primeiroNome = \"UcFalhaEmergencia_\";",
+          "var segundoNome = TcHmi.Symbol.readEx('%pp%sNomeDoPai%/pp%');",
+          "",
+          "var nome = primeiroNome + segundoNome;",
+          "",
+          "",
+          "var object1 = document.getElementById(nome+\".Quarto_10\");",
+          "",
+          "object1.animate({",
+          "\t left\t: \"-430px\",",
+          "\t top\t: \"5px\"",
+          "},{",
+          "  duration: 500,",
+          "  //iterations: Infinity",
+          "}).onfinish = function(e){",
+          "",
+          "\tvar element = TcHmi.Controls.get(nome+\".Quarto_10\");",
+          "   \telement.setTop(5);",
+          "   \telement.setLeft(-430);",
+          "};",
+          "",
+          "",
+          "",
+          "",
+          "var object2 = document.getElementById(nome+\".Quinto_10\");",
+          "",
+          "object2.animate({",
+          "\t left\t: \"5px\",",
+          "\t top\t: \"5px\"",
+          "},{",
+          "  duration: 500,",
+          "  //iterations: Infinity",
+          "}).onfinish = function(e){",
+          "",
+          "\tvar element = TcHmi.Controls.get(nome+\".Quinto_10\");",
+          "   \telement.setTop(5);",
+          "   \telement.setLeft(5);",
+          "};"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 20.0,
+  "topRight": 20.0,
+  "bottomLeft": 20.0,
+  "bottomRight": 20.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiButton_131" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="7" data-tchmi-left-unit="px" data-tchmi-text="Voltar" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="75" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width="80" data-tchmi-background-image-height="80" data-tchmi-zindex="3" data-tchmi-text-font-size="20">
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiButton_131.onMouseClick",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var primeiroNome = \"UcFalhaEmergencia_\";",
+          "var segundoNome = TcHmi.Symbol.readEx('%pp%sNomeDoPai%/pp%');",
+          "",
+          "var nome = primeiroNome + segundoNome;",
+          "",
+          "",
+          "var object1 = document.getElementById(nome+\".Quarto_10\");",
+          "",
+          "object1.animate({",
+          "\t left\t: \"430px\",",
+          "\t top\t: \"6px\"",
+          "},{",
+          "  duration: 500,",
+          "  //iterations: Infinity",
+          "}).onfinish = function(e){",
+          "",
+          "\tvar element = TcHmi.Controls.get(nome+\".Quarto_10\");",
+          "   \telement.setTop(5);",
+          "   \telement.setLeft(430);",
+          "};",
+          "",
+          "",
+          "",
+          "",
+          "var object2 = document.getElementById(nome+\".Terceiro_10\");",
+          "",
+          "object2.animate({",
+          "\t left\t: \"5px\",",
+          "\t top\t: \"5px\"",
+          "},{",
+          "  duration: 500,",
+          "  //iterations: Infinity",
+          "}).onfinish = function(e){",
+          "",
+          "\tvar element = TcHmi.Controls.get(nome+\".Terceiro_10\");",
+          "   \telement.setTop(5);",
+          "   \telement.setLeft(5);",
+          "};"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 20.0,
+  "topRight": 20.0,
+  "bottomLeft": 20.0,
+  "bottomRight": 20.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+</div>
+<div id="TcHmiTextblock_1106" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="200" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="px" data-tchmi-text="Terceiro Passo: Verificar se o inversor está em STO (Safe Torque Off).\n\nCaso ele não esteja, configurar a emergência no passo anterior.\nCaso ele esteja, seguir para o próximo passo." data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width="263" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="18" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+</div>
+<div id="TcHmiLine_76" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLine" data-tchmi-height="8" data-tchmi-height-unit="px" data-tchmi-left="127" data-tchmi-left-unit="px" data-tchmi-top="54" data-tchmi-top-unit="px" data-tchmi-width="184" data-tchmi-width-unit="px" data-tchmi-x2="184" data-tchmi-y2="0" data-tchmi-stroke-thickness="3">
+<script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
+{
+  "color": "rgba(255, 0, 0, 1)"
+}
+</script>
+</div>
+<div id="TcHmiLine_77" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLine" data-tchmi-height="28" data-tchmi-height-unit="px" data-tchmi-left="311" data-tchmi-left-unit="px" data-tchmi-top="54" data-tchmi-top-unit="px" data-tchmi-width="10" data-tchmi-width-unit="px" data-tchmi-x2="0" data-tchmi-y2="0" data-tchmi-stroke-thickness="3" data-tchmi-x1="0" data-tchmi-y1="28" data-tchmi-zindex="9">
+<script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
+{
+  "color": "rgba(255, 0, 0, 1)"
+}
+</script>
+</div>
+<div id="TcHmi_Controls_Beckhoff_TcHmiImage_2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="130" data-tchmi-height-unit="px" data-tchmi-left="277" data-tchmi-left-unit="px" data-tchmi-src="Images/Troubleshooting/Emergencia/Delta.png" data-tchmi-top="68" data-tchmi-top-unit="px" data-tchmi-width="76" data-tchmi-width-unit="px" data-tchmi-zindex="7">
+</div>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="Quinto_10" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="240" data-tchmi-height-unit="px" data-tchmi-left="416" data-tchmi-left-unit="px" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width="390" data-tchmi-width-unit="px" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiButton_132" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="308" data-tchmi-left-unit="px" data-tchmi-text="Próximo" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="75" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width="80" data-tchmi-background-image-height="80" data-tchmi-zindex="3" data-tchmi-text-font-size="20">
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiButton_132.onMouseClick",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var primeiroNome = \"UcFalhaEmergencia_\";",
+          "var segundoNome = TcHmi.Symbol.readEx('%pp%sNomeDoPai%/pp%');",
+          "",
+          "var nome = primeiroNome + segundoNome;",
+          "",
+          "",
+          "var object1 = document.getElementById(nome+\".Quinto_10\");",
+          "",
+          "object1.animate({",
+          "\t left\t: \"-430px\",",
+          "\t top\t: \"5px\"",
+          "},{",
+          "  duration: 500,",
+          "  //iterations: Infinity",
+          "}).onfinish = function(e){",
+          "",
+          "\tvar element = TcHmi.Controls.get(nome+\".Quinto_10\");",
+          "   \telement.setTop(5);",
+          "   \telement.setLeft(-430);",
+          "};",
+          "",
+          "",
+          "",
+          "",
+          "var object2 = document.getElementById(nome+\".Sexto_10\");",
+          "",
+          "object2.animate({",
+          "\t left\t: \"5px\",",
+          "\t top\t: \"5px\"",
+          "},{",
+          "  duration: 500,",
+          "  //iterations: Infinity",
+          "}).onfinish = function(e){",
+          "",
+          "\tvar element = TcHmi.Controls.get(nome+\".Sexto_10\");",
+          "   \telement.setTop(5);",
+          "   \telement.setLeft(5);",
+          "};"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 20.0,
+  "topRight": 20.0,
+  "bottomLeft": 20.0,
+  "bottomRight": 20.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiButton_133" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="7" data-tchmi-left-unit="px" data-tchmi-text="Voltar" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="75" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width="80" data-tchmi-background-image-height="80" data-tchmi-zindex="3" data-tchmi-text-font-size="20">
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiButton_133.onMouseClick",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var primeiroNome = \"UcFalhaEmergencia_\";",
+          "var segundoNome = TcHmi.Symbol.readEx('%pp%sNomeDoPai%/pp%');",
+          "",
+          "var nome = primeiroNome + segundoNome;",
+          "",
+          "",
+          "var object1 = document.getElementById(nome+\".Quinto_10\");",
+          "",
+          "object1.animate({",
+          "\t left\t: \"430px\",",
+          "\t top\t: \"6px\"",
+          "},{",
+          "  duration: 500,",
+          "  //iterations: Infinity",
+          "}).onfinish = function(e){",
+          "",
+          "\tvar element = TcHmi.Controls.get(nome+\".Quinto_10\");",
+          "   \telement.setTop(5);",
+          "   \telement.setLeft(430);",
+          "};",
+          "",
+          "",
+          "",
+          "",
+          "var object2 = document.getElementById(nome+\".Quarto_10\");",
+          "",
+          "object2.animate({",
+          "\t left\t: \"5px\",",
+          "\t top\t: \"5px\"",
+          "},{",
+          "  duration: 500,",
+          "  //iterations: Infinity",
+          "}).onfinish = function(e){",
+          "",
+          "\tvar element = TcHmi.Controls.get(nome+\".Quarto_10\");",
+          "   \telement.setTop(5);",
+          "   \telement.setLeft(5);",
+          "};"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 20.0,
+  "topRight": 20.0,
+  "bottomLeft": 20.0,
+  "bottomRight": 20.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiTextblock_1101" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="192" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="Quarto Passo: Verificar leds do cartão de entrada(projeto elétrico) Safety. Os dois canais devem estar vermelhos." data-tchmi-top="1" data-tchmi-top-unit="px" data-tchmi-width="165" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-text-font-size="20">
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+</div>
+<div id="TcHmi_Controls_Beckhoff_TcHmiImage_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="76" data-tchmi-height-unit="px" data-tchmi-left="172" data-tchmi-left-unit="px" data-tchmi-src="Images/Troubleshooting/Emergencia/EntradaSafety.PNG" data-tchmi-top="121" data-tchmi-top-unit="px" data-tchmi-width="211" data-tchmi-width-unit="px">
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiTextblock_1107" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="110" data-tchmi-height-unit="px" data-tchmi-left="172" data-tchmi-left-unit="px" data-tchmi-text="CPU de Safety: A40\nCanal 1: Entrada X6.1\nCanal 2: Entrada X6.2\nEmergência: BEP61" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width="207" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-text-font-size="20" data-tchmi-zindex="10">
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+</div>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="Sexto_10" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="240" data-tchmi-height-unit="px" data-tchmi-left="416" data-tchmi-left-unit="px" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width="390" data-tchmi-width-unit="px" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiButton_135" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="7" data-tchmi-left-unit="px" data-tchmi-text="Voltar" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="75" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width="80" data-tchmi-background-image-height="80" data-tchmi-zindex="3" data-tchmi-text-font-size="20">
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiButton_135.onMouseClick",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var primeiroNome = \"UcFalhaEmergencia_\";",
+          "var segundoNome = TcHmi.Symbol.readEx('%pp%sNomeDoPai%/pp%');",
+          "",
+          "var nome = primeiroNome + segundoNome;",
+          "",
+          "",
+          "var object1 = document.getElementById(nome+\".Sexto_10\");",
+          "",
+          "object1.animate({",
+          "\t left\t: \"430px\",",
+          "\t top\t: \"6px\"",
+          "},{",
+          "  duration: 500,",
+          "  //iterations: Infinity",
+          "}).onfinish = function(e){",
+          "",
+          "\tvar element = TcHmi.Controls.get(nome+\".Sexto_10\");",
+          "   \telement.setTop(5);",
+          "   \telement.setLeft(430);",
+          "};",
+          "",
+          "",
+          "",
+          "",
+          "var object2 = document.getElementById(nome+\".Quinto_10\");",
+          "",
+          "object2.animate({",
+          "\t left\t: \"5px\",",
+          "\t top\t: \"5px\"",
+          "},{",
+          "  duration: 500,",
+          "  //iterations: Infinity",
+          "}).onfinish = function(e){",
+          "",
+          "\tvar element = TcHmi.Controls.get(nome+\".Quinto_10\");",
+          "   \telement.setTop(5);",
+          "   \telement.setLeft(5);",
+          "};"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 20.0,
+  "topRight": 20.0,
+  "bottomLeft": 20.0,
+  "bottomRight": 20.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiTextblock_1102" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="85" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="px" data-tchmi-text="Quinto Passo: Verificar a ligação nos bornes e na emergência" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width="348" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-text-font-size="20">
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+{
+  "left": "Dashed",
+  "right": "Dashed",
+  "top": "Dashed",
+  "bottom": "Dashed"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 1,
+  "right": 1,
+  "top": 1,
+  "bottom": 1,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+</div>
+<div id="TcHmi_Controls_Beckhoff_TcHmiImage_4" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="122" data-tchmi-height-unit="px" data-tchmi-left="39" data-tchmi-left-unit="px" data-tchmi-src="Images/Troubleshooting/Emergencia/Bornes.PNG" data-tchmi-top="71" data-tchmi-top-unit="px" data-tchmi-width="276" data-tchmi-width-unit="px" data-tchmi-zindex="11">
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiButton_139" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="308" data-tchmi-left-unit="px" data-tchmi-text="Próximo" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="75" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width="80" data-tchmi-background-image-height="80" data-tchmi-zindex="3" data-tchmi-text-font-size="20">
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiButton_139.onMouseClick",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var primeiroNome = \"UcFalhaEmergencia_\";",
+          "var segundoNome = TcHmi.Symbol.readEx('%pp%sNomeDoPai%/pp%');",
+          "",
+          "var nome = primeiroNome + segundoNome;",
+          "",
+          "",
+          "var object1 = document.getElementById(nome+\".Sexto_10\");",
+          "",
+          "object1.animate({",
+          "\t left\t: \"-430px\",",
+          "\t top\t: \"5px\"",
+          "},{",
+          "  duration: 500,",
+          "  //iterations: Infinity",
+          "}).onfinish = function(e){",
+          "",
+          "\tvar element = TcHmi.Controls.get(nome+\".Sexto_10\");",
+          "   \telement.setTop(5);",
+          "   \telement.setLeft(-430);",
+          "};",
+          "",
+          "",
+          "",
+          "",
+          "var object2 = document.getElementById(nome+\".Setimo_10\");",
+          "",
+          "object2.animate({",
+          "\t left\t: \"5px\",",
+          "\t top\t: \"5px\"",
+          "},{",
+          "  duration: 500,",
+          "  //iterations: Infinity",
+          "}).onfinish = function(e){",
+          "",
+          "\tvar element = TcHmi.Controls.get(nome+\".Setimo_10\");",
+          "   \telement.setTop(5);",
+          "   \telement.setLeft(5);",
+          "};"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 20.0,
+  "topRight": 20.0,
+  "bottomLeft": 20.0,
+  "bottomRight": 20.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+</div>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="FechaX_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-text="X" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="30" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width="80" data-tchmi-background-image-height="80" data-tchmi-zindex="4" data-tchmi-text-font-size="20" data-tchmi-right="10">
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiButton_136.onMouseClick",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var primeiroNome = \"UcFalhaEmergencia_\";",
+          "var segundoNome = TcHmi.Symbol.readEx('%pp%sNomeDoPai%/pp%');",
+          "",
+          "var nome = primeiroNome + segundoNome;",
+          "",
+          "",
+          "var object1 = document.getElementById(nome+\".Segundo_10\");"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  },
+  {
+    "event": "FechaX_1.onMouseClick",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var primeiroNome = \"UcFalhaEmergencia_\";",
+          "var segundoNome = TcHmi.Symbol.readEx('%pp%sNomeDoPai%/pp%');",
+          "",
+          "var nome = primeiroNome + segundoNome;",
+          "",
+          "$('#'+nome).slideUp('slow');",
+          "",
+          "// Destroi se estava instanciado",
+          "var object = TcHmi.Controls.get(nome);",
+          "var father_object = TcHmi.Controls.get(segundoNome);",
+          "",
+          "if(object !== undefined)",
+          "{",
+          "\tfather_object.removeChild(object);",
+          "\tobject.destroy();\t",
+          "}"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 20.0,
+  "topRight": 20.0,
+  "bottomLeft": 20.0,
+  "bottomRight": 20.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="Setimo_10" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="240" data-tchmi-height-unit="px" data-tchmi-left="416" data-tchmi-left-unit="px" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-width="390" data-tchmi-width-unit="px" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiButton_137" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="7" data-tchmi-left-unit="px" data-tchmi-text="Voltar" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="75" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width="80" data-tchmi-background-image-height="80" data-tchmi-zindex="3" data-tchmi-text-font-size="20">
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiButton_137.onMouseClick",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var primeiroNome = \"UcFalhaEmergencia_\";",
+          "var segundoNome = TcHmi.Symbol.readEx('%pp%sNomeDoPai%/pp%');",
+          "",
+          "var nome = primeiroNome + segundoNome;",
+          "",
+          "",
+          "var object1 = document.getElementById(nome+\".Setimo_10\");",
+          "",
+          "object1.animate({",
+          "\t left\t: \"430px\",",
+          "\t top\t: \"6px\"",
+          "},{",
+          "  duration: 500,",
+          "  //iterations: Infinity",
+          "}).onfinish = function(e){",
+          "",
+          "\tvar element = TcHmi.Controls.get(nome+\".Setimo_10\");",
+          "   \telement.setTop(5);",
+          "   \telement.setLeft(430);",
+          "};",
+          "",
+          "",
+          "",
+          "",
+          "var object2 = document.getElementById(nome+\".Sexto_10\");",
+          "",
+          "object2.animate({",
+          "\t left\t: \"5px\",",
+          "\t top\t: \"5px\"",
+          "},{",
+          "  duration: 500,",
+          "  //iterations: Infinity",
+          "}).onfinish = function(e){",
+          "",
+          "\tvar element = TcHmi.Controls.get(nome+\".Sexto_10\");",
+          "   \telement.setTop(5);",
+          "   \telement.setLeft(5);",
+          "};"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 20.0,
+  "topRight": 20.0,
+  "bottomLeft": 20.0,
+  "bottomRight": 20.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiButton_138" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="308" data-tchmi-left-unit="px" data-tchmi-text="Finalizar" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="75" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width="80" data-tchmi-background-image-height="80" data-tchmi-zindex="3" data-tchmi-text-font-size="20">
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiButton_138.onMouseClick",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var primeiroNome = \"UcFalhaEmergencia_\";",
+          "var segundoNome = TcHmi.Symbol.readEx('%pp%sNomeDoPai%/pp%');",
+          "",
+          "var nome = primeiroNome + segundoNome;",
+          "",
+          "$('#'+nome).slideUp('slow');",
+          "",
+          "// Destroi se estava instanciado",
+          "var object = TcHmi.Controls.get(nome);",
+          "var father_object = TcHmi.Controls.get(segundoNome);",
+          "",
+          "if(object !== undefined)",
+          "{",
+          "\tfather_object.removeChild(object);",
+          "\tobject.destroy();\t",
+          "}"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 20.0,
+  "topRight": 20.0,
+  "bottomLeft": 20.0,
+  "bottomRight": 20.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="TcHmiTextblock_1109" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="59" data-tchmi-height-unit="px" data-tchmi-left="18" data-tchmi-left-unit="px" data-tchmi-text="Está tendo dificuldades? Entre em contato com o Suporte Teknike." data-tchmi-top="45" data-tchmi-top-unit="px" data-tchmi-width="343" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="20" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 0,
+  "right": 0,
+  "top": 0,
+  "bottom": 0,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+
+
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(255, 255, 255, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "left": 5,
+  "right": 5,
+  "top": 0,
+  "bottom": 0,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+</div>
+<div id="TcHmi_Controls_Beckhoff_TcHmiImage_7" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="80" data-tchmi-height-unit="px" data-tchmi-left="145" data-tchmi-left-unit="px" data-tchmi-src="Images/Diversos/LogoTeknike.png" data-tchmi-top="121" data-tchmi-top-unit="px" data-tchmi-width="80" data-tchmi-width-unit="px">
+</div>
+</div>
+</div>

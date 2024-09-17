@@ -1,0 +1,5 @@
+.tchmi-class-TextoVertical {
+    writing-mode:  vertical-rl;
+    text-orientation:   use-glyph-orientation;
+    transform: rotate(180deg);
+}

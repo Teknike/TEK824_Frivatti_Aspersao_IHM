@@ -1,0 +1,558 @@
+{
+    "$schema": "../.hmiframework/Schema/ControlDescription.Schema.json",
+    "apiVersion": 1,
+    "name": "FrameworkGrafico",
+    "namespace": "TcHmi.Controls.BlibliotecaGraficos",
+    "displayName": "FrameworkGrafico",
+    "version": {
+        "full": "1.0.0.0",
+        "major": 1,
+        "minor": 0,
+        "revision": 0,
+        "build": 0
+    },
+    "visible": true,
+    "themeable": "Standard",
+    "base": "TcHmi.Controls.System.TcHmiControl",
+    "description": "This description text will be used as a Tooltip in Visual Studio.",
+    "properties": {
+        "containerControl": false,
+        "geometry": {
+            "width": 150,
+            "height": 150
+        }
+    },
+    "icons": [
+        {
+            "name": "Icons/16x16.png",
+            "width": 16,
+            "height": 16
+        },
+        {
+            "name": "Icons/24x24.png",
+            "width": 24,
+            "height": 24
+        },
+        {
+            "name": "Icons/32x32.png",
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "Icons/64x64.png",
+            "width": 64,
+            "height": 64
+        }
+    ],
+    "template": "Template.html",
+    "dependencyFiles": [
+        {
+            "description": "Gera todos os graficos",
+            "name": "Bliblioteca/chart.js",
+            "type": "JavaScript"
+        },
+        {
+            "description": "Adaptador pra datas pra nova versao",
+            "name": "Bliblioteca/chartjs-adapter-date-fns.bundle.min.js",
+            "type": "JavaScript"
+        },
+        {
+            "description": "Plug-in de zoom",
+            "name": "Bliblioteca/hammer.js",
+            "type": "JavaScript"
+        },
+        {
+            "description": "Plug-in de zoom",
+            "name": "Bliblioteca/chartjs-plugin-zoom.js",
+            "type": "JavaScript"
+        },
+        {
+            "description": "Plug-in de anotação",
+            "name": "Bliblioteca/chartjs-plugin-annotation.js",
+            "type": "JavaScript"
+        },
+        {
+            "description": "Gera paleta de cores",
+            "name": "Bliblioteca/color-scheme.js",
+            "type": "JavaScript"
+        },
+        {
+            "name": "FrameworkGrafico.js",
+            "type": "JavaScript",
+            "description": "Contains all the main logic."
+        },
+        {
+            "name": "Style.css",
+            "type": "Stylesheet",
+            "description": "Theme independent style"
+        }
+    ],
+    "themes": {
+        "Base": {
+            "resources": [
+                {
+                    "name": "Themes/Base/Style.css",
+                    "type": "Stylesheet",
+                    "description": "Theme dependent style"
+                }
+            ]
+        }
+    },
+    "attributes": [
+
+        {
+            "name": "data-tchmi-title",
+            "propertyName": "sTitle",
+            "propertyGetterName": "getTitle",
+            "propertySetterName": "setTitle",
+            "displayName": "Título do gráfico",
+            "visible": true,
+            "themeable": "Standard",
+            "displayPriority": 1,
+            "type": "tchmi:general#/definitions/String",
+            "category": "Parâmetros",
+            "description": "Título do gráfico",
+            "readOnly": false,
+            "bindable": true,
+            "heritable": true,
+            "defaultValue": "Titulo",
+            "defaultValueInternal": "Titulo"
+        },
+        {
+            "name": "data-tchmi-fontetitle",
+            "propertyName": "sFonteTitle",
+            "propertyGetterName": "getFontTitle",
+            "propertySetterName": "setFontTitle",
+            "displayName": "Tamanho da fonte do título do gráfico",
+            "visible": true,
+            "themeable": "Standard",
+            "displayPriority": 2,
+            "type": "tchmi:general#/definitions/String",
+            "category": "Parâmetros",
+            "description": "Tamanho da fonte do título do gráfico",
+            "readOnly": false,
+            "bindable": true,
+            "heritable": true,
+            "defaultValue": 25,
+            "defaultValueInternal": 25
+        },
+
+        {
+            "name": "data-tchmi-subtitle",
+            "propertyName": "sSubtitle",
+            "propertyGetterName": "getSubtitle",
+            "propertySetterName": "setSubtitle",
+            "displayName": "Subtitulo do gráfico",
+            "visible": false,
+            "themeable": "Standard",
+            "displayPriority": 3,
+            "type": "tchmi:general#/definitions/String",
+            "category": "Parâmetros",
+            "description": "Subtitulo do gráfico",
+            "readOnly": false,
+            "bindable": true,
+            "heritable": true,
+            "defaultValue": "Subtitulo",
+            "defaultValueInternal": "Subtitulo"
+        },
+
+        {
+            "name": "data-tchmi-subtitleFontSize",
+            "propertyName": "iSubtitleFontSize",
+            "propertyGetterName": "getSubtitleFontSize",
+            "propertySetterName": "setSubtitleFontSize",
+            "displayName": "Tamanho da fonte do subtitulo do gráfico",
+            "visible": false,
+            "themeable": "Standard",
+            "displayPriority": 4,
+            "type": "tchmi:general#/definitions/INT",
+            "category": "Parâmetros",
+            "description": "Fonte do subtitulo do gráfico",
+            "readOnly": false,
+            "bindable": true,
+            "heritable": true,
+            "defaultValue": 15,
+            "defaultValueInternal": 15
+        },
+
+        {
+            "name": "data-tchmi-prefix",
+            "propertyName": "sPrefix",
+            "propertyGetterName": "getPrefix",
+            "propertySetterName": "setPrfix",
+            "displayName": "Prefixo do eixo Y",
+            "visible": true,
+            "themeable": "Standard",
+            "displayPriority": 5,
+            "type": "tchmi:general#/definitions/String",
+            "category": "Parâmetros",
+            "description": "Prefixo do eixo Y",
+            "readOnly": false,
+            "bindable": true,
+            "heritable": true,
+            "defaultValue": "",
+            "defaultValueInternal": ""
+        },
+        {
+            "name": "data-tchmi-datatype",
+            "propertyName": "eDatatype",
+            "propertyGetterName": "getDatatype",
+            "propertySetterName": "setDatatype",
+            "displayName": "Tipo de gráfico",
+            "visible": true,
+            "themeable": "Standard",
+            "displayPriority": 7,
+            "type": "tchmi:framework#/definitions/TcHmi.Controls.BlibliotecaGraficos.TiposGraficos",
+            "category": "Parâmetros",
+            "description": "Tipo de gráfico",
+            "readOnly": false,
+            "bindable": true,
+            "heritable": true,
+            "defaultValue": "line",
+            "defaultValueInternal": "line"
+        },
+        {
+            "name": "data-tchmi-typeEixoX",
+            "propertyName": "typeEixoX",
+            "propertyGetterName": "gettypeEixoX",
+            "propertySetterName": "settypeEixoX",
+            "displayName": "Tipo de Eixo",
+            "visible": true,
+            "themeable": "Standard",
+            "displayPriority": 7,
+            "type": "tchmi:framework#/definitions/TcHmi.Controls.BlibliotecaGraficos.TiposEixoX",
+            "category": "Parâmetros",
+            "description": "Tipo de Eixo",
+            "readOnly": false,
+            "bindable": true,
+            "heritable": true,
+            "defaultValue": "linear",
+            "defaultValueInternal": "linear"
+        },
+        {
+            "name": "data-tchmi-data",
+            "propertyName": "fData",
+            "propertyGetterName": "getData",
+            "propertySetterName": "setData",
+            "displayName": "Dados",
+            "visible": true,
+            "themeable": "Standard",
+            "displayPriority": 8,
+            "type": "tchmi:general#/definitions/Array",
+            "category": "Dados",
+            "description": "Dados para serem plotados no gráfico",
+            "readOnly": false,
+            "bindable": true,
+            "heritable": true,
+            "defaultValue": [ 65, 59, 80, 81, 56, 55, 40 ],
+            "defaultValueInternal": [ 65, 59, 80, 81, 56, 55, 40 ]
+        },
+        {
+            "name": "data-tchmi-Tensao",
+            "propertyName": "sTensao",
+            "propertyGetterName": "getTensao",
+            "propertySetterName": "setTensao",
+            "displayName": "Tensao",
+            "visible": true,
+            "themeable": "Standard",
+            "displayPriority": 9,
+            "type": "tchmi:general#/definitions/FLOAT",
+            "category": "Parâmetros",
+            "description": "Tensão da linha que liga os pontos, 0 = linha reta",
+            "readOnly": false,
+            "bindable": true,
+            "heritable": true,
+            "defaultValue": 0.2,
+            "defaultValueInternal": 0.2
+        },
+        {
+            "name": "data-tchmi-preenchimento",
+            "propertyName": "sPreenchimento",
+            "propertyGetterName": "getPreenchimento",
+            "propertySetterName": "setPreenchimento",
+            "displayName": "Preenchimento",
+            "visible": true,
+            "themeable": "Standard",
+            "displayPriority": 10,
+            "type": "tchmi:general#/definitions/BOOL",
+            "category": "Parâmetros",
+            "description": "preenchimento do grafico",
+            "readOnly": false,
+            "bindable": true,
+            "heritable": true,
+            "defaultValue": true,
+            "defaultValueInternal": true
+        },
+        {
+            "name": "data-tchmi-CorLinha",
+            "propertyName": "CorLinha",
+            "propertyGetterName": "getCorLinha",
+            "propertySetterName": "setCorLinha",
+            "displayName": "Cor da linha",
+            "visible": true,
+            "themeable": "Standard",
+            "displayPriority": 11,
+            "type": "tchmi:framework#/definitions/Color",
+            "category": "Parâmetros",
+            "description": "Cor das linhas do grafico",
+            "readOnly": false,
+            "bindable": true,
+            "heritable": true,
+            "defaultValue": "rgba(255, 255, 255, 0.75)",
+            "defaultValueInternal": "rgba(255, 255, 255, 0.75)"
+        },
+        {
+            "name": "data-tchmi-CorPonto",
+            "propertyName": "CorPonto",
+            "propertyGetterName": "getCorPonto",
+            "propertySetterName": "setCorPonto",
+            "displayName": "Cor dos pontos",
+            "visible": true,
+            "themeable": "Standard",
+            "displayPriority": 12,
+            "type": "tchmi:framework#/definitions/Color",
+            "category": "Parâmetros",
+            "description": "Cor dos pontos do grafico",
+            "readOnly": false,
+            "bindable": true,
+            "heritable": true,
+            "defaultValue": "rgba(255, 255, 255, 0.75)",
+            "defaultValueInternal": "rgba(255, 255, 255, 0.75)"
+        },
+        {
+            "name": "data-tchmi-Sufixo",
+            "propertyName": "sSufixo",
+            "propertyGetterName": "getSufixo",
+            "propertySetterName": "setSufixo",
+            "displayName": "Sufixo",
+            "visible": true,
+            "themeable": "Standard",
+            "displayPriority": 13,
+            "type": "tchmi:general#/definitions/String",
+            "category": "Parâmetros",
+            "description": "Sufixo da tooltip e do Y",
+            "readOnly": false,
+            "bindable": true,
+            "heritable": true,
+            "defaultValue": "",
+            "defaultValueInternal": ""
+        },
+        {
+            "name": "data-tchmi-CasaDecimais",
+            "propertyName": "CasaDecimais",
+            "propertyGetterName": "getCasaDecimais",
+            "propertySetterName": "setCasaDecimais",
+            "displayName": "Casa Decimais",
+            "visible": true,
+            "themeable": "Standard",
+            "displayPriority": 14,
+            "type": "tchmi:general#/definitions/INT",
+            "category": "Parâmetros",
+            "description": "Casas decimais na tooltip",
+            "readOnly": false,
+            "bindable": true,
+            "heritable": true,
+            "defaultValue": 2,
+            "defaultValueInternal": 2
+        },
+        {
+            "name": "data-tchmi-xLegenda",
+            "propertyName": "xLegenda",
+            "propertyGetterName": "getxLegenda",
+            "propertySetterName": "setxLegenda",
+            "displayName": "habilita legenda",
+            "visible": true,
+            "themeable": "Standard",
+            "displayPriority": 15,
+            "type": "tchmi:general#/definitions/BOOL",
+            "category": "Parâmetros",
+            "description": "Se tem ou não legenda no grafico",
+            "readOnly": false,
+            "bindable": true,
+            "heritable": true,
+            "defaultValue": false,
+            "defaultValueInternal": false
+        },
+        {
+            "name": "data-tchmi-xAtualizaGrafico",
+            "propertyName": "AtualizaGrafico",
+            "propertyGetterName": "getxAtualizaGrafico",
+            "propertySetterName": "setxAtualizaGrafico",
+            "displayName": "Atualizar grafico",
+            "visible": true,
+            "themeable": "Standard",
+            "displayPriority": 16,
+            "type": "tchmi:general#/definitions/BOOL",
+            "category": "Parâmetros",
+            "description": "quando estiver em false ele não vai atualizar o grafico",
+            "readOnly": false,
+            "bindable": true,
+            "heritable": true,
+            "defaultValue": true,
+            "defaultValueInternal": true
+        },
+        {
+            "name": "data-tchmi-xMostraGrid",
+            "propertyName": "MostraGrid",
+            "propertyGetterName": "getxMostraGrid",
+            "propertySetterName": "setxMostraGrid",
+            "displayName": "Mostra Grid",
+            "visible": true,
+            "themeable": "Standard",
+            "displayPriority": 17,
+            "type": "tchmi:general#/definitions/BOOL",
+            "category": "Parâmetros",
+            "description": "Define se vai aparecer as linhas e os labels atras do grafico, melhor desativar para grafico de pizza",
+            "readOnly": false,
+            "bindable": true,
+            "heritable": true,
+            "defaultValue": true,
+            "defaultValueInternal": true
+        },
+        {
+            "name": "data-tchmi-MaximoSugerido",
+            "propertyName": "MaximoSugerido",
+            "propertyGetterName": "getMaximoSugerido",
+            "propertySetterName": "setMaximoSugerido",
+            "displayName": "Maximo sugerido pro grafico",
+            "visible": true,
+            "themeable": "Standard",
+            "displayPriority": 4,
+            "type": "tchmi:general#/definitions/String",
+            "category": "Parâmetros",
+            "description": "",
+            "readOnly": false,
+            "bindable": true,
+            "heritable": true,
+            "defaultValue": 1,
+            "defaultValueInternal": 1
+        },
+        {
+            "name": "data-tchmi-MinimoSugerido",
+            "propertyName": "MinimoSugerido",
+            "propertyGetterName": "getMinimoSugerido",
+            "propertySetterName": "setMinimoSugerido",
+            "displayName": "Minimo sugerido pro grafico",
+            "visible": true,
+            "themeable": "Standard",
+            "displayPriority": 4,
+            "type": "tchmi:general#/definitions/String",
+            "category": "Parâmetros",
+            "description": "",
+            "readOnly": false,
+            "bindable": true,
+            "heritable": true,
+            "defaultValue": 1,
+            "defaultValueInternal": 1
+        },
+        {
+            "bindable": true,
+            "category": "Parâmetros do grafico de pizza/pie ou matriz",
+            "defaultValue": "triade",
+            "defaultValueInternal": "triade",
+            "description": "",
+            "displayName": "Esquema da paleta de cores",
+            "displayPriority": 1,
+            "heritable": true,
+            "name": "data-tchmi-SchemesPaleta",
+            "propertyGetterName": "getSchemesPaleta",
+            "propertyName": "SchemesPaleta",
+            "propertySetterName": "setSchemesPaleta",
+            "readOnly": false,
+            "themeable": "Standard",
+            "type": "tchmi:framework#/definitions/TcHmi.Controls.BlibliotecaGraficos.SchemesPaleta",
+            "visible": true
+        },
+        {
+            "name": "data-tchmi-Variacoespaleta",
+            "propertyName": "Variacoespaleta",
+            "propertyGetterName": "getVariacoespaleta",
+            "propertySetterName": "setVariacoespaleta",
+            "displayName": "Tipo de variação da paleta de cores",
+            "visible": true,
+            "themeable": "Standard",
+            "displayPriority": 2,
+            "type": "tchmi:framework#/definitions/TcHmi.Controls.BlibliotecaGraficos.VariacoesPaleta",
+            "category": "Parâmetros do grafico de pizza/pie ou matriz",
+            "description": "",
+            "readOnly": false,
+            "bindable": true,
+            "heritable": true,
+            "defaultValue": "soft",
+            "defaultValueInternal": "soft"
+        },
+        {
+            "name": "data-tchmi-DistanciaPaleta",
+            "propertyName": "DistanciaPaleta",
+            "propertyGetterName": "getDistanciaPaleta",
+            "propertySetterName": "setDistanciaPaleta",
+            "displayName": "Distancia entre cada cor (Entre 0 e 1)",
+            "visible": true,
+            "themeable": "Standard",
+            "displayPriority": 3,
+            "type": "tchmi:general#/definitions/FLOAT",
+            "category": "Parâmetros do grafico de pizza/pie ou matriz",
+            "description": "",
+            "readOnly": false,
+            "bindable": true,
+            "heritable": true,
+            "defaultValue": 1,
+            "defaultValueInternal": 1
+        },
+        {
+            "name": "data-tchmi-TransparenciaPaleta",
+            "propertyName": "Transparencia",
+            "propertyGetterName": "getTransparenciaPaleta",
+            "propertySetterName": "setTransparenciaPaleta",
+            "displayName": "Transparencia da cor na palheta",
+            "visible": true,
+            "themeable": "Standard",
+            "displayPriority": 4,
+            "type": "tchmi:general#/definitions/FLOAT",
+            "category": "Parâmetros do grafico de pizza/pie ou matriz",
+            "description": "",
+            "readOnly": false,
+            "bindable": true,
+            "heritable": true,
+            "defaultValue": 1,
+            "defaultValueInternal": 1
+        },
+        {
+            "name": "data-tchmi-MultiEscalas",
+            "propertyName": "MultiEscalas",
+            "propertyGetterName": "getMultiEscalas",
+            "propertySetterName": "setMultiEscalas",
+            "displayName": "MultiEscalas",
+            "visible": true,
+            "themeable": "Standard",
+            "displayPriority": 6,
+            "type": "tchmi:general#/definitions/BOOL",
+            "category": "Parâmetros do grafico de pizza/pie ou matriz",
+            "description": "",
+            "readOnly": false,
+            "bindable": true,
+            "heritable": true,
+            "defaultValue": true,
+            "defaultValueInternal": true
+        }
+
+    ],
+    "attributeCategories": [],
+    "functions": [],
+    "events": [],
+  "dataTypes": [
+    {
+      "schema": "Schema/Types.Schema.json"
+    },
+    {
+      "schema": "Schema/TypeDefinition/SchemesPaleta.Schema.json"
+    },
+    {
+      "schema": "Schema/TypeDefinition/TiposGraficos.Schema.json"
+    },
+    {
+      "schema": "Schema/TypeDefinition/Variacoespaleta.Schema.json"
+    }
+
+  ]
+}
