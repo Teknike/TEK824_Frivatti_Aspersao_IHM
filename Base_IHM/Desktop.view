@@ -40,6 +40,33 @@
     "targetContent": "\r\n  \"itemType\": \"Text\",\r\n  \"priority\": \"2\",\r\n  \"itemAlign\": \"Left\",\r\n  \"prefWidth\": 300.0,\r\n  \"prefWidthUnit\": \"px\",\r\n  \"prefHeight\": 100.0,\r\n  \"prefHeightUnit\": \"px\",\r\n  \"minWidth\": 128.0,\r\n  \"minWidthUnit\": \"px\",\r\n  \"classList\": [],\r\n  \"accessRights\": [],\r\n  \"text\": \"Intralogística Sidrolândia\",\r\n  \"targetContent\": \"\"\r\n}"
   },
   {
+    "itemType": "StateImage",
+    "priority": "3",
+    "itemAlign": "Right",
+    "prefWidth": 160.0,
+    "prefWidthUnit": "px",
+    "prefHeight": 48.0,
+    "prefHeightUnit": "px",
+    "minWidth": 48.0,
+    "minWidthUnit": "px",
+    "classList": [],
+    "accessRights": [],
+    "stateVar": true,
+    "stateList": [
+      {
+        "state": false,
+        "stateIcon": "Imports/Images/2929016.png"
+      },
+      {
+        "state": true,
+        "stateIcon": "Imports/Images/icons_error_normal.svg"
+      }
+    ],
+    "iconWidth": 48.0,
+    "iconWidthUnit": "px",
+    "textPosition": "Left"
+  },
+  {
     "itemType": "AdsState",
     "priority": "3",
     "itemAlign": "Right",
