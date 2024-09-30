@@ -25623,6 +25623,16 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.GVL_Comando.xFaltaDeFase2OK": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_Comando::xFaltaDeFase2OK",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.GVL_Comando.xFaltaDeFaseOK": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -28594,6 +28604,7 @@
                 "PLC1.GVL_Comando.stColunaLuminosaPacMac2Existente": 3,
                 "PLC1.GVL_Comando.stColunaLuminosaPacMac2Novo": 3,
                 "PLC1.GVL_Comando.xFaltaDeFase": 3,
+                "PLC1.GVL_Comando.xFaltaDeFase2OK": 3,
                 "PLC1.GVL_Comando.xFaltaDeFaseOK": 3,
                 "PLC1.GVL_Comando.xLigaControleNivelTanque": 3,
                 "PLC1.GVL_Diag.Diag": 3,

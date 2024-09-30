@@ -1,6 +1,6 @@
 <div id="Desktop" data-tchmi-type="TcHmi.Controls.System.TcHmiView" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width-unit="%" data-tchmi-width="100" data-tchmi-height-unit="%" data-tchmi-height="100" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width="100" data-tchmi-background-image-height="100" data-tchmi-is-enabled="true">
   
-<div id="Header_Top" data-tchmi-type="TcHmi.Controls.BaseTemplate.TcHmiHeader" data-tchmi-height="80" data-tchmi-left="0" data-tchmi-top="0" data-tchmi-right="0" data-tchmi-expandable="true" data-tchmi-is-enabled="true">
+<div id="Header_Top" data-tchmi-type="TcHmi.Controls.BaseTemplate.TcHmiHeader" data-tchmi-height="80" data-tchmi-left="0" data-tchmi-top="1" data-tchmi-right="0" data-tchmi-expandable="true" data-tchmi-is-enabled="true">
 <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">[
 "divider",
 "divider-top"
@@ -51,23 +51,24 @@
     "minWidthUnit": "px",
     "classList": [],
     "accessRights": [],
-    "stateVar": true,
+    "stateVar": "%s%PLC1.GVL_Seguranca.Emergencias[2]::En::xEmergenciaOK%/s%",
     "stateList": [
       {
-        "state": false,
-        "stateIcon": "Imports/Images/2929016.png"
+        "state": true,
+        "stateIcon": "Imports/Images/Emergencia_OK.png"
       },
       {
-        "state": true,
-        "stateIcon": "Imports/Images/icons_error_normal.svg"
+        "state": false,
+        "stateIcon": "Imports/Images/emergencia.png"
       }
     ],
     "iconWidth": 48.0,
     "iconWidthUnit": "px",
+    "text": "Emergência Geral",
     "textPosition": "Left"
   },
   {
-    "itemType": "AdsState",
+    "itemType": "StateImage",
     "priority": "3",
     "itemAlign": "Right",
     "prefWidth": 160.0,
@@ -78,10 +79,94 @@
     "minWidthUnit": "px",
     "classList": [],
     "accessRights": [],
+    "stateVar": "%s%PLC1.GVL_Seguranca.Emergencias[1]::En::xEmergenciaOK%/s%",
+    "stateList": [
+      {
+        "state": true,
+        "stateIcon": "Imports/Images/Emergencia_OK.png"
+      },
+      {
+        "state": false,
+        "stateIcon": "Imports/Images/emergencia.png"
+      }
+    ],
+    "iconWidth": 48.0,
+    "iconWidthUnit": "px",
+    "text": "Emergência IHM",
+    "textPosition": "Left"
+  },
+  {
+    "itemType": "StateImage",
+    "priority": "3",
+    "itemAlign": "Right",
+    "prefWidth": 199.0,
+    "prefWidthUnit": "px",
+    "prefHeight": 48.0,
+    "prefHeightUnit": "px",
+    "minWidth": 48.0,
+    "minWidthUnit": "px",
+    "classList": [],
+    "accessRights": [],
+    "stateVar": "%s%PLC1.GVL_Comando.xFaltaDeFase2OK%/s%",
+    "stateList": [
+      {
+        "state": false,
+        "stateIcon": "Imports/Images/FaltadeFase.png"
+      },
+      {
+        "state": true,
+        "stateIcon": "Imports/Images/FaltadeFase_OK.png"
+      }
+    ],
+    "iconWidth": 48.0,
+    "iconWidthUnit": "px",
+    "text": "Falta de Fase Expansão",
+    "textPosition": "Left"
+  },
+  {
+    "itemType": "StateImage",
+    "priority": "3",
+    "itemAlign": "Right",
+    "prefWidth": 180.0,
+    "prefWidthUnit": "px",
+    "prefHeight": 48.0,
+    "prefHeightUnit": "px",
+    "minWidth": 48.0,
+    "minWidthUnit": "px",
+    "classList": [],
+    "accessRights": [],
+    "stateVar": "%s%PLC1.GVL_Comando.xFaltaDeFaseOK%/s%",
+    "stateList": [
+      {
+        "state": true,
+        "stateIcon": "Imports/Images/FaltadeFase_OK.png"
+      },
+      {
+        "state": false,
+        "stateIcon": "Imports/Images/FaltadeFase.png"
+      }
+    ],
+    "iconWidth": 48.0,
+    "iconWidthUnit": "px",
+    "text": "Falta de Fase Geral",
+    "textPosition": "Left"
+  },
+  {
+    "itemType": "AdsState",
+    "priority": "3",
+    "itemAlign": "Right",
+    "prefWidth": 48.0,
+    "prefWidthUnit": "px",
+    "prefHeight": 48.0,
+    "prefHeightUnit": "px",
+    "minWidth": 48.0,
+    "minWidthUnit": "px",
+    "classList": [],
+    "accessRights": [],
     "adsRuntime": "TcSysService",
     "iconWidth": 48.0,
     "iconWidthUnit": "px",
-    "text": "TwinCAT",
+    "text": "",
     "textPosition": "Left",
     "serverInterval": 1000.0,
     "serverDomain": "ADS",
@@ -97,7 +182,7 @@
     "itemType": "AdsState",
     "priority": "3",
     "itemAlign": "Right",
-    "prefWidth": 160.0,
+    "prefWidth": 48.0,
     "prefWidthUnit": "px",
     "prefHeight": 48.0,
     "prefHeightUnit": "px",
@@ -108,7 +193,7 @@
     "adsRuntime": "PLC1",
     "iconWidth": 48.0,
     "iconWidthUnit": "px",
-    "text": "PLC",
+    "text": "",
     "textPosition": "Left",
     "serverInterval": 1000.0,
     "serverDomain": "ADS",
@@ -296,7 +381,7 @@
   "color": "None"
 }
 </script>
-</div><div id="Region_Center" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-left="0" data-tchmi-top="78" data-tchmi-scrolling="No" data-tchmi-bottom="-0" data-tchmi-right="220" data-tchmi-is-enabled="true" data-tchmi-scale-mode="ScaleToFill" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+</div><div id="Region_Center" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-left="0" data-tchmi-top="80" data-tchmi-scrolling="No" data-tchmi-bottom="-2" data-tchmi-right="220" data-tchmi-is-enabled="true" data-tchmi-scale-mode="ScaleToFill" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
 
 <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json"></script></div><script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
