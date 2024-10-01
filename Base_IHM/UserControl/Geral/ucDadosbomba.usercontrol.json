@@ -1,23 +1,6 @@
 {
   "parameters": [
     {
-      "name": "data-tchmi-snomebomba",
-      "displayName": "sNomebomba",
-      "allowSymbolExpressionsInObject": false,
-      "visible": true,
-      "type": "tchmi:general#/definitions/String",
-      "category": "",
-      "description": "",
-      "requiredOnCompile": false,
-      "readOnly": false,
-      "bindable": true,
-      "heritable": true,
-      "propertyName": "sNomebomba",
-      "propertySetterName": "setSNomebomba",
-      "propertyGetterName": "getSNomebomba",
-      "refTo": ""
-    },
-    {
       "name": "data-tchmi-ifonte",
       "displayName": "iFonte",
       "allowSymbolExpressionsInObject": false,
@@ -52,25 +35,25 @@
       "refTo": ""
     },
     {
-      "name": "data-tchmi-svalorrpm",
-      "displayName": "sValorRpm",
+      "name": "data-tchmi-stmotor",
+      "displayName": "stMotor",
       "allowSymbolExpressionsInObject": false,
       "visible": true,
-      "type": "tchmi:general#/definitions/String",
+      "type": "tchmi:server#/definitions/PLC1.Teknike_Partidas.st_Partida",
       "category": "",
       "description": "",
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
-      "propertyName": "sValorRpm",
-      "propertySetterName": "setSValorRpm",
-      "propertyGetterName": "getSValorRpm",
+      "propertyName": "stMotor",
+      "propertySetterName": "setStMotor",
+      "propertyGetterName": "getStMotor",
       "refTo": ""
     },
     {
-      "name": "data-tchmi-svalorcorrente",
-      "displayName": "sValorCorrente",
+      "name": "data-tchmi-snomemotor",
+      "displayName": "sNomeMotor",
       "allowSymbolExpressionsInObject": false,
       "visible": true,
       "type": "tchmi:general#/definitions/String",
@@ -80,9 +63,9 @@
       "readOnly": false,
       "bindable": true,
       "heritable": true,
-      "propertyName": "sValorCorrente",
-      "propertySetterName": "setSValorCorrente",
-      "propertyGetterName": "getSValorCorrente",
+      "propertyName": "sNomeMotor",
+      "propertySetterName": "setSNomeMotor",
+      "propertyGetterName": "getSNomeMotor",
       "refTo": ""
     }
   ],

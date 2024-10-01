@@ -242,9 +242,6 @@
       "url": "UserControl/Geral/ucStatusAneis.usercontrol"
     },
     {
-      "url": "UserControl/Geral/udadosbomba.usercontrol"
-    },
-    {
       "url": "UserControl/Grupos/ConfigGrupos.usercontrol"
     },
     {
@@ -312,6 +309,9 @@
     },
     {
       "url": "UserControl/Valvulas/ucValvulaProporcional.usercontrol"
+    },
+    {
+      "url": "UserControl/Geral/ucDadosbomba.usercontrol"
     }
   ],
   "content": [

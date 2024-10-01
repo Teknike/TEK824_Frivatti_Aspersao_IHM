@@ -1,4 +1,4 @@
-<div id="Desktop" data-tchmi-type="TcHmi.Controls.System.TcHmiView" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width-unit="%" data-tchmi-width="100" data-tchmi-height-unit="%" data-tchmi-height="100" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width="100" data-tchmi-background-image-height="100" data-tchmi-is-enabled="true">
+<div id="Desktop" data-tchmi-type="TcHmi.Controls.System.TcHmiView" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width-unit="%" data-tchmi-width="100" data-tchmi-height-unit="%" data-tchmi-height="100" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width="100" data-tchmi-background-image-height="100" data-tchmi-is-enabled="true" data-tchmi-creator-viewport-width="2048" data-tchmi-creator-viewport-height="1050">
   
 <div id="Header_Top" data-tchmi-type="TcHmi.Controls.BaseTemplate.TcHmiHeader" data-tchmi-height="80" data-tchmi-left="0" data-tchmi-top="1" data-tchmi-right="0" data-tchmi-expandable="true" data-tchmi-is-enabled="true">
 <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">[
@@ -381,7 +381,7 @@
   "color": "None"
 }
 </script>
-</div><div id="Region_Center" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-left="0" data-tchmi-top="80" data-tchmi-scrolling="No" data-tchmi-bottom="-2" data-tchmi-right="220" data-tchmi-is-enabled="true" data-tchmi-scale-mode="ScaleToFill" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+</div><div id="Region_Center" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-left="0" data-tchmi-top="80" data-tchmi-scrolling="No" data-tchmi-bottom="0" data-tchmi-right="220" data-tchmi-is-enabled="true" data-tchmi-scale-mode="ScaleToFill" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
 
 <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json"></script></div><script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [

@@ -2610,7 +2610,7 @@
       "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
       "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
       "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
-      "frameworkUserControlConfig": "UserControl\\Geral\\udadosbomba.usercontrol.json",
+      "frameworkUserControlConfig": "UserControl\\Geral\\ucDadosbomba.usercontrol.json",
       "id": "tchmi:project#/definitions/udadosbomba",
       "type": "object"
     },
@@ -2644,6 +2644,14 @@
       "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
       "frameworkUserControlConfig": "UserControl\\IHM_Operacao\\ucCabecalhoCamara.usercontrol.json",
       "id": "tchmi:project#/definitions/ucCabecalhoCamara",
+      "type": "object"
+    },
+    "UserControl1_6": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Geral\\UserControl1.usercontrol.json",
+      "id": "tchmi:project#/definitions/UserControl1_6",
       "type": "object"
     }
   }

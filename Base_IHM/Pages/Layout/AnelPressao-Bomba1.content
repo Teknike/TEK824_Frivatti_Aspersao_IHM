@@ -896,10 +896,6 @@
 ]
 </script>
 </div>
-<div id="Udadosbomba_3" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="111" data-tchmi-height-unit="px" data-tchmi-left="974" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/udadosbomba.usercontrol" data-tchmi-top="259" data-tchmi-top-unit="px" data-tchmi-width="320" data-tchmi-width-unit="px" data-tchmi-snomebomba="Bomba 1" data-tchmi-izindexbomba="1" data-tchmi-ifonte="19" data-tchmi-ifonte_textoparametros="17" data-tchmi-zindex="14" data-tchmi-svalorrpm="%s%PLC1.GVL_Motores.Motor[1]::LeiturasInversorIHM::sVelocidadeRPM%/s%" data-tchmi-svalorcorrente="%s%PLC1.GVL_Motores.Motor[1]::LeiturasInversorIHM::sCorrente%/s%">
-</div>
-<div id="Udadosbomba_4" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="111" data-tchmi-height-unit="px" data-tchmi-left="975" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/udadosbomba.usercontrol" data-tchmi-top="423" data-tchmi-top-unit="px" data-tchmi-width="320" data-tchmi-width-unit="px" data-tchmi-snomebomba="Bomba Reserva" data-tchmi-izindexbomba="2" data-tchmi-ifonte="19" data-tchmi-ifonte_textoparametros="17" data-tchmi-zindex="14" data-tchmi-svalorrpm="%s%PLC1.GVL_Motores.Motor[2]::LeiturasInversorIHM::sVelocidadeRPM%/s%" data-tchmi-svalorcorrente="%s%PLC1.GVL_Motores.Motor[2]::LeiturasInversorIHM::sCorrente%/s%">
-</div>
 <div id="TcHmiRectangle_5224037" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="101" data-tchmi-height-unit="px" data-tchmi-left="1448" data-tchmi-left-unit="px" data-tchmi-top="453" data-tchmi-top-unit="px" data-tchmi-width="10" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="3" data-tchmi-zindex="1">
 <script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
 {
@@ -1279,5 +1275,9 @@
 <div id="UcNIveltamqueBoia_26" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="36" data-tchmi-height-unit="px" data-tchmi-left="1435" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucNIveltamqueBoia.usercontrol" data-tchmi-top="133" data-tchmi-top-unit="px" data-tchmi-width="70" data-tchmi-width-unit="px" data-tchmi-zindex="193" data-tchmi-ifonte="17" data-tchmi-sniveltamque="Max." data-tchmi-stvariavelsensor="%s%PLC1.GVL_Sensores.SenDig[1]%/s%">
 </div>
 <div id="TcHmiTextblock_285165770" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="911" data-tchmi-left-unit="px" data-tchmi-text="%l%L_Acionamentos%/l%" data-tchmi-top="822" data-tchmi-top-unit="px" data-tchmi-width="99.9" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="30" data-tchmi-zindex="9">
+</div>
+<div id="Udadosbomba_31" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="111" data-tchmi-height-unit="px" data-tchmi-left="974" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucDadosbomba.usercontrol" data-tchmi-top="259" data-tchmi-top-unit="px" data-tchmi-width="320" data-tchmi-width-unit="px" data-tchmi-stmotor="%s%PLC1.GVL_Motores.Motor[1]%/s%" data-tchmi-ifonte_textoparametros="19" data-tchmi-ifonte="19">
+</div>
+<div id="Udadosbomba_32" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="111" data-tchmi-height-unit="px" data-tchmi-left="975" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucDadosbomba.usercontrol" data-tchmi-top="423" data-tchmi-top-unit="px" data-tchmi-width="320" data-tchmi-width-unit="px" data-tchmi-stmotor="%s%PLC1.GVL_Motores.Motor[1]%/s%" data-tchmi-ifonte_textoparametros="19" data-tchmi-ifonte="19">
 </div>
 </div>

@@ -22,7 +22,7 @@
     <TargetFramework>native1.12-tchmi</TargetFramework>
     <AzureFunctionsVersion>v2</AzureFunctionsVersion>
     <Name>Base_IHM</Name>
-    <HmiCommunicationRouterPort>10224</HmiCommunicationRouterPort>
+    <HmiCommunicationRouterPort>10225</HmiCommunicationRouterPort>
     <HmiCommunicationServerAuthPort>13007</HmiCommunicationServerAuthPort>
     <HmiInitial>1.12.756.1</HmiInitial>
     <HmiRecent>1.12.762.42</HmiRecent>
@@ -1130,12 +1130,12 @@
       <SubType>Content</SubType>
       <DependentUpon>UserControl\Geral\ucStatusAneis.usercontrol</DependentUpon>
     </Content>
-    <Content Include="UserControl\Geral\udadosbomba.usercontrol">
+    <Content Include="UserControl\Geral\ucDadosbomba.usercontrol">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UserControl\Geral\udadosbomba.usercontrol.json">
+    <Content Include="UserControl\Geral\ucDadosbomba.usercontrol.json">
       <SubType>Content</SubType>
-      <DependentUpon>UserControl\Geral\udadosbomba.usercontrol</DependentUpon>
+      <DependentUpon>UserControl\Geral\ucDadosbomba.usercontrol</DependentUpon>
     </Content>
     <Content Include="UserControl\Grupos\ConfigGrupos.usercontrol">
       <SubType>Content</SubType>

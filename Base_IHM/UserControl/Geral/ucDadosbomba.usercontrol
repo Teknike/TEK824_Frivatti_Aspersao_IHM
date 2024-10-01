@@ -1,6 +1,6 @@
 <div id="udadosbomba" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControl" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500" data-tchmi-left-unit="%" data-tchmi-top-unit="%">
 
-<div id="TcHmiTextblock_2824023" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25.6" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-top="75.1" data-tchmi-top-unit="%" data-tchmi-width="100.0" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="%pp%iFonte%/pp%" data-tchmi-zindex="3" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%pp%sNomebomba%/pp%">
+<div id="TcHmiTextblock_2824023" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25.6" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-top="75.1" data-tchmi-top-unit="%" data-tchmi-width="100.0" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="%pp%iFonte%/pp%" data-tchmi-zindex="3" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%pp%sNomeMotor%/pp%">
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
 {
   "color": "rgba(255, 255, 255, 1)"
@@ -82,10 +82,10 @@
   "bottomRightUnit": "px"
 }
 </script>
-<div id="TcHmiTextblock_2824028" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="104.5" data-tchmi-height-unit="%" data-tchmi-left="0.4" data-tchmi-left-unit="%" data-tchmi-text="%pp%sValorRpm%/pp%" data-tchmi-top="-1.6" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="%pp%iFonte_textoparametros%/pp%" data-tchmi-tooltip="%pp%sNome_Corente%/pp%">
+<div id="TcHmiTextblock_2824028" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="104.5" data-tchmi-height-unit="%" data-tchmi-left="0.4" data-tchmi-left-unit="%" data-tchmi-text="%f%GaugeValueFormatter(%pp%stMotor::Sa::rVelocidadeRPM%/pp%,1) + &quot; RPM&quot;%/f%" data-tchmi-top="-1.6" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="%pp%iFonte_textoparametros%/pp%" data-tchmi-tooltip="%pp%sNome_Corente%/pp%" data-tchmi-creator-locked="True">
 </div>
 </div>
-<div id="TcHmiContainer_271" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="27.2" data-tchmi-height-unit="%" data-tchmi-left="69.7" data-tchmi-left-unit="%" data-tchmi-top="6.9" data-tchmi-top-unit="%" data-tchmi-width="26.8" data-tchmi-width-unit="%">
+<div id="TcHmiContainer_271" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="27.2" data-tchmi-height-unit="%" data-tchmi-left="69.7" data-tchmi-left-unit="%" data-tchmi-top="6.9" data-tchmi-top-unit="%" data-tchmi-width="26.8" data-tchmi-width-unit="%" data-tchmi-tooltip="">
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
 {
   "color": "rgba(255, 255, 255, 1)"
@@ -132,7 +132,7 @@
   "bottomRightUnit": "px"
 }
 </script>
-<div id="TcHmiTextblock_2824025" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="104.5" data-tchmi-height-unit="%" data-tchmi-left="-0.8" data-tchmi-left-unit="%" data-tchmi-top="-0.8" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="%pp%iFonte_textoparametros%/pp%" data-tchmi-tooltip="%f%%pp%sNome_Corente%/pp%%/f%" data-tchmi-text="%f%%pp%sValorCorrente%/pp%*10%/f%">
+<div id="TcHmiTextblock_2824025" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="104.5" data-tchmi-height-unit="%" data-tchmi-left="0.2" data-tchmi-left-unit="%" data-tchmi-top="-0.8" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="%pp%iFonte_textoparametros%/pp%" data-tchmi-text="%f%GaugeValueFormatter(%pp%stMotor::Sa::rCorrente%/pp%,1) + &quot; A&quot;%/f%" data-tchmi-creator-locked="True">
 </div>
 </div>
 
