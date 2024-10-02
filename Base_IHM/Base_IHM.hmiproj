@@ -9,7 +9,7 @@
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">15.0</VisualStudioVersion>
     <AvailablePlatforms>TwinCAT HMI</AvailablePlatforms>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
-    <HmiTitle>Frigodelis - Aspersão</HmiTitle>
+    <HmiTitle>Frivatti - Aspersão</HmiTitle>
     <HmiVerboseLevel>2</HmiVerboseLevel>
     <HmiVersion>1.0.0.0</HmiVersion>
     <HmiCommunicationServerPort>3019</HmiCommunicationServerPort>
@@ -22,7 +22,7 @@
     <TargetFramework>native1.12-tchmi</TargetFramework>
     <AzureFunctionsVersion>v2</AzureFunctionsVersion>
     <Name>Base_IHM</Name>
-    <HmiCommunicationRouterPort>10225</HmiCommunicationRouterPort>
+    <HmiCommunicationRouterPort>10227</HmiCommunicationRouterPort>
     <HmiCommunicationServerAuthPort>13007</HmiCommunicationServerAuthPort>
     <HmiInitial>1.12.756.1</HmiInitial>
     <HmiRecent>1.12.762.42</HmiRecent>
@@ -133,6 +133,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Images\Aspersao\imagem_2024-05-14_210102021-removebg-preview.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Aspersao\imagem_2024-10-02_133131736-removebg-preview.png">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Images\Aspersao\output-onlinepngtools %2812%29.png">
@@ -403,6 +406,12 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Imports\Images\analytics-normal.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\anel1.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\anel2.png">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Imports\Images\aspersor.png">
@@ -735,6 +744,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Pages\Layout\Aneis-Tela Geral.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Layout\AnelPressao-Bomba2.content">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Pages\Layout\AnelPressao-Bomba1.content">

@@ -25,21 +25,6 @@
     "targetContent": "Pages/PaginaInicial.content"
   },
   {
-    "itemType": "Text",
-    "priority": "2",
-    "itemAlign": "Left",
-    "prefWidth": 300.0,
-    "prefWidthUnit": "px",
-    "prefHeight": 100.0,
-    "prefHeightUnit": "px",
-    "minWidth": 128.0,
-    "minWidthUnit": "px",
-    "classList": [],
-    "accessRights": [],
-    "text": "Aspersão",
-    "targetContent": "\r\n  \"itemType\": \"Text\",\r\n  \"priority\": \"2\",\r\n  \"itemAlign\": \"Left\",\r\n  \"prefWidth\": 300.0,\r\n  \"prefWidthUnit\": \"px\",\r\n  \"prefHeight\": 100.0,\r\n  \"prefHeightUnit\": \"px\",\r\n  \"minWidth\": 128.0,\r\n  \"minWidthUnit\": \"px\",\r\n  \"classList\": [],\r\n  \"accessRights\": [],\r\n  \"text\": \"Intralogística Sidrolândia\",\r\n  \"targetContent\": \"\"\r\n}"
-  },
-  {
     "itemType": "StateImage",
     "priority": "3",
     "itemAlign": "Right",
@@ -343,9 +328,16 @@
   {
     "name": "Anel Pressao Bomba 1",
     "content": "Pages/Layout/AnelPressao-Bomba1.content",
-    "icon_a": "Imports/Images/anel1branco.png",
+    "icon_a": "Imports/Images/anel1.png",
     "icon_n": "Imports/Images/anel1.png",
     "icon_p": "Imports/Images/anel1preto.png"
+  },
+  {
+    "name": "Anel Pressao Bomba 2",
+    "content": "Pages/Layout/AnelPressao-Bomba2.content",
+    "icon_a": "Imports/Images/anel2.png",
+    "icon_n": "Imports/Images/anel2.png",
+    "icon_p": "Imports/Images/anel2.png"
   },
   {
     "name": "Protocolos",
