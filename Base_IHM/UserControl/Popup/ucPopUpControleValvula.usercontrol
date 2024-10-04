@@ -124,7 +124,7 @@
         "objectType": "JavaScript",
         "active": true,
         "sourceLines": [
-          "//var UserControl = TcHmi.Controls.get(getId());\n//$('#'+ UserControl).slideUp('slow');\n//var desktop = TcHmi.Controls.get('Desktop');\n//var index = TcHmi.Symbol.readEx('%pp%stValvula::en::i%/pp%');\n//var nome = 'UcPopUpValvulas'+ index;\n//var objeto = TcHmi.Controls.get(nome);\n\n//console.log(objeto);\n\n\n//if (objeto != undefined){\n//\t$('#'+ nome).slideUp('slow');\n//\tdesktop.removeChild(objeto);\n//\tobjeto.destroy();\n//}else{\n\t//$('#UcPopUpValvulas_2').slideUp('slow');\n\t//$('#UcPopUpValvulas_3').slideUp('slow');\n\t//$('#UcPopUpValvulas_10').slideUp('slow');\n\t$('#UcPopUpControleValvula').slideUp('slow');\n\t$('#UcPopUpControleValvula_2').slideUp('slow');\n\t\n//}"
+          "//var UserControl = TcHmi.Controls.get(getId());\n//$('#'+ UserControl).slideUp('slow');\n//var desktop = TcHmi.Controls.get('Desktop');\n//var index = TcHmi.Symbol.readEx('%pp%stValvula::en::i%/pp%');\n//var nome = 'UcPopUpValvulas'+ index;\n//var objeto = TcHmi.Controls.get(nome);\n\n//console.log(objeto);\n\n\n//if (objeto != undefined){\n//\t$('#'+ nome).slideUp('slow');\n//\tdesktop.removeChild(objeto);\n//\tobjeto.destroy();\n//}else{\n\t//$('#UcPopUpValvulas_2').slideUp('slow');\n\t//$('#UcPopUpValvulas_3').slideUp('slow');\n\t//$('#UcPopUpValvulas_10').slideUp('slow');\n\t$('#UcPopUpControleValvula').slideUp('slow');\n\t\n//}"
         ],
         "injectContextObject": false,
         "asyncWait": true,

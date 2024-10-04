@@ -106,7 +106,7 @@
 ]
 </script>
 </div>
-<div id="ContainerValvulas" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="675" data-tchmi-height-unit="px" data-tchmi-left="466" data-tchmi-left-unit="px" data-tchmi-top="72" data-tchmi-top-unit="px" data-tchmi-width="1247" data-tchmi-width-unit="px" data-tchmi-zindex="2">
+<div id="ContainerValvulas" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="675" data-tchmi-height-unit="px" data-tchmi-left="473" data-tchmi-left-unit="px" data-tchmi-top="60" data-tchmi-top-unit="px" data-tchmi-width="1247" data-tchmi-width-unit="px" data-tchmi-zindex="2">
 <div id="TcHmiTextblock_2823388" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="32" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="1247" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="20" data-tchmi-zindex="8">
 <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
 {
@@ -214,9 +214,7 @@
   "color": "rgba(130, 130, 130, 1)"
 }
 </script>
-<div id="UcValvulasVS1" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="134" data-tchmi-height-unit="px" data-tchmi-left="195" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucValvulas.usercontrol" data-tchmi-top="91" data-tchmi-top-unit="px" data-tchmi-width="125" data-tchmi-width-unit="px" data-tchmi-zindex="10" data-tchmi-nome="VS??" data-tchmi-popup="UcPopUpControleValvula" data-tchmi-objetoacentralizar="ContainerValvulas">
-</div>
-<div id="TcHmiRectangle_5223664" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="603" data-tchmi-height-unit="px" data-tchmi-left="1063" data-tchmi-left-unit="px" data-tchmi-top="48" data-tchmi-top-unit="px" data-tchmi-width="18" data-tchmi-width-unit="px" data-tchmi-zindex="7">
+<div id="Trilho21" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="592" data-tchmi-height-unit="px" data-tchmi-left="61" data-tchmi-left-unit="px" data-tchmi-top="46" data-tchmi-top-unit="px" data-tchmi-width="12" data-tchmi-width-unit="px" data-tchmi-zindex="12">
 <script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
 {
   "color": "rgba(0, 0, 0, 1)"
@@ -229,11 +227,7 @@
 }
 </script>
 </div>
-<div id="UcValvulasVS3" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="134" data-tchmi-height-unit="px" data-tchmi-left="904" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucValvulas.usercontrol" data-tchmi-top="91" data-tchmi-top-unit="px" data-tchmi-width="125" data-tchmi-width-unit="px" data-tchmi-zindex="10" data-tchmi-nome="VS??" data-tchmi-popup="UcPopUpControleValvula" data-tchmi-objetoacentralizar="ContainerValvulas">
-</div>
-<div id="UcValvulasVS2" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="134" data-tchmi-height-unit="px" data-tchmi-left="559" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucValvulas.usercontrol" data-tchmi-top="91" data-tchmi-top-unit="px" data-tchmi-width="125" data-tchmi-width-unit="px" data-tchmi-zindex="10" data-tchmi-nome="VS??" data-tchmi-popup="UcPopUpControleValvula" data-tchmi-objetoacentralizar="ContainerValvulas">
-</div>
-<div id="TcHmiRectangle_5223667" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="603" data-tchmi-height-unit="px" data-tchmi-left="1183" data-tchmi-left-unit="px" data-tchmi-top="48" data-tchmi-top-unit="px" data-tchmi-width="18" data-tchmi-width-unit="px" data-tchmi-zindex="7">
+<div id="Trilho22" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="592" data-tchmi-height-unit="px" data-tchmi-left="168" data-tchmi-left-unit="px" data-tchmi-top="48" data-tchmi-top-unit="px" data-tchmi-width="12" data-tchmi-width-unit="px" data-tchmi-zindex="12">
 <script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
 {
   "color": "rgba(0, 0, 0, 1)"
@@ -246,7 +240,7 @@
 }
 </script>
 </div>
-<div id="TcHmiRectangle_5223668" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="603" data-tchmi-height-unit="px" data-tchmi-left="853" data-tchmi-left-unit="px" data-tchmi-top="48" data-tchmi-top-unit="px" data-tchmi-width="18" data-tchmi-width-unit="px" data-tchmi-zindex="7">
+<div id="Trilho23" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="592" data-tchmi-height-unit="px" data-tchmi-left="277" data-tchmi-left-unit="px" data-tchmi-top="48" data-tchmi-top-unit="px" data-tchmi-width="12" data-tchmi-width-unit="px" data-tchmi-zindex="12">
 <script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
 {
   "color": "rgba(0, 0, 0, 1)"
@@ -259,7 +253,7 @@
 }
 </script>
 </div>
-<div id="TcHmiRectangle_5223669" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="603" data-tchmi-height-unit="px" data-tchmi-left="733" data-tchmi-left-unit="px" data-tchmi-top="48" data-tchmi-top-unit="px" data-tchmi-width="18" data-tchmi-width-unit="px" data-tchmi-zindex="7">
+<div id="Trilho24" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="592" data-tchmi-height-unit="px" data-tchmi-left="389" data-tchmi-left-unit="px" data-tchmi-top="48" data-tchmi-top-unit="px" data-tchmi-width="12" data-tchmi-width-unit="px" data-tchmi-zindex="12">
 <script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
 {
   "color": "rgba(0, 0, 0, 1)"
@@ -272,7 +266,7 @@
 }
 </script>
 </div>
-<div id="TcHmiRectangle_5223670" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="603" data-tchmi-height-unit="px" data-tchmi-left="494" data-tchmi-left-unit="px" data-tchmi-top="48" data-tchmi-top-unit="px" data-tchmi-width="18" data-tchmi-width-unit="px" data-tchmi-zindex="7">
+<div id="Trilho25" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="592" data-tchmi-height-unit="px" data-tchmi-left="501" data-tchmi-left-unit="px" data-tchmi-top="48" data-tchmi-top-unit="px" data-tchmi-width="12" data-tchmi-width-unit="px" data-tchmi-zindex="12">
 <script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
 {
   "color": "rgba(0, 0, 0, 1)"
@@ -285,7 +279,7 @@
 }
 </script>
 </div>
-<div id="TcHmiRectangle_5223671" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="603" data-tchmi-height-unit="px" data-tchmi-left="374" data-tchmi-left-unit="px" data-tchmi-top="48" data-tchmi-top-unit="px" data-tchmi-width="18" data-tchmi-width-unit="px" data-tchmi-zindex="7">
+<div id="Trilho28" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="592" data-tchmi-height-unit="px" data-tchmi-left="837" data-tchmi-left-unit="px" data-tchmi-top="48" data-tchmi-top-unit="px" data-tchmi-width="12" data-tchmi-width-unit="px" data-tchmi-zindex="12">
 <script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
 {
   "color": "rgba(0, 0, 0, 1)"
@@ -298,7 +292,7 @@
 }
 </script>
 </div>
-<div id="TcHmiRectangle_5223672" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="603" data-tchmi-height-unit="px" data-tchmi-left="151" data-tchmi-left-unit="px" data-tchmi-top="48" data-tchmi-top-unit="px" data-tchmi-width="18" data-tchmi-width-unit="px" data-tchmi-zindex="7">
+<div id="Trilho26" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="592" data-tchmi-height-unit="px" data-tchmi-left="613" data-tchmi-left-unit="px" data-tchmi-top="48" data-tchmi-top-unit="px" data-tchmi-width="12" data-tchmi-width-unit="px" data-tchmi-zindex="12">
 <script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
 {
   "color": "rgba(0, 0, 0, 1)"
@@ -311,7 +305,7 @@
 }
 </script>
 </div>
-<div id="TcHmiRectangle_5223673" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="603" data-tchmi-height-unit="px" data-tchmi-left="31" data-tchmi-left-unit="px" data-tchmi-top="48" data-tchmi-top-unit="px" data-tchmi-width="18" data-tchmi-width-unit="px" data-tchmi-zindex="7">
+<div id="Trilho27" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="592" data-tchmi-height-unit="px" data-tchmi-left="725" data-tchmi-left-unit="px" data-tchmi-top="48" data-tchmi-top-unit="px" data-tchmi-width="12" data-tchmi-width-unit="px" data-tchmi-zindex="12">
 <script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
 {
   "color": "rgba(0, 0, 0, 1)"
@@ -324,17 +318,66 @@
 }
 </script>
 </div>
-<div id="UcValvulasVS4" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="134" data-tchmi-height-unit="px" data-tchmi-left="203" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucValvulas.usercontrol" data-tchmi-top="300" data-tchmi-top-unit="px" data-tchmi-width="125" data-tchmi-width-unit="px" data-tchmi-zindex="10" data-tchmi-nome="VS??" data-tchmi-popup="UcPopUpControleValvula" data-tchmi-objetoacentralizar="ContainerValvulas">
+<div id="Trilho29" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="592" data-tchmi-height-unit="px" data-tchmi-left="949" data-tchmi-left-unit="px" data-tchmi-top="48" data-tchmi-top-unit="px" data-tchmi-width="12" data-tchmi-width-unit="px" data-tchmi-zindex="12">
+<script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 0)"
+}
+</script>
 </div>
-<div id="UcValvulasV5" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="134" data-tchmi-height-unit="px" data-tchmi-left="560" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucValvulas.usercontrol" data-tchmi-top="300" data-tchmi-top-unit="px" data-tchmi-width="125" data-tchmi-width-unit="px" data-tchmi-zindex="10" data-tchmi-nome="VS??" data-tchmi-popup="UcPopUpControleValvula" data-tchmi-objetoacentralizar="ContainerValvulas">
+<div id="Trilho30" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="592" data-tchmi-height-unit="px" data-tchmi-left="1061" data-tchmi-left-unit="px" data-tchmi-top="43" data-tchmi-top-unit="px" data-tchmi-width="12" data-tchmi-width-unit="px" data-tchmi-zindex="12">
+<script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 0)"
+}
+</script>
 </div>
-<div id="UcValvulasVS6" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="134" data-tchmi-height-unit="px" data-tchmi-left="905" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucValvulas.usercontrol" data-tchmi-top="300" data-tchmi-top-unit="px" data-tchmi-width="125" data-tchmi-width-unit="px" data-tchmi-zindex="10" data-tchmi-nome="VS??" data-tchmi-popup="UcPopUpControleValvula" data-tchmi-objetoacentralizar="ContainerValvulas">
+<div id="Trilho31" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="592" data-tchmi-height-unit="px" data-tchmi-left="1174" data-tchmi-left-unit="px" data-tchmi-top="43" data-tchmi-top-unit="px" data-tchmi-width="12" data-tchmi-width-unit="px" data-tchmi-zindex="12">
+<script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 0)"
+}
+</script>
 </div>
-<div id="UcValvulasVS7" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="134" data-tchmi-height-unit="px" data-tchmi-left="195" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucValvulas.usercontrol" data-tchmi-top="505" data-tchmi-top-unit="px" data-tchmi-width="125" data-tchmi-width-unit="px" data-tchmi-zindex="10" data-tchmi-nome="VS??" data-tchmi-popup="UcPopUpControleValvula" data-tchmi-objetoacentralizar="ContainerValvulas">
+<div id="UcValvulasVS14" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="204" data-tchmi-height-unit="px" data-tchmi-left="221" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucValvulas.usercontrol" data-tchmi-top="43" data-tchmi-top-unit="px" data-tchmi-width="128" data-tchmi-width-unit="px" data-tchmi-zindex="15" data-tchmi-nome="VS??" data-tchmi-popup="UcPopUpControleValvula" data-tchmi-objetoacentralizar="ContainerValvulas_2">
 </div>
-<div id="UcValvulasVS8" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="134" data-tchmi-height-unit="px" data-tchmi-left="560" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucValvulas.usercontrol" data-tchmi-top="505" data-tchmi-top-unit="px" data-tchmi-width="125" data-tchmi-width-unit="px" data-tchmi-zindex="10" data-tchmi-nome="VS??" data-tchmi-popup="UcPopUpControleValvula" data-tchmi-objetoacentralizar="ContainerValvulas">
+<div id="UcValvulasVS13" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="204" data-tchmi-height-unit="px" data-tchmi-left="110" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucValvulas.usercontrol" data-tchmi-top="411" data-tchmi-top-unit="px" data-tchmi-width="128" data-tchmi-width-unit="px" data-tchmi-zindex="15" data-tchmi-nome="VS??" data-tchmi-popup="UcPopUpControleValvula" data-tchmi-objetoacentralizar="ContainerValvulas_2">
 </div>
-<div id="UcValvulasVS9" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="134" data-tchmi-height-unit="px" data-tchmi-left="905" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucValvulas.usercontrol" data-tchmi-top="505" data-tchmi-top-unit="px" data-tchmi-width="125" data-tchmi-width-unit="px" data-tchmi-zindex="10" data-tchmi-nome="VS??" data-tchmi-popup="UcPopUpControleValvula" data-tchmi-objetoacentralizar="ContainerValvulas">
+<div id="UcValvulasVS12" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="204" data-tchmi-height-unit="px" data-tchmi-left="3" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucValvulas.usercontrol" data-tchmi-top="43" data-tchmi-top-unit="px" data-tchmi-width="128" data-tchmi-width-unit="px" data-tchmi-zindex="15" data-tchmi-nome="VS??" data-tchmi-popup="UcPopUpControleValvula" data-tchmi-objetoacentralizar="ContainerValvulas_2">
+</div>
+<div id="UcValvulasVS15" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="204" data-tchmi-height-unit="px" data-tchmi-left="332" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucValvulas.usercontrol" data-tchmi-top="411" data-tchmi-top-unit="px" data-tchmi-width="128" data-tchmi-width-unit="px" data-tchmi-zindex="15" data-tchmi-nome="VS??" data-tchmi-popup="UcPopUpControleValvula" data-tchmi-objetoacentralizar="ContainerValvulas_2">
+</div>
+<div id="UcValvulasVS16" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="204" data-tchmi-height-unit="px" data-tchmi-left="446" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucValvulas.usercontrol" data-tchmi-top="43" data-tchmi-top-unit="px" data-tchmi-width="128" data-tchmi-width-unit="px" data-tchmi-zindex="15" data-tchmi-nome="VS??" data-tchmi-popup="UcPopUpControleValvula" data-tchmi-objetoacentralizar="ContainerValvulas_2">
+</div>
+<div id="UcValvulasVS17" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="204" data-tchmi-height-unit="px" data-tchmi-left="555" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucValvulas.usercontrol" data-tchmi-top="411" data-tchmi-top-unit="px" data-tchmi-width="128" data-tchmi-width-unit="px" data-tchmi-zindex="15" data-tchmi-nome="VS??" data-tchmi-popup="UcPopUpControleValvula" data-tchmi-objetoacentralizar="ContainerValvulas_2">
+</div>
+<div id="UcValvulasVS19" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="204" data-tchmi-height-unit="px" data-tchmi-left="780" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucValvulas.usercontrol" data-tchmi-top="411" data-tchmi-top-unit="px" data-tchmi-width="128" data-tchmi-width-unit="px" data-tchmi-zindex="15" data-tchmi-nome="VS??" data-tchmi-popup="UcPopUpControleValvula" data-tchmi-objetoacentralizar="ContainerValvulas_2">
+</div>
+<div id="UcValvulasVS20" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="204" data-tchmi-height-unit="px" data-tchmi-left="891" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucValvulas.usercontrol" data-tchmi-top="43" data-tchmi-top-unit="px" data-tchmi-width="128" data-tchmi-width-unit="px" data-tchmi-zindex="15" data-tchmi-nome="VS??" data-tchmi-popup="UcPopUpControleValvula" data-tchmi-objetoacentralizar="ContainerValvulas_2">
+</div>
+<div id="UcValvulasVS21" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="204" data-tchmi-height-unit="px" data-tchmi-left="1005" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucValvulas.usercontrol" data-tchmi-top="411" data-tchmi-top-unit="px" data-tchmi-width="128" data-tchmi-width-unit="px" data-tchmi-zindex="15" data-tchmi-nome="VS??" data-tchmi-popup="UcPopUpControleValvula" data-tchmi-objetoacentralizar="ContainerValvulas_2">
+</div>
+<div id="UcValvulasVS22" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="204" data-tchmi-height-unit="px" data-tchmi-left="1116" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucValvulas.usercontrol" data-tchmi-top="43" data-tchmi-top-unit="px" data-tchmi-width="128" data-tchmi-width-unit="px" data-tchmi-zindex="15" data-tchmi-nome="VS??" data-tchmi-popup="UcPopUpControleValvula" data-tchmi-objetoacentralizar="ContainerValvulas_2">
+</div>
+<div id="UcValvulasVS18" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="204" data-tchmi-height-unit="px" data-tchmi-left="668" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucValvulas.usercontrol" data-tchmi-top="43" data-tchmi-top-unit="px" data-tchmi-width="128" data-tchmi-width-unit="px" data-tchmi-zindex="15" data-tchmi-nome="VS??" data-tchmi-popup="UcPopUpControleValvula" data-tchmi-objetoacentralizar="ContainerValvulas_2">
 </div>
 </div>
 <div id="UcPopUpControleValvula" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="420" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Popup/ucPopUpControleValvula.usercontrol" data-tchmi-top="1343" data-tchmi-top-unit="px" data-tchmi-width="963" data-tchmi-width-unit="px" data-tchmi-zindex="17">
