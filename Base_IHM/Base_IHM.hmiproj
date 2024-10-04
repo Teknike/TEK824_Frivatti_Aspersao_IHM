@@ -189,6 +189,9 @@
     <Content Include="Images\Diversos\FlechaCurva.png">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Images\Diversos\LogoRGO.png">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Images\Diversos\logotipo-teknike.png">
       <SubType>Content</SubType>
     </Content>

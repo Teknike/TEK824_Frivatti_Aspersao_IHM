@@ -155,7 +155,7 @@
 </div>
 <div id="TcHmiRectangle_490" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="200" data-tchmi-height-unit="px" data-tchmi-left="1204" data-tchmi-left-unit="px" data-tchmi-top="650" data-tchmi-top-unit="px" data-tchmi-width="451" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="3" data-tchmi-zindex="15" data-tchmi-creator-locked="True">
 </div>
-<div id="TcHmiTextblock_2759" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="31" data-tchmi-height-unit="px" data-tchmi-left="1209" data-tchmi-left-unit="px" data-tchmi-text="Câmaras de Aspersão 1 a 3" data-tchmi-top="650" data-tchmi-top-unit="px" data-tchmi-width="444" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="25" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-style="Normal" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="17">
+<div id="TcHmiTextblock_2759" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="31" data-tchmi-height-unit="px" data-tchmi-left="1209" data-tchmi-left-unit="px" data-tchmi-text="Câmaras de Aspersão 1 a 5" data-tchmi-top="650" data-tchmi-top-unit="px" data-tchmi-width="444" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="25" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-style="Normal" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="17">
 
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
 {

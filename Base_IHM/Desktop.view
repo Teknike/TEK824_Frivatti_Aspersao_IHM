@@ -25,6 +25,21 @@
     "targetContent": "Pages/PaginaInicial.content"
   },
   {
+    "itemType": "Image",
+    "priority": "3",
+    "itemAlign": "Left",
+    "prefWidth": 120.0,
+    "prefWidthUnit": "px",
+    "prefHeight": 48.0,
+    "prefHeightUnit": "px",
+    "minWidth": 96.0,
+    "minWidthUnit": "px",
+    "classList": [],
+    "accessRights": [],
+    "image": "Images/Diversos/LogoRGO.png",
+    "altText": "Image"
+  },
+  {
     "itemType": "StateImage",
     "priority": "3",
     "itemAlign": "Right",
