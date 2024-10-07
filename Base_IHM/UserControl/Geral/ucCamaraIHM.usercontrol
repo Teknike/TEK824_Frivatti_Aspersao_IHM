@@ -956,7 +956,7 @@
 ]
 </script>
 </div>
-<div id="TcHmiButton_268" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="113" data-tchmi-height-unit="px" data-tchmi-left="189" data-tchmi-left-unit="px" data-tchmi-text="Iniciar Câmara Aspersão" data-tchmi-top="54" data-tchmi-top-unit="px" data-tchmi-width="258" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="35" data-tchmi-state-symbol="%pp%stCamara::en::xIniciaCamaraSupervisorio%/pp%" data-tchmi-zindex="5">
+<div id="TcHmiButton_268" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="113" data-tchmi-height-unit="px" data-tchmi-left="119" data-tchmi-left-unit="px" data-tchmi-text="Iniciar Câmara Aspersão" data-tchmi-top="55" data-tchmi-top-unit="px" data-tchmi-width="258" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="35" data-tchmi-state-symbol="%pp%stCamara::en::xIniciaCamaraSupervisorio%/pp%" data-tchmi-zindex="5">
 <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
 {
   "topLeft": 20.0,

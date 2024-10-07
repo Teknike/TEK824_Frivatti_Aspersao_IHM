@@ -411,6 +411,14 @@
             "minItems": 22,
             "type": "array"
         },
+        "PLC1.ARRAY_0..220_OF-Teknike_Aspersao.st_ControleValvula": {
+            "items": {
+                "$ref": "#/definitions/PLC1.Teknike_Aspersao.st_ControleValvula"
+            },
+            "maxItems": 221,
+            "minItems": 221,
+            "type": "array"
+        },
         "PLC1.ARRAY_0..220_OF-Teknike_Partidas.st_LinkDeltaEIP": {
             "items": {
                 "$ref": "#/definitions/PLC1.Teknike_Partidas.st_LinkDeltaEIP"
@@ -6598,6 +6606,16 @@
         },
         "PLC1.Teknike_Aspersao.st_ConfigControleValvula": {
             "properties": {
+                "Linguagem": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Teknike_Aspersao.enu_Linguagem"
+                        },
+                        {
+                            "propertyOrder": 4
+                        }
+                    ]
+                },
                 "rTempoAntesDeAbrirOAr": {
                     "allOf": [
                         {
@@ -7668,7 +7686,7 @@
                         },
                         {
                             "comment": "GUID do processo que vai ser feito na valvula, se for 0 é pq nao tem proceso rolando, ai nao pode aspergir",
-                            "propertyOrder": 8
+                            "propertyOrder": 9
                         }
                     ]
                 },
@@ -7679,7 +7697,7 @@
                         },
                         {
                             "comment": "o cluster que foi escolhido para essa valvula",
-                            "propertyOrder": 25
+                            "propertyOrder": 26
                         }
                     ]
                 },
@@ -7690,7 +7708,7 @@
                         },
                         {
                             "comment": "index da valvula que é controlada",
-                            "propertyOrder": 2
+                            "propertyOrder": 3
                         }
                     ]
                 },
@@ -7701,7 +7719,7 @@
                         },
                         {
                             "comment": "index da valvula que é controlada",
-                            "propertyOrder": 4
+                            "propertyOrder": 5
                         }
                     ]
                 },
@@ -7712,7 +7730,7 @@
                         },
                         {
                             "comment": "Quantidade maxima de valvulas abertas",
-                            "propertyOrder": 18
+                            "propertyOrder": 19
                         }
                     ]
                 },
@@ -7722,7 +7740,7 @@
                             "$ref": "tchmi:general#/definitions/INT"
                         },
                         {
-                            "propertyOrder": 21
+                            "propertyOrder": 22
                         }
                     ]
                 },
@@ -7733,7 +7751,7 @@
                         },
                         {
                             "comment": "tempo que vai segurar o sinal para desligar a ventilação antes e depois de ligar e desligar a valvula",
-                            "propertyOrder": 30
+                            "propertyOrder": 31
                         }
                     ]
                 },
@@ -7744,7 +7762,7 @@
                         },
                         {
                             "comment": "Em horas que pode ficar fazendo a aspersao",
-                            "propertyOrder": 29
+                            "propertyOrder": 30
                         }
                     ]
                 },
@@ -7755,7 +7773,7 @@
                         },
                         {
                             "comment": "Quantidade de valvulas abetas no momento",
-                            "propertyOrder": 19
+                            "propertyOrder": 20
                         }
                     ]
                 },
@@ -7765,7 +7783,7 @@
                             "$ref": "#/definitions/PLC1.REFERENCE-TO-INT"
                         },
                         {
-                            "propertyOrder": 20
+                            "propertyOrder": 21
                         }
                     ]
                 },
@@ -7776,7 +7794,7 @@
                         },
                         {
                             "comment": "pressao da anel para o log no banco",
-                            "propertyOrder": 15
+                            "propertyOrder": 16
                         }
                     ]
                 },
@@ -7787,7 +7805,7 @@
                         },
                         {
                             "comment": "temperatura da agua para o log no banco",
-                            "propertyOrder": 14
+                            "propertyOrder": 15
                         }
                     ]
                 },
@@ -7798,7 +7816,7 @@
                         },
                         {
                             "comment": "conta esse tempo antes de começar o processo de aspersao",
-                            "propertyOrder": 36
+                            "propertyOrder": 37
                         }
                     ]
                 },
@@ -7809,7 +7827,7 @@
                         },
                         {
                             "comment": "textos que vao pra IHM",
-                            "propertyOrder": 5
+                            "propertyOrder": 6
                         }
                     ]
                 },
@@ -7819,7 +7837,7 @@
                             "$ref": "tchmi:general#/definitions/STRING%2880%29"
                         },
                         {
-                            "propertyOrder": 31
+                            "propertyOrder": 32
                         }
                     ]
                 },
@@ -7829,7 +7847,7 @@
                             "$ref": "#/definitions/PLC1.Teknike_Aspersao.st_Protocolo"
                         },
                         {
-                            "propertyOrder": 7
+                            "propertyOrder": 8
                         }
                     ]
                 },
@@ -7840,7 +7858,7 @@
                         },
                         {
                             "comment": "Protocolos que podem ser usados nesta valvula",
-                            "propertyOrder": 6
+                            "propertyOrder": 7
                         }
                     ]
                 },
@@ -7851,7 +7869,7 @@
                         },
                         {
                             "comment": "Estrutura da valvula que vai ser controlada",
-                            "propertyOrder": 1
+                            "propertyOrder": 2
                         }
                     ]
                 },
@@ -7862,7 +7880,7 @@
                         },
                         {
                             "comment": "Estrutura da valvula que vai ser controlada",
-                            "propertyOrder": 3
+                            "propertyOrder": 4
                         }
                     ]
                 },
@@ -7873,7 +7891,7 @@
                         },
                         {
                             "comment": "Tempo ate a valvula sincronizar",
-                            "propertyOrder": 35
+                            "propertyOrder": 36
                         }
                     ]
                 },
@@ -7884,7 +7902,7 @@
                         },
                         {
                             "comment": "Hora atual",
-                            "propertyOrder": 16
+                            "propertyOrder": 17
                         }
                     ]
                 },
@@ -7895,7 +7913,7 @@
                         },
                         {
                             "comment": "Pressao do anel esta OK",
-                            "propertyOrder": 11
+                            "propertyOrder": 12
                         }
                     ]
                 },
@@ -7906,7 +7924,17 @@
                         },
                         {
                             "comment": "Nao pode iniciar o processo por falta de alguma coisa, pode ser que nao foi iniciado o processo ou que nao pode iniciar a asperção",
-                            "propertyOrder": 13
+                            "propertyOrder": 14
+                        }
+                    ]
+                },
+                "xBtLigaFisico": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 39
                         }
                     ]
                 },
@@ -7917,7 +7945,7 @@
                         },
                         {
                             "comment": "Temperatura da camera esta OK",
-                            "propertyOrder": 9
+                            "propertyOrder": 10
                         }
                     ]
                 },
@@ -7928,7 +7956,7 @@
                         },
                         {
                             "comment": "Umidade da camera esta OK",
-                            "propertyOrder": 10
+                            "propertyOrder": 11
                         }
                     ]
                 },
@@ -7939,7 +7967,7 @@
                         },
                         {
                             "comment": "sinal de cancela o protocolo atual",
-                            "propertyOrder": 17
+                            "propertyOrder": 18
                         }
                     ]
                 },
@@ -7949,7 +7977,18 @@
                             "$ref": "tchmi:general#/definitions/BOOL"
                         },
                         {
-                            "propertyOrder": 34
+                            "propertyOrder": 35
+                        }
+                    ]
+                },
+                "xEmergenciaOK": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "comment": "Sinal de emergencia OK da Valvula",
+                            "propertyOrder": 1
                         }
                     ]
                 },
@@ -7960,7 +7999,7 @@
                         },
                         {
                             "comment": "finaliza a aspersao da valvula, a principio é so interno",
-                            "propertyOrder": 24
+                            "propertyOrder": 25
                         }
                     ]
                 },
@@ -7970,7 +8009,7 @@
                             "$ref": "tchmi:general#/definitions/BOOL"
                         },
                         {
-                            "propertyOrder": 32
+                            "propertyOrder": 33
                         }
                     ]
                 },
@@ -7981,7 +8020,7 @@
                         },
                         {
                             "comment": "liga em manual e gera o evento no relatorio",
-                            "propertyOrder": 23
+                            "propertyOrder": 24
                         }
                     ]
                 },
@@ -7991,7 +8030,7 @@
                             "$ref": "tchmi:general#/definitions/BOOL"
                         },
                         {
-                            "propertyOrder": 37
+                            "propertyOrder": 38
                         }
                     ]
                 },
@@ -8001,7 +8040,7 @@
                             "$ref": "tchmi:general#/definitions/BOOL"
                         },
                         {
-                            "propertyOrder": 33
+                            "propertyOrder": 34
                         }
                     ]
                 },
@@ -8012,7 +8051,7 @@
                         },
                         {
                             "comment": "pausa para o sincronismo entre as camaras",
-                            "propertyOrder": 28
+                            "propertyOrder": 29
                         }
                     ]
                 },
@@ -8023,7 +8062,7 @@
                         },
                         {
                             "comment": "pausa para o sincronismo das valvulas do cluster",
-                            "propertyOrder": 26
+                            "propertyOrder": 27
                         }
                     ]
                 },
@@ -8034,7 +8073,17 @@
                         },
                         {
                             "comment": "pausa para o sincronismo entre clusters",
-                            "propertyOrder": 27
+                            "propertyOrder": 28
+                        }
+                    ]
+                },
+                "xPausaUsuarioCamara": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 40
                         }
                     ]
                 },
@@ -8045,7 +8094,7 @@
                         },
                         {
                             "comment": "vai para o fim da aspersao como se tivesse tudo certo",
-                            "propertyOrder": 22
+                            "propertyOrder": 23
                         }
                     ]
                 },
@@ -8056,7 +8105,7 @@
                         },
                         {
                             "comment": "Temperatura do tanque esta OK",
-                            "propertyOrder": 12
+                            "propertyOrder": 13
                         }
                     ]
                 }
@@ -8233,6 +8282,16 @@
                         },
                         {
                             "propertyOrder": 6
+                        }
+                    ]
+                },
+                "xLed": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 23
                         }
                     ]
                 },
@@ -25549,7 +25608,7 @@
             "DYNAMIC": true,
             "MAPPING": "PLC1::GVL_Automatico::stControleValvula",
             "SCHEMA": {
-                "$ref": "tchmi:server#/definitions/PLC1.ARRAY_0..110_OF-Teknike_Aspersao.st_ControleValvula"
+                "$ref": "tchmi:server#/definitions/PLC1.ARRAY_0..220_OF-Teknike_Aspersao.st_ControleValvula"
             },
             "USEMAPPING": true
         },

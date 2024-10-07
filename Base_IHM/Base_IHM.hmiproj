@@ -22,7 +22,7 @@
     <TargetFramework>native1.12-tchmi</TargetFramework>
     <AzureFunctionsVersion>v2</AzureFunctionsVersion>
     <Name>Base_IHM</Name>
-    <HmiCommunicationRouterPort>10227</HmiCommunicationRouterPort>
+    <HmiCommunicationRouterPort>10229</HmiCommunicationRouterPort>
     <HmiCommunicationServerAuthPort>13007</HmiCommunicationServerAuthPort>
     <HmiInitial>1.12.756.1</HmiInitial>
     <HmiRecent>1.12.762.42</HmiRecent>
@@ -742,9 +742,6 @@
     <Content Include="Pages\IHMCamaras\IHMCamaras_operação.content">
       <SubType>Content</SubType>
       <Cache>True</Cache>
-    </Content>
-    <Content Include="Pages\IHMCamaras\TelaIHMCamara.content">
-      <SubType>Content</SubType>
     </Content>
     <Content Include="Pages\Layout\Aneis-Tela Geral.content">
       <SubType>Content</SubType>
