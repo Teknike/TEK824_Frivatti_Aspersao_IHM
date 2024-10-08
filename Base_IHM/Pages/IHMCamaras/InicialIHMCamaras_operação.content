@@ -161,7 +161,7 @@
   }
 ]
 </script>
-<div id="TcHmiRectangle_5224068" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="80" data-tchmi-height-unit="px" data-tchmi-left="1" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="768" data-tchmi-width-unit="px" data-tchmi-zindex="171" data-tchmi-stroke-thickness="0">
+<div id="TcHmiRectangle_5224068" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="80" data-tchmi-height-unit="px" data-tchmi-left="-1" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="770" data-tchmi-width-unit="px" data-tchmi-zindex="171" data-tchmi-stroke-thickness="0">
 <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
 {
   "topLeft": 20.0,
