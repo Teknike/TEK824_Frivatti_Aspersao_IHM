@@ -2558,14 +2558,6 @@
       "type": "object",
       "id": "tchmi:project#/definitions/ucvalvulapropor"
     },
-    "ucPopUpValvulaProporcional": {
-      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
-      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
-      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
-      "frameworkUserControlConfig": "UserControl\\Popup\\ucPopUpValvulaProporcional.usercontrol.json",
-      "type": "object",
-      "id": "tchmi:project#/definitions/ucPopUpValvulaProporcional"
-    },
     "ucStatusSensorSemTexto": {
       "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
       "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
@@ -2653,6 +2645,14 @@
       "frameworkUserControlConfig": "UserControl\\Geral\\UserControl1.usercontrol.json",
       "id": "tchmi:project#/definitions/UserControl1_6",
       "type": "object"
+    },
+    "ucPopUpValvulaProporcional": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl\\Popup\\ucPopUpValvulaProporcional.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/ucPopUpValvulaProporcional"
     }
   }
 }

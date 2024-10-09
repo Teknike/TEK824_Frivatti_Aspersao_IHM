@@ -22,7 +22,7 @@
     <TargetFramework>native1.12-tchmi</TargetFramework>
     <AzureFunctionsVersion>v2</AzureFunctionsVersion>
     <Name>Base_IHM</Name>
-    <HmiCommunicationRouterPort>10229</HmiCommunicationRouterPort>
+    <HmiCommunicationRouterPort>10230</HmiCommunicationRouterPort>
     <HmiCommunicationServerAuthPort>13007</HmiCommunicationServerAuthPort>
     <HmiInitial>1.12.756.1</HmiInitial>
     <HmiRecent>1.12.762.42</HmiRecent>
@@ -764,9 +764,6 @@
       <Cache>True</Cache>
     </Content>
     <Content Include="Pages\Layout\Inicial.content">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Pages\Layout\SistemadePesagem.content">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Pages\Layout\TelaCamara.content">
