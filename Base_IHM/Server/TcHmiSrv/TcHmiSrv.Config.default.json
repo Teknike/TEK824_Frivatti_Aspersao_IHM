@@ -585,6 +585,14 @@
             "minItems": 3,
             "type": "array"
         },
+        "PLC1.ARRAY_0..2_OF-Teknike_Aspersao.FB_PIDeGrafico": {
+            "items": {
+                "$ref": "#/definitions/PLC1.Teknike_Aspersao.FB_PIDeGrafico"
+            },
+            "maxItems": 3,
+            "minItems": 3,
+            "type": "array"
+        },
         "PLC1.ARRAY_0..2_OF-Teknike_Geral.ST_Grafico": {
             "items": {
                 "$ref": "#/definitions/PLC1.Teknike_Geral.ST_Grafico"
@@ -2202,6 +2210,26 @@
                 }
             ]
         },
+        "PLC1.REFERENCE-TO-Tc2_ControllerToolbox.ST_CTRL_PID_PARAMS": {
+            "allOf": [
+                {
+                    "allowImplicitAccess": false
+                },
+                {
+                    "$ref": "#/definitions/PLC1.Tc2_ControllerToolbox.ST_CTRL_PID_PARAMS"
+                }
+            ]
+        },
+        "PLC1.REFERENCE-TO-Teknike_Aspersao.stControlePID": {
+            "allOf": [
+                {
+                    "allowImplicitAccess": false
+                },
+                {
+                    "$ref": "#/definitions/PLC1.Teknike_Aspersao.stControlePID"
+                }
+            ]
+        },
         "PLC1.REFERENCE-TO-Teknike_Geral.st_Valvula": {
             "allOf": [
                 {
@@ -3346,6 +3374,521 @@
                 }
             ],
             "type": "integer"
+        },
+        "PLC1.Tc2_ControllerToolbox.FB_CTRL_PID": {
+            "properties": {
+                "bARWactive": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "comment": "TRUE indicates that the controller output is restricted",
+                            "propertyOrder": 8
+                        }
+                    ]
+                },
+                "bDPartEnabled": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 27
+                        }
+                    ]
+                },
+                "bError": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "comment": "TRUE, if error occurs",
+                            "propertyOrder": 11
+                        }
+                    ]
+                },
+                "bFirstCallAfterAStateChange": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 16
+                        }
+                    ]
+                },
+                "bFirstInit": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 15
+                        }
+                    ]
+                },
+                "bHold": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "comment": "TRUE will hold the controller output at current value",
+                            "propertyOrder": 6
+                        }
+                    ]
+                },
+                "bIPartEnabled": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 26
+                        }
+                    ]
+                },
+                "bMaxLimitReached": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 44
+                        }
+                    ]
+                },
+                "bMinLimitReached": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 45
+                        }
+                    ]
+                },
+                "bSync": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "comment": "rising edge sets controller output manual sync value",
+                            "propertyOrder": 4
+                        }
+                    ]
+                },
+                "bSyncRequest": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 46
+                        }
+                    ]
+                },
+                "eErrorId": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Tc2_ControllerToolbox.E_CTRL_ERRORCODES"
+                        },
+                        {
+                            "comment": "error code",
+                            "propertyOrder": 10
+                        }
+                    ]
+                },
+                "eMode": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Tc2_ControllerToolbox.E_CTRL_MODE"
+                        },
+                        {
+                            "comment": "operating mode",
+                            "propertyOrder": 5
+                        }
+                    ]
+                },
+                "eMode_old": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Tc2_ControllerToolbox.E_CTRL_MODE"
+                        },
+                        {
+                            "propertyOrder": 43
+                        }
+                    ]
+                },
+                "eState": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Tc2_ControllerToolbox.E_CTRL_STATE"
+                        },
+                        {
+                            "comment": "current state of the function block",
+                            "propertyOrder": 9
+                        }
+                    ]
+                },
+                "fActVal": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/LREAL"
+                        },
+                        {
+                            "propertyOrder": 39
+                        }
+                    ]
+                },
+                "fActVal_1": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/LREAL"
+                        },
+                        {
+                            "propertyOrder": 40
+                        }
+                    ]
+                },
+                "fActualValue": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/LREAL"
+                        },
+                        {
+                            "comment": "actual value of the controlled variable",
+                            "propertyOrder": 2
+                        }
+                    ]
+                },
+                "fC_D": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/LREAL"
+                        },
+                        {
+                            "propertyOrder": 18
+                        }
+                    ]
+                },
+                "fCtrlCycleTime": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/LREAL"
+                        },
+                        {
+                            "propertyOrder": 21
+                        }
+                    ]
+                },
+                "fD_D": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/LREAL"
+                        },
+                        {
+                            "propertyOrder": 19
+                        }
+                    ]
+                },
+                "fD_I": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/LREAL"
+                        },
+                        {
+                            "propertyOrder": 17
+                        }
+                    ]
+                },
+                "fE": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/LREAL"
+                        },
+                        {
+                            "propertyOrder": 30
+                        }
+                    ]
+                },
+                "fE_1": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/LREAL"
+                        },
+                        {
+                            "propertyOrder": 31
+                        }
+                    ]
+                },
+                "fHalfCtrlCycleTime": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/LREAL"
+                        },
+                        {
+                            "propertyOrder": 22
+                        }
+                    ]
+                },
+                "fLimitValue": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/LREAL"
+                        },
+                        {
+                            "propertyOrder": 29
+                        }
+                    ]
+                },
+                "fManSyncValue": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/LREAL"
+                        },
+                        {
+                            "comment": "manual value to synchronize controller output",
+                            "propertyOrder": 3
+                        }
+                    ]
+                },
+                "fOut": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/LREAL"
+                        },
+                        {
+                            "comment": "controller output",
+                            "propertyOrder": 7
+                        }
+                    ]
+                },
+                "fSetpointValue": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/LREAL"
+                        },
+                        {
+                            "comment": "controller input",
+                            "propertyOrder": 1
+                        }
+                    ]
+                },
+                "fSyncValueInternal": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/LREAL"
+                        },
+                        {
+                            "propertyOrder": 28
+                        }
+                    ]
+                },
+                "fTaskCycleTime": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/LREAL"
+                        },
+                        {
+                            "propertyOrder": 20
+                        }
+                    ]
+                },
+                "fTd": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/LREAL"
+                        },
+                        {
+                            "propertyOrder": 25
+                        }
+                    ]
+                },
+                "fTn": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/LREAL"
+                        },
+                        {
+                            "propertyOrder": 23
+                        }
+                    ]
+                },
+                "fTv": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/LREAL"
+                        },
+                        {
+                            "propertyOrder": 24
+                        }
+                    ]
+                },
+                "fY": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/LREAL"
+                        },
+                        {
+                            "propertyOrder": 37
+                        }
+                    ]
+                },
+                "fY_1": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/LREAL"
+                        },
+                        {
+                            "propertyOrder": 38
+                        }
+                    ]
+                },
+                "fY_D": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/LREAL"
+                        },
+                        {
+                            "propertyOrder": 35
+                        }
+                    ]
+                },
+                "fY_D_1": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/LREAL"
+                        },
+                        {
+                            "propertyOrder": 36
+                        }
+                    ]
+                },
+                "fY_I": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/LREAL"
+                        },
+                        {
+                            "propertyOrder": 33
+                        }
+                    ]
+                },
+                "fY_I_1": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/LREAL"
+                        },
+                        {
+                            "propertyOrder": 34
+                        }
+                    ]
+                },
+                "fY_P": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/LREAL"
+                        },
+                        {
+                            "propertyOrder": 32
+                        }
+                    ]
+                },
+                "fbR_TRIG": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Tc2_Standard.R_TRIG"
+                        },
+                        {
+                            "propertyOrder": 47
+                        }
+                    ]
+                },
+                "nActCtrlCycleTick": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/UDINT"
+                        },
+                        {
+                            "propertyOrder": 42
+                        }
+                    ]
+                },
+                "nCtrlCycleTicks": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/UDINT"
+                        },
+                        {
+                            "propertyOrder": 41
+                        }
+                    ]
+                },
+                "stInternalCycleTimeInterpretation": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Tc2_ControllerToolbox.ST_CTRL_CYCLE_TIME_INTERPRETATION"
+                        },
+                        {
+                            "propertyOrder": 14
+                        }
+                    ]
+                },
+                "stInternalParams": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Tc2_ControllerToolbox.ST_CTRL_PID_PARAMS"
+                        },
+                        {
+                            "propertyOrder": 13
+                        }
+                    ]
+                },
+                "stParams": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.REFERENCE-TO-Tc2_ControllerToolbox.ST_CTRL_PID_PARAMS"
+                        },
+                        {
+                            "comment": "parameter structure",
+                            "propertyOrder": 12
+                        }
+                    ]
+                }
+            },
+            "type": "object"
+        },
+        "PLC1.Tc2_ControllerToolbox.ST_CTRL_CYCLE_TIME_INTERPRETATION": {
+            "attributes": {
+                "hide": ""
+            },
+            "properties": {
+                "bInterpretCycleTimeAsTicks": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 1
+                        }
+                    ]
+                },
+                "fBaseTime": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/LREAL"
+                        },
+                        {
+                            "propertyOrder": 2
+                        }
+                    ]
+                }
+            },
+            "type": "object"
         },
         "PLC1.Tc2_ControllerToolbox.ST_CTRL_PID_PARAMS": {
             "properties": {
@@ -5504,6 +6047,51 @@
                 }
             ]
         },
+        "PLC1.Teknike_Aspersao.FB_PIDeGrafico": {
+            "properties": {
+                "PID": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Tc2_ControllerToolbox.FB_CTRL_PID"
+                        },
+                        {
+                            "propertyOrder": 2
+                        }
+                    ]
+                },
+                "i": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/INT"
+                        },
+                        {
+                            "propertyOrder": 4
+                        }
+                    ]
+                },
+                "stPID": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.REFERENCE-TO-Teknike_Aspersao.stControlePID"
+                        },
+                        {
+                            "propertyOrder": 1
+                        }
+                    ]
+                },
+                "tonTempoDeAmostragem": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Tc2_Standard.TON"
+                        },
+                        {
+                            "propertyOrder": 3
+                        }
+                    ]
+                }
+            },
+            "type": "object"
+        },
         "PLC1.Teknike_Aspersao.enu_Linguagem": {
             "attributes": {
                 "qualified_only": "",
@@ -5529,6 +6117,342 @@
                 }
             ],
             "type": "integer"
+        },
+        "PLC1.Teknike_Aspersao.stConfigMaxMinSet": {
+            "properties": {
+                "rMax": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/REAL"
+                        },
+                        {
+                            "propertyOrder": 2
+                        }
+                    ]
+                },
+                "rMin": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/REAL"
+                        },
+                        {
+                            "propertyOrder": 3
+                        }
+                    ]
+                },
+                "rSetpoint": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/REAL"
+                        },
+                        {
+                            "propertyOrder": 1
+                        }
+                    ]
+                }
+            },
+            "type": "object"
+        },
+        "PLC1.Teknike_Aspersao.stControlePID": {
+            "properties": {
+                "Config": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Teknike_Aspersao.stConfigMaxMinSet"
+                        },
+                        {
+                            "propertyOrder": 1
+                        }
+                    ]
+                },
+                "Grafico": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.ARRAY_0..3_0..120_OF-Teknike_Geral.ST_Grafico"
+                        },
+                        {
+                            "comment": "amostragem a cada 0.5 s. Pressao atual, setpoint, saida do PID?",
+                            "propertyOrder": 3
+                        }
+                    ]
+                },
+                "PID": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Teknike_Aspersao.stPID"
+                        },
+                        {
+                            "propertyOrder": 2
+                        }
+                    ]
+                },
+                "rOutraNoGrafico": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/REAL"
+                        },
+                        {
+                            "propertyOrder": 7
+                        }
+                    ]
+                },
+                "xLigaInterno": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 5
+                        }
+                    ]
+                },
+                "xLigaSistema": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 4
+                        }
+                    ]
+                },
+                "xModoCalibracao": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 6
+                        }
+                    ]
+                },
+                "xPressao": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 8
+                        }
+                    ]
+                },
+                "xReset": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 9
+                        }
+                    ]
+                }
+            },
+            "type": "object"
+        },
+        "PLC1.Teknike_Aspersao.stPID": {
+            "properties": {
+                "EN": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Teknike_Aspersao.stPID_EN"
+                        },
+                        {
+                            "propertyOrder": 1
+                        }
+                    ]
+                },
+                "SA": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Teknike_Aspersao.stPID_SA"
+                        },
+                        {
+                            "propertyOrder": 2
+                        }
+                    ]
+                },
+                "stParams": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Tc2_ControllerToolbox.ST_CTRL_PID_PARAMS"
+                        },
+                        {
+                            "propertyOrder": 3
+                        }
+                    ]
+                }
+            },
+            "type": "object"
+        },
+        "PLC1.Teknike_Aspersao.stPID_EN": {
+            "properties": {
+                "bHold": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 6
+                        }
+                    ]
+                },
+                "bSync": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 4
+                        }
+                    ]
+                },
+                "eMode": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Tc2_ControllerToolbox.E_CTRL_MODE"
+                        },
+                        {
+                            "propertyOrder": 5
+                        }
+                    ]
+                },
+                "fActualValue": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/LREAL"
+                        },
+                        {
+                            "propertyOrder": 2
+                        }
+                    ]
+                },
+                "fManSyncValue": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/LREAL"
+                        },
+                        {
+                            "propertyOrder": 3
+                        }
+                    ]
+                },
+                "fSetpointValue": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/LREAL"
+                        },
+                        {
+                            "propertyOrder": 1
+                        }
+                    ]
+                },
+                "rMaximo": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/REAL"
+                        },
+                        {
+                            "propertyOrder": 7
+                        }
+                    ]
+                },
+                "rMinimo": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/REAL"
+                        },
+                        {
+                            "propertyOrder": 8
+                        }
+                    ]
+                }
+            },
+            "type": "object"
+        },
+        "PLC1.Teknike_Aspersao.stPID_SA": {
+            "properties": {
+                "bARWactive": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 2
+                        }
+                    ]
+                },
+                "bError": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 7
+                        }
+                    ]
+                },
+                "eErrorId": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Tc2_ControllerToolbox.E_CTRL_ERRORCODES"
+                        },
+                        {
+                            "propertyOrder": 5
+                        }
+                    ]
+                },
+                "eState": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Tc2_ControllerToolbox.E_CTRL_STATE"
+                        },
+                        {
+                            "propertyOrder": 3
+                        }
+                    ]
+                },
+                "fOut": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/LREAL"
+                        },
+                        {
+                            "propertyOrder": 1
+                        }
+                    ]
+                },
+                "rSaida": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/REAL"
+                        },
+                        {
+                            "propertyOrder": 8
+                        }
+                    ]
+                },
+                "sErrorId": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/STRING%2880%29"
+                        },
+                        {
+                            "propertyOrder": 6
+                        }
+                    ]
+                },
+                "sState": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/STRING%2880%29"
+                        },
+                        {
+                            "propertyOrder": 4
+                        }
+                    ]
+                }
+            },
+            "type": "object"
         },
         "PLC1.Teknike_Aspersao.st_Camara": {
             "properties": {
@@ -22656,7 +23580,7 @@
     "ENABLE_SERVER_UPDATE": true,
     "ENDPOINTS": [
         "http://127.0.0.1:13007",
-        "http://127.0.0.1:3019"
+        "http://127.0.0.1:3020"
     ],
     "ETAGENABLED": true,
     "EXTENSIONS": {
@@ -25592,16 +26516,6 @@
             },
             "USEMAPPING": true
         },
-        "PLC1.GVL_Automatico.stControleTrocador": {
-            "ACCESS": 3,
-            "DOMAIN": "ADS",
-            "DYNAMIC": true,
-            "MAPPING": "PLC1::GVL_Automatico::stControleTrocador",
-            "SCHEMA": {
-                "$ref": "tchmi:server#/definitions/PLC1.stControlePID"
-            },
-            "USEMAPPING": true
-        },
         "PLC1.GVL_Automatico.stControleValvula": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -26131,6 +27045,26 @@
                 ]
             },
             "SUBSYMBOL_MAPPING": "",
+            "USEMAPPING": true
+        },
+        "PLC1.PIDs.fbPIDSPressaoAnel": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::PIDs::fbPIDSPressaoAnel",
+            "SCHEMA": {
+                "$ref": "tchmi:server#/definitions/PLC1.ARRAY_0..2_OF-Teknike_Aspersao.FB_PIDeGrafico"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.PIDs.fbPIDTrocador": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::PIDs::fbPIDTrocador",
+            "SCHEMA": {
+                "$ref": "tchmi:server#/definitions/PLC1.Teknike_Aspersao.FB_PIDeGrafico"
+            },
             "USEMAPPING": true
         },
         "PLC1.Partidas.GerarTabelas": {
@@ -28832,6 +29766,8 @@
                 "PLC1.KPIs.fbGraficoSaida.xLe": 3,
                 "PLC1.Merge2p1.fbMerge": 3,
                 "PLC1.Merge3p1.fbMerge.i": 3,
+                "PLC1.PIDs.fbPIDSPressaoAnel": 3,
+                "PLC1.PIDs.fbPIDTrocador": 3,
                 "PLC1.Partidas.GerarTabelas": 3,
                 "PLC1.Partidas.fbBDPartida": 3,
                 "PLC1.Partidas.fbConsfigPartidaNoBanco": 3,

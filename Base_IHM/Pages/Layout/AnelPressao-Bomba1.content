@@ -432,7 +432,7 @@
   "bottomRightUnit": "px"
 }
 </script>
-<div id="TcHmiToggleButton_89" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="55" data-tchmi-height-unit="px" data-tchmi-left="16" data-tchmi-left-unit="px" data-tchmi-text="Liga Anel" data-tchmi-top="34" data-tchmi-top-unit="px" data-tchmi-width="238" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="22" data-tchmi-state-symbol="%s%PLC1.GVL_Automatico.stControlePressaoAnel[1]::xLigaSistema%/s%" data-tchmi-zindex="15">
+<div id="TcHmiToggleButton_89" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="55" data-tchmi-height-unit="px" data-tchmi-left="16" data-tchmi-left-unit="px" data-tchmi-text="Liga Anel" data-tchmi-top="34" data-tchmi-top-unit="px" data-tchmi-width="238" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="22" data-tchmi-state-symbol="%s%PLC1.GVL_Automatico.stControlePressaoAnel[1]::xLigaSistema%/s%" data-tchmi-zindex="15" data-tchmi-toggle-state="Active">
 
 <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
 {

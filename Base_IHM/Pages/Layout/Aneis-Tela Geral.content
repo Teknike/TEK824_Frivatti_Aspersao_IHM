@@ -761,7 +761,7 @@
 </div>
 </div>
 </div>
-<div id="UserControl1_153" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="80" data-tchmi-height-unit="px" data-tchmi-left="103" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Popup/Motor/ucToggleBotão.usercontrol" data-tchmi-top="99" data-tchmi-top-unit="px" data-tchmi-width="250" data-tchmi-width-unit="px" data-tchmi-ifonte="20" data-tchmi-textoligado="Liga Controle Nivel Tanque" data-tchmi-textodesligado="Desliga Controle Nivel Tanque" data-tchmi-variavel="%s%PLC1.GVL_Comando.xLigaControleNivelTanque%/s%" data-tchmi-zindex="192">
+<div id="UserControl1_153" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="80" data-tchmi-height-unit="px" data-tchmi-left="178" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Popup/Motor/ucToggleBotão.usercontrol" data-tchmi-top="91" data-tchmi-top-unit="px" data-tchmi-width="250" data-tchmi-width-unit="px" data-tchmi-ifonte="20" data-tchmi-textoligado="Liga Controle Nivel Tanque" data-tchmi-textodesligado="Desliga Controle Nivel Tanque" data-tchmi-variavel="%s%PLC1.GVL_Comando.xLigaControleNivelTanque%/s%" data-tchmi-zindex="192">
 <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
 {
   "topLeft": 0.0,
@@ -1418,7 +1418,7 @@
 
 
 </div>
-<div id="TcHmiPolygon_111" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiPolygon" data-tchmi-height="17" data-tchmi-height-unit="px" data-tchmi-left="1274" data-tchmi-left-unit="px" data-tchmi-points="0,100 100,0 200,100 100,100" data-tchmi-scale-mode="ScaleToFill" data-tchmi-top="108" data-tchmi-top-unit="px" data-tchmi-width="20" data-tchmi-width-unit="px" data-tchmi-zindex="50">
+<div id="TcHmiPolygon_111" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiPolygon" data-tchmi-height="17" data-tchmi-height-unit="px" data-tchmi-left="1339" data-tchmi-left-unit="px" data-tchmi-points="0,100 100,0 200,100 100,100" data-tchmi-scale-mode="ScaleToFill" data-tchmi-top="106" data-tchmi-top-unit="px" data-tchmi-width="20" data-tchmi-width-unit="px" data-tchmi-zindex="50">
 <script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
 {
   "color": "rgba(161, 35, 5, 1)"

@@ -704,7 +704,7 @@
 }
 </script>
 </div>
-<div id="TcHmi_Controls_Beckhoff_TcHmiImage_1825" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="674" data-tchmi-height-unit="px" data-tchmi-left="168" data-tchmi-left-unit="px" data-tchmi-src="Images/Aspersao/357bea55-c394-4318-8daa-d43c40103448-removebg-preview.png" data-tchmi-top="139" data-tchmi-top-unit="px" data-tchmi-width="730" data-tchmi-width-unit="px" data-tchmi-zindex="11" data-tchmi-right="386">
+<div id="TcHmi_Controls_Beckhoff_TcHmiImage_1825" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="674" data-tchmi-height-unit="px" data-tchmi-left="168" data-tchmi-left-unit="px" data-tchmi-src="Images/Aspersao/357bea55-c394-4318-8daa-d43c40103448-removebg-preview.png" data-tchmi-top="135" data-tchmi-top-unit="px" data-tchmi-width="730" data-tchmi-width-unit="px" data-tchmi-zindex="11" data-tchmi-right="374">
 </div>
 <div id="UserControl1_130" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="12" data-tchmi-height-unit="px" data-tchmi-left="940" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucSeta.usercontrol" data-tchmi-top="168" data-tchmi-top-unit="px" data-tchmi-width="31" data-tchmi-width-unit="px" data-tchmi-zindex="160">
 <script data-tchmi-target-attribute="data-tchmi-transform" type="application/json">
@@ -1192,7 +1192,7 @@
 ]
 </script>
 </div>
-<div id="TcHmiContainer_267" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="426" data-tchmi-height-unit="px" data-tchmi-left="985" data-tchmi-left-unit="px" data-tchmi-top="71" data-tchmi-top-unit="px" data-tchmi-width="865" data-tchmi-width-unit="px" data-tchmi-zindex="20" data-tchmi-creator-locked="True">
+<div id="TcHmiContainer_267" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="426" data-tchmi-height-unit="px" data-tchmi-left="985" data-tchmi-left-unit="px" data-tchmi-top="71" data-tchmi-top-unit="px" data-tchmi-width="865" data-tchmi-width-unit="px" data-tchmi-zindex="20">
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
   "left": 5,
@@ -1418,7 +1418,7 @@
 ]
 </script>
 </div>
-<div id="TcHmi_Controls_Beckhoff_TcHmiImage_1806" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="58" data-tchmi-height-unit="px" data-tchmi-left="-242" data-tchmi-left-unit="px" data-tchmi-src="Images/Aspersao/imagem_2024-05-14_210102021-removebg-preview.png" data-tchmi-top="48" data-tchmi-top-unit="px" data-tchmi-width="63" data-tchmi-width-unit="px" data-tchmi-zindex="49">
+<div id="TcHmi_Controls_Beckhoff_TcHmiImage_1806" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="58" data-tchmi-height-unit="px" data-tchmi-left="-253" data-tchmi-left-unit="px" data-tchmi-src="Images/Aspersao/imagem_2024-05-14_210102021-removebg-preview.png" data-tchmi-top="48" data-tchmi-top-unit="px" data-tchmi-width="63" data-tchmi-width-unit="px" data-tchmi-zindex="49">
 <script data-tchmi-target-attribute="data-tchmi-transform" type="application/json">
 [
   {
@@ -1833,7 +1833,7 @@
 ]
 </script>
 </div>
-<div id="UserControl1_149" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="68" data-tchmi-height-unit="px" data-tchmi-left="15" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Popup/Motor/ucToggleBotão.usercontrol" data-tchmi-top="60" data-tchmi-top-unit="px" data-tchmi-width="232" data-tchmi-width-unit="px" data-tchmi-ifonte="20" data-tchmi-textoligado="Liga Controle de Nivel do Tanque" data-tchmi-textodesligado="Desliga Controle de Nivel do Tanque" data-tchmi-variavel="%s%PLC1.GVL_Comando.xLigaControleNivelTanque|BindingMode=TwoWay%/s%" data-tchmi-zindex="180" data-tchmi-is-enabled="true">
+<div id="UserControl1_149" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="68" data-tchmi-height-unit="px" data-tchmi-left="12" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Popup/Motor/ucToggleBotão.usercontrol" data-tchmi-top="57" data-tchmi-top-unit="px" data-tchmi-width="232" data-tchmi-width-unit="px" data-tchmi-ifonte="20" data-tchmi-textoligado="Liga Controle de Nivel do Tanque" data-tchmi-textodesligado="Desliga Controle de Nivel do Tanque" data-tchmi-variavel="%s%PLC1.GVL_Comando.xLigaControleNivelTanque%/s%" data-tchmi-zindex="180" data-tchmi-is-enabled="true">
 <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
 {
   "topLeft": 0.0,
@@ -1924,7 +1924,7 @@
 ]
 </script>
 </div>
-<div id="UserControl1_150" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="68" data-tchmi-height-unit="px" data-tchmi-left="15" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Popup/Motor/ucToggleBotão.usercontrol" data-tchmi-top="153" data-tchmi-top-unit="px" data-tchmi-width="232" data-tchmi-width-unit="px" data-tchmi-ifonte="20" data-tchmi-textoligado="Liga Trocador de Calor" data-tchmi-textodesligado="Desliga Trocador de Calor" data-tchmi-variavel="%s%PLC1.GVL_Automatico.stControleTrocador::xLigaSistema%/s%" data-tchmi-zindex="180" data-tchmi-is-enabled="%f%!%s%PLC1.GVL_Seguranca.Pop_UpTrocadorCongelado%/s%%/f%" data-tchmi-tooltip="">
+<div id="UserControl1_150" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="68" data-tchmi-height-unit="px" data-tchmi-left="15" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Popup/Motor/ucToggleBotão.usercontrol" data-tchmi-top="153" data-tchmi-top-unit="px" data-tchmi-width="232" data-tchmi-width-unit="px" data-tchmi-ifonte="20" data-tchmi-textoligado="Liga Trocador de Calor" data-tchmi-textodesligado="Desliga Trocador de Calor" data-tchmi-variavel="%s%PLC1.PIDs.fbPIDTrocador::stPID::xLigaSistema%/s%" data-tchmi-zindex="180" data-tchmi-is-enabled="%f%!%s%PLC1.GVL_Seguranca.Pop_UpTrocadorCongelado%/s%%/f%" data-tchmi-tooltip="">
 <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
 {
   "topLeft": 0.0,
@@ -2861,7 +2861,7 @@
 </div>
 <div id="UcStatusSensor_180" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="42" data-tchmi-height-unit="px" data-tchmi-left="483" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucStatusSensorSemTexto.usercontrol" data-tchmi-top="657" data-tchmi-top-unit="px" data-tchmi-width="112" data-tchmi-width-unit="px" data-tchmi-ifontetexto="19" data-tchmi-ifontesensor="19" data-tchmi-sunidade="ºC" data-tchmi-icasasdepoisdavirgula="1" data-tchmi-rvalormaxcinza="0" data-tchmi-rvalormincinza="4" data-tchmi-rvalormaxamarelo="90" data-tchmi-rvalorminamarelo="-0.1" data-tchmi-rsensor="%s%PLC1.GVL_Automatico.Tanque::rTempSaida%/s%" data-tchmi-zindex="340" data-tchmi-tooltiip="Temperatura Final Trocador de Calor">
 </div>
-<div id="Ucvalvulapropor_5" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="84" data-tchmi-height-unit="px" data-tchmi-left="634" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucvalvulapropor.usercontrol" data-tchmi-top="101" data-tchmi-top-unit="px" data-tchmi-width="93" data-tchmi-width-unit="px" data-tchmi-zindex="102" data-tchmi-stvalvulaproporcional="%s%PLC1.GVL_Valvulas.ValProp[32]|BindingMode=TwoWay%/s%" data-tchmi-iindex="32">
+<div id="Ucvalvulapropor_5" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="84" data-tchmi-height-unit="px" data-tchmi-left="620" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucvalvulapropor.usercontrol" data-tchmi-top="101" data-tchmi-top-unit="px" data-tchmi-width="93" data-tchmi-width-unit="px" data-tchmi-zindex="102" data-tchmi-stvalvulaproporcional="%s%PLC1.GVL_Valvulas.ValProp[32]|BindingMode=TwoWay%/s%" data-tchmi-iindex="32">
 <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
 [
   {
@@ -3733,7 +3733,7 @@
 </div>
 <div id="Udadosbomba_25" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="114" data-tchmi-height-unit="px" data-tchmi-left="39" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucDadosbomba.usercontrol" data-tchmi-top="929" data-tchmi-top-unit="px" data-tchmi-width="262" data-tchmi-width-unit="px" data-tchmi-stmotor="%s%PLC1.GVL_Motores.Motor[2]%/s%" data-tchmi-ifonte="19" data-tchmi-ifonte_textoparametros="19" data-tchmi-snomemotor="Bomba Reserva Trocador" data-tchmi-zindex="3">
 </div>
-<div id="TcHmiRectangle_5224136" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="10" data-tchmi-height-unit="px" data-tchmi-left="1497" data-tchmi-left-unit="px" data-tchmi-top="1193" data-tchmi-top-unit="px" data-tchmi-width="366" data-tchmi-width-unit="px" data-tchmi-zindex="30">
+<div id="TcHmiRectangle_5224136" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="10" data-tchmi-height-unit="px" data-tchmi-left="1330" data-tchmi-left-unit="px" data-tchmi-top="1193" data-tchmi-top-unit="px" data-tchmi-width="533" data-tchmi-width-unit="px" data-tchmi-zindex="30">
 <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
 {
   "topLeft": 0.0,
@@ -3763,7 +3763,7 @@
 </div>
 <div id="UcStatusSensor_156" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="42" data-tchmi-height-unit="px" data-tchmi-left="856" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucStatusSensorSemTexto.usercontrol" data-tchmi-top="85" data-tchmi-top-unit="px" data-tchmi-width="112" data-tchmi-width-unit="px" data-tchmi-ifontetexto="19" data-tchmi-ifontesensor="19" data-tchmi-sunidade="ºC" data-tchmi-icasasdepoisdavirgula="1" data-tchmi-rvalormaxcinza="0" data-tchmi-rvalormincinza="4" data-tchmi-rvalormaxamarelo="90" data-tchmi-rvalorminamarelo="-0.1" data-tchmi-rsensor="%s%PLC1.GVL_Automatico.Anel[1]::rTempFim%/s%" data-tchmi-zindex="148" data-tchmi-tooltiip="Temperatura Final do Anel">
 </div>
-<div id="UcStatusSensor_155" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="42" data-tchmi-height-unit="px" data-tchmi-left="734" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucStatusSensorSemTexto.usercontrol" data-tchmi-top="82" data-tchmi-top-unit="px" data-tchmi-width="112" data-tchmi-width-unit="px" data-tchmi-ifontetexto="19" data-tchmi-ifontesensor="19" data-tchmi-sunidade="Bar" data-tchmi-icasasdepoisdavirgula="1" data-tchmi-rvalormaxcinza="2.5" data-tchmi-rvalormincinza="0.5" data-tchmi-rvalormaxamarelo="5" data-tchmi-rvalorminamarelo="0" data-tchmi-rsensor="%s%PLC1.GVL_Automatico.Anel[1]::rPressaoFim%/s%" data-tchmi-tooltiip="Pressão Final do Anel" data-tchmi-zindex="150">
+<div id="UcStatusSensor_155" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="42" data-tchmi-height-unit="px" data-tchmi-left="714" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucStatusSensorSemTexto.usercontrol" data-tchmi-top="82" data-tchmi-top-unit="px" data-tchmi-width="112" data-tchmi-width-unit="px" data-tchmi-ifontetexto="19" data-tchmi-ifontesensor="19" data-tchmi-sunidade="Bar" data-tchmi-icasasdepoisdavirgula="1" data-tchmi-rvalormaxcinza="2.5" data-tchmi-rvalormincinza="0.5" data-tchmi-rvalormaxamarelo="5" data-tchmi-rvalorminamarelo="0" data-tchmi-rsensor="%s%PLC1.GVL_Automatico.Anel[1]::rPressaoFim%/s%" data-tchmi-tooltiip="Pressão Final do Anel" data-tchmi-zindex="150">
 </div>
 <div id="TcHmi_Controls_Beckhoff_TcHmiImage_1882" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="57" data-tchmi-height-unit="px" data-tchmi-left="1728" data-tchmi-left-unit="px" data-tchmi-src="Images/Aspersao/PT100.png" data-tchmi-top="1142" data-tchmi-top-unit="px" data-tchmi-width="48" data-tchmi-width-unit="px" data-tchmi-zindex="171">
 <script data-tchmi-target-attribute="data-tchmi-transform" type="application/json">
@@ -3835,7 +3835,7 @@
 ]
 </script>
 </div>
-<div id="Ucvalvulapropor_7" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="84" data-tchmi-height-unit="px" data-tchmi-left="626" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucvalvulapropor.usercontrol" data-tchmi-top="-11" data-tchmi-top-unit="px" data-tchmi-width="93" data-tchmi-width-unit="px" data-tchmi-zindex="102" data-tchmi-stvalvulaproporcional="%s%PLC1.GVL_Valvulas.ValProp[32]|BindingMode=TwoWay%/s%" data-tchmi-iindex="32">
+<div id="Ucvalvulapropor_7" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="84" data-tchmi-height-unit="px" data-tchmi-left="612" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucvalvulapropor.usercontrol" data-tchmi-top="-8" data-tchmi-top-unit="px" data-tchmi-width="93" data-tchmi-width-unit="px" data-tchmi-zindex="102" data-tchmi-stvalvulaproporcional="%s%PLC1.GVL_Valvulas.ValProp[32]|BindingMode=TwoWay%/s%" data-tchmi-iindex="32">
 <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
 [
   {
@@ -3917,7 +3917,7 @@
 ]
 </script>
 </div>
-<div id="TcHmi_Controls_Beckhoff_TcHmiImage_1884" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="57" data-tchmi-height-unit="px" data-tchmi-left="886" data-tchmi-left-unit="px" data-tchmi-src="Images/Aspersao/PT100.png" data-tchmi-top="825" data-tchmi-top-unit="px" data-tchmi-width="48" data-tchmi-width-unit="px" data-tchmi-zindex="171">
+<div id="TcHmi_Controls_Beckhoff_TcHmiImage_1884" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="57" data-tchmi-height-unit="px" data-tchmi-left="878" data-tchmi-left-unit="px" data-tchmi-src="Images/Aspersao/PT100.png" data-tchmi-top="829" data-tchmi-top-unit="px" data-tchmi-width="48" data-tchmi-width-unit="px" data-tchmi-zindex="171">
 <script data-tchmi-target-attribute="data-tchmi-transform" type="application/json">
 [
   {
@@ -3927,7 +3927,7 @@
 ]
 </script>
 </div>
-<div id="TcHmi_Controls_Beckhoff_TcHmiImage_1885" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="58" data-tchmi-height-unit="px" data-tchmi-left="746" data-tchmi-left-unit="px" data-tchmi-src="Images/Aspersao/imagem_2024-05-14_210102021-removebg-preview.png" data-tchmi-top="835" data-tchmi-top-unit="px" data-tchmi-width="63" data-tchmi-width-unit="px" data-tchmi-zindex="1">
+<div id="TcHmi_Controls_Beckhoff_TcHmiImage_1885" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="58" data-tchmi-height-unit="px" data-tchmi-left="739" data-tchmi-left-unit="px" data-tchmi-src="Images/Aspersao/imagem_2024-05-14_210102021-removebg-preview.png" data-tchmi-top="835" data-tchmi-top-unit="px" data-tchmi-width="63" data-tchmi-width-unit="px" data-tchmi-zindex="1">
 <script data-tchmi-target-attribute="data-tchmi-transform" type="application/json">
 [
   {
@@ -3937,15 +3937,15 @@
 ]
 </script>
 </div>
-<div id="UcStatusSensor_195" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="42" data-tchmi-height-unit="px" data-tchmi-left="719" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucStatusSensorSemTexto.usercontrol" data-tchmi-top="767" data-tchmi-top-unit="px" data-tchmi-width="112" data-tchmi-width-unit="px" data-tchmi-ifontetexto="19" data-tchmi-ifontesensor="19" data-tchmi-sunidade="Bar" data-tchmi-icasasdepoisdavirgula="1" data-tchmi-rvalormaxcinza="2.5" data-tchmi-rvalormincinza="0.5" data-tchmi-rvalormaxamarelo="5" data-tchmi-rvalorminamarelo="0" data-tchmi-rsensor="%s%PLC1.GVL_Automatico.Anel[2]::rPressaoInicio%/s%" data-tchmi-tooltiip="Pressão Final do Anel" data-tchmi-zindex="150">
+<div id="UcStatusSensor_195" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="42" data-tchmi-height-unit="px" data-tchmi-left="714" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucStatusSensorSemTexto.usercontrol" data-tchmi-top="781" data-tchmi-top-unit="px" data-tchmi-width="112" data-tchmi-width-unit="px" data-tchmi-ifontetexto="19" data-tchmi-ifontesensor="19" data-tchmi-sunidade="Bar" data-tchmi-icasasdepoisdavirgula="1" data-tchmi-rvalormaxcinza="2.5" data-tchmi-rvalormincinza="0.5" data-tchmi-rvalormaxamarelo="5" data-tchmi-rvalorminamarelo="0" data-tchmi-rsensor="%s%PLC1.GVL_Automatico.Anel[2]::rPressaoInicio%/s%" data-tchmi-tooltiip="Pressão Final do Anel" data-tchmi-zindex="150">
 </div>
-<div id="UcStatusSensor_196" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="42" data-tchmi-height-unit="px" data-tchmi-left="841" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucStatusSensorSemTexto.usercontrol" data-tchmi-top="770" data-tchmi-top-unit="px" data-tchmi-width="112" data-tchmi-width-unit="px" data-tchmi-ifontetexto="19" data-tchmi-ifontesensor="19" data-tchmi-sunidade="ºC" data-tchmi-icasasdepoisdavirgula="1" data-tchmi-rvalormaxcinza="0" data-tchmi-rvalormincinza="4" data-tchmi-rvalormaxamarelo="90" data-tchmi-rvalorminamarelo="-0.1" data-tchmi-rsensor="%s%PLC1.GVL_Automatico.Anel[2]::rTempInicio%/s%" data-tchmi-zindex="148" data-tchmi-tooltiip="Temperatura Final do Anel">
+<div id="UcStatusSensor_196" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="42" data-tchmi-height-unit="px" data-tchmi-left="844" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucStatusSensorSemTexto.usercontrol" data-tchmi-top="781" data-tchmi-top-unit="px" data-tchmi-width="112" data-tchmi-width-unit="px" data-tchmi-ifontetexto="19" data-tchmi-ifontesensor="19" data-tchmi-sunidade="ºC" data-tchmi-icasasdepoisdavirgula="1" data-tchmi-rvalormaxcinza="0" data-tchmi-rvalormincinza="4" data-tchmi-rvalormaxamarelo="90" data-tchmi-rvalorminamarelo="-0.1" data-tchmi-rsensor="%s%PLC1.GVL_Automatico.Anel[2]::rTempInicio%/s%" data-tchmi-zindex="148" data-tchmi-tooltiip="Temperatura Final do Anel">
 </div>
-<div id="UcStatusSensor_197" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="42" data-tchmi-height-unit="px" data-tchmi-left="729" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucStatusSensorSemTexto.usercontrol" data-tchmi-top="272" data-tchmi-top-unit="px" data-tchmi-width="112" data-tchmi-width-unit="px" data-tchmi-ifontetexto="19" data-tchmi-ifontesensor="19" data-tchmi-sunidade="Bar" data-tchmi-icasasdepoisdavirgula="1" data-tchmi-rvalormaxcinza="2.5" data-tchmi-rvalormincinza="0.5" data-tchmi-rvalormaxamarelo="5" data-tchmi-rvalorminamarelo="0" data-tchmi-rsensor="%s%PLC1.GVL_Automatico.Anel[1]::rPressaoInicio%/s%" data-tchmi-tooltiip="Pressão Final do Anel" data-tchmi-zindex="150">
+<div id="UcStatusSensor_197" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="42" data-tchmi-height-unit="px" data-tchmi-left="714" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucStatusSensorSemTexto.usercontrol" data-tchmi-top="272" data-tchmi-top-unit="px" data-tchmi-width="112" data-tchmi-width-unit="px" data-tchmi-ifontetexto="19" data-tchmi-ifontesensor="19" data-tchmi-sunidade="Bar" data-tchmi-icasasdepoisdavirgula="1" data-tchmi-rvalormaxcinza="2.5" data-tchmi-rvalormincinza="0.5" data-tchmi-rvalormaxamarelo="5" data-tchmi-rvalorminamarelo="0" data-tchmi-rsensor="%s%PLC1.GVL_Automatico.Anel[1]::rPressaoInicio%/s%" data-tchmi-tooltiip="Pressão Final do Anel" data-tchmi-zindex="150">
 </div>
-<div id="UcStatusSensor_198" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="42" data-tchmi-height-unit="px" data-tchmi-left="857" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucStatusSensorSemTexto.usercontrol" data-tchmi-top="272" data-tchmi-top-unit="px" data-tchmi-width="112" data-tchmi-width-unit="px" data-tchmi-ifontetexto="19" data-tchmi-ifontesensor="19" data-tchmi-sunidade="ºC" data-tchmi-icasasdepoisdavirgula="1" data-tchmi-rvalormaxcinza="0" data-tchmi-rvalormincinza="4" data-tchmi-rvalormaxamarelo="90" data-tchmi-rvalorminamarelo="-0.1" data-tchmi-rsensor="%s%PLC1.GVL_Automatico.Anel[1]::rTempInicio%/s%" data-tchmi-zindex="148" data-tchmi-tooltiip="Temperatura Final do Anel">
+<div id="UcStatusSensor_198" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="42" data-tchmi-height-unit="px" data-tchmi-left="844" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucStatusSensorSemTexto.usercontrol" data-tchmi-top="272" data-tchmi-top-unit="px" data-tchmi-width="112" data-tchmi-width-unit="px" data-tchmi-ifontetexto="19" data-tchmi-ifontesensor="19" data-tchmi-sunidade="ºC" data-tchmi-icasasdepoisdavirgula="1" data-tchmi-rvalormaxcinza="0" data-tchmi-rvalormincinza="4" data-tchmi-rvalormaxamarelo="90" data-tchmi-rvalorminamarelo="-0.1" data-tchmi-rsensor="%s%PLC1.GVL_Automatico.Anel[1]::rTempInicio%/s%" data-tchmi-zindex="148" data-tchmi-tooltiip="Temperatura Final do Anel">
 </div>
-<div id="TcHmi_Controls_Beckhoff_TcHmiImage_1886" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="58" data-tchmi-height-unit="px" data-tchmi-left="746" data-tchmi-left-unit="px" data-tchmi-src="Images/Aspersao/imagem_2024-05-14_210102021-removebg-preview.png" data-tchmi-top="319" data-tchmi-top-unit="px" data-tchmi-width="63" data-tchmi-width-unit="px" data-tchmi-zindex="2">
+<div id="TcHmi_Controls_Beckhoff_TcHmiImage_1886" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="58" data-tchmi-height-unit="px" data-tchmi-left="739" data-tchmi-left-unit="px" data-tchmi-src="Images/Aspersao/imagem_2024-05-14_210102021-removebg-preview.png" data-tchmi-top="319" data-tchmi-top-unit="px" data-tchmi-width="63" data-tchmi-width-unit="px" data-tchmi-zindex="2">
 <script data-tchmi-target-attribute="data-tchmi-transform" type="application/json">
 [
   {
@@ -3955,7 +3955,7 @@
 ]
 </script>
 </div>
-<div id="TcHmi_Controls_Beckhoff_TcHmiImage_1887" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="57" data-tchmi-height-unit="px" data-tchmi-left="886" data-tchmi-left-unit="px" data-tchmi-src="Images/Aspersao/PT100.png" data-tchmi-top="315" data-tchmi-top-unit="px" data-tchmi-width="48" data-tchmi-width-unit="px" data-tchmi-zindex="160">
+<div id="TcHmi_Controls_Beckhoff_TcHmiImage_1887" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="57" data-tchmi-height-unit="px" data-tchmi-left="878" data-tchmi-left-unit="px" data-tchmi-src="Images/Aspersao/PT100.png" data-tchmi-top="315" data-tchmi-top-unit="px" data-tchmi-width="48" data-tchmi-width-unit="px" data-tchmi-zindex="160">
 <script data-tchmi-target-attribute="data-tchmi-transform" type="application/json">
 [
   {
@@ -4078,5 +4078,7 @@
   }
 ]
 </script>
+</div>
+<div id="UserControl1_197" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="9" data-tchmi-height-unit="px" data-tchmi-left="1413" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucSeta.usercontrol" data-tchmi-top="1193" data-tchmi-top-unit="px" data-tchmi-width="31" data-tchmi-width-unit="px" data-tchmi-zindex="93">
 </div>
 </div>
