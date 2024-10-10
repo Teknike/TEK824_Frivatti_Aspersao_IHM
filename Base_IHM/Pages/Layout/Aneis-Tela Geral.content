@@ -425,7 +425,7 @@
 }
 </script>
 </div>
-<div id="Valvulas_159" data-tchmi-type="TcHmi.Controls.FrameworkValvulas.Valvulas" data-tchmi-escondetexto="true" data-tchmi-fonte="30" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="602" data-tchmi-left-unit="px" data-tchmi-operavel="true" data-tchmi-popupouopera="true" data-tchmi-simplificada="false" data-tchmi-top="27" data-tchmi-top-unit="px" data-tchmi-width="68" data-tchmi-width-unit="px" data-tchmi-valvulas="%s%PLC1.GVL_Valvulas.valvula[159]%/s%" data-tchmi-zindex="47">
+<div id="Valvulas_159" data-tchmi-type="TcHmi.Controls.FrameworkValvulas.Valvulas" data-tchmi-escondetexto="true" data-tchmi-fonte="30" data-tchmi-height="58" data-tchmi-height-unit="px" data-tchmi-left="383" data-tchmi-left-unit="px" data-tchmi-operavel="true" data-tchmi-popupouopera="true" data-tchmi-simplificada="false" data-tchmi-top="21" data-tchmi-top-unit="px" data-tchmi-width="88" data-tchmi-width-unit="px" data-tchmi-valvulas="%s%PLC1.GVL_Valvulas.valvula[159]%/s%" data-tchmi-zindex="47">
 
 
 
@@ -433,7 +433,7 @@
 
 
 </div>
-<div id="TcHmiPolygon_75" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiPolygon" data-tchmi-height="17" data-tchmi-height-unit="px" data-tchmi-left="1065" data-tchmi-left-unit="px" data-tchmi-points="0,100 100,0 200,100 100,100" data-tchmi-scale-mode="ScaleToFill" data-tchmi-top="64" data-tchmi-top-unit="px" data-tchmi-width="20" data-tchmi-width-unit="px" data-tchmi-zindex="50">
+<div id="TcHmiPolygon_75" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiPolygon" data-tchmi-height="17" data-tchmi-height-unit="px" data-tchmi-left="1058" data-tchmi-left-unit="px" data-tchmi-points="0,100 100,0 200,100 100,100" data-tchmi-scale-mode="ScaleToFill" data-tchmi-top="65" data-tchmi-top-unit="px" data-tchmi-width="20" data-tchmi-width-unit="px" data-tchmi-zindex="50">
 <script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
 {
   "color": "rgba(161, 35, 5, 1)"
@@ -481,7 +481,7 @@
 ]
 </script>
 </div>
-<div id="Ucvalvulapropor" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="68" data-tchmi-height-unit="px" data-tchmi-left="874" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucvalvulapropor.usercontrol" data-tchmi-top="-7" data-tchmi-top-unit="px" data-tchmi-width="103" data-tchmi-width-unit="px" data-tchmi-zindex="56" data-tchmi-stvalvulaproporcional="%s%PLC1.GVL_Valvulas.ValProp[32]%/s%" data-tchmi-iindex="32">
+<div id="Ucvalvulapropor" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="71" data-tchmi-height-unit="px" data-tchmi-left="874" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucvalvulapropor.usercontrol" data-tchmi-top="-9" data-tchmi-top-unit="px" data-tchmi-width="113" data-tchmi-width-unit="px" data-tchmi-zindex="56" data-tchmi-stvalvulaproporcional="%s%PLC1.GVL_Valvulas.ValProp[32]%/s%" data-tchmi-iindex="32">
 </div>
 <div id="TcHmiRectangle_5223822" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="93" data-tchmi-height-unit="px" data-tchmi-left="502" data-tchmi-left-unit="px" data-tchmi-top="869" data-tchmi-top-unit="px" data-tchmi-width="80" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="3" data-tchmi-zindex="32">
 </div>
@@ -620,65 +620,6 @@
     "angle": 270.0
   }
 ]
-</script>
-</div>
-<div id="TcHmiTextblock_2823973" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="24" data-tchmi-height-unit="px" data-tchmi-left="382" data-tchmi-left-unit="px" data-tchmi-text="Hidômetro" data-tchmi-top="95" data-tchmi-top-unit="px" data-tchmi-width="75" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="15" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-font-style="Normal" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="73">
-<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
-{
-  "color": "rgba(0, 0, 0, 1)"
-}
-</script>
-</div>
-<div id="TcHmiTextblock_2823974" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="24" data-tchmi-height-unit="px" data-tchmi-left="378" data-tchmi-left-unit="px" data-tchmi-text="%f%TcHmi.Functions.Beckhoff.GaugeValueFormatter(%s%PLC1.GVL_Sensores.stHidrometro::rContadorHoje%/s%, 2) + &quot;m³&quot;%/f%" data-tchmi-top="118" data-tchmi-top-unit="px" data-tchmi-width="72" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="16" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-style="Normal" data-tchmi-text-font-weight="Bold" data-tchmi-zindex="73" data-tchmi-text-vertical-alignment="Center">
-<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
-{
-  "color": "rgba(0, 0, 0, 1)"
-}
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
-{
-  "color": "rgba(255, 255, 255, 1)"
-}
-</script>
-</div>
-<div id="TcHmiRectangle_5223999" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="57" data-tchmi-height-unit="px" data-tchmi-left="369" data-tchmi-left-unit="px" data-tchmi-top="91" data-tchmi-top-unit="px" data-tchmi-width="92" data-tchmi-width-unit="px" data-tchmi-zindex="64">
-<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
-{
-  "topLeft": 0.0,
-  "topRight": 0.0,
-  "bottomLeft": 0.0,
-  "bottomRight": 0.0,
-  "topLeftUnit": "px",
-  "topRightUnit": "px",
-  "bottomLeftUnit": "px",
-  "bottomRightUnit": "px"
-}
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
-{
-  "color": "rgba(158, 157, 157, 1)"
-}
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
-{
-  "color": "rgba(158, 157, 157, 1)"
-}
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
-{
-  "left": 0,
-  "right": 0,
-  "top": 0,
-  "bottom": 0,
-  "leftUnit": "px",
-  "rightUnit": "px",
-  "topUnit": "px",
-  "bottomUnit": "px"
-}
 </script>
 </div>
 <div id="TcHmiContainer_257" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="455" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="180" data-tchmi-top-unit="px" data-tchmi-width="583" data-tchmi-width-unit="px" data-tchmi-is-enabled="true" data-tchmi-zindex="38">
@@ -999,8 +940,6 @@
   "bottomRightUnit": "px"
 }
 </script>
-</div>
-<div id="TcHmi_Controls_Beckhoff_TcHmiImage_1860" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="68" data-tchmi-height-unit="px" data-tchmi-left="379" data-tchmi-left-unit="px" data-tchmi-src="Images/Aspersao/output-onlinepngtools (8).png" data-tchmi-top="14" data-tchmi-top-unit="px" data-tchmi-width="63" data-tchmi-width-unit="px" data-tchmi-zindex="184">
 </div>
 <div id="TcHmiRectangle_5224028" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="37" data-tchmi-height-unit="px" data-tchmi-left="1257" data-tchmi-left-unit="px" data-tchmi-top="112" data-tchmi-top-unit="px" data-tchmi-width="10" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="3" data-tchmi-zindex="35">
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
@@ -2284,5 +2223,31 @@
 </script>
 </div>
 <div id="TcHmi_Controls_Beckhoff_TcHmiImage_1873" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="101" data-tchmi-height-unit="px" data-tchmi-left="262" data-tchmi-left-unit="px" data-tchmi-src="Images/Aspersao/imagem_2024-10-02_133131736-removebg-preview.png" data-tchmi-top="582" data-tchmi-top-unit="px" data-tchmi-width="130" data-tchmi-width-unit="px" data-tchmi-zindex="218">
+</div>
+<div id="Ucvalvulapropor_8" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="71" data-tchmi-height-unit="px" data-tchmi-left="1134" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucvalvulapropor.usercontrol" data-tchmi-top="14" data-tchmi-top-unit="px" data-tchmi-width="113" data-tchmi-width-unit="px" data-tchmi-zindex="56" data-tchmi-stvalvulaproporcional="%s%PLC1.GVL_Valvulas.ValProp[32]%/s%" data-tchmi-iindex="32">
+</div>
+<div id="TcHmiPolygon_142" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiPolygon" data-tchmi-height="17" data-tchmi-height-unit="px" data-tchmi-left="1400" data-tchmi-left-unit="px" data-tchmi-points="0,100 100,0 200,100 100,100" data-tchmi-scale-mode="ScaleToFill" data-tchmi-top="43" data-tchmi-top-unit="px" data-tchmi-width="20" data-tchmi-width-unit="px" data-tchmi-zindex="50">
+<script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
+{
+  "color": "rgba(161, 35, 5, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 0)"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-transform" type="application/json">
+[
+  {
+    "transformType": "Rotate",
+    "angle": -90.0
+  }
+]
+</script>
 </div>
 </div>

@@ -22,7 +22,7 @@
     <TargetFramework>native1.12-tchmi</TargetFramework>
     <AzureFunctionsVersion>v2</AzureFunctionsVersion>
     <Name>Base_IHM</Name>
-    <HmiCommunicationRouterPort>10230</HmiCommunicationRouterPort>
+    <HmiCommunicationRouterPort>10231</HmiCommunicationRouterPort>
     <HmiCommunicationServerAuthPort>13007</HmiCommunicationServerAuthPort>
     <HmiInitial>1.12.756.1</HmiInitial>
     <HmiRecent>1.12.762.42</HmiRecent>
@@ -189,10 +189,10 @@
     <Content Include="Images\Diversos\FlechaCurva.png">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Images\Diversos\LogoRGO.png">
+    <Content Include="Images\Diversos\logotipo-teknike.png">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Images\Diversos\logotipo-teknike.png">
+    <Content Include="Images\Diversos\Novologo-Teknike.png">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Images\Diversos\SelecionaExibirAreas.png">

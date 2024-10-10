@@ -302,6 +302,9 @@
       "url": "UserControl/Popup/ucPopUpSensorRedeRTU.usercontrol"
     },
     {
+      "url": "UserControl/Popup/ucPopUpValvulaProporcional.usercontrol"
+    },
+    {
       "url": "UserControl/Popup/ucPopUpValvulas.usercontrol"
     },
     {
@@ -309,9 +312,6 @@
     },
     {
       "url": "UserControl/Valvulas/ucValvulaProporcional.usercontrol"
-    },
-    {
-      "url": "UserControl/Popup/ucPopUpValvulaProporcional.usercontrol"
     }
   ],
   "content": [
