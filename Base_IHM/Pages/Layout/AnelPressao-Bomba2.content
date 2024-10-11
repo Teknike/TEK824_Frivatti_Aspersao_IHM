@@ -432,21 +432,6 @@
   "bottomRightUnit": "px"
 }
 </script>
-<div id="TcHmiToggleButton_140" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="55" data-tchmi-height-unit="px" data-tchmi-left="9" data-tchmi-left-unit="px" data-tchmi-text="Liga Anel" data-tchmi-top="34" data-tchmi-top-unit="px" data-tchmi-width="238" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="22" data-tchmi-state-symbol="%s%PLC1.GVL_Automatico.stControlePressaoAnel[2]::xLigaSistema%/s%" data-tchmi-zindex="15">
-
-<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
-{
-  "topLeft": 20.0,
-  "topRight": 20.0,
-  "bottomLeft": 20.0,
-  "bottomRight": 20.0,
-  "topLeftUnit": "px",
-  "topRightUnit": "px",
-  "bottomLeftUnit": "px",
-  "bottomRightUnit": "px"
-}
-</script>
-</div>
 <div id="TcHmiTextblock_285165829" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="-2" data-tchmi-left-unit="px" data-tchmi-text="Acionamentos" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="99.9" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="30" data-tchmi-zindex="17">
 </div>
 
@@ -532,6 +517,97 @@
   },
   {
     "accessright": "operate",
+    "group": "Teknike",
+    "permission": "Allow"
+  }
+]
+</script>
+</div>
+<div id="UserControl1_199" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="52" data-tchmi-height-unit="px" data-tchmi-left="21" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Popup/Motor/ucToggleBotão.usercontrol" data-tchmi-top="34" data-tchmi-top-unit="px" data-tchmi-width="205" data-tchmi-width-unit="px" data-tchmi-ifonte="17" data-tchmi-textoligado="Liga Anel de Pressão 2" data-tchmi-textodesligado="Desliga Anel de Pressão 2" data-tchmi-variavel="%s%PLC1.GVL_Automatico.stControlePressaoAnel[2]::xLigaSistema%/s%" data-tchmi-zindex="180">
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 0.0,
+  "topRight": 0.0,
+  "bottomLeft": 0.0,
+  "bottomRight": 0.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "operate",
+    "group": "CasaMaquinas",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Operacao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Operacao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "CasaMaquinas",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Administracao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Graficos",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Manutencao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Supervisao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Teknike",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Administracao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Graficos",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Manutencao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Supervisao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
     "group": "Teknike",
     "permission": "Allow"
   }

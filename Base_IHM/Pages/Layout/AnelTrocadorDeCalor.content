@@ -110,7 +110,7 @@
 <div id="TcHmiTextblock_2936" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="308" data-tchmi-left-unit="px" data-tchmi-text="Obs.: % da bomba esta dividida por 10 no grafico" data-tchmi-top="508" data-tchmi-top-unit="px" data-tchmi-width="305" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="15" data-tchmi-zindex="10">
 </div>
 </div>
-<div id="ConfigPID_8" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="176" data-tchmi-height-unit="px" data-tchmi-left="328" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Config/ConfigMaxMinSet.usercontrol" data-tchmi-top="569" data-tchmi-top-unit="px" data-tchmi-width="320" data-tchmi-width-unit="px" data-tchmi-stparametros="%s%PLC1.GVL_Automatico.stControleTrocador::Config|BindingMode=TwoWay%/s%" data-tchmi-zindex="10">
+<div id="ConfigPID_8" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="176" data-tchmi-height-unit="px" data-tchmi-left="405" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Config/ConfigMaxMinSet.usercontrol" data-tchmi-top="568" data-tchmi-top-unit="px" data-tchmi-width="320" data-tchmi-width-unit="px" data-tchmi-stparametros="%s%PLC1.GVL_Automatico.stControleTrocador::Config|BindingMode=TwoWay%/s%" data-tchmi-zindex="10">
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
 {
   "color": "rgba(226, 226, 226, 1)"
@@ -155,7 +155,7 @@
 ]
 </script>
 </div>
-<div id="ConfigPID_9" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="411" data-tchmi-height-unit="px" data-tchmi-left="17" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Config/ConfigPID.usercontrol" data-tchmi-top="565" data-tchmi-top-unit="px" data-tchmi-width="292" data-tchmi-width-unit="px" data-tchmi-stparametros="%s%PLC1.GVL_Automatico.stControleTrocador::PID%/s%" data-tchmi-zindex="10">
+<div id="ConfigPID_9" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="411" data-tchmi-height-unit="px" data-tchmi-left="54" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Config/ConfigPID.usercontrol" data-tchmi-top="567" data-tchmi-top-unit="px" data-tchmi-width="292" data-tchmi-width-unit="px" data-tchmi-stparametros="%s%PLC1.GVL_Automatico.stControleTrocador::PID%/s%" data-tchmi-zindex="10">
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
 {
   "color": "rgba(226, 226, 226, 1)"
@@ -541,7 +541,7 @@
 
 
 </div>
-<div id="TcHmiContainer_233" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="140" data-tchmi-height-unit="px" data-tchmi-left="346" data-tchmi-left-unit="px" data-tchmi-top="792" data-tchmi-top-unit="px" data-tchmi-width="473" data-tchmi-width-unit="px" data-tchmi-zindex="8">
+<div id="TcHmiContainer_233" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="140" data-tchmi-height-unit="px" data-tchmi-left="394" data-tchmi-left-unit="px" data-tchmi-top="834" data-tchmi-top-unit="px" data-tchmi-width="473" data-tchmi-width-unit="px" data-tchmi-zindex="8">
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
 {
   "color": "rgba(226, 226, 226, 1)"
@@ -560,21 +560,6 @@
   "bottomRightUnit": "px"
 }
 </script>
-<div id="TcHmiToggleButton_91" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="69" data-tchmi-height-unit="px" data-tchmi-left="17" data-tchmi-left-unit="px" data-tchmi-text="Liga Anel" data-tchmi-top="53" data-tchmi-top-unit="px" data-tchmi-width="205" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="22" data-tchmi-state-symbol="%s%PLC1.GVL_Automatico.stControleTrocador::xLigaSistema%/s%" data-tchmi-zindex="6">
-
-<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
-{
-  "topLeft": 20.0,
-  "topRight": 20.0,
-  "bottomLeft": 20.0,
-  "bottomRight": 20.0,
-  "topLeftUnit": "px",
-  "topRightUnit": "px",
-  "bottomLeftUnit": "px",
-  "bottomRightUnit": "px"
-}
-</script>
-</div>
 <div id="TcHmiTextblock_282313" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="-2" data-tchmi-left-unit="px" data-tchmi-text="Acionamentos" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100.2" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="30" data-tchmi-zindex="8">
 </div>
 
@@ -660,6 +645,97 @@
   },
   {
     "accessright": "operate",
+    "group": "Teknike",
+    "permission": "Allow"
+  }
+]
+</script>
+</div>
+<div id="UserControl1_200" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="52" data-tchmi-height-unit="px" data-tchmi-left="20" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Popup/Motor/ucToggleBotão.usercontrol" data-tchmi-top="66" data-tchmi-top-unit="px" data-tchmi-width="205" data-tchmi-width-unit="px" data-tchmi-ifonte="17" data-tchmi-textoligado="Liga Trocador de Calor" data-tchmi-textodesligado="Desliga Trocador de Calor" data-tchmi-variavel="%s%PLC1.PIDs.fbPIDTrocador::stPID::xLigaSistema%/s%" data-tchmi-zindex="180" data-tchmi-is-enabled="%f%!%s%PLC1.GVL_Seguranca.Pop_UpTrocadorCongelado%/s%%/f%">
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 0.0,
+  "topRight": 0.0,
+  "bottomLeft": 0.0,
+  "bottomRight": 0.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "operate",
+    "group": "CasaMaquinas",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Operacao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Operacao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "CasaMaquinas",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Administracao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Graficos",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Manutencao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Supervisao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Teknike",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Administracao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Graficos",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Manutencao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Supervisao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
     "group": "Teknike",
     "permission": "Allow"
   }

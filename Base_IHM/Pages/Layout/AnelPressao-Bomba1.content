@@ -432,21 +432,6 @@
   "bottomRightUnit": "px"
 }
 </script>
-<div id="TcHmiToggleButton_89" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="55" data-tchmi-height-unit="px" data-tchmi-left="16" data-tchmi-left-unit="px" data-tchmi-text="Liga Anel" data-tchmi-top="34" data-tchmi-top-unit="px" data-tchmi-width="238" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="22" data-tchmi-state-symbol="%s%PLC1.GVL_Automatico.stControlePressaoAnel[1]::xLigaSistema%/s%" data-tchmi-zindex="15" data-tchmi-toggle-state="Active">
-
-<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
-{
-  "topLeft": 20.0,
-  "topRight": 20.0,
-  "bottomLeft": 20.0,
-  "bottomRight": 20.0,
-  "topLeftUnit": "px",
-  "topRightUnit": "px",
-  "bottomLeftUnit": "px",
-  "bottomRightUnit": "px"
-}
-</script>
-</div>
 <div id="TcHmiTextblock_2823478" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="-2" data-tchmi-left-unit="px" data-tchmi-text="Acionamentos" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="99.9" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="30" data-tchmi-zindex="17">
 </div>
 
@@ -532,6 +517,97 @@
   },
   {
     "accessright": "operate",
+    "group": "Teknike",
+    "permission": "Allow"
+  }
+]
+</script>
+</div>
+<div id="UserControl1_198" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="52" data-tchmi-height-unit="px" data-tchmi-left="34" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Popup/Motor/ucToggleBotão.usercontrol" data-tchmi-top="33" data-tchmi-top-unit="px" data-tchmi-width="205" data-tchmi-width-unit="px" data-tchmi-ifonte="17" data-tchmi-textoligado="Liga Anel de Pressão 1" data-tchmi-textodesligado="Desliga Anel de Pressão 1" data-tchmi-variavel="%s%PLC1.GVL_Automatico.stControlePressaoAnel[1]::xLigaSistema%/s%" data-tchmi-zindex="180">
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 0.0,
+  "topRight": 0.0,
+  "bottomLeft": 0.0,
+  "bottomRight": 0.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "operate",
+    "group": "CasaMaquinas",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Operacao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Operacao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "CasaMaquinas",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Administracao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Graficos",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Manutencao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Supervisao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Teknike",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Administracao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Graficos",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Manutencao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Supervisao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
     "group": "Teknike",
     "permission": "Allow"
   }
@@ -1260,9 +1336,9 @@
 ]
 </script>
 </div>
-<div id="UcStatusSensor_177" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="42" data-tchmi-height-unit="px" data-tchmi-left="1232" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucStatusSensorSemTexto.usercontrol" data-tchmi-top="706" data-tchmi-top-unit="px" data-tchmi-width="112" data-tchmi-width-unit="px" data-tchmi-ifontetexto="19" data-tchmi-ifontesensor="19" data-tchmi-sunidade="Bar" data-tchmi-icasasdepoisdavirgula="1" data-tchmi-rvalormaxcinza="2.5" data-tchmi-rvalormincinza="0.5" data-tchmi-rvalormaxamarelo="5" data-tchmi-rvalorminamarelo="0" data-tchmi-tooltiip="Pressão Primeira Válvula" data-tchmi-zindex="147" data-tchmi-rsensor="%s%PLC1.GVL_Sensores.SenAna[29]::sa::rValor%/s%">
+<div id="UcStatusSensor_177" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="42" data-tchmi-height-unit="px" data-tchmi-left="1232" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucStatusSensorSemTexto.usercontrol" data-tchmi-top="706" data-tchmi-top-unit="px" data-tchmi-width="112" data-tchmi-width-unit="px" data-tchmi-ifontetexto="19" data-tchmi-ifontesensor="19" data-tchmi-sunidade="Bar" data-tchmi-icasasdepoisdavirgula="1" data-tchmi-rvalormaxcinza="2.5" data-tchmi-rvalormincinza="0.5" data-tchmi-rvalormaxamarelo="5" data-tchmi-rvalorminamarelo="0" data-tchmi-tooltiip="Pressão Primeira Válvula" data-tchmi-zindex="147" data-tchmi-rsensor="%s%PLC1.GVL_Sensores.SenAna[21]::sa::rValor%/s%">
 </div>
-<div id="UcStatusSensor_178" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="42" data-tchmi-height-unit="px" data-tchmi-left="1504" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucStatusSensorSemTexto.usercontrol" data-tchmi-top="707" data-tchmi-top-unit="px" data-tchmi-width="112" data-tchmi-width-unit="px" data-tchmi-ifontetexto="19" data-tchmi-ifontesensor="19" data-tchmi-sunidade="Bar" data-tchmi-icasasdepoisdavirgula="1" data-tchmi-rvalormaxcinza="2.5" data-tchmi-rvalormincinza="0.5" data-tchmi-rvalormaxamarelo="5" data-tchmi-rvalorminamarelo="0" data-tchmi-rsensor="%s%PLC1.GVL_Sensores.SenAna[30]::sa::rValor%/s%" data-tchmi-tooltiip="Pressão Ultima Válvula" data-tchmi-zindex="147">
+<div id="UcStatusSensor_178" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="42" data-tchmi-height-unit="px" data-tchmi-left="1504" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucStatusSensorSemTexto.usercontrol" data-tchmi-top="707" data-tchmi-top-unit="px" data-tchmi-width="112" data-tchmi-width-unit="px" data-tchmi-ifontetexto="19" data-tchmi-ifontesensor="19" data-tchmi-sunidade="Bar" data-tchmi-icasasdepoisdavirgula="1" data-tchmi-rvalormaxcinza="2.5" data-tchmi-rvalormincinza="0.5" data-tchmi-rvalormaxamarelo="5" data-tchmi-rvalorminamarelo="0" data-tchmi-rsensor="%s%PLC1.GVL_Sensores.SenAna[25]::sa::rValor%/s%" data-tchmi-tooltiip="Pressão Ultima Válvula" data-tchmi-zindex="147">
 </div>
 <div id="FmrMotor_4624547" data-tchmi-type="TcHmi.Controls.Motor.FmrMotor" data-tchmi-elemento="Bomba" data-tchmi-escondetexto="true" data-tchmi-height="69" data-tchmi-height-unit="px" data-tchmi-left="1050" data-tchmi-left-unit="px" data-tchmi-top="271" data-tchmi-top-unit="px" data-tchmi-width="112" data-tchmi-width-unit="px" data-tchmi-zindex="144" data-tchmi-gvl="GVL_Motores" data-tchmi-vetor="Motor" data-tchmi-struct="stPartida" data-tchmi-operavel="true" data-tchmi-popupouliga="true" data-tchmi-index="3">
 </div>
