@@ -1,1279 +1,4 @@
 <div id="ListaDeMotores" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="1670" data-tchmi-height="1040" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-width-unit="px" data-tchmi-height-unit="px" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-opacity="1" data-tchmi-background-image-width-unit="px" data-tchmi-background-image-height-unit="px" data-tchmi-width-mode="Value" data-tchmi-height-mode="Value" data-tchmi-creator-viewport-height="1080" data-tchmi-is-enabled="true" data-tchmi-creator-viewport-width="1920" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
-
-<div id="cbMotores" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCombobox" data-tchmi-combobox-text="Escolha seu Motor" data-tchmi-height="7.5" data-tchmi-height-unit="%" data-tchmi-left="2.0" data-tchmi-left-unit="%" data-tchmi-top="7.1" data-tchmi-top-unit="%" data-tchmi-width="33.5" data-tchmi-width-unit="%" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-selected-id="%ctrl%cbMotores::SelectedId%/ctrl%" data-tchmi-selected-index="%ctrl%cbMotores::SelectedIndex%/ctrl%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="250" data-tchmi-text-horizontal-alignment="Center" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-opacity="1" data-tchmi-background-image-width-unit="px" data-tchmi-background-image-height-unit="px" data-tchmi-data-height-unit="px" data-tchmi-max-list-height-unit="px" data-tchmi-drop-down-font-size-unit="%" data-tchmi-data-height="30" data-tchmi-drop-down-font-size="150" data-tchmi-max-list-height="200" data-tchmi-drop-down-category-font-size-unit="px" data-tchmi-drop-down-category-font-size="20" data-tchmi-is-enabled="true" data-tchmi-allow-text-input="false" data-tchmi-ignore-escape-sequences="false" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
-<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
-{
-  "top": 3,
-  "right": 3,
-  "bottom": 3,
-  "left": 3
-}
-</script>
-
-
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
-  {
-    "event": "cbMotores.onUserInteractionFinished",
-    "actions": [
-      {
-        "objectType": "Comment",
-        "comment": "Faz o Binding"
-      },
-      {
-        "objectType": "JavaScript",
-        "active": true,
-        "sourceLines": [
-          "// lê o nome do Motor",
-          "var index = TcHmi.Symbol.readEx('%ctrl%cbMotores::SelectedValue%/ctrl%');",
-          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores::SelectedId%/ctrl%') + 1;",
-          "var GVL = 'GVL_Motores';",
-          "var NomeVetor = 'Motor';",
-          "var NomeUC = 'UcPopUpMotores';",
-          "\t",
-          "\t\t",
-          "// faz o binding com a struct do motor\t",
-          "var ItemProperty = 'stPartida';",
-          "var UserControl = TcHmi.Controls.get(NomeUC);",
-          "var Variavel = \"%s%PLC1.\" + GVL + \".\" + NomeVetor +\"[\"+ index +\"]\"+ \"|BindingMode=TwoWay%/s%\";",
-          "//var Variavel = \"%s%PLC1.GVL_Motor.\" + TipoPartida +\"[\"+ motor +\"]\"+ \"|BindingMode=TwoWay%/s%\";",
-          "",
-          "",
-          "try {",
-          "    TcHmi.Binding.createEx2(Variavel, ItemProperty, UserControl);",
-          "} catch(e) {",
-          "    console.log(e);",
-          "    console.log(Variavel);",
-          "    console.log(ItemProperty);",
-          "    console.log(UserControl);",
-          "}"
-        ],
-        "injectContextObject": false,
-        "asyncWait": true,
-        "waitMode": "Synchronous"
-      },
-      {
-        "objectType": "Comment",
-        "comment": "Abre o PopUp"
-      },
-      {
-        "objectType": "JavaScript",
-        "active": true,
-        "sourceLines": [
-          "var index = TcHmi.Symbol.readEx('%ctrl%cbMotores::SelectedValue%/ctrl%');",
-          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores::SelectedId%/ctrl%') + 1;",
-          "",
-          "",
-          "\tvar NomeUC = 'UcPopUpMotores';",
-          "                ",
-          "    var _id = 'cbMotores';",
-          "\tvar _uc = TcHmi.Controls.get(_id);",
-          "\tvar TamXTela = 1920;",
-          "\tvar TamYTela = 1080;",
-          "",
-          "// referencia a popup",
-          "\tvar UserControl = TcHmi.Controls.get(NomeUC);",
-          "\t _uc_width = UserControl.getWidth();",
-          "\t _uc_height = UserControl.getHeight();",
-          "\t",
-          "// coordenadas do User Control",
-          "\tvar _top = _uc.getTop();",
-          "\tvar _left = _uc.getLeft();",
-          "\tvar _width = _uc.getWidth();",
-          "\tvar _height = _uc.getHeight();",
-          "\t",
-          "// coordenadas da popup",
-          "\tif (_left + _width + _uc_width > TamXTela){",
-          "\t\tvar __left = _left - _uc_width;",
-          "\t} else {",
-          "\t\tvar __left = _left + _width + 10;",
-          "\t}",
-          "",
-          "\tif (_top + _uc_height > TamYTela){",
-          "\t\tvar __top = _top + _height - _uc_height;",
-          "\t} else {",
-          "\t\tvar __top = _top;",
-          "\t}",
-          "",
-          "__top = 150;",
-          "__left = 250;",
-          "",
-          "UserControl.setTop(__top);",
-          "UserControl.setLeft(__left);",
-          "",
-          "$(\"#\" + NomeUC).slideDown('slow');"
-        ],
-        "injectContextObject": false,
-        "asyncWait": true,
-        "waitMode": "Synchronous"
-      }
-    ]
-  },
-  {
-    "event": "cbMotores.onUserInteractionFinished",
-    "actions": [
-      {
-        "objectType": "Comment",
-        "comment": "Faz o Binding"
-      },
-      {
-        "objectType": "JavaScript",
-        "active": true,
-        "sourceLines": [
-          "// lê o nome do Motor",
-          "var index = TcHmi.Symbol.readEx('%ctrl%cbMotores::SelectedValue%/ctrl%');",
-          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores::SelectedId%/ctrl%') + 1;",
-          "var GVL = 'GVL_Motores';",
-          "var NomeVetor = 'Motor';",
-          "var NomeUC = 'UcPopUpMotores';",
-          "\t",
-          "\t\t",
-          "// faz o binding com a struct do motor\t",
-          "var ItemProperty = 'stPartida';",
-          "var UserControl = TcHmi.Controls.get(NomeUC);",
-          "var Variavel = \"%s%PLC1.\" + GVL + \".\" + NomeVetor +\"[\"+ index +\"]\"+ \"|BindingMode=TwoWay%/s%\";",
-          "//var Variavel = \"%s%PLC1.GVL_Motor.\" + TipoPartida +\"[\"+ motor +\"]\"+ \"|BindingMode=TwoWay%/s%\";",
-          "",
-          "",
-          "try {",
-          "    TcHmi.Binding.createEx2(Variavel, ItemProperty, UserControl);",
-          "} catch(e) {",
-          "    console.log(e);",
-          "    console.log(Variavel);",
-          "    console.log(ItemProperty);",
-          "    console.log(UserControl);",
-          "}"
-        ],
-        "injectContextObject": false,
-        "asyncWait": true,
-        "waitMode": "Synchronous"
-      },
-      {
-        "objectType": "Comment",
-        "comment": "Abre o PopUp"
-      },
-      {
-        "objectType": "JavaScript",
-        "active": true,
-        "sourceLines": [
-          "var index = TcHmi.Symbol.readEx('%ctrl%cbMotores::SelectedValue%/ctrl%');",
-          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores::SelectedId%/ctrl%') + 1;",
-          "",
-          "",
-          "\tvar NomeUC = 'UcPopUpMotores';",
-          "                ",
-          "    var _id = 'cbMotores';",
-          "\tvar _uc = TcHmi.Controls.get(_id);",
-          "\tvar TamXTela = 1920;",
-          "\tvar TamYTela = 1080;",
-          "",
-          "// referencia a popup",
-          "\tvar UserControl = TcHmi.Controls.get(NomeUC);",
-          "\t _uc_width = UserControl.getWidth();",
-          "\t _uc_height = UserControl.getHeight();",
-          "\t",
-          "// coordenadas do User Control",
-          "\tvar _top = _uc.getTop();",
-          "\tvar _left = _uc.getLeft();",
-          "\tvar _width = _uc.getWidth();",
-          "\tvar _height = _uc.getHeight();",
-          "\t",
-          "// coordenadas da popup",
-          "\tif (_left + _width + _uc_width > TamXTela){",
-          "\t\tvar __left = _left - _uc_width;",
-          "\t} else {",
-          "\t\tvar __left = _left + _width + 10;",
-          "\t}",
-          "",
-          "\tif (_top + _uc_height > TamYTela){",
-          "\t\tvar __top = _top + _height - _uc_height;",
-          "\t} else {",
-          "\t\tvar __top = _top;",
-          "\t}",
-          "",
-          "__top = 150;",
-          "__left = 250;",
-          "",
-          "UserControl.setTop(__top);",
-          "UserControl.setLeft(__left);",
-          "",
-          "$(\"#\" + NomeUC).slideDown('slow');"
-        ],
-        "injectContextObject": false,
-        "asyncWait": true,
-        "waitMode": "Synchronous"
-      }
-    ]
-  }
-]
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-src-data" type="application/json">
-    [
-    {
-    "id": 1.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[1]::Config::sNome_Funcao%/s%",
-    "value": 1.0
-    },
-    {
-    "id": 2.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[2]::Config::sNome_Funcao%/s%",
-    "value": 2.0
-    },
-    {
-    "id": 3.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[3]::Config::sNome_Funcao%/s%",
-    "value": 3.0
-    },
-    {
-    "id": 4.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[4]::Config::sNome_Funcao%/s%",
-    "value": 4.0
-    },
-    {
-    "id": 5.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[5]::Config::sNome_Funcao%/s%",
-    "value": 5.0
-    },
-    {
-    "id": 6.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[6]::Config::sNome_Funcao%/s%",
-    "value": 6.0
-    },
-    {
-    "id": 7.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[7]::Config::sNome_Funcao%/s%",
-    "value": 7.0
-    },
-    {
-    "id": 8.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[8]::Config::sNome_Funcao%/s%",
-    "value": 8.0
-    },
-    {
-    "id": 9.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[9]::Config::sNome_Funcao%/s%",
-    "value": 9.0
-    },
-    {
-    "id": 10.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[10]::Config::sNome_Funcao%/s%",
-    "value": 10.0
-    },
-    {
-    "id": 11.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[11]::Config::sNome_Funcao%/s%",
-    "value": 11.0
-    },
-    {
-    "id": 12.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[12]::Config::sNome_Funcao%/s%",
-    "value": 12.0
-    },
-    {
-    "id": 13.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[13]::Config::sNome_Funcao%/s%",
-    "value": 13.0
-    },
-    {
-    "id": 14.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[14]::Config::sNome_Funcao%/s%",
-    "value": 14.0
-    },
-    {
-    "id": 15.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[15]::Config::sNome_Funcao%/s%",
-    "value": 15.0
-    },
-    {
-    "id": 16.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[16]::Config::sNome_Funcao%/s%",
-    "value": 16.0
-    },
-    {
-    "id": 17.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[17]::Config::sNome_Funcao%/s%",
-    "value": 17.0
-    },
-    {
-    "id": 18.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[18]::Config::sNome_Funcao%/s%",
-    "value": 18.0
-    },
-    {
-    "id": 19.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[19]::Config::sNome_Funcao%/s%",
-    "value": 19.0
-    },
-    {
-    "id": 20.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[20]::Config::sNome_Funcao%/s%",
-    "value": 20.0
-    },
-    {
-    "id": 21.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[21]::Config::sNome_Funcao%/s%",
-    "value": 21.0
-    },
-    {
-    "id": 22.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[22]::Config::sNome_Funcao%/s%",
-    "value": 22.0
-    },
-    {
-    "id": 23.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[23]::Config::sNome_Funcao%/s%",
-    "value": 23.0
-    },
-    {
-    "id": 24.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[24]::Config::sNome_Funcao%/s%",
-    "value": 24.0
-    },
-    {
-    "id": 25.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[25]::Config::sNome_Funcao%/s%",
-    "value": 25.0
-    },
-    {
-    "id": 26.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[26]::Config::sNome_Funcao%/s%",
-    "value": 26.0
-    },
-    {
-    "id": 27.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[27]::Config::sNome_Funcao%/s%",
-    "value": 27.0
-    },
-    {
-    "id": 28.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[28]::Config::sNome_Funcao%/s%",
-    "value": 28.0
-    },
-    {
-    "id": 29.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[29]::Config::sNome_Funcao%/s%",
-    "value": 29.0
-    },
-    {
-    "id": 30.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[30]::Config::sNome_Funcao%/s%",
-    "value": 30.0
-    },
-    {
-    "id": 31.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[31]::Config::sNome_Funcao%/s%",
-    "value": 31.0
-    },
-    {
-    "id": 32.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[32]::Config::sNome_Funcao%/s%",
-    "value": 32.0
-    },
-    {
-    "id": 33.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[33]::Config::sNome_Funcao%/s%",
-    "value": 33.0
-    },
-    {
-    "id": 34.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[34]::Config::sNome_Funcao%/s%",
-    "value": 34.0
-    },
-    {
-    "id": 35.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[35]::Config::sNome_Funcao%/s%",
-    "value": 35.0
-    },
-    {
-    "id": 36.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[36]::Config::sNome_Funcao%/s%",
-    "value": 36.0
-    },
-    {
-    "id": 37.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[37]::Config::sNome_Funcao%/s%",
-    "value": 37.0
-    },
-    {
-    "id": 38.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[38]::Config::sNome_Funcao%/s%",
-    "value": 38.0
-    },
-    {
-    "id": 39.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[39]::Config::sNome_Funcao%/s%",
-    "value": 39.0
-    },
-    {
-    "id": 40.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[40]::Config::sNome_Funcao%/s%",
-    "value": 40.0
-    },
-    {
-    "id": 41.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[41]::Config::sNome_Funcao%/s%",
-    "value": 41.0
-    },
-    {
-    "id": 42.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[42]::Config::sNome_Funcao%/s%",
-    "value": 42.0
-    },
-    {
-    "id": 43.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[43]::Config::sNome_Funcao%/s%",
-    "value": 43.0
-    },
-    {
-    "id": 44.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[44]::Config::sNome_Funcao%/s%",
-    "value": 44.0
-    },
-    {
-    "id": 45.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[45]::Config::sNome_Funcao%/s%",
-    "value": 45.0
-    },
-    {
-    "id": 46.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[46]::Config::sNome_Funcao%/s%",
-    "value": 46.0
-    },
-    {
-    "id": 47.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[47]::Config::sNome_Funcao%/s%",
-    "value": 47.0
-    },
-    {
-    "id": 48.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[48]::Config::sNome_Funcao%/s%",
-    "value": 48.0
-    },
-    {
-    "id": 49.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[49]::Config::sNome_Funcao%/s%",
-    "value": 49.0
-    },
-    {
-    "id": 50.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[50]::Config::sNome_Funcao%/s%",
-    "value": 50.0
-    },
-    {
-    "id": 51.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[51]::Config::sNome_Funcao%/s%",
-    "value": 51.0
-    },
-    {
-    "id": 52.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[52]::Config::sNome_Funcao%/s%",
-    "value": 52.0
-    },
-    {
-    "id": 53.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[53]::Config::sNome_Funcao%/s%",
-    "value": 53.0
-    },
-    {
-    "id": 54.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[54]::Config::sNome_Funcao%/s%",
-    "value": 54.0
-    },
-    {
-    "id": 55.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[55]::Config::sNome_Funcao%/s%",
-    "value": 55.0
-    },
-    {
-    "id": 56.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[56]::Config::sNome_Funcao%/s%",
-    "value": 56.0
-    },
-    {
-    "id": 57.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[57]::Config::sNome_Funcao%/s%",
-    "value": 57.0
-    },
-    {
-    "id": 58.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[58]::Config::sNome_Funcao%/s%",
-    "value": 58.0
-    },
-    {
-    "id": 59.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[59]::Config::sNome_Funcao%/s%",
-    "value": 59.0
-    },
-
-    {
-    "id": 60.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[60]::Config::sNome_Funcao%/s%",
-    "value": 60.0
-    },
-    {
-    "id": 61.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[61]::Config::sNome_Funcao%/s%",
-    "value": 61.0
-    },
-    {
-    "id": 62.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[62]::Config::sNome_Funcao%/s%",
-    "value": 62.0
-    },
-    {
-    "id": 63.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[63]::Config::sNome_Funcao%/s%",
-    "value": 63.0
-    },
-    {
-    "id": 64.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[64]::Config::sNome_Funcao%/s%",
-    "value": 64.0
-    },
-    {
-    "id": 65.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[65]::Config::sNome_Funcao%/s%",
-    "value": 65.0
-    },
-    {
-    "id": 66.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[66]::Config::sNome_Funcao%/s%",
-    "value": 66.0
-    },
-    {
-    "id": 67.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[67]::Config::sNome_Funcao%/s%",
-    "value": 67.0
-    },
-    {
-    "id": 68.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[68]::Config::sNome_Funcao%/s%",
-    "value": 68.0
-    },
-    {
-    "id": 69.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[69]::Config::sNome_Funcao%/s%",
-    "value": 69.0
-    },
-
-    {
-    "id": 70.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[70]::Config::sNome_Funcao%/s%",
-    "value": 70.0
-    },
-    {
-    "id": 71.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[71]::Config::sNome_Funcao%/s%",
-    "value": 71.0
-    },
-    {
-    "id": 72.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[72]::Config::sNome_Funcao%/s%",
-    "value": 72.0
-    },
-    {
-    "id": 73.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[73]::Config::sNome_Funcao%/s%",
-    "value": 73.0
-    },
-    {
-    "id": 74.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[74]::Config::sNome_Funcao%/s%",
-    "value": 74.0
-    },
-    {
-    "id": 75.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[75]::Config::sNome_Funcao%/s%",
-    "value": 75.0
-    },
-    {
-    "id": 76.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[76]::Config::sNome_Funcao%/s%",
-    "value": 76.0
-    },
-    {
-    "id": 77.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[77]::Config::sNome_Funcao%/s%",
-    "value": 77.0
-    },
-    {
-    "id": 78.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[78]::Config::sNome_Funcao%/s%",
-    "value": 78.0
-    },
-    {
-    "id": 79.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[79]::Config::sNome_Funcao%/s%",
-    "value": 79.0
-    },
-
-    {
-    "id": 80.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[80]::Config::sNome_Funcao%/s%",
-    "value": 80.0
-    },
-    {
-    "id": 81.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[81]::Config::sNome_Funcao%/s%",
-    "value": 81.0
-    },
-    {
-    "id": 82.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[82]::Config::sNome_Funcao%/s%",
-    "value": 82.0
-    },
-    {
-    "id": 83.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[83]::Config::sNome_Funcao%/s%",
-    "value": 83.0
-    },
-    {
-    "id": 84.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[84]::Config::sNome_Funcao%/s%",
-    "value": 84.0
-    },
-    {
-    "id": 85.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[85]::Config::sNome_Funcao%/s%",
-    "value": 85.0
-    },
-    {
-    "id": 86.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[86]::Config::sNome_Funcao%/s%",
-    "value": 86.0
-    },
-    {
-    "id": 87.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[87]::Config::sNome_Funcao%/s%",
-    "value": 87.0
-    },
-    {
-    "id": 88.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[88]::Config::sNome_Funcao%/s%",
-    "value": 88.0
-    },
-    {
-    "id": 89.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[89]::Config::sNome_Funcao%/s%",
-    "value": 89.0
-    },
-
-    {
-    "id": 90.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[90]::Config::sNome_Funcao%/s%",
-    "value": 90.0
-    },
-    {
-    "id": 91.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[91]::Config::sNome_Funcao%/s%",
-    "value": 91.0
-    },
-    {
-    "id": 92.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[92]::Config::sNome_Funcao%/s%",
-    "value": 92.0
-    },
-    {
-    "id": 93.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[93]::Config::sNome_Funcao%/s%",
-    "value": 93.0
-    },
-    {
-    "id": 94.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[94]::Config::sNome_Funcao%/s%",
-    "value": 94.0
-    },
-    {
-    "id": 95.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[95]::Config::sNome_Funcao%/s%",
-    "value": 95.0
-    },
-    {
-    "id": 96.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[96]::Config::sNome_Funcao%/s%",
-    "value": 96.0
-    },
-    {
-    "id": 97.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[97]::Config::sNome_Funcao%/s%",
-    "value": 97.0
-    },
-    {
-    "id": 98.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[98]::Config::sNome_Funcao%/s%",
-    "value": 98.0
-    },
-    {
-    "id": 99.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[99]::Config::sNome_Funcao%/s%",
-    "value": 99.0
-    },
-
-    {
-    "id": 100.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[100]::Config::sNome_Funcao%/s%",
-    "value": 100.0
-    },
-    {
-    "id": 101.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[101]::Config::sNome_Funcao%/s%",
-    "value": 101.0
-    },
-    {
-    "id": 102.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[102]::Config::sNome_Funcao%/s%",
-    "value": 102.0
-    },
-    {
-    "id": 103.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[103]::Config::sNome_Funcao%/s%",
-    "value": 103.0
-    },
-    {
-    "id": 104.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[104]::Config::sNome_Funcao%/s%",
-    "value": 104.0
-    },
-    {
-    "id": 105.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[105]::Config::sNome_Funcao%/s%",
-    "value": 105.0
-    },
-    {
-    "id": 106.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[106]::Config::sNome_Funcao%/s%",
-    "value": 106.0
-    },
-    {
-    "id": 107.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[107]::Config::sNome_Funcao%/s%",
-    "value": 107.0
-    },
-    {
-    "id": 108.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[108]::Config::sNome_Funcao%/s%",
-    "value": 108.0
-    },
-    {
-    "id": 109.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[109]::Config::sNome_Funcao%/s%",
-    "value": 109.0
-    },
-
-    {
-    "id": 110.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[110]::Config::sNome_Funcao%/s%",
-    "value": 110.0
-    },
-    {
-    "id": 111.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[111]::Config::sNome_Funcao%/s%",
-    "value": 111.0
-    },
-    {
-    "id": 112.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[112]::Config::sNome_Funcao%/s%",
-    "value": 112.0
-    },
-    {
-    "id": 113.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[113]::Config::sNome_Funcao%/s%",
-    "value": 113.0
-    },
-    {
-    "id": 114.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[114]::Config::sNome_Funcao%/s%",
-    "value": 114.0
-    },
-    {
-    "id": 115.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[115]::Config::sNome_Funcao%/s%",
-    "value": 115.0
-    },
-    {
-    "id": 116.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[116]::Config::sNome_Funcao%/s%",
-    "value": 116.0
-    },
-    {
-    "id": 117.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[117]::Config::sNome_Funcao%/s%",
-    "value": 117.0
-    },
-    {
-    "id": 118.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[118]::Config::sNome_Funcao%/s%",
-    "value": 118.0
-    },
-    {
-    "id": 119.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[119]::Config::sNome_Funcao%/s%",
-    "value": 119.0
-    },
-
-    {
-    "id": 120.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[120]::Config::sNome_Funcao%/s%",
-    "value": 120.0
-    },
-    {
-    "id": 121.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[121]::Config::sNome_Funcao%/s%",
-    "value": 121.0
-    },
-    {
-    "id": 122.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[122]::Config::sNome_Funcao%/s%",
-    "value": 122.0
-    },
-    {
-    "id": 123.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[123]::Config::sNome_Funcao%/s%",
-    "value": 123.0
-    },
-    {
-    "id": 124.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[124]::Config::sNome_Funcao%/s%",
-    "value": 124.0
-    },
-    {
-    "id": 125.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[125]::Config::sNome_Funcao%/s%",
-    "value": 125.0
-    },
-    {
-    "id": 126.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[126]::Config::sNome_Funcao%/s%",
-    "value": 126.0
-    },
-    {
-    "id": 127.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[127]::Config::sNome_Funcao%/s%",
-    "value": 127.0
-    },
-    {
-    "id": 128.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[128]::Config::sNome_Funcao%/s%",
-    "value": 128.0
-    },
-    {
-    "id": 129.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[129]::Config::sNome_Funcao%/s%",
-    "value": 129.0
-    },
-
-    {
-    "id": 130.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[130]::Config::sNome_Funcao%/s%",
-    "value": 130.0
-    },
-    {
-    "id": 131.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[131]::Config::sNome_Funcao%/s%",
-    "value": 131.0
-    },
-    {
-    "id": 132.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[132]::Config::sNome_Funcao%/s%",
-    "value": 132.0
-    },
-    {
-    "id": 133.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[133]::Config::sNome_Funcao%/s%",
-    "value": 133.0
-    },
-    {
-    "id": 134.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[134]::Config::sNome_Funcao%/s%",
-    "value": 134.0
-    },
-    {
-    "id": 135.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[135]::Config::sNome_Funcao%/s%",
-    "value": 135.0
-    },
-    {
-    "id": 136.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[136]::Config::sNome_Funcao%/s%",
-    "value": 136.0
-    },
-    {
-    "id": 137.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[137]::Config::sNome_Funcao%/s%",
-    "value": 137.0
-    },
-    {
-    "id": 138.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[138]::Config::sNome_Funcao%/s%",
-    "value": 138.0
-    },
-    {
-    "id": 139.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[139]::Config::sNome_Funcao%/s%",
-    "value": 139.0
-    },
-
-    {
-    "id": 140.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[140]::Config::sNome_Funcao%/s%",
-    "value": 140.0
-    },
-    {
-    "id": 141.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[141]::Config::sNome_Funcao%/s%",
-    "value": 141.0
-    },
-    {
-    "id": 142.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[142]::Config::sNome_Funcao%/s%",
-    "value": 142.0
-    },
-    {
-    "id": 143.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[143]::Config::sNome_Funcao%/s%",
-    "value": 143.0
-    },
-    {
-    "id": 144.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[144]::Config::sNome_Funcao%/s%",
-    "value": 144.0
-    },
-    {
-    "id": 145.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[145]::Config::sNome_Funcao%/s%",
-    "value": 145.0
-    },
-    {
-    "id": 146.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[146]::Config::sNome_Funcao%/s%",
-    "value": 146.0
-    },
-    {
-    "id": 147.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[147]::Config::sNome_Funcao%/s%",
-    "value": 147.0
-    },
-    {
-    "id": 148.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[148]::Config::sNome_Funcao%/s%",
-    "value": 148.0
-    },
-    {
-    "id": 149.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[149]::Config::sNome_Funcao%/s%",
-    "value": 149.0
-    },
-
-    {
-    "id": 150.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[150]::Config::sNome_Funcao%/s%",
-    "value": 150.0
-    },
-    {
-    "id": 151.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[151]::Config::sNome_Funcao%/s%",
-    "value": 151.0
-    },
-    {
-    "id": 152.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[152]::Config::sNome_Funcao%/s%",
-    "value": 152.0
-    },
-    {
-    "id": 153.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[153]::Config::sNome_Funcao%/s%",
-    "value": 153.0
-    },
-    {
-    "id": 154.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[154]::Config::sNome_Funcao%/s%",
-    "value": 154.0
-    },
-    {
-    "id": 155.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[155]::Config::sNome_Funcao%/s%",
-    "value": 155.0
-    },
-    {
-    "id": 156.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[156]::Config::sNome_Funcao%/s%",
-    "value": 156.0
-    },
-    {
-    "id": 157.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[157]::Config::sNome_Funcao%/s%",
-    "value": 157.0
-    },
-    {
-    "id": 158.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[158]::Config::sNome_Funcao%/s%",
-    "value": 158.0
-    },
-    {
-    "id": 159.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[159]::Config::sNome_Funcao%/s%",
-    "value": 159.0
-    },
-    {
-    "id": 160.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[160]::Config::sNome_Funcao%/s%",
-    "value": 160.0
-    },
-    {
-    "id": 161.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[161]::Config::sNome_Funcao%/s%",
-    "value": 161.0
-    },
-    {
-    "id": 162.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[162]::Config::sNome_Funcao%/s%",
-    "value": 162.0
-    },
-    {
-    "id": 163.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[163]::Config::sNome_Funcao%/s%",
-    "value": 163.0
-    },
-    {
-    "id": 164.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[164]::Config::sNome_Funcao%/s%",
-    "value": 164.0
-    },
-    {
-    "id": 165.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[165]::Config::sNome_Funcao%/s%",
-    "value": 165.0
-    },
-    {
-    "id": 166.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[166]::Config::sNome_Funcao%/s%",
-    "value": 166.0
-    },
-    {
-    "id": 167.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[167]::Config::sNome_Funcao%/s%",
-    "value": 167.0
-    },
-    {
-    "id": 168.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[168]::Config::sNome_Funcao%/s%",
-    "value": 168.0
-    },
-    {
-    "id": 169.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[169]::Config::sNome_Funcao%/s%",
-    "value": 169.0
-    },
-    {
-    "id": 170.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[170]::Config::sNome_Funcao%/s%",
-    "value": 170.0
-    },
-    {
-    "id": 171.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[171]::Config::sNome_Funcao%/s%",
-    "value": 171.0
-    },
-    {
-    "id": 172.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[172]::Config::sNome_Funcao%/s%",
-    "value": 172.0
-    },
-    {
-    "id": 173.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[173]::Config::sNome_Funcao%/s%",
-    "value": 173.0
-    },
-    {
-    "id": 174.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[174]::Config::sNome_Funcao%/s%",
-    "value": 174.0
-    },
-    {
-    "id": 175.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[175]::Config::sNome_Funcao%/s%",
-    "value": 175.0
-    },
-    {
-    "id": 176.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[176]::Config::sNome_Funcao%/s%",
-    "value": 176.0
-    },
-    {
-    "id": 177.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[177]::Config::sNome_Funcao%/s%",
-    "value": 177.0
-    },
-    {
-    "id": 178.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[178]::Config::sNome_Funcao%/s%",
-    "value": 178.0
-    },
-    {
-    "id": 179.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[179]::Config::sNome_Funcao%/s%",
-    "value": 179.0
-    },
-    {
-    "id": 180.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[180]::Config::sNome_Funcao%/s%",
-    "value": 180.0
-    },
-    {
-    "id": 181.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[181]::Config::sNome_Funcao%/s%",
-    "value": 181.0
-    },
-    {
-    "id": 182.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[182]::Config::sNome_Funcao%/s%",
-    "value": 182.0
-    },
-    {
-    "id": 183.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[183]::Config::sNome_Funcao%/s%",
-    "value": 183.0
-    },
-    {
-    "id": 184.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[184]::Config::sNome_Funcao%/s%",
-    "value": 184.0
-    },
-    {
-    "id": 185.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[185]::Config::sNome_Funcao%/s%",
-    "value": 185.0
-    },
-    {
-    "id": 186.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[186]::Config::sNome_Funcao%/s%",
-    "value": 186.0
-    },
-    {
-    "id": 187.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[187]::Config::sNome_Funcao%/s%",
-    "value": 187.0
-    },
-    {
-    "id": 188.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[188]::Config::sNome_Funcao%/s%",
-    "value": 188.0
-    },
-    {
-    "id": 189.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[189]::Config::sNome_Funcao%/s%",
-    "value": 189.0
-    },
-    {
-    "id": 190.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[190]::Config::sNome_Funcao%/s%",
-    "value": 190.0
-    },
-    {
-    "id": 191.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[191]::Config::sNome_Funcao%/s%",
-    "value": 191.0
-    },
-    {
-    "id": 192.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[192]::Config::sNome_Funcao%/s%",
-    "value": 192.0
-    },
-    {
-    "id": 193.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[193]::Config::sNome_Funcao%/s%",
-    "value": 193.0
-    },
-    {
-    "id": 194.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[194]::Config::sNome_Funcao%/s%",
-    "value": 194.0
-    },
-    {
-    "id": 195.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[195]::Config::sNome_Funcao%/s%",
-    "value": 195.0
-    },
-    {
-    "id": 196.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[196]::Config::sNome_Funcao%/s%",
-    "value": 196.0
-    },
-    {
-    "id": 197.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[197]::Config::sNome_Funcao%/s%",
-    "value": 197.0
-    },
-    {
-    "id": 198.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[198]::Config::sNome_Funcao%/s%",
-    "value": 198.0
-    },
-    {
-    "id": 199.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[199]::Config::sNome_Funcao%/s%",
-    "value": 199.0
-    },
-    {
-    "id": 200.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[200]::Config::sNome_Funcao%/s%",
-    "value": 200.0
-    },
-    {
-    "id": 201.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[201]::Config::sNome_Funcao%/s%",
-    "value": 201.0
-    },
-    {
-    "id": 202.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[202]::Config::sNome_Funcao%/s%",
-    "value": 202.0
-    },
-    {
-    "id": 203.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[203]::Config::sNome_Funcao%/s%",
-    "value": 203.0
-    },
-    {
-    "id": 204.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[204]::Config::sNome_Funcao%/s%",
-    "value": 204.0
-    },
-    {
-    "id": 205.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[205]::Config::sNome_Funcao%/s%",
-    "value": 205.0
-    },
-    {
-    "id": 206.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[206]::Config::sNome_Funcao%/s%",
-    "value": 206.0
-    },
-    {
-    "id": 207.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[207]::Config::sNome_Funcao%/s%",
-    "value": 207.0
-    },
-    {
-    "id": 208.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[208]::Config::sNome_Funcao%/s%",
-    "value": 208.0
-    },
-    {
-    "id": 209.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[209]::Config::sNome_Funcao%/s%",
-    "value": 209.0
-    },
-    {
-    "id": 210.0,
-    "text": "%s%PLC1.GVL_Motores.Motor[210]::Config::sNome_Funcao%/s%",
-    "value": 210.0
-    }
-
-    ]
-</script>
-</div>
 <div id="TcHmiImage_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="13.1" data-tchmi-height-unit="%" data-tchmi-left="37.5" data-tchmi-left-unit="%" data-tchmi-top="4.5" data-tchmi-top-unit="%" data-tchmi-width="3.8" data-tchmi-width-unit="%" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-opacity="1" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-src="Images/Diversos/Seta.png" data-tchmi-background-image-width-unit="px" data-tchmi-background-image-height-unit="px">
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
@@ -2673,215 +1398,6 @@
 }
 </script>
 </div>
-<div id="cbMotores3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCombobox" data-tchmi-combobox-text="Escolha sua Válvula" data-tchmi-height="7.5" data-tchmi-height-unit="%" data-tchmi-left="1.9" data-tchmi-left-unit="%" data-tchmi-top="51.9" data-tchmi-top-unit="%" data-tchmi-width="33.5" data-tchmi-width-unit="%" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-selected-id="%ctrl%cbMotores3::SelectedId%/ctrl%" data-tchmi-selected-index="%ctrl%cbMotores3::SelectedIndex%/ctrl%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="250" data-tchmi-text-horizontal-alignment="Center" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-opacity="1" data-tchmi-background-image-width-unit="px" data-tchmi-background-image-height-unit="px" data-tchmi-data-height-unit="px" data-tchmi-max-list-height-unit="px" data-tchmi-drop-down-font-size-unit="%" data-tchmi-data-height="30" data-tchmi-drop-down-font-size="150" data-tchmi-max-list-height="200" data-tchmi-drop-down-category-font-size-unit="px" data-tchmi-drop-down-category-font-size="20" data-tchmi-is-enabled="true" data-tchmi-allow-text-input="false" data-tchmi-drop-down-vertical-alignment="Center">
-<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
-{
-  "top": 3,
-  "right": 3,
-  "bottom": 3,
-  "left": 3
-}
-</script>
-
-
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
-  {
-    "event": "cbMotores3.onUserInteractionFinished",
-    "actions": [
-      {
-        "objectType": "Comment",
-        "comment": "referencia os dados do motor"
-      },
-      {
-        "objectType": "JavaScript",
-        "active": true,
-        "sourceLines": [
-          "// lê o nome do Motor",
-          "var index = TcHmi.Symbol.readEx('%ctrl%cbMotores3::SelectedValue%/ctrl%');",
-          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores3::SelectedId%/ctrl%');",
-          "//%s%PLC1.GVL_Partidas.Motor%/s%",
-          "var GVL = 'GVL_Valvulas_1';",
-          "var NomeVetor = 'valvula';",
-          "var NomeUC = 'UcPopUpValvulas_1';",
-          "",
-          "\t\t",
-          "// faz o binding com a struct do motor\t",
-          "var ItemProperty = 'stValvula';",
-          "var UserControl = TcHmi.Controls.get(NomeUC);",
-          "var Variavel = \"%s%PLC1.\" + GVL + \".\" + NomeVetor +\"[\"+ id +\"]\"+ \"|BindingMode=TwoWay%/s%\";",
-          "//var Variavel = \"%s%PLC1.GVL_Motor.\" + TipoPartida +\"[\"+ motor +\"]\"+ \"|BindingMode=TwoWay%/s%\";",
-          "\t",
-          "\t",
-          "//alert(NomeVetor);",
-          "//alert(id);",
-          "",
-          "try {",
-          "    TcHmi.Binding.createEx2(Variavel, ItemProperty, UserControl);",
-          "} catch(e) {",
-          "    console.log(e);",
-          "    console.log(Variavel);",
-          "    console.log(ItemProperty);",
-          "    console.log(UserControl);",
-          "}"
-        ],
-        "injectContextObject": false,
-        "asyncWait": true,
-        "waitMode": "Synchronous"
-      },
-      {
-        "objectType": "Comment",
-        "comment": "abre o PopUp"
-      },
-      {
-        "objectType": "JavaScript",
-        "active": true,
-        "sourceLines": [
-          "var index = TcHmi.Symbol.readEx('%ctrl%cbMotores3::SelectedValue%/ctrl%');",
-          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores3::SelectedId%/ctrl%') + 1;",
-          "",
-          "",
-          "\tvar NomeUC = 'UcPopUpValvulas_1';",
-          "",
-          "\tvar _id = 'cbMotores3';",
-          "\tvar _uc = TcHmi.Controls.get(_id);",
-          "\tvar TamXTela = 1920;",
-          "\tvar TamYTela = 1080;",
-          "",
-          "// referencia a popup",
-          "\tvar UserControl = TcHmi.Controls.get(NomeUC);",
-          "\t _uc_width = UserControl.getWidth();",
-          "\t _uc_height = UserControl.getHeight();",
-          "\t",
-          "// coordenadas do User Control",
-          "\tvar _top = _uc.getTop();",
-          "\tvar _left = _uc.getLeft();",
-          "\tvar _width = _uc.getWidth();",
-          "\tvar _height = _uc.getHeight();",
-          "\t",
-          "// coordenadas da popup",
-          "\tif (_left + _width + _uc_width > TamXTela){",
-          "\t\tvar __left = _left - _uc_width;",
-          "\t} else {",
-          "\t\tvar __left = _left + _width + 10;",
-          "\t}",
-          "",
-          "\tif (_top + _uc_height > TamYTela){",
-          "\t\tvar __top = _top + _height - _uc_height;",
-          "\t} else {",
-          "\t\tvar __top = _top;",
-          "\t}",
-          "\t",
-          "__top = 390;",
-          "__left = 560;",
-          "",
-          "UserControl.setTop(__top);",
-          "UserControl.setLeft(__left);",
-          "",
-          "$(\"#\" + NomeUC).slideDown('slow');"
-        ],
-        "injectContextObject": false,
-        "asyncWait": true,
-        "waitMode": "Synchronous"
-      }
-    ]
-  }
-]
-</script>
-
-
-
-
-
-<script data-tchmi-target-attribute="data-tchmi-src-data" type="application/json">
-[
-  {
-    "id": 1.0,
-    "text": "%s%PLC1.GVL_Valvulas_1.valvula[1]::en::sNome_Funcao%/s%"
-  },
-  {
-    "id": 2.0,
-    "text": "%s%PLC1.GVL_Valvulas_1.valvula[2]::en::sNome_Funcao%/s%"
-  },
-  {
-    "id": 3.0,
-    "text": "%s%PLC1.GVL_Valvulas_1.valvula[3]::en::sNome_Funcao%/s%"
-  },
-  {
-    "id": 4.0,
-    "text": "%s%PLC1.GVL_Valvulas_1.valvula[4]::en::sNome_Funcao%/s%"
-  },
-  {
-    "id": 5.0,
-    "text": "%s%PLC1.GVL_Valvulas_1.valvula[5]::en::sNome_Funcao%/s%"
-  },
-  {
-    "id": 6.0,
-    "text": "%s%PLC1.GVL_Valvulas_1.valvula[6]::en::sNome_Funcao%/s%"
-  },
-  {
-    "id": 7.0,
-    "text": "%s%PLC1.GVL_Valvulas_1.valvula[7]::en::sNome_Funcao%/s%"
-  },
-  {
-    "id": 8.0,
-    "text": "%s%PLC1.GVL_Valvulas_1.valvula[8]::en::sNome_Funcao%/s%"
-  },
-  {
-    "id": 9.0,
-    "text": "%s%PLC1.GVL_Valvulas_1.valvula[9]::en::sNome_Funcao%/s%"
-  },
-  {
-    "id": 10.0,
-    "text": "%s%PLC1.GVL_Valvulas_1.valvula[10]::en::sNome_Funcao%/s%"
-  },
-  {
-    "id": 101.0,
-    "text": "%s%PLC1.GVL_Valvulas_1.valvula[101]::en::sNome_Funcao%/s%"
-  },
-  {
-    "id": 102.0,
-    "text": "%s%PLC1.GVL_Valvulas_1.valvula[102]::en::sNome_Funcao%/s%"
-  },
-  {
-    "id": 103.0,
-    "text": "%s%PLC1.GVL_Valvulas_1.valvula[103]::en::sNome_Funcao%/s%"
-  },
-  {
-    "id": 104.0,
-    "text": "%s%PLC1.GVL_Valvulas_1.valvula[104]::en::sNome_Funcao%/s%"
-  },
-  {
-    "id": 105.0,
-    "text": "%s%PLC1.GVL_Valvulas_1.valvula[105]::en::sNome_Funcao%/s%"
-  },
-  {
-    "id": 106.0,
-    "text": "%s%PLC1.GVL_Valvulas_1.valvula[106]::en::sNome_Funcao%/s%"
-  },
-  {
-    "id": 107.0,
-    "text": "%s%PLC1.GVL_Valvulas_1.valvula[107]::en::sNome_Funcao%/s%"
-  },
-  {
-    "id": 108.0,
-    "text": "%s%PLC1.GVL_Valvulas_1.valvula[108]::en::sNome_Funcao%/s%"
-  },
-  {
-    "id": 109.0,
-    "text": "%s%PLC1.GVL_Valvulas_1.valvula[109]::en::sNome_Funcao%/s%"
-  },
-  {
-    "id": 110.0,
-    "text": "%s%PLC1.GVL_Valvulas_1.valvula[110]::en::sNome_Funcao%/s%"
-  },
-  {
-    "id": 111.0,
-    "text": "%s%PLC1.GVL_Valvulas_1.valvula[111]::en::sNome_Funcao%/s%"
-  }
-]
-</script>
-</div>
 <div id="TcHmiImage_29" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="13.1" data-tchmi-height-unit="%" data-tchmi-left="37.5" data-tchmi-left-unit="%" data-tchmi-top="49.0" data-tchmi-top-unit="%" data-tchmi-width="3.8" data-tchmi-width-unit="%" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-opacity="1" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-src="Images/Diversos/Seta.png" data-tchmi-background-image-width-unit="px" data-tchmi-background-image-height-unit="px" data-tchmi-is-enabled="true">
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
@@ -3014,691 +1530,6 @@
 </div>
 <div id="UcEmergencia" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="250" data-tchmi-height-unit="px" data-tchmi-left="25" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucEmergencia.usercontrol" data-tchmi-top="1239" data-tchmi-top-unit="px" data-tchmi-width="375" data-tchmi-width-unit="px" data-tchmi-is-enabled="true" data-tchmi-zindex="1501">
 </div>
-<div id="cbMotores50" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCombobox" data-tchmi-combobox-text="Escolha seu Sensor Oe" data-tchmi-height="7.5" data-tchmi-height-unit="%" data-tchmi-left="1.9" data-tchmi-left-unit="%" data-tchmi-top="30.4" data-tchmi-top-unit="%" data-tchmi-width="33.5" data-tchmi-width-unit="%" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-selected-id="%ctrl%cbMotores50::SelectedId%/ctrl%" data-tchmi-selected-index="%ctrl%cbMotores50::SelectedIndex%/ctrl%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="250" data-tchmi-text-horizontal-alignment="Center" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-opacity="1" data-tchmi-background-image-width-unit="px" data-tchmi-background-image-height-unit="px" data-tchmi-data-height-unit="px" data-tchmi-max-list-height-unit="px" data-tchmi-drop-down-font-size-unit="%" data-tchmi-data-height="30" data-tchmi-drop-down-font-size="150" data-tchmi-max-list-height="200" data-tchmi-drop-down-category-font-size-unit="px" data-tchmi-drop-down-category-font-size="20" data-tchmi-is-enabled="true" data-tchmi-allow-text-input="false" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-drop-down-vertical-alignment="Center" data-tchmi-drop-down-category-vertical-alignment="Center">
-<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
-{
-  "top": 3,
-  "right": 3,
-  "bottom": 3,
-  "left": 3
-}
-</script>
-
-
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
-  {
-    "event": "cbMotores2_1.onUserInteractionFinished",
-    "actions": [
-      {
-        "objectType": "Comment",
-        "comment": "referencia os dados do motor"
-      },
-      {
-        "objectType": "JavaScript",
-        "active": true,
-        "sourceLines": [
-          "// lê o nome do Motor",
-          "var index = TcHmi.Symbol.readEx('%ctrl%cbMotores2::SelectedValue%/ctrl%');",
-          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores2::SelectedId%/ctrl%');",
-          "var data = TcHmi.Symbol.readEx('%ctrl%cbMotores2::SrcData%/ctrl%');",
-          "var GVL = 'GVL_Sensores';",
-          "var NomeVetor = 'SenDig';",
-          "var NomeUC;",
-          "",
-          "if (data[id].category === 'entrada'){",
-          "\tNomeUC = 'UcPopUpSensorDigital';",
-          "}else if(data[id].category === 'saida') {",
-          "\tNomeUC = 'UcPopUpSaidaDigital'",
-          "}",
-          "",
-          "\t\t",
-          "// faz o binding com a struct do motor\t",
-          "var ItemProperty = 'stSensor';",
-          "var UserControl = TcHmi.Controls.get(NomeUC);",
-          "var Variavel = \"%s%PLC1.\" + GVL + \".\" + NomeVetor +\"[\"+ index +\"]\"+ \"|BindingMode=TwoWay%/s%\";",
-          "//var Variavel = \"%s%PLC1.GVL_Motor.\" + TipoPartida +\"[\"+ motor +\"]\"+ \"|BindingMode=TwoWay%/s%\";",
-          "\t",
-          "\t",
-          "//alert(NomeVetor);",
-          "//alert(id);",
-          "",
-          "try {",
-          "    TcHmi.Binding.createEx2(Variavel, ItemProperty, UserControl);",
-          "} catch(e) {",
-          "    console.log(e);",
-          "    console.log(Variavel);",
-          "    console.log(ItemProperty);",
-          "    console.log(UserControl);",
-          "}"
-        ],
-        "injectContextObject": false,
-        "asyncWait": true,
-        "waitMode": "Synchronous"
-      },
-      {
-        "objectType": "Comment",
-        "comment": "abre o PopUp"
-      },
-      {
-        "objectType": "JavaScript",
-        "active": true,
-        "sourceLines": [
-          "var index = TcHmi.Symbol.readEx('%ctrl%cbMotores2::SelectedValue%/ctrl%');",
-          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores2::SelectedId%/ctrl%');",
-          "var data = TcHmi.Symbol.readEx('%ctrl%cbMotores2::SrcData%/ctrl%');",
-          "",
-          "\tif (data[id].category === 'entrada'){",
-          "\t\tNomeUC = 'UcPopUpSensorDigital';",
-          "\t}else if(data[id].category === 'saida'){",
-          "\t\tNomeUC = 'UcPopUpSaidaDigital'",
-          "\t}",
-          "",
-          "\tvar _id = 'cbMotores2';",
-          "\tvar _uc = TcHmi.Controls.get(_id);",
-          "\tvar TamXTela = 1920;",
-          "\tvar TamYTela = 1080;",
-          "",
-          "// referencia a popup",
-          "\tvar UserControl = TcHmi.Controls.get(NomeUC);",
-          "\t _uc_width = UserControl.getWidth();",
-          "\t _uc_height = UserControl.getHeight();",
-          "\t",
-          "// coordenadas do User Control",
-          "\tvar _top = _uc.getTop();",
-          "\tvar _left = _uc.getLeft();",
-          "\tvar _width = _uc.getWidth();",
-          "\tvar _height = _uc.getHeight();",
-          "\t",
-          "// coordenadas da popup",
-          "\tif (_left + _width + _uc_width > TamXTela){",
-          "\t\tvar __left = _left - _uc_width;",
-          "\t} else {",
-          "\t\tvar __left = _left + _width + 10;",
-          "\t}",
-          "",
-          "\tif (_top + _uc_height > TamYTela){",
-          "\t\tvar __top = _top + _height - _uc_height;",
-          "\t} else {",
-          "\t\tvar __top = _top;",
-          "\t}",
-          "",
-          "if (data[id].category === 'entrada'){",
-          "\t__top = 410;",
-          "\t__left = 585;",
-          "}else if(data[id].category === 'saida'){",
-          "\t__top = 440;",
-          "\t__left = 610;",
-          "}",
-          "",
-          "",
-          "",
-          "UserControl.setTop(__top);",
-          "UserControl.setLeft(__left);",
-          "",
-          "$(\"#\" + NomeUC).slideDown('slow');"
-        ],
-        "injectContextObject": false,
-        "asyncWait": true,
-        "waitMode": "Synchronous"
-      }
-    ]
-  },
-  {
-    "event": "cbMotores50.onUserInteractionFinished",
-    "actions": [
-      {
-        "objectType": "Comment",
-        "comment": "referencia os dados do motor"
-      },
-      {
-        "objectType": "JavaScript",
-        "active": true,
-        "sourceLines": [
-          "// lê o nome do Motor",
-          "var index = TcHmi.Symbol.readEx('%ctrl%cbMotores50::SelectedValue%/ctrl%');",
-          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores50::SelectedId%/ctrl%');",
-          "var data = TcHmi.Symbol.readEx('%ctrl%cbMotores50::SrcData%/ctrl%');",
-          "var GVL = 'GVL_Sensores';",
-          "var NomeVetor = 'Oe';",
-          "var NomeUC;",
-          "console.log(data);",
-          "console.log(id);",
-          "console.log(index);",
-          "if (data[id].category === 'entrada'){",
-          "\tNomeUC = 'UcPopUpSensorDigital';",
-          "}else if(data[id].category === 'Saida') {",
-          "\tNomeUC = 'UcPopUpSaidaDigital';",
-          "}",
-          "",
-          "\t\t",
-          "// faz o binding com a struct do motor\t",
-          "var ItemProperty = 'stSensor';",
-          "var UserControl = TcHmi.Controls.get(NomeUC);",
-          "var Variavel = \"%s%PLC1.\" + GVL + \".\" + NomeVetor +\"[\"+ index +\"]\"+ \"|BindingMode=TwoWay%/s%\";",
-          "//var Variavel = \"%s%PLC1.GVL_Motor.\" + TipoPartida +\"[\"+ motor +\"]\"+ \"|BindingMode=TwoWay%/s%\";",
-          "\t",
-          "\t",
-          "//alert(NomeVetor);",
-          "//alert(id);",
-          "",
-          "try {",
-          "    TcHmi.Binding.createEx2(Variavel, ItemProperty, UserControl);",
-          "} catch(e) {",
-          "    console.log(e);",
-          "    console.log(Variavel);",
-          "    console.log(ItemProperty);",
-          "    console.log(UserControl);",
-          "}"
-        ],
-        "injectContextObject": false,
-        "asyncWait": true,
-        "waitMode": "Synchronous"
-      },
-      {
-        "objectType": "Comment",
-        "comment": "abre o PopUp"
-      },
-      {
-        "objectType": "JavaScript",
-        "active": true,
-        "sourceLines": [
-          "var index = TcHmi.Symbol.readEx('%ctrl%cbMotores50::SelectedValue%/ctrl%');",
-          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores50::SelectedId%/ctrl%');",
-          "var data = TcHmi.Symbol.readEx('%ctrl%cbMotores50::SrcData%/ctrl%');",
-          "",
-          "\tif (data[id].category === 'entrada'){",
-          "\t\tNomeUC = 'UcPopUpSensorDigital';",
-          "\t}else if(data[id].category === 'saida'){",
-          "\t\tNomeUC = 'UcPopUpSaidaDigital'",
-          "\t}",
-          "",
-          "\tvar _id = 'cbMotores50';",
-          "\tvar _uc = TcHmi.Controls.get(_id);",
-          "\tvar TamXTela = 1920;",
-          "\tvar TamYTela = 1080;",
-          "",
-          "// referencia a popup",
-          "\tvar UserControl = TcHmi.Controls.get(NomeUC);",
-          "\t _uc_width = UserControl.getWidth();",
-          "\t _uc_height = UserControl.getHeight();",
-          "\t",
-          "// coordenadas do User Control",
-          "\tvar _top = _uc.getTop();",
-          "\tvar _left = _uc.getLeft();",
-          "\tvar _width = _uc.getWidth();",
-          "\tvar _height = _uc.getHeight();",
-          "\t",
-          "// coordenadas da popup",
-          "\tif (_left + _width + _uc_width > TamXTela){",
-          "\t\tvar __left = _left - _uc_width;",
-          "\t} else {",
-          "\t\tvar __left = _left + _width + 10;",
-          "\t}",
-          "",
-          "\tif (_top + _uc_height > TamYTela){",
-          "\t\tvar __top = _top + _height - _uc_height;",
-          "\t} else {",
-          "\t\tvar __top = _top;",
-          "\t}",
-          "",
-          "if (data[id].category === 'entrada'){",
-          "\t__top = 410;",
-          "\t__left = 585;",
-          "}else if(data[id].category === 'saida'){",
-          "\t__top = 440;",
-          "\t__left = 610;",
-          "}",
-          "",
-          "",
-          "",
-          "UserControl.setTop(__top);",
-          "UserControl.setLeft(__left);",
-          "",
-          "$(\"#\" + NomeUC).slideDown('slow');"
-        ],
-        "injectContextObject": false,
-        "asyncWait": true,
-        "waitMode": "Synchronous"
-      }
-    ]
-  }
-]
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-src-data" type="application/json">
-    [
-    {
-    "id": 1.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[1]::config::sNome_Funcao%/s%",
-    "value": 1.0,
-    "category": "entrada"
-    },
-    {
-    "id": 2.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[2]::config::sNome_Funcao%/s%",
-    "value": 2.0,
-    "category": "entrada"
-    },
-    {
-    "id": 3.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[3]::config::sNome_Funcao%/s%",
-    "value": 3.0,
-    "category": "entrada"
-    },
-    {
-    "id": 4.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[4]::config::sNome_Funcao%/s%",
-    "value": 4.0,
-    "category": "entrada"
-    },
-    {
-    "id": 5.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[5]::config::sNome_Funcao%/s%",
-    "value": 5.0,
-    "category": "entrada"
-    },
-    {
-    "id": 6.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[6]::config::sNome_Funcao%/s%",
-    "value": 6.0,
-    "category": "entrada"
-    },
-    {
-    "id": 7.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[7]::config::sNome_Funcao%/s%",
-    "value": 7.0,
-    "category": "entrada"
-    },
-    {
-    "id": 8.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[8]::config::sNome_Funcao%/s%",
-    "value": 8.0,
-    "category": "entrada"
-    },
-    {
-    "id": 9.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[9]::config::sNome_Funcao%/s%",
-    "value": 9.0,
-    "category": "entrada"
-    },
-    {
-    "id": 10.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[10]::config::sNome_Funcao%/s%",
-    "value": 10.0,
-    "category": "entrada"
-    },
-    {
-    "id": 11.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[11]::config::sNome_Funcao%/s%",
-    "value": 11.0,
-    "category": "entrada"
-    },
-    {
-    "id": 12.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[12]::config::sNome_Funcao%/s%",
-    "value": 12.0,
-    "category": "entrada"
-    },
-    {
-    "id": 13.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[13]::config::sNome_Funcao%/s%",
-    "value": 13.0,
-    "category": "entrada"
-    },
-    {
-    "id": 14.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[14]::config::sNome_Funcao%/s%",
-    "value": 14.0,
-    "category": "entrada"
-    },
-    {
-    "id": 15.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[15]::config::sNome_Funcao%/s%",
-    "value": 15.0,
-    "category": "entrada"
-    },
-    {
-    "id": 16.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[16]::config::sNome_Funcao%/s%",
-    "value": 16.0,
-    "category": "entrada"
-    },
-    {
-    "id": 17.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[17]::config::sNome_Funcao%/s%",
-    "value": 17.0,
-    "category": "entrada"
-    },
-    {
-    "id": 18.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[18]::config::sNome_Funcao%/s%",
-    "value": 18.0,
-    "category": "entrada"
-    },
-    {
-    "id": 19.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[19]::config::sNome_Funcao%/s%",
-    "value": 19.0,
-    "category": "entrada"
-    },
-    {
-    "id": 20.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[20]::config::sNome_Funcao%/s%",
-    "value": 20.0,
-    "category": "entrada"
-    },
-    {
-    "id": 21.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[21]::config::sNome_Funcao%/s%",
-    "value": 21.0,
-    "category": "entrada"
-    },
-    {
-    "id": 22.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[22]::config::sNome_Funcao%/s%",
-    "value": 22.0,
-    "category": "entrada"
-    },
-    {
-    "id": 23.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[23]::config::sNome_Funcao%/s%",
-    "value": 23.0,
-    "category": "entrada"
-    },
-    {
-    "id": 24.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[24]::config::sNome_Funcao%/s%",
-    "value": 24.0,
-    "category": "entrada"
-    },
-    {
-    "id": 25.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[25]::config::sNome_Funcao%/s%",
-    "value": 25.0,
-    "category": "entrada"
-    },
-    {
-    "id": 26.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[26]::config::sNome_Funcao%/s%",
-    "value": 26.0,
-    "category": "entrada"
-    },
-    {
-    "id": 27.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[27]::config::sNome_Funcao%/s%",
-    "value": 27.0,
-    "category": "entrada"
-    },
-    {
-    "id": 28.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[28]::config::sNome_Funcao%/s%",
-    "value": 28.0,
-    "category": "entrada"
-    },
-    {
-    "id": 29.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[29]::config::sNome_Funcao%/s%",
-    "value": 29.0,
-    "category": "entrada"
-    },
-    {
-    "id": 30.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[30]::config::sNome_Funcao%/s%",
-    "value": 30.0,
-    "category": "entrada"
-    },
-    {
-    "id": 31.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[31]::config::sNome_Funcao%/s%",
-    "value": 31.0,
-    "category": "entrada"
-    },
-    {
-    "id": 32.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[32]::config::sNome_Funcao%/s%",
-    "value": 32.0,
-    "category": "entrada"
-    },
-    {
-    "id": 33.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[33]::config::sNome_Funcao%/s%",
-    "value": 33.0,
-    "category": "entrada"
-    },
-    {
-    "id": 34.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[34]::config::sNome_Funcao%/s%",
-    "value": 34.0,
-    "category": "entrada"
-    },
-    {
-    "id": 35.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[35]::config::sNome_Funcao%/s%",
-    "value": 35.0,
-    "category": "entrada"
-    },
-    {
-    "id": 36.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[36]::config::sNome_Funcao%/s%",
-    "value": 36.0,
-    "category": "entrada"
-    },
-    {
-    "id": 37.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[37]::config::sNome_Funcao%/s%",
-    "value": 37.0,
-    "category": "entrada"
-    },
-    {
-    "id": 38.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[38]::config::sNome_Funcao%/s%",
-    "value": 38.0,
-    "category": "entrada"
-    },
-    {
-    "id": 39.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[39]::config::sNome_Funcao%/s%",
-    "value": 39.0,
-    "category": "entrada"
-    },
-    {
-    "id": 40.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[40]::config::sNome_Funcao%/s%",
-    "value": 40.0,
-    "category": "entrada"
-    },
-    {
-    "id": 41.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[41]::config::sNome_Funcao%/s%",
-    "value": 41.0,
-    "category": "entrada"
-    },
-    {
-    "id": 42.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[42]::config::sNome_Funcao%/s%",
-    "value": 42.0,
-    "category": "entrada"
-    },
-    {
-    "id": 43.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[43]::config::sNome_Funcao%/s%",
-    "value": 43.0,
-    "category": "entrada"
-    },
-    {
-    "id": 44.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[44]::config::sNome_Funcao%/s%",
-    "value": 44.0,
-    "category": "entrada"
-    },
-    {
-    "id": 45.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[45]::config::sNome_Funcao%/s%",
-    "value": 45.0,
-    "category": "entrada"
-    },
-    {
-    "id": 46.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[46]::config::sNome_Funcao%/s%",
-    "value": 46.0,
-    "category": "entrada"
-    },
-    {
-    "id": 47.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[47]::config::sNome_Funcao%/s%",
-    "value": 47.0,
-    "category": "entrada"
-    },
-    {
-    "id": 48.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[48]::config::sNome_Funcao%/s%",
-    "value": 48.0,
-    "category": "entrada"
-    },
-    {
-    "id": 49.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[49]::config::sNome_Funcao%/s%",
-    "value": 49.0,
-    "category": "entrada"
-    },
-    {
-    "id": 50.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[50]::config::sNome_Funcao%/s%",
-    "value": 50.0,
-    "category": "entrada"
-    }
-    ]
-</script>
-</div>
-<div id="TcHmiImage_65" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="13.1" data-tchmi-height-unit="%" data-tchmi-left="87.2" data-tchmi-left-unit="%" data-tchmi-top="27.2" data-tchmi-top-unit="%" data-tchmi-width="3.8" data-tchmi-width-unit="%" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-opacity="1" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-src="Images/Diversos/Seta.png" data-tchmi-background-image-width-unit="px" data-tchmi-background-image-height-unit="px" data-tchmi-is-enabled="true">
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
-  {
-    "event": "TcHmiImage_65.onMouseClick",
-    "actions": [
-      {
-        "objectType": "JavaScript",
-        "active": true,
-        "sourceLines": [
-          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores66::SelectedId%/ctrl%');",
-          "",
-          "TcHmi.Symbol.writeEx('%ctrl%cbMotores66::SelectedId%/ctrl%', id-1);"
-        ],
-        "injectContextObject": false,
-        "asyncWait": true,
-        "waitMode": "Synchronous"
-      },
-      {
-        "objectType": "JavaScript",
-        "active": true,
-        "sourceLines": [
-          "// lê o nome do Motor",
-          "var index = TcHmi.Symbol.readEx('%ctrl%cbMotores66::SelectedValue%/ctrl%');",
-          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores66::SelectedId%/ctrl%') + 1;",
-          "//%s%PLC1.GVL_Partidas.Motor%/s%",
-          "var GVL = 'GVL_Sensores';",
-          "var NomeVetor = 'Os';",
-          "var NomeUC = 'UcPopUpSaidaDigital';",
-          "\t",
-          "\t\t",
-          "// faz o binding com a struct do motor\t",
-          "var ItemProperty = 'stSensor';",
-          "var UserControl = TcHmi.Controls.get(NomeUC);",
-          "var Variavel = \"%s%PLC1.\" + GVL + \".\" + NomeVetor +\"[\"+ id +\"]\"+ \"|BindingMode=TwoWay%/s%\";",
-          "//var Variavel = \"%s%PLC1.GVL_Motor.\" + TipoPartida +\"[\"+ motor +\"]\"+ \"|BindingMode=TwoWay%/s%\";",
-          "\t",
-          "\t",
-          "//alert(NomeVetor);",
-          "//alert(id);",
-          "",
-          "try {",
-          "    TcHmi.Binding.createEx2(Variavel, ItemProperty, UserControl);",
-          "} catch(e) {",
-          "    console.log(e);",
-          "    console.log(Variavel);",
-          "    console.log(ItemProperty);",
-          "    console.log(UserControl);",
-          "}"
-        ],
-        "injectContextObject": false,
-        "asyncWait": true,
-        "waitMode": "Synchronous"
-      }
-    ]
-  }
-]
-</script>
-</div>
-<div id="TcHmiImage_66" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="13.1" data-tchmi-height-unit="%" data-tchmi-left="91.2" data-tchmi-left-unit="%" data-tchmi-top="27.6" data-tchmi-top-unit="%" data-tchmi-width="3.8" data-tchmi-width-unit="%" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-opacity="1" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-src="Images/Diversos/Seta.png" data-tchmi-background-image-width-unit="px" data-tchmi-background-image-height-unit="px" data-tchmi-is-enabled="true">
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
-  {
-    "event": "TcHmiImage_66.onMouseClick",
-    "actions": [
-      {
-        "objectType": "JavaScript",
-        "active": true,
-        "sourceLines": [
-          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores66::SelectedId%/ctrl%');",
-          "",
-          "TcHmi.Symbol.writeEx('%ctrl%cbMotores66::SelectedId%/ctrl%', id+1);"
-        ],
-        "injectContextObject": false,
-        "asyncWait": true,
-        "waitMode": "Synchronous"
-      },
-      {
-        "objectType": "JavaScript",
-        "active": true,
-        "sourceLines": [
-          "// lê o nome do Motor",
-          "var index = TcHmi.Symbol.readEx('%ctrl%cbMotores66::SelectedValue%/ctrl%');",
-          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores66::SelectedId%/ctrl%') + 1;",
-          "//%s%PLC1.GVL_Partidas.Motor%/s%",
-          "var GVL = 'GVL_Sensores';",
-          "var NomeVetor = 'Os';",
-          "var NomeUC = 'UcPopUpSaidaDigital';",
-          "\t",
-          "\t\t",
-          "// faz o binding com a struct do motor\t",
-          "var ItemProperty = 'stSensor';",
-          "var UserControl = TcHmi.Controls.get(NomeUC);",
-          "var Variavel = \"%s%PLC1.\" + GVL + \".\" + NomeVetor +\"[\"+ id +\"]\"+ \"|BindingMode=TwoWay%/s%\";",
-          "//var Variavel = \"%s%PLC1.GVL_Motor.\" + TipoPartida +\"[\"+ motor +\"]\"+ \"|BindingMode=TwoWay%/s%\";",
-          "\t",
-          "\t",
-          "//alert(NomeVetor);",
-          "//alert(id);",
-          "",
-          "try {",
-          "    TcHmi.Binding.createEx2(Variavel, ItemProperty, UserControl);",
-          "} catch(e) {",
-          "    console.log(e);",
-          "    console.log(Variavel);",
-          "    console.log(ItemProperty);",
-          "    console.log(UserControl);",
-          "}"
-        ],
-        "injectContextObject": false,
-        "asyncWait": true,
-        "waitMode": "Synchronous"
-      }
-    ]
-  }
-]
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-transform" type="application/json">
-[
-  {
-    "transformType": "Rotate",
-    "angle": 180.0,
-    "angleUnit": "deg"
-  }
-]
-</script>
-</div>
 
 <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
 [
@@ -3744,683 +1575,6 @@
   }
 ]
 </script>
-<div id="cbMotores66" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCombobox" data-tchmi-combobox-text="Escolha seu Sensor Os" data-tchmi-height="7.5" data-tchmi-height-unit="%" data-tchmi-left="51.9" data-tchmi-left-unit="%" data-tchmi-top="30.4" data-tchmi-top-unit="%" data-tchmi-width="33.5" data-tchmi-width-unit="%" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-selected-id="%ctrl%cbMotores50::SelectedId%/ctrl%" data-tchmi-selected-index="%ctrl%cbMotores50::SelectedIndex%/ctrl%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="250" data-tchmi-text-horizontal-alignment="Center" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-opacity="1" data-tchmi-background-image-width-unit="px" data-tchmi-background-image-height-unit="px" data-tchmi-data-height-unit="px" data-tchmi-max-list-height-unit="px" data-tchmi-drop-down-font-size-unit="%" data-tchmi-data-height="30" data-tchmi-drop-down-font-size="150" data-tchmi-max-list-height="200" data-tchmi-drop-down-category-font-size-unit="px" data-tchmi-drop-down-category-font-size="20" data-tchmi-is-enabled="true" data-tchmi-allow-text-input="false" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-drop-down-vertical-alignment="Center">
-<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
-{
-  "top": 3,
-  "right": 3,
-  "bottom": 3,
-  "left": 3
-}
-</script>
-
-
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
-  {
-    "event": "cbMotores2_1.onUserInteractionFinished",
-    "actions": [
-      {
-        "objectType": "Comment",
-        "comment": "referencia os dados do motor"
-      },
-      {
-        "objectType": "JavaScript",
-        "active": true,
-        "sourceLines": [
-          "// lê o nome do Motor",
-          "var index = TcHmi.Symbol.readEx('%ctrl%cbMotores2::SelectedValue%/ctrl%');",
-          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores2::SelectedId%/ctrl%');",
-          "var data = TcHmi.Symbol.readEx('%ctrl%cbMotores2::SrcData%/ctrl%');",
-          "var GVL = 'GVL_Sensores';",
-          "var NomeVetor = 'SenDig';",
-          "var NomeUC;",
-          "",
-          "if (data[id].category === 'entrada'){",
-          "\tNomeUC = 'UcPopUpSensorDigital';",
-          "}else if(data[id].category === 'saida') {",
-          "\tNomeUC = 'UcPopUpSaidaDigital'",
-          "}",
-          "",
-          "\t\t",
-          "// faz o binding com a struct do motor\t",
-          "var ItemProperty = 'stSensor';",
-          "var UserControl = TcHmi.Controls.get(NomeUC);",
-          "var Variavel = \"%s%PLC1.\" + GVL + \".\" + NomeVetor +\"[\"+ index +\"]\"+ \"|BindingMode=TwoWay%/s%\";",
-          "//var Variavel = \"%s%PLC1.GVL_Motor.\" + TipoPartida +\"[\"+ motor +\"]\"+ \"|BindingMode=TwoWay%/s%\";",
-          "\t",
-          "\t",
-          "//alert(NomeVetor);",
-          "//alert(id);",
-          "",
-          "try {",
-          "    TcHmi.Binding.createEx2(Variavel, ItemProperty, UserControl);",
-          "} catch(e) {",
-          "    console.log(e);",
-          "    console.log(Variavel);",
-          "    console.log(ItemProperty);",
-          "    console.log(UserControl);",
-          "}"
-        ],
-        "injectContextObject": false,
-        "asyncWait": true,
-        "waitMode": "Synchronous"
-      },
-      {
-        "objectType": "Comment",
-        "comment": "abre o PopUp"
-      },
-      {
-        "objectType": "JavaScript",
-        "active": true,
-        "sourceLines": [
-          "var index = TcHmi.Symbol.readEx('%ctrl%cbMotores2::SelectedValue%/ctrl%');",
-          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores2::SelectedId%/ctrl%');",
-          "var data = TcHmi.Symbol.readEx('%ctrl%cbMotores2::SrcData%/ctrl%');",
-          "",
-          "\tif (data[id].category === 'entrada'){",
-          "\t\tNomeUC = 'UcPopUpSensorDigital';",
-          "\t}else if(data[id].category === 'saida'){",
-          "\t\tNomeUC = 'UcPopUpSaidaDigital'",
-          "\t}",
-          "",
-          "\tvar _id = 'cbMotores2';",
-          "\tvar _uc = TcHmi.Controls.get(_id);",
-          "\tvar TamXTela = 1920;",
-          "\tvar TamYTela = 1080;",
-          "",
-          "// referencia a popup",
-          "\tvar UserControl = TcHmi.Controls.get(NomeUC);",
-          "\t _uc_width = UserControl.getWidth();",
-          "\t _uc_height = UserControl.getHeight();",
-          "\t",
-          "// coordenadas do User Control",
-          "\tvar _top = _uc.getTop();",
-          "\tvar _left = _uc.getLeft();",
-          "\tvar _width = _uc.getWidth();",
-          "\tvar _height = _uc.getHeight();",
-          "\t",
-          "// coordenadas da popup",
-          "\tif (_left + _width + _uc_width > TamXTela){",
-          "\t\tvar __left = _left - _uc_width;",
-          "\t} else {",
-          "\t\tvar __left = _left + _width + 10;",
-          "\t}",
-          "",
-          "\tif (_top + _uc_height > TamYTela){",
-          "\t\tvar __top = _top + _height - _uc_height;",
-          "\t} else {",
-          "\t\tvar __top = _top;",
-          "\t}",
-          "",
-          "if (data[id].category === 'entrada'){",
-          "\t__top = 410;",
-          "\t__left = 585;",
-          "}else if(data[id].category === 'saida'){",
-          "\t__top = 440;",
-          "\t__left = 610;",
-          "}",
-          "",
-          "",
-          "",
-          "UserControl.setTop(__top);",
-          "UserControl.setLeft(__left);",
-          "",
-          "$(\"#\" + NomeUC).slideDown('slow');"
-        ],
-        "injectContextObject": false,
-        "asyncWait": true,
-        "waitMode": "Synchronous"
-      }
-    ]
-  },
-  {
-    "event": "cbMotores66.onUserInteractionFinished",
-    "actions": [
-      {
-        "objectType": "Comment",
-        "comment": "referencia os dados do motor"
-      },
-      {
-        "objectType": "JavaScript",
-        "active": true,
-        "sourceLines": [
-          "// lê o nome do Motor",
-          "var index = TcHmi.Symbol.readEx('%ctrl%cbMotores66::SelectedValue%/ctrl%');",
-          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores66::SelectedId%/ctrl%');",
-          "var data = TcHmi.Symbol.readEx('%ctrl%cbMotores66::SrcData%/ctrl%');",
-          "var GVL = 'GVL_Sensores';",
-          "var NomeVetor = 'Os';",
-          "var NomeUC;",
-          "console.log(data);",
-          "console.log(id);",
-          "console.log(index);",
-          "NomeUC = 'UcPopUpSaidaDigital';",
-          "",
-          "\t\t",
-          "// faz o binding com a struct do motor\t",
-          "var ItemProperty = 'stSensor';",
-          "var UserControl = TcHmi.Controls.get(NomeUC);",
-          "var Variavel = \"%s%PLC1.\" + GVL + \".\" + NomeVetor +\"[\"+ index +\"]\"+ \"|BindingMode=TwoWay%/s%\";",
-          "//var Variavel = \"%s%PLC1.GVL_Motor.\" + TipoPartida +\"[\"+ motor +\"]\"+ \"|BindingMode=TwoWay%/s%\";",
-          "\t",
-          "\t",
-          "//alert(NomeVetor);",
-          "//alert(id);",
-          "",
-          "try {",
-          "    TcHmi.Binding.createEx2(Variavel, ItemProperty, UserControl);",
-          "} catch(e) {",
-          "    console.log(e);",
-          "    console.log(Variavel);",
-          "    console.log(ItemProperty);",
-          "    console.log(UserControl);",
-          "}"
-        ],
-        "injectContextObject": false,
-        "asyncWait": true,
-        "waitMode": "Synchronous"
-      },
-      {
-        "objectType": "Comment",
-        "comment": "abre o PopUp"
-      },
-      {
-        "objectType": "JavaScript",
-        "active": true,
-        "sourceLines": [
-          "var index = TcHmi.Symbol.readEx('%ctrl%cbMotores66::SelectedValue%/ctrl%');",
-          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores66::SelectedId%/ctrl%');",
-          "var data = TcHmi.Symbol.readEx('%ctrl%cbMotores66::SrcData%/ctrl%');",
-          "",
-          "\tNomeUC = 'UcPopUpSaidaDigital';",
-          "",
-          "\tvar _id = 'cbMotores66';",
-          "\tvar _uc = TcHmi.Controls.get(_id);",
-          "\tvar TamXTela = 1920;",
-          "\tvar TamYTela = 1080;",
-          "",
-          "// referencia a popup",
-          "\tvar UserControl = TcHmi.Controls.get(NomeUC);",
-          "\t _uc_width = UserControl.getWidth();",
-          "\t _uc_height = UserControl.getHeight();",
-          "\t",
-          "// coordenadas do User Control",
-          "\tvar _top = _uc.getTop();",
-          "\tvar _left = _uc.getLeft();",
-          "\tvar _width = _uc.getWidth();",
-          "\tvar _height = _uc.getHeight();",
-          "\t",
-          "// coordenadas da popup",
-          "\tif (_left + _width + _uc_width > TamXTela){",
-          "\t\tvar __left = _left - _uc_width;",
-          "\t} else {",
-          "\t\tvar __left = _left + _width + 10;",
-          "\t}",
-          "",
-          "\tif (_top + _uc_height > TamYTela){",
-          "\t\tvar __top = _top + _height - _uc_height;",
-          "\t} else {",
-          "\t\tvar __top = _top;",
-          "\t}",
-          "",
-          "if (data[id].category === 'entrada'){",
-          "\t__top = 410;",
-          "\t__left = 585;",
-          "}else if(data[id].category === 'saida'){",
-          "\t__top = 440;",
-          "\t__left = 610;",
-          "}",
-          "",
-          "",
-          "",
-          "UserControl.setTop(__top);",
-          "UserControl.setLeft(__left);",
-          "",
-          "$(\"#\" + NomeUC).slideDown('slow');"
-        ],
-        "injectContextObject": false,
-        "asyncWait": true,
-        "waitMode": "Synchronous"
-      }
-    ]
-  }
-]
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-src-data" type="application/json">
-[
-  {
-    "id": 1.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[1]::config::sNome_Funcao%/s%",
-    "value": 2.0,
-    "category": "saida"
-  },
-  {
-    "id": 2.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[2]::config::sNome_Funcao%/s%",
-    "value": 2.0,
-    "category": "saida"
-  },
-  {
-    "id": 3.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[3]::config::sNome_Funcao%/s%",
-    "value": 3.0,
-    "category": "saida"
-  },
-  {
-    "id": 4.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[4]::config::sNome_Funcao%/s%",
-    "value": 4.0,
-    "category": "saida"
-  },
-  {
-    "id": 5.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[5]::config::sNome_Funcao%/s%",
-    "value": 5.0,
-    "category": "saida"
-  },
-  {
-    "id": 6.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[6]::config::sNome_Funcao%/s%",
-    "value": 6.0,
-    "category": "saida"
-  },
-  {
-    "id": 7.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[7]::config::sNome_Funcao%/s%",
-    "value": 7.0,
-    "category": "saida"
-  },
-  {
-    "id": 8.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[8]::config::sNome_Funcao%/s%",
-    "value": 8.0,
-    "category": "saida"
-  },
-  {
-    "id": 9.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[9]::config::sNome_Funcao%/s%",
-    "value": 9.0,
-    "category": "saida"
-  },
-  {
-    "id": 10.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[10]::config::sNome_Funcao%/s%",
-    "value": 10.0,
-    "category": "saida"
-  },
-  {
-    "id": 11.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[11]::config::sNome_Funcao%/s%",
-    "value": 11.0,
-    "category": "saida"
-  },
-  {
-    "id": 12.0,
-    "text": "%s%PLC1.GVL_Sensores.Oe[12]::config::sNome_Funcao%/s%",
-    "value": 12.0,
-    "category": "saida"
-  },
-  {
-    "id": 14.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[14]::config::sNome_Funcao%/s%",
-    "value": 14.0,
-    "category": "saida"
-  },
-  {
-    "id": 13.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[13]::config::sNome_Funcao%/s%",
-    "value": 13.0,
-    "category": "saida"
-  },
-  {
-    "id": 15.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[15]::config::sNome_Funcao%/s%",
-    "value": 15.0,
-    "category": "saida"
-  },
-  {
-    "id": 16.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[16]::config::sNome_Funcao%/s%",
-    "value": 16.0,
-    "category": "saida"
-  },
-  {
-    "id": 17.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[17]::config::sNome_Funcao%/s%",
-    "value": 17.0,
-    "category": "saida"
-  },
-  {
-    "id": 18.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[18]::config::sNome_Funcao%/s%",
-    "value": 18.0,
-    "category": "saida"
-  },
-  {
-    "id": 19.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[19]::config::sNome_Funcao%/s%",
-    "value": 19.0,
-    "category": "saida"
-  },
-  {
-    "id": 20.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[20]::config::sNome_Funcao%/s%",
-    "value": 20.0,
-    "category": "saida"
-  },
-  {
-    "id": 21.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[21]::config::sNome_Funcao%/s%",
-    "value": 21.0,
-    "category": "saida"
-  },
-  {
-    "id": 22.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[22]::config::sNome_Funcao%/s%",
-    "value": 22.0,
-    "category": "saida"
-  },
-  {
-    "id": 23.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[23]::config::sNome_Funcao%/s%",
-    "value": 23.0,
-    "category": "saida"
-  },
-  {
-    "id": 24.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[24]::config::sNome_Funcao%/s%",
-    "value": 24.0,
-    "category": "saida"
-  },
-  {
-    "id": 25.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[25]::config::sNome_Funcao%/s%",
-    "value": 25.0,
-    "category": "saida"
-  },
-  {
-    "id": 26.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[26]::config::sNome_Funcao%/s%",
-    "value": 26.0,
-    "category": "saida"
-  },
-  {
-    "id": 27.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[27]::config::sNome_Funcao%/s%",
-    "value": 27.0,
-    "category": "saida"
-  },
-  {
-    "id": 28.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[28]::config::sNome_Funcao%/s%",
-    "value": 28.0,
-    "category": "saida"
-  },
-  {
-    "id": 29.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[29]::config::sNome_Funcao%/s%",
-    "value": 29.0,
-    "category": "saida"
-  },
-  {
-    "id": 30.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[30]::config::sNome_Funcao%/s%",
-    "value": 30.0,
-    "category": "saida"
-  },
-  {
-    "id": 31.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[31]::config::sNome_Funcao%/s%",
-    "value": 31.0,
-    "category": "saida"
-  },
-  {
-    "id": 32.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[32]::config::sNome_Funcao%/s%",
-    "value": 32.0,
-    "category": "saida"
-  },
-  {
-    "id": 33.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[33]::config::sNome_Funcao%/s%",
-    "value": 33.0,
-    "category": "saida"
-  },
-  {
-    "id": 34.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[34]::config::sNome_Funcao%/s%",
-    "value": 34.0,
-    "category": "saida"
-  },
-  {
-    "id": 35.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[35]::config::sNome_Funcao%/s%",
-    "value": 35.0,
-    "category": "saida"
-  },
-  {
-    "id": 36.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[36]::config::sNome_Funcao%/s%",
-    "value": 36.0,
-    "category": "saida"
-  },
-  {
-    "id": 37.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[37]::config::sNome_Funcao%/s%",
-    "value": 37.0,
-    "category": "saida"
-  },
-  {
-    "id": 38.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[38]::config::sNome_Funcao%/s%",
-    "value": 38.0,
-    "category": "saida"
-  },
-  {
-    "id": 39.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[39]::config::sNome_Funcao%/s%",
-    "value": 39.0,
-    "category": "saida"
-  },
-  {
-    "id": 40.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[40]::config::sNome_Funcao%/s%",
-    "value": 40.0,
-    "category": "saida"
-  },
-  {
-    "id": 41.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[41]::config::sNome_Funcao%/s%",
-    "value": 41.0,
-    "category": "saida"
-  },
-  {
-    "id": 42.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[42]::config::sNome_Funcao%/s%",
-    "value": 42.0,
-    "category": "saida"
-  },
-  {
-    "id": 43.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[43]::config::sNome_Funcao%/s%",
-    "value": 43.0,
-    "category": "saida"
-  },
-  {
-    "id": 44.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[44]::config::sNome_Funcao%/s%",
-    "value": 44.0,
-    "category": "saida"
-  },
-  {
-    "id": 45.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[45]::config::sNome_Funcao%/s%",
-    "value": 45.0,
-    "category": "saida"
-  },
-  {
-    "id": 46.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[46]::config::sNome_Funcao%/s%",
-    "value": 46.0,
-    "category": "saida"
-  },
-  {
-    "id": 47.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[47]::config::sNome_Funcao%/s%",
-    "value": 47.0,
-    "category": "saida"
-  },
-  {
-    "id": 48.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[48]::config::sNome_Funcao%/s%",
-    "value": 48.0,
-    "category": "saida"
-  },
-  {
-    "id": 49.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[49]::config::sNome_Funcao%/s%",
-    "value": 49.0,
-    "category": "saida"
-  },
-  {
-    "id": 50.0,
-    "text": "%s%PLC1.GVL_Sensores.Os[50]::config::sNome_Funcao%/s%",
-    "value": 50.0,
-    "category": "saida"
-  }
-]
-</script>
-</div>
-<div id="TcHmiImage_73" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="13.1" data-tchmi-height-unit="%" data-tchmi-left="36.9" data-tchmi-left-unit="%" data-tchmi-top="28.1" data-tchmi-top-unit="%" data-tchmi-width="3.8" data-tchmi-width-unit="%" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-opacity="1" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-src="Images/Diversos/Seta.png" data-tchmi-background-image-width-unit="px" data-tchmi-background-image-height-unit="px" data-tchmi-is-enabled="true">
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
-  {
-    "event": "TcHmiImage_73.onMouseClick",
-    "actions": [
-      {
-        "objectType": "JavaScript",
-        "active": true,
-        "sourceLines": [
-          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores50::SelectedId%/ctrl%');",
-          "",
-          "TcHmi.Symbol.writeEx('%ctrl%cbMotores50::SelectedId%/ctrl%', id-1);"
-        ],
-        "injectContextObject": false,
-        "asyncWait": true,
-        "waitMode": "Synchronous"
-      },
-      {
-        "objectType": "JavaScript",
-        "active": true,
-        "sourceLines": [
-          "// lê o nome do Motor",
-          "var index = TcHmi.Symbol.readEx('%ctrl%cbMotores50::SelectedValue%/ctrl%');",
-          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores50::SelectedId%/ctrl%') + 1;",
-          "//%s%PLC1.GVL_Partidas.Motor%/s%",
-          "var GVL = 'GVL_Sensores';",
-          "var NomeVetor = 'Oe';",
-          "var NomeUC = 'UcPopUpSensorDigital';",
-          "\t",
-          "\t\t",
-          "// faz o binding com a struct do motor\t",
-          "var ItemProperty = 'stSensor';",
-          "var UserControl = TcHmi.Controls.get(NomeUC);",
-          "var Variavel = \"%s%PLC1.\" + GVL + \".\" + NomeVetor +\"[\"+ index +\"]\"+ \"|BindingMode=TwoWay%/s%\";",
-          "//var Variavel = \"%s%PLC1.GVL_Motor.\" + TipoPartida +\"[\"+ motor +\"]\"+ \"|BindingMode=TwoWay%/s%\";",
-          "\t",
-          "\t",
-          "//alert(NomeVetor);",
-          "//alert(id);",
-          "",
-          "try {",
-          "    TcHmi.Binding.createEx2(Variavel, ItemProperty, UserControl);",
-          "} catch(e) {",
-          "    console.log(e);",
-          "    console.log(Variavel);",
-          "    console.log(ItemProperty);",
-          "    console.log(UserControl);",
-          "}"
-        ],
-        "injectContextObject": false,
-        "asyncWait": true,
-        "waitMode": "Synchronous"
-      }
-    ]
-  }
-]
-</script>
-</div>
-<div id="TcHmiImage_74" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="13.1" data-tchmi-height-unit="%" data-tchmi-left="41.9" data-tchmi-left-unit="%" data-tchmi-top="27.5" data-tchmi-top-unit="%" data-tchmi-width="3.8" data-tchmi-width-unit="%" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-opacity="1" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-src="Images/Diversos/Seta.png" data-tchmi-background-image-width-unit="px" data-tchmi-background-image-height-unit="px" data-tchmi-is-enabled="true">
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
-  {
-    "event": "TcHmiImage_74.onMouseClick",
-    "actions": [
-      {
-        "objectType": "JavaScript",
-        "active": true,
-        "sourceLines": [
-          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores50::SelectedId%/ctrl%');",
-          "",
-          "TcHmi.Symbol.writeEx('%ctrl%cbMotores50::SelectedId%/ctrl%', id+1);"
-        ],
-        "injectContextObject": false,
-        "asyncWait": true,
-        "waitMode": "Synchronous"
-      },
-      {
-        "objectType": "JavaScript",
-        "active": true,
-        "sourceLines": [
-          "// lê o nome do Motor",
-          "var index = TcHmi.Symbol.readEx('%ctrl%cbMotores50::SelectedValue%/ctrl%');",
-          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores50::SelectedId%/ctrl%') + 1;",
-          "//%s%PLC1.GVL_Partidas.Motor%/s%",
-          "var GVL = 'GVL_Sensores';",
-          "var NomeVetor = 'Oe';",
-          "var NomeUC = 'UcPopUpSensorDigital';",
-          "\t",
-          "\t\t",
-          "// faz o binding com a struct do motor\t",
-          "var ItemProperty = 'stSensor';",
-          "var UserControl = TcHmi.Controls.get(NomeUC);",
-          "var Variavel = \"%s%PLC1.\" + GVL + \".\" + NomeVetor +\"[\"+ index +\"]\"+ \"|BindingMode=TwoWay%/s%\";",
-          "//var Variavel = \"%s%PLC1.GVL_Motor.\" + TipoPartida +\"[\"+ motor +\"]\"+ \"|BindingMode=TwoWay%/s%\";",
-          "\t",
-          "\t",
-          "//alert(NomeVetor);",
-          "//alert(id);",
-          "",
-          "try {",
-          "    TcHmi.Binding.createEx2(Variavel, ItemProperty, UserControl);",
-          "} catch(e) {",
-          "    console.log(e);",
-          "    console.log(Variavel);",
-          "    console.log(ItemProperty);",
-          "    console.log(UserControl);",
-          "}"
-        ],
-        "injectContextObject": false,
-        "asyncWait": true,
-        "waitMode": "Synchronous"
-      }
-    ]
-  }
-]
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-transform" type="application/json">
-[
-  {
-    "transformType": "Rotate",
-    "angle": 180.0,
-    "angleUnit": "deg"
-  }
-]
-</script>
-</div>
 <div id="UcPopUpSensorDigital_1" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="260" data-tchmi-height-unit="px" data-tchmi-left="-3000" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Popup/ucPopUpSensorDigital.usercontrol" data-tchmi-top="-3000" data-tchmi-top-unit="px" data-tchmi-width="550" data-tchmi-width-unit="px" data-tchmi-escolhe="true" data-tchmi-zindex="1500">
 </div>
 <div id="cbMotores66_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCombobox" data-tchmi-combobox-text="Escolha seu Analogico" data-tchmi-height="7.5" data-tchmi-height-unit="%" data-tchmi-left="51.9" data-tchmi-left-unit="%" data-tchmi-top="51.9" data-tchmi-top-unit="%" data-tchmi-width="33.5" data-tchmi-width-unit="%" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="250" data-tchmi-text-horizontal-alignment="Center" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-opacity="1" data-tchmi-background-image-width-unit="px" data-tchmi-background-image-height-unit="px" data-tchmi-data-height-unit="px" data-tchmi-max-list-height-unit="px" data-tchmi-drop-down-font-size-unit="%" data-tchmi-data-height="30" data-tchmi-drop-down-font-size="150" data-tchmi-max-list-height="200" data-tchmi-drop-down-category-font-size-unit="px" data-tchmi-drop-down-category-font-size="20" data-tchmi-is-enabled="true" data-tchmi-allow-text-input="false" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-drop-down-vertical-alignment="Center">
@@ -5036,5 +2190,1663 @@
 </script>
 </div>
 <div id="UcPopUpSensorAnalogico_1" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-escolhe="False" data-tchmi-height="726" data-tchmi-height-unit="px" data-tchmi-left="680" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Popup/ucPopUpSensorAnalogico.usercontrol" data-tchmi-top="1168" data-tchmi-top-unit="px" data-tchmi-width="440" data-tchmi-width-unit="px">
+</div>
+<div id="cbMotores_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCombobox" data-tchmi-combobox-text="Escolha seu Motor" data-tchmi-height="7.5" data-tchmi-height-unit="%" data-tchmi-left="1.5" data-tchmi-left-unit="%" data-tchmi-top="7.2" data-tchmi-top-unit="%" data-tchmi-width="33.5" data-tchmi-width-unit="%" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-selected-id="%ctrl%cbMotores::SelectedId%/ctrl%" data-tchmi-selected-index="%ctrl%cbMotores::SelectedIndex%/ctrl%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="250" data-tchmi-text-horizontal-alignment="Center" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-opacity="1" data-tchmi-background-image-width-unit="px" data-tchmi-background-image-height-unit="px" data-tchmi-data-height-unit="px" data-tchmi-max-list-height-unit="px" data-tchmi-drop-down-font-size-unit="%" data-tchmi-data-height="30" data-tchmi-drop-down-font-size="150" data-tchmi-max-list-height="200" data-tchmi-drop-down-category-font-size-unit="px" data-tchmi-drop-down-category-font-size="20" data-tchmi-is-enabled="true" data-tchmi-allow-text-input="false" data-tchmi-ignore-escape-sequences="false" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "cbMotores_1.onUserInteractionFinished",
+    "actions": [
+      {
+        "objectType": "Comment",
+        "comment": "Faz o Binding"
+      },
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "// lê o nome do Motor",
+          "var index = TcHmi.Symbol.readEx('%ctrl%cbMotores::SelectedValue%/ctrl%');",
+          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores::SelectedId%/ctrl%') + 1;",
+          "var GVL = 'GVL_Motores';",
+          "var NomeVetor = 'Motor';",
+          "var NomeUC = 'UcPopUpMotores';",
+          "\t",
+          "\t\t",
+          "// faz o binding com a struct do motor\t",
+          "var ItemProperty = 'stPartida';",
+          "var UserControl = TcHmi.Controls.get(NomeUC);",
+          "var Variavel = \"%s%PLC1.\" + GVL + \".\" + NomeVetor +\"[\"+ index +\"]\"+ \"|BindingMode=TwoWay%/s%\";",
+          "//var Variavel = \"%s%PLC1.GVL_Motor.\" + TipoPartida +\"[\"+ motor +\"]\"+ \"|BindingMode=TwoWay%/s%\";",
+          "",
+          "",
+          "try {",
+          "    TcHmi.Binding.createEx2(Variavel, ItemProperty, UserControl);",
+          "} catch(e) {",
+          "    console.log(e);",
+          "    console.log(Variavel);",
+          "    console.log(ItemProperty);",
+          "    console.log(UserControl);",
+          "}"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      },
+      {
+        "objectType": "Comment",
+        "comment": "Abre o PopUp"
+      },
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var index = TcHmi.Symbol.readEx('%ctrl%cbMotores::SelectedValue%/ctrl%');",
+          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores::SelectedId%/ctrl%') + 1;",
+          "",
+          "",
+          "\tvar NomeUC = 'UcPopUpMotores';",
+          "                ",
+          "    var _id = 'cbMotores';",
+          "\tvar _uc = TcHmi.Controls.get(_id);",
+          "\tvar TamXTela = 1920;",
+          "\tvar TamYTela = 1080;",
+          "",
+          "// referencia a popup",
+          "\tvar UserControl = TcHmi.Controls.get(NomeUC);",
+          "\t _uc_width = UserControl.getWidth();",
+          "\t _uc_height = UserControl.getHeight();",
+          "\t",
+          "// coordenadas do User Control",
+          "\tvar _top = _uc.getTop();",
+          "\tvar _left = _uc.getLeft();",
+          "\tvar _width = _uc.getWidth();",
+          "\tvar _height = _uc.getHeight();",
+          "\t",
+          "// coordenadas da popup",
+          "\tif (_left + _width + _uc_width > TamXTela){",
+          "\t\tvar __left = _left - _uc_width;",
+          "\t} else {",
+          "\t\tvar __left = _left + _width + 10;",
+          "\t}",
+          "",
+          "\tif (_top + _uc_height > TamYTela){",
+          "\t\tvar __top = _top + _height - _uc_height;",
+          "\t} else {",
+          "\t\tvar __top = _top;",
+          "\t}",
+          "",
+          "__top = 150;",
+          "__left = 250;",
+          "",
+          "UserControl.setTop(__top);",
+          "UserControl.setLeft(__left);",
+          "",
+          "$(\"#\" + NomeUC).slideDown('slow');"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  },
+  {
+    "event": "cbMotores_1.onUserInteractionFinished",
+    "actions": [
+      {
+        "objectType": "Comment",
+        "comment": "Faz o Binding"
+      },
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "// lê o nome do Motor",
+          "var index = TcHmi.Symbol.readEx('%ctrl%cbMotores::SelectedValue%/ctrl%');",
+          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores::SelectedId%/ctrl%') + 1;",
+          "var GVL = 'GVL_Motores';",
+          "var NomeVetor = 'Motor';",
+          "var NomeUC = 'UcPopUpMotores';",
+          "\t",
+          "\t\t",
+          "// faz o binding com a struct do motor\t",
+          "var ItemProperty = 'stPartida';",
+          "var UserControl = TcHmi.Controls.get(NomeUC);",
+          "var Variavel = \"%s%PLC1.\" + GVL + \".\" + NomeVetor +\"[\"+ index +\"]\"+ \"|BindingMode=TwoWay%/s%\";",
+          "//var Variavel = \"%s%PLC1.GVL_Motor.\" + TipoPartida +\"[\"+ motor +\"]\"+ \"|BindingMode=TwoWay%/s%\";",
+          "",
+          "",
+          "try {",
+          "    TcHmi.Binding.createEx2(Variavel, ItemProperty, UserControl);",
+          "} catch(e) {",
+          "    console.log(e);",
+          "    console.log(Variavel);",
+          "    console.log(ItemProperty);",
+          "    console.log(UserControl);",
+          "}"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      },
+      {
+        "objectType": "Comment",
+        "comment": "Abre o PopUp"
+      },
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var index = TcHmi.Symbol.readEx('%ctrl%cbMotores::SelectedValue%/ctrl%');",
+          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores::SelectedId%/ctrl%') + 1;",
+          "",
+          "",
+          "\tvar NomeUC = 'UcPopUpMotores';",
+          "                ",
+          "    var _id = 'cbMotores';",
+          "\tvar _uc = TcHmi.Controls.get(_id);",
+          "\tvar TamXTela = 1920;",
+          "\tvar TamYTela = 1080;",
+          "",
+          "// referencia a popup",
+          "\tvar UserControl = TcHmi.Controls.get(NomeUC);",
+          "\t _uc_width = UserControl.getWidth();",
+          "\t _uc_height = UserControl.getHeight();",
+          "\t",
+          "// coordenadas do User Control",
+          "\tvar _top = _uc.getTop();",
+          "\tvar _left = _uc.getLeft();",
+          "\tvar _width = _uc.getWidth();",
+          "\tvar _height = _uc.getHeight();",
+          "\t",
+          "// coordenadas da popup",
+          "\tif (_left + _width + _uc_width > TamXTela){",
+          "\t\tvar __left = _left - _uc_width;",
+          "\t} else {",
+          "\t\tvar __left = _left + _width + 10;",
+          "\t}",
+          "",
+          "\tif (_top + _uc_height > TamYTela){",
+          "\t\tvar __top = _top + _height - _uc_height;",
+          "\t} else {",
+          "\t\tvar __top = _top;",
+          "\t}",
+          "",
+          "__top = 150;",
+          "__left = 250;",
+          "",
+          "UserControl.setTop(__top);",
+          "UserControl.setLeft(__left);",
+          "",
+          "$(\"#\" + NomeUC).slideDown('slow');"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-src-data" type="application/json">
+[
+  {
+    "id": 1.0,
+    "text": "%f%%l%L_Escolha_Motor%/l%+ \" \" +%l%L_Acionamentos%/l%%/f%",
+    "value": 1.0
+  },
+  {
+    "id": 2.0,
+    "text": "%s%PLC1.GVL_Motores.Motor[2]::Config::sNome_Funcao%/s%",
+    "value": 2.0
+  },
+  {
+    "id": 3.0,
+    "text": "%s%PLC1.GVL_Motores.Motor[3]::Config::sNome_Funcao%/s%",
+    "value": 3.0
+  },
+  {
+    "id": 4.0,
+    "text": "%s%PLC1.GVL_Motores.Motor[4]::Config::sNome_Funcao%/s%",
+    "value": 4.0
+  },
+  {
+    "id": 5.0,
+    "text": "%s%PLC1.GVL_Motores.Motor[5]::Config::sNome_Funcao%/s%",
+    "value": 5.0
+  }
+]
+</script>
+</div>
+<div id="cbMotores3_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCombobox" data-tchmi-height="7.5" data-tchmi-height-unit="%" data-tchmi-left="1.5" data-tchmi-left-unit="%" data-tchmi-top="51.9" data-tchmi-top-unit="%" data-tchmi-width="33.5" data-tchmi-width-unit="%" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-selected-id="%ctrl%cbMotores3::SelectedId%/ctrl%" data-tchmi-selected-index="%ctrl%cbMotores3::SelectedIndex%/ctrl%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="250" data-tchmi-text-horizontal-alignment="Center" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-opacity="1" data-tchmi-background-image-width-unit="px" data-tchmi-background-image-height-unit="px" data-tchmi-data-height-unit="px" data-tchmi-max-list-height-unit="px" data-tchmi-drop-down-font-size-unit="%" data-tchmi-data-height="30" data-tchmi-drop-down-font-size="150" data-tchmi-max-list-height="200" data-tchmi-drop-down-category-font-size-unit="px" data-tchmi-drop-down-category-font-size="20" data-tchmi-is-enabled="true" data-tchmi-allow-text-input="false" data-tchmi-drop-down-vertical-alignment="Center" data-tchmi-combobox-text="Escolha sua Válvula">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "cbMotores3_1.onUserInteractionFinished",
+    "actions": [
+      {
+        "objectType": "Comment",
+        "comment": "referencia os dados do motor"
+      },
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "// lê o nome do Motor",
+          "var index = TcHmi.Symbol.readEx('%ctrl%cbMotores3::SelectedValue%/ctrl%');",
+          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores3::SelectedId%/ctrl%');",
+          "//%s%PLC1.GVL_Partidas.Motor%/s%",
+          "var GVL = 'GVL_Valvulas';",
+          "var NomeVetor = 'valvula';",
+          "var NomeUC = 'UcPopUpControleValvula_3';",
+          "",
+          "\t\t",
+          "// faz o binding com a struct do motor\t",
+          "var ItemProperty = 'stValvula';",
+          "var UserControl = TcHmi.Controls.get(NomeUC);",
+          "var Variavel = \"%s%PLC1.\" + GVL + \".\" + NomeVetor +\"[\"+ id +\"]\"+ \"|BindingMode=TwoWay%/s%\";",
+          "//var Variavel = \"%s%PLC1.GVL_Motor.\" + TipoPartida +\"[\"+ motor +\"]\"+ \"|BindingMode=TwoWay%/s%\";",
+          "",
+          "//alert(NomeVetor);",
+          "//alert(id);",
+          "",
+          "try {",
+          "    TcHmi.Binding.createEx2(Variavel, ItemProperty, UserControl);",
+          "} catch(e) {",
+          "    console.log(e);",
+          "    console.log(Variavel);",
+          "    console.log(ItemProperty);",
+          "    console.log(UserControl);",
+          "}",
+          "",
+          "var ItemProperty = 'stControleValvula';",
+          "var UserControl = TcHmi.Controls.get(NomeUC);",
+          "var Variavel = \"%s%PLC1.\" + \"GVL_Automatico\" + \".\" + \"stControleValvula\" + \"[\"+ id +\"]\"+ \"|BindingMode=TwoWay%/s%\";",
+          "//var Variavel = \"%s%PLC1.GVL_Motor.\" + TipoPartida +\"[\"+ motor +\"]\"+ \"|BindingMode=TwoWay%/s%\";",
+          "\t",
+          "\t",
+          "//alert(NomeVetor);",
+          "//alert(id);",
+          "",
+          "try {",
+          "    TcHmi.Binding.createEx2(Variavel, ItemProperty, UserControl);",
+          "} catch(e) {",
+          "    console.log(e);",
+          "    console.log(Variavel);",
+          "    console.log(ItemProperty);",
+          "    console.log(UserControl);",
+          "}"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      },
+      {
+        "objectType": "Comment",
+        "comment": "abre o PopUp"
+      },
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var index = TcHmi.Symbol.readEx('%ctrl%cbMotores3::SelectedValue%/ctrl%');",
+          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores3::SelectedId%/ctrl%') + 1;",
+          "",
+          "",
+          "\tvar NomeUC = 'UcPopUpControleValvula_3';",
+          "",
+          "\tvar _id = 'cbMotores3';",
+          "\tvar _uc = TcHmi.Controls.get(_id);",
+          "\tvar TamXTela = 1920;",
+          "\tvar TamYTela = 1080;",
+          "",
+          "// referencia a popup",
+          "\tvar UserControl = TcHmi.Controls.get(NomeUC);",
+          "\t _uc_width = UserControl.getWidth();",
+          "\t _uc_height = UserControl.getHeight();",
+          "\t",
+          "// coordenadas do User Control",
+          "\tvar _top = _uc.getTop();",
+          "\tvar _left = _uc.getLeft();",
+          "\tvar _width = _uc.getWidth();",
+          "\tvar _height = _uc.getHeight();",
+          "\t",
+          "// coordenadas da popup",
+          "\tif (_left + _width + _uc_width > TamXTela){",
+          "\t\tvar __left = _left - _uc_width;",
+          "\t} else {",
+          "\t\tvar __left = _left + _width + 10;",
+          "\t}",
+          "",
+          "\tif (_top + _uc_height > TamYTela){",
+          "\t\tvar __top = _top + _height - _uc_height;",
+          "\t} else {",
+          "\t\tvar __top = _top;",
+          "\t}",
+          "\t",
+          "__top = 390;",
+          "__left = 400;",
+          "",
+          "UserControl.setTop(__top);",
+          "UserControl.setLeft(__left);",
+          "",
+          "$(\"#\" + NomeUC).slideDown('slow');"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+
+
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-src-data" type="application/json">
+[
+  {
+    "id": 124.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[124]::en::sNome_Funcao%/s%",
+    "value": 124.0,
+    "category": "Cámara 202"
+  },
+  {
+    "id": 125.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[125]::en::sNome_Funcao%/s%",
+    "value": 125.0,
+    "category": "Cámara 202"
+  },
+  {
+    "id": 126.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[126]::en::sNome_Funcao%/s%",
+    "value": 126.0,
+    "category": "Cámara 202"
+  },
+  {
+    "id": 127.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[127]::en::sNome_Funcao%/s%",
+    "value": 127.0,
+    "category": "Cámara 202"
+  },
+  {
+    "id": 128.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[128]::en::sNome_Funcao%/s%",
+    "value": 128.0,
+    "category": "Cámara 202"
+  },
+  {
+    "id": 129.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[129]::en::sNome_Funcao%/s%",
+    "value": 129.0,
+    "category": "Cámara 202"
+  },
+  {
+    "id": 130.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[130]::en::sNome_Funcao%/s%",
+    "value": 130.0,
+    "category": "Cámara 202"
+  },
+  {
+    "id": 131.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[131]::en::sNome_Funcao%/s%",
+    "value": 131.0,
+    "category": "Cámara 202"
+  },
+  {
+    "id": 132.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[132]::en::sNome_Funcao%/s%",
+    "value": 132.0,
+    "category": "Cámara 202"
+  },
+  {
+    "id": 133.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[133]::en::sNome_Funcao%/s%",
+    "value": 133.0,
+    "category": "Cámara 202"
+  },
+  {
+    "id": 134.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[134]::en::sNome_Funcao%/s%",
+    "value": 134.0,
+    "category": "Cámara 202"
+  },
+  {
+    "id": 135.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[135]::en::sNome_Funcao%/s%",
+    "value": 135.0,
+    "category": "Cámara 202"
+  },
+  {
+    "id": 136.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[136]::en::sNome_Funcao%/s%",
+    "value": 136.0,
+    "category": "Cámara 202"
+  },
+  {
+    "id": 137.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[137]::en::sNome_Funcao%/s%",
+    "value": 137.0,
+    "category": "Cámara 202"
+  },
+  {
+    "id": 138.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[138]::en::sNome_Funcao%/s%",
+    "value": 138.0,
+    "category": "Cámara 202"
+  },
+  {
+    "id": 139.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[139]::en::sNome_Funcao%/s%",
+    "value": 139.0,
+    "category": "Cámara 202"
+  },
+  {
+    "id": 140.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[140]::en::sNome_Funcao%/s%",
+    "value": 140.0,
+    "category": "Cámara 202"
+  },
+  {
+    "id": 141.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[141]::en::sNome_Funcao%/s%",
+    "value": 141.0,
+    "category": "Cámara 202"
+  },
+  {
+    "id": 142.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[142]::en::sNome_Funcao%/s%",
+    "value": 142.0,
+    "category": "Cámara 203"
+  },
+  {
+    "id": 143.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[143]::en::sNome_Funcao%/s%",
+    "value": 143.0,
+    "category": "Cámara 203"
+  },
+  {
+    "id": 144.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[144]::en::sNome_Funcao%/s%",
+    "value": 144.0,
+    "category": "Cámara 203"
+  },
+  {
+    "id": 145.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[145]::en::sNome_Funcao%/s%",
+    "value": 145.0,
+    "category": "Cámara 203"
+  },
+  {
+    "id": 146.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[146]::en::sNome_Funcao%/s%",
+    "value": 146.0,
+    "category": "Cámara 203"
+  },
+  {
+    "id": 147.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[147]::en::sNome_Funcao%/s%",
+    "value": 147.0,
+    "category": "Cámara 203"
+  },
+  {
+    "id": 148.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[148]::en::sNome_Funcao%/s%",
+    "value": 148.0,
+    "category": "Cámara 203"
+  },
+  {
+    "id": 149.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[149]::en::sNome_Funcao%/s%",
+    "value": 149.0,
+    "category": "Cámara 203"
+  },
+  {
+    "id": 150.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[150]::en::sNome_Funcao%/s%",
+    "value": 150.0,
+    "category": "Cámara 203"
+  },
+  {
+    "id": 151.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[151]::en::sNome_Funcao%/s%",
+    "value": 151.0,
+    "category": "Cámara 203"
+  },
+  {
+    "id": 152.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[152]::en::sNome_Funcao%/s%",
+    "value": 152.0,
+    "category": "Cámara 203"
+  },
+  {
+    "id": 153.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[153]::en::sNome_Funcao%/s%",
+    "value": 153.0,
+    "category": "Cámara 203"
+  },
+  {
+    "id": 154.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[154]::en::sNome_Funcao%/s%",
+    "value": 154.0,
+    "category": "Cámara 203"
+  },
+  {
+    "id": 155.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[155]::en::sNome_Funcao%/s%",
+    "value": 155.0,
+    "category": "Cámara 203"
+  },
+  {
+    "id": 156.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[156]::en::sNome_Funcao%/s%",
+    "value": 156.0,
+    "category": "Cámara 203"
+  },
+  {
+    "id": 157.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[157]::en::sNome_Funcao%/s%",
+    "value": 157.0,
+    "category": "Cámara 203"
+  },
+  {
+    "id": 158.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[158]::en::sNome_Funcao%/s%",
+    "value": 158.0,
+    "category": "Cámara 203"
+  },
+  {
+    "id": 159.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[159]::en::sNome_Funcao%/s%",
+    "value": 159.0,
+    "category": "Cámara 203"
+  },
+  {
+    "id": 160.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[160]::en::sNome_Funcao%/s%",
+    "value": 160.0,
+    "category": "Cámara 203"
+  },
+  {
+    "id": 161.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[161]::en::sNome_Funcao%/s%",
+    "value": 161.0,
+    "category": "Cámara 203"
+  },
+  {
+    "id": 162.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[162]::en::sNome_Funcao%/s%",
+    "value": 162.0,
+    "category": "Cámara 203"
+  },
+  {
+    "id": 163.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[163]::en::sNome_Funcao%/s%",
+    "value": 163.0,
+    "category": "Cámara 203"
+  },
+  {
+    "id": 164.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[164]::en::sNome_Funcao%/s%",
+    "value": 164.0,
+    "category": "Cámara 203"
+  },
+  {
+    "id": 165.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[165]::en::sNome_Funcao%/s%",
+    "value": 165.0,
+    "category": "Cámara 203"
+  },
+  {
+    "id": 166.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[166]::en::sNome_Funcao%/s%",
+    "value": 166.0,
+    "category": "Cámara 204"
+  },
+  {
+    "id": 167.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[167]::en::sNome_Funcao%/s%",
+    "value": 167.0,
+    "category": "Cámara 204"
+  },
+  {
+    "id": 168.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[168]::en::sNome_Funcao%/s%",
+    "value": 168.0,
+    "category": "Cámara 204"
+  },
+  {
+    "id": 169.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[169]::en::sNome_Funcao%/s%",
+    "value": 169.0,
+    "category": "Cámara 204"
+  },
+  {
+    "id": 170.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[170]::en::sNome_Funcao%/s%",
+    "value": 170.0,
+    "category": "Cámara 204"
+  },
+  {
+    "id": 171.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[171]::en::sNome_Funcao%/s%",
+    "value": 171.0,
+    "category": "Cámara 204"
+  },
+  {
+    "id": 172.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[172]::en::sNome_Funcao%/s%",
+    "value": 172.0,
+    "category": "Cámara 204"
+  },
+  {
+    "id": 173.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[173]::en::sNome_Funcao%/s%",
+    "value": 173.0,
+    "category": "Cámara 204"
+  },
+  {
+    "id": 174.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[174]::en::sNome_Funcao%/s%",
+    "value": 174.0,
+    "category": "Cámara 204"
+  },
+  {
+    "id": 175.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[175]::en::sNome_Funcao%/s%",
+    "value": 175.0,
+    "category": "Cámara 204"
+  },
+  {
+    "id": 176.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[176]::en::sNome_Funcao%/s%",
+    "value": 176.0,
+    "category": "Cámara 204"
+  },
+  {
+    "id": 177.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[177]::en::sNome_Funcao%/s%",
+    "value": 177.0,
+    "category": "Cámara 204"
+  },
+  {
+    "id": 178.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[178]::en::sNome_Funcao%/s%",
+    "value": 178.0,
+    "category": "Cámara 204"
+  },
+  {
+    "id": 179.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[179]::en::sNome_Funcao%/s%",
+    "value": 179.0,
+    "category": "Cámara 204"
+  },
+  {
+    "id": 180.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[180]::en::sNome_Funcao%/s%",
+    "value": 180.0,
+    "category": "Cámara 204"
+  },
+  {
+    "id": 181.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[181]::en::sNome_Funcao%/s%",
+    "value": 181.0,
+    "category": "Cámara 204"
+  },
+  {
+    "id": 182.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[182]::en::sNome_Funcao%/s%",
+    "value": 182.0,
+    "category": "Cámara 204"
+  },
+  {
+    "id": 183.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[183]::en::sNome_Funcao%/s%",
+    "value": 183.0,
+    "category": "Cámara 204"
+  },
+  {
+    "id": 184.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[184]::en::sNome_Funcao%/s%",
+    "value": 184.0,
+    "category": "Cámara 204"
+  },
+  {
+    "id": 185.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[185]::en::sNome_Funcao%/s%",
+    "value": 185.0,
+    "category": "Cámara 204"
+  },
+  {
+    "id": 186.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[186]::en::sNome_Funcao%/s%",
+    "value": 186.0,
+    "category": "Cámara 204"
+  },
+  {
+    "id": 187.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[187]::en::sNome_Funcao%/s%",
+    "value": 187.0,
+    "category": "Cámara 204"
+  },
+  {
+    "id": 188.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[188]::en::sNome_Funcao%/s%",
+    "value": 188.0,
+    "category": "Cámara 204"
+  },
+  {
+    "id": 189.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[189]::en::sNome_Funcao%/s%",
+    "value": 189.0,
+    "category": "Cámara 204"
+  },
+  {
+    "id": 190.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[190]::en::sNome_Funcao%/s%",
+    "value": 190.0,
+    "category": "Cámara 205"
+  },
+  {
+    "id": 191.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[191]::en::sNome_Funcao%/s%",
+    "value": 191.0,
+    "category": "Cámara 205"
+  },
+  {
+    "id": 192.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[192]::en::sNome_Funcao%/s%",
+    "value": 192.0,
+    "category": "Cámara 205"
+  },
+  {
+    "id": 193.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[193]::en::sNome_Funcao%/s%",
+    "value": 193.0,
+    "category": "Cámara 205"
+  },
+  {
+    "id": 194.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[194]::en::sNome_Funcao%/s%",
+    "value": 194.0,
+    "category": "Cámara 205"
+  },
+  {
+    "id": 195.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[195]::en::sNome_Funcao%/s%",
+    "value": 195.0,
+    "category": "Cámara 205"
+  },
+  {
+    "id": 196.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[196]::en::sNome_Funcao%/s%",
+    "value": 196.0,
+    "category": "Cámara 205"
+  },
+  {
+    "id": 197.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[197]::en::sNome_Funcao%/s%",
+    "value": 197.0,
+    "category": "Cámara 205"
+  },
+  {
+    "id": 198.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[198]::en::sNome_Funcao%/s%",
+    "value": 198.0,
+    "category": "Cámara 205"
+  },
+  {
+    "id": 199.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[199]::en::sNome_Funcao%/s%",
+    "value": 199.0,
+    "category": "Cámara 205"
+  },
+  {
+    "id": 200.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[200]::en::sNome_Funcao%/s%",
+    "value": 200.0,
+    "category": "Cámara 205"
+  },
+  {
+    "id": 201.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[201]::en::sNome_Funcao%/s%",
+    "value": 201.0,
+    "category": "Cámara 205"
+  },
+  {
+    "id": 202.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[202]::en::sNome_Funcao%/s%",
+    "value": 202.0,
+    "category": "Cámara 205"
+  },
+  {
+    "id": 203.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[203]::en::sNome_Funcao%/s%",
+    "value": 203.0,
+    "category": "Cámara 205"
+  },
+  {
+    "id": 204.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[204]::en::sNome_Funcao%/s%",
+    "value": 204.0,
+    "category": "Cámara 205"
+  },
+  {
+    "id": 205.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[205]::en::sNome_Funcao%/s%",
+    "value": 205.0,
+    "category": "Cámara 205"
+  },
+  {
+    "id": 206.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[206]::en::sNome_Funcao%/s%",
+    "value": 206.0,
+    "category": "Cámara 205"
+  },
+  {
+    "id": 207.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[207]::en::sNome_Funcao%/s%",
+    "value": 207.0,
+    "category": "Cámara 205"
+  },
+  {
+    "id": 208.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[208]::en::sNome_Funcao%/s%",
+    "value": 208.0,
+    "category": "Cámara 205"
+  },
+  {
+    "id": 209.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[209]::en::sNome_Funcao%/s%",
+    "value": 209.0,
+    "category": "Cámara 205"
+  },
+  {
+    "id": 210.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[210]::en::sNome_Funcao%/s%",
+    "value": 210.0,
+    "category": "Cámara 205"
+  },
+  {
+    "id": 211.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[211]::en::sNome_Funcao%/s%",
+    "value": 211.0,
+    "category": "Cámara 205"
+  },
+  {
+    "id": 212.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[212]::en::sNome_Funcao%/s%",
+    "value": 212.0,
+    "category": "Cámara 205"
+  },
+  {
+    "id": 213.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[213]::en::sNome_Funcao%/s%",
+    "value": 213.0,
+    "category": "Cámara 205"
+  },
+  {
+    "id": 1.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[1]::en::sNome_Funcao%/s%",
+    "value": 1.0,
+    "category": "Cámara 213"
+  },
+  {
+    "id": 2.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[2]::en::sNome_Funcao%/s%",
+    "value": 2.0,
+    "category": "Cámara 213"
+  },
+  {
+    "id": 3.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[3]::en::sNome_Funcao%/s%",
+    "value": 3.0,
+    "category": "Cámara 213"
+  },
+  {
+    "id": 4.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[4]::en::sNome_Funcao%/s%",
+    "value": 4.0,
+    "category": "Cámara 213"
+  },
+  {
+    "id": 5.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[5]::en::sNome_Funcao%/s%",
+    "value": 5.0,
+    "category": "Cámara 213"
+  },
+  {
+    "id": 6.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[6]::en::sNome_Funcao%/s%",
+    "value": 6.0,
+    "category": "Cámara 213"
+  },
+  {
+    "id": 7.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[7]::en::sNome_Funcao%/s%",
+    "value": 7.0,
+    "category": "Cámara 213"
+  },
+  {
+    "id": 8.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[8]::en::sNome_Funcao%/s%",
+    "value": 8.0,
+    "category": "Cámara 213"
+  },
+  {
+    "id": 9.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[9]::en::sNome_Funcao%/s%",
+    "value": 9.0,
+    "category": "Cámara 213"
+  },
+  {
+    "id": 10.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[10]::en::sNome_Funcao%/s%",
+    "value": 10.0,
+    "category": "Cámara 213"
+  },
+  {
+    "id": 11.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[11]::en::sNome_Funcao%/s%",
+    "value": 11.0,
+    "category": "Cámara 213"
+  },
+  {
+    "id": 12.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[12]::en::sNome_Funcao%/s%",
+    "value": 12.0,
+    "category": "Cámara 213"
+  },
+  {
+    "id": 13.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[13]::en::sNome_Funcao%/s%",
+    "value": 13.0,
+    "category": "Cámara 213"
+  },
+  {
+    "id": 14.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[14]::en::sNome_Funcao%/s%",
+    "value": 14.0,
+    "category": "Cámara 213"
+  },
+  {
+    "id": 15.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[15]::en::sNome_Funcao%/s%",
+    "value": 15.0,
+    "category": "Cámara 213"
+  },
+  {
+    "id": 16.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[16]::en::sNome_Funcao%/s%",
+    "value": 16.0,
+    "category": "Cámara 213"
+  },
+  {
+    "id": 17.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[17]::en::sNome_Funcao%/s%",
+    "value": 17.0,
+    "category": "Cámara 213"
+  },
+  {
+    "id": 18.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[18]::en::sNome_Funcao%/s%",
+    "value": 18.0,
+    "category": "Cámara 213"
+  },
+  {
+    "id": 19.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[19]::en::sNome_Funcao%/s%",
+    "value": 19.0,
+    "category": "Cámara 213"
+  },
+  {
+    "id": 20.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[20]::en::sNome_Funcao%/s%",
+    "value": 20.0,
+    "category": "Cámara 213"
+  },
+  {
+    "id": 21.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[21]::en::sNome_Funcao%/s%",
+    "value": 21.0,
+    "category": "Cámara 213"
+  },
+  {
+    "id": 22.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[22]::en::sNome_Funcao%/s%",
+    "value": 22.0,
+    "category": "Cámara 213"
+  },
+  {
+    "id": 23.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[23]::en::sNome_Funcao%/s%",
+    "value": 23.0,
+    "category": "Cámara 213"
+  },
+  {
+    "id": 24.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[24]::en::sNome_Funcao%/s%",
+    "value": 24.0,
+    "category": "Cámara 213"
+  },
+  {
+    "id": 25.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[25]::en::sNome_Funcao%/s%",
+    "value": 25.0,
+    "category": "Cámara 213"
+  },
+  {
+    "id": 26.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[26]::en::sNome_Funcao%/s%",
+    "value": 26.0,
+    "category": "Cámara 213"
+  },
+  {
+    "id": 27.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[27]::en::sNome_Funcao%/s%",
+    "value": 27.0,
+    "category": "Cámara 213"
+  },
+  {
+    "id": 28.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[28]::en::sNome_Funcao%/s%",
+    "value": 28.0,
+    "category": "Cámara 213"
+  },
+  {
+    "id": 29.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[29]::en::sNome_Funcao%/s%",
+    "value": 29.0,
+    "category": "Cámara 213"
+  },
+  {
+    "id": 30.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[30]::en::sNome_Funcao%/s%",
+    "value": 30.0,
+    "category": "Cámara 213"
+  },
+  {
+    "id": 31.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[31]::en::sNome_Funcao%/s%",
+    "value": 31.0,
+    "category": "Cámara 213"
+  },
+  {
+    "id": 32.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[32]::en::sNome_Funcao%/s%",
+    "value": 32.0,
+    "category": "Cámara 213"
+  },
+  {
+    "id": 33.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[33]::en::sNome_Funcao%/s%",
+    "value": 33.0,
+    "category": "Cámara 213"
+  },
+  {
+    "id": 34.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[34]::en::sNome_Funcao%/s%",
+    "value": 34.0,
+    "category": "Cámara 213"
+  },
+  {
+    "id": 35.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[35]::en::sNome_Funcao%/s%",
+    "value": 35.0,
+    "category": "Cámara 213"
+  },
+  {
+    "id": 36.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[36]::en::sNome_Funcao%/s%",
+    "value": 36.0,
+    "category": "Cámara 213"
+  },
+  {
+    "id": 37.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[37]::en::sNome_Funcao%/s%",
+    "value": 37.0,
+    "category": "Cámara 214"
+  },
+  {
+    "id": 38.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[38]::en::sNome_Funcao%/s%",
+    "value": 38.0,
+    "category": "Cámara 214"
+  },
+  {
+    "id": 39.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[39]::en::sNome_Funcao%/s%",
+    "value": 39.0,
+    "category": "Cámara 214"
+  },
+  {
+    "id": 40.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[40]::en::sNome_Funcao%/s%",
+    "value": 40.0,
+    "category": "Cámara 214"
+  },
+  {
+    "id": 41.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[41]::en::sNome_Funcao%/s%",
+    "value": 41.0,
+    "category": "Cámara 214"
+  },
+  {
+    "id": 42.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[42]::en::sNome_Funcao%/s%",
+    "value": 42.0,
+    "category": "Cámara 214"
+  },
+  {
+    "id": 43.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[43]::en::sNome_Funcao%/s%",
+    "value": 43.0,
+    "category": "Cámara 214"
+  },
+  {
+    "id": 44.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[44]::en::sNome_Funcao%/s%",
+    "value": 44.0,
+    "category": "Cámara 214"
+  },
+  {
+    "id": 45.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[45]::en::sNome_Funcao%/s%",
+    "value": 45.0,
+    "category": "Cámara 214"
+  },
+  {
+    "id": 46.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[46]::en::sNome_Funcao%/s%",
+    "value": 46.0,
+    "category": "Cámara 214"
+  },
+  {
+    "id": 47.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[47]::en::sNome_Funcao%/s%",
+    "value": 47.0,
+    "category": "Cámara 214"
+  },
+  {
+    "id": 48.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[48]::en::sNome_Funcao%/s%",
+    "value": 48.0,
+    "category": "Cámara 214"
+  },
+  {
+    "id": 49.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[49]::en::sNome_Funcao%/s%",
+    "value": 49.0,
+    "category": "Cámara 214"
+  },
+  {
+    "id": 50.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[50]::en::sNome_Funcao%/s%",
+    "value": 50.0,
+    "category": "Cámara 214"
+  },
+  {
+    "id": 51.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[51]::en::sNome_Funcao%/s%",
+    "value": 51.0,
+    "category": "Cámara 214"
+  },
+  {
+    "id": 52.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[52]::en::sNome_Funcao%/s%",
+    "value": 52.0,
+    "category": "Cámara 214"
+  },
+  {
+    "id": 53.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[53]::en::sNome_Funcao%/s%",
+    "value": 53.0,
+    "category": "Cámara 214"
+  },
+  {
+    "id": 54.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[54]::en::sNome_Funcao%/s%",
+    "value": 54.0,
+    "category": "Cámara 214"
+  },
+  {
+    "id": 55.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[55]::en::sNome_Funcao%/s%",
+    "value": 55.0,
+    "category": "Cámara 214"
+  },
+  {
+    "id": 56.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[56]::en::sNome_Funcao%/s%",
+    "value": 56.0,
+    "category": "Cámara 214"
+  },
+  {
+    "id": 57.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[57]::en::sNome_Funcao%/s%",
+    "value": 57.0,
+    "category": "Cámara 214"
+  },
+  {
+    "id": 58.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[58]::en::sNome_Funcao%/s%",
+    "value": 58.0,
+    "category": "Cámara 214"
+  },
+  {
+    "id": 59.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[59]::en::sNome_Funcao%/s%",
+    "value": 59.0,
+    "category": "Cámara 214"
+  },
+  {
+    "id": 60.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[60]::en::sNome_Funcao%/s%",
+    "value": 60.0,
+    "category": "Cámara 214"
+  },
+  {
+    "id": 61.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[61]::en::sNome_Funcao%/s%",
+    "value": 61.0,
+    "category": "Cámara 214"
+  },
+  {
+    "id": 62.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[62]::en::sNome_Funcao%/s%",
+    "value": 62.0,
+    "category": "Cámara 214"
+  },
+  {
+    "id": 63.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[63]::en::sNome_Funcao%/s%",
+    "value": 63.0,
+    "category": "Cámara 214"
+  },
+  {
+    "id": 64.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[64]::en::sNome_Funcao%/s%",
+    "value": 64.0,
+    "category": "Cámara 214"
+  },
+  {
+    "id": 65.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[65]::en::sNome_Funcao%/s%",
+    "value": 65.0,
+    "category": "Cámara 214"
+  },
+  {
+    "id": 66.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[66]::en::sNome_Funcao%/s%",
+    "value": 66.0,
+    "category": "Cámara 214"
+  },
+  {
+    "id": 67.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[67]::en::sNome_Funcao%/s%",
+    "value": 67.0,
+    "category": "Cámara 214"
+  },
+  {
+    "id": 68.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[68]::en::sNome_Funcao%/s%",
+    "value": 68.0,
+    "category": "Cámara 214"
+  },
+  {
+    "id": 69.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[69]::en::sNome_Funcao%/s%",
+    "value": 69.0,
+    "category": "Cámara 214"
+  },
+  {
+    "id": 70.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[70]::en::sNome_Funcao%/s%",
+    "value": 70.0,
+    "category": "Cámara 214"
+  },
+  {
+    "id": 71.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[71]::en::sNome_Funcao%/s%",
+    "value": 71.0,
+    "category": "Cámara 214"
+  },
+  {
+    "id": 72.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[72]::en::sNome_Funcao%/s%",
+    "value": 72.0,
+    "category": "Cámara 214"
+  },
+  {
+    "id": 73.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[73]::en::sNome_Funcao%/s%",
+    "value": 73.0,
+    "category": "Cámara 215"
+  },
+  {
+    "id": 74.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[74]::en::sNome_Funcao%/s%",
+    "value": 74.0,
+    "category": "Cámara 215"
+  },
+  {
+    "id": 75.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[75]::en::sNome_Funcao%/s%",
+    "value": 75.0,
+    "category": "Cámara 215"
+  },
+  {
+    "id": 76.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[76]::en::sNome_Funcao%/s%",
+    "value": 76.0,
+    "category": "Cámara 215"
+  },
+  {
+    "id": 77.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[77]::en::sNome_Funcao%/s%",
+    "value": 77.0,
+    "category": "Cámara 215"
+  },
+  {
+    "id": 78.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[78]::en::sNome_Funcao%/s%",
+    "value": 78.0,
+    "category": "Cámara 215"
+  },
+  {
+    "id": 79.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[79]::en::sNome_Funcao%/s%",
+    "value": 79.0,
+    "category": "Cámara 215"
+  },
+  {
+    "id": 80.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[80]::en::sNome_Funcao%/s%",
+    "value": 80.0,
+    "category": "Cámara 215"
+  },
+  {
+    "id": 81.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[81]::en::sNome_Funcao%/s%",
+    "value": 81.0,
+    "category": "Cámara 215"
+  },
+  {
+    "id": 82.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[82]::en::sNome_Funcao%/s%",
+    "value": 82.0,
+    "category": "Cámara 215"
+  },
+  {
+    "id": 83.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[83]::en::sNome_Funcao%/s%",
+    "value": 83.0,
+    "category": "Cámara 215"
+  },
+  {
+    "id": 84.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[84]::en::sNome_Funcao%/s%",
+    "value": 84.0,
+    "category": "Cámara 215"
+  },
+  {
+    "id": 85.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[85]::en::sNome_Funcao%/s%",
+    "value": 85.0,
+    "category": "Cámara 215"
+  },
+  {
+    "id": 86.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[86]::en::sNome_Funcao%/s%",
+    "value": 86.0,
+    "category": "Cámara 215"
+  },
+  {
+    "id": 87.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[87]::en::sNome_Funcao%/s%",
+    "value": 87.0,
+    "category": "Cámara 215"
+  },
+  {
+    "id": 88.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[88]::en::sNome_Funcao%/s%",
+    "value": 88.0,
+    "category": "Cámara 215"
+  },
+  {
+    "id": 89.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[89]::en::sNome_Funcao%/s%",
+    "value": 89.0,
+    "category": "Cámara 215"
+  },
+  {
+    "id": 90.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[90]::en::sNome_Funcao%/s%",
+    "value": 90.0,
+    "category": "Cámara 215"
+  },
+  {
+    "id": 91.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[91]::en::sNome_Funcao%/s%",
+    "value": 91.0,
+    "category": "Cámara 215"
+  },
+  {
+    "id": 92.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[92]::en::sNome_Funcao%/s%",
+    "value": 92.0,
+    "category": "Cámara 215"
+  },
+  {
+    "id": 93.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[93]::en::sNome_Funcao%/s%",
+    "value": 93.0,
+    "category": "Cámara 215"
+  },
+  {
+    "id": 94.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[94]::en::sNome_Funcao%/s%",
+    "value": 94.0,
+    "category": "Cámara 215"
+  },
+  {
+    "id": 95.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[95]::en::sNome_Funcao%/s%",
+    "value": 95.0,
+    "category": "Cámara 215"
+  },
+  {
+    "id": 96.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[96]::en::sNome_Funcao%/s%",
+    "value": 96.0,
+    "category": "Cámara 215"
+  },
+  {
+    "id": 97.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[97]::en::sNome_Funcao%/s%",
+    "value": 97.0,
+    "category": "Cámara 216"
+  },
+  {
+    "id": 98.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[98]::en::sNome_Funcao%/s%",
+    "value": 98.0,
+    "category": "Cámara 216"
+  },
+  {
+    "id": 99.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[99]::en::sNome_Funcao%/s%",
+    "value": 99.0,
+    "category": "Cámara 216"
+  },
+  {
+    "id": 100.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[100]::en::sNome_Funcao%/s%",
+    "value": 100.0,
+    "category": "Cámara 216"
+  },
+  {
+    "id": 101.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[101]::en::sNome_Funcao%/s%",
+    "value": 101.0,
+    "category": "Cámara 216"
+  },
+  {
+    "id": 102.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[102]::en::sNome_Funcao%/s%",
+    "value": 102.0,
+    "category": "Cámara 216"
+  },
+  {
+    "id": 103.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[103]::en::sNome_Funcao%/s%",
+    "value": 103.0,
+    "category": "Cámara 216"
+  },
+  {
+    "id": 104.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[104]::en::sNome_Funcao%/s%",
+    "value": 104.0,
+    "category": "Cámara 216"
+  },
+  {
+    "id": 105.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[105]::en::sNome_Funcao%/s%",
+    "value": 105.0,
+    "category": "Cámara 216"
+  },
+  {
+    "id": 106.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[106]::en::sNome_Funcao%/s%",
+    "value": 106.0,
+    "category": "Cámara 216"
+  },
+  {
+    "id": 107.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[107]::en::sNome_Funcao%/s%",
+    "value": 107.0,
+    "category": "Cámara 216"
+  },
+  {
+    "id": 108.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[108]::en::sNome_Funcao%/s%",
+    "value": 108.0,
+    "category": "Cámara 216"
+  },
+  {
+    "id": 109.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[109]::en::sNome_Funcao%/s%",
+    "value": 109.0,
+    "category": "Cámara 216"
+  },
+  {
+    "id": 110.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[110]::en::sNome_Funcao%/s%",
+    "value": 110.0,
+    "category": "Cámara 216"
+  },
+  {
+    "id": 111.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[111]::en::sNome_Funcao%/s%",
+    "value": 111.0,
+    "category": "Cámara 216"
+  },
+  {
+    "id": 112.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[112]::en::sNome_Funcao%/s%",
+    "value": 112.0,
+    "category": "Cámara 216"
+  },
+  {
+    "id": 113.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[113]::en::sNome_Funcao%/s%",
+    "value": 113.0,
+    "category": "Cámara 216"
+  },
+  {
+    "id": 114.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[114]::en::sNome_Funcao%/s%",
+    "value": 114.0,
+    "category": "Cámara 216"
+  },
+  {
+    "id": 115.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[115]::en::sNome_Funcao%/s%",
+    "value": 115.0,
+    "category": "Cámara 216"
+  },
+  {
+    "id": 116.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[116]::en::sNome_Funcao%/s%",
+    "value": 116.0,
+    "category": "Cámara 216"
+  },
+  {
+    "id": 117.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[117]::en::sNome_Funcao%/s%",
+    "value": 117.0,
+    "category": "Cámara 216"
+  },
+  {
+    "id": 118.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[118]::en::sNome_Funcao%/s%",
+    "value": 118.0,
+    "category": "Cámara 216"
+  },
+  {
+    "id": 119.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[119]::en::sNome_Funcao%/s%",
+    "value": 119.0,
+    "category": "Cámara 216"
+  },
+  {
+    "id": 120.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[120]::en::sNome_Funcao%/s%",
+    "value": 120.0,
+    "category": "Cámara 216"
+  },
+  {
+    "id": 121.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[121]::en::sNome_Funcao%/s%",
+    "value": 121.0,
+    "category": "Cámara 216"
+  },
+  {
+    "id": 122.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[122]::en::sNome_Funcao%/s%",
+    "value": 122.0,
+    "category": "Cámara 216"
+  },
+  {
+    "id": 123.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[123]::en::sNome_Funcao%/s%",
+    "value": 123.0,
+    "category": "Cámara 216"
+  }
+]
+</script>
 </div>
 </div>
