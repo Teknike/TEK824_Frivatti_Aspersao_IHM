@@ -29,32 +29,18 @@
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
-    "event": "btFechar_1.onMouseClick",
-    "actions": [
-      {
-        "objectType": "JavaScript",
-        "active": true,
-        "sourceLines": [
-          "//var UserControl = TcHmi.Controls.get(getId());\n//$('#'+ UserControl).slideUp('slow');\n//$('#UcPopUpMotores').slideUp('slow');"
-        ],
-        "injectContextObject": false,
-        "asyncWait": true,
-        "waitMode": "Synchronous"
-      }
-    ]
-  },
-  {
     "event": "btFecharValvula.onMouseClick",
     "actions": [
       {
         "objectType": "JavaScript",
         "active": true,
         "sourceLines": [
-          "$('#UcPopUpValvulaProporcional').slideUp('slow');"
+          "$('#ucPopUpValvulas_1').slideUp('slow');",
+          "   $('#UcPopUpControleValvula_5').slideDown('slow');"
         ],
-        "injectContextObject": false,
+        "injectContextObject": true,
         "asyncWait": true,
-        "waitMode": "Synchronous"
+        "waitMode": "Asynchronous"
       }
     ]
   }

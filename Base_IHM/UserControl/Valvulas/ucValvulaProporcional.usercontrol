@@ -19,7 +19,7 @@
           "\t",
           "\t// faz o binding com a struct do motor\t",
           "\tvar ItemProperty = 'stValvula';",
-          "\tvar UserControl = TcHmi.Controls.get('UcPopUpValvulaProporcional');",
+          "\tvar UserControl = TcHmi.Controls.get('ucPopUpValvulas_1');",
           "\tvar Variavel = \"%s%PLC1.\" + \"GVL_Valvulas\" + \".\" + \"ValProp\" + \"[\" + IndexValvula + \"]\" + \"|BindingMode=TwoWay%/s%\";",
           "\t",
           "\t",
@@ -36,7 +36,7 @@
           "",
           "UserControl.setTop(0);",
           "UserControl.setLeft(0);",
-          "$(\"#UcPopUpValvulaProporcional\").slideDown('slow');"
+          "$(\"#ucPopUpValvulas_1\").slideDown('slow');"
         ],
         "injectContextObject": false,
         "asyncWait": true,

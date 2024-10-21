@@ -1428,10 +1428,6 @@
 ]
 </script>
 </div>
-<div id="UcAvisofecha_com_condição_2" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-bcondição="%s%PLC1.GVL_Comando.xFaltaDeFaseOK%/s%" data-tchmi-height="229" data-tchmi-height-unit="px" data-tchmi-left="2000" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucAvisofecha_com_condição - Copy.usercontrol" data-tchmi-top="173" data-tchmi-top-unit="px" data-tchmi-width="564" data-tchmi-width-unit="px" data-tchmi-zindex="354" data-tchmi-snomeaviso="Aviso" data-tchmi-snomerecado="Verificar se há falta de fase ou alguma das emergências estão acionadas.
--Abaixo tem o Status das Emergências e Falta de Fase.
--Após verificar e deixar tudo OK. Ligar novamente o sistema." data-tchmi-ifonteaviso="30" data-tchmi-ifonterecado="22">
-</div>
 <div id="Camara_48" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="390" data-tchmi-height-unit="px" data-tchmi-itamanhotexto="25" data-tchmi-left="4" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucCamara.usercontrol" data-tchmi-top="4" data-tchmi-top-unit="px" data-tchmi-width="167" data-tchmi-width-unit="px" data-tchmi-zindex="48" data-tchmi-stcamara="%s%PLC1.GVL_Automatico.stCamaras[1]|BindingMode=TwoWay%/s%" data-tchmi-iindex="1">
 </div>
 </div>
@@ -4080,5 +4076,22 @@
 </script>
 </div>
 <div id="UserControl1_197" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="9" data-tchmi-height-unit="px" data-tchmi-left="1413" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucSeta.usercontrol" data-tchmi-top="1193" data-tchmi-top-unit="px" data-tchmi-width="31" data-tchmi-width-unit="px" data-tchmi-zindex="93">
+</div>
+<div id="UcAvisofecha_com_condição_2" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-bcondição="%s%PLC1.GVL_Comando.xFaltaDeFaseOK%/s%" data-tchmi-height="347" data-tchmi-height-unit="px" data-tchmi-left="-18" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucAvisofecha_com_condição - Copy.usercontrol" data-tchmi-top="118" data-tchmi-top-unit="px" data-tchmi-width="487" data-tchmi-width-unit="px" data-tchmi-zindex="356" data-tchmi-snomeaviso="Aviso" data-tchmi-snomerecado="Verificar se há falta de fase ou alguma das emergências estão acionadas.
+-Abaixo tem o Status das Emergências e Falta de Fase.
+-Após verificar e deixar tudo OK. Ligar novamente o sistema." data-tchmi-ifonteaviso="30" data-tchmi-ifonterecado="22">
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 0.0,
+  "topRight": 0.0,
+  "bottomLeft": 0.0,
+  "bottomRight": 0.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
 </div>
 </div>

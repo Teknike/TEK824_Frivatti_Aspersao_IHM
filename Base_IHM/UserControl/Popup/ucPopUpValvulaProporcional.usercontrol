@@ -107,7 +107,8 @@
         "objectType": "JavaScript",
         "active": true,
         "sourceLines": [
-          "$('#UcPopUpValvulaProporcional').slideUp('slow');"
+          "$('#UcPopUpValvulaProporcional').slideUp('slow');",
+          ""
         ],
         "injectContextObject": false,
         "asyncWait": true,
