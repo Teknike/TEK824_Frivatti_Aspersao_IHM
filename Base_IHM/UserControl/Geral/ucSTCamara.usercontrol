@@ -1279,7 +1279,7 @@
 </script>
 </div>
 </div>
-<div id="TcHmiContainer_240" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="228" data-tchmi-height-unit="px" data-tchmi-left="463" data-tchmi-left-unit="px" data-tchmi-top="759" data-tchmi-top-unit="px" data-tchmi-width="452" data-tchmi-width-unit="px" data-tchmi-zindex="5">
+<div id="TcHmiContainer_240" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="228" data-tchmi-height-unit="px" data-tchmi-left="463" data-tchmi-left-unit="px" data-tchmi-top="759" data-tchmi-top-unit="px" data-tchmi-width="457" data-tchmi-width-unit="px" data-tchmi-zindex="5">
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
 {
   "color": "rgba(130, 130, 130, 1)"
@@ -1339,9 +1339,9 @@
 }
 </script>
 </div>
-<div id="TcHmiTextblock_2823584" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="px" data-tchmi-text="Quantidade de carcaças na câmara:" data-tchmi-top="108" data-tchmi-top-unit="px" data-tchmi-width="260" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="18" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="11">
+<div id="TcHmiTextblock_2823584" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="Quantidade de carcaças na câmara:" data-tchmi-top="126" data-tchmi-top-unit="px" data-tchmi-width="260" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="18" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="11">
 </div>
-<div id="TcHmiNumericInput_203" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="269" data-tchmi-left-unit="px" data-tchmi-max-value="10000" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="108" data-tchmi-top-unit="px" data-tchmi-width="79" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="25" data-tchmi-zero-padding="0" data-tchmi-value="%pp%stCamara::Config::iCarcacasReal|BindingMode=TwoWay%/pp%" data-tchmi-tooltip="Informar a quantidade real de carcaças na camara para calculo de consumo de agua por animal" data-tchmi-zindex="5">
+<div id="TcHmiNumericInput_203" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="297" data-tchmi-left-unit="px" data-tchmi-max-value="10000" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="128" data-tchmi-top-unit="px" data-tchmi-width="79" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="25" data-tchmi-zero-padding="0" data-tchmi-value="%pp%stCamara::Config::iCarcacasReal|BindingMode=TwoWay%/pp%" data-tchmi-tooltip="Informar a quantidade real de carcaças na camara para calculo de consumo de agua por animal" data-tchmi-zindex="5">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,
@@ -1404,11 +1404,11 @@
 ]
 </script>
 </div>
-<div id="TcHmiTextblock_2823585" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="351" data-tchmi-left-unit="px" data-tchmi-text="Carcaças" data-tchmi-top="108" data-tchmi-top-unit="px" data-tchmi-width="78" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="18" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="11">
+<div id="TcHmiTextblock_2823585" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="379" data-tchmi-left-unit="px" data-tchmi-text="Carcaças" data-tchmi-top="127" data-tchmi-top-unit="px" data-tchmi-width="78" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="18" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="11">
 </div>
-<div id="TcHmiTextblock_2823511" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="px" data-tchmi-text="Tempo máximo Aspergindo:" data-tchmi-top="49" data-tchmi-top-unit="px" data-tchmi-width="260" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="18" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="11">
+<div id="TcHmiTextblock_2823511" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="px" data-tchmi-text="Tempo máx. aspergindo durante semana:" data-tchmi-top="39" data-tchmi-top-unit="px" data-tchmi-width="295" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="18" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="11">
 </div>
-<div id="MaximoAspergindo" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="269" data-tchmi-left-unit="px" data-tchmi-max-value="100" data-tchmi-min-value="6" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="49" data-tchmi-top-unit="px" data-tchmi-width="79" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="25" data-tchmi-zero-padding="0" data-tchmi-value="%pp%stCamara::Config::iTempoMaximoAspersao|BindingMode=TwoWay%/pp%" data-tchmi-tooltip="Tempo em horas, deve ser calculado para garantir que o tempo de deseumidificação ocorra" data-tchmi-zindex="5">
+<div id="MaximoAspergindo_2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="297" data-tchmi-left-unit="px" data-tchmi-max-value="100" data-tchmi-min-value="6" data-tchmi-reset-to-last-valid-value="false" data-tchmi-top="40" data-tchmi-top-unit="px" data-tchmi-width="79" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="25" data-tchmi-zero-padding="0" data-tchmi-value="%pp%stCamara::Config::iTempoMaximoAspersao|BindingMode=TwoWay%/pp%" data-tchmi-tooltip="Tempo em horas, deve ser calculado para garantir que o tempo de deseumidificação ocorra" data-tchmi-zindex="5">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,
@@ -1471,11 +1471,11 @@
 ]
 </script>
 </div>
-<div id="TcHmiTextblock_2823518" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="351" data-tchmi-left-unit="px" data-tchmi-text="Horas" data-tchmi-top="49" data-tchmi-top-unit="px" data-tchmi-width="47" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="18" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="11">
+<div id="TcHmiTextblock_2823518" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="383" data-tchmi-left-unit="px" data-tchmi-text="Horas" data-tchmi-top="38" data-tchmi-top-unit="px" data-tchmi-width="47" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="18" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="11">
 </div>
-<div id="TcHmiTextblock_2823604" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="px" data-tchmi-text="Tempo para desligar a ventilação:" data-tchmi-top="167" data-tchmi-top-unit="px" data-tchmi-width="260" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="18" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="11">
+<div id="TcHmiTextblock_2823604" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="12" data-tchmi-left-unit="px" data-tchmi-text="Tempo para desligar a ventilação:" data-tchmi-top="171" data-tchmi-top-unit="px" data-tchmi-width="260" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="18" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="11">
 </div>
-<div id="TcHmiNumericInput_204" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="269" data-tchmi-left-unit="px" data-tchmi-max-value="1000" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="167" data-tchmi-top-unit="px" data-tchmi-width="79" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="25" data-tchmi-zero-padding="0" data-tchmi-value="%pp%stCamara::Config::iSegDesligarVentilacao|BindingMode=TwoWay%/pp%" data-tchmi-tooltip="Tempo para desligar a ventilação antes e depois da aspersão" data-tchmi-zindex="5">
+<div id="TcHmiNumericInput_204" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="297" data-tchmi-left-unit="px" data-tchmi-max-value="1000" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="172" data-tchmi-top-unit="px" data-tchmi-width="79" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="25" data-tchmi-zero-padding="0" data-tchmi-value="%pp%stCamara::Config::iSegDesligarVentilacao|BindingMode=TwoWay%/pp%" data-tchmi-tooltip="Tempo para desligar a ventilação antes e depois da aspersão" data-tchmi-zindex="5">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,
@@ -1538,7 +1538,7 @@
 ]
 </script>
 </div>
-<div id="TcHmiTextblock_2823605" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="351" data-tchmi-left-unit="px" data-tchmi-text="Segundos" data-tchmi-top="167" data-tchmi-top-unit="px" data-tchmi-width="78" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="18" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="11">
+<div id="TcHmiTextblock_2823605" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="379" data-tchmi-left-unit="px" data-tchmi-text="Segundos" data-tchmi-top="171" data-tchmi-top-unit="px" data-tchmi-width="78" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="18" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="11">
 </div>
 <div id="TcHmiToggleButton_123" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="29" data-tchmi-height-unit="px" data-tchmi-left="-1" data-tchmi-left-unit="px" data-tchmi-text="Avançado" data-tchmi-top="-1" data-tchmi-top-unit="px" data-tchmi-width="61" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-zindex="35">
 
@@ -1745,6 +1745,73 @@
   }
 ]
 </script>
+</div>
+<div id="TcHmiTextblock_285165843" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="8" data-tchmi-left-unit="px" data-tchmi-text="Tempo máx. aspergindo fim Semana:" data-tchmi-top="82" data-tchmi-top-unit="px" data-tchmi-width="285" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="18" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="11">
+</div>
+<div id="MaximoAspergindo_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="297" data-tchmi-left-unit="px" data-tchmi-max-value="100" data-tchmi-min-value="6" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="84" data-tchmi-top-unit="px" data-tchmi-width="79" data-tchmi-width-unit="px" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size="25" data-tchmi-zero-padding="0" data-tchmi-value="%pp%stCamara::Config::iTempoMaximoAspersaoFinalDeSemana|BindingMode=TwoWay%/pp%" data-tchmi-tooltip="Tempo em horas, deve ser calculado para garantir que o tempo de deseumidificação ocorra" data-tchmi-zindex="5">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(255, 255, 255, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-value-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "operate",
+    "group": "Administracao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "CasaMaquinas",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Graficos",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Manutencao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Operacao",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Supervisao",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Teknike",
+    "permission": "Allow"
+  }
+]
+</script>
+</div>
+<div id="TcHmiTextblock_285165844" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-left="384" data-tchmi-left-unit="px" data-tchmi-text="Horas" data-tchmi-top="83" data-tchmi-top-unit="px" data-tchmi-width="47" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="18" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="11">
 </div>
 </div>
 <div id="TcHmiContainerConfigAvan" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="477" data-tchmi-height-unit="px" data-tchmi-left="466" data-tchmi-left-unit="px" data-tchmi-top="282" data-tchmi-top-unit="px" data-tchmi-width="1245" data-tchmi-width-unit="px" data-tchmi-visibility="Collapsed" data-tchmi-zindex="1">
