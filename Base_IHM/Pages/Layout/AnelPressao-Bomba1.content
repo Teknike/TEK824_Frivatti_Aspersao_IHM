@@ -474,11 +474,11 @@
 [
   {
     "id": 0.0,
-    "text": "Oficial (M3)"
+    "text": "Oficial (M5)"
   },
   {
     "id": 1.0,
-    "text": "Reserva (M4)"
+    "text": "Reserva (M6)"
   }
 ]
 </script>
@@ -1340,9 +1340,9 @@
 </div>
 <div id="UcStatusSensor_178" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="42" data-tchmi-height-unit="px" data-tchmi-left="1504" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucStatusSensorSemTexto.usercontrol" data-tchmi-top="707" data-tchmi-top-unit="px" data-tchmi-width="112" data-tchmi-width-unit="px" data-tchmi-ifontetexto="19" data-tchmi-ifontesensor="19" data-tchmi-sunidade="Bar" data-tchmi-icasasdepoisdavirgula="1" data-tchmi-rvalormaxcinza="2.5" data-tchmi-rvalormincinza="0.5" data-tchmi-rvalormaxamarelo="5" data-tchmi-rvalorminamarelo="0" data-tchmi-rsensor="%s%PLC1.GVL_Sensores.SenAna[25]::sa::rValor%/s%" data-tchmi-tooltiip="Pressão Ultima Válvula" data-tchmi-zindex="147">
 </div>
-<div id="FmrMotor_4624547" data-tchmi-type="TcHmi.Controls.Motor.FmrMotor" data-tchmi-elemento="Bomba" data-tchmi-escondetexto="true" data-tchmi-height="69" data-tchmi-height-unit="px" data-tchmi-left="1050" data-tchmi-left-unit="px" data-tchmi-top="271" data-tchmi-top-unit="px" data-tchmi-width="112" data-tchmi-width-unit="px" data-tchmi-zindex="144" data-tchmi-gvl="GVL_Motores" data-tchmi-vetor="Motor" data-tchmi-struct="stPartida" data-tchmi-operavel="true" data-tchmi-popupouliga="true" data-tchmi-index="3">
+<div id="FmrMotor_4624547" data-tchmi-type="TcHmi.Controls.Motor.FmrMotor" data-tchmi-elemento="Bomba" data-tchmi-escondetexto="true" data-tchmi-height="69" data-tchmi-height-unit="px" data-tchmi-left="1050" data-tchmi-left-unit="px" data-tchmi-top="271" data-tchmi-top-unit="px" data-tchmi-width="112" data-tchmi-width-unit="px" data-tchmi-zindex="144" data-tchmi-gvl="GVL_Motores" data-tchmi-vetor="Motor" data-tchmi-struct="stPartida" data-tchmi-operavel="true" data-tchmi-popupouliga="true" data-tchmi-index="5">
 </div>
-<div id="FmrMotor_4624548" data-tchmi-type="TcHmi.Controls.Motor.FmrMotor" data-tchmi-elemento="Bomba" data-tchmi-escondetexto="true" data-tchmi-height="69" data-tchmi-height-unit="px" data-tchmi-left="1050" data-tchmi-left-unit="px" data-tchmi-top="436" data-tchmi-top-unit="px" data-tchmi-width="112" data-tchmi-width-unit="px" data-tchmi-zindex="144" data-tchmi-gvl="GVL_Motores" data-tchmi-vetor="Motor" data-tchmi-struct="stPartida" data-tchmi-operavel="true" data-tchmi-popupouliga="true" data-tchmi-index="4">
+<div id="FmrMotor_4624548" data-tchmi-type="TcHmi.Controls.Motor.FmrMotor" data-tchmi-elemento="Bomba" data-tchmi-escondetexto="true" data-tchmi-height="69" data-tchmi-height-unit="px" data-tchmi-left="1050" data-tchmi-left-unit="px" data-tchmi-top="436" data-tchmi-top-unit="px" data-tchmi-width="112" data-tchmi-width-unit="px" data-tchmi-zindex="144" data-tchmi-gvl="GVL_Motores" data-tchmi-vetor="Motor" data-tchmi-struct="stPartida" data-tchmi-operavel="true" data-tchmi-popupouliga="true" data-tchmi-index="6">
 </div>
 <div id="UcNIveltamqueBoia_24" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="36" data-tchmi-height-unit="px" data-tchmi-left="1435" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucNIveltamqueBoia.usercontrol" data-tchmi-top="223" data-tchmi-top-unit="px" data-tchmi-width="70" data-tchmi-width-unit="px" data-tchmi-zindex="192" data-tchmi-ifonte="17" data-tchmi-sniveltamque="Oper." data-tchmi-stvariavelsensor="%s%PLC1.GVL_Sensores.SenDig[5]%/s%">
 </div>

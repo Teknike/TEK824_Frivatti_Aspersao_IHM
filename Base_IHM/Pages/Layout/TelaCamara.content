@@ -106,7 +106,7 @@
 ]
 </script>
 </div>
-<div id="ContainerValvulas" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="675" data-tchmi-height-unit="px" data-tchmi-left="473" data-tchmi-left-unit="px" data-tchmi-top="60" data-tchmi-top-unit="px" data-tchmi-width="1247" data-tchmi-width-unit="px" data-tchmi-zindex="2">
+<div id="ContainerValvulas" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="675" data-tchmi-height-unit="px" data-tchmi-left="466" data-tchmi-left-unit="px" data-tchmi-top="72" data-tchmi-top-unit="px" data-tchmi-width="1247" data-tchmi-width-unit="px" data-tchmi-zindex="2">
 <div id="TcHmiTextblock_2823388" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="32" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="1247" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="20" data-tchmi-zindex="8">
 <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
 {
