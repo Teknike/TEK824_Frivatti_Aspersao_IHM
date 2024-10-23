@@ -1528,8 +1528,6 @@
 </div>
 <div id="UcPopUpValvulas_1" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="300" data-tchmi-height-unit="px" data-tchmi-left="-2970" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Popup/ucPopUpValvulas_1.usercontrol" data-tchmi-top="-2970" data-tchmi-top-unit="px" data-tchmi-width="600" data-tchmi-width-unit="px" data-tchmi-zindex="1500" data-tchmi-escolhe="true">
 </div>
-<div id="UcEmergencia" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="250" data-tchmi-height-unit="px" data-tchmi-left="68" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucEmergencia.usercontrol" data-tchmi-top="1190" data-tchmi-top-unit="px" data-tchmi-width="375" data-tchmi-width-unit="px" data-tchmi-is-enabled="true" data-tchmi-zindex="1501">
-</div>
 
 <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
 [
@@ -2255,7 +2253,7 @@
           "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores::SelectedId%/ctrl%') + 1;",
           "",
           "",
-          "\tvar NomeUC = 'UcPopUpMotores';",
+          "\tvar NomeUC = 'UcPopUpMotores_2';",
           "                ",
           "    var _id = 'cbMotores';",
           "\tvar _uc = TcHmi.Controls.get(_id);",
@@ -2351,7 +2349,7 @@
           "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores::SelectedId%/ctrl%') + 1;",
           "",
           "",
-          "\tvar NomeUC = 'UcPopUpMotores';",
+          "\tvar NomeUC = 'UcPopUpMotores_2';",
           "                ",
           "    var _id = 'cbMotores';",
           "\tvar _uc = TcHmi.Controls.get(_id);",
@@ -2429,7 +2427,7 @@
 ]
 </script>
 </div>
-<div id="cbMotores3_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCombobox" data-tchmi-height="7.5" data-tchmi-height-unit="%" data-tchmi-left="1.5" data-tchmi-left-unit="%" data-tchmi-top="51.9" data-tchmi-top-unit="%" data-tchmi-width="33.5" data-tchmi-width-unit="%" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-selected-id="%ctrl%cbMotores3::SelectedId%/ctrl%" data-tchmi-selected-index="%ctrl%cbMotores3::SelectedIndex%/ctrl%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="250" data-tchmi-text-horizontal-alignment="Center" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-opacity="1" data-tchmi-background-image-width-unit="px" data-tchmi-background-image-height-unit="px" data-tchmi-data-height-unit="px" data-tchmi-max-list-height-unit="px" data-tchmi-drop-down-font-size-unit="%" data-tchmi-data-height="30" data-tchmi-drop-down-font-size="150" data-tchmi-max-list-height="200" data-tchmi-drop-down-category-font-size-unit="px" data-tchmi-drop-down-category-font-size="20" data-tchmi-is-enabled="true" data-tchmi-allow-text-input="false" data-tchmi-drop-down-vertical-alignment="Center" data-tchmi-combobox-text="Escolha sua Válvula">
+<div id="cbMotores3_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCombobox" data-tchmi-height="7.5" data-tchmi-height-unit="%" data-tchmi-left="1.2" data-tchmi-left-unit="%" data-tchmi-top="51.9" data-tchmi-top-unit="%" data-tchmi-width="33.5" data-tchmi-width-unit="%" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-selected-id="%ctrl%cbMotores3::SelectedId%/ctrl%" data-tchmi-selected-index="%ctrl%cbMotores3::SelectedIndex%/ctrl%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="250" data-tchmi-text-horizontal-alignment="Center" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-opacity="1" data-tchmi-background-image-width-unit="px" data-tchmi-background-image-height-unit="px" data-tchmi-data-height-unit="px" data-tchmi-max-list-height-unit="px" data-tchmi-drop-down-font-size-unit="%" data-tchmi-data-height="30" data-tchmi-drop-down-font-size="150" data-tchmi-max-list-height="200" data-tchmi-drop-down-category-font-size-unit="px" data-tchmi-drop-down-category-font-size="20" data-tchmi-is-enabled="true" data-tchmi-allow-text-input="false" data-tchmi-drop-down-vertical-alignment="Center" data-tchmi-combobox-text="Escolha sua Válvula">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,
@@ -2454,17 +2452,17 @@
         "active": true,
         "sourceLines": [
           "// lê o nome do Motor",
-          "var index = TcHmi.Symbol.readEx('%ctrl%cbMotores3::SelectedValue%/ctrl%');",
-          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores3::SelectedId%/ctrl%');",
+          "var index = TcHmi.Symbol.readEx('%ctrl%cbMotores3_1::SelectedValue%/ctrl%');",
+          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores3_1::SelectedId%/ctrl%');",
           "//%s%PLC1.GVL_Partidas.Motor%/s%",
           "var GVL = 'GVL_Valvulas';",
           "var NomeVetor = 'valvula';",
-          "var NomeUC = 'UcPopUpControleValvula_2';",
+          "var NomeUC = 'UcPopUpValvulas_2';",
           "",
           "\t\t",
           "// faz o binding com a struct do motor\t",
           "var ItemProperty = 'stValvula';",
-          "var UserControl = TcHmi.Controls.get(NomeUC);",
+          "var UserControl ='UcPopUpValvulas';",
           "var Variavel = \"%s%PLC1.\" + GVL + \".\" + NomeVetor +\"[\"+ id +\"]\"+ \"|BindingMode=TwoWay%/s%\";",
           "//var Variavel = \"%s%PLC1.GVL_Motor.\" + TipoPartida +\"[\"+ motor +\"]\"+ \"|BindingMode=TwoWay%/s%\";",
           "",
@@ -2496,7 +2494,8 @@
           "    console.log(Variavel);",
           "    console.log(ItemProperty);",
           "    console.log(UserControl);",
-          "}"
+          "}",
+          "console.log('teste');"
         ],
         "injectContextObject": false,
         "asyncWait": true,
@@ -2510,13 +2509,13 @@
         "objectType": "JavaScript",
         "active": true,
         "sourceLines": [
-          "var index = TcHmi.Symbol.readEx('%ctrl%cbMotores3::SelectedValue%/ctrl%');",
-          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores3::SelectedId%/ctrl%') + 1;",
+          "var index = TcHmi.Symbol.readEx('%ctrl%cbMotores3_1::SelectedValue%/ctrl%');",
+          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores3_1::SelectedId%/ctrl%') + 1;",
           "",
           "",
-          "\tvar NomeUC = 'UcPopUpControleValvula_2';",
+          "\tvar NomeUC = 'stControleValvula';",
           "",
-          "\tvar _id = 'cbMotores3';",
+          "\tvar _id = 'cbMotores3_1';",
           "\tvar _uc = TcHmi.Controls.get(_id);",
           "\tvar TamXTela = 1920;",
           "\tvar TamYTela = 1080;",
@@ -2550,7 +2549,7 @@
           "",
           "UserControl.setTop(__top);",
           "UserControl.setLeft(__left);",
-          "",
+          "console.log('nabre');",
           "$(\"#\" + NomeUC).slideDown('slow');"
         ],
         "injectContextObject": false,
@@ -3849,8 +3848,6 @@
 ]
 </script>
 </div>
-<div id="UcPopUpMotores_2" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-escolhe="False" data-tchmi-height="470" data-tchmi-height-unit="px" data-tchmi-left="1243" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Popup/Motor/ucPopUpMotores.usercontrol" data-tchmi-top="1129" data-tchmi-top-unit="px" data-tchmi-width="750" data-tchmi-width-unit="px">
-</div>
-<div id="UcPopUpValvulas_2" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-escolhe="False" data-tchmi-height="300" data-tchmi-height-unit="px" data-tchmi-left="67" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Popup/ucPopUpValvulas.usercontrol" data-tchmi-top="1465" data-tchmi-top-unit="px" data-tchmi-width="600" data-tchmi-width-unit="px">
+<div id="UcPopUpValvulas_2" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-escolhe="False" data-tchmi-height="300" data-tchmi-height-unit="px" data-tchmi-left="170" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Popup/ucPopUpValvulas.usercontrol" data-tchmi-top="1096" data-tchmi-top-unit="px" data-tchmi-width="600" data-tchmi-width-unit="px">
 </div>
 </div>

@@ -35,8 +35,7 @@
         "objectType": "JavaScript",
         "active": true,
         "sourceLines": [
-          "$('#ucPopUpValvulas_1').slideUp('slow');",
-          "   $('#UcPopUpControleValvula_5').slideDown('slow');"
+          "$('#UcPopUpValvulas159').slideUp('slow');"
         ],
         "injectContextObject": true,
         "asyncWait": true,
