@@ -1,4 +1,4 @@
-<div id="ListaDeMotores" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="1670" data-tchmi-height="1040" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-width-unit="px" data-tchmi-height-unit="px" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-opacity="1" data-tchmi-background-image-width-unit="px" data-tchmi-background-image-height-unit="px" data-tchmi-width-mode="Value" data-tchmi-height-mode="Value" data-tchmi-creator-viewport-height="1080" data-tchmi-is-enabled="true" data-tchmi-creator-viewport-width="1920" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+<div id="ListaDeMotores" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="1670" data-tchmi-height="1040" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-width-unit="px" data-tchmi-height-unit="px" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-opacity="1" data-tchmi-background-image-width-unit="px" data-tchmi-background-image-height-unit="px" data-tchmi-width-mode="Value" data-tchmi-height-mode="Value" data-tchmi-creator-viewport-height="1080" data-tchmi-is-enabled="true" data-tchmi-creator-viewport-width="1920" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-class-names="">
 <div id="TcHmiImage_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="13.1" data-tchmi-height-unit="%" data-tchmi-left="37.5" data-tchmi-left-unit="%" data-tchmi-top="4.5" data-tchmi-top-unit="%" data-tchmi-width="3.8" data-tchmi-width-unit="%" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-opacity="1" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-src="Images/Diversos/Seta.png" data-tchmi-background-image-width-unit="px" data-tchmi-background-image-height-unit="px">
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
@@ -127,7 +127,7 @@
 ]
 </script>
 </div>
-<div id="cbMotores2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCombobox" data-tchmi-combobox-text="Escolha seu Sensor Digital" data-tchmi-height="7.5" data-tchmi-height-unit="%" data-tchmi-left="51.9" data-tchmi-left-unit="%" data-tchmi-top="7.1" data-tchmi-top-unit="%" data-tchmi-width="33.5" data-tchmi-width-unit="%" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-selected-id="%ctrl%cbMotores2::SelectedId%/ctrl%" data-tchmi-selected-index="%ctrl%cbMotores2::SelectedIndex%/ctrl%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="250" data-tchmi-text-horizontal-alignment="Center" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-opacity="1" data-tchmi-background-image-width-unit="px" data-tchmi-background-image-height-unit="px" data-tchmi-data-height-unit="px" data-tchmi-max-list-height-unit="px" data-tchmi-drop-down-font-size-unit="%" data-tchmi-data-height="30" data-tchmi-drop-down-font-size="150" data-tchmi-max-list-height="200" data-tchmi-drop-down-category-font-size-unit="px" data-tchmi-drop-down-category-font-size="20" data-tchmi-is-enabled="true" data-tchmi-allow-text-input="false">
+<div id="cbMotores2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCombobox" data-tchmi-combobox-text="Escolha seu Sensor Digital" data-tchmi-height="7.5" data-tchmi-height-unit="%" data-tchmi-left="51.9" data-tchmi-left-unit="%" data-tchmi-top="7.1" data-tchmi-top-unit="%" data-tchmi-width="33.5" data-tchmi-width-unit="%" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-selected-id="%ctrl%cbMotores2::SelectedId%/ctrl%" data-tchmi-selected-index="%ctrl%cbMotores2::SelectedIndex|BindingMode=TwoWay%/ctrl%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="250" data-tchmi-text-horizontal-alignment="Center" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-opacity="1" data-tchmi-background-image-width-unit="px" data-tchmi-background-image-height-unit="px" data-tchmi-data-height-unit="px" data-tchmi-max-list-height-unit="px" data-tchmi-drop-down-font-size-unit="%" data-tchmi-data-height="30" data-tchmi-drop-down-font-size="150" data-tchmi-max-list-height="200" data-tchmi-drop-down-category-font-size-unit="px" data-tchmi-drop-down-category-font-size="20" data-tchmi-is-enabled="true" data-tchmi-allow-text-input="false">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,
@@ -157,9 +157,7 @@
           "var data = TcHmi.Symbol.readEx('%ctrl%cbMotores2::SrcData%/ctrl%');",
           "var GVL = 'GVL_Sensores';",
           "var NomeVetor = 'SenDig';",
-          "var NomeUC;",
-          "",
-          "NomeUC = 'UcPopUpSensorDigital_1';",
+          "var NomeUC = 'UcPopUpSensorDigital';",
           "",
           "",
           "// faz o binding com a struct do motor\t",
@@ -196,7 +194,7 @@
           "var index = TcHmi.Symbol.readEx('%ctrl%cbMotores2::SelectedValue%/ctrl%');",
           "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores2::SelectedId%/ctrl%');",
           "",
-          "\tNomeUC = 'UcPopUpSensorDigital_1';",
+          "\tNomeUC = 'UcPopUpSensorDigital';",
           "",
           "\tvar _id = 'cbMotores2';",
           "\tvar _uc = TcHmi.Controls.get(_id);",
@@ -2187,7 +2185,7 @@
     ]
 </script>
 </div>
-<div id="UcPopUpSensorAnalogico_1" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-escolhe="False" data-tchmi-height="726" data-tchmi-height-unit="px" data-tchmi-left="747" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Popup/ucPopUpSensorAnalogico.usercontrol" data-tchmi-top="1191" data-tchmi-top-unit="px" data-tchmi-width="440" data-tchmi-width-unit="px">
+<div id="UcPopUpSensorAnalogico_1" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-escolhe="False" data-tchmi-height="726" data-tchmi-height-unit="px" data-tchmi-left="675" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Popup/ucPopUpSensorAnalogico.usercontrol" data-tchmi-top="1117" data-tchmi-top-unit="px" data-tchmi-width="440" data-tchmi-width-unit="px">
 </div>
 <div id="cbMotores_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCombobox" data-tchmi-combobox-text="Escolha seu Motor" data-tchmi-height="7.5" data-tchmi-height-unit="%" data-tchmi-left="1.5" data-tchmi-left-unit="%" data-tchmi-top="7.2" data-tchmi-top-unit="%" data-tchmi-width="33.5" data-tchmi-width-unit="%" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-selected-id="%ctrl%cbMotores::SelectedId%/ctrl%" data-tchmi-selected-index="%ctrl%cbMotores::SelectedIndex%/ctrl%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="250" data-tchmi-text-horizontal-alignment="Center" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-opacity="1" data-tchmi-background-image-width-unit="px" data-tchmi-background-image-height-unit="px" data-tchmi-data-height-unit="px" data-tchmi-max-list-height-unit="px" data-tchmi-drop-down-font-size-unit="%" data-tchmi-data-height="30" data-tchmi-drop-down-font-size="150" data-tchmi-max-list-height="200" data-tchmi-drop-down-category-font-size-unit="px" data-tchmi-drop-down-category-font-size="20" data-tchmi-is-enabled="true" data-tchmi-allow-text-input="false" data-tchmi-ignore-escape-sequences="false" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
@@ -2214,8 +2212,8 @@
         "active": true,
         "sourceLines": [
           "// lê o nome do Motor",
-          "var index = TcHmi.Symbol.readEx('%ctrl%cbMotores::SelectedValue%/ctrl%');",
-          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores::SelectedId%/ctrl%') + 1;",
+          "var index = TcHmi.Symbol.readEx('%ctrl%cbMotores_1::SelectedValue%/ctrl%');",
+          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores_1::SelectedId%/ctrl%') + 1;",
           "var GVL = 'GVL_Motores';",
           "var NomeVetor = 'Motor';",
           "var NomeUC = 'UcPopUpMotores_2';",
@@ -2225,8 +2223,7 @@
           "var ItemProperty = 'stPartida';",
           "var UserControl = TcHmi.Controls.get(NomeUC);",
           "var Variavel = \"%s%PLC1.\" + GVL + \".\" + NomeVetor +\"[\"+ index +\"]\"+ \"|BindingMode=TwoWay%/s%\";",
-          "var Variavel = \"%s%PLC1.GVL_Motor.\" + TipoPartida +\"[\"+ motor +\"]\"+ \"|BindingMode=TwoWay%/s%\";",
-          "console.log ('10');",
+          "//var Variavel = \"%s%PLC1.GVL_Motor.\" + TipoPartida +\"[\"+ Motor +\"]\"+ \"|BindingMode=TwoWay%/s%\";",
           "",
           "try {",
           "    TcHmi.Binding.createEx2(Variavel, ItemProperty, UserControl);",
@@ -2235,7 +2232,8 @@
           "    console.log(Variavel);",
           "    console.log(ItemProperty);",
           "    console.log(UserControl);",
-          "}"
+          "}",
+          ""
         ],
         "injectContextObject": false,
         "asyncWait": true,
@@ -2249,13 +2247,13 @@
         "objectType": "JavaScript",
         "active": true,
         "sourceLines": [
-          "var index = TcHmi.Symbol.readEx('%ctrl%cbMotores::SelectedValue%/ctrl%');",
-          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores::SelectedId%/ctrl%') + 1;",
+          "var index = TcHmi.Symbol.readEx('%ctrl%cbMotores_1::SelectedValue%/ctrl%');",
+          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores_1::SelectedId%/ctrl%') + 1;",
           "",
           "",
           "\tvar NomeUC = 'UcPopUpMotores_2';",
           "                ",
-          "    var _id = 'cbMotores';",
+          "    var _id = 'cbMotores_1';",
           "\tvar _uc = TcHmi.Controls.get(_id);",
           "\tvar TamXTela = 1920;",
           "\tvar TamYTela = 1080;",
@@ -2310,8 +2308,8 @@
         "active": true,
         "sourceLines": [
           "// lê o nome do Motor",
-          "var index = TcHmi.Symbol.readEx('%ctrl%cbMotores::SelectedValue%/ctrl%');",
-          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores::SelectedId%/ctrl%') + 1;",
+          "var index = TcHmi.Symbol.readEx('%ctrl%cbMotores_1::SelectedValue%/ctrl%');",
+          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores_1::SelectedId%/ctrl%') + 1;",
           "var GVL = 'GVL_Motores';",
           "var NomeVetor = 'Motor';",
           "var NomeUC = 'UcPopUpMotores_2';",
@@ -2321,8 +2319,7 @@
           "var ItemProperty = 'stPartida';",
           "var UserControl = TcHmi.Controls.get(NomeUC);",
           "var Variavel = \"%s%PLC1.\" + GVL + \".\" + NomeVetor +\"[\"+ index +\"]\"+ \"|BindingMode=TwoWay%/s%\";",
-          "var Variavel = \"%s%PLC1.GVL_Motor.\" + TipoPartida +\"[\"+ motor +\"]\"+ \"|BindingMode=TwoWay%/s%\";",
-          "console.log ('10');",
+          "//var Variavel = \"%s%PLC1.GVL_Motor.\" + TipoPartida +\"[\"+ Motor +\"]\"+ \"|BindingMode=TwoWay%/s%\";",
           "",
           "try {",
           "    TcHmi.Binding.createEx2(Variavel, ItemProperty, UserControl);",
@@ -2331,7 +2328,8 @@
           "    console.log(Variavel);",
           "    console.log(ItemProperty);",
           "    console.log(UserControl);",
-          "}"
+          "}",
+          ""
         ],
         "injectContextObject": false,
         "asyncWait": true,
@@ -2345,13 +2343,13 @@
         "objectType": "JavaScript",
         "active": true,
         "sourceLines": [
-          "var index = TcHmi.Symbol.readEx('%ctrl%cbMotores::SelectedValue%/ctrl%');",
-          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores::SelectedId%/ctrl%') + 1;",
+          "var index = TcHmi.Symbol.readEx('%ctrl%cbMotores_1::SelectedValue%/ctrl%');",
+          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores_1::SelectedId%/ctrl%') + 1;",
           "",
           "",
           "\tvar NomeUC = 'UcPopUpMotores_2';",
           "                ",
-          "    var _id = 'cbMotores';",
+          "    var _id = 'cbMotores_1';",
           "\tvar _uc = TcHmi.Controls.get(_id);",
           "\tvar TamXTela = 1920;",
           "\tvar TamYTela = 1080;",
@@ -2423,11 +2421,26 @@
     "id": 5.0,
     "text": "%s%PLC1.GVL_Motores.Motor[5]::Config::sNome_Funcao%/s%",
     "value": 5.0
+  },
+  {
+    "id": 6.0,
+    "text": "%s%PLC1.GVL_Motores.Motor[6]::Config::sNome_Funcao%/s%",
+    "value": 5.0
+  },
+  {
+    "id": 7.0,
+    "text": "%s%PLC1.GVL_Motores.Motor[7]::Config::sNome_Funcao%/s%",
+    "value": 5.0
+  },
+  {
+    "id": 8.0,
+    "text": "%s%PLC1.GVL_Motores.Motor[8]::Config::sNome_Funcao%/s%",
+    "value": 8.0
   }
 ]
 </script>
 </div>
-<div id="cbMotores3_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCombobox" data-tchmi-height="7.5" data-tchmi-height-unit="%" data-tchmi-left="1.2" data-tchmi-left-unit="%" data-tchmi-top="51.9" data-tchmi-top-unit="%" data-tchmi-width="33.5" data-tchmi-width-unit="%" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-selected-id="%ctrl%cbMotores3::SelectedId%/ctrl%" data-tchmi-selected-index="%ctrl%cbMotores3::SelectedIndex%/ctrl%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="250" data-tchmi-text-horizontal-alignment="Center" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-opacity="1" data-tchmi-background-image-width-unit="px" data-tchmi-background-image-height-unit="px" data-tchmi-data-height-unit="px" data-tchmi-max-list-height-unit="px" data-tchmi-drop-down-font-size-unit="%" data-tchmi-data-height="30" data-tchmi-drop-down-font-size="150" data-tchmi-max-list-height="200" data-tchmi-drop-down-category-font-size-unit="px" data-tchmi-drop-down-category-font-size="20" data-tchmi-is-enabled="true" data-tchmi-allow-text-input="false" data-tchmi-drop-down-vertical-alignment="Center" data-tchmi-combobox-text="Escolha sua Válvula">
+<div id="cbMotores3_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCombobox" data-tchmi-height="7.5" data-tchmi-height-unit="%" data-tchmi-left="0.4" data-tchmi-left-unit="%" data-tchmi-top="51.9" data-tchmi-top-unit="%" data-tchmi-width="33.5" data-tchmi-width-unit="%" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-selected-id="%ctrl%cbMotores3::SelectedId%/ctrl%" data-tchmi-selected-index="%ctrl%cbMotores3::SelectedIndex%/ctrl%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="250" data-tchmi-text-horizontal-alignment="Center" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-opacity="1" data-tchmi-background-image-width-unit="px" data-tchmi-background-image-height-unit="px" data-tchmi-data-height-unit="px" data-tchmi-max-list-height-unit="px" data-tchmi-drop-down-font-size-unit="%" data-tchmi-data-height="30" data-tchmi-drop-down-font-size="150" data-tchmi-max-list-height="200" data-tchmi-drop-down-category-font-size-unit="px" data-tchmi-drop-down-category-font-size="20" data-tchmi-is-enabled="true" data-tchmi-allow-text-input="false" data-tchmi-drop-down-vertical-alignment="Center" data-tchmi-combobox-text="Escolha sua Válvula">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,
@@ -2462,7 +2475,7 @@
           "\t\t",
           "// faz o binding com a struct do motor\t",
           "var ItemProperty = 'stValvula';",
-          "var UserControl ='UcPopUpValvulas';",
+          "var UserControl ='UcPopUpValvulas_2';",
           "var Variavel = \"%s%PLC1.\" + GVL + \".\" + NomeVetor +\"[\"+ id +\"]\"+ \"|BindingMode=TwoWay%/s%\";",
           "//var Variavel = \"%s%PLC1.GVL_Motor.\" + TipoPartida +\"[\"+ motor +\"]\"+ \"|BindingMode=TwoWay%/s%\";",
           "",
@@ -2568,1286 +2581,594 @@
 <script data-tchmi-target-attribute="data-tchmi-src-data" type="application/json">
 [
   {
-    "id": 124.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[124]::en::sNome_Funcao%/s%",
-    "value": 124.0,
-    "category": "Cámara 202"
-  },
-  {
-    "id": 125.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[125]::en::sNome_Funcao%/s%",
-    "value": 125.0,
-    "category": "Cámara 202"
-  },
-  {
-    "id": 126.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[126]::en::sNome_Funcao%/s%",
-    "value": 126.0,
-    "category": "Cámara 202"
-  },
-  {
-    "id": 127.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[127]::en::sNome_Funcao%/s%",
-    "value": 127.0,
-    "category": "Cámara 202"
-  },
-  {
-    "id": 128.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[128]::en::sNome_Funcao%/s%",
-    "value": 128.0,
-    "category": "Cámara 202"
-  },
-  {
-    "id": 129.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[129]::en::sNome_Funcao%/s%",
-    "value": 129.0,
-    "category": "Cámara 202"
-  },
-  {
-    "id": 130.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[130]::en::sNome_Funcao%/s%",
-    "value": 130.0,
-    "category": "Cámara 202"
-  },
-  {
-    "id": 131.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[131]::en::sNome_Funcao%/s%",
-    "value": 131.0,
-    "category": "Cámara 202"
-  },
-  {
-    "id": 132.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[132]::en::sNome_Funcao%/s%",
-    "value": 132.0,
-    "category": "Cámara 202"
-  },
-  {
-    "id": 133.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[133]::en::sNome_Funcao%/s%",
-    "value": 133.0,
-    "category": "Cámara 202"
-  },
-  {
-    "id": 134.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[134]::en::sNome_Funcao%/s%",
-    "value": 134.0,
-    "category": "Cámara 202"
-  },
-  {
-    "id": 135.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[135]::en::sNome_Funcao%/s%",
-    "value": 135.0,
-    "category": "Cámara 202"
-  },
-  {
-    "id": 136.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[136]::en::sNome_Funcao%/s%",
-    "value": 136.0,
-    "category": "Cámara 202"
-  },
-  {
-    "id": 137.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[137]::en::sNome_Funcao%/s%",
-    "value": 137.0,
-    "category": "Cámara 202"
-  },
-  {
-    "id": 138.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[138]::en::sNome_Funcao%/s%",
-    "value": 138.0,
-    "category": "Cámara 202"
-  },
-  {
-    "id": 139.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[139]::en::sNome_Funcao%/s%",
-    "value": 139.0,
-    "category": "Cámara 202"
-  },
-  {
-    "id": 140.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[140]::en::sNome_Funcao%/s%",
-    "value": 140.0,
-    "category": "Cámara 202"
-  },
-  {
-    "id": 141.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[141]::en::sNome_Funcao%/s%",
-    "value": 141.0,
-    "category": "Cámara 202"
-  },
-  {
-    "id": 142.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[142]::en::sNome_Funcao%/s%",
-    "value": 142.0,
-    "category": "Cámara 203"
-  },
-  {
-    "id": 143.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[143]::en::sNome_Funcao%/s%",
-    "value": 143.0,
-    "category": "Cámara 203"
-  },
-  {
-    "id": 144.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[144]::en::sNome_Funcao%/s%",
-    "value": 144.0,
-    "category": "Cámara 203"
-  },
-  {
-    "id": 145.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[145]::en::sNome_Funcao%/s%",
-    "value": 145.0,
-    "category": "Cámara 203"
-  },
-  {
-    "id": 146.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[146]::en::sNome_Funcao%/s%",
-    "value": 146.0,
-    "category": "Cámara 203"
-  },
-  {
-    "id": 147.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[147]::en::sNome_Funcao%/s%",
-    "value": 147.0,
-    "category": "Cámara 203"
-  },
-  {
-    "id": 148.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[148]::en::sNome_Funcao%/s%",
-    "value": 148.0,
-    "category": "Cámara 203"
-  },
-  {
-    "id": 149.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[149]::en::sNome_Funcao%/s%",
-    "value": 149.0,
-    "category": "Cámara 203"
-  },
-  {
-    "id": 150.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[150]::en::sNome_Funcao%/s%",
-    "value": 150.0,
-    "category": "Cámara 203"
-  },
-  {
-    "id": 151.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[151]::en::sNome_Funcao%/s%",
-    "value": 151.0,
-    "category": "Cámara 203"
-  },
-  {
-    "id": 152.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[152]::en::sNome_Funcao%/s%",
-    "value": 152.0,
-    "category": "Cámara 203"
-  },
-  {
-    "id": 153.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[153]::en::sNome_Funcao%/s%",
-    "value": 153.0,
-    "category": "Cámara 203"
-  },
-  {
-    "id": 154.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[154]::en::sNome_Funcao%/s%",
-    "value": 154.0,
-    "category": "Cámara 203"
-  },
-  {
-    "id": 155.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[155]::en::sNome_Funcao%/s%",
-    "value": 155.0,
-    "category": "Cámara 203"
-  },
-  {
-    "id": 156.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[156]::en::sNome_Funcao%/s%",
-    "value": 156.0,
-    "category": "Cámara 203"
-  },
-  {
-    "id": 157.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[157]::en::sNome_Funcao%/s%",
-    "value": 157.0,
-    "category": "Cámara 203"
-  },
-  {
-    "id": 158.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[158]::en::sNome_Funcao%/s%",
-    "value": 158.0,
-    "category": "Cámara 203"
-  },
-  {
-    "id": 159.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[159]::en::sNome_Funcao%/s%",
-    "value": 159.0,
-    "category": "Cámara 203"
-  },
-  {
-    "id": 160.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[160]::en::sNome_Funcao%/s%",
-    "value": 160.0,
-    "category": "Cámara 203"
-  },
-  {
-    "id": 161.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[161]::en::sNome_Funcao%/s%",
-    "value": 161.0,
-    "category": "Cámara 203"
-  },
-  {
-    "id": 162.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[162]::en::sNome_Funcao%/s%",
-    "value": 162.0,
-    "category": "Cámara 203"
-  },
-  {
-    "id": 163.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[163]::en::sNome_Funcao%/s%",
-    "value": 163.0,
-    "category": "Cámara 203"
-  },
-  {
-    "id": 164.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[164]::en::sNome_Funcao%/s%",
-    "value": 164.0,
-    "category": "Cámara 203"
-  },
-  {
-    "id": 165.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[165]::en::sNome_Funcao%/s%",
-    "value": 165.0,
-    "category": "Cámara 203"
-  },
-  {
-    "id": 166.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[166]::en::sNome_Funcao%/s%",
-    "value": 166.0,
-    "category": "Cámara 204"
-  },
-  {
-    "id": 167.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[167]::en::sNome_Funcao%/s%",
-    "value": 167.0,
-    "category": "Cámara 204"
-  },
-  {
-    "id": 168.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[168]::en::sNome_Funcao%/s%",
-    "value": 168.0,
-    "category": "Cámara 204"
-  },
-  {
-    "id": 169.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[169]::en::sNome_Funcao%/s%",
-    "value": 169.0,
-    "category": "Cámara 204"
-  },
-  {
-    "id": 170.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[170]::en::sNome_Funcao%/s%",
-    "value": 170.0,
-    "category": "Cámara 204"
-  },
-  {
-    "id": 171.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[171]::en::sNome_Funcao%/s%",
-    "value": 171.0,
-    "category": "Cámara 204"
-  },
-  {
-    "id": 172.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[172]::en::sNome_Funcao%/s%",
-    "value": 172.0,
-    "category": "Cámara 204"
-  },
-  {
-    "id": 173.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[173]::en::sNome_Funcao%/s%",
-    "value": 173.0,
-    "category": "Cámara 204"
-  },
-  {
-    "id": 174.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[174]::en::sNome_Funcao%/s%",
-    "value": 174.0,
-    "category": "Cámara 204"
-  },
-  {
-    "id": 175.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[175]::en::sNome_Funcao%/s%",
-    "value": 175.0,
-    "category": "Cámara 204"
-  },
-  {
-    "id": 176.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[176]::en::sNome_Funcao%/s%",
-    "value": 176.0,
-    "category": "Cámara 204"
-  },
-  {
-    "id": 177.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[177]::en::sNome_Funcao%/s%",
-    "value": 177.0,
-    "category": "Cámara 204"
-  },
-  {
-    "id": 178.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[178]::en::sNome_Funcao%/s%",
-    "value": 178.0,
-    "category": "Cámara 204"
-  },
-  {
-    "id": 179.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[179]::en::sNome_Funcao%/s%",
-    "value": 179.0,
-    "category": "Cámara 204"
-  },
-  {
-    "id": 180.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[180]::en::sNome_Funcao%/s%",
-    "value": 180.0,
-    "category": "Cámara 204"
-  },
-  {
-    "id": 181.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[181]::en::sNome_Funcao%/s%",
-    "value": 181.0,
-    "category": "Cámara 204"
-  },
-  {
-    "id": 182.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[182]::en::sNome_Funcao%/s%",
-    "value": 182.0,
-    "category": "Cámara 204"
-  },
-  {
-    "id": 183.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[183]::en::sNome_Funcao%/s%",
-    "value": 183.0,
-    "category": "Cámara 204"
-  },
-  {
-    "id": 184.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[184]::en::sNome_Funcao%/s%",
-    "value": 184.0,
-    "category": "Cámara 204"
-  },
-  {
-    "id": 185.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[185]::en::sNome_Funcao%/s%",
-    "value": 185.0,
-    "category": "Cámara 204"
-  },
-  {
-    "id": 186.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[186]::en::sNome_Funcao%/s%",
-    "value": 186.0,
-    "category": "Cámara 204"
-  },
-  {
-    "id": 187.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[187]::en::sNome_Funcao%/s%",
-    "value": 187.0,
-    "category": "Cámara 204"
-  },
-  {
-    "id": 188.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[188]::en::sNome_Funcao%/s%",
-    "value": 188.0,
-    "category": "Cámara 204"
-  },
-  {
-    "id": 189.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[189]::en::sNome_Funcao%/s%",
-    "value": 189.0,
-    "category": "Cámara 204"
-  },
-  {
-    "id": 190.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[190]::en::sNome_Funcao%/s%",
-    "value": 190.0,
-    "category": "Cámara 205"
-  },
-  {
-    "id": 191.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[191]::en::sNome_Funcao%/s%",
-    "value": 191.0,
-    "category": "Cámara 205"
-  },
-  {
-    "id": 192.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[192]::en::sNome_Funcao%/s%",
-    "value": 192.0,
-    "category": "Cámara 205"
-  },
-  {
-    "id": 193.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[193]::en::sNome_Funcao%/s%",
-    "value": 193.0,
-    "category": "Cámara 205"
-  },
-  {
-    "id": 194.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[194]::en::sNome_Funcao%/s%",
-    "value": 194.0,
-    "category": "Cámara 205"
-  },
-  {
-    "id": 195.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[195]::en::sNome_Funcao%/s%",
-    "value": 195.0,
-    "category": "Cámara 205"
-  },
-  {
-    "id": 196.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[196]::en::sNome_Funcao%/s%",
-    "value": 196.0,
-    "category": "Cámara 205"
-  },
-  {
-    "id": 197.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[197]::en::sNome_Funcao%/s%",
-    "value": 197.0,
-    "category": "Cámara 205"
-  },
-  {
-    "id": 198.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[198]::en::sNome_Funcao%/s%",
-    "value": 198.0,
-    "category": "Cámara 205"
-  },
-  {
-    "id": 199.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[199]::en::sNome_Funcao%/s%",
-    "value": 199.0,
-    "category": "Cámara 205"
-  },
-  {
-    "id": 200.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[200]::en::sNome_Funcao%/s%",
-    "value": 200.0,
-    "category": "Cámara 205"
-  },
-  {
-    "id": 201.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[201]::en::sNome_Funcao%/s%",
-    "value": 201.0,
-    "category": "Cámara 205"
-  },
-  {
-    "id": 202.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[202]::en::sNome_Funcao%/s%",
-    "value": 202.0,
-    "category": "Cámara 205"
-  },
-  {
-    "id": 203.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[203]::en::sNome_Funcao%/s%",
-    "value": 203.0,
-    "category": "Cámara 205"
-  },
-  {
-    "id": 204.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[204]::en::sNome_Funcao%/s%",
-    "value": 204.0,
-    "category": "Cámara 205"
-  },
-  {
-    "id": 205.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[205]::en::sNome_Funcao%/s%",
-    "value": 205.0,
-    "category": "Cámara 205"
-  },
-  {
-    "id": 206.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[206]::en::sNome_Funcao%/s%",
-    "value": 206.0,
-    "category": "Cámara 205"
-  },
-  {
-    "id": 207.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[207]::en::sNome_Funcao%/s%",
-    "value": 207.0,
-    "category": "Cámara 205"
-  },
-  {
-    "id": 208.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[208]::en::sNome_Funcao%/s%",
-    "value": 208.0,
-    "category": "Cámara 205"
-  },
-  {
-    "id": 209.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[209]::en::sNome_Funcao%/s%",
-    "value": 209.0,
-    "category": "Cámara 205"
-  },
-  {
-    "id": 210.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[210]::en::sNome_Funcao%/s%",
-    "value": 210.0,
-    "category": "Cámara 205"
-  },
-  {
-    "id": 211.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[211]::en::sNome_Funcao%/s%",
-    "value": 211.0,
-    "category": "Cámara 205"
-  },
-  {
-    "id": 212.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[212]::en::sNome_Funcao%/s%",
-    "value": 212.0,
-    "category": "Cámara 205"
-  },
-  {
-    "id": 213.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[213]::en::sNome_Funcao%/s%",
-    "value": 213.0,
-    "category": "Cámara 205"
-  },
-  {
     "id": 1.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[1]::en::sNome_Funcao%/s%",
+    "text": "%s%PLC1.GVL_Valvulas.valvula[]::en::sNome_Funcao%/s%",
     "value": 1.0,
-    "category": "Cámara 213"
+    "category": "Câmara 1"
   },
   {
     "id": 2.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[2]::en::sNome_Funcao%/s%",
     "value": 2.0,
-    "category": "Cámara 213"
+    "category": "Câmara 1"
   },
   {
     "id": 3.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[3]::en::sNome_Funcao%/s%",
     "value": 3.0,
-    "category": "Cámara 213"
+    "category": "Câmara 1"
   },
   {
     "id": 4.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[4]::en::sNome_Funcao%/s%",
     "value": 4.0,
-    "category": "Cámara 213"
+    "category": "Câmara 1"
   },
   {
     "id": 5.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[5]::en::sNome_Funcao%/s%",
     "value": 5.0,
-    "category": "Cámara 213"
+    "category": "Câmara 1"
   },
   {
     "id": 6.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[6]::en::sNome_Funcao%/s%",
     "value": 6.0,
-    "category": "Cámara 213"
+    "category": "Câmara 1"
   },
   {
     "id": 7.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[7]::en::sNome_Funcao%/s%",
     "value": 7.0,
-    "category": "Cámara 213"
+    "category": "Câmara 1"
   },
   {
     "id": 8.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[8]::en::sNome_Funcao%/s%",
     "value": 8.0,
-    "category": "Cámara 213"
+    "category": "Câmara 1"
   },
   {
     "id": 9.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[9]::en::sNome_Funcao%/s%",
     "value": 9.0,
-    "category": "Cámara 213"
-  },
-  {
-    "id": 10.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[10]::en::sNome_Funcao%/s%",
-    "value": 10.0,
-    "category": "Cámara 213"
-  },
-  {
-    "id": 11.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[11]::en::sNome_Funcao%/s%",
-    "value": 11.0,
-    "category": "Cámara 213"
-  },
-  {
-    "id": 12.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[12]::en::sNome_Funcao%/s%",
-    "value": 12.0,
-    "category": "Cámara 213"
-  },
-  {
-    "id": 13.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[13]::en::sNome_Funcao%/s%",
-    "value": 13.0,
-    "category": "Cámara 213"
-  },
-  {
-    "id": 14.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[14]::en::sNome_Funcao%/s%",
-    "value": 14.0,
-    "category": "Cámara 213"
-  },
-  {
-    "id": 15.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[15]::en::sNome_Funcao%/s%",
-    "value": 15.0,
-    "category": "Cámara 213"
-  },
-  {
-    "id": 16.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[16]::en::sNome_Funcao%/s%",
-    "value": 16.0,
-    "category": "Cámara 213"
-  },
-  {
-    "id": 17.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[17]::en::sNome_Funcao%/s%",
-    "value": 17.0,
-    "category": "Cámara 213"
-  },
-  {
-    "id": 18.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[18]::en::sNome_Funcao%/s%",
-    "value": 18.0,
-    "category": "Cámara 213"
+    "category": "Câmara 1"
   },
   {
     "id": 19.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[19]::en::sNome_Funcao%/s%",
     "value": 19.0,
-    "category": "Cámara 213"
+    "category": "Câmara 2"
   },
   {
     "id": 20.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[20]::en::sNome_Funcao%/s%",
     "value": 20.0,
-    "category": "Cámara 213"
+    "category": "Câmara 2"
   },
   {
     "id": 21.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[21]::en::sNome_Funcao%/s%",
     "value": 21.0,
-    "category": "Cámara 213"
+    "category": "Câmara 2"
   },
   {
     "id": 22.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[22]::en::sNome_Funcao%/s%",
     "value": 22.0,
-    "category": "Cámara 213"
+    "category": "Câmara 2"
   },
   {
     "id": 23.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[23]::en::sNome_Funcao%/s%",
     "value": 23.0,
-    "category": "Cámara 213"
+    "category": "Câmara 2"
   },
   {
     "id": 24.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[24]::en::sNome_Funcao%/s%",
     "value": 24.0,
-    "category": "Cámara 213"
+    "category": "Câmara 2"
   },
   {
     "id": 25.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[25]::en::sNome_Funcao%/s%",
     "value": 25.0,
-    "category": "Cámara 213"
+    "category": "Câmara 2"
   },
   {
     "id": 26.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[26]::en::sNome_Funcao%/s%",
     "value": 26.0,
-    "category": "Cámara 213"
+    "category": "Câmara 2"
   },
   {
     "id": 27.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[27]::en::sNome_Funcao%/s%",
     "value": 27.0,
-    "category": "Cámara 213"
-  },
-  {
-    "id": 28.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[28]::en::sNome_Funcao%/s%",
-    "value": 28.0,
-    "category": "Cámara 213"
-  },
-  {
-    "id": 29.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[29]::en::sNome_Funcao%/s%",
-    "value": 29.0,
-    "category": "Cámara 213"
-  },
-  {
-    "id": 30.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[30]::en::sNome_Funcao%/s%",
-    "value": 30.0,
-    "category": "Cámara 213"
-  },
-  {
-    "id": 31.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[31]::en::sNome_Funcao%/s%",
-    "value": 31.0,
-    "category": "Cámara 213"
-  },
-  {
-    "id": 32.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[32]::en::sNome_Funcao%/s%",
-    "value": 32.0,
-    "category": "Cámara 213"
-  },
-  {
-    "id": 33.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[33]::en::sNome_Funcao%/s%",
-    "value": 33.0,
-    "category": "Cámara 213"
-  },
-  {
-    "id": 34.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[34]::en::sNome_Funcao%/s%",
-    "value": 34.0,
-    "category": "Cámara 213"
-  },
-  {
-    "id": 35.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[35]::en::sNome_Funcao%/s%",
-    "value": 35.0,
-    "category": "Cámara 213"
-  },
-  {
-    "id": 36.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[36]::en::sNome_Funcao%/s%",
-    "value": 36.0,
-    "category": "Cámara 213"
+    "category": "Câmara 2"
   },
   {
     "id": 37.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[37]::en::sNome_Funcao%/s%",
     "value": 37.0,
-    "category": "Cámara 214"
+    "category": "Câmara 3"
   },
   {
     "id": 38.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[38]::en::sNome_Funcao%/s%",
+    "text": "%s%PLC1.GVL_Valvulas.valvula[1]38::en::sNome_Funcao%/s%",
     "value": 38.0,
-    "category": "Cámara 214"
+    "category": "Câmara 3"
   },
   {
     "id": 39.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[39]::en::sNome_Funcao%/s%",
     "value": 39.0,
-    "category": "Cámara 214"
+    "category": "Câmara 3"
   },
   {
     "id": 40.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[40]::en::sNome_Funcao%/s%",
     "value": 40.0,
-    "category": "Cámara 214"
+    "category": "Câmara 3"
   },
   {
     "id": 41.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[41]::en::sNome_Funcao%/s%",
     "value": 41.0,
-    "category": "Cámara 214"
+    "category": "Câmara 3"
   },
   {
     "id": 42.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[42]::en::sNome_Funcao%/s%",
     "value": 42.0,
-    "category": "Cámara 214"
+    "category": "Câmara 3"
   },
   {
     "id": 43.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[43]::en::sNome_Funcao%/s%",
     "value": 43.0,
-    "category": "Cámara 214"
+    "category": "Câmara 3"
   },
   {
     "id": 44.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[44]::en::sNome_Funcao%/s%",
     "value": 44.0,
-    "category": "Cámara 214"
+    "category": "Câmara 3"
   },
   {
     "id": 45.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[45]::en::sNome_Funcao%/s%",
     "value": 45.0,
-    "category": "Cámara 214"
-  },
-  {
-    "id": 46.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[46]::en::sNome_Funcao%/s%",
-    "value": 46.0,
-    "category": "Cámara 214"
-  },
-  {
-    "id": 47.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[47]::en::sNome_Funcao%/s%",
-    "value": 47.0,
-    "category": "Cámara 214"
-  },
-  {
-    "id": 48.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[48]::en::sNome_Funcao%/s%",
-    "value": 48.0,
-    "category": "Cámara 214"
-  },
-  {
-    "id": 49.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[49]::en::sNome_Funcao%/s%",
-    "value": 49.0,
-    "category": "Cámara 214"
-  },
-  {
-    "id": 50.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[50]::en::sNome_Funcao%/s%",
-    "value": 50.0,
-    "category": "Cámara 214"
-  },
-  {
-    "id": 51.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[51]::en::sNome_Funcao%/s%",
-    "value": 51.0,
-    "category": "Cámara 214"
-  },
-  {
-    "id": 52.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[52]::en::sNome_Funcao%/s%",
-    "value": 52.0,
-    "category": "Cámara 214"
-  },
-  {
-    "id": 53.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[53]::en::sNome_Funcao%/s%",
-    "value": 53.0,
-    "category": "Cámara 214"
-  },
-  {
-    "id": 54.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[54]::en::sNome_Funcao%/s%",
-    "value": 54.0,
-    "category": "Cámara 214"
+    "category": "Câmara 3"
   },
   {
     "id": 55.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[55]::en::sNome_Funcao%/s%",
     "value": 55.0,
-    "category": "Cámara 214"
+    "category": "Câmara 4"
   },
   {
     "id": 56.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[56]::en::sNome_Funcao%/s%",
     "value": 56.0,
-    "category": "Cámara 214"
+    "category": "Câmara 4"
   },
   {
     "id": 57.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[57]::en::sNome_Funcao%/s%",
     "value": 57.0,
-    "category": "Cámara 214"
+    "category": "Câmara 4"
   },
   {
     "id": 58.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[58]::en::sNome_Funcao%/s%",
     "value": 58.0,
-    "category": "Cámara 214"
+    "category": "Câmara 4"
   },
   {
     "id": 59.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[59]::en::sNome_Funcao%/s%",
     "value": 59.0,
-    "category": "Cámara 214"
+    "category": "Câmara 4"
   },
   {
     "id": 60.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[60]::en::sNome_Funcao%/s%",
     "value": 60.0,
-    "category": "Cámara 214"
+    "category": "Câmara 4"
   },
   {
     "id": 61.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[61]::en::sNome_Funcao%/s%",
     "value": 61.0,
-    "category": "Cámara 214"
+    "category": "Câmara 4"
   },
   {
     "id": 62.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[62]::en::sNome_Funcao%/s%",
     "value": 62.0,
-    "category": "Cámara 214"
+    "category": "Câmara 4"
   },
   {
     "id": 63.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[63]::en::sNome_Funcao%/s%",
     "value": 63.0,
-    "category": "Cámara 214"
-  },
-  {
-    "id": 64.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[64]::en::sNome_Funcao%/s%",
-    "value": 64.0,
-    "category": "Cámara 214"
-  },
-  {
-    "id": 65.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[65]::en::sNome_Funcao%/s%",
-    "value": 65.0,
-    "category": "Cámara 214"
-  },
-  {
-    "id": 66.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[66]::en::sNome_Funcao%/s%",
-    "value": 66.0,
-    "category": "Cámara 214"
-  },
-  {
-    "id": 67.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[67]::en::sNome_Funcao%/s%",
-    "value": 67.0,
-    "category": "Cámara 214"
-  },
-  {
-    "id": 68.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[68]::en::sNome_Funcao%/s%",
-    "value": 68.0,
-    "category": "Cámara 214"
-  },
-  {
-    "id": 69.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[69]::en::sNome_Funcao%/s%",
-    "value": 69.0,
-    "category": "Cámara 214"
-  },
-  {
-    "id": 70.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[70]::en::sNome_Funcao%/s%",
-    "value": 70.0,
-    "category": "Cámara 214"
-  },
-  {
-    "id": 71.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[71]::en::sNome_Funcao%/s%",
-    "value": 71.0,
-    "category": "Cámara 214"
-  },
-  {
-    "id": 72.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[72]::en::sNome_Funcao%/s%",
-    "value": 72.0,
-    "category": "Cámara 214"
+    "category": "Câmara 4"
   },
   {
     "id": 73.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[73]::en::sNome_Funcao%/s%",
     "value": 73.0,
-    "category": "Cámara 215"
+    "category": "Câmara 5"
   },
   {
     "id": 74.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[74]::en::sNome_Funcao%/s%",
     "value": 74.0,
-    "category": "Cámara 215"
+    "category": "Câmara 5"
   },
   {
     "id": 75.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[75]::en::sNome_Funcao%/s%",
     "value": 75.0,
-    "category": "Cámara 215"
+    "category": "Câmara 5"
   },
   {
     "id": 76.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[76]::en::sNome_Funcao%/s%",
     "value": 76.0,
-    "category": "Cámara 215"
+    "category": "Câmara 5"
   },
   {
     "id": 77.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[77]::en::sNome_Funcao%/s%",
     "value": 77.0,
-    "category": "Cámara 215"
+    "category": "Câmara 5"
   },
   {
     "id": 78.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[78]::en::sNome_Funcao%/s%",
     "value": 78.0,
-    "category": "Cámara 215"
+    "category": "Câmara 5"
   },
   {
     "id": 79.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[79]::en::sNome_Funcao%/s%",
     "value": 79.0,
-    "category": "Cámara 215"
+    "category": "Câmara 5"
   },
   {
     "id": 80.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[80]::en::sNome_Funcao%/s%",
     "value": 80.0,
-    "category": "Cámara 215"
+    "category": "Câmara 5"
   },
   {
     "id": 81.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[81]::en::sNome_Funcao%/s%",
     "value": 81.0,
-    "category": "Cámara 215"
+    "category": "Câmara 5"
   },
   {
     "id": 82.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[82]::en::sNome_Funcao%/s%",
-    "value": 82.0,
-    "category": "Cámara 215"
-  },
-  {
-    "id": 83.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[83]::en::sNome_Funcao%/s%",
     "value": 83.0,
-    "category": "Cámara 215"
-  },
-  {
-    "id": 84.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[84]::en::sNome_Funcao%/s%",
-    "value": 84.0,
-    "category": "Cámara 215"
-  },
-  {
-    "id": 85.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[85]::en::sNome_Funcao%/s%",
-    "value": 85.0,
-    "category": "Cámara 215"
-  },
-  {
-    "id": 86.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[86]::en::sNome_Funcao%/s%",
-    "value": 86.0,
-    "category": "Cámara 215"
-  },
-  {
-    "id": 87.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[87]::en::sNome_Funcao%/s%",
-    "value": 87.0,
-    "category": "Cámara 215"
-  },
-  {
-    "id": 88.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[88]::en::sNome_Funcao%/s%",
-    "value": 88.0,
-    "category": "Cámara 215"
-  },
-  {
-    "id": 89.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[89]::en::sNome_Funcao%/s%",
-    "value": 89.0,
-    "category": "Cámara 215"
-  },
-  {
-    "id": 90.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[90]::en::sNome_Funcao%/s%",
-    "value": 90.0,
-    "category": "Cámara 215"
-  },
-  {
-    "id": 91.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[91]::en::sNome_Funcao%/s%",
-    "value": 91.0,
-    "category": "Cámara 215"
-  },
-  {
-    "id": 92.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[92]::en::sNome_Funcao%/s%",
-    "value": 92.0,
-    "category": "Cámara 215"
-  },
-  {
-    "id": 93.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[93]::en::sNome_Funcao%/s%",
-    "value": 93.0,
-    "category": "Cámara 215"
-  },
-  {
-    "id": 94.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[94]::en::sNome_Funcao%/s%",
-    "value": 94.0,
-    "category": "Cámara 215"
+    "category": "Câmara 5"
   },
   {
     "id": 95.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[95]::en::sNome_Funcao%/s%",
     "value": 95.0,
-    "category": "Cámara 215"
+    "category": "Câmara 6"
   },
   {
     "id": 96.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[96]::en::sNome_Funcao%/s%",
     "value": 96.0,
-    "category": "Cámara 215"
+    "category": "Câmara 6"
   },
   {
     "id": 97.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[97]::en::sNome_Funcao%/s%",
     "value": 97.0,
-    "category": "Cámara 216"
+    "category": "Câmara 6"
   },
   {
     "id": 98.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[98]::en::sNome_Funcao%/s%",
     "value": 98.0,
-    "category": "Cámara 216"
-  },
-  {
-    "id": 99.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[99]::en::sNome_Funcao%/s%",
-    "value": 99.0,
-    "category": "Cámara 216"
+    "category": "Câmara 6"
   },
   {
     "id": 100.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[100]::en::sNome_Funcao%/s%",
     "value": 100.0,
-    "category": "Cámara 216"
+    "category": "Câmara 6"
   },
   {
     "id": 101.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[101]::en::sNome_Funcao%/s%",
     "value": 101.0,
-    "category": "Cámara 216"
+    "category": "Câmara 6"
   },
   {
     "id": 102.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[102]::en::sNome_Funcao%/s%",
     "value": 102.0,
-    "category": "Cámara 216"
+    "category": "Câmara 6"
   },
   {
     "id": 103.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[103]::en::sNome_Funcao%/s%",
     "value": 103.0,
-    "category": "Cámara 216"
+    "category": "Câmara 6"
   },
   {
     "id": 104.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[104]::en::sNome_Funcao%/s%",
     "value": 104.0,
-    "category": "Cámara 216"
+    "category": "Câmara 6"
   },
   {
     "id": 105.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[105]::en::sNome_Funcao%/s%",
     "value": 105.0,
-    "category": "Cámara 216"
-  },
-  {
-    "id": 106.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[106]::en::sNome_Funcao%/s%",
-    "value": 106.0,
-    "category": "Cámara 216"
-  },
-  {
-    "id": 107.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[107]::en::sNome_Funcao%/s%",
-    "value": 107.0,
-    "category": "Cámara 216"
-  },
-  {
-    "id": 108.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[108]::en::sNome_Funcao%/s%",
-    "value": 108.0,
-    "category": "Cámara 216"
-  },
-  {
-    "id": 109.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[109]::en::sNome_Funcao%/s%",
-    "value": 109.0,
-    "category": "Cámara 216"
-  },
-  {
-    "id": 110.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[110]::en::sNome_Funcao%/s%",
-    "value": 110.0,
-    "category": "Cámara 216"
-  },
-  {
-    "id": 111.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[111]::en::sNome_Funcao%/s%",
-    "value": 111.0,
-    "category": "Cámara 216"
-  },
-  {
-    "id": 112.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[112]::en::sNome_Funcao%/s%",
-    "value": 112.0,
-    "category": "Cámara 216"
-  },
-  {
-    "id": 113.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[113]::en::sNome_Funcao%/s%",
-    "value": 113.0,
-    "category": "Cámara 216"
-  },
-  {
-    "id": 114.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[114]::en::sNome_Funcao%/s%",
-    "value": 114.0,
-    "category": "Cámara 216"
-  },
-  {
-    "id": 115.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[115]::en::sNome_Funcao%/s%",
-    "value": 115.0,
-    "category": "Cámara 216"
-  },
-  {
-    "id": 116.0,
-    "text": "%s%PLC1.GVL_Valvulas.valvula[116]::en::sNome_Funcao%/s%",
-    "value": 116.0,
-    "category": "Cámara 216"
+    "category": "Câmara 6"
   },
   {
     "id": 117.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[117]::en::sNome_Funcao%/s%",
     "value": 117.0,
-    "category": "Cámara 216"
+    "category": "Câmara 7"
   },
   {
     "id": 118.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[118]::en::sNome_Funcao%/s%",
     "value": 118.0,
-    "category": "Cámara 216"
+    "category": "Câmara 7"
   },
   {
     "id": 119.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[119]::en::sNome_Funcao%/s%",
     "value": 119.0,
-    "category": "Cámara 216"
+    "category": "Câmara 7"
   },
   {
     "id": 120.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[120]::en::sNome_Funcao%/s%",
     "value": 120.0,
-    "category": "Cámara 216"
+    "category": "Câmara 7"
   },
   {
     "id": 121.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[121]::en::sNome_Funcao%/s%",
     "value": 121.0,
-    "category": "Cámara 216"
+    "category": "Câmara 7"
   },
   {
     "id": 122.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[122]::en::sNome_Funcao%/s%",
     "value": 122.0,
-    "category": "Cámara 216"
+    "category": "Câmara 7"
   },
   {
     "id": 123.0,
     "text": "%s%PLC1.GVL_Valvulas.valvula[123]::en::sNome_Funcao%/s%",
     "value": 123.0,
-    "category": "Cámara 216"
+    "category": "Câmara 7"
+  },
+  {
+    "id": 124.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[124]::en::sNome_Funcao%/s%",
+    "value": 124.0,
+    "category": "Câmara 7"
+  },
+  {
+    "id": 125.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[125]::en::sNome_Funcao%/s%",
+    "value": 125.0,
+    "category": "Câmara 7"
+  },
+  {
+    "id": 126.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[126]::en::sNome_Funcao%/s%",
+    "value": 126.0,
+    "category": "Câmara 7"
+  },
+  {
+    "id": 127.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[127]::en::sNome_Funcao%/s%",
+    "value": 127.0,
+    "category": "Câmara 7"
+  },
+  {
+    "id": 139.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[139]::en::sNome_Funcao%/s%",
+    "value": 139.0,
+    "category": "Câmara 8"
+  },
+  {
+    "id": 139.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[139]::en::sNome_Funcao%/s%",
+    "value": 139.0,
+    "category": "Câmara 8"
+  },
+  {
+    "id": 140.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[140]::en::sNome_Funcao%/s%",
+    "value": 140.0,
+    "category": "Câmara 8"
+  },
+  {
+    "id": 141.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[141]::en::sNome_Funcao%/s%",
+    "value": 141.0,
+    "category": "Câmara 8"
+  },
+  {
+    "id": 142.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[142]::en::sNome_Funcao%/s%",
+    "value": 142.0,
+    "category": "Câmara 8"
+  },
+  {
+    "id": 143.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[143]::en::sNome_Funcao%/s%",
+    "value": 143.0,
+    "category": "Câmara 8"
+  },
+  {
+    "id": 144.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[144]::en::sNome_Funcao%/s%",
+    "value": 145.0,
+    "category": "Câmara 8"
+  },
+  {
+    "id": 146.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[146]::en::sNome_Funcao%/s%",
+    "value": 146.0,
+    "category": "Câmara 8"
+  },
+  {
+    "id": 147.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[147]::en::sNome_Funcao%/s%",
+    "value": 147.0,
+    "category": "Câmara 8"
+  },
+  {
+    "id": 148.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[148]::en::sNome_Funcao%/s%",
+    "value": 148.0,
+    "category": "Câmara 8"
+  },
+  {
+    "id": 160.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[160]::en::sNome_Funcao%/s%",
+    "value": 160.0,
+    "category": "Câmara 9"
+  },
+  {
+    "id": 161.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[161]::en::sNome_Funcao%/s%",
+    "value": 161.0,
+    "category": "Câmara 9"
+  },
+  {
+    "id": 162.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[162]::en::sNome_Funcao%/s%",
+    "value": 162.0,
+    "category": "Câmara 9"
+  },
+  {
+    "id": 163.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[163]::en::sNome_Funcao%/s%",
+    "value": 163.0,
+    "category": "Câmara 9"
+  },
+  {
+    "id": 164.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[164]::en::sNome_Funcao%/s%",
+    "value": 164.0,
+    "category": "Câmara 9"
+  },
+  {
+    "id": 165.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[165]::en::sNome_Funcao%/s%",
+    "value": 165.0,
+    "category": "Câmara 9"
+  },
+  {
+    "id": 166.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[166]::en::sNome_Funcao%/s%",
+    "value": 166.0,
+    "category": "Câmara "
+  },
+  {
+    "id": 167.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[167]::en::sNome_Funcao%/s%",
+    "value": 167.0,
+    "category": "Câmara 9"
+  },
+  {
+    "id": 168.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[168]::en::sNome_Funcao%/s%",
+    "value": 168.0,
+    "category": "Câmara 9"
+  },
+  {
+    "id": 169.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[169]::en::sNome_Funcao%/s%",
+    "value": 169.0,
+    "category": "Câmara 9"
+  },
+  {
+    "id": 180.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[180]::en::sNome_Funcao%/s%",
+    "value": 180.0,
+    "category": "Câmara 10"
+  },
+  {
+    "id": 181.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[181]::en::sNome_Funcao%/s%",
+    "value": 181.0,
+    "category": "Câmara 10"
+  },
+  {
+    "id": 182.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[182]::en::sNome_Funcao%/s%",
+    "value": 182.0,
+    "category": "Câmara 10"
+  },
+  {
+    "id": 183.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[183]::en::sNome_Funcao%/s%",
+    "value": 183.0,
+    "category": "Câmara 10"
+  },
+  {
+    "id": 184.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[184]::en::sNome_Funcao%/s%",
+    "value": 184.0,
+    "category": "Câmara 10"
+  },
+  {
+    "id": 185.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[185]::en::sNome_Funcao%/s%",
+    "value": 185.0,
+    "category": "Câmara 10"
+  },
+  {
+    "id": 186.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[186]::en::sNome_Funcao%/s%",
+    "value": 186.0,
+    "category": "Câmara 10"
+  },
+  {
+    "id": 187.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[187]::en::sNome_Funcao%/s%",
+    "value": 187.0,
+    "category": "Câmara 10"
+  },
+  {
+    "id": 188.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[188]::en::sNome_Funcao%/s%",
+    "value": 188.0,
+    "category": "Câmara 10"
+  },
+  {
+    "id": 189.0,
+    "text": "%s%PLC1.GVL_Valvulas.valvula[189]::en::sNome_Funcao%/s%",
+    "value": 189.0,
+    "category": "Câmara 10"
   }
 ]
 </script>
 </div>
-<div id="UcPopUpValvulas_2" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-escolhe="False" data-tchmi-height="300" data-tchmi-height-unit="px" data-tchmi-left="170" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Popup/ucPopUpValvulas.usercontrol" data-tchmi-top="1096" data-tchmi-top-unit="px" data-tchmi-width="600" data-tchmi-width-unit="px">
+<div id="UcPopUpValvulas_2" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-escolhe="False" data-tchmi-height="300" data-tchmi-height-unit="px" data-tchmi-left="-78" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Popup/ucPopUpValvulas.usercontrol" data-tchmi-top="1145" data-tchmi-top-unit="px" data-tchmi-width="600" data-tchmi-width-unit="px">
+</div>
+<div id="UcPopUpSensorDigital_2" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="260" data-tchmi-height-unit="px" data-tchmi-left="1150" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Popup/ucPopUpSensorDigital.usercontrol" data-tchmi-top="1117" data-tchmi-top-unit="px" data-tchmi-width="550" data-tchmi-width-unit="px">
+</div>
+<div id="UcPopUpMotores_2" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-escolhe="False" data-tchmi-height="470" data-tchmi-height-unit="px" data-tchmi-left="-157" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Popup/Motor/ucPopUpMotores.usercontrol" data-tchmi-top="1480" data-tchmi-top-unit="px" data-tchmi-width="750" data-tchmi-width-unit="px">
 </div>
 </div>

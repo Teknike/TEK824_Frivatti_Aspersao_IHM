@@ -92,6 +92,14 @@
             "minItems": 101,
             "type": "array"
         },
+        "PLC1.ARRAY_0..100_OF-Teknike_Sensores.st_SensorAnalogico": {
+            "items": {
+                "$ref": "#/definitions/PLC1.Teknike_Sensores.st_SensorAnalogico"
+            },
+            "maxItems": 101,
+            "minItems": 101,
+            "type": "array"
+        },
         "PLC1.ARRAY_0..100_OF-stCamara": {
             "items": {
                 "$ref": "#/definitions/PLC1.stCamara"
@@ -585,6 +593,14 @@
             "minItems": 3,
             "type": "array"
         },
+        "PLC1.ARRAY_0..2_OF-TcSerializedSourceInfoType": {
+            "items": {
+                "$ref": "#/definitions/PLC1.TcSerializedSourceInfoType"
+            },
+            "maxItems": 3,
+            "minItems": 3,
+            "type": "array"
+        },
         "PLC1.ARRAY_0..2_OF-Teknike_Aspersao.FB_PIDeGrafico": {
             "items": {
                 "$ref": "#/definitions/PLC1.Teknike_Aspersao.FB_PIDeGrafico"
@@ -1053,6 +1069,14 @@
             "minItems": 71,
             "type": "array"
         },
+        "PLC1.ARRAY_0..7_OF-BYTE": {
+            "items": {
+                "$ref": "tchmi:general#/definitions/BYTE"
+            },
+            "maxItems": 8,
+            "minItems": 8,
+            "type": "array"
+        },
         "PLC1.ARRAY_0..8_OF-STRING-50": {
             "items": {
                 "allOf": [
@@ -1166,6 +1190,24 @@
             "startOffset": 1,
             "type": "array"
         },
+        "PLC1.ARRAY_1..11_OF-Tc2_ModbusSrv.FB_MBReadRegs": {
+            "items": {
+                "$ref": "#/definitions/PLC1.Tc2_ModbusSrv.FB_MBReadRegs"
+            },
+            "maxItems": 11,
+            "minItems": 11,
+            "startOffset": 1,
+            "type": "array"
+        },
+        "PLC1.ARRAY_1..11_OF-Teknike_Partidas.st_ReadWriteREG": {
+            "items": {
+                "$ref": "#/definitions/PLC1.Teknike_Partidas.st_ReadWriteREG"
+            },
+            "maxItems": 11,
+            "minItems": 11,
+            "startOffset": 1,
+            "type": "array"
+        },
         "PLC1.ARRAY_1..126_OF-BOOL": {
             "items": {
                 "$ref": "tchmi:general#/definitions/BOOL"
@@ -1236,6 +1278,24 @@
             "startOffset": 1,
             "type": "array"
         },
+        "PLC1.ARRAY_1..20_OF-Teknike_Partidas.FB_ComunicacaoEthernet": {
+            "items": {
+                "$ref": "#/definitions/PLC1.Teknike_Partidas.FB_ComunicacaoEthernet"
+            },
+            "maxItems": 20,
+            "minItems": 20,
+            "startOffset": 1,
+            "type": "array"
+        },
+        "PLC1.ARRAY_1..20_OF-Teknike_SQL.FB_BDMotores": {
+            "items": {
+                "$ref": "#/definitions/PLC1.Teknike_SQL.FB_BDMotores"
+            },
+            "maxItems": 20,
+            "minItems": 20,
+            "startOffset": 1,
+            "type": "array"
+        },
         "PLC1.ARRAY_1..220_OF-Teknike_Partidas.FB_DeltaMS": {
             "items": {
                 "$ref": "#/definitions/PLC1.Teknike_Partidas.FB_DeltaMS"
@@ -1281,6 +1341,15 @@
             "startOffset": 1,
             "type": "array"
         },
+        "PLC1.ARRAY_1..22_OF-Tc2_Standard.F_TRIG": {
+            "items": {
+                "$ref": "#/definitions/PLC1.Tc2_Standard.F_TRIG"
+            },
+            "maxItems": 22,
+            "minItems": 22,
+            "startOffset": 1,
+            "type": "array"
+        },
         "PLC1.ARRAY_1..2_OF-BOOL": {
             "items": {
                 "$ref": "tchmi:general#/definitions/BOOL"
@@ -1299,9 +1368,27 @@
             "startOffset": 1,
             "type": "array"
         },
+        "PLC1.ARRAY_1..2_OF-Tc2_ModbusSrv.FB_MBWriteSingleReg": {
+            "items": {
+                "$ref": "#/definitions/PLC1.Tc2_ModbusSrv.FB_MBWriteSingleReg"
+            },
+            "maxItems": 2,
+            "minItems": 2,
+            "startOffset": 1,
+            "type": "array"
+        },
         "PLC1.ARRAY_1..2_OF-Teknike_Intralogistica.ST_SaidaSorter": {
             "items": {
                 "$ref": "#/definitions/PLC1.Teknike_Intralogistica.ST_SaidaSorter"
+            },
+            "maxItems": 2,
+            "minItems": 2,
+            "startOffset": 1,
+            "type": "array"
+        },
+        "PLC1.ARRAY_1..2_OF-Teknike_Partidas.st_ReadWriteREG": {
+            "items": {
+                "$ref": "#/definitions/PLC1.Teknike_Partidas.st_ReadWriteREG"
             },
             "maxItems": 2,
             "minItems": 2,
@@ -1426,6 +1513,42 @@
         "PLC1.ARRAY_1..7_OF-ST_SaidaControleValvulaValvulaSDC": {
             "items": {
                 "$ref": "#/definitions/PLC1.ST_SaidaControleValvulaValvulaSDC"
+            },
+            "maxItems": 7,
+            "minItems": 7,
+            "startOffset": 1,
+            "type": "array"
+        },
+        "PLC1.ARRAY_1..7_OF-Tc2_ModbusSrv.FB_MBReadRegs": {
+            "items": {
+                "$ref": "#/definitions/PLC1.Tc2_ModbusSrv.FB_MBReadRegs"
+            },
+            "maxItems": 7,
+            "minItems": 7,
+            "startOffset": 1,
+            "type": "array"
+        },
+        "PLC1.ARRAY_1..7_OF-Tc2_ModbusSrv.FB_MBWriteSingleReg": {
+            "items": {
+                "$ref": "#/definitions/PLC1.Tc2_ModbusSrv.FB_MBWriteSingleReg"
+            },
+            "maxItems": 7,
+            "minItems": 7,
+            "startOffset": 1,
+            "type": "array"
+        },
+        "PLC1.ARRAY_1..7_OF-Teknike_Partidas.ConversaoBilateralConfig": {
+            "items": {
+                "$ref": "#/definitions/PLC1.Teknike_Partidas.ConversaoBilateralConfig"
+            },
+            "maxItems": 7,
+            "minItems": 7,
+            "startOffset": 1,
+            "type": "array"
+        },
+        "PLC1.ARRAY_1..7_OF-Teknike_Partidas.st_ReadWriteREG": {
+            "items": {
+                "$ref": "#/definitions/PLC1.Teknike_Partidas.st_ReadWriteREG"
             },
             "maxItems": 7,
             "minItems": 7,
@@ -1850,6 +1973,51 @@
             },
             "type": "object"
         },
+        "PLC1.GUID": {
+            "properties": {
+                "Data1": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/DWORD"
+                        },
+                        {
+                            "propertyOrder": 1
+                        }
+                    ]
+                },
+                "Data2": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/WORD"
+                        },
+                        {
+                            "propertyOrder": 2
+                        }
+                    ]
+                },
+                "Data3": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/WORD"
+                        },
+                        {
+                            "propertyOrder": 3
+                        }
+                    ]
+                },
+                "Data4": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.ARRAY_0..7_OF-BYTE"
+                        },
+                        {
+                            "propertyOrder": 4
+                        }
+                    ]
+                }
+            },
+            "type": "object"
+        },
         "PLC1.OSCAT_AixOCAT.B_TRIG": {
             "properties": {
                 "CLK": {
@@ -2157,6 +2325,16 @@
                 }
             ]
         },
+        "PLC1.PROPERTY-GET-Tc3_EventLogger.I_TcSourceInfo": {
+            "allOf": [
+                {
+                    "$ref": "#/definitions/PLC1.Tc3_EventLogger.I_TcSourceInfo"
+                },
+                {
+                    "function": true
+                }
+            ]
+        },
         "PLC1.PROPERTY-GET-TcEventSeverity": {
             "allOf": [
                 {
@@ -2210,6 +2388,16 @@
                 }
             ]
         },
+        "PLC1.REFERENCE-TO-REAL": {
+            "allOf": [
+                {
+                    "allowImplicitAccess": false
+                },
+                {
+                    "$ref": "tchmi:general#/definitions/REAL"
+                }
+            ]
+        },
         "PLC1.REFERENCE-TO-Tc2_ControllerToolbox.ST_CTRL_PID_PARAMS": {
             "allOf": [
                 {
@@ -2250,6 +2438,16 @@
                 }
             ]
         },
+        "PLC1.REFERENCE-TO-Teknike_Partidas.ConfigComunicacaoEthernet": {
+            "allOf": [
+                {
+                    "allowImplicitAccess": false
+                },
+                {
+                    "$ref": "#/definitions/PLC1.Teknike_Partidas.ConfigComunicacaoEthernet"
+                }
+            ]
+        },
         "PLC1.REFERENCE-TO-Teknike_Partidas.st_LinkDeltaEIP": {
             "allOf": [
                 {
@@ -2267,6 +2465,16 @@
                 },
                 {
                     "$ref": "#/definitions/PLC1.Teknike_Partidas.st_Partida"
+                }
+            ]
+        },
+        "PLC1.REFERENCE-TO-UINT": {
+            "allOf": [
+                {
+                    "allowImplicitAccess": false
+                },
+                {
+                    "$ref": "tchmi:general#/definitions/UINT"
                 }
             ]
         },
@@ -4170,6 +4378,268 @@
             ],
             "type": "integer"
         },
+        "PLC1.Tc2_ModbusSrv.FB_MBReadRegs": {
+            "attributes": {
+                "hide_all_locals": ""
+            },
+            "properties": {
+                "bBusy": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 10
+                        }
+                    ]
+                },
+                "bError": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 11
+                        }
+                    ]
+                },
+                "bExecute": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "comment": "Rising edge at this input starts command execution",
+                            "propertyOrder": 8
+                        }
+                    ]
+                },
+                "cbLength": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/UDINT"
+                        },
+                        {
+                            "comment": "Max. byte size of destination buffer",
+                            "propertyOrder": 6
+                        }
+                    ]
+                },
+                "cbRead": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/UDINT"
+                        },
+                        {
+                            "propertyOrder": 13
+                        }
+                    ]
+                },
+                "nErrId": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/UDINT"
+                        },
+                        {
+                            "propertyOrder": 12
+                        }
+                    ]
+                },
+                "nMBAddr": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/WORD"
+                        },
+                        {
+                            "comment": "Address of start register (data word offset)",
+                            "propertyOrder": 5
+                        }
+                    ]
+                },
+                "nQuantity": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/WORD"
+                        },
+                        {
+                            "comment": "Number of registers to read (data words)",
+                            "propertyOrder": 4
+                        }
+                    ]
+                },
+                "nTCPPort": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/UINT"
+                        },
+                        {
+                            "comment": "Port number of the target device",
+                            "propertyOrder": 2
+                        }
+                    ]
+                },
+                "nUnitID": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BYTE"
+                        },
+                        {
+                            "comment": "Identification number of a serial sub-network device",
+                            "propertyOrder": 3
+                        }
+                    ]
+                },
+                "pDestAddr": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.POINTER-TO-BYTE"
+                        },
+                        {
+                            "comment": "Pointer to destination buffer",
+                            "propertyOrder": 7
+                        }
+                    ]
+                },
+                "sIPAddr": {
+                    "allOf": [
+                        {
+                            "comment": "IPv4 address of the target device",
+                            "maxLength": 15,
+                            "propertyOrder": 1
+                        },
+                        {
+                            "$ref": "tchmi:general#/definitions/String"
+                        }
+                    ]
+                },
+                "tTimeout": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/TIME"
+                        },
+                        {
+                            "propertyOrder": 9
+                        }
+                    ]
+                }
+            },
+            "type": "object"
+        },
+        "PLC1.Tc2_ModbusSrv.FB_MBWriteSingleReg": {
+            "attributes": {
+                "hide_all_locals": ""
+            },
+            "properties": {
+                "bBusy": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 8
+                        }
+                    ]
+                },
+                "bError": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 9
+                        }
+                    ]
+                },
+                "bExecute": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "comment": "Rising edge at this input starts command execution",
+                            "propertyOrder": 6
+                        }
+                    ]
+                },
+                "nErrId": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/UDINT"
+                        },
+                        {
+                            "propertyOrder": 10
+                        }
+                    ]
+                },
+                "nMBAddr": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/WORD"
+                        },
+                        {
+                            "comment": "Register address (data word offset)",
+                            "propertyOrder": 4
+                        }
+                    ]
+                },
+                "nTCPPort": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/UINT"
+                        },
+                        {
+                            "comment": "Port number of the target device",
+                            "propertyOrder": 2
+                        }
+                    ]
+                },
+                "nUnitID": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BYTE"
+                        },
+                        {
+                            "comment": "Identification number of a serial sub-network device",
+                            "propertyOrder": 3
+                        }
+                    ]
+                },
+                "nValue": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/WORD"
+                        },
+                        {
+                            "comment": "New register value (16 bit)",
+                            "propertyOrder": 5
+                        }
+                    ]
+                },
+                "sIPAddr": {
+                    "allOf": [
+                        {
+                            "comment": "IPv4 address of the target device",
+                            "maxLength": 15,
+                            "propertyOrder": 1
+                        },
+                        {
+                            "$ref": "tchmi:general#/definitions/String"
+                        }
+                    ]
+                },
+                "tTimeout": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/TIME"
+                        },
+                        {
+                            "propertyOrder": 7
+                        }
+                    ]
+                }
+            },
+            "type": "object"
+        },
         "PLC1.Tc2_Standard.F_TRIG": {
             "attributes": {
                 "conditionalshow_all_locals": ""
@@ -4181,7 +4651,8 @@
                             "$ref": "tchmi:general#/definitions/BOOL"
                         },
                         {
-                            "comment": "signal to detect"
+                            "comment": "signal to detect",
+                            "propertyOrder": 1
                         }
                     ]
                 },
@@ -4193,7 +4664,8 @@
                         {
                             "attributes": {
                                 "conditionalshow": ""
-                            }
+                            },
+                            "propertyOrder": 3
                         }
                     ]
                 },
@@ -4203,7 +4675,8 @@
                             "$ref": "tchmi:general#/definitions/BOOL"
                         },
                         {
-                            "comment": "falling edge at signal detected"
+                            "comment": "falling edge at signal detected",
+                            "propertyOrder": 2
                         }
                     ]
                 }
@@ -4323,82 +4796,76 @@
             "type": "object"
         },
         "PLC1.Tc2_System.E_OpenPath": {
-            "allOf": [
+            "enum": [
+                1,
+                2,
+                3,
+                4,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19
+            ],
+            "options": [
                 {
-                    "enum": [
-                        1,
-                        2,
-                        3,
-                        4,
-                        11,
-                        12,
-                        13,
-                        14,
-                        15,
-                        16,
-                        17,
-                        18,
-                        19
-                    ],
-                    "options": [
-                        {
-                            "label": "PATH_GENERIC",
-                            "value": 1
-                        },
-                        {
-                            "label": "PATH_BOOTPRJ",
-                            "value": 2
-                        },
-                        {
-                            "label": "PATH_BOOTDATA",
-                            "value": 3
-                        },
-                        {
-                            "label": "PATH_BOOTPATH",
-                            "value": 4
-                        },
-                        {
-                            "label": "PATH_USERPATH1",
-                            "value": 11
-                        },
-                        {
-                            "label": "PATH_USERPATH2",
-                            "value": 12
-                        },
-                        {
-                            "label": "PATH_USERPATH3",
-                            "value": 13
-                        },
-                        {
-                            "label": "PATH_USERPATH4",
-                            "value": 14
-                        },
-                        {
-                            "label": "PATH_USERPATH5",
-                            "value": 15
-                        },
-                        {
-                            "label": "PATH_USERPATH6",
-                            "value": 16
-                        },
-                        {
-                            "label": "PATH_USERPATH7",
-                            "value": 17
-                        },
-                        {
-                            "label": "PATH_USERPATH8",
-                            "value": 18
-                        },
-                        {
-                            "label": "PATH_USERPATH9",
-                            "value": 19
-                        }
-                    ]
+                    "label": "PATH_GENERIC",
+                    "value": 1
                 },
                 {
-                    "$ref": "tchmi:general#/definitions/UINT16"
+                    "label": "PATH_BOOTPRJ",
+                    "value": 2
+                },
+                {
+                    "label": "PATH_BOOTDATA",
+                    "value": 3
+                },
+                {
+                    "label": "PATH_BOOTPATH",
+                    "value": 4
+                },
+                {
+                    "label": "PATH_USERPATH1",
+                    "value": 11
+                },
+                {
+                    "label": "PATH_USERPATH2",
+                    "value": 12
+                },
+                {
+                    "label": "PATH_USERPATH3",
+                    "value": 13
+                },
+                {
+                    "label": "PATH_USERPATH4",
+                    "value": 14
+                },
+                {
+                    "label": "PATH_USERPATH5",
+                    "value": 15
+                },
+                {
+                    "label": "PATH_USERPATH6",
+                    "value": 16
+                },
+                {
+                    "label": "PATH_USERPATH7",
+                    "value": 17
+                },
+                {
+                    "label": "PATH_USERPATH8",
+                    "value": 18
+                },
+                {
+                    "label": "PATH_USERPATH9",
+                    "value": 19
                 }
-            ]
+            ],
+            "type": "integer"
         },
         "PLC1.Tc2_System.FB_CreateDir": {
             "attributes": {
@@ -4411,7 +4878,8 @@
                             "$ref": "tchmi:general#/definitions/BOOL"
                         },
                         {
-                            "comment": "Busy flag"
+                            "comment": "Busy flag",
+                            "propertyOrder": 6
                         }
                     ]
                 },
@@ -4421,7 +4889,8 @@
                             "$ref": "tchmi:general#/definitions/BOOL"
                         },
                         {
-                            "comment": "Error flag"
+                            "comment": "Error flag",
+                            "propertyOrder": 7
                         }
                     ]
                 },
@@ -4431,7 +4900,8 @@
                             "$ref": "tchmi:general#/definitions/BOOL"
                         },
                         {
-                            "comment": "Rising edge start command execution"
+                            "comment": "Rising edge start command execution",
+                            "propertyOrder": 4
                         }
                     ]
                 },
@@ -4441,7 +4911,8 @@
                             "$ref": "#/definitions/PLC1.Tc2_System.E_OpenPath"
                         },
                         {
-                            "comment": "Default: Create directory at generic path"
+                            "comment": "Default: Create directory at generic path",
+                            "propertyOrder": 3
                         }
                     ]
                 },
@@ -4451,7 +4922,8 @@
                             "$ref": "tchmi:general#/definitions/UDINT"
                         },
                         {
-                            "comment": "ADS error code"
+                            "comment": "ADS error code",
+                            "propertyOrder": 8
                         }
                     ]
                 },
@@ -4459,7 +4931,8 @@
                     "allOf": [
                         {
                             "comment": "Ams net id",
-                            "maxLength": 23
+                            "maxLength": 23,
+                            "propertyOrder": 1
                         },
                         {
                             "$ref": "tchmi:general#/definitions/String"
@@ -4470,7 +4943,8 @@
                     "allOf": [
                         {
                             "comment": "Directory name. Max directory length = 255",
-                            "maxLength": 255
+                            "maxLength": 255,
+                            "propertyOrder": 2
                         },
                         {
                             "$ref": "tchmi:general#/definitions/String"
@@ -4483,7 +4957,8 @@
                             "$ref": "tchmi:general#/definitions/TIME"
                         },
                         {
-                            "comment": "Maximum time allowed for the execution of this ADS command"
+                            "comment": "Maximum time allowed for the execution of this ADS command",
+                            "propertyOrder": 5
                         }
                     ]
                 }
@@ -4501,7 +4976,8 @@
                             "$ref": "tchmi:general#/definitions/BOOL"
                         },
                         {
-                            "comment": "Busy flag"
+                            "comment": "Busy flag",
+                            "propertyOrder": 5
                         }
                     ]
                 },
@@ -4511,7 +4987,8 @@
                             "$ref": "tchmi:general#/definitions/BOOL"
                         },
                         {
-                            "comment": "Error flag"
+                            "comment": "Error flag",
+                            "propertyOrder": 6
                         }
                     ]
                 },
@@ -4521,7 +4998,8 @@
                             "$ref": "tchmi:general#/definitions/BOOL"
                         },
                         {
-                            "comment": "Rising edge starts command execution"
+                            "comment": "Rising edge starts command execution",
+                            "propertyOrder": 3
                         }
                     ]
                 },
@@ -4531,7 +5009,8 @@
                             "$ref": "tchmi:general#/definitions/UINT"
                         },
                         {
-                            "comment": "File handle obtained through 'open'"
+                            "comment": "File handle obtained through 'open'",
+                            "propertyOrder": 2
                         }
                     ]
                 },
@@ -4541,7 +5020,8 @@
                             "$ref": "tchmi:general#/definitions/UDINT"
                         },
                         {
-                            "comment": "ADS error code"
+                            "comment": "ADS error code",
+                            "propertyOrder": 7
                         }
                     ]
                 },
@@ -4549,7 +5029,8 @@
                     "allOf": [
                         {
                             "comment": "Ams net id",
-                            "maxLength": 23
+                            "maxLength": 23,
+                            "propertyOrder": 1
                         },
                         {
                             "$ref": "tchmi:general#/definitions/String"
@@ -4562,7 +5043,8 @@
                             "$ref": "tchmi:general#/definitions/TIME"
                         },
                         {
-                            "comment": "Maximum time allowed for the execution of this ADS command"
+                            "comment": "Maximum time allowed for the execution of this ADS command",
+                            "propertyOrder": 4
                         }
                     ]
                 }
@@ -4580,7 +5062,8 @@
                             "$ref": "tchmi:general#/definitions/BOOL"
                         },
                         {
-                            "comment": "Busy flag"
+                            "comment": "Busy flag",
+                            "propertyOrder": 7
                         }
                     ]
                 },
@@ -4590,7 +5073,8 @@
                             "$ref": "tchmi:general#/definitions/BOOL"
                         },
                         {
-                            "comment": "Error flag"
+                            "comment": "Error flag",
+                            "propertyOrder": 8
                         }
                     ]
                 },
@@ -4600,7 +5084,8 @@
                             "$ref": "tchmi:general#/definitions/BOOL"
                         },
                         {
-                            "comment": "Rising edge starts command execution"
+                            "comment": "Rising edge starts command execution",
+                            "propertyOrder": 5
                         }
                     ]
                 },
@@ -4610,7 +5095,8 @@
                             "$ref": "#/definitions/PLC1.Tc2_System.E_OpenPath"
                         },
                         {
-                            "comment": "Default: Open generic file"
+                            "comment": "Default: Open generic file",
+                            "propertyOrder": 4
                         }
                     ]
                 },
@@ -4620,7 +5106,8 @@
                             "$ref": "tchmi:general#/definitions/UINT"
                         },
                         {
-                            "comment": "File handle"
+                            "comment": "File handle",
+                            "propertyOrder": 10
                         }
                     ]
                 },
@@ -4630,7 +5117,8 @@
                             "$ref": "tchmi:general#/definitions/UDINT"
                         },
                         {
-                            "comment": "ADS error code"
+                            "comment": "ADS error code",
+                            "propertyOrder": 9
                         }
                     ]
                 },
@@ -4640,7 +5128,8 @@
                             "$ref": "tchmi:general#/definitions/DWORD"
                         },
                         {
-                            "comment": "Open mode flags"
+                            "comment": "Open mode flags",
+                            "propertyOrder": 3
                         }
                     ]
                 },
@@ -4648,7 +5137,8 @@
                     "allOf": [
                         {
                             "comment": "Ams net id",
-                            "maxLength": 23
+                            "maxLength": 23,
+                            "propertyOrder": 1
                         },
                         {
                             "$ref": "tchmi:general#/definitions/String"
@@ -4659,7 +5149,8 @@
                     "allOf": [
                         {
                             "comment": "Max filename length = 255",
-                            "maxLength": 255
+                            "maxLength": 255,
+                            "propertyOrder": 2
                         },
                         {
                             "$ref": "tchmi:general#/definitions/String"
@@ -4672,7 +5163,8 @@
                             "$ref": "tchmi:general#/definitions/TIME"
                         },
                         {
-                            "comment": "Maximum time allowed for the execution of this ADS command"
+                            "comment": "Maximum time allowed for the execution of this ADS command",
+                            "propertyOrder": 6
                         }
                     ]
                 }
@@ -4690,7 +5182,8 @@
                             "$ref": "tchmi:general#/definitions/BOOL"
                         },
                         {
-                            "comment": "Busy flag"
+                            "comment": "Busy flag",
+                            "propertyOrder": 6
                         }
                     ]
                 },
@@ -4700,7 +5193,8 @@
                             "$ref": "tchmi:general#/definitions/BOOL"
                         },
                         {
-                            "comment": "Error flag"
+                            "comment": "Error flag",
+                            "propertyOrder": 7
                         }
                     ]
                 },
@@ -4710,7 +5204,8 @@
                             "$ref": "tchmi:general#/definitions/BOOL"
                         },
                         {
-                            "comment": "Rising edge starts command execution"
+                            "comment": "Rising edge starts command execution",
+                            "propertyOrder": 4
                         }
                     ]
                 },
@@ -4720,7 +5215,8 @@
                             "$ref": "tchmi:general#/definitions/UINT"
                         },
                         {
-                            "comment": "File handle"
+                            "comment": "File handle",
+                            "propertyOrder": 2
                         }
                     ]
                 },
@@ -4730,7 +5226,8 @@
                             "$ref": "tchmi:general#/definitions/UDINT"
                         },
                         {
-                            "comment": "ADS error code"
+                            "comment": "ADS error code",
+                            "propertyOrder": 8
                         }
                     ]
                 },
@@ -4738,7 +5235,8 @@
                     "allOf": [
                         {
                             "comment": "String to write",
-                            "maxLength": 255
+                            "maxLength": 255,
+                            "propertyOrder": 3
                         },
                         {
                             "$ref": "tchmi:general#/definitions/String"
@@ -4749,7 +5247,8 @@
                     "allOf": [
                         {
                             "comment": "Ams net id",
-                            "maxLength": 23
+                            "maxLength": 23,
+                            "propertyOrder": 1
                         },
                         {
                             "$ref": "tchmi:general#/definitions/String"
@@ -4762,7 +5261,8 @@
                             "$ref": "tchmi:general#/definitions/TIME"
                         },
                         {
-                            "comment": "Maximum time allowed for the execution of this ADS command"
+                            "comment": "Maximum time allowed for the execution of this ADS command",
+                            "propertyOrder": 5
                         }
                     ]
                 }
@@ -4773,32 +5273,26 @@
             "$ref": "#/definitions/PLC1.AMSNETID"
         },
         "PLC1.Tc2_Utilities.E_EnumCmdType": {
-            "allOf": [
+            "enum": [
+                0,
+                1,
+                2
+            ],
+            "options": [
                 {
-                    "enum": [
-                        0,
-                        1,
-                        2
-                    ],
-                    "options": [
-                        {
-                            "label": "eEnumCmd_First",
-                            "value": 0
-                        },
-                        {
-                            "label": "eEnumCmd_Next",
-                            "value": 1
-                        },
-                        {
-                            "label": "eEnumCmd_Abort",
-                            "value": 2
-                        }
-                    ]
+                    "label": "eEnumCmd_First",
+                    "value": 0
                 },
                 {
-                    "$ref": "tchmi:general#/definitions/INT16"
+                    "label": "eEnumCmd_Next",
+                    "value": 1
+                },
+                {
+                    "label": "eEnumCmd_Abort",
+                    "value": 2
                 }
-            ]
+            ],
+            "type": "integer"
         },
         "PLC1.Tc2_Utilities.FB_CSVMemBufferReader": {
             "attributes": {
@@ -4813,7 +5307,8 @@
                         {
                             "attributes": {
                                 "conditionalshow": ""
-                            }
+                            },
+                            "propertyOrder": 22
                         }
                     ]
                 },
@@ -4823,7 +5318,8 @@
                             "$ref": "tchmi:general#/definitions/BOOL"
                         },
                         {
-                            "comment": "TRUE => End of record separator found (CRLF)"
+                            "comment": "TRUE => End of record separator found (CRLF)",
+                            "propertyOrder": 8
                         }
                     ]
                 },
@@ -4835,7 +5331,8 @@
                         {
                             "attributes": {
                                 "conditionalshow": ""
-                            }
+                            },
+                            "propertyOrder": 18
                         }
                     ]
                 },
@@ -4847,7 +5344,8 @@
                         {
                             "attributes": {
                                 "conditionalshow": ""
-                            }
+                            },
+                            "propertyOrder": 17
                         }
                     ]
                 },
@@ -4859,7 +5357,8 @@
                         {
                             "attributes": {
                                 "conditionalshow": ""
-                            }
+                            },
+                            "propertyOrder": 21
                         }
                     ]
                 },
@@ -4871,7 +5370,8 @@
                         {
                             "attributes": {
                                 "conditionalshow": ""
-                            }
+                            },
+                            "propertyOrder": 14
                         }
                     ]
                 },
@@ -4883,7 +5383,8 @@
                         {
                             "attributes": {
                                 "conditionalshow": ""
-                            }
+                            },
+                            "propertyOrder": 16
                         }
                     ]
                 },
@@ -4893,7 +5394,8 @@
                             "$ref": "tchmi:general#/definitions/BOOL"
                         },
                         {
-                            "comment": "TRUE => Successfull, FALSE => Failed"
+                            "comment": "TRUE => Successfull, FALSE => Failed",
+                            "propertyOrder": 4
                         }
                     ]
                 },
@@ -4903,7 +5405,8 @@
                             "$ref": "tchmi:general#/definitions/UDINT"
                         },
                         {
-                            "comment": "Max. byte size of data buffer"
+                            "comment": "Max. byte size of data buffer",
+                            "propertyOrder": 3
                         }
                     ]
                 },
@@ -4915,7 +5418,8 @@
                         {
                             "attributes": {
                                 "conditionalshow": ""
-                            }
+                            },
+                            "propertyOrder": 15
                         }
                     ]
                 },
@@ -4927,7 +5431,8 @@
                         {
                             "attributes": {
                                 "conditionalshow": ""
-                            }
+                            },
+                            "propertyOrder": 20
                         }
                     ]
                 },
@@ -4937,7 +5442,8 @@
                             "$ref": "tchmi:general#/definitions/UDINT"
                         },
                         {
-                            "comment": "Number of successfully parse data bytes"
+                            "comment": "Number of successfully parse data bytes",
+                            "propertyOrder": 9
                         }
                     ]
                 },
@@ -4947,7 +5453,8 @@
                             "$ref": "tchmi:general#/definitions/UDINT"
                         },
                         {
-                            "comment": "Field value byte size"
+                            "comment": "Field value byte size",
+                            "propertyOrder": 7
                         }
                     ]
                 },
@@ -4957,7 +5464,8 @@
                             "$ref": "#/definitions/PLC1.Tc2_Utilities.E_EnumCmdType"
                         },
                         {
-                            "comment": "Command type: read first or next field ?"
+                            "comment": "Command type: read first or next field ?",
+                            "propertyOrder": 1
                         }
                     ]
                 },
@@ -4969,7 +5477,8 @@
                         {
                             "attributes": {
                                 "conditionalshow": ""
-                            }
+                            },
+                            "propertyOrder": 11
                         }
                     ]
                 },
@@ -4977,7 +5486,8 @@
                     "allOf": [
                         {
                             "comment": "If successfull then this output returns the first/next field value as string",
-                            "maxLength": 255
+                            "maxLength": 255,
+                            "propertyOrder": 5
                         },
                         {
                             "$ref": "tchmi:general#/definitions/String"
@@ -4990,7 +5500,8 @@
                             "$ref": "#/definitions/PLC1.POINTER-TO-BYTE"
                         },
                         {
-                            "comment": "Address ( pointer) of data buffer"
+                            "comment": "Address ( pointer) of data buffer",
+                            "propertyOrder": 2
                         }
                     ]
                 },
@@ -5002,7 +5513,8 @@
                         {
                             "attributes": {
                                 "conditionalshow": ""
-                            }
+                            },
+                            "propertyOrder": 19
                         }
                     ]
                 },
@@ -5012,7 +5524,8 @@
                             "$ref": "#/definitions/PLC1.POINTER-TO-BYTE"
                         },
                         {
-                            "comment": "Pointer to the first value byte (HINT: String values are not null terminated. Empty string returns Null pointer )"
+                            "comment": "Pointer to the first value byte (HINT: String values are not null terminated. Empty string returns Null pointer )",
+                            "propertyOrder": 6
                         }
                     ]
                 },
@@ -5024,7 +5537,8 @@
                         {
                             "attributes": {
                                 "conditionalshow": ""
-                            }
+                            },
+                            "propertyOrder": 12
                         }
                     ]
                 },
@@ -5036,7 +5550,8 @@
                         {
                             "attributes": {
                                 "conditionalshow": ""
-                            }
+                            },
+                            "propertyOrder": 13
                         }
                     ]
                 },
@@ -5048,7 +5563,8 @@
                         {
                             "attributes": {
                                 "conditionalshow": ""
-                            }
+                            },
+                            "propertyOrder": 10
                         }
                     ]
                 }
@@ -5066,7 +5582,8 @@
                             "$ref": "tchmi:general#/definitions/BOOL"
                         },
                         {
-                            "comment": "TRUE = > Append end of record separator (CRLF)"
+                            "comment": "TRUE = > Append end of record separator (CRLF)",
+                            "propertyOrder": 5
                         }
                     ]
                 },
@@ -5078,7 +5595,8 @@
                         {
                             "attributes": {
                                 "conditionalshow": ""
-                            }
+                            },
+                            "propertyOrder": 18
                         }
                     ]
                 },
@@ -5088,7 +5606,8 @@
                             "$ref": "tchmi:general#/definitions/BOOL"
                         },
                         {
-                            "comment": "TRUE => Successfull, FALSE => Failed"
+                            "comment": "TRUE => Successfull, FALSE => Failed",
+                            "propertyOrder": 8
                         }
                     ]
                 },
@@ -5098,7 +5617,8 @@
                             "$ref": "tchmi:general#/definitions/UDINT"
                         },
                         {
-                            "comment": "Max. byte size of data buffer"
+                            "comment": "Max. byte size of data buffer",
+                            "propertyOrder": 7
                         }
                     ]
                 },
@@ -5110,7 +5630,8 @@
                         {
                             "attributes": {
                                 "conditionalshow": ""
-                            }
+                            },
+                            "propertyOrder": 17
                         }
                     ]
                 },
@@ -5120,7 +5641,8 @@
                             "$ref": "tchmi:general#/definitions/UDINT"
                         },
                         {
-                            "comment": "Number of free data bytes"
+                            "comment": "Number of free data bytes",
+                            "propertyOrder": 10
                         }
                     ]
                 },
@@ -5130,7 +5652,8 @@
                             "$ref": "tchmi:general#/definitions/UDINT"
                         },
                         {
-                            "comment": "Number fo used data bytes"
+                            "comment": "Number fo used data bytes",
+                            "propertyOrder": 9
                         }
                     ]
                 },
@@ -5142,7 +5665,8 @@
                         {
                             "attributes": {
                                 "conditionalshow": ""
-                            }
+                            },
+                            "propertyOrder": 16
                         }
                     ]
                 },
@@ -5152,7 +5676,8 @@
                             "$ref": "tchmi:general#/definitions/UDINT"
                         },
                         {
-                            "comment": "OPTIONAL: Byte size of external buffer containing field value data."
+                            "comment": "OPTIONAL: Byte size of external buffer containing field value data.",
+                            "propertyOrder": 4
                         }
                     ]
                 },
@@ -5162,7 +5687,8 @@
                             "$ref": "tchmi:general#/definitions/UDINT"
                         },
                         {
-                            "comment": "Number of successfully written data bytes"
+                            "comment": "Number of successfully written data bytes",
+                            "propertyOrder": 13
                         }
                     ]
                 },
@@ -5172,7 +5698,8 @@
                             "$ref": "#/definitions/PLC1.Tc2_Utilities.E_EnumCmdType"
                         },
                         {
-                            "comment": "Command type: write first or next field ?"
+                            "comment": "Command type: write first or next field ?",
+                            "propertyOrder": 1
                         }
                     ]
                 },
@@ -5184,7 +5711,8 @@
                         {
                             "attributes": {
                                 "conditionalshow": ""
-                            }
+                            },
+                            "propertyOrder": 14
                         }
                     ]
                 },
@@ -5194,7 +5722,8 @@
                             "$ref": "tchmi:general#/definitions/UDINT"
                         },
                         {
-                            "comment": "Number of fields"
+                            "comment": "Number of fields",
+                            "propertyOrder": 11
                         }
                     ]
                 },
@@ -5204,7 +5733,8 @@
                             "$ref": "tchmi:general#/definitions/UDINT"
                         },
                         {
-                            "comment": "Number of records"
+                            "comment": "Number of records",
+                            "propertyOrder": 12
                         }
                     ]
                 },
@@ -5214,7 +5744,8 @@
                             "$ref": "#/definitions/PLC1.POINTER-TO-BYTE"
                         },
                         {
-                            "comment": "Address ( pointer) of data buffer"
+                            "comment": "Address ( pointer) of data buffer",
+                            "propertyOrder": 6
                         }
                     ]
                 },
@@ -5224,7 +5755,8 @@
                             "$ref": "#/definitions/PLC1.POINTER-TO-BYTE"
                         },
                         {
-                            "comment": "OPTIONAL: Pointer to external buffer containing field value data."
+                            "comment": "OPTIONAL: Pointer to external buffer containing field value data.",
+                            "propertyOrder": 3
                         }
                     ]
                 },
@@ -5232,7 +5764,8 @@
                     "allOf": [
                         {
                             "comment": "New first/next field value as string",
-                            "maxLength": 255
+                            "maxLength": 255,
+                            "propertyOrder": 2
                         },
                         {
                             "$ref": "tchmi:general#/definitions/String"
@@ -5247,7 +5780,8 @@
                         {
                             "attributes": {
                                 "conditionalshow": ""
-                            }
+                            },
+                            "propertyOrder": 15
                         }
                     ]
                 }
@@ -5375,120 +5909,114 @@
             "type": "object"
         },
         "PLC1.Tc3_Database.E_ColumnType": {
-            "allOf": [
+            "attributes": {
+                "qualified_only": ""
+            },
+            "enum": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19
+            ],
+            "options": [
                 {
-                    "attributes": {
-                        "qualified_only": ""
-                    },
-                    "enum": [
-                        0,
-                        1,
-                        2,
-                        3,
-                        4,
-                        5,
-                        6,
-                        7,
-                        8,
-                        9,
-                        10,
-                        11,
-                        12,
-                        13,
-                        14,
-                        15,
-                        16,
-                        17,
-                        18,
-                        19
-                    ],
-                    "options": [
-                        {
-                            "label": "BigInt",
-                            "value": 0
-                        },
-                        {
-                            "label": "Integer",
-                            "value": 1
-                        },
-                        {
-                            "label": "SmallInt",
-                            "value": 2
-                        },
-                        {
-                            "label": "TinyInt",
-                            "value": 3
-                        },
-                        {
-                            "label": "BIT_",
-                            "value": 4
-                        },
-                        {
-                            "label": "Money",
-                            "value": 5
-                        },
-                        {
-                            "label": "Float",
-                            "value": 6
-                        },
-                        {
-                            "label": "REAL_",
-                            "value": 7
-                        },
-                        {
-                            "label": "DateTime",
-                            "value": 8
-                        },
-                        {
-                            "label": "NText",
-                            "value": 9
-                        },
-                        {
-                            "label": "NChar",
-                            "value": 10
-                        },
-                        {
-                            "label": "Image",
-                            "value": 11
-                        },
-                        {
-                            "label": "NVarChar",
-                            "value": 12
-                        },
-                        {
-                            "label": "Binary",
-                            "value": 13
-                        },
-                        {
-                            "label": "VarBinary",
-                            "value": 14
-                        },
-                        {
-                            "label": "Text_WSTR",
-                            "value": 15
-                        },
-                        {
-                            "label": "Char_WSTR",
-                            "value": 16
-                        },
-                        {
-                            "label": "VarChar_WSTR",
-                            "value": 17
-                        },
-                        {
-                            "label": "Struct_",
-                            "value": 18
-                        },
-                        {
-                            "label": "RefCursor",
-                            "value": 19
-                        }
-                    ]
+                    "label": "BigInt",
+                    "value": 0
                 },
                 {
-                    "$ref": "tchmi:general#/definitions/INT16"
+                    "label": "Integer",
+                    "value": 1
+                },
+                {
+                    "label": "SmallInt",
+                    "value": 2
+                },
+                {
+                    "label": "TinyInt",
+                    "value": 3
+                },
+                {
+                    "label": "BIT_",
+                    "value": 4
+                },
+                {
+                    "label": "Money",
+                    "value": 5
+                },
+                {
+                    "label": "Float",
+                    "value": 6
+                },
+                {
+                    "label": "REAL_",
+                    "value": 7
+                },
+                {
+                    "label": "DateTime",
+                    "value": 8
+                },
+                {
+                    "label": "NText",
+                    "value": 9
+                },
+                {
+                    "label": "NChar",
+                    "value": 10
+                },
+                {
+                    "label": "Image",
+                    "value": 11
+                },
+                {
+                    "label": "NVarChar",
+                    "value": 12
+                },
+                {
+                    "label": "Binary",
+                    "value": 13
+                },
+                {
+                    "label": "VarBinary",
+                    "value": 14
+                },
+                {
+                    "label": "Text_WSTR",
+                    "value": 15
+                },
+                {
+                    "label": "Char_WSTR",
+                    "value": 16
+                },
+                {
+                    "label": "VarChar_WSTR",
+                    "value": 17
+                },
+                {
+                    "label": "Struct_",
+                    "value": 18
+                },
+                {
+                    "label": "RefCursor",
+                    "value": 19
                 }
-            ]
+            ],
+            "type": "integer"
         },
         "PLC1.Tc3_Database.E_ExpParameterType": {
             "allOf": [
@@ -5659,24 +6187,53 @@
             },
             "properties": {
                 "bBusy": {
-                    "$ref": "tchmi:general#/definitions/BOOL"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 3
+                        }
+                    ]
                 },
                 "bError": {
-                    "$ref": "tchmi:general#/definitions/BOOL"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 4
+                        }
+                    ]
                 },
                 "eTraceLevel": {
                     "$ref": "#/definitions/PLC1.PROPERTY-GET-SET-TcEventSeverity"
                 },
                 "fbSrceInfo": {
-                    "$ref": "#/definitions/PLC1.Tc3_Database.Tc3_EventLogger.FB_TcSourceInfo"
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Tc3_EventLogger.FB_TcSourceInfo"
+                        },
+                        {
+                            "propertyOrder": 6
+                        }
+                    ]
                 },
                 "ipTcResult": {
-                    "$ref": "#/definitions/PLC1.Tc3_Database.Tc3_EventLogger.I_TcMessage"
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Tc3_EventLogger.I_TcMessage"
+                        },
+                        {
+                            "propertyOrder": 5
+                        }
+                    ]
                 },
                 "sNetID": {
                     "allOf": [
                         {
-                            "maxLength": 23
+                            "maxLength": 23,
+                            "propertyOrder": 1
                         },
                         {
                             "$ref": "tchmi:general#/definitions/String"
@@ -5684,7 +6241,14 @@
                     ]
                 },
                 "tTimeout": {
-                    "$ref": "tchmi:general#/definitions/TIME"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/TIME"
+                        },
+                        {
+                            "propertyOrder": 2
+                        }
+                    ]
                 }
             },
             "type": "object"
@@ -5750,29 +6314,59 @@
                         {
                             "attributes": {
                                 "old_input_assignments": ""
-                            }
+                            },
+                            "propertyOrder": 7
                         }
                     ]
                 },
                 "bBusy": {
-                    "$ref": "tchmi:general#/definitions/BOOL"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 3
+                        }
+                    ]
                 },
                 "bError": {
-                    "$ref": "tchmi:general#/definitions/BOOL"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 4
+                        }
+                    ]
                 },
                 "eTraceLevel": {
                     "$ref": "#/definitions/PLC1.PROPERTY-GET-SET-TcEventSeverity"
                 },
                 "fbSrceInfo": {
-                    "$ref": "#/definitions/PLC1.Tc3_Database.Tc3_EventLogger.FB_TcSourceInfo"
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Tc3_EventLogger.FB_TcSourceInfo"
+                        },
+                        {
+                            "propertyOrder": 6
+                        }
+                    ]
                 },
                 "ipTcResult": {
-                    "$ref": "#/definitions/PLC1.Tc3_Database.Tc3_EventLogger.I_TcMessage"
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Tc3_EventLogger.I_TcMessage"
+                        },
+                        {
+                            "propertyOrder": 5
+                        }
+                    ]
                 },
                 "sNetID": {
                     "allOf": [
                         {
-                            "maxLength": 23
+                            "maxLength": 23,
+                            "propertyOrder": 1
                         },
                         {
                             "$ref": "tchmi:general#/definitions/String"
@@ -5780,7 +6374,14 @@
                     ]
                 },
                 "tTimeout": {
-                    "$ref": "tchmi:general#/definitions/TIME"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/TIME"
+                        },
+                        {
+                            "propertyOrder": 2
+                        }
+                    ]
                 }
             },
             "type": "object"
@@ -5792,24 +6393,53 @@
             },
             "properties": {
                 "bBusy": {
-                    "$ref": "tchmi:general#/definitions/BOOL"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 3
+                        }
+                    ]
                 },
                 "bError": {
-                    "$ref": "tchmi:general#/definitions/BOOL"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 4
+                        }
+                    ]
                 },
                 "eTraceLevel": {
                     "$ref": "#/definitions/PLC1.PROPERTY-GET-SET-TcEventSeverity"
                 },
                 "fbSrceInfo": {
-                    "$ref": "#/definitions/PLC1.Tc3_Database.Tc3_EventLogger.FB_TcSourceInfo"
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Tc3_EventLogger.FB_TcSourceInfo"
+                        },
+                        {
+                            "propertyOrder": 6
+                        }
+                    ]
                 },
                 "ipTcResult": {
-                    "$ref": "#/definitions/PLC1.Tc3_Database.Tc3_EventLogger.I_TcMessage"
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Tc3_EventLogger.I_TcMessage"
+                        },
+                        {
+                            "propertyOrder": 5
+                        }
+                    ]
                 },
                 "sNetID": {
                     "allOf": [
                         {
-                            "maxLength": 23
+                            "maxLength": 23,
+                            "propertyOrder": 1
                         },
                         {
                             "$ref": "tchmi:general#/definitions/String"
@@ -5817,7 +6447,14 @@
                     ]
                 },
                 "tTimeout": {
-                    "$ref": "tchmi:general#/definitions/TIME"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/TIME"
+                        },
+                        {
+                            "propertyOrder": 2
+                        }
+                    ]
                 }
             },
             "type": "object"
@@ -5908,15 +6545,30 @@
         "PLC1.Tc3_Database.ST_ColumnInfo": {
             "properties": {
                 "eType": {
-                    "$ref": "#/definitions/PLC1.Tc3_Database.E_ColumnType"
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Tc3_Database.E_ColumnType"
+                        },
+                        {
+                            "propertyOrder": 4
+                        }
+                    ]
                 },
                 "nLength": {
-                    "$ref": "tchmi:general#/definitions/UDINT"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/UDINT"
+                        },
+                        {
+                            "propertyOrder": 3
+                        }
+                    ]
                 },
                 "sName": {
                     "allOf": [
                         {
-                            "maxLength": 50
+                            "maxLength": 50,
+                            "propertyOrder": 1
                         },
                         {
                             "$ref": "tchmi:general#/definitions/String"
@@ -5924,7 +6576,14 @@
                     ]
                 },
                 "sProperty": {
-                    "$ref": "tchmi:general#/definitions/STRING%2880%29"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/STRING%2880%29"
+                        },
+                        {
+                            "propertyOrder": 2
+                        }
+                    ]
                 }
             },
             "type": "object"
@@ -6005,47 +6664,334 @@
             },
             "type": "object"
         },
-        "PLC1.TcEventSeverity": {
-            "allOf": [
-                {
-                    "attributes": {
-                        "plcAttribute_qualified_only": "",
-                        "plcAttribute_strict": ""
-                    },
-                    "enum": [
-                        0,
-                        1,
-                        2,
-                        3,
-                        4
-                    ],
-                    "options": [
+        "PLC1.Tc3_EventLogger.FB_SourceInfoData": {
+            "attributes": {
+                "TcImplements": "ITcSourceInfo",
+                "c++_compatible": "",
+                "no_explicit_call": "do not call this POU directly"
+            },
+            "properties": {
+                "_bCutInstancePathByLastInst": {
+                    "allOf": [
                         {
-                            "label": "TCEVENTSEVERITY_Verbose",
-                            "value": 0
+                            "$ref": "tchmi:general#/definitions/BOOL"
                         },
                         {
-                            "label": "TCEVENTSEVERITY_Info",
-                            "value": 1
-                        },
-                        {
-                            "label": "TCEVENTSEVERITY_Warning",
-                            "value": 2
-                        },
-                        {
-                            "label": "TCEVENTSEVERITY_Error",
-                            "value": 3
-                        },
-                        {
-                            "label": "TCEVENTSEVERITY_Critical",
-                            "value": 4
+                            "propertyOrder": 2
                         }
                     ]
                 },
-                {
-                    "$ref": "tchmi:general#/definitions/INT16"
+                "_stSourceInfo": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Tc3_EventLogger.ST_SourceInfo"
+                        },
+                        {
+                            "propertyOrder": 3
+                        }
+                    ]
+                },
+                "aSourceInfoData": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.ARRAY_0..2_OF-TcSerializedSourceInfoType"
+                        },
+                        {
+                            "propertyOrder": 8
+                        }
+                    ]
+                },
+                "bGuidExists": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 5
+                        }
+                    ]
+                },
+                "bIdExists": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 4
+                        }
+                    ]
+                },
+                "bSourceNameIsEqualDefault": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 6
+                        }
+                    ]
+                },
+                "bSourceNameShouldBeDefault": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 7
+                        }
+                    ]
+                },
+                "hrInit": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/HRESULT"
+                        },
+                        {
+                            "propertyOrder": 1
+                        }
+                    ]
+                },
+                "m_refCnt": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/UDINT"
+                        },
+                        {
+                            "attributes": {
+                                "conditionalshow": ""
+                            },
+                            "propertyOrder": 9
+                        }
+                    ]
+                },
+                "nSourceId": {
+                    "$ref": "#/definitions/PLC1.PROPERTY-GET-SET-UDINT"
+                },
+                "sSourceName": {
+                    "allOf": [
+                        {
+                            "attributes": {
+                                "TcEncoding": "UTF-8"
+                            }
+                        },
+                        {
+                            "$ref": "#/definitions/PLC1.PROPERTY-GET-SET-STRING-255"
+                        }
+                    ]
                 }
-            ]
+            },
+            "type": "object"
+        },
+        "PLC1.Tc3_EventLogger.FB_TcSourceInfo": {
+            "attributes": {
+                "TcImplements": "Tc3_EventLogger.I_TcSourceInfo",
+                "no_explicit_call": "do not call this POU directly"
+            },
+            "properties": {
+                "fbSrcData": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Tc3_EventLogger.FB_SourceInfoData"
+                        },
+                        {
+                            "attributes": {
+                                "conditionalshow": ""
+                            },
+                            "propertyOrder": 1
+                        }
+                    ]
+                },
+                "nId": {
+                    "$ref": "#/definitions/PLC1.PROPERTY-GET-SET-UDINT"
+                },
+                "sName": {
+                    "allOf": [
+                        {
+                            "attributes": {
+                                "TcEncoding": "UTF-8"
+                            }
+                        },
+                        {
+                            "$ref": "#/definitions/PLC1.PROPERTY-GET-SET-STRING-255"
+                        }
+                    ]
+                }
+            },
+            "type": "object"
+        },
+        "PLC1.Tc3_EventLogger.I_TcMessage": {
+            "properties": {
+                "eSeverity": {
+                    "$ref": "#/definitions/PLC1.PROPERTY-GET-TcEventSeverity"
+                },
+                "ipSourceInfo": {
+                    "$ref": "#/definitions/PLC1.PROPERTY-GET-Tc3_EventLogger.I_TcSourceInfo"
+                },
+                "nEventId": {
+                    "$ref": "#/definitions/PLC1.PROPERTY-GET-UDINT"
+                },
+                "sEventClassName": {
+                    "$ref": "#/definitions/PLC1.PROPERTY-GET-STRING-255"
+                },
+                "sEventText": {
+                    "$ref": "#/definitions/PLC1.PROPERTY-GET-STRING-255"
+                }
+            },
+            "type": "object"
+        },
+        "PLC1.Tc3_EventLogger.I_TcSourceInfo": {
+            "properties": {
+                "nId": {
+                    "$ref": "#/definitions/PLC1.PROPERTY-GET-UDINT"
+                },
+                "sName": {
+                    "$ref": "#/definitions/PLC1.PROPERTY-GET-STRING-255"
+                }
+            },
+            "type": "object"
+        },
+        "PLC1.Tc3_EventLogger.ST_SourceInfo": {
+            "properties": {
+                "guid": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.GUID"
+                        },
+                        {
+                            "propertyOrder": 1
+                        }
+                    ]
+                },
+                "nId": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/UDINT"
+                        },
+                        {
+                            "comment": "eg.the PLC instance object ID as owner of the event object",
+                            "propertyOrder": 2
+                        }
+                    ]
+                },
+                "sName": {
+                    "allOf": [
+                        {
+                            "attributes": {
+                                "TcEncoding": "UTF-8"
+                            },
+                            "comment": "eg.the symbol name of the function block which created the event",
+                            "maxLength": 278,
+                            "propertyOrder": 3
+                        },
+                        {
+                            "$ref": "tchmi:general#/definitions/String"
+                        }
+                    ]
+                }
+            },
+            "type": "object"
+        },
+        "PLC1.TcEventSeverity": {
+            "attributes": {
+                "plcAttribute_qualified_only": "",
+                "plcAttribute_strict": ""
+            },
+            "enum": [
+                0,
+                1,
+                2,
+                3,
+                4
+            ],
+            "options": [
+                {
+                    "label": "TCEVENTSEVERITY_Verbose",
+                    "value": 0
+                },
+                {
+                    "label": "TCEVENTSEVERITY_Info",
+                    "value": 1
+                },
+                {
+                    "label": "TCEVENTSEVERITY_Warning",
+                    "value": 2
+                },
+                {
+                    "label": "TCEVENTSEVERITY_Error",
+                    "value": 3
+                },
+                {
+                    "label": "TCEVENTSEVERITY_Critical",
+                    "value": 4
+                }
+            ],
+            "type": "integer"
+        },
+        "PLC1.TcSerializedSourceInfoType": {
+            "properties": {
+                "cbData": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/UDINT"
+                        },
+                        {
+                            "propertyOrder": 3
+                        }
+                    ]
+                },
+                "eType": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.TcSourceInfoType"
+                        },
+                        {
+                            "propertyOrder": 1
+                        }
+                    ]
+                },
+                "obData": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/UDINT"
+                        },
+                        {
+                            "propertyOrder": 2
+                        }
+                    ]
+                }
+            },
+            "type": "object"
+        },
+        "PLC1.TcSourceInfoType": {
+            "attributes": {
+                "plcAttribute_qualified_only": "",
+                "plcAttribute_strict": ""
+            },
+            "enum": [
+                0,
+                1,
+                2,
+                4
+            ],
+            "options": [
+                {
+                    "label": "Undefined",
+                    "value": 0
+                },
+                {
+                    "label": "Id",
+                    "value": 1
+                },
+                {
+                    "label": "Guid",
+                    "value": 2
+                },
+                {
+                    "label": "Name",
+                    "value": 4
+                }
+            ],
+            "type": "integer"
         },
         "PLC1.Teknike_Aspersao.FB_PIDeGrafico": {
             "properties": {
@@ -9466,31 +10412,95 @@
         "PLC1.Teknike_Geral.FB_EscreveCSV": {
             "properties": {
                 "MAX_CSV_COLUMNS": {
-                    "$ref": "tchmi:general#/definitions/UDINT"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/UDINT"
+                        },
+                        {
+                            "propertyOrder": 25
+                        }
+                    ]
                 },
                 "MAX_CSV_FIELD_LENGTH": {
-                    "$ref": "tchmi:general#/definitions/UDINT"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/UDINT"
+                        },
+                        {
+                            "propertyOrder": 26
+                        }
+                    ]
                 },
                 "MAX_CSV_ROWS": {
-                    "$ref": "tchmi:general#/definitions/UDINT"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/UDINT"
+                        },
+                        {
+                            "propertyOrder": 24
+                        }
+                    ]
                 },
                 "MIN_CSV_COLUMNS": {
-                    "$ref": "tchmi:general#/definitions/UDINT"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/UDINT"
+                        },
+                        {
+                            "propertyOrder": 23
+                        }
+                    ]
                 },
                 "MIN_CSV_ROWS": {
-                    "$ref": "tchmi:general#/definitions/UDINT"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/UDINT"
+                        },
+                        {
+                            "propertyOrder": 22
+                        }
+                    ]
                 },
                 "bBusy": {
-                    "$ref": "tchmi:general#/definitions/BOOL"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 5
+                        }
+                    ]
                 },
                 "bError": {
-                    "$ref": "tchmi:general#/definitions/BOOL"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 6
+                        }
+                    ]
                 },
                 "bInicia": {
-                    "$ref": "tchmi:general#/definitions/BOOL"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 1
+                        }
+                    ]
                 },
                 "bWrite": {
-                    "$ref": "tchmi:general#/definitions/BOOL"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "comment": "Rising edge starts program execution",
+                            "propertyOrder": 10
+                        }
+                    ]
                 },
                 "database": {
                     "allOf": [
@@ -9501,50 +10511,144 @@
                             "attributes": {
                                 "Dimensions": "2",
                                 "variable_length_array": ""
-                            }
+                            },
+                            "propertyOrder": 4
                         }
                     ]
                 },
                 "fbFileClose": {
-                    "$ref": "#/definitions/PLC1.Tc2_System.FB_FileClose"
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Tc2_System.FB_FileClose"
+                        },
+                        {
+                            "comment": "Closes file",
+                            "propertyOrder": 18
+                        }
+                    ]
                 },
                 "fbFileOpen": {
-                    "$ref": "#/definitions/PLC1.Tc2_System.FB_FileOpen"
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Tc2_System.FB_FileOpen"
+                        },
+                        {
+                            "comment": "Opens file",
+                            "propertyOrder": 17
+                        }
+                    ]
                 },
                 "fbFilePuts": {
-                    "$ref": "#/definitions/PLC1.Tc2_System.FB_FilePuts"
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Tc2_System.FB_FilePuts"
+                        },
+                        {
+                            "comment": "Writes one record (line)",
+                            "propertyOrder": 19
+                        }
+                    ]
                 },
                 "fbWriter": {
-                    "$ref": "#/definitions/PLC1.Tc2_Utilities.FB_CSVMemBufferWriter"
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Tc2_Utilities.FB_CSVMemBufferWriter"
+                        },
+                        {
+                            "comment": "Helper function block used to create CSV data bytes (single record line)",
+                            "propertyOrder": 20
+                        }
+                    ]
                 },
                 "hFile": {
-                    "$ref": "tchmi:general#/definitions/UINT"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/UINT"
+                        },
+                        {
+                            "comment": "File handle of the source file",
+                            "propertyOrder": 15
+                        }
+                    ]
                 },
                 "iAgora": {
-                    "$ref": "tchmi:general#/definitions/INT"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/INT"
+                        },
+                        {
+                            "propertyOrder": 9
+                        }
+                    ]
                 },
                 "iTotal": {
-                    "$ref": "tchmi:general#/definitions/INT"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/INT"
+                        },
+                        {
+                            "propertyOrder": 8
+                        }
+                    ]
                 },
                 "nColumn": {
-                    "$ref": "tchmi:general#/definitions/UDINT"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/UDINT"
+                        },
+                        {
+                            "comment": "Column number (record field)",
+                            "propertyOrder": 14
+                        }
+                    ]
                 },
                 "nErrId": {
-                    "$ref": "tchmi:general#/definitions/UDINT"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/UDINT"
+                        },
+                        {
+                            "propertyOrder": 7
+                        }
+                    ]
                 },
                 "nRow": {
-                    "$ref": "tchmi:general#/definitions/UDINT"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/UDINT"
+                        },
+                        {
+                            "comment": "Row number (record)",
+                            "propertyOrder": 13
+                        }
+                    ]
                 },
                 "rtInicia": {
-                    "$ref": "#/definitions/PLC1.Tc2_Standard.R_TRIG"
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Tc2_Standard.R_TRIG"
+                        },
+                        {
+                            "propertyOrder": 21
+                        }
+                    ]
                 },
                 "sAux": {
-                    "$ref": "tchmi:general#/definitions/STRING%2880%29"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/STRING%2880%29"
+                        },
+                        {
+                            "propertyOrder": 27
+                        }
+                    ]
                 },
                 "sCSVField": {
                     "allOf": [
                         {
-                            "maxLength": 255
+                            "comment": "Single CSV field value (column, record field)",
+                            "maxLength": 255,
+                            "propertyOrder": 12
                         },
                         {
                             "$ref": "tchmi:general#/definitions/String"
@@ -9554,7 +10658,9 @@
                 "sCSVLine": {
                     "allOf": [
                         {
-                            "maxLength": 1000
+                            "comment": "Single CSV text line (row, record), we are using string as record buffer (your are able to see created fields)",
+                            "maxLength": 1000,
+                            "propertyOrder": 11
                         },
                         {
                             "$ref": "tchmi:general#/definitions/String"
@@ -9565,7 +10671,8 @@
                     "allOf": [
                         {
                             "comment": "CSV destination file path and name",
-                            "maxLength": 255
+                            "maxLength": 255,
+                            "propertyOrder": 2
                         },
                         {
                             "$ref": "tchmi:general#/definitions/String"
@@ -9573,10 +10680,24 @@
                     ]
                 },
                 "step": {
-                    "$ref": "tchmi:general#/definitions/DWORD"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/DWORD"
+                        },
+                        {
+                            "propertyOrder": 16
+                        }
+                    ]
                 },
                 "xEscrevePorCima": {
-                    "$ref": "tchmi:general#/definitions/BOOL"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 3
+                        }
+                    ]
                 }
             },
             "type": "object"
@@ -12396,7 +13517,8 @@
                             "$ref": "tchmi:general#/definitions/REAL"
                         },
                         {
-                            "comment": "rampa de aceleração"
+                            "comment": "rampa de aceleração",
+                            "propertyOrder": 5
                         }
                     ]
                 },
@@ -12406,7 +13528,8 @@
                             "$ref": "tchmi:general#/definitions/REAL"
                         },
                         {
-                            "comment": "rampa de desaceleração"
+                            "comment": "rampa de desaceleração",
+                            "propertyOrder": 6
                         }
                     ]
                 },
@@ -12416,7 +13539,8 @@
                             "$ref": "tchmi:general#/definitions/REAL"
                         },
                         {
-                            "comment": "velocidade maxima"
+                            "comment": "velocidade maxima",
+                            "propertyOrder": 2
                         }
                     ]
                 },
@@ -12426,7 +13550,8 @@
                             "$ref": "tchmi:general#/definitions/REAL"
                         },
                         {
-                            "comment": "corrente maxima"
+                            "comment": "corrente maxima",
+                            "propertyOrder": 4
                         }
                     ]
                 },
@@ -12436,7 +13561,8 @@
                             "$ref": "tchmi:general#/definitions/REAL"
                         },
                         {
-                            "comment": "velocidade minima"
+                            "comment": "velocidade minima",
+                            "propertyOrder": 1
                         }
                     ]
                 },
@@ -12446,7 +13572,8 @@
                             "$ref": "tchmi:general#/definitions/REAL"
                         },
                         {
-                            "comment": "maxima velocidade"
+                            "comment": "maxima velocidade",
+                            "propertyOrder": 3
                         }
                     ]
                 },
@@ -12454,7 +13581,8 @@
                     "allOf": [
                         {
                             "comment": "Endereço Ethernet do Inversor",
-                            "maxLength": 15
+                            "maxLength": 15,
+                            "propertyOrder": 10
                         },
                         {
                             "$ref": "tchmi:general#/definitions/String"
@@ -12462,10 +13590,24 @@
                     ]
                 },
                 "xEscreveParametros": {
-                    "$ref": "tchmi:general#/definitions/BOOL"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 8
+                        }
+                    ]
                 },
                 "xLerParametros": {
-                    "$ref": "tchmi:general#/definitions/BOOL"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 9
+                        }
+                    ]
                 },
                 "xPHR": {
                     "allOf": [
@@ -12473,7 +13615,8 @@
                             "$ref": "tchmi:general#/definitions/BOOL"
                         },
                         {
-                            "comment": "ordem das fases"
+                            "comment": "ordem das fases",
+                            "propertyOrder": 7
                         }
                     ]
                 }
@@ -12566,6 +13709,768 @@
                         },
                         {
                             "comment": "numero da porta do inversor"
+                        }
+                    ]
+                }
+            },
+            "type": "object"
+        },
+        "PLC1.Teknike_Partidas.ConversaoBilateralConfig": {
+            "properties": {
+                "Base": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.REFERENCE-TO-UINT"
+                        },
+                        {
+                            "propertyOrder": 1
+                        }
+                    ]
+                },
+                "Convertida": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.REFERENCE-TO-REAL"
+                        },
+                        {
+                            "propertyOrder": 2
+                        }
+                    ]
+                },
+                "multiplicador": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/INT"
+                        },
+                        {
+                            "propertyOrder": 3
+                        }
+                    ]
+                },
+                "rAuxConversao": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/REAL"
+                        },
+                        {
+                            "propertyOrder": 4
+                        }
+                    ]
+                },
+                "rUltimaVariavelBase": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/REAL"
+                        },
+                        {
+                            "propertyOrder": 6
+                        }
+                    ]
+                },
+                "rUltimaVariavelConvertida": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/REAL"
+                        },
+                        {
+                            "propertyOrder": 5
+                        }
+                    ]
+                }
+            },
+            "type": "object"
+        },
+        "PLC1.Teknike_Partidas.FB_ComunicacaoEthernet": {
+            "properties": {
+                "ACC": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/UINT"
+                        },
+                        {
+                            "comment": "rampa de aceleração",
+                            "propertyOrder": 38
+                        }
+                    ]
+                },
+                "APPS": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/WORD"
+                        },
+                        {
+                            "comment": "Local remoto",
+                            "propertyOrder": 33
+                        }
+                    ]
+                },
+                "CMD": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/WORD"
+                        },
+                        {
+                            "comment": "Palavra de comando",
+                            "propertyOrder": 21
+                        }
+                    ]
+                },
+                "Config": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.REFERENCE-TO-Teknike_Partidas.ConfigComunicacaoEthernet"
+                        },
+                        {
+                            "propertyOrder": 2
+                        }
+                    ]
+                },
+                "DEC": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/UINT"
+                        },
+                        {
+                            "comment": "rampa de desaceleração",
+                            "propertyOrder": 39
+                        }
+                    ]
+                },
+                "ETA": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/WORD"
+                        },
+                        {
+                            "comment": "palavra de status",
+                            "propertyOrder": 23
+                        }
+                    ]
+                },
+                "HMIS": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/WORD"
+                        },
+                        {
+                            "comment": "status da IHM",
+                            "propertyOrder": 24
+                        }
+                    ]
+                },
+                "HSP": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/UINT"
+                        },
+                        {
+                            "comment": "velocidade maxima",
+                            "propertyOrder": 35
+                        }
+                    ]
+                },
+                "I": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/INT"
+                        },
+                        {
+                            "propertyOrder": 62
+                        }
+                    ]
+                },
+                "ITH": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/UINT"
+                        },
+                        {
+                            "comment": "corrente maxima",
+                            "propertyOrder": 37
+                        }
+                    ]
+                },
+                "J": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/INT"
+                        },
+                        {
+                            "propertyOrder": 63
+                        }
+                    ]
+                },
+                "LCR": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/UINT"
+                        },
+                        {
+                            "comment": "Corrente Motor",
+                            "propertyOrder": 30
+                        }
+                    ]
+                },
+                "LFRD": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/INT"
+                        },
+                        {
+                            "comment": "Velocidade de comando",
+                            "propertyOrder": 22
+                        }
+                    ]
+                },
+                "LFT": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/WORD"
+                        },
+                        {
+                            "comment": "ultimo erro",
+                            "propertyOrder": 25
+                        }
+                    ]
+                },
+                "LSP": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/UINT"
+                        },
+                        {
+                            "comment": "velocidade minima",
+                            "propertyOrder": 34
+                        }
+                    ]
+                },
+                "OTR": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/INT"
+                        },
+                        {
+                            "comment": "Torque Motor",
+                            "propertyOrder": 28
+                        }
+                    ]
+                },
+                "PHR": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/UINT"
+                        },
+                        {
+                            "comment": "ordem das fases",
+                            "propertyOrder": 40
+                        }
+                    ]
+                },
+                "PrimeiroScan": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 64
+                        }
+                    ]
+                },
+                "RFR": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/INT"
+                        },
+                        {
+                            "comment": "velo em HZ",
+                            "propertyOrder": 27
+                        }
+                    ]
+                },
+                "RFRD": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/INT"
+                        },
+                        {
+                            "comment": "velo agora",
+                            "propertyOrder": 26
+                        }
+                    ]
+                },
+                "RegisAmbosRead": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.ARRAY_1..7_OF-Tc2_ModbusSrv.FB_MBReadRegs"
+                        },
+                        {
+                            "propertyOrder": 18
+                        }
+                    ]
+                },
+                "RegisAmbosWrite": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.ARRAY_1..7_OF-Tc2_ModbusSrv.FB_MBWriteSingleReg"
+                        },
+                        {
+                            "propertyOrder": 19
+                        }
+                    ]
+                },
+                "RegisRead": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.ARRAY_1..11_OF-Tc2_ModbusSrv.FB_MBReadRegs"
+                        },
+                        {
+                            "propertyOrder": 16
+                        }
+                    ]
+                },
+                "RegisWrite": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.ARRAY_1..2_OF-Tc2_ModbusSrv.FB_MBWriteSingleReg"
+                        },
+                        {
+                            "propertyOrder": 14
+                        }
+                    ]
+                },
+                "RegistradoresAmbos": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.ARRAY_1..7_OF-Teknike_Partidas.st_ReadWriteREG"
+                        },
+                        {
+                            "propertyOrder": 17
+                        }
+                    ]
+                },
+                "RegistradoresEscrita": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.ARRAY_1..2_OF-Teknike_Partidas.st_ReadWriteREG"
+                        },
+                        {
+                            "propertyOrder": 13
+                        }
+                    ]
+                },
+                "RegistradoresLeitura": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.ARRAY_1..11_OF-Teknike_Partidas.st_ReadWriteREG"
+                        },
+                        {
+                            "propertyOrder": 15
+                        }
+                    ]
+                },
+                "THD": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/UINT"
+                        },
+                        {
+                            "comment": "temperatura inversor",
+                            "propertyOrder": 32
+                        }
+                    ]
+                },
+                "THR": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/UINT"
+                        },
+                        {
+                            "comment": "Temp Motor",
+                            "propertyOrder": 29
+                        }
+                    ]
+                },
+                "TRF": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/UINT"
+                        },
+                        {
+                            "comment": "maxima velocidade",
+                            "propertyOrder": 36
+                        }
+                    ]
+                },
+                "ULN": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/UINT"
+                        },
+                        {
+                            "comment": "voltagem na entrada",
+                            "propertyOrder": 31
+                        }
+                    ]
+                },
+                "Ult1ETA": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/WORD"
+                        },
+                        {
+                            "propertyOrder": 54
+                        }
+                    ]
+                },
+                "Ult2ETA": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/WORD"
+                        },
+                        {
+                            "propertyOrder": 53
+                        }
+                    ]
+                },
+                "bWriteReg": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 51
+                        }
+                    ]
+                },
+                "byteStatusWord": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BYTE"
+                        },
+                        {
+                            "propertyOrder": 48
+                        }
+                    ]
+                },
+                "fbControleBilateral": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.ARRAY_1..7_OF-Teknike_Partidas.ConversaoBilateralConfig"
+                        },
+                        {
+                            "propertyOrder": 20
+                        }
+                    ]
+                },
+                "ftTerminou": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.ARRAY_1..22_OF-Tc2_Standard.F_TRIG"
+                        },
+                        {
+                            "propertyOrder": 43
+                        }
+                    ]
+                },
+                "iEstadoMaquina": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Teknike_Partidas.MaquinaCanOpen"
+                        },
+                        {
+                            "propertyOrder": 52
+                        }
+                    ]
+                },
+                "iMachineState": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/INT"
+                        },
+                        {
+                            "propertyOrder": 50
+                        }
+                    ]
+                },
+                "iStatusWordHexa": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/INT"
+                        },
+                        {
+                            "comment": "Maquina de estados",
+                            "propertyOrder": 47
+                        }
+                    ]
+                },
+                "rACC": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/REAL"
+                        },
+                        {
+                            "comment": "rampa de aceleração",
+                            "propertyOrder": 7
+                        }
+                    ]
+                },
+                "rAuxPHR": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/REAL"
+                        },
+                        {
+                            "propertyOrder": 45
+                        }
+                    ]
+                },
+                "rAuxPHR2": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/REAL"
+                        },
+                        {
+                            "propertyOrder": 46
+                        }
+                    ]
+                },
+                "rAuxs": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/REAL"
+                        },
+                        {
+                            "propertyOrder": 65
+                        }
+                    ]
+                },
+                "rDEC": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/REAL"
+                        },
+                        {
+                            "comment": "rampa de desaceleração",
+                            "propertyOrder": 8
+                        }
+                    ]
+                },
+                "rHSP": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/REAL"
+                        },
+                        {
+                            "comment": "velocidade maxima",
+                            "propertyOrder": 4
+                        }
+                    ]
+                },
+                "rITH": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/REAL"
+                        },
+                        {
+                            "comment": "corrente maxima",
+                            "propertyOrder": 6
+                        }
+                    ]
+                },
+                "rLSP": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/REAL"
+                        },
+                        {
+                            "comment": "velocidade minima",
+                            "propertyOrder": 3
+                        }
+                    ]
+                },
+                "rTRF": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/REAL"
+                        },
+                        {
+                            "comment": "maxima velocidade",
+                            "propertyOrder": 5
+                        }
+                    ]
+                },
+                "rUltimaULN": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/UINT"
+                        },
+                        {
+                            "propertyOrder": 56
+                        }
+                    ]
+                },
+                "rtComacaEscrever": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Tc2_Standard.R_TRIG"
+                        },
+                        {
+                            "propertyOrder": 42
+                        }
+                    ]
+                },
+                "rtComacaLer": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Tc2_Standard.R_TRIG"
+                        },
+                        {
+                            "propertyOrder": 41
+                        }
+                    ]
+                },
+                "sAux": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/STRING%2880%29"
+                        },
+                        {
+                            "comment": "Outros",
+                            "propertyOrder": 57
+                        }
+                    ]
+                },
+                "sIPAdress": {
+                    "allOf": [
+                        {
+                            "comment": "Endereço Ethernet do Inversor",
+                            "maxLength": 15,
+                            "propertyOrder": 12
+                        },
+                        {
+                            "$ref": "tchmi:general#/definitions/String"
+                        }
+                    ]
+                },
+                "stMotor": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.REFERENCE-TO-Teknike_Partidas.st_Partida"
+                        },
+                        {
+                            "propertyOrder": 1
+                        }
+                    ]
+                },
+                "strHexStatusWord": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/STRING%2880%29"
+                        },
+                        {
+                            "propertyOrder": 49
+                        }
+                    ]
+                },
+                "ton01": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Tc2_Standard.TON"
+                        },
+                        {
+                            "propertyOrder": 61
+                        }
+                    ]
+                },
+                "ton1": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Tc2_Standard.TON"
+                        },
+                        {
+                            "propertyOrder": 60
+                        }
+                    ]
+                },
+                "tonOnline": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Tc2_Standard.TON"
+                        },
+                        {
+                            "comment": "xOnline",
+                            "propertyOrder": 55
+                        }
+                    ]
+                },
+                "xAux": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 66
+                        }
+                    ]
+                },
+                "xCiclo01s": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 59
+                        }
+                    ]
+                },
+                "xCiclo1s": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 58
+                        }
+                    ]
+                },
+                "xConfigOk": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 44
+                        }
+                    ]
+                },
+                "xEscreveParametros": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 10
+                        }
+                    ]
+                },
+                "xLerParametros": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 11
+                        }
+                    ]
+                },
+                "xPHR": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "comment": "ordem das fases",
+                            "propertyOrder": 9
                         }
                     ]
                 }
@@ -13317,6 +15222,46 @@
             },
             "type": "object"
         },
+        "PLC1.Teknike_Partidas.MaquinaCanOpen": {
+            "attributes": {
+                "strict": ""
+            },
+            "enum": [
+                2,
+                3,
+                4,
+                5,
+                6,
+                8
+            ],
+            "options": [
+                {
+                    "label": "SwitchOnDisabled",
+                    "value": 2
+                },
+                {
+                    "label": "ReadyToSwitchOn",
+                    "value": 3
+                },
+                {
+                    "label": "SwitchedOn",
+                    "value": 4
+                },
+                {
+                    "label": "OperationEnabled",
+                    "value": 5
+                },
+                {
+                    "label": "QuickStopActive",
+                    "value": 6
+                },
+                {
+                    "label": "fault",
+                    "value": 8
+                }
+            ],
+            "type": "integer"
+        },
         "PLC1.Teknike_Partidas.ST_ConfigInversor": {
             "properties": {
                 "ACC": {
@@ -13873,6 +15818,28 @@
         },
         "PLC1.Teknike_Partidas.st_ConfigPartida": {
             "properties": {
+                "iLimiteReset": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/INT"
+                        },
+                        {
+                            "comment": "Quantos reset pode dar antes de ter que dar o reset numero de reset",
+                            "propertyOrder": 37
+                        }
+                    ]
+                },
+                "iMinBloqueio": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/ULINT"
+                        },
+                        {
+                            "comment": "por quantos minutos ele bloqueia antes de liberar sozinho o reset",
+                            "propertyOrder": 38
+                        }
+                    ]
+                },
                 "inversor": {
                     "allOf": [
                         {
@@ -13999,6 +15966,17 @@
                         {
                             "comment": "velo que representa 100%",
                             "propertyOrder": 10
+                        }
+                    ]
+                },
+                "sIpInversor": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/STRING%2880%29"
+                        },
+                        {
+                            "comment": "Ip do inversor",
+                            "propertyOrder": 39
                         }
                     ]
                 },
@@ -14199,6 +16177,17 @@
                         }
                     ]
                 },
+                "xTemLimiteReset": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "comment": "se a partida vai usar o limitador de reset",
+                            "propertyOrder": 36
+                        }
+                    ]
+                },
                 "xTemReversao": {
                     "allOf": [
                         {
@@ -14265,7 +16254,7 @@
                         },
                         {
                             "comment": "index atual para a IHM",
-                            "propertyOrder": 32
+                            "propertyOrder": 34
                         }
                     ]
                 },
@@ -14275,7 +16264,7 @@
                             "$ref": "tchmi:general#/definitions/INT"
                         },
                         {
-                            "propertyOrder": 39
+                            "propertyOrder": 41
                         }
                     ]
                 },
@@ -14352,7 +16341,18 @@
                         },
                         {
                             "comment": "struct de hora para o horimetro",
-                            "propertyOrder": 31
+                            "propertyOrder": 33
+                        }
+                    ]
+                },
+                "xAlerta": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "comment": "Status de alerta do inversor",
+                            "propertyOrder": 32
                         }
                     ]
                 },
@@ -14384,7 +16384,7 @@
                             "$ref": "tchmi:general#/definitions/BOOL"
                         },
                         {
-                            "propertyOrder": 35
+                            "propertyOrder": 37
                         }
                     ]
                 },
@@ -14395,7 +16395,7 @@
                         },
                         {
                             "comment": "Contato se o inversor esta OK",
-                            "propertyOrder": 28
+                            "propertyOrder": 29
                         }
                     ]
                 },
@@ -14405,7 +16405,7 @@
                             "$ref": "tchmi:general#/definitions/BOOL"
                         },
                         {
-                            "propertyOrder": 36
+                            "propertyOrder": 38
                         }
                     ]
                 },
@@ -14438,7 +16438,7 @@
                         },
                         {
                             "comment": "Entra no modo ECO - status igual a se estivesse com interlock",
-                            "propertyOrder": 41
+                            "propertyOrder": 43
                         }
                     ]
                 },
@@ -14460,7 +16460,18 @@
                         },
                         {
                             "comment": "se o inversor tiver qualquer outra falha que nao seja perda de conexao",
-                            "propertyOrder": 27
+                            "propertyOrder": 28
+                        }
+                    ]
+                },
+                "xFaltaDeFaseOk": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "comment": "Se o falta de fase esta OK",
+                            "propertyOrder": 44
                         }
                     ]
                 },
@@ -14470,7 +16481,7 @@
                             "$ref": "tchmi:general#/definitions/BOOL"
                         },
                         {
-                            "propertyOrder": 33
+                            "propertyOrder": 35
                         }
                     ]
                 },
@@ -14480,7 +16491,7 @@
                             "$ref": "tchmi:general#/definitions/BOOL"
                         },
                         {
-                            "propertyOrder": 34
+                            "propertyOrder": 36
                         }
                     ]
                 },
@@ -14535,7 +16546,7 @@
                         },
                         {
                             "comment": "se etiver online",
-                            "propertyOrder": 26
+                            "propertyOrder": 27
                         }
                     ]
                 },
@@ -14590,7 +16601,7 @@
                         },
                         {
                             "comment": "caso o inversor esteja em modo local",
-                            "propertyOrder": 29
+                            "propertyOrder": 30
                         }
                     ]
                 },
@@ -14612,7 +16623,7 @@
                         },
                         {
                             "comment": "o reset do bloco vempor aqui, ai nao bate na contagem do reset",
-                            "propertyOrder": 30
+                            "propertyOrder": 31
                         }
                     ]
                 },
@@ -14633,7 +16644,7 @@
                             "$ref": "tchmi:general#/definitions/BOOL"
                         },
                         {
-                            "propertyOrder": 40
+                            "propertyOrder": 42
                         }
                     ]
                 },
@@ -14665,7 +16676,7 @@
                             "$ref": "tchmi:general#/definitions/BOOL"
                         },
                         {
-                            "propertyOrder": 37
+                            "propertyOrder": 39
                         }
                     ]
                 },
@@ -14675,7 +16686,7 @@
                             "$ref": "tchmi:general#/definitions/BOOL"
                         },
                         {
-                            "propertyOrder": 38
+                            "propertyOrder": 40
                         }
                     ]
                 },
@@ -14687,6 +16698,17 @@
                         {
                             "comment": "define se o bloco considera ou nao uma conexao",
                             "propertyOrder": 25
+                        }
+                    ]
+                },
+                "xTemTeSysU": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "comment": "Se tem TeSysU ele libera algumas informaçoes tipo a do inversor, mas nao libera tudo do inversor",
+                            "propertyOrder": 26
                         }
                     ]
                 },
@@ -15348,6 +17370,131 @@
             },
             "type": "object"
         },
+        "PLC1.Teknike_Partidas.st_ReadWriteREG": {
+            "properties": {
+                "bBusy": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 9
+                        }
+                    ]
+                },
+                "bError": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 10
+                        }
+                    ]
+                },
+                "cbLength": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/UDINT"
+                        },
+                        {
+                            "propertyOrder": 4
+                        }
+                    ]
+                },
+                "cbRead": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/UDINT"
+                        },
+                        {
+                            "propertyOrder": 12
+                        }
+                    ]
+                },
+                "nErrID": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/UDINT"
+                        },
+                        {
+                            "propertyOrder": 11
+                        }
+                    ]
+                },
+                "nMBAddr": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/WORD"
+                        },
+                        {
+                            "propertyOrder": 3
+                        }
+                    ]
+                },
+                "nQuantity": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/WORD"
+                        },
+                        {
+                            "propertyOrder": 2
+                        }
+                    ]
+                },
+                "nValue": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/WORD"
+                        },
+                        {
+                            "propertyOrder": 8
+                        }
+                    ]
+                },
+                "pDestAddr": {
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.POINTER-TO-BYTE"
+                        },
+                        {
+                            "propertyOrder": 5
+                        }
+                    ]
+                },
+                "sIPAddr": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/STRING%2880%29"
+                        },
+                        {
+                            "propertyOrder": 1
+                        }
+                    ]
+                },
+                "xEscreve": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 7
+                        }
+                    ]
+                },
+                "xLe": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 6
+                        }
+                    ]
+                }
+            },
+            "type": "object"
+        },
         "PLC1.Teknike_Partidas.st_SaidaPartida": {
             "properties": {
                 "iDisjDesarm": {
@@ -15486,13 +17633,33 @@
                         }
                     ]
                 },
+                "sAlerta": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/STRING%2880%29"
+                        },
+                        {
+                            "propertyOrder": 24
+                        }
+                    ]
+                },
                 "sHorimetro": {
                     "allOf": [
                         {
                             "$ref": "tchmi:general#/definitions/STRING%2880%29"
                         },
                         {
-                            "propertyOrder": 26
+                            "propertyOrder": 27
+                        }
+                    ]
+                },
+                "sStatus": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/STRING%2880%29"
+                        },
+                        {
+                            "propertyOrder": 29
                         }
                     ]
                 },
@@ -15502,7 +17669,7 @@
                             "$ref": "tchmi:general#/definitions/STRING%2880%29"
                         },
                         {
-                            "propertyOrder": 24
+                            "propertyOrder": 25
                         }
                     ]
                 },
@@ -15522,7 +17689,7 @@
                             "$ref": "tchmi:general#/definitions/TIME"
                         },
                         {
-                            "propertyOrder": 25
+                            "propertyOrder": 26
                         }
                     ]
                 },
@@ -15587,7 +17754,7 @@
                             "$ref": "tchmi:general#/definitions/BOOL"
                         },
                         {
-                            "propertyOrder": 27
+                            "propertyOrder": 28
                         }
                     ]
                 },
@@ -15641,13 +17808,34 @@
         "PLC1.Teknike_SQL.FB_BDMotores": {
             "properties": {
                 "ColumnInfo": {
-                    "$ref": "#/definitions/PLC1.ARRAY_0..9_OF-Tc3_Database.ST_ColumnInfo"
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.ARRAY_0..9_OF-Tc3_Database.ST_ColumnInfo"
+                        },
+                        {
+                            "propertyOrder": 11
+                        }
+                    ]
                 },
                 "ColumnNames": {
-                    "$ref": "#/definitions/PLC1.ARRAY_0..8_OF-STRING-50"
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.ARRAY_0..8_OF-STRING-50"
+                        },
+                        {
+                            "propertyOrder": 14
+                        }
+                    ]
                 },
                 "FBEscreveCSV": {
-                    "$ref": "#/definitions/PLC1.Teknike_Geral.FB_EscreveCSV"
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Teknike_Geral.FB_EscreveCSV"
+                        },
+                        {
+                            "propertyOrder": 27
+                        }
+                    ]
                 },
                 "HistoricoDoMinuto": {
                     "allOf": [
@@ -15655,7 +17843,8 @@
                             "$ref": "#/definitions/PLC1.ARRAY_0..59_OF-Teknike_SQL.st_EscritaBD"
                         },
                         {
-                            "comment": "guarda para escrever o ultimo minuto CSV"
+                            "comment": "guarda para escrever o ultimo minuto CSV",
+                            "propertyOrder": 17
                         }
                     ]
                 },
@@ -15665,7 +17854,8 @@
                             "$ref": "#/definitions/PLC1.Tc2_Utilities.TIMESTRUCT"
                         },
                         {
-                            "comment": "pra saber quando gravar"
+                            "comment": "pra saber quando gravar",
+                            "propertyOrder": 5
                         }
                     ]
                 },
@@ -15675,7 +17865,8 @@
                             "$ref": "#/definitions/PLC1.Teknike_Partidas.st_Partida"
                         },
                         {
-                            "comment": "st do motor pra pegar os dados"
+                            "comment": "st do motor pra pegar os dados",
+                            "propertyOrder": 2
                         }
                     ]
                 },
@@ -15685,21 +17876,50 @@
                             "$ref": "tchmi:general#/definitions/STRING%2880%29"
                         },
                         {
-                            "comment": "nome do motor para a criação da tabela"
+                            "comment": "nome do motor para a criação da tabela",
+                            "propertyOrder": 3
                         }
                     ]
                 },
                 "UltimaHora": {
-                    "$ref": "#/definitions/PLC1.Tc2_Utilities.TIMESTRUCT"
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Tc2_Utilities.TIMESTRUCT"
+                        },
+                        {
+                            "propertyOrder": 20
+                        }
+                    ]
                 },
                 "ValorPraEscrita": {
-                    "$ref": "#/definitions/PLC1.Teknike_SQL.st_EscritaBD"
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Teknike_SQL.st_EscritaBD"
+                        },
+                        {
+                            "propertyOrder": 13
+                        }
+                    ]
                 },
                 "dataBase": {
-                    "$ref": "#/definitions/PLC1.ARRAY_0..60_0..7_OF-STRING-255"
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.ARRAY_0..60_0..7_OF-STRING-255"
+                        },
+                        {
+                            "propertyOrder": 29
+                        }
+                    ]
                 },
                 "fbCriaEstruta": {
-                    "$ref": "#/definitions/PLC1.Tc2_System.FB_CreateDir"
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Tc2_System.FB_CreateDir"
+                        },
+                        {
+                            "propertyOrder": 28
+                        }
+                    ]
                 },
                 "fbPLCDBCreate": {
                     "allOf": [
@@ -15709,7 +17929,8 @@
                         {
                             "attributes": {
                                 "old_input_assignments": ""
-                            }
+                            },
+                            "propertyOrder": 10
                         }
                     ]
                 },
@@ -15722,30 +17943,80 @@
                             "attributes": {
                                 "old_input_assignments": ""
                             },
-                            "comment": "escreve na tabela"
+                            "comment": "escreve na tabela",
+                            "propertyOrder": 12
                         }
                     ]
                 },
                 "i": {
-                    "$ref": "tchmi:general#/definitions/INT"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/INT"
+                        },
+                        {
+                            "propertyOrder": 34
+                        }
+                    ]
                 },
                 "iAtualizandoAtual": {
-                    "$ref": "#/definitions/PLC1.REFERENCE-TO-INT"
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.REFERENCE-TO-INT"
+                        },
+                        {
+                            "propertyOrder": 1
+                        }
+                    ]
                 },
                 "iMaxAtualizando": {
-                    "$ref": "tchmi:general#/definitions/INT"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/INT"
+                        },
+                        {
+                            "propertyOrder": 7
+                        }
+                    ]
                 },
                 "iUltimaFalha": {
-                    "$ref": "tchmi:general#/definitions/INT"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/INT"
+                        },
+                        {
+                            "propertyOrder": 23
+                        }
+                    ]
                 },
                 "iUltimaPartida": {
-                    "$ref": "tchmi:general#/definitions/INT"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/INT"
+                        },
+                        {
+                            "propertyOrder": 24
+                        }
+                    ]
                 },
                 "j": {
-                    "$ref": "tchmi:general#/definitions/INT"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/INT"
+                        },
+                        {
+                            "propertyOrder": 35
+                        }
+                    ]
                 },
                 "rtCria": {
-                    "$ref": "#/definitions/PLC1.Tc2_Standard.R_TRIG"
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Tc2_Standard.R_TRIG"
+                        },
+                        {
+                            "propertyOrder": 9
+                        }
+                    ]
                 },
                 "rtEntrouEmFalha": {
                     "allOf": [
@@ -15753,33 +18024,90 @@
                             "$ref": "#/definitions/PLC1.Tc2_Standard.R_TRIG"
                         },
                         {
-                            "comment": "Escrita do CSV"
+                            "comment": "Escrita do CSV",
+                            "propertyOrder": 26
                         }
                     ]
                 },
                 "rtMudouFalhas": {
-                    "$ref": "#/definitions/PLC1.Tc2_Standard.R_TRIG"
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Tc2_Standard.R_TRIG"
+                        },
+                        {
+                            "propertyOrder": 21
+                        }
+                    ]
                 },
                 "rtMudouMinuto": {
-                    "$ref": "#/definitions/PLC1.Tc2_Standard.R_TRIG"
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Tc2_Standard.R_TRIG"
+                        },
+                        {
+                            "propertyOrder": 18
+                        }
+                    ]
                 },
                 "rtMudouPartidas": {
-                    "$ref": "#/definitions/PLC1.Tc2_Standard.R_TRIG"
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Tc2_Standard.R_TRIG"
+                        },
+                        {
+                            "propertyOrder": 22
+                        }
+                    ]
                 },
                 "rtMudouSegundo": {
-                    "$ref": "#/definitions/PLC1.Tc2_Standard.R_TRIG"
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Tc2_Standard.R_TRIG"
+                        },
+                        {
+                            "propertyOrder": 19
+                        }
+                    ]
                 },
                 "rtTerminouDeCriar": {
-                    "$ref": "#/definitions/PLC1.Tc2_Standard.R_TRIG"
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Tc2_Standard.R_TRIG"
+                        },
+                        {
+                            "propertyOrder": 32
+                        }
+                    ]
                 },
                 "rtTrocouDia": {
-                    "$ref": "#/definitions/PLC1.Tc2_Standard.R_TRIG"
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Tc2_Standard.R_TRIG"
+                        },
+                        {
+                            "propertyOrder": 25
+                        }
+                    ]
                 },
                 "rt_TemEspeco": {
-                    "$ref": "#/definitions/PLC1.Tc2_Standard.R_TRIG"
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Tc2_Standard.R_TRIG"
+                        },
+                        {
+                            "propertyOrder": 37
+                        }
+                    ]
                 },
                 "sAux": {
-                    "$ref": "#/definitions/PLC1.ARRAY_0..25_OF-STRING-255"
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.ARRAY_0..25_OF-STRING-255"
+                        },
+                        {
+                            "propertyOrder": 33
+                        }
+                    ]
                 },
                 "sCaminhoCSV": {
                     "allOf": [
@@ -15787,18 +18115,40 @@
                             "$ref": "tchmi:general#/definitions/STRING%2880%29"
                         },
                         {
-                            "comment": "caminho pro CSV"
+                            "comment": "caminho pro CSV",
+                            "propertyOrder": 6
                         }
                     ]
                 },
                 "sCaminhoPasta": {
-                    "$ref": "tchmi:general#/definitions/STRING%2880%29"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/STRING%2880%29"
+                        },
+                        {
+                            "propertyOrder": 30
+                        }
+                    ]
                 },
                 "sNomeEcaminho": {
-                    "$ref": "tchmi:general#/definitions/STRING%2880%29"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/STRING%2880%29"
+                        },
+                        {
+                            "propertyOrder": 31
+                        }
+                    ]
                 },
                 "tUltimoHorimeto": {
-                    "$ref": "tchmi:general#/definitions/TIME"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/TIME"
+                        },
+                        {
+                            "propertyOrder": 15
+                        }
+                    ]
                 },
                 "xCria": {
                     "allOf": [
@@ -15806,7 +18156,8 @@
                             "$ref": "tchmi:general#/definitions/BOOL"
                         },
                         {
-                            "comment": "cria tabela"
+                            "comment": "cria tabela",
+                            "propertyOrder": 8
                         }
                     ]
                 },
@@ -15816,15 +18167,30 @@
                             "$ref": "tchmi:general#/definitions/BOOL"
                         },
                         {
-                            "comment": "tenta criar a tabela"
+                            "comment": "tenta criar a tabela",
+                            "propertyOrder": 4
                         }
                     ]
                 },
                 "xEscreve": {
-                    "$ref": "tchmi:general#/definitions/BOOL"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 16
+                        }
+                    ]
                 },
                 "xOlhaSeTemEspacoConexao": {
-                    "$ref": "tchmi:general#/definitions/BOOL"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/BOOL"
+                        },
+                        {
+                            "propertyOrder": 36
+                        }
+                    ]
                 }
             },
             "type": "object"
@@ -16507,31 +18873,94 @@
         "PLC1.Teknike_SQL.st_EscritaBD": {
             "properties": {
                 "Corrente": {
-                    "$ref": "tchmi:general#/definitions/REAL"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/REAL"
+                        },
+                        {
+                            "propertyOrder": 3
+                        }
+                    ]
                 },
                 "HorimetroD": {
-                    "$ref": "tchmi:general#/definitions/STRING%2880%29"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/STRING%2880%29"
+                        },
+                        {
+                            "propertyOrder": 7
+                        }
+                    ]
                 },
                 "ID": {
-                    "$ref": "#/definitions/PLC1.Tc2_Utilities.T_ULARGE_INTEGER"
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PLC1.Tc2_Utilities.T_ULARGE_INTEGER"
+                        },
+                        {
+                            "propertyOrder": 1
+                        }
+                    ]
                 },
                 "StatusIHM": {
-                    "$ref": "tchmi:general#/definitions/STRING%2880%29"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/STRING%2880%29"
+                        },
+                        {
+                            "propertyOrder": 6
+                        }
+                    ]
                 },
                 "TemperaturaDoMotor": {
-                    "$ref": "tchmi:general#/definitions/REAL"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/REAL"
+                        },
+                        {
+                            "propertyOrder": 4
+                        }
+                    ]
                 },
                 "Torque": {
-                    "$ref": "tchmi:general#/definitions/REAL"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/REAL"
+                        },
+                        {
+                            "propertyOrder": 5
+                        }
+                    ]
                 },
                 "TotalDeFalhas": {
-                    "$ref": "tchmi:general#/definitions/INT"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/INT"
+                        },
+                        {
+                            "propertyOrder": 9
+                        }
+                    ]
                 },
                 "TotalDePartidas": {
-                    "$ref": "tchmi:general#/definitions/INT"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/INT"
+                        },
+                        {
+                            "propertyOrder": 8
+                        }
+                    ]
                 },
                 "Velocidade": {
-                    "$ref": "tchmi:general#/definitions/INT"
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/INT"
+                        },
+                        {
+                            "propertyOrder": 2
+                        }
+                    ]
                 }
             },
             "type": "object"
@@ -26212,6 +28641,24 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.AControle.fbAreaQuente.stCamaras.Config.sValvulas": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::AControle::fbAreaQuente::stCamaras::Config::sValvulas",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/STRING%2880%29"
+                    },
+                    {
+                        "comment": "valvula que estao nessa camara",
+                        "propertyOrder": 28
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Automatico.fbIniciaGrupos.fbGrupos.Motores.En.xFaltaDeFaseOk": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -26518,6 +28965,16 @@
             "MAPPING": "PLC1::GVL_Automatico::stControleTemperaturaAnel",
             "SCHEMA": {
                 "$ref": "tchmi:server#/definitions/PLC1.ARRAY_0..3_OF-stControlePID"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.GVL_Automatico.stControleTrocador": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_Automatico::stControleTrocador",
+            "SCHEMA": {
+                "$ref": "tchmi:server#/definitions/PLC1.Teknike_Aspersao.stControlePID"
             },
             "USEMAPPING": true
         },
@@ -26963,7 +29420,7 @@
             "DYNAMIC": true,
             "MAPPING": "PLC1::GVL_Sensores::SenAna",
             "SCHEMA": {
-                "$ref": "tchmi:server#/definitions/PLC1.ARRAY_0..200_OF-Teknike_Sensores.st_SensorAnalogico"
+                "$ref": "tchmi:server#/definitions/PLC1.ARRAY_0..100_OF-Teknike_Sensores.st_SensorAnalogico"
             },
             "USEMAPPING": true
         },
@@ -27009,16 +29466,12 @@
         },
         "PLC1.GVL_Valvulas.iValvulas": {
             "ACCESS": 3,
-            "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
             "DYNAMIC": true,
-            "HIDDEN": false,
             "MAPPING": "PLC1::GVL_Valvulas::iValvulas",
-            "OPTIONS": {},
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/INT"
             },
-            "SUBSYMBOL_MAPPING": "",
             "USEMAPPING": true
         },
         "PLC1.GVL_Valvulas.valvula": {
@@ -27084,6 +29537,26 @@
                 "$ref": "tchmi:general#/definitions/BOOL"
             },
             "SUBSYMBOL_MAPPING": "",
+            "USEMAPPING": true
+        },
+        "PLC1.Partidas.fbBDPartida": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Partidas::fbBDPartida",
+            "SCHEMA": {
+                "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..20_OF-Teknike_SQL.FB_BDMotores"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Partidas.fb_Comunicacao_MotoresEthernet": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Partidas::fb_Comunicacao_MotoresEthernet",
+            "SCHEMA": {
+                "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..20_OF-Teknike_Partidas.FB_ComunicacaoEthernet"
+            },
             "USEMAPPING": true
         },
         "PLC1.Partidas.i": {
@@ -29359,6 +31832,7 @@
                 "PLC1..TCPADS_MAXUDP_BUFFSIZE": 3,
                 "PLC1..TCPADS_TLS_PSK_IDENTITY_SIZE": 3,
                 "PLC1.AControle.fbAreaFria.stCamaras": 3,
+                "PLC1.AControle.fbAreaQuente.stCamaras.Config.sValvulas": 3,
                 "PLC1.Automatico.fbIniciaGrupos.fbGrupos.Motores.En.xFaltaDeFaseOk": 3,
                 "PLC1.Comandos.xBP": 3,
                 "PLC1.Comandos.xFaltaDeFaseCCM": 3,
@@ -29780,6 +32254,7 @@
                 "PLC1.Partidas.fbIniciaConfig": 3,
                 "PLC1.Partidas.fbPartida": 3,
                 "PLC1.Partidas.fb_Comunicacao_Delta": 3,
+                "PLC1.Partidas.fb_Comunicacao_MotoresEthernet": 3,
                 "PLC1.Partidas.i": 3,
                 "PLC1.Partidas.iAtualizandoAtual": 3,
                 "PLC1.Partidas.iControle": 3,
