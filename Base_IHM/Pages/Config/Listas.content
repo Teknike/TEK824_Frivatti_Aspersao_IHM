@@ -9,9 +9,9 @@
         "objectType": "JavaScript",
         "active": true,
         "sourceLines": [
-          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores::SelectedId%/ctrl%');",
+          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores_1::SelectedId%/ctrl%');",
           "",
-          "TcHmi.Symbol.writeEx('%ctrl%cbMotores::SelectedId%/ctrl%', id-1);"
+          "TcHmi.Symbol.writeEx('%ctrl%cbMotores_1::SelectedId%/ctrl%', id-1);"
         ],
         "injectContextObject": false,
         "asyncWait": true,
@@ -22,12 +22,12 @@
         "active": true,
         "sourceLines": [
           "// lê o nome do Motor",
-          "var index = TcHmi.Symbol.readEx('%ctrl%cbMotores::SelectedValue%/ctrl%');",
-          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores::SelectedId%/ctrl%') + 1;",
+          "var index = TcHmi.Symbol.readEx('%ctrl%cbMotores_1::SelectedValue%/ctrl%');",
+          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores_1::SelectedId%/ctrl%') + 1;",
           "//%s%PLC1.GVL_Partidas.Motor%/s%",
           "var GVL = 'GVL_Motores';",
           "var NomeVetor = 'Motor';",
-          "var NomeUC = 'UcPopUpMotores';",
+          "var NomeUC = 'UcPopUpMotores2';",
           "\t",
           "\t\t",
           "// faz o binding com a struct do motor\t",
@@ -68,9 +68,9 @@
         "objectType": "JavaScript",
         "active": true,
         "sourceLines": [
-          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores::SelectedId%/ctrl%');",
+          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores_1::SelectedId%/ctrl%');",
           "",
-          "TcHmi.Symbol.writeEx('%ctrl%cbMotores::SelectedId%/ctrl%', id+1);"
+          "TcHmi.Symbol.writeEx('%ctrl%cbMotores_1::SelectedId%/ctrl%', id+1);"
         ],
         "injectContextObject": false,
         "asyncWait": true,
@@ -81,12 +81,12 @@
         "active": true,
         "sourceLines": [
           "// lê o nome do Motor",
-          "var index = TcHmi.Symbol.readEx('%ctrl%cbMotores::SelectedValue%/ctrl%');",
-          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores::SelectedId%/ctrl%') + 1;",
+          "var index = TcHmi.Symbol.readEx('%ctrl%cbMotores_1::SelectedValue%/ctrl%');",
+          "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores_1::SelectedId%/ctrl%') + 1;",
           "//%s%PLC1.GVL_Partidas.Motor%/s%",
           "var GVL = 'GVL_Motores';",
           "var NomeVetor = 'Motor';",
-          "var NomeUC = 'UcPopUpMotores';",
+          "var NomeUC = 'UcPopUpMotores2';",
           "\t",
           "\t\t",
           "// faz o binding com a struct do motor\t",
@@ -2216,7 +2216,7 @@
           "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores_1::SelectedId%/ctrl%') + 1;",
           "var GVL = 'GVL_Motores';",
           "var NomeVetor = 'Motor';",
-          "var NomeUC = 'UcPopUpMotores_2';",
+          "var NomeUC = 'UcPopUpMotores2';",
           "\t",
           "\t\t",
           "// faz o binding com a struct do motor\t",
@@ -2232,8 +2232,7 @@
           "    console.log(Variavel);",
           "    console.log(ItemProperty);",
           "    console.log(UserControl);",
-          "}",
-          ""
+          "}"
         ],
         "injectContextObject": false,
         "asyncWait": true,
@@ -2251,7 +2250,7 @@
           "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores_1::SelectedId%/ctrl%') + 1;",
           "",
           "",
-          "\tvar NomeUC = 'UcPopUpMotores_2';",
+          "\tvar NomeUC = 'UcPopUpMotores2';",
           "                ",
           "    var _id = 'cbMotores_1';",
           "\tvar _uc = TcHmi.Controls.get(_id);",
@@ -2312,7 +2311,7 @@
           "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores_1::SelectedId%/ctrl%') + 1;",
           "var GVL = 'GVL_Motores';",
           "var NomeVetor = 'Motor';",
-          "var NomeUC = 'UcPopUpMotores_2';",
+          "var NomeUC = 'UcPopUpMotores2';",
           "\t",
           "\t\t",
           "// faz o binding com a struct do motor\t",
@@ -2328,8 +2327,7 @@
           "    console.log(Variavel);",
           "    console.log(ItemProperty);",
           "    console.log(UserControl);",
-          "}",
-          ""
+          "}"
         ],
         "injectContextObject": false,
         "asyncWait": true,
@@ -2347,7 +2345,7 @@
           "var id = TcHmi.Symbol.readEx('%ctrl%cbMotores_1::SelectedId%/ctrl%') + 1;",
           "",
           "",
-          "\tvar NomeUC = 'UcPopUpMotores_2';",
+          "\tvar NomeUC = 'UcPopUpMotores2';",
           "                ",
           "    var _id = 'cbMotores_1';",
           "\tvar _uc = TcHmi.Controls.get(_id);",
@@ -3165,10 +3163,10 @@
 ]
 </script>
 </div>
-<div id="UcPopUpValvulas_2" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-escolhe="False" data-tchmi-height="300" data-tchmi-height-unit="px" data-tchmi-left="-78" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Popup/ucPopUpValvulas.usercontrol" data-tchmi-top="1145" data-tchmi-top-unit="px" data-tchmi-width="600" data-tchmi-width-unit="px">
+<div id="UcPopUpValvulas_2" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-escolhe="False" data-tchmi-height="300" data-tchmi-height-unit="px" data-tchmi-left="-25" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Popup/ucPopUpValvulas.usercontrol" data-tchmi-top="1146" data-tchmi-top-unit="px" data-tchmi-width="600" data-tchmi-width-unit="px">
 </div>
 <div id="UcPopUpSensorDigital_2" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="260" data-tchmi-height-unit="px" data-tchmi-left="1150" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Popup/ucPopUpSensorDigital.usercontrol" data-tchmi-top="1117" data-tchmi-top-unit="px" data-tchmi-width="550" data-tchmi-width-unit="px">
 </div>
-<div id="UcPopUpMotores_2" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-escolhe="False" data-tchmi-height="470" data-tchmi-height-unit="px" data-tchmi-left="-157" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Popup/Motor/ucPopUpMotores.usercontrol" data-tchmi-top="1480" data-tchmi-top-unit="px" data-tchmi-width="750" data-tchmi-width-unit="px">
+<div id="UcPopUpMotores2" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-escolhe="False" data-tchmi-height="470" data-tchmi-height-unit="px" data-tchmi-left="-157" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Popup/Motor/ucPopUpMotores.usercontrol" data-tchmi-top="1480" data-tchmi-top-unit="px" data-tchmi-width="750" data-tchmi-width-unit="px">
 </div>
 </div>
