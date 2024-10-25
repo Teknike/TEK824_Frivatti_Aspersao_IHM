@@ -138,6 +138,9 @@
     <Content Include="Images\Aspersao\imagem_2024-10-02_133131736-removebg-preview.png">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Images\Aspersao\Sensor-Recalque.png">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Images\Aspersao\output-onlinepngtools %2812%29.png">
       <SubType>Content</SubType>
     </Content>
