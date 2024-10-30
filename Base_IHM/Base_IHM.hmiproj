@@ -12,7 +12,7 @@
     <HmiTitle>Frivatti - Aspersão</HmiTitle>
     <HmiVerboseLevel>2</HmiVerboseLevel>
     <HmiVersion>1.0.0.0</HmiVersion>
-    <HmiCommunicationServerPort>3020</HmiCommunicationServerPort>
+    <HmiCommunicationServerPort>3021</HmiCommunicationServerPort>
     <HmiLogTcHmiServerMessages>false</HmiLogTcHmiServerMessages>
     <HmiLogDesignerModeComMessages>false</HmiLogDesignerModeComMessages>
     <HmiServerVersion>Latest</HmiServerVersion>
@@ -22,10 +22,10 @@
     <TargetFramework>native1.12-tchmi</TargetFramework>
     <AzureFunctionsVersion>v2</AzureFunctionsVersion>
     <Name>Base_IHM</Name>
-    <HmiCommunicationRouterPort>10235</HmiCommunicationRouterPort>
-    <HmiCommunicationServerAuthPort>13007</HmiCommunicationServerAuthPort>
+    <HmiCommunicationRouterPort>10236</HmiCommunicationRouterPort>
+    <HmiCommunicationServerAuthPort>13008</HmiCommunicationServerAuthPort>
     <HmiInitial>1.12.756.1</HmiInitial>
-    <HmiRecent>1.12.762.42</HmiRecent>
+    <HmiRecent>1.12.762.44</HmiRecent>
     <HmiServerNodeAdvancedView>False</HmiServerNodeAdvancedView>
     <HmiTimeFormatLocale>pt-BR</HmiTimeFormatLocale>
     <HmiTimeZone>client</HmiTimeZone>
