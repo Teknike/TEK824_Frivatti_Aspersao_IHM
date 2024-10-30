@@ -906,7 +906,7 @@
 }
 </script>
 </div>
-<div id="Ucvalvulapropor_1" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="86" data-tchmi-height-unit="px" data-tchmi-left="1437" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucvalvulapropor.usercontrol" data-tchmi-top="-4" data-tchmi-top-unit="px" data-tchmi-width="91" data-tchmi-width-unit="px" data-tchmi-zindex="45" data-tchmi-stvalvulaproporcional="%s%PLC1.GVL_Valvulas.ValProp[32]%/s%" data-tchmi-iindex="32">
+<div id="Ucvalvulapropor_1" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="86" data-tchmi-height-unit="px" data-tchmi-left="1437" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucvalvulapropor.usercontrol" data-tchmi-top="-4" data-tchmi-top-unit="px" data-tchmi-width="91" data-tchmi-width-unit="px" data-tchmi-zindex="45" data-tchmi-stvalvulaproporcional="%s%PLC1.GVL_Valvulas.ValProp[1]%/s%" data-tchmi-iindex="1">
 </div>
 <div id="TcHmi_Controls_Beckhoff_TcHmiImage_1843" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="482" data-tchmi-height-unit="px" data-tchmi-left="1137" data-tchmi-left-unit="px" data-tchmi-src="Images/Aspersao/357bea55-c394-4318-8daa-d43c40103448-removebg-preview.png" data-tchmi-top="70" data-tchmi-top-unit="px" data-tchmi-width="564" data-tchmi-width-unit="px" data-tchmi-zindex="2" data-tchmi-right="-536">
 </div>
