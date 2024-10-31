@@ -1276,7 +1276,7 @@
           "//%s%PLC1.GVL_Partidas.Motor%/s%",
           "var GVL = 'GVL_Sensores';",
           "var NomeVetor = 'SenDig';",
-          "var NomeUC = 'UcPopUpSensorDigital_1';",
+          "var NomeUC = 'UcPopUpSensorDigital_2';",
           "\t",
           "\t\t",
           "// faz o binding com a struct do motor\t",
@@ -1335,7 +1335,7 @@
           "//%s%PLC1.GVL_Partidas.Motor%/s%",
           "var GVL = 'GVL_Sensores';",
           "var NomeVetor = 'SenDig';",
-          "var NomeUC = 'UcPopUpSensorDigital_1';",
+          "var NomeUC = 'UcPopUpSensorDigital_2';",
           "\t",
           "\t\t",
           "// faz o binding com a struct do motor\t",
@@ -3778,7 +3778,7 @@
 </div>
 <div id="UcPopUpValvulas_2" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-escolhe="False" data-tchmi-height="300" data-tchmi-height-unit="px" data-tchmi-left="-7" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Popup/ucPopUpValvulas.usercontrol" data-tchmi-top="1077" data-tchmi-top-unit="px" data-tchmi-width="600" data-tchmi-width-unit="px">
 </div>
-<div id="UcPopUpSensorDigital_2" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="260" data-tchmi-height-unit="px" data-tchmi-left="1150" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Popup/ucPopUpSensorDigital.usercontrol" data-tchmi-top="1117" data-tchmi-top-unit="px" data-tchmi-width="550" data-tchmi-width-unit="px">
+<div id="UcPopUpSensorDigital_2" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="260" data-tchmi-height-unit="px" data-tchmi-left="1144" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Popup/ucPopUpSensorDigital.usercontrol" data-tchmi-top="1137" data-tchmi-top-unit="px" data-tchmi-width="550" data-tchmi-width-unit="px">
 </div>
 <div id="UcPopUpMotores2" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-escolhe="False" data-tchmi-height="470" data-tchmi-height-unit="px" data-tchmi-left="-157" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Popup/Motor/ucPopUpMotores.usercontrol" data-tchmi-top="1480" data-tchmi-top-unit="px" data-tchmi-width="750" data-tchmi-width-unit="px">
 </div>
