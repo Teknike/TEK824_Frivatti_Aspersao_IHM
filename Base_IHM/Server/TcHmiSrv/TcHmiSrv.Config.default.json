@@ -29088,6 +29088,26 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.GVL_Comunicacao.comCamaraAnel2.En.xIniciaAspersaoC1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_Comunicacao::comCamaraAnel2::En::xIniciaAspersaoC1",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "attributes": {
+                            "TcAddressType": "Input"
+                        },
+                        "propertyOrder": 45
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
         "PLC1.GVL_Geral.stBlibliotecas": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -32079,6 +32099,7 @@
                 "PLC1.GVL_Comando.xFaltaDeFase2OK": 3,
                 "PLC1.GVL_Comando.xFaltaDeFaseOK": 3,
                 "PLC1.GVL_Comando.xLigaControleNivelTanque": 3,
+                "PLC1.GVL_Comunicacao.comCamaraAnel2.En.xIniciaAspersaoC1": 3,
                 "PLC1.GVL_Diag.Diag": 3,
                 "PLC1.GVL_Diag.stDiagCan": 3,
                 "PLC1.GVL_Diag.stDiagCan2": 3,

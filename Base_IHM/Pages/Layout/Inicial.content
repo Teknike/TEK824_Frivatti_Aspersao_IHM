@@ -1220,7 +1220,7 @@
 </div>
 <div id="Camara_52" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="360" data-tchmi-height-unit="px" data-tchmi-itamanhotexto="25" data-tchmi-left="684" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucCamara.usercontrol" data-tchmi-top="4" data-tchmi-top-unit="px" data-tchmi-width="167" data-tchmi-width-unit="px" data-tchmi-zindex="48" data-tchmi-stcamara="%s%PLC1.GVL_Automatico.stCamaras[5]|BindingMode=TwoWay%/s%" data-tchmi-iindex="5">
 </div>
-<div id="TcHmiCombobox_5" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCombobox" data-tchmi-auto-focus-out="true" data-tchmi-combobox-text="Select" data-tchmi-height="42" data-tchmi-height-unit="px" data-tchmi-left="540" data-tchmi-left-unit="px" data-tchmi-top="368" data-tchmi-top-unit="px" data-tchmi-width="300" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="25" data-tchmi-drop-down-horizontal-alignment="Center" data-tchmi-drop-down-style="Classic" data-tchmi-max-list-height="300" data-tchmi-drop-down-font-size="20" data-tchmi-selected-id="%s%PLC1.GVL_Automatico.iProtocoloAnel1|BindingMode=TwoWay%/s%" data-tchmi-zindex="342">
+<div id="TcHmiCombobox_5" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCombobox" data-tchmi-auto-focus-out="true" data-tchmi-combobox-text="Select" data-tchmi-height="42" data-tchmi-height-unit="px" data-tchmi-left="540" data-tchmi-left-unit="px" data-tchmi-top="368" data-tchmi-top-unit="px" data-tchmi-width="300" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="25" data-tchmi-drop-down-horizontal-alignment="Center" data-tchmi-drop-down-style="Classic" data-tchmi-max-list-height="300" data-tchmi-drop-down-font-size="20" data-tchmi-selected-id="%s%PLC1.GVL_Automatico.iProtocoloAnel1|BindingMode=TwoWay%/s%" data-tchmi-zindex="342" data-tchmi-is-enabled="%s%PLC1.GVL_Automatico.xPodeTrocarBombaRodandoAnel[1]%/s%">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,
@@ -1405,6 +1405,15 @@
 </script>
 
 
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%s%PLC1.GVL_Comunicacao.comCamaraAnel2.En.xIniciaAspersaoC1%/s%",
+    "actions": []
+  }
+]
+</script>
 </div>
 <div id="TcHmiTextblock_2823806" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="187" data-tchmi-left-unit="px" data-tchmi-text="Protocolo de Aspersão Anel 1" data-tchmi-top="369" data-tchmi-top-unit="px" data-tchmi-width="354" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="28" data-tchmi-zindex="341" data-tchmi-text-font-weight="Bold">
 </div>
@@ -3485,7 +3494,7 @@
 <div id="Camara_57" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="328" data-tchmi-height-unit="px" data-tchmi-itamanhotexto="25" data-tchmi-left="5" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucCamara.usercontrol" data-tchmi-top="371" data-tchmi-top-unit="px" data-tchmi-width="167" data-tchmi-width-unit="px" data-tchmi-zindex="49" data-tchmi-stcamara="%s%PLC1.GVL_Automatico.stCamaras[9]|BindingMode=TwoWay%/s%" data-tchmi-iindex="9">
 </div>
 </div>
-<div id="TcHmiCombobox_12" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCombobox" data-tchmi-auto-focus-out="true" data-tchmi-combobox-text="Select" data-tchmi-height="42" data-tchmi-height-unit="px" data-tchmi-left="1530" data-tchmi-left-unit="px" data-tchmi-top="554" data-tchmi-top-unit="px" data-tchmi-width="300" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="25" data-tchmi-drop-down-horizontal-alignment="Center" data-tchmi-drop-down-style="Classic" data-tchmi-max-list-height="300" data-tchmi-drop-down-font-size="20" data-tchmi-selected-id="%s%PLC1.GVL_Automatico.iProtocoloAnel2|BindingMode=TwoWay%/s%" data-tchmi-zindex="342" data-tchmi-enum-data-symbol="" data-tchmi-allow-text-input="false" data-tchmi-is-enabled="true">
+<div id="TcHmiCombobox_12" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCombobox" data-tchmi-auto-focus-out="true" data-tchmi-combobox-text="Select" data-tchmi-height="42" data-tchmi-height-unit="px" data-tchmi-left="1530" data-tchmi-left-unit="px" data-tchmi-top="554" data-tchmi-top-unit="px" data-tchmi-width="300" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="25" data-tchmi-drop-down-horizontal-alignment="Center" data-tchmi-drop-down-style="Classic" data-tchmi-max-list-height="300" data-tchmi-drop-down-font-size="20" data-tchmi-selected-id="%s%PLC1.GVL_Automatico.iProtocoloAnel2|BindingMode=TwoWay%/s%" data-tchmi-zindex="342" data-tchmi-enum-data-symbol="" data-tchmi-allow-text-input="false" data-tchmi-is-enabled="%s%PLC1.GVL_Automatico.xPodeTrocarBombaRodandoAnel[1]%/s%">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,
@@ -4067,7 +4076,7 @@
 </div>
 <div id="UserControl1_197" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="9" data-tchmi-height-unit="px" data-tchmi-left="1413" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucSeta.usercontrol" data-tchmi-top="1193" data-tchmi-top-unit="px" data-tchmi-width="31" data-tchmi-width-unit="px" data-tchmi-zindex="93">
 </div>
-<div id="UcAvisofecha_com_condição_2" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-bcondição="%s%PLC1.GVL_Comando.xFaltaDeFaseOK%/s%" data-tchmi-height="347" data-tchmi-height-unit="px" data-tchmi-left="88" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucAvisofecha_com_condição - Copy.usercontrol" data-tchmi-top="763" data-tchmi-top-unit="px" data-tchmi-width="487" data-tchmi-width-unit="px" data-tchmi-zindex="356" data-tchmi-snomeaviso="Aviso" data-tchmi-snomerecado="Verificar se há falta de fase ou alguma das emergências estão acionadas.
+<div id="UcAvisofecha_com_condição_2" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-bcondição="%s%PLC1.GVL_Comando.xFaltaDeFaseOK%/s%" data-tchmi-height="347" data-tchmi-height-unit="px" data-tchmi-left="54" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl/Geral/ucAvisofecha_com_condição - Copy.usercontrol" data-tchmi-top="546" data-tchmi-top-unit="px" data-tchmi-width="487" data-tchmi-width-unit="px" data-tchmi-zindex="356" data-tchmi-snomeaviso="Aviso" data-tchmi-snomerecado="Verificar se há falta de fase ou alguma das emergências estão acionadas.
 -Abaixo tem o Status das Emergências e Falta de Fase.
 -Após verificar e deixar tudo OK. Ligar novamente o sistema." data-tchmi-ifonteaviso="30" data-tchmi-ifonterecado="22">
 

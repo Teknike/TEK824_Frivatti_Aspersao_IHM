@@ -106,7 +106,8 @@
           "{",
           "\tdesktop.removeChild(Config);",
           "\tConfig.destroy();\t",
-          "}"
+          "}",
+          "$('#UcPopUpMotores2').slideUp('slow');"
         ],
         "injectContextObject": true,
         "asyncWait": true,

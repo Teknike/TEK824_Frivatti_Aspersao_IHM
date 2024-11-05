@@ -854,7 +854,7 @@
 ]
 </script>
 </div>
-<div id="TcHmiContainerCancela" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="166" data-tchmi-height-unit="px" data-tchmi-left="190" data-tchmi-left-unit="px" data-tchmi-top="472" data-tchmi-top-unit="px" data-tchmi-width="270" data-tchmi-width-unit="px" data-tchmi-zindex="3">
+<div id="TcHmiContainerCancela" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="166" data-tchmi-height-unit="px" data-tchmi-left="134" data-tchmi-left-unit="px" data-tchmi-top="453" data-tchmi-top-unit="px" data-tchmi-width="270" data-tchmi-width-unit="px" data-tchmi-zindex="3">
 
 <script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
 {
@@ -907,32 +907,7 @@
 [
   {
     "accessright": "operate",
-    "group": "CasaMaquinas",
-    "permission": "Deny"
-  },
-  {
-    "accessright": "operate",
     "group": "Graficos",
-    "permission": "Deny"
-  },
-  {
-    "accessright": "operate",
-    "group": "Operacao",
-    "permission": "Deny"
-  },
-  {
-    "accessright": "observe",
-    "group": "CasaMaquinas",
-    "permission": "Deny"
-  },
-  {
-    "accessright": "observe",
-    "group": "Graficos",
-    "permission": "Deny"
-  },
-  {
-    "accessright": "observe",
-    "group": "Operacao",
     "permission": "Deny"
   }
 ]
@@ -994,17 +969,7 @@
 [
   {
     "accessright": "operate",
-    "group": "CasaMaquinas",
-    "permission": "Deny"
-  },
-  {
-    "accessright": "operate",
     "group": "Graficos",
-    "permission": "Deny"
-  },
-  {
-    "accessright": "operate",
-    "group": "Operacao",
     "permission": "Deny"
   },
   {

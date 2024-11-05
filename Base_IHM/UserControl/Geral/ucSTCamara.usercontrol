@@ -992,7 +992,7 @@
   {
     "accessright": "operate",
     "group": "CasaMaquinas",
-    "permission": "Deny"
+    "permission": "Allow"
   },
   {
     "accessright": "operate",
@@ -1007,7 +1007,7 @@
   {
     "accessright": "operate",
     "group": "Operacao",
-    "permission": "Deny"
+    "permission": "Allow"
   },
   {
     "accessright": "operate",
@@ -1022,7 +1022,7 @@
 ]
 </script>
 </div>
-<div id="TcHmiButton_254" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="70" data-tchmi-height-unit="px" data-tchmi-left="9" data-tchmi-left-unit="px" data-tchmi-text="Iniciar Câmara Aspersão" data-tchmi-top="70" data-tchmi-top-unit="px" data-tchmi-width="170" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="25" data-tchmi-state-symbol="%pp%stCamara::en::xIniciaCamaraSupervisorio%/pp%" data-tchmi-zindex="5">
+<div id="TcHmiButton_254" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="70" data-tchmi-height-unit="px" data-tchmi-left="8" data-tchmi-left-unit="px" data-tchmi-text="Iniciar Câmara Aspersão" data-tchmi-top="68" data-tchmi-top-unit="px" data-tchmi-width="170" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="25" data-tchmi-state-symbol="%pp%stCamara::en::xIniciaCamaraSupervisorio%/pp%" data-tchmi-zindex="5">
 <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
 {
   "topLeft": 20.0,
@@ -1109,7 +1109,7 @@
   {
     "accessright": "operate",
     "group": "CasaMaquinas",
-    "permission": "Deny"
+    "permission": "Allow"
   },
   {
     "accessright": "operate",
@@ -1124,7 +1124,7 @@
   {
     "accessright": "operate",
     "group": "Operacao",
-    "permission": "Deny"
+    "permission": "Allow"
   },
   {
     "accessright": "operate",
