@@ -27,68 +27,6 @@
       }
     ],
     "isNew": false,
-    "profileName": "TEK609-APARECIDA_CPU",
-    "publishMode": "TcHmi",
-    "targetDirectory": "",
-    "server": "",
-    "sitePath": "",
-    "destinationUrl": "",
-    "passiveMode": true,
-    "savePassword": true,
-    "deleteAllFilesBeforePublish": false,
-    "deleteExtensionDataBeforePublish": false,
-    "alwaysPublishLocalServerConfiguration": true,
-    "temporaryPublishWithoutServerConfiguration": false,
-    "abortOnErrors": true,
-    "createPublishLog": false,
-    "userName": "",
-    "encryptedPassword": "",
-    "encryptedTcHmiServerPassword": "rRCbuqpxI/MKFXNJEBHC+w==",
-    "tcHmiServerHost": "192.168.100.50",
-    "tcHmiServerPort": "1020",
-    "uploadTimeout": "60",
-    "connectionTimeout": "5",
-    "requestTimeout": "60",
-    "extensionStartupTimeout": "120",
-    "clientCertificateCN": "",
-    "tcHmiUseTLS": true,
-    "useClientCertificate": false,
-    "launchBrowserAfterPublish": true,
-    "createVirtualDirectoriesOnTargetSystem": false,
-    "tcHmiServerUserName": "__SystemAdministrator",
-    "tcHmiDestinationUrl": "https://192.168.100.50:1020/",
-    "publishConfiguration": "remote",
-    "tcHmiSavePassword": false,
-    "tcHmiIgnoreCertificateErrors": true
-  },
-  {
-    "serverExtensions": [
-      {
-        "publishServerExtension": true,
-        "name": "ADS"
-      },
-      {
-        "publishServerExtension": true,
-        "name": "TcHmiEcDiagnostics"
-      },
-      {
-        "publishServerExtension": true,
-        "name": "TcHmiLua"
-      },
-      {
-        "publishServerExtension": true,
-        "name": "TcHmiSqliteLogger"
-      },
-      {
-        "publishServerExtension": true,
-        "name": "TcHmiSrv"
-      },
-      {
-        "publishServerExtension": true,
-        "name": "TcHmiUserManagement"
-      }
-    ],
-    "isNew": false,
     "profileName": "Tailsacale",
     "publishMode": "TcHmi",
     "targetDirectory": "",
@@ -105,70 +43,8 @@
     "createPublishLog": false,
     "userName": "",
     "encryptedPassword": "",
-    "encryptedTcHmiServerPassword": "XT5Vrm/YafUWR8zxrHBTpg==",
-    "tcHmiServerHost": "toledo-aspersao",
-    "tcHmiServerPort": "1020",
-    "uploadTimeout": "60",
-    "connectionTimeout": "5",
-    "requestTimeout": "60",
-    "extensionStartupTimeout": "120",
-    "clientCertificateCN": "",
-    "tcHmiUseTLS": true,
-    "useClientCertificate": false,
-    "launchBrowserAfterPublish": true,
-    "createVirtualDirectoriesOnTargetSystem": true,
-    "tcHmiServerUserName": "__SystemAdministrator",
-    "tcHmiDestinationUrl": "https://toledo-aspersao:1020/",
-    "publishConfiguration": "remote",
-    "tcHmiSavePassword": false,
-    "tcHmiIgnoreCertificateErrors": true
-  },
-  {
-    "serverExtensions": [
-      {
-        "publishServerExtension": true,
-        "name": "ADS"
-      },
-      {
-        "publishServerExtension": false,
-        "name": "TcHmiEcDiagnostics"
-      },
-      {
-        "publishServerExtension": true,
-        "name": "TcHmiLua"
-      },
-      {
-        "publishServerExtension": true,
-        "name": "TcHmiSqliteLogger"
-      },
-      {
-        "publishServerExtension": true,
-        "name": "TcHmiSrv"
-      },
-      {
-        "publishServerExtension": true,
-        "name": "TcHmiUserManagement"
-      }
-    ],
-    "isNew": false,
-    "profileName": "C6030-Aspersao",
-    "publishMode": "TcHmi",
-    "targetDirectory": "",
-    "server": "",
-    "sitePath": "",
-    "destinationUrl": "",
-    "passiveMode": true,
-    "savePassword": true,
-    "deleteAllFilesBeforePublish": true,
-    "deleteExtensionDataBeforePublish": true,
-    "alwaysPublishLocalServerConfiguration": true,
-    "temporaryPublishWithoutServerConfiguration": false,
-    "abortOnErrors": true,
-    "createPublishLog": true,
-    "userName": "",
-    "encryptedPassword": "",
-    "encryptedTcHmiServerPassword": "gbSOe82yMlbskbdKxgVCZw==",
-    "tcHmiServerHost": "192.168.0.170",
+    "encryptedTcHmiServerPassword": "pb2x+T4bWgS7m/zQpv6rnQ==",
+    "tcHmiServerHost": "itaipulandia-aspersao",
     "tcHmiServerPort": "1020",
     "uploadTimeout": "60",
     "connectionTimeout": "5",
@@ -180,9 +56,9 @@
     "launchBrowserAfterPublish": false,
     "createVirtualDirectoriesOnTargetSystem": true,
     "tcHmiServerUserName": "__SystemAdministrator",
-    "tcHmiDestinationUrl": "https://192.168.0.170:1020/",
+    "tcHmiDestinationUrl": "https://itaipulandia-aspersao:1020/",
     "publishConfiguration": "remote",
-    "tcHmiSavePassword": true,
+    "tcHmiSavePassword": false,
     "tcHmiIgnoreCertificateErrors": true
   },
   {
