@@ -8890,6 +8890,16 @@
                         }
                     ]
                 },
+                "TempoAr": {
+                    "allOf": [
+                        {
+                            "$ref": "tchmi:general#/definitions/LREAL"
+                        },
+                        {
+                            "propertyOrder": 36
+                        }
+                    ]
+                },
                 "Valvulas": {
                     "allOf": [
                         {
@@ -28733,7 +28743,7 @@
             "DYNAMIC": true,
             "MAPPING": "PLC1::GVL_Automatico::Protocolos",
             "SCHEMA": {
-                "$ref": "tchmi:server#/definitions/PLC1.ARRAY_0..30_OF-st_Protocolo"
+                "$ref": "tchmi:server#/definitions/PLC1.ARRAY_0..30_OF-Teknike_Aspersao.st_Protocolo"
             },
             "USEMAPPING": true
         },
